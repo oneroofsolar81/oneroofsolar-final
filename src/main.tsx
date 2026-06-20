@@ -28,27 +28,59 @@ console.error = (...args) => {
   originalError.call(console, ...args);
 };
 
+// Add window.onerror handler to return true (suppressing browser default action)
+window.onerror = (message, source, lineno, colno, error) => {
+  const msg = String(message || error?.message || '');
+  const lower = msg.toLowerCase();
+  if (
+    lower.includes('resizeobserver') ||
+    lower.includes('resize-observer') ||
+    lower.includes('resize observer') ||
+    lower.includes('styled-components') ||
+    lower.includes('script error') ||
+    lower.includes('gtm') ||
+    lower.includes('elfsight') ||
+    lower.includes('eapps') ||
+    lower.includes('app_views_limit_reached') ||
+    lower.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a')
+  ) {
+    return true; // suppresses the browser console error
+  }
+};
+
 window.addEventListener('error', (e) => {
   const msg = e.message || (e.error && e.error.message) || '';
-  if (typeof msg === 'string') {
-    const lower = msg.toLowerCase();
-    if (
-      lower.includes('resizeobserver') ||
-      lower.includes('resize-observer') ||
-      lower.includes('resize observer') ||
-      lower.includes('script error') ||
-      lower.includes('styled-components') ||
-      lower.includes('gtm') ||
-      lower.includes('elfsight') ||
-      lower.includes('eapps') ||
-      lower.includes('app_views_limit_reached') ||
-      lower.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a') ||
-      lower.includes('google-analytics') ||
-      lower.includes('facebook')
-    ) {
-      e.stopImmediatePropagation();
-      e.preventDefault();
-    }
+  const strEvent = String(e);
+  const detail = (e as any).detail ? String((e as any).detail) : '';
+  const lowerMsg = String(msg).toLowerCase();
+  const lowerStr = strEvent.toLowerCase();
+  const lowerDetail = detail.toLowerCase();
+  
+  const isResizeObserver = 
+    lowerMsg.includes('resizeobserver') ||
+    lowerMsg.includes('resize-observer') ||
+    lowerMsg.includes('resize observer') ||
+    lowerStr.includes('resizeobserver') ||
+    lowerStr.includes('resize-observer') ||
+    lowerStr.includes('resize observer') ||
+    lowerDetail.includes('resizeobserver') ||
+    lowerDetail.includes('resize-observer') ||
+    lowerDetail.includes('resize observer');
+
+  if (
+    isResizeObserver ||
+    lowerMsg.includes('script error') ||
+    lowerMsg.includes('styled-components') ||
+    lowerMsg.includes('gtm') ||
+    lowerMsg.includes('elfsight') ||
+    lowerMsg.includes('eapps') ||
+    lowerMsg.includes('app_views_limit_reached') ||
+    lowerMsg.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a') ||
+    lowerMsg.includes('google-analytics') ||
+    lowerMsg.includes('facebook')
+  ) {
+    e.stopImmediatePropagation();
+    e.preventDefault();
   }
 });
 
