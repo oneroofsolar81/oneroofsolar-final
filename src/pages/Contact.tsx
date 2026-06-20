@@ -3,6 +3,7 @@ import { Mail, MapPin, Phone, Zap, ArrowRight, MessageSquare } from "lucide-reac
 import React, { useState, useEffect } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../lib/firebase";
+import { ensureDatabaseSeeded } from "../lib/autoSeed";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { SEO } from "@/src/components/SEO";
 
@@ -15,6 +16,7 @@ export function Contact() {
   useEffect(() => {
     async function loadData() {
       try {
+        await ensureDatabaseSeeded();
         const docRef = doc(db, 'pages', 'contact');
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) setPageData(docSnap.data());

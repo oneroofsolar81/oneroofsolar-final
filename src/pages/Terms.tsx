@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { ShieldCheck } from 'lucide-react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../lib/firebase';
+import { ensureDatabaseSeeded } from '../lib/autoSeed';
 import { SEO } from '../components/SEO';
 
 export const Terms = () => {
@@ -11,6 +12,7 @@ export const Terms = () => {
   useEffect(() => {
     async function loadData() {
       try {
+        await ensureDatabaseSeeded();
         const docRef = doc(db, 'pages', 'terms');
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) setPageData(docSnap.data());

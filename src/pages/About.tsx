@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../lib/firebase";
+import { ensureDatabaseSeeded } from "../lib/autoSeed";
 import Markdown from 'react-markdown';
 
 import { SEO } from "@/src/components/SEO";
@@ -16,6 +17,7 @@ export function About() {
   useEffect(() => {
     async function loadData() {
       try {
+        await ensureDatabaseSeeded();
         const docRef = doc(db, 'pages', 'about');
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) setPageData(docSnap.data());

@@ -8,6 +8,7 @@ import { ArrowRight, CheckCircle2, Zap, Battery, HomeIcon, Building2, CircleDoll
 import { Link } from "react-router-dom";
 import { doc, getDoc, collection, getDocs, updateDoc } from "firebase/firestore";
 import { db } from "@/src/lib/firebase";
+import { ensureDatabaseSeeded } from "@/src/lib/autoSeed";
 import { FaqSection } from "@/src/components/FaqSection";
 import { SEO } from "@/src/components/SEO";
 
@@ -18,6 +19,7 @@ export function Home() {
   useEffect(() => {
     async function loadData() {
       try {
+        await ensureDatabaseSeeded();
         const docRef = doc(db, 'pages', 'home');
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {

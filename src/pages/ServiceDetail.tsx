@@ -1422,6 +1422,7 @@ function EvChargerBenefits({ service }: { service: any }) {
 
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../lib/firebase";
+import { ensureDatabaseSeeded } from "../lib/autoSeed";
 import { SEO } from "../components/SEO";
 
 export function ServiceDetail() {
@@ -1433,6 +1434,7 @@ export function ServiceDetail() {
     async function fetchDbService() {
       if (!slug) return;
       try {
+        await ensureDatabaseSeeded();
         const docRef = doc(db, 'services', slug);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {

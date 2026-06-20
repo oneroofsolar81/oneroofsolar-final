@@ -1,10 +1,9 @@
-import { signInWithEmailAndPassword, createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../lib/firebase';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { useEffect, useState, FormEvent } from 'react';
-import { Crown, FileText, Lock, Mail, ShieldAlert, Sparkles, LogIn, ArrowRight, Check } from 'lucide-react';
-import { safeStorage } from '../../lib/storage';
+import { Crown, Lock, Mail, ShieldAlert, LogIn } from 'lucide-react';
 
 const PRESET_ACCOUNTS = [
   {
@@ -32,7 +31,6 @@ export function AdminLogin() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
-  const [selectedPreset, setSelectedPreset] = useState<number | null>(null);
 
   useEffect(() => {
     if (user) {
@@ -85,32 +83,8 @@ export function AdminLogin() {
       console.warn("Standard Firebase auth sign-in failed", fbErr);
     }
 
-    setError('Invalid credentials. Please use one of the pre-authorized accounts:\n• admin@oneroofsolar.com.au (Password: OneroofAdmin2026!)\n• editor@oneroofsolar.com.au (Password: OneroofEditor2026!)\n\nOr click "Sign in with Google" below.');
+    setError('Invalid credentials. Please check your email and password.');
     setLoading(false);
-  };
-
-  const handleGoogleSignIn = async () => {
-    setError('');
-    setLoading(true);
-    const provider = new GoogleAuthProvider();
-    try {
-      safeStorage.removeLocal('oneroof_custom_user');
-      await signInWithPopup(auth, provider);
-      navigate('/admin');
-    } catch (err: any) {
-      console.error('Google Sign-In Error:', err);
-      setError(err.message || 'Google Sign-In failed.');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleApplyPreset = (index: number) => {
-    const preset = PRESET_ACCOUNTS[index];
-    setEmail(preset.email);
-    setPassword(preset.password);
-    setSelectedPreset(index);
-    setError('');
   };
 
   return (
@@ -156,7 +130,6 @@ export function AdminLogin() {
                   value={email}
                   onChange={(e) => {
                     setEmail(e.target.value);
-                    setSelectedPreset(null);
                   }}
                   className="w-full bg-slate-900/60 border border-slate-700/60 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 text-sm focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 outline-none transition"
                   placeholder="name@oneroofsolar.com.au"
@@ -175,7 +148,6 @@ export function AdminLogin() {
                   value={password}
                   onChange={(e) => {
                     setPassword(e.target.value);
-                    setSelectedPreset(null);
                   }}
                   className="w-full bg-slate-900/60 border border-slate-700/60 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 text-sm focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500 outline-none transition"
                   placeholder="••••••••••••"
@@ -204,63 +176,6 @@ export function AdminLogin() {
               )}
             </button>
           </form>
-
-          <div className="relative my-6">
-            <div className="absolute inset-0 flex items-center" aria-hidden="true">
-              <div className="w-full border-t border-slate-700/60"></div>
-            </div>
-            <div className="relative flex justify-center text-xs uppercase tracking-wider font-semibold">
-              <span className="bg-[#1e293b] px-3 text-slate-400">Or use Google Auth</span>
-            </div>
-          </div>
-
-          <button
-            type="button"
-            onClick={handleGoogleSignIn}
-            disabled={loading}
-            className="w-full py-3.5 bg-slate-900 border border-slate-700/60 text-white rounded-xl hover:bg-slate-950 transition flex items-center justify-center gap-2.5 disabled:opacity-50 disabled:cursor-not-allowed text-sm font-semibold shadow-lg shadow-brand-950/20 cursor-pointer"
-          >
-            <svg className="w-4.5 h-4.5 fill-current shrink-0 text-slate-300" viewBox="0 0 24 24">
-              <path d="M12.24 10.285V13.4h6.887c-.275 1.565-1.88 4.604-6.887 4.604-4.33 0-7.866-3.577-7.866-8s3.536-8 7.866-8c2.46 0 4.105 1.025 5.047 1.926l2.427-2.334C18.155 2.185 15.42 1 12.24 1c-6.075 0-11 4.925-11 11s4.925 11 11 11c6.34 0 10.564-4.453 10.564-10.75 0-.725-.078-1.275-.175-1.665h-10.39z"/>
-            </svg>
-            Sign in with Google
-          </button>
-
-          <div className="relative my-6">
-            <div className="absolute inset-0 flex items-center" aria-hidden="true">
-              <div className="w-full border-t border-slate-700/60"></div>
-            </div>
-            <div className="relative flex justify-center text-xs uppercase tracking-wider font-semibold">
-              <span className="bg-[#1e293b] px-3 text-slate-400">Quick-Fill Presets</span>
-            </div>
-          </div>
-
-          <div className="space-y-2.5">
-            {PRESET_ACCOUNTS.map((preset, idx) => (
-              <button
-                key={idx}
-                type="button"
-                onClick={() => handleApplyPreset(idx)}
-                className={`w-full text-left p-3.5 rounded-xl border transition flex flex-col gap-1 cursor-pointer ${
-                  selectedPreset === idx
-                    ? 'bg-brand-500/10 border-brand-500/50'
-                    : 'bg-slate-900/40 border-slate-700/40 hover:bg-slate-900/80 hover:border-slate-700'
-                }`}
-              >
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold text-white">{preset.name}</span>
-                  <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-medium ${
-                    preset.color === 'emerald' ? 'bg-emerald-500/15 text-emerald-400' : 'bg-brand-500/15 text-brand-400'
-                  }`}>
-                    {preset.badge}
-                  </span>
-                </div>
-                <div className="text-[11px] text-slate-400 font-mono truncate">
-                  {preset.email}
-                </div>
-              </button>
-            ))}
-          </div>
         </div>
 
       </div>

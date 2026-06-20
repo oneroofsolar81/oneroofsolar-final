@@ -6,6 +6,7 @@ import { Button } from "../components/ui/Button";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/src/lib/firebase";
+import { ensureDatabaseSeeded } from "@/src/lib/autoSeed";
 import { SEO } from "@/src/components/SEO";
 
 // (Keep existing projects array)
@@ -206,6 +207,7 @@ export default function Projects() {
   useEffect(() => {
     async function loadData() {
       try {
+        await ensureDatabaseSeeded();
         const docRef = doc(db, 'pages', 'projects');
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) setPageData(docSnap.data());

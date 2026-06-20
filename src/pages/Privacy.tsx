@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Lock } from 'lucide-react';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../lib/firebase';
+import { ensureDatabaseSeeded } from '../lib/autoSeed';
 import { SEO } from '../components/SEO';
 
 export const Privacy = () => {
@@ -11,6 +12,7 @@ export const Privacy = () => {
   useEffect(() => {
     async function loadData() {
       try {
+        await ensureDatabaseSeeded();
         const docRef = doc(db, 'pages', 'privacy');
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) setPageData(docSnap.data());
