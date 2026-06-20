@@ -55,8 +55,37 @@ const FALLBACK_REVIEWS = [
 
 export function GoogleReviews() {
   const [showFallback, setShowFallback] = useState(false);
+  const [isInView, setIsInView] = useState(false);
+  const sectionRef = React.useRef<HTMLElement>(null);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (!('IntersectionObserver' in window)) {
+      setIsInView(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setIsInView(true);
+        observer.disconnect();
+      }
+    }, {
+      rootMargin: "300px 0px"
+    });
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isInView) return;
+
     // 1. Try to load the Elfsight script
     if (!document.querySelector('script[src="https://elfsightcdn.com/platform.js"]')) {
       const script = document.createElement('script');
@@ -100,10 +129,10 @@ export function GoogleReviews() {
       window.removeEventListener('error', handleError);
       clearTimeout(timer);
     };
-  }, []);
+  }, [isInView]);
 
   return (
-    <section className="py-24 bg-slate-50 border-y border-slate-100 relative overflow-hidden">
+    <section ref={sectionRef} className="py-24 bg-slate-50 border-y border-slate-100 relative overflow-hidden">
       <div className="absolute inset-0 bg-dot-slate-200 opacity-50 pointer-events-none" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <FadeIn delay={0.1}>
