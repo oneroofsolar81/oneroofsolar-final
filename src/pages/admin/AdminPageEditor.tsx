@@ -5,6 +5,8 @@ import { db, handleFirestoreError, OperationType } from '../../lib/firebase';
 import { ImageUploadField } from '../../components/admin/ImageUploadField';
 import { useAuth } from '../../context/AuthContext';
 import { useNotification } from '../../context/NotificationContext';
+import { DebouncedInput, DebouncedTextarea } from '../../components/admin/DebouncedInputs';
+import { ensureDatabaseSeeded } from '../../lib/autoSeed';
 
 const DEFAULT_SEO = {
   title: '',
@@ -246,17 +248,17 @@ function RecursiveEditor({ data, onChange, level = 0 }: { data: any, onChange: (
   if (typeof data === 'string') {
     const isTextArea = data.length > 60 || data.includes('\n');
     return isTextArea ? (
-      <textarea
+      <DebouncedTextarea
         value={data}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(val) => onChange(val)}
         className="w-full px-3 py-2 border border-slate-300 rounded-lg shadow-sm focus:ring-brand-500 focus:border-brand-500 sm:text-sm font-sans"
         rows={4}
       />
     ) : (
-      <input
+      <DebouncedInput
         type="text"
         value={data}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(val) => onChange(val)}
         className="w-full px-3 py-2 border border-slate-300 rounded-lg shadow-sm focus:ring-brand-500 focus:border-brand-500 sm:text-sm"
       />
     );
@@ -264,10 +266,10 @@ function RecursiveEditor({ data, onChange, level = 0 }: { data: any, onChange: (
 
   if (typeof data === 'number') {
     return (
-      <input
+      <DebouncedInput
         type="number"
         value={data}
-        onChange={(e) => onChange(Number(e.target.value))}
+        onChange={(val) => onChange(val)}
         className="w-full px-3 py-2 border border-slate-300 rounded-lg shadow-sm focus:ring-brand-500 focus:border-brand-500 sm:text-sm"
       />
     );
@@ -493,6 +495,7 @@ export function AdminPageEditor() {
     async function fetchPage() {
       setLoading(true);
       try {
+        await ensureDatabaseSeeded();
         const docRef = doc(db, 'pages', pageId!);
         const docSnap = await getDoc(docRef);
 
@@ -595,7 +598,7 @@ export function AdminPageEditor() {
         </button>
       </div>
 
-      {user?.isCustom && (
+      {user && (
         <div className="mb-8 p-4 bg-emerald-50 border border-emerald-100 rounded-xl text-emerald-800 text-xs flex items-center gap-2.5">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-ping shrink-0" />
           <span>Active Session Authorized: Signed in as <strong>{user.email}</strong> • Role: <strong>{user.role}</strong>. Any changes you make will be saved securely.</span>
@@ -721,8 +724,13 @@ export function AdminPageEditor() {
                               type="text"
                               value={data.sections?.hero?.cards?.card1?.title || ''}
                               onChange={(e) => {
-                                const c = { ...data.sections.hero.cards };
-                                c.card1.title = e.target.value;
+                                const c = { 
+                                  ...data.sections?.hero?.cards,
+                                  card1: {
+                                    ...data.sections?.hero?.cards?.card1,
+                                    title: e.target.value
+                                  }
+                                };
                                 updateHomeSection('hero', 'cards', c);
                               }}
                               className="w-full px-3 py-2 border rounded-lg text-sm bg-white"
@@ -734,8 +742,13 @@ export function AdminPageEditor() {
                               type="text"
                               value={data.sections?.hero?.cards?.card1?.badge || ''}
                               onChange={(e) => {
-                                const c = { ...data.sections.hero.cards };
-                                c.card1.badge = e.target.value;
+                                const c = { 
+                                  ...data.sections?.hero?.cards,
+                                  card1: {
+                                    ...data.sections?.hero?.cards?.card1,
+                                    badge: e.target.value
+                                  }
+                                };
                                 updateHomeSection('hero', 'cards', c);
                               }}
                               className="w-full px-3 py-2 border rounded-lg text-sm bg-white"
@@ -746,8 +759,13 @@ export function AdminPageEditor() {
                             <textarea
                               value={data.sections?.hero?.cards?.card1?.description || ''}
                               onChange={(e) => {
-                                const c = { ...data.sections.hero.cards };
-                                c.card1.description = e.target.value;
+                                const c = { 
+                                  ...data.sections?.hero?.cards,
+                                  card1: {
+                                    ...data.sections?.hero?.cards?.card1,
+                                    description: e.target.value
+                                  }
+                                };
                                 updateHomeSection('hero', 'cards', c);
                               }}
                               className="w-full px-3 py-2 border rounded-lg text-sm bg-white"
@@ -760,8 +778,13 @@ export function AdminPageEditor() {
                               type="number"
                               value={data.sections?.hero?.cards?.card1?.percent || 95}
                               onChange={(e) => {
-                                const c = { ...data.sections.hero.cards };
-                                c.card1.percent = Number(e.target.value);
+                                const c = { 
+                                  ...data.sections?.hero?.cards,
+                                  card1: {
+                                    ...data.sections?.hero?.cards?.card1,
+                                    percent: Number(e.target.value)
+                                  }
+                                };
                                 updateHomeSection('hero', 'cards', c);
                               }}
                               className="w-full px-3 py-2 border rounded-lg text-sm bg-white"
@@ -780,8 +803,13 @@ export function AdminPageEditor() {
                                 type="text"
                                 value={data.sections?.hero?.cards?.card2?.title || ''}
                                 onChange={(e) => {
-                                  const c = { ...data.sections.hero.cards };
-                                  c.card2.title = e.target.value;
+                                  const c = { 
+                                    ...data.sections?.hero?.cards,
+                                    card2: {
+                                      ...data.sections?.hero?.cards?.card2,
+                                      title: e.target.value
+                                    }
+                                  };
                                   updateHomeSection('hero', 'cards', c);
                                 }}
                                 className="w-full px-3 py-2 border rounded-lg text-sm bg-white"
@@ -793,8 +821,13 @@ export function AdminPageEditor() {
                                 type="text"
                                 value={data.sections?.hero?.cards?.card2?.description || ''}
                                 onChange={(e) => {
-                                  const c = { ...data.sections.hero.cards };
-                                  c.card2.description = e.target.value;
+                                  const c = { 
+                                    ...data.sections?.hero?.cards,
+                                    card2: {
+                                      ...data.sections?.hero?.cards?.card2,
+                                      description: e.target.value
+                                    }
+                                  };
                                   updateHomeSection('hero', 'cards', c);
                                 }}
                                 className="w-full px-3 py-2 border rounded-lg text-sm bg-white"
@@ -803,7 +836,7 @@ export function AdminPageEditor() {
                           </div>
                         </div>
 
-                        <div className="p-5 border border-slate-100 bg-slate-50 rounded-2xl">
+                        <div className="p-5 border border-slate-100 bg-slate-50 rounded-xl">
                           <div className="font-extrabold text-xs text-brand-600 mb-3">Card 3 - Residential Service</div>
                           <div className="space-y-2">
                             <div>
@@ -812,8 +845,13 @@ export function AdminPageEditor() {
                                 type="text"
                                 value={data.sections?.hero?.cards?.card3?.title || ''}
                                 onChange={(e) => {
-                                  const c = { ...data.sections.hero.cards };
-                                  c.card3.title = e.target.value;
+                                  const c = { 
+                                    ...data.sections?.hero?.cards,
+                                    card3: {
+                                      ...data.sections?.hero?.cards?.card3,
+                                      title: e.target.value
+                                    }
+                                  };
                                   updateHomeSection('hero', 'cards', c);
                                 }}
                                 className="w-full px-3 py-2 border rounded-lg text-sm bg-white"
@@ -825,8 +863,13 @@ export function AdminPageEditor() {
                                 type="text"
                                 value={data.sections?.hero?.cards?.card3?.description || ''}
                                 onChange={(e) => {
-                                  const c = { ...data.sections.hero.cards };
-                                  c.card3.description = e.target.value;
+                                  const c = { 
+                                    ...data.sections?.hero?.cards,
+                                    card3: {
+                                      ...data.sections?.hero?.cards?.card3,
+                                      description: e.target.value
+                                    }
+                                  };
                                   updateHomeSection('hero', 'cards', c);
                                 }}
                                 className="w-full px-3 py-2 border rounded-lg text-sm bg-white"

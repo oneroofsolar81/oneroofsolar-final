@@ -53,11 +53,6 @@ export function AdminLayout() {
                 {user?.role || 'Administrator'}
               </span>
             </div>
-            {user?.isCustom && (
-              <div className="text-[10px] text-amber-500 font-semibold bg-amber-500/10 p-1.5 rounded border border-amber-500/20 mt-1 pb-1 animate-pulse leading-snug">
-                ⚠️ Local Offline Fallback
-              </div>
-            )}
           </div>
           
           <div className="flex flex-col gap-2">

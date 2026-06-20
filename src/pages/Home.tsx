@@ -25,37 +25,6 @@ export function Home() {
         if (docSnap.exists()) {
           const data = docSnap.data();
           setPageData(data);
-          
-          let needsUpdate = false;
-          const updates: any = {};
-          
-          if (data.heroTitle) {
-            const cleaned = data.heroTitle.replace(/Solar Solutions/g, "Solar Systems").replace(/Solar Sol[a-zA-Z]*/g, "Solar Systems");
-            if (cleaned !== data.heroTitle) {
-              updates.heroTitle = cleaned;
-              needsUpdate = true;
-            }
-          }
-          
-          if (data.sections?.hero?.title) {
-            const cleaned = data.sections.hero.title.replace(/Solar Solutions/g, "Solar Systems").replace(/Solar Sol[a-zA-Z]*/g, "Solar Systems");
-            if (cleaned !== data.sections.hero.title) {
-              if (!updates.sections) updates.sections = { ...data.sections };
-              updates.sections.hero = { ...updates.sections.hero };
-              updates.sections.hero.title = cleaned;
-              needsUpdate = true;
-            }
-          }
-          
-          if (needsUpdate) {
-            console.log("Self-healing: migrating from 'Solar Solutions' to 'Solar Systems' in Firestore:", updates);
-            await updateDoc(docRef, updates);
-            // Reload the newly updated content
-            const freshSnap = await getDoc(docRef);
-            if (freshSnap.exists()) {
-              setPageData(freshSnap.data());
-            }
-          }
         }
 
         const servicesSnap = await getDocs(collection(db, 'services'));

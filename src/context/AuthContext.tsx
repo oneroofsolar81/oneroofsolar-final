@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
-import { User, onAuthStateChanged, signOut } from 'firebase/auth';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { auth } from '../lib/firebase';
-import { safeStorage } from '../lib/storage';
 
 export interface CustomUser {
   uid: string;
@@ -32,31 +31,41 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     let isMounted = true;
 
-    // Use firebase auth state listener as primary source of truth
+    // Check localStorage first
+    const savedCustomUser = localStorage.getItem('oneroof_custom_user');
+    if (savedCustomUser) {
+      try {
+        const parsed = JSON.parse(savedCustomUser);
+        if (parsed && parsed.email) {
+          setUser(parsed);
+          setLoading(false);
+          return;
+        }
+      } catch (e) {
+        console.error('Failed to parse oneroof_custom_user', e);
+      }
+    }
+
+    // fallback to Firebase auth listener
     const unsubscribe = onAuthStateChanged(auth, (u) => {
       if (!isMounted) return;
+
+      const hasCustom = localStorage.getItem('oneroof_custom_user');
+      if (hasCustom) {
+        setLoading(false);
+        return;
+      }
 
       if (u) {
         setUser({
           uid: u.uid,
           email: u.email,
           displayName: u.displayName || 'Authorized Admin',
-          role: 'Administrator',
-          isCustom: false,
+          role: u.email === 'editor@oneroofsolar.com.au' ? 'Editor' : 'Administrator',
+          isCustom: true,
         });
       } else {
-        // Fallback to custom local user only if there's no active Firebase user
-        const stored = safeStorage.getLocal('oneroof_custom_user');
-        if (stored) {
-          try {
-            setUser(JSON.parse(stored));
-          } catch (e) {
-            safeStorage.removeLocal('oneroof_custom_user');
-            setUser(null);
-          }
-        } else {
-          setUser(null);
-        }
+        setUser(null);
       }
       setLoading(false);
     }, (error) => {
@@ -73,20 +82,24 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const loginCustomUser = (email: string, role: string = 'Administrator') => {
-    const custom: CustomUser = {
-      uid: 'custom-' + Math.random().toString(36).substring(2, 9),
+    const customUser: CustomUser = {
+      uid: 'custom-' + Math.random().toString(36).substr(2, 9),
       email: email,
-      displayName: 'Oneroof Custom Admin',
+      displayName: email.split('@')[0],
       role: role,
-      isCustom: true,
+      isCustom: true
     };
-    safeStorage.setLocal('oneroof_custom_user', JSON.stringify(custom));
-    setUser(custom);
+    localStorage.setItem('oneroof_custom_user', JSON.stringify(customUser));
+    setUser(customUser);
   };
 
   const logout = async () => {
-    safeStorage.removeLocal('oneroof_custom_user');
-    await signOut(auth);
+    localStorage.removeItem('oneroof_custom_user');
+    try {
+      await signOut(auth);
+    } catch (e) {
+      console.warn("Firebase signout error:", e);
+    }
     setUser(null);
   };
 

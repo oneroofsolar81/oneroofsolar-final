@@ -6,6 +6,8 @@ import { SeoEditor } from '../../components/admin/SeoEditor';
 import { ImageUploadField } from '../../components/admin/ImageUploadField';
 import { useAuth } from '../../context/AuthContext';
 import { useNotification } from '../../context/NotificationContext';
+import { DebouncedInput, DebouncedTextarea } from '../../components/admin/DebouncedInputs';
+import { ensureDatabaseSeeded } from '../../lib/autoSeed';
 
 const SPECIAL_SEO_PAGES = [
   'residential-solar-system',
@@ -62,6 +64,7 @@ export function AdminItemEditor() {
     async function fetchItem() {
       setLoading(true);
       try {
+        await ensureDatabaseSeeded();
         const docRef = doc(db, collectionId!, itemId!);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
@@ -196,7 +199,7 @@ export function AdminItemEditor() {
           </div>
         </div>
 
-        {user?.isCustom && (
+        {user && (
           <div className="mb-6 p-4 bg-emerald-50 border border-emerald-100 rounded-xl text-emerald-800 text-xs flex items-center gap-2.5">
             <span className="w-2 h-2 bg-emerald-500 rounded-full animate-ping shrink-0" />
             <span>Active Session Authorized: Signed in as <strong>{user.email}</strong> • Role: <strong>{user.role}</strong>. Any changes you make will be saved securely.</span>
@@ -408,7 +411,7 @@ export function AdminItemEditor() {
         </h1>
       </div>
 
-      {user?.isCustom && (
+      {user && (
         <div className="mb-6 p-4 bg-emerald-50 border border-emerald-100 rounded-xl text-emerald-800 text-xs flex items-center gap-2.5">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-ping shrink-0" />
           <span>Active Session Authorized: Signed in as <strong>{user.email}</strong> • Role: <strong>{user.role}</strong>. Any changes you make will be saved securely.</span>
@@ -418,10 +421,10 @@ export function AdminItemEditor() {
       <form onSubmit={handleSave} className="space-y-6 bg-white p-8 border border-slate-200 rounded-xl shadow-sm">
         <div>
           <label className="block text-sm font-medium text-slate-700 mb-1">Title</label>
-          <input 
+          <DebouncedInput 
             type="text" 
             value={data.title}
-            onChange={e => setData({...data, title: e.target.value})}
+            onChange={val => setData({...data, title: val})}
             className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none"
             required
             placeholder="e.g. Solar Panel Installation"
@@ -430,9 +433,9 @@ export function AdminItemEditor() {
         
         <div>
           <label className="block text-sm font-medium text-slate-700 mb-1">Short Description</label>
-          <textarea 
+          <DebouncedTextarea 
             value={data.description}
-            onChange={e => setData({...data, description: e.target.value})}
+            onChange={val => setData({...data, description: val})}
             className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none"
             rows={2}
             required
@@ -442,9 +445,9 @@ export function AdminItemEditor() {
         
         <div>
           <label className="block text-sm font-medium text-slate-700 mb-1">Full Content</label>
-          <textarea 
+          <DebouncedTextarea 
             value={data.content}
-            onChange={e => setData({...data, content: e.target.value})}
+            onChange={val => setData({...data, content: val})}
             className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none font-mono text-sm"
             rows={10}
             placeholder="Detailed page content..."
@@ -460,9 +463,9 @@ export function AdminItemEditor() {
         
         <div>
           <label className="block text-sm font-medium text-slate-700 mb-1">Features (comma separated)</label>
-          <textarea 
+          <DebouncedTextarea 
             value={Array.isArray(data.features) ? data.features.join(', ') : (data.features || '')}
-            onChange={e => setData({...data, features: e.target.value.split(',').map(s=>s.trim()).filter(Boolean)})}
+            onChange={val => setData({...data, features: val.split(',').map(s=>s.trim()).filter(Boolean)})}
             className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none"
             rows={2}
             placeholder="Feature 1, Feature 2"
@@ -471,10 +474,10 @@ export function AdminItemEditor() {
 
         <div>
            <label className="block text-sm font-medium text-slate-700 mb-1">Lucide Icon Name</label>
-           <input 
+           <DebouncedInput 
              type="text" 
              value={data.icon}
-             onChange={e => setData({...data, icon: e.target.value})}
+             onChange={val => setData({...data, icon: val})}
              className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none max-w-sm"
              placeholder="e.g. Sun, Battery, Zap"
            />
