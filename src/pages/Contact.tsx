@@ -125,10 +125,11 @@ export function Contact() {
               <div className="bg-white p-4 sm:p-8 md:p-12 rounded-3xl sm:rounded-[2.5rem] border border-slate-200 shadow-xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-50 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
                 
-                <div className="w-full relative bg-transparent rounded-xl overflow-hidden" style={{ minHeight: "552px" }}>
+                <div className="w-full relative bg-transparent rounded-xl overflow-hidden" style={{ minHeight: "720px" }}>
                   <iframe
                     src="https://api.oneroofsolar.com.au/widget/form/3uXInokjWftJSJgePj2x"
-                    style={{ width: "100%", height: "100%", border: "none", borderRadius: "8px", minHeight: "552px" }}
+                    style={{ width: "100%", height: "100%", border: "none", borderRadius: "8px", minHeight: "720px", overflow: "hidden" }}
+                    scrolling="no"
                     title="Contact Us Form"
                   ></iframe>
                 </div>
