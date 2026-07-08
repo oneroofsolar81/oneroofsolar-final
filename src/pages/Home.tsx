@@ -12,6 +12,7 @@ import { ensureDatabaseSeeded } from "@/src/lib/autoSeed";
 import { DEFAULT_PAGES, DEFAULT_SERVICES } from "@/src/lib/defaultData";
 import { FaqSection } from "@/src/components/FaqSection";
 import { SEO } from "@/src/components/SEO";
+import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 export function Home() {
   const initialHomeData = DEFAULT_PAGES.find(p => p.id === 'home')?.data || null;
@@ -366,7 +367,7 @@ export function Home() {
                   <Link to="/contact">{sd?.whyChooseUs?.ctaText || "Get Your Free Quote"}</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base font-bold text-slate-700 border-slate-200 hover:bg-transparent hover:text-slate-700 hover:border-slate-200 w-full sm:w-auto" asChild>
-                  <a href={`tel:${sd?.whyChooseUs?.phone || "0483986444"}`}>Call Us {sd?.whyChooseUs?.phone || "0483986444"}</a>
+                  <a href={`tel:${PRIMARY_PHONE_RAW}`}>Call Us {PRIMARY_PHONE}</a>
                 </Button>
               </div>
             </FadeIn>
@@ -575,8 +576,8 @@ export function Home() {
                   })()}
                 </Button>
                 <Button variant="outline" className="w-full sm:w-auto justify-center rounded-full h-12 px-8 font-bold text-base border-2 border-slate-200 text-slate-900 hover:bg-slate-50 hover:-translate-y-1 transition-all" asChild>
-                  <a href={`tel:${sd?.whyChooseUs?.phone || "0483986444"}`} className="flex items-center justify-center">
-                    Call Us {sd?.whyChooseUs?.phone || "0483986444"}
+                  <a href={`tel:${PRIMARY_PHONE_RAW}`} className="flex items-center justify-center">
+                    Call Us {PRIMARY_PHONE}
                   </a>
                 </Button>
               </div>
@@ -694,7 +695,7 @@ export function Home() {
                   })()}
                 </Button>
                 <Button size="lg" variant="outline" className="rounded-full h-14 px-8 font-bold text-base border-white/20 text-white bg-transparent hover:bg-transparent hover:text-white hover:border-white/20 transition-all hover:scale-105 w-full sm:w-auto" asChild>
-                  <a href={`tel:${sd?.whyChooseUs?.phone || "0483986444"}`}>Call Us {sd?.whyChooseUs?.phone || "0483986444"}</a>
+                  <a href={`tel:${PRIMARY_PHONE_RAW}`}>Call Us {PRIMARY_PHONE}</a>
                 </Button>
               </div>
             </FadeIn>
@@ -890,8 +891,8 @@ export function Home() {
                   <Button size="lg" className="rounded-full w-full h-16 text-lg font-bold bg-gradient-to-r from-brand-500 to-emerald-500 hover:from-brand-500 hover:to-emerald-500 text-slate-900 shadow-[0_0_40px_rgba(140,198,63,0.3)] hover:shadow-[0_0_60px_rgba(140,198,63,0.4)] transition-all hover:-translate-y-1" asChild>
                     <Link to="/contact">Book Free Consultation <ArrowRight className="ml-2 w-6 h-6" /></Link>
                   </Button>
-                  <a href="tel:0483986444" className="inline-flex items-center justify-center rounded-full w-full h-16 text-lg font-bold border-2 border-white/20 text-white hover:bg-transparent hover:text-white hover:border-white/20 backdrop-blur-sm transition-all shadow-sm">
-                    Call Us: 0483986444
+                  <a href={`tel:${PRIMARY_PHONE_RAW}`} className="inline-flex items-center justify-center rounded-full w-full h-16 text-lg font-bold border-2 border-white/20 text-white hover:bg-transparent hover:text-white hover:border-white/20 backdrop-blur-sm transition-all shadow-sm">
+                    Call Us: {PRIMARY_PHONE}
                   </a>
                   <p className="text-slate-500 text-sm font-medium text-center mt-2">
                     No obligations. 100% free quote.

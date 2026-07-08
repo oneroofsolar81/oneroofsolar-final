@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Zap, Twitter, Youtube } from "lucide-react";
+import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 export function Footer() {
   return (
@@ -87,8 +88,8 @@ export function Footer() {
                 <div>
                   <div className="text-white font-medium mb-1">Darwin</div>
                   <span className="text-slate-400 block leading-tight">3/97 Pruen Rd, Berrimah<br/>NT 0828</span>
-                  <a href="tel:0483986444" className="text-slate-400 hover:text-brand-400 transition-colors font-medium flex items-center gap-1.5 mt-1.5">
-                    <Phone className="h-3 w-3" /> 0483 986 444
+                  <a href={`tel:${PRIMARY_PHONE_RAW}`} className="text-slate-400 hover:text-brand-400 transition-colors font-medium flex items-center gap-1.5 mt-1.5">
+                    <Phone className="h-3 w-3" /> {PRIMARY_PHONE}
                   </a>
                 </div>
               </li>
@@ -99,8 +100,8 @@ export function Footer() {
                 <div>
                   <div className="text-white font-medium mb-1">Alice Springs</div>
                   <span className="text-slate-400 block leading-tight">44 Zeil St, Araluen<br/>NT 0870</span>
-                  <a href="tel:0483937004" className="text-slate-400 hover:text-brand-400 transition-colors font-medium flex items-center gap-1.5 mt-1.5">
-                    <Phone className="h-3 w-3" /> 0483 937 004
+                  <a href={`tel:${PRIMARY_PHONE_RAW}`} className="text-slate-400 hover:text-brand-400 transition-colors font-medium flex items-center gap-1.5 mt-1.5">
+                    <Phone className="h-3 w-3" /> {PRIMARY_PHONE}
                   </a>
                 </div>
               </li>
