@@ -9,12 +9,14 @@ import { Link } from "react-router-dom";
 import { doc, getDoc, collection, getDocs, updateDoc } from "firebase/firestore";
 import { db } from "@/src/lib/firebase";
 import { ensureDatabaseSeeded } from "@/src/lib/autoSeed";
+import { DEFAULT_PAGES, DEFAULT_SERVICES } from "@/src/lib/defaultData";
 import { FaqSection } from "@/src/components/FaqSection";
 import { SEO } from "@/src/components/SEO";
 
 export function Home() {
-  const [pageData, setPageData] = useState<any>(null);
-  const [servicesData, setServicesData] = useState<any[]>([]);
+  const initialHomeData = DEFAULT_PAGES.find(p => p.id === 'home')?.data || null;
+  const [pageData, setPageData] = useState<any>(initialHomeData);
+  const [servicesData, setServicesData] = useState<any[]>(DEFAULT_SERVICES);
 
   useEffect(() => {
     async function loadData() {
@@ -25,14 +27,22 @@ export function Home() {
         if (docSnap.exists()) {
           const data = docSnap.data();
           setPageData(data);
+        } else {
+          const fallbackHome = DEFAULT_PAGES.find(p => p.id === 'home')?.data;
+          if (fallbackHome) setPageData(fallbackHome);
         }
 
         const servicesSnap = await getDocs(collection(db, 'services'));
         if (!servicesSnap.empty) {
            setServicesData(servicesSnap.docs.map(d => ({ id: d.id, ...d.data() })));
+        } else {
+           setServicesData(DEFAULT_SERVICES);
         }
       } catch (e) {
         console.warn("Using offline fallback data for CMS", e);
+        const fallbackHome = DEFAULT_PAGES.find(p => p.id === 'home')?.data;
+        if (fallbackHome) setPageData(fallbackHome);
+        setServicesData(DEFAULT_SERVICES);
       }
     }
     loadData();

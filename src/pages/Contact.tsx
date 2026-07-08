@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../lib/firebase";
 import { ensureDatabaseSeeded } from "../lib/autoSeed";
+import { DEFAULT_PAGES } from "../lib/defaultData";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { SEO } from "@/src/components/SEO";
 
@@ -11,7 +12,8 @@ export function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [pageData, setPageData] = useState<any>(null);
+  const initialContactData = DEFAULT_PAGES.find(p => p.id === 'contact')?.data || null;
+  const [pageData, setPageData] = useState<any>(initialContactData);
 
   useEffect(() => {
     async function loadData() {
@@ -19,9 +21,16 @@ export function Contact() {
         await ensureDatabaseSeeded();
         const docRef = doc(db, 'pages', 'contact');
         const docSnap = await getDoc(docRef);
-        if (docSnap.exists()) setPageData(docSnap.data());
+        if (docSnap.exists()) {
+          setPageData(docSnap.data());
+        } else {
+          const fallbackContact = DEFAULT_PAGES.find(p => p.id === 'contact')?.data;
+          if (fallbackContact) setPageData(fallbackContact);
+        }
       } catch (e) {
-        console.warn("Using offline fallback data for CMS");
+        console.warn("Using offline fallback data for CMS", e);
+        const fallbackContact = DEFAULT_PAGES.find(p => p.id === 'contact')?.data;
+        if (fallbackContact) setPageData(fallbackContact);
       }
     }
     loadData();
