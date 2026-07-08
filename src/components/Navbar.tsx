@@ -3,6 +3,7 @@ import { Sun, Menu, X, Phone, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Button } from "./ui/Button";
 import { motion, AnimatePresence } from "motion/react";
+import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 function MobileNavItem({ item, setIsOpen, expanded, onToggle }: { item: any; setIsOpen: (val: boolean) => void; expanded: boolean; onToggle: () => void; }) {
   const location = useLocation();
@@ -180,15 +181,15 @@ export function Navbar() {
               ))}
             </div>
             <div className="flex items-center">
-              <a href="tel:0483986444" className="hidden lg:flex items-center gap-2.5 group">
+              <a href={`tel:${PRIMARY_PHONE_RAW}`} className="hidden lg:flex items-center gap-2.5 group">
                 <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                  <div className="w-7 h-7 rounded-full bg-brand-500 flex items-center justify-center">
+                   <div className="w-7 h-7 rounded-full bg-brand-500 flex items-center justify-center">
                     <Phone className="w-3.5 h-3.5 text-white fill-current" />
                   </div>
                 </div>
                 <div className="flex flex-col -space-y-1">
                   <span className={`text-[13px] font-medium transition-colors ${scrolled || isOpen || (!scrolled && location.pathname !== "/" && !location.pathname.startsWith('/services')) ? "text-slate-600" : "text-white/90"}`}>Give Us a Call</span>
-                  <span className={`text-[18px] font-extrabold tracking-tight transition-colors ${scrolled || isOpen || (!scrolled && location.pathname !== "/" && !location.pathname.startsWith('/services')) ? "text-slate-900" : "text-white"}`}>0483 986 444</span>
+                  <span className={`text-[18px] font-extrabold tracking-tight transition-colors ${scrolled || isOpen || (!scrolled && location.pathname !== "/" && !location.pathname.startsWith('/services')) ? "text-slate-900" : "text-white"}`}>{PRIMARY_PHONE}</span>
                 </div>
               </a>
             </div>
@@ -263,7 +264,11 @@ export function Navbar() {
                   ))}
                 </div>
 
-                <div className="mt-auto">
+                <div className="mt-auto pt-6 border-t border-slate-100">
+                  <a href={`tel:${PRIMARY_PHONE_RAW}`} className="flex items-center justify-center gap-3 w-full py-4 px-6 rounded-2xl bg-brand-500 hover:bg-brand-600 text-white font-extrabold text-[16px] transition-all active:scale-[0.98] shadow-lg shadow-brand-500/10">
+                    <Phone className="w-5 h-5" />
+                    <span>Call Us: {PRIMARY_PHONE}</span>
+                  </a>
                 </div>
               </div>
             </motion.div>

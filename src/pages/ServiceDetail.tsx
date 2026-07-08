@@ -566,6 +566,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/src/components/ui/Button";
 import { PartnersMarquee } from "@/src/components/PartnersMarquee";
+import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 type ServiceProduct = {
   title: string;
@@ -1463,7 +1464,7 @@ export function ServiceDetail() {
   const seoData = isSolarInstall
     ? {
         title: "Solar Panel Installation Darwin | Oneroof Solar",
-        metaDescription: "Call 0483 986 444 for CEC-accredited solar panel installation in Darwin, homes, businesses and remote NT properties. 25 years experience. Free quote."
+        metaDescription: `Call ${PRIMARY_PHONE} for CEC-accredited solar panel installation in Darwin, homes, businesses and remote NT properties. 25 years experience. Free quote.`
       }
     : (dbSeo || { title: service.title, metaDescription: service.description });
 
@@ -1534,8 +1535,8 @@ export function ServiceDetail() {
                     className="rounded-full px-8 text-white border-white/20 font-bold hover:bg-transparent hover:text-white hover:border-white/20 transition-all h-14 hover:-translate-y-1"
                     asChild
                   >
-                    <a href="tel:0483986444">
-                      {isSolarInstall ? "Call Us Now" : "Call Us 0483986444"}
+                    <a href={`tel:${PRIMARY_PHONE_RAW}`}>
+                      {isSolarInstall ? "Call Us Now" : `Call Us ${PRIMARY_PHONE}`}
                     </a>
                   </Button>
                   <div className="flex items-center gap-4 text-white text-sm font-semibold px-4">
@@ -1893,7 +1894,7 @@ export function ServiceDetail() {
 
             <div className="text-center max-w-2xl mx-auto">
               <p className="text-slate-700 font-bold text-lg mb-8 leading-relaxed">
-                Not sure if we cover your area? Call us on 0483 986 444 or drop your postcode in the quote form, we'll confirm straight away.
+                Not sure if we cover your area? Call us on {PRIMARY_PHONE} or drop your postcode in the quote form, we'll confirm straight away.
               </p>
               <Button
                 className="bg-brand-500 text-slate-900 font-black hover:bg-brand-400 rounded-full px-8 h-12 inline-flex items-center justify-center transition-all shadow-[0_4px_20px_rgba(140,198,63,0.3)]"
@@ -2207,33 +2208,33 @@ export function ServiceDetail() {
 
                 <div className="space-y-8">
 
-                  <div className="flex items-center gap-6 group cursor-pointer lg:hidden xl:flex">
+                  <a href={`tel:${PRIMARY_PHONE_RAW}`} className="flex items-center gap-6 group cursor-pointer lg:hidden xl:flex">
                     <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-brand-500 group-hover:border-brand-500 transition-all duration-300">
                       <Phone className="w-6 h-6 text-brand-400 group-hover:text-slate-900 transition-colors" />
                     </div>
                     <div>
                       <p className="text-slate-500 text-sm font-medium mb-1 uppercase tracking-wider">
-                        Call Us
+                        Call Us (Darwin)
                       </p>
                       <p className="text-white font-bold text-lg group-hover:text-brand-400 transition-colors">
-                        0483 986 444 (Darwin)
+                        {PRIMARY_PHONE}
                       </p>
                     </div>
-                  </div>
+                  </a>
 
-                  <div className="flex items-center gap-6 group cursor-pointer lg:hidden xl:flex">
+                  <a href={`tel:${PRIMARY_PHONE_RAW}`} className="flex items-center gap-6 group cursor-pointer lg:hidden xl:flex">
                     <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-brand-500 group-hover:border-brand-500 transition-all duration-300">
                       <Phone className="w-6 h-6 text-brand-400 group-hover:text-slate-900 transition-colors" />
                     </div>
                     <div>
                       <p className="text-slate-500 text-sm font-medium mb-1 uppercase tracking-wider">
-                        Call Us
+                        Call Us (Alice Springs)
                       </p>
                       <p className="text-white font-bold text-lg group-hover:text-brand-400 transition-colors">
-                        0483 937 004 (Alice Springs)
+                        {PRIMARY_PHONE}
                       </p>
                     </div>
-                  </div>
+                  </a>
 
                   <div className="flex items-center gap-6 group cursor-pointer">
                     <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-brand-500 group-hover:border-brand-500 transition-all duration-300">
