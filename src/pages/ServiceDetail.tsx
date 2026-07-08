@@ -562,6 +562,7 @@ import {
   Sun,
   Power,
   Wifi,
+  Check,
 } from "lucide-react";
 import { Button } from "@/src/components/ui/Button";
 import { PartnersMarquee } from "@/src/components/PartnersMarquee";
@@ -1010,24 +1011,24 @@ const servicesData: Record<
       "https://www.hachettebookgroup.com/wp-content/uploads/2023/02/WEB-121_cHesh_InstallYourOwnSolarPanels.jpg",
     faqs: [
       {
-        q: "How long does installation take?",
-        a: "Most standard residential solar panel setups can be fully installed, safety-tested, and officially commissioned by our expert teams within a single day, ensuring minimal disruption to your daily home routine and schedule.",
+        q: "How much does solar panel installation cost in Darwin?",
+        a: "Cost depends on system size, panel brand, and inverter. The federal STC rebate reduces upfront costs by 30 to 35%. Contact us for a quote specific to your property and usage.",
       },
       {
-        q: "What about council approvals?",
-        a: "Our administrative team will completely handle all necessary bureaucratic paperwork on your behalf. This covers everything from submitting initial grid connect applications to utility companies, right through to securing the final local council regulatory compliance certificates.",
+        q: "Does the wet season affect solar output?",
+        a: "Yes. Cloud cover from November to March reduces daily generation. We account for this in every system design so your output stays adequate year-round, not just in the dry season.",
       },
       {
-        q: "Can my roof support the weight?",
-        a: "All standard roofs easily support modern solar panels. We conduct a fast structural assessment during your consultation to be certain.",
+        q: "Are your installations rated for Darwin cyclones?",
+        a: "Every installation we complete meets AS/NZS 1170.2 wind load requirements for Darwin's Category D wind region. We do not install products that are not rated for NT conditions.",
       },
       {
-        q: "Do I need to be home during the installation?",
-        a: "You only need to be home briefly at the beginning to confirm panel placement and at the end for the system handover. Our crew handles the rest independently.",
+        q: "Can I add a battery later?",
+        a: "Yes. We include battery-ready wiring in every installation so adding storage later requires no structural changes to your existing system.",
       },
       {
-        q: "Will the installation damage my roof?",
-        a: "No, our certified installers use specialized, weather-sealed mounting brackets specific to your roof type (tin or tile) to ensure the structural integrity of your roof is completely maintained.",
+        q: "Do you service remote NT properties?",
+        a: "Yes. We install and maintain solar systems across Darwin, Palmerston, Humpty Doo, Berry Springs, and remote Northern Territory locations.",
       },
     ],
   },
@@ -1458,9 +1459,17 @@ export function ServiceDetail() {
     "battery-storage",
   ].includes(currentSlug);
 
+  const isSolarInstall = currentSlug === "solar-panel-installation";
+  const seoData = isSolarInstall
+    ? {
+        title: "Solar Panel Installation Darwin | Oneroof Solar",
+        metaDescription: "Call 0483 986 444 for CEC-accredited solar panel installation in Darwin, homes, businesses and remote NT properties. 25 years experience. Free quote."
+      }
+    : (dbSeo || { title: service.title, metaDescription: service.description });
+
   return (
     <div key={currentSlug} className="bg-white text-slate-900 font-sans">
-      <SEO seo={dbSeo || { title: service.title, metaDescription: service.description }} />
+      <SEO seo={seoData} />
       {/* Hero Section */}
       <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
@@ -1470,23 +1479,45 @@ export function ServiceDetail() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
               <FadeIn>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mb-6">
-                  {service.title.split(" ").map((word, i, arr) =>
-                    i === arr.length - 1 ? (
-                      <span
-                        key={i}
-                        className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400 whitespace-nowrap"
-                      >
-                        {word}
-                      </span>
-                    ) : (
-                      word + " "
-                    ),
-                  )}
-                </h1>
-                <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-lg mb-10 font-medium">
-                  {service.description}
-                </p>
+                {isSolarInstall ? (
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mb-6">
+                    Darwin's Solar Panel <br />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
+                      Installation Experts
+                    </span>
+                  </h1>
+                ) : (
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mb-6">
+                    {service.title.split(" ").map((word, i, arr) =>
+                      i === arr.length - 1 ? (
+                        <span
+                          key={i}
+                          className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400 whitespace-nowrap"
+                        >
+                          {word}
+                        </span>
+                      ) : (
+                        word + " "
+                      ),
+                    )}
+                  </h1>
+                )}
+
+                {isSolarInstall ? (
+                  <>
+                    <h2 className="text-xl md:text-2xl text-brand-400 font-bold mb-4">
+                      Stop paying Jacana Energy more than you have to.
+                    </h2>
+                    <p className="text-lg text-slate-300 leading-relaxed max-w-lg mb-10 font-medium">
+                      Oneroof Solar installs residential, commercial, and off-grid solar systems across Darwin and the Northern Territory, backed by 25 years of local experience.
+                    </p>
+                  </>
+                ) : (
+                  <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-lg mb-10 font-medium">
+                    {service.description}
+                  </p>
+                )}
+
                 <div className="flex flex-wrap items-center gap-4">
                   <Button
                     size="lg"
@@ -1503,7 +1534,9 @@ export function ServiceDetail() {
                     className="rounded-full px-8 text-white border-white/20 font-bold hover:bg-transparent hover:text-white hover:border-white/20 transition-all h-14 hover:-translate-y-1"
                     asChild
                   >
-                    <a href="tel:0483986444">Call Us 0483986444</a>
+                    <a href="tel:0483986444">
+                      {isSolarInstall ? "Call Us Now" : "Call Us 0483986444"}
+                    </a>
                   </Button>
                   <div className="flex items-center gap-4 text-white text-sm font-semibold px-4">
                     <div className="flex -space-x-3">
@@ -1537,7 +1570,7 @@ export function ServiceDetail() {
                 <div className="relative h-full rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl flex items-center justify-center bg-slate-900">
                   <img referrerPolicy="no-referrer" loading="lazy"
                     src={service.image}
-                    alt={service.title}
+                    alt={isSolarInstall ? "solar panel installation Darwin, Oneroof Solar team on rooftop" : service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000 opacity-80"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-transparent opacity-90"></div>
@@ -1550,11 +1583,56 @@ export function ServiceDetail() {
 
       <PartnersMarquee />
 
+      {isSolarInstall && (
+        <div className="bg-slate-50 border-b border-slate-200 py-6 relative z-10">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-y-4 md:gap-x-8 text-center md:divide-x md:divide-slate-200">
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">CEC-Accredited Installers.</div>
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">25 Years in the NT.</div>
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">Cyclone-Rated Installations.</div>
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">Residential, Commercial, Off-Grid.</div>
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">$0 Upfront Options Available.</div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Intro Modern Sections */}
       {isDarkTheme ? (
         <DarkIntro service={service} slug={currentSlug} />
+      ) : isSolarInstall ? (
+        <section className="py-14 sm:py-16 md:py-20 bg-white relative overflow-hidden border-t border-slate-100">
+          <div className="absolute top-0 right-0 w-1/3 h-full bg-slate-50/50 -skew-x-12 transform origin-top-right pointer-events-none"></div>
+
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              <FadeIn delay={0.1}>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-brand-500"></span>
+                  Why Solar in Darwin
+                </div>
+                
+                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight">
+                  Darwin Gets More Sun Than Almost Anywhere in Australia
+                </h2>
+                
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">
+                  5.9 peak sun hours per day on average, 8.7 hours in peak dry season. That means your solar system works harder here than it would anywhere in the south, and your payback comes faster. Add the federal STC rebate (up to 35% off your install cost), and going solar in Darwin makes more financial sense than ever.
+                </p>
+              </FadeIn>
+
+              <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-100 shadow-xl h-[300px] sm:h-[400px]">
+                <img referrerPolicy="no-referrer" loading="lazy"
+                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop"
+                  alt="darwin solar power rooftop system, high output dry season NT"
+                  className="w-full h-full object-cover"
+                />
+              </FadeIn>
+            </div>
+          </div>
+        </section>
       ) : (
-        <section className="py-20 lg:py-28 bg-white relative overflow-hidden border-t border-slate-100">
+        <section className="py-14 sm:py-16 md:py-20 bg-white relative overflow-hidden border-t border-slate-100">
           <div className="absolute top-0 right-0 w-1/3 h-full bg-slate-50/50 -skew-x-12 transform origin-top-right pointer-events-none"></div>
 
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -1590,11 +1668,299 @@ export function ServiceDetail() {
         <PackagesSection />
       )}
 
+      {isSolarInstall && (
+        <section className="py-14 sm:py-16 md:py-20 bg-white relative overflow-hidden border-t border-slate-100">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 font-bold mb-4 uppercase tracking-wider text-xs shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                Our Specialized Services
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+                Solar Installation Services in Darwin
+              </h2>
+            </div>
+
+            <div className="space-y-16 sm:space-y-20">
+              {/* Subsection 1: Residential Solar */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                {/* Image (first in DOM so on top on mobile, order-last on desktop) */}
+                <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl h-[300px] sm:h-[400px] lg:order-last group">
+                  <img referrerPolicy="no-referrer" loading="lazy"
+                    src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800&auto=format&fit=crop"
+                    alt="residential solar panels Darwin, rooftop installation Oneroof Solar"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </FadeIn>
+                {/* Text (order-first on desktop) */}
+                <FadeIn delay={0.1} className="lg:order-first">
+                  <h3 className="text-3xl font-black text-slate-900 mb-6 tracking-tight">
+                    Residential Solar
+                  </h3>
+                  <p className="text-lg text-slate-600 leading-relaxed font-medium mb-6">
+                    Cut your power bill, not your lifestyle. We design rooftop solar systems around how your household actually uses power. High aircon load during the day? Evening-heavy consumption? We size your system for your reality, not a generic template.
+                  </p>
+                  <ul className="space-y-4 mb-8">
+                    {[
+                      "Panel selection suited to Darwin's tropical climate.",
+                      "Inverter sized to your system output.",
+                      "Cyclone-rated mounting hardware as standard.",
+                      "Grid connection handled end to end."
+                    ].map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-slate-600 font-medium">
+                        <Check className="w-5 h-5 text-brand-500 shrink-0 mt-1" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button
+                    className="bg-brand-500 text-slate-900 font-bold hover:bg-brand-400 rounded-full px-8 h-12 inline-flex items-center justify-center transition-all shadow-[0_4px_15px_rgba(140,198,63,0.3)]"
+                    onClick={() => {
+                      const formEl = document.querySelector('iframe[title="Book Consultation Form"]');
+                      if (formEl) {
+                        formEl.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                  >
+                    Get a Residential Quote
+                  </Button>
+                </FadeIn>
+              </div>
+
+              {/* Subsection 2: Commercial Solar */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                {/* Image (first in DOM so on top on mobile, left on desktop) */}
+                <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl h-[300px] sm:h-[400px] group">
+                  <img referrerPolicy="no-referrer" loading="lazy"
+                    src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop"
+                    alt="commercial solar panel installation Darwin, Oneroof Solar commercial rooftop"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </FadeIn>
+                {/* Text (right on desktop) */}
+                <FadeIn delay={0.1}>
+                  <h3 className="text-3xl font-black text-slate-900 mb-6 tracking-tight">
+                    Commercial Solar
+                  </h3>
+                  <p className="text-lg text-slate-600 leading-relaxed font-medium mb-6">
+                    Your business runs during the day. So does your solar system. Commercial properties with high daytime loads, retail, hospitality, warehousing, see the strongest return from solar. We design systems matched to your consumption profile and NT grid connection requirements.
+                  </p>
+                  <ul className="space-y-4 mb-8">
+                    {[
+                      "Custom system design based on your energy audit.",
+                      "Scalable from small rooftop to large industrial.",
+                      "Full compliance with Power and Water Corporation requirements.",
+                      "Detailed ROI projection before you commit."
+                    ].map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-slate-600 font-medium">
+                        <Check className="w-5 h-5 text-brand-500 shrink-0 mt-1" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button
+                    className="bg-brand-500 text-slate-900 font-bold hover:bg-brand-400 rounded-full px-8 h-12 inline-flex items-center justify-center transition-all shadow-[0_4px_15px_rgba(140,198,63,0.3)]"
+                    onClick={() => {
+                      const formEl = document.querySelector('iframe[title="Book Consultation Form"]');
+                      if (formEl) {
+                        formEl.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                  >
+                    Get a Commercial Quote
+                  </Button>
+                </FadeIn>
+              </div>
+
+              {/* Subsection 3: Off-Grid Solar Systems */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                {/* Image (first in DOM so on top on mobile, order-last on desktop) */}
+                <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl h-[300px] sm:h-[400px] lg:order-last group">
+                  <img referrerPolicy="no-referrer" loading="lazy"
+                    src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=800&auto=format&fit=crop"
+                    alt="off-grid solar systems Darwin, remote standalone solar storage NT"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </FadeIn>
+                {/* Text (order-first on desktop) */}
+                <FadeIn delay={0.1} className="lg:order-first">
+                  <h3 className="text-3xl font-black text-slate-900 mb-6 tracking-tight">
+                    Off-Grid Solar Systems
+                  </h3>
+                  <p className="text-lg text-slate-600 leading-relaxed font-medium mb-6">
+                    No grid connection? No problem. Remote stations, rural homesteads, and off-grid commercial sites across the NT rely on Oneroof Solar for standalone power systems. We combine solar panels, inverters, and battery storage to deliver reliable renewable electricity, even through wet season cloud cover.
+                  </p>
+                  <ul className="space-y-4 mb-8">
+                    {[
+                      "Full load analysis and seasonal generation modelling.",
+                      "Wet season output factored into every design.",
+                      "Battery storage sized for your actual daily demand.",
+                      "Ongoing remote monitoring available."
+                    ].map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-slate-600 font-medium">
+                        <Check className="w-5 h-5 text-brand-500 shrink-0 mt-1" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button
+                    className="bg-brand-500 text-slate-900 font-bold hover:bg-brand-400 rounded-full px-8 h-12 inline-flex items-center justify-center transition-all shadow-[0_4px_15px_rgba(140,198,63,0.3)]"
+                    onClick={() => {
+                      const formEl = document.querySelector('iframe[title="Book Consultation Form"]');
+                      if (formEl) {
+                        formEl.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                  >
+                    Talk to Us About Off-Grid
+                  </Button>
+                </FadeIn>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {isSolarInstall && (
+        <section className="py-14 sm:py-16 md:py-20 bg-slate-50/50 relative overflow-hidden border-t border-b border-slate-100">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 font-bold mb-4 uppercase tracking-wider text-xs shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                Service Areas
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+                Solar Panel Installation Across Darwin, Areas We Serve
+              </h2>
+              <p className="text-lg font-medium text-slate-600 leading-relaxed">
+                Oneroof Solar installs residential and commercial solar systems across greater Darwin and the Northern Territory. If you're in any of the suburbs or postcodes below, we're your local team.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+              <div className="bg-white p-8 rounded-[2rem] border border-slate-200/60 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(140,198,63,0.08)] hover:border-brand-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
+                <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors">
+                  Darwin City & Inner Suburbs <br />
+                  <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0800 / 0820</span>
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-sm font-medium flex-1">
+                  CBD, Darwin Waterfront, The Esplanade, Larrakeyah, Parap, Cullen Bay, Bayview, East Point, Fannie Bay, Stuart Park, The Gardens, Ludmilla, Winnellie, Woolner.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-[2rem] border border-slate-200/60 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(140,198,63,0.08)] hover:border-brand-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
+                <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors">
+                  Nightcliff & Northern Suburbs <br />
+                  <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0810</span>
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-sm font-medium flex-1">
+                  Nightcliff, Rapid Creek, Coconut Grove, Millner, Wagaman, Moil, Alawa, Lyons, Jingili, Tiwi, Wanguri, Nakara, Brinkin, Lee Point, Muirhead.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-[2rem] border border-slate-200/60 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(140,198,63,0.08)] hover:border-brand-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
+                <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors">
+                  Casuarina and East <br />
+                  <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0810 / 0812</span>
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-sm font-medium flex-1">
+                  Casuarina, Anula, Leanyer, Wulagi, Malak, Karama, Sanderson, Marrara, Buffalo Creek, Holmes.
+                </p>
+              </div>
+
+              <div className="bg-white p-8 rounded-[2rem] border border-slate-200/60 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(140,198,63,0.08)] hover:border-brand-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
+                <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors">
+                  Fannie Bay & Surrounds <br />
+                  <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0820</span>
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-sm font-medium flex-1">
+                  Fannie Bay, Stuart Park, East Point, Bayview, Winnellie, Berrimah, Knuckey Lagoon, The Narrows.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center max-w-2xl mx-auto">
+              <p className="text-slate-700 font-bold text-lg mb-8 leading-relaxed">
+                Not sure if we cover your area? Call us on 0483 986 444 or drop your postcode in the quote form, we'll confirm straight away.
+              </p>
+              <Button
+                className="bg-brand-500 text-slate-900 font-black hover:bg-brand-400 rounded-full px-8 h-12 inline-flex items-center justify-center transition-all shadow-[0_4px_20px_rgba(140,198,63,0.3)]"
+                onClick={() => {
+                  const formEl = document.querySelector('iframe[title="Book Consultation Form"]');
+                  if (formEl) {
+                    formEl.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
+                Request Free Quote
+              </Button>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {isSolarInstall && (
+        <section className="py-14 sm:py-16 md:py-20 bg-white relative overflow-hidden">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+              {/* Image (first in DOM so on top on mobile/tablet) */}
+              <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-2xl h-[300px] sm:h-[400px] lg:h-[450px] group">
+                <img referrerPolicy="no-referrer" loading="lazy"
+                  src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop"
+                  alt="cyclone rated solar panel mounting Darwin, CEC accredited Oneroof Solar"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                <div className="absolute bottom-8 left-8 right-8 text-white font-bold text-lg leading-tight">
+                  Every installation meets AS/NZS 1170.2 wind load requirements.
+                </div>
+              </FadeIn>
+
+              <div className="max-w-xl">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                  Engineered for the NT
+                </div>
+                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-8 tracking-tight leading-[1.1]">
+                  Installed for Darwin, Not Copied from Down South
+                </h2>
+                <p className="text-lg text-slate-600 leading-relaxed font-medium mb-8">
+                  Darwin is a Category D cyclone wind region. Coastal salt air. Tropical humidity. Wet season thermal cycling. Not every solar product survives those conditions. We only install panels, inverters, and racking systems proven to hold up here, and every installation meets AS/NZS 1170.2 wind load requirements. 25 years of NT installations means we know what lasts and what doesn't.
+                </p>
+                <Button
+                  className="bg-slate-900 text-white font-bold hover:bg-slate-800 rounded-full px-8 h-12 inline-flex items-center justify-center transition-all shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
+                  onClick={() => {
+                    const formEl = document.querySelector('iframe[title="Book Consultation Form"]');
+                    if (formEl) {
+                      formEl.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
+                  Get Engineered Quote
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Benefits/Features Grid */}
       {isDarkTheme ? (
         <DarkBenefits service={service} slug={currentSlug} />
       ) : (
-        <section className="py-24 bg-[#0a1118] relative overflow-hidden">
+        <section className="py-14 sm:py-16 md:py-20 bg-[#0a1118] relative overflow-hidden">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
           <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
@@ -1693,7 +2059,7 @@ export function ServiceDetail() {
       )}
 
       {/* Process Section */}
-      <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
+      <section className="py-14 sm:py-16 md:py-20 bg-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-50/50 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-emerald-50/50 rounded-full blur-[100px] pointer-events-none translate-y-1/2 -translate-x-1/3"></div>
         <div className="absolute inset-0 bg-grid-slate-100/[0.04] bg-[size:40px_40px]"></div>
@@ -1816,7 +2182,7 @@ export function ServiceDetail() {
       <GoogleReviews />
 
       {/* CTA / Contact Section */}
-      <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
+      <section className="py-14 sm:py-16 md:py-20 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-dot-slate-200 opacity-50 pointer-events-none"></div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="bg-slate-900 rounded-[3rem] overflow-hidden shadow-2xl relative border border-slate-800">
@@ -1908,10 +2274,11 @@ export function ServiceDetail() {
                   We will get back to you within one business day.
                 </p>
 
-                <div className="w-full relative bg-transparent rounded-xl overflow-hidden" style={{ minHeight: "552px" }}>
+                <div className="w-full relative bg-transparent rounded-xl overflow-hidden" style={{ minHeight: "720px" }}>
                   <iframe
                     src="https://api.oneroofsolar.com.au/widget/form/3uXInokjWftJSJgePj2x"
-                    style={{ width: "100%", height: "100%", border: "none", borderRadius: "8px", minHeight: "552px" }}
+                    style={{ width: "100%", height: "100%", border: "none", borderRadius: "8px", minHeight: "720px", overflow: "hidden" }}
+                    scrolling="no"
                     title="Book Consultation Form"
                   ></iframe>
                 </div>
