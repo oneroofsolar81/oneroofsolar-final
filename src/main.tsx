@@ -20,6 +20,8 @@ console.error = (...args) => {
       lower.includes('gtm') ||
       lower.includes('elfsight') ||
       lower.includes('eapps') ||
+      lower.includes('lc tracking') ||
+      lower.includes('tracking-id') ||
       lower.includes('app_views_limit_reached') ||
       lower.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a')
     );
@@ -41,6 +43,8 @@ window.onerror = (message, source, lineno, colno, error) => {
     lower.includes('gtm') ||
     lower.includes('elfsight') ||
     lower.includes('eapps') ||
+    lower.includes('lc tracking') ||
+    lower.includes('tracking-id') ||
     lower.includes('app_views_limit_reached') ||
     lower.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a')
   ) {
@@ -74,6 +78,8 @@ window.addEventListener('error', (e) => {
     lowerMsg.includes('gtm') ||
     lowerMsg.includes('elfsight') ||
     lowerMsg.includes('eapps') ||
+    lowerMsg.includes('lc tracking') ||
+    lowerMsg.includes('tracking-id') ||
     lowerMsg.includes('app_views_limit_reached') ||
     lowerMsg.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a') ||
     lowerMsg.includes('google-analytics') ||
@@ -93,6 +99,8 @@ window.addEventListener('unhandledrejection', (e) => {
       lower.includes('gtm') ||
       lower.includes('elfsight') ||
       lower.includes('eapps') ||
+      lower.includes('lc tracking') ||
+      lower.includes('tracking-id') ||
       lower.includes('app_views_limit_reached') ||
       lower.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a') ||
       lower.includes('analytics') ||
