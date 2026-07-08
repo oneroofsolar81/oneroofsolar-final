@@ -7,12 +7,14 @@ import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../lib/firebase";
 import { ensureDatabaseSeeded } from "../lib/autoSeed";
+import { DEFAULT_PAGES } from "../lib/defaultData";
 import Markdown from 'react-markdown';
 
 import { SEO } from "@/src/components/SEO";
 
 export function About() {
-  const [pageData, setPageData] = useState<any>(null);
+  const initialAboutData = DEFAULT_PAGES.find(p => p.id === 'about')?.data || null;
+  const [pageData, setPageData] = useState<any>(initialAboutData);
 
   useEffect(() => {
     async function loadData() {
@@ -20,9 +22,16 @@ export function About() {
         await ensureDatabaseSeeded();
         const docRef = doc(db, 'pages', 'about');
         const docSnap = await getDoc(docRef);
-        if (docSnap.exists()) setPageData(docSnap.data());
+        if (docSnap.exists()) {
+          setPageData(docSnap.data());
+        } else {
+          const fallbackAbout = DEFAULT_PAGES.find(p => p.id === 'about')?.data;
+          if (fallbackAbout) setPageData(fallbackAbout);
+        }
       } catch (e) {
-        console.warn("Using offline fallback data for CMS");
+        console.warn("Using offline fallback data for CMS", e);
+        const fallbackAbout = DEFAULT_PAGES.find(p => p.id === 'about')?.data;
+        if (fallbackAbout) setPageData(fallbackAbout);
       }
     }
     loadData();

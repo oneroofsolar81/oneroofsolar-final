@@ -1,10 +1,10 @@
 {
-  "projectId": "crucial-premise-ttn3v",
-  "appId": "1:174054526486:web:32a2cb0cb50e00e5daef37",
-  "apiKey": "AIzaSyAdL37F_iZwDIb2-pktI9cWJzipD8I9rOM",
-  "authDomain": "crucial-premise-ttn3v.firebaseapp.com",
-  "firestoreDatabaseId": "ai-studio-4316ea68-451e-4920-82d6-85d62a746841",
-  "storageBucket": "crucial-premise-ttn3v.firebasestorage.app",
-  "messagingSenderId": "174054526486",
+  "projectId": "gen-lang-client-0905689483",
+  "appId": "1:452635324771:web:88235c60e16bc484366356",
+  "apiKey": "AIzaSyBYlqtq8dT2ckcuKgokKN3eKM5wcMpqlQU",
+  "authDomain": "gen-lang-client-0905689483.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-remixoneroofsola-fb8d8126-c31b-4b76-a3a6-b7c50afc18c0",
+  "storageBucket": "gen-lang-client-0905689483.firebasestorage.app",
+  "messagingSenderId": "452635324771",
   "measurementId": ""
 }
