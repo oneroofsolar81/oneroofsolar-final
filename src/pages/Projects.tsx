@@ -8,6 +8,7 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/src/lib/firebase";
 import { ensureDatabaseSeeded } from "@/src/lib/autoSeed";
 import { SEO } from "@/src/components/SEO";
+import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 // (Keep existing projects array)
 
@@ -337,7 +338,7 @@ export default function Projects() {
                 <Link to="/contact">Get Your Free Quote <ArrowRight className="ml-2 w-5 h-5" /></Link>
               </Button>
               <Button size="lg" variant="outline" className="rounded-full h-16 px-10 text-lg font-bold border-brand-500 text-brand-600 hover:bg-transparent hover:text-brand-600 hover:border-brand-500 hover:-translate-y-1 transition-all" asChild>
-                <a href="tel:0483986444">Call Us 0483986444</a>
+                <a href={`tel:${PRIMARY_PHONE_RAW}`}>Call Us {PRIMARY_PHONE}</a>
               </Button>
             </div>
           </FadeIn>

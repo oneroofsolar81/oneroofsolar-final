@@ -11,6 +11,7 @@ import { DEFAULT_PAGES } from "../lib/defaultData";
 import Markdown from 'react-markdown';
 
 import { SEO } from "@/src/components/SEO";
+import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 export function About() {
   const initialAboutData = DEFAULT_PAGES.find(p => p.id === 'about')?.data || null;
@@ -215,7 +216,7 @@ export function About() {
                 <Link to="/contact">Get Your Free Quote</Link>
               </Button>
               <Button size="lg" variant="outline" className="h-14 px-8 text-lg font-bold rounded-full w-full sm:w-auto border-white/20 text-white hover:bg-transparent hover:text-white hover:border-white/20" asChild>
-                <a href="tel:0483986444">Call Us 0483986444</a>
+                <a href={`tel:${PRIMARY_PHONE_RAW}`}>Call Us {PRIMARY_PHONE}</a>
               </Button>
             </div>
           </div>

@@ -7,6 +7,7 @@ import { ensureDatabaseSeeded } from "../lib/autoSeed";
 import { DEFAULT_PAGES } from "../lib/defaultData";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { SEO } from "@/src/components/SEO";
+import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 export function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
@@ -159,8 +160,8 @@ export function Contact() {
                   <Phone className="w-7 h-7" />
                </div>
                <h3 className="text-slate-500 text-sm font-bold uppercase tracking-widest mb-2">Call Us</h3>
-               <div className="text-lg font-normal text-slate-900 tracking-tight">Darwin: <a href="tel:0483986444" className="hover:text-brand-500 transition-colors">0483 986 444</a></div>
-               <div className="text-lg font-normal text-slate-900 tracking-tight mt-1">Alice Springs: <a href="tel:0483937004" className="hover:text-brand-500 transition-colors">0483 937 004</a></div>
+               <div className="text-lg font-normal text-slate-900 tracking-tight">Darwin: <a href={`tel:${PRIMARY_PHONE_RAW}`} className="hover:text-brand-500 transition-colors">{PRIMARY_PHONE}</a></div>
+               <div className="text-lg font-normal text-slate-900 tracking-tight mt-1">Alice Springs: <a href={`tel:${PRIMARY_PHONE_RAW}`} className="hover:text-brand-500 transition-colors">{PRIMARY_PHONE}</a></div>
              </div>
           </FadeIn>
 
