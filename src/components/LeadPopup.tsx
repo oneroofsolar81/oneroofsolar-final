@@ -199,10 +199,11 @@ export function LeadPopup() {
                   <p className="text-neutral-300 mt-2 font-medium">Takes less than 60 seconds</p>
                 </div>
                 
-                <div className="w-full relative bg-transparent rounded-xl overflow-hidden" style={{ minHeight: "580px" }}>
+                <div className="w-full relative bg-transparent rounded-xl overflow-hidden" style={{ minHeight: "720px" }}>
                   <iframe
                     src="https://api.oneroofsolar.com.au/widget/form/XVgkuW5m65fGTA1nDLGD"
-                    style={{ width: "100%", height: "100%", border: "none", borderRadius: "12px", minHeight: "580px" }}
+                    style={{ width: "100%", height: "100%", border: "none", borderRadius: "12px", minHeight: "720px", overflow: "hidden" }}
+                    scrolling="no"
                     title="Check Eligibility Form"
                   ></iframe>
                 </div>
