@@ -1,8 +1,48 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Intercept and patch dynamic script tags to include data-tracking-id for LC tracking -->
+    <script>
+      (function() {
+        var originalCreateElement = document.createElement;
+        document.createElement = function(tagName, options) {
+          var element = originalCreateElement.call(document, tagName, options);
+          if (tagName && tagName.toLowerCase() === 'script') {
+            var descriptor = Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, 'src') || 
+                             Object.getOwnPropertyDescriptor(Element.prototype, 'src');
+            
+            Object.defineProperty(element, 'src', {
+              get: function() {
+                return descriptor && descriptor.get ? descriptor.get.call(element) : element.getAttribute('src') || '';
+              },
+              set: function(val) {
+                if (descriptor && descriptor.set) {
+                  descriptor.set.call(element, val);
+                } else {
+                  element.setAttribute('src', val);
+                }
+                if (val && (val.indexOf('msgsndr.com') !== -1 || val.indexOf('click.js') !== -1)) {
+                  element.setAttribute('data-tracking-id', 'your-tracking-id');
+                }
+              },
+              configurable: true,
+              enumerable: true
+            });
+
+            var originalSetAttribute = element.setAttribute;
+            element.setAttribute = function(name, value) {
+              originalSetAttribute.call(element, name, value);
+              if (name === 'src' && value && (value.indexOf('msgsndr.com') !== -1 || value.indexOf('click.js') !== -1)) {
+                originalSetAttribute.call(element, 'data-tracking-id', 'your-tracking-id');
+              }
+            };
+          }
+          return element;
+        };
+      })();
+    </script>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script data-tracking-id="your-tracking-id">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);

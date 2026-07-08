@@ -4,7 +4,7 @@ import App from './App.tsx';
 import { ErrorBoundary } from './components/ErrorBoundary.tsx';
 import './index.css';
 
-// Suppress ResizeObserver, Elfsight/eapps, and Google Tag Manager benign errors
+// Suppress ResizeObserver, Elfsight/eapps, Google Tag Manager, and LC tracking errors
 const originalError = console.error;
 console.error = (...args) => {
   const isSuppressed = args.some(arg => {
@@ -21,7 +21,10 @@ console.error = (...args) => {
       lower.includes('elfsight') ||
       lower.includes('eapps') ||
       lower.includes('app_views_limit_reached') ||
-      lower.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a')
+      lower.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a') ||
+      lower.includes('lc tracking') ||
+      lower.includes('tracking-id') ||
+      lower.includes('external tracking')
     );
   });
   if (isSuppressed) return;
@@ -42,7 +45,10 @@ window.onerror = (message, source, lineno, colno, error) => {
     lower.includes('elfsight') ||
     lower.includes('eapps') ||
     lower.includes('app_views_limit_reached') ||
-    lower.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a')
+    lower.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a') ||
+    lower.includes('lc tracking') ||
+    lower.includes('tracking-id') ||
+    lower.includes('external tracking')
   ) {
     return true; // suppresses the browser console error
   }
@@ -77,7 +83,10 @@ window.addEventListener('error', (e) => {
     lowerMsg.includes('app_views_limit_reached') ||
     lowerMsg.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a') ||
     lowerMsg.includes('google-analytics') ||
-    lowerMsg.includes('facebook')
+    lowerMsg.includes('facebook') ||
+    lowerMsg.includes('lc tracking') ||
+    lowerMsg.includes('tracking-id') ||
+    lowerMsg.includes('external tracking')
   ) {
     e.stopImmediatePropagation();
     e.preventDefault();
@@ -99,7 +108,10 @@ window.addEventListener('unhandledrejection', (e) => {
       lower.includes('google') ||
       lower.includes('facebook') ||
       lower.includes('adblock') ||
-      lower.includes('firebase')
+      lower.includes('firebase') ||
+      lower.includes('lc tracking') ||
+      lower.includes('tracking-id') ||
+      lower.includes('external tracking')
     ) {
       e.stopImmediatePropagation();
       e.preventDefault();
