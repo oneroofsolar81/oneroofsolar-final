@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, ReactNode } from "react";
 import { ChevronDown, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FadeIn } from "@/src/components/ui/FadeIn";
 import { Button } from "@/src/components/ui/Button";
 
-export const FaqItem = ({ q, a, index, isOpen, onClick }: { q: string; a: string; index: number; isOpen: boolean; onClick: () => void }) => {
+export const FaqItem = ({ q, a, index, isOpen, onClick }: { q: string; a: ReactNode; index: number; isOpen: boolean; onClick: () => void }) => {
   return (
     <div
       className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
@@ -50,15 +50,15 @@ export const FaqItem = ({ q, a, index, isOpen, onClick }: { q: string; a: string
           isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <p className="text-slate-600 leading-relaxed font-medium pl-12 sm:pl-14 text-base sm:text-lg">
+        <div className="text-slate-600 leading-relaxed font-medium pl-12 sm:pl-14 text-base sm:text-lg">
           {a}
-        </p>
+        </div>
       </div>
     </div>
   );
 };
 
-export function FaqSection({ faqs }: { faqs: { q: string; a: string }[] }) {
+export function FaqSection({ faqs }: { faqs: { q: string; a: ReactNode }[] }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (

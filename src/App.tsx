@@ -14,6 +14,7 @@ import { Contact } from "./pages/Contact";
 import Projects from "./pages/Projects";
 import { Terms } from "./pages/Terms";
 import { Privacy } from "./pages/Privacy";
+import { SolarPanelsBrands } from "./pages/SolarPanelsBrands";
 import { AuthProvider } from "./context/AuthContext";
 import { NotificationProvider } from "./context/NotificationContext";
 import ScrollToTop from "./components/ScrollToTop";
@@ -82,6 +83,7 @@ export default function App() {
               <Route element={<MainLayout />}>
                 <Route path="/" element={<Home />} />
                 <Route path="/services/:slug" element={<ServiceDetail />} />
+                <Route path="/product/solar-panels-brands" element={<SolarPanelsBrands />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
