@@ -88,13 +88,14 @@ export function Navbar() {
       children: [
         { href: "/services/ev-chargers", label: "EV Chargers" },
         { href: "/services/solar-inverters", label: "Solar Inverters" },
-        { href: "/services/solar-panel", label: "Solar Panels" },
+        { href: "/product/solar-panels-brands", label: "Solar Panel Brands" },
         { href: "/services/battery-storage", label: "Battery Storage Solutions" },
       ],
     },
     {
       label: "Services",
       children: [
+        { href: "/services/solar-panel", label: "Solar Panel Services" },
         { href: "/services/solar-panel-installation", label: "Solar Panel Installation" },
         { href: "/services/solar-inverter-installation", label: "Solar Inverter Installation" },
         { href: "/services/solar-battery-installation", label: "Solar Battery Installation" },
