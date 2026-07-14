@@ -58,6 +58,8 @@ export function Footer() {
               <li><Link to="/services/solar-inverters" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Solar Inverters</Link></li>
               <li><Link to="/services/solar-panel" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Solar Panel Services</Link></li>
               <li><Link to="/product/solar-panels-brands" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Solar Panel Brands</Link></li>
+              <li><Link to="/services/solar-panel-repair-darwin" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Solar Panel Repair</Link></li>
+              <li><Link to="/services/solar-panel-maintenance-darwin" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Solar Panel Cleaning & Maintenance</Link></li>
             </ul>
           </div>
 

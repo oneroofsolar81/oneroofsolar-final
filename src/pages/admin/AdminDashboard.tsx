@@ -55,9 +55,9 @@ const DEFAULT_SERVICES = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAYjFUKNKyOMySm6lkKfTkODY4oKkYzGvdgw&s"
   },
   {
-    title: "Repairs & Maintenance",
-    slug: "repairs-and-maintenance",
-    description: "Keep your system running at peak performance with professional panel cleaning, system health checks, and repairs.",
+    title: "Solar Panel Cleaning & Maintenance",
+    slug: "solar-panel-maintenance-darwin",
+    description: "Professional solar panel cleaning and maintenance in Darwin NT. Residential, commercial and solar farms.",
     features: [
       "Professional panel cleaning",
       "System health checks",
