@@ -19,7 +19,7 @@ const SPECIAL_SEO_PAGES = [
   'solar-panel-installation',
   'solar-inverter-installation',
   'solar-battery-installation',
-  'repairs-and-maintenance'
+  'solar-panel-maintenance-darwin'
 ];
 
 const PAGE_NAMES: Record<string, string> = {
@@ -32,7 +32,7 @@ const PAGE_NAMES: Record<string, string> = {
   'solar-panel-installation': 'Solar Panel Installation',
   'solar-inverter-installation': 'Solar Inverter Installation',
   'solar-battery-installation': 'Solar Battery Installation',
-  'repairs-and-maintenance': 'Repairs & Maintenance'
+  'solar-panel-maintenance-darwin': 'Solar Panel Cleaning & Maintenance'
 };
 
 export function AdminItemEditor() {

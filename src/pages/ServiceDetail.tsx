@@ -542,6 +542,9 @@ import { useParams, Link } from "react-router-dom";
 import { FadeIn } from "@/src/components/ui/FadeIn";
 import { PackagesSection } from "@/src/components/PackagesSection";
 import { FaqSection } from "@/src/components/FaqSection";
+import { ResidentialSolarSystemPage } from "@/src/pages/ResidentialSolarSystemPage";
+import { SolarPanelRepairDarwinPage } from "@/src/pages/SolarPanelRepairDarwinPage";
+import { SolarPanelMaintenanceDarwinPage } from "@/src/pages/SolarPanelMaintenanceDarwinPage";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import {
   CheckCircle2,
@@ -1748,6 +1751,51 @@ export function ServiceDetail() {
             </div>
           </div>
         </section>
+      </div>
+    );
+  }
+
+  if (currentSlug === "residential-solar-system") {
+    const seoData = {
+      title: "Residential Solar Systems NT | Darwin, Alice Springs & Palmerston | Oneroof Solar",
+      metaDescription: "Oneroof Solar installs residential solar systems across Darwin, Alice Springs, Palmerston and the NT. STC approved, CEC accredited, cyclone rated. Systems from $7/daily. Get a free quote.",
+      canonicalUrl: "https://oneroofsolar.com.au/services/residential-solar-system",
+    };
+
+    return (
+      <div key={currentSlug} className="bg-white text-slate-900 font-sans">
+        <SEO seo={seoData} />
+        <ResidentialSolarSystemPage />
+      </div>
+    );
+  }
+
+  if (currentSlug === "solar-panel-repair-darwin") {
+    const seoData = {
+      title: "Solar Panel Repair Darwin | Oneroof Solar",
+      metaDescription: "Professional solar panel repair in Darwin. We repair cracked panels, hot spots, storm damage, output loss and all major solar brands. Call Oneroof Solar today.",
+      canonicalUrl: "https://oneroofsolar.com.au/services/solar-panel-repair-darwin",
+    };
+
+    return (
+      <div key={currentSlug} className="bg-white text-slate-900 font-sans">
+        <SEO seo={seoData} />
+        <SolarPanelRepairDarwinPage />
+      </div>
+    );
+  }
+
+  if (currentSlug === "solar-panel-maintenance-darwin") {
+    const seoData = {
+      title: "Solar Panel Cleaning & Maintenance Darwin | OneRoof Solar",
+      metaDescription: "Professional solar panel cleaning and maintenance in Darwin NT. Residential, commercial and solar farms. Get a free quote from OneRoof Solar today.",
+      canonicalUrl: "https://oneroofsolar.com.au/services/solar-panel-maintenance-darwin/",
+    };
+
+    return (
+      <div key={currentSlug} className="bg-white text-slate-900 font-sans">
+        <SEO seo={seoData} />
+        <SolarPanelMaintenanceDarwinPage />
       </div>
     );
   }
