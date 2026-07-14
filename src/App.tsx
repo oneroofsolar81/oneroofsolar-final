@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { BrowserRouter as Router, Routes, Route, Outlet, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Outlet, Link, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import { Layout } from "./components/Layout";
@@ -82,6 +82,7 @@ export default function App() {
               {/* Public Routes */}
               <Route element={<MainLayout />}>
                 <Route path="/" element={<Home />} />
+                <Route path="/services/repairs-and-maintenance" element={<Navigate to="/services/solar-panel-maintenance-darwin" replace />} />
                 <Route path="/services/:slug" element={<ServiceDetail />} />
                 <Route path="/product/solar-panels-brands" element={<SolarPanelsBrands />} />
                 <Route path="/about" element={<About />} />

@@ -35,7 +35,7 @@ export function AdminLayout() {
           <Link to="/admin/collections/services/edit/solar-panel-installation" className="px-3 py-1 text-xs font-medium rounded hover:bg-slate-800 transition text-slate-300">Solar Panel Installation</Link>
           <Link to="/admin/collections/services/edit/solar-inverter-installation" className="px-3 py-1 text-xs font-medium rounded hover:bg-slate-800 transition text-slate-300">Solar Inverter Installation</Link>
           <Link to="/admin/collections/services/edit/solar-battery-installation" className="px-3 py-1 text-xs font-medium rounded hover:bg-slate-800 transition text-slate-300">Solar Battery Installation</Link>
-          <Link to="/admin/collections/services/edit/repairs-and-maintenance" className="px-3 py-1 text-xs font-medium rounded hover:bg-slate-800 transition text-slate-300">Repairs & Maintenance</Link>
+          <Link to="/admin/collections/services/edit/solar-panel-maintenance-darwin" className="px-3 py-1 text-xs font-medium rounded hover:bg-slate-800 transition text-slate-300">Solar Panel Cleaning & Maintenance</Link>
 
           <div className="border-t border-slate-800 mt-4 pt-4">
             <Link to="/admin/collections/services" className="px-3 py-1 text-xs font-semibold text-slate-400 hover:text-white block">View All Raw Collection Docs</Link>
