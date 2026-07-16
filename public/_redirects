@@ -1,3 +1,7 @@
-/services/repairs-and-maintenance/ /services/solar-panel-maintenance-darwin/ 301
-/services/repairs-and-maintenance /services/solar-panel-maintenance-darwin/ 301
+/services/solar-panel/ /solar-panels-darwin/ 301
+/services/solar-panel /solar-panels-darwin/ 301
+/services/repairs-and-maintenance/ /solar-panels-darwin/ 301
+/services/repairs-and-maintenance /solar-panels-darwin/ 301
+/services/solar-panel-maintenance-darwin/ /solar-panels-darwin/ 301
+/services/solar-panel-maintenance-darwin /solar-panels-darwin/ 301
 /* /index.html 200
