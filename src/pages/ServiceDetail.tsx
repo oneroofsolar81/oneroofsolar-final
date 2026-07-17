@@ -569,6 +569,8 @@ import {
 import { Button } from "@/src/components/ui/Button";
 import { PartnersMarquee } from "@/src/components/PartnersMarquee";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
+import solarTechnicianDarwinImg from "../assets/images/solar_technician_darwin_1784286745235.jpg";
+import cycloneSolarDarwinImg from "../assets/images/cyclone_solar_darwin_1784286769053.jpg";
 
 type ServiceProduct = {
   title: string;
@@ -1475,23 +1477,23 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
     const solarPanelFaqs = [
       {
         q: "Do I need maintenance if I just had solar panels installed?",
-        a: "New solar panels rarely need repair but they do need regular maintenance. Darwin's dry season leaves a thick layer of dust, soot, and bird droppings that can block sunlight and reduce your energy generation by up to 30 per cent. We recommend a professional clean and electrical inspection once a year to keep your system performing at its peak and to protect your manufacturer's warranty."
+        a: "Yes, eventually. A new installation doesn't need a clean straight away, but Darwin's dry season builds up dust and debris within months. We recommend your first maintenance check around six months after installation, then every six months after that."
       },
       {
-        q: "Can you repair solar panels installed by another company?",
-        a: "Yes. We repair, service, and maintain all solar systems, regardless of who installed them. If the original installer has gone out of business or is unable to help, our CEC-accredited team can diagnose the issue, handle any manufacturer warranty claims on your behalf, and get your system back online safely."
+        q: "How long do solar panels last in Darwin's climate?",
+        a: "Most quality panels are rated for 25 to 30 years, but Darwin's heat, humidity, and cyclone risk mean output depends heavily on maintenance. Panels that are cleaned and checked regularly hold their rated output far longer than panels left untouched."
       },
       {
-        q: "How often should solar panels be cleaned in Darwin?",
-        a: "For optimal performance, solar panels in Darwin should be cleaned at least once a year, ideally at the end of the dry season (around October/November). This clears the built-up dust and soot before the wet season rains. Some properties near main roads or under heavy tree cover may require cleaning twice a year."
+        q: "What's the difference between a repair and a maintenance visit?",
+        a: "Maintenance is routine, cleaning panels and checking your system before anything goes wrong. Repair is fault-driven, fixing a specific problem like a crack, a hot spot, or a loose connection once output has already dropped."
       },
       {
-        q: "What are the signs that my solar panels need repair?",
-        a: "The most common signs include a sudden increase in your electricity bill, a red or orange fault light on your inverter, or physical damage such as cracks or burn marks on the panels themselves. You can also monitor your output through your system's app. If your generation is significantly lower than usual on a clear sunny day, contact our team for a diagnostic inspection."
+        q: "Do you work on solar panels you did not install?",
+        a: "Yes. We repair and maintain all panel brands and all system types across Darwin and the NT, regardless of who installed the original system."
       },
       {
         q: "Can you handle installation, repair, and maintenance under one contact?",
-        a: "Yes. Oneroof Solar is Darwin's true turnkey solar provider. Whether you need a brand-new custom system designed and installed, an urgent fault repaired on an old setup, or a scheduled annual maintenance clean, you deal with the same local team. One phone call covers every stage of your solar journey."
+        a: "Yes. One call covers all three services. If you're not sure which one you need, tell us what you're seeing and we'll advise you directly."
       }
     ];
 
@@ -1654,7 +1656,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     className="rounded-full px-8 text-white border-white/20 font-bold hover:bg-white/10 hover:text-white hover:border-white/20 transition-all h-14 hover:-translate-y-1"
                     asChild
                   >
-                    <a href={`tel:${PRIMARY_PHONE_RAW}`}>
+                    <a href="tel:0483986444">
                       Call Us Now
                     </a>
                   </Button>
@@ -1681,14 +1683,14 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
         <PartnersMarquee />
 
         {/* Trust Bar Section */}
-        <div className="bg-slate-50 border-b border-slate-200 py-6 relative z-10">
+        <div className="bg-slate-50 border-b border-slate-200 py-6 relative z-10 overflow-hidden">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-y-4 md:gap-x-8 text-center md:divide-x md:divide-slate-200">
-              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">CEC-Accredited Installers.</div>
-              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">25 Years in the NT.</div>
-              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">Cyclone-Rated Installations.</div>
-              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">Residential, Commercial, Off-Grid.</div>
-              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">All Brands Repaired and Maintained.</div>
+            <div className="flex md:grid md:grid-cols-5 overflow-x-auto md:overflow-visible gap-8 md:gap-0 pb-4 md:pb-0 text-center md:divide-x md:divide-slate-200 scrollbar-none snap-x snap-mandatory">
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-4 md:px-2 flex-shrink-0 md:flex-shrink snap-center">CEC-Accredited Installers</div>
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-4 md:px-2 flex-shrink-0 md:flex-shrink snap-center">25 Years in the NT</div>
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-4 md:px-2 flex-shrink-0 md:flex-shrink snap-center">Cyclone-Rated Installations</div>
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-4 md:px-2 flex-shrink-0 md:flex-shrink snap-center">Residential, Commercial, Off-Grid</div>
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-4 md:px-2 flex-shrink-0 md:flex-shrink snap-center">All Brands Repaired and Maintained</div>
             </div>
           </div>
         </div>
@@ -1711,10 +1713,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 
                 <div className="space-y-6 text-lg text-slate-600 leading-relaxed font-medium">
                   <p>
-                    Most Darwin solar companies only do one job well. Some install and move on. Some only turn up when something breaks. Oneroof Solar does all three, because a solar system needs all three at different points in its life.
-                  </p>
-                  <p>
-                    New system, underperforming panels, or a clean that's overdue, you're talking to the same local team either way.
+                    Most Darwin solar companies only do one job well. Some install and move on. Some only turn up when something breaks. Oneroof Solar does all three, because a solar system needs all three at different points in its life. New system, underperforming panels, or a clean that's overdue, you're talking to the same local team either way.
                   </p>
                 </div>
               </FadeIn>
@@ -1723,7 +1722,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="absolute inset-0 bg-[#5BC94D]/10 rounded-[2.5rem] transform rotate-2 scale-105 transition-transform duration-700 group-hover:rotate-4 blur-sm"></div>
                 <div className="relative h-full rounded-[2.5rem] overflow-hidden border border-slate-200 shadow-xl bg-slate-100">
                   <img referrerPolicy="no-referrer" loading="lazy"
-                    src="https://images.unsplash.com/photo-1620024913564-92132585c453?q=80&w=1200&auto=format&fit=crop"
+                    src={solarTechnicianDarwinImg}
                     alt="Oneroof Solar technician servicing solar panels Darwin"
                     className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000"
                   />
@@ -1770,18 +1769,16 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-[#5BC94D] transition-colors uppercase">
                       Solar Panel Installation
                     </h3>
-                    <div className="text-slate-400 text-base leading-relaxed font-medium mb-10 space-y-4">
-                      <p>New to solar, or upgrading an old system?</p>
-                      <p>We design and install residential, commercial, and off-grid solar panel systems sized to how you actually use power, not a generic template.</p>
-                      <p>Every installation meets AS/NZS 1170.2 wind load requirements for Darwin's cyclone region.</p>
+                    <div className="text-slate-400 text-base leading-relaxed font-medium mb-10">
+                      <p>New to solar, or upgrading an old system? We design and install residential, commercial, and off-grid solar panel systems sized to how you actually use power, not a generic template. Every installation meets AS/NZS 1170.2 wind load requirements for Darwin's cyclone region.</p>
                     </div>
 
                     <Link
-                      to="/services/solar-panel-installation"
+                      to="/solar-panel-installation-darwin/"
                       className="mt-auto flex items-center justify-between pt-6 border-t border-white/10 group-hover:border-white/20 transition-colors group/link"
                     >
                       <span className="text-xs font-bold text-white tracking-widest uppercase group-hover/link:text-[#5BC94D] transition-colors">
-                        See Solar Panel Installation
+                        See Solar Panel Installation Darwin
                       </span>
                       <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover/link:bg-[#5BC94D] group-hover/link:text-[#19281D] transition-all duration-300 text-white shadow-sm border border-white/10 group-hover/link:border-[#5BC94D]">
                         <ArrowRight className="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-rotate-45 transition-transform duration-300" />
@@ -1804,17 +1801,16 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-emerald-400 transition-colors uppercase">
                       Solar Panel Repair
                     </h3>
-                    <div className="text-slate-400 text-base leading-relaxed font-medium mb-10 space-y-4">
-                      <p>Cracked panels, hot spots, dropped output, or storm damage, we diagnose the fault and quote before any work starts.</p>
-                      <p>We repair all brands, including systems we did not install.</p>
+                    <div className="text-slate-400 text-base leading-relaxed font-medium mb-10">
+                      <p>Cracked panels, hot spots, dropped output, or storm damage, we diagnose the fault and quote before any work starts. We repair all brands, including systems we did not install.</p>
                     </div>
 
                     <Link
-                      to="/services/solar-panel-repair-darwin"
+                      to="/services/solar-panel-repair-darwin/"
                       className="mt-auto flex items-center justify-between pt-6 border-t border-white/10 group-hover:border-white/20 transition-colors group/link"
                     >
                       <span className="text-xs font-bold text-white tracking-widest uppercase group-hover/link:text-[#5BC94D] transition-colors">
-                        See Solar Panel Repair
+                        See Solar Panel Repair Darwin
                       </span>
                       <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover/link:bg-[#5BC94D] group-hover/link:text-[#19281D] transition-all duration-300 text-white shadow-sm border border-white/10 group-hover/link:border-[#5BC94D]">
                         <ArrowRight className="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-rotate-45 transition-transform duration-300" />
@@ -1837,17 +1833,16 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-[#5BC94D] transition-colors uppercase">
                       Solar Panel Cleaning and Maintenance
                     </h3>
-                    <div className="text-slate-400 text-base leading-relaxed font-medium mb-10 space-y-4">
-                      <p>Darwin's dry season leaves months of dust and droppings on your panels with nothing to wash them off.</p>
-                      <p>We clean with purified water and soft-bristle equipment, and check your inverter, battery, and connections at the same time.</p>
+                    <div className="text-slate-400 text-base leading-relaxed font-medium mb-10">
+                      <p>Darwin's dry season leaves months of dust and droppings on your panels with nothing to wash them off. We clean with purified water and soft-bristle equipment, and check your inverter, battery, and connections at the same time.</p>
                     </div>
 
                     <Link
-                      to="/services/solar-panel-maintenance-darwin"
+                      to="/services/solar-panel-maintenance-darwin/"
                       className="mt-auto flex items-center justify-between pt-6 border-t border-white/10 group-hover:border-white/20 transition-colors group/link"
                     >
                       <span className="text-xs font-bold text-white tracking-widest uppercase group-hover/link:text-[#5BC94D] transition-colors">
-                        See Solar Panel Cleaning and Maintenance
+                        See Solar Panel Cleaning and Maintenance Darwin
                       </span>
                       <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover/link:bg-[#5BC94D] group-hover/link:text-[#19281D] transition-all duration-300 text-white shadow-sm border border-white/10 group-hover/link:border-[#5BC94D]">
                         <ArrowRight className="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-rotate-45 transition-transform duration-300" />
@@ -1858,9 +1853,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               </FadeIn>
             </div>
           </div>
-        </section>
-
-        {/* How to Choose Section */}
+        </section>        {/* How to Choose Section */}
         <section className="py-24 bg-white relative overflow-hidden border-b border-slate-100">
           <div className="absolute top-0 left-0 w-1/3 h-full bg-slate-50/50 skew-x-12 transform origin-top-left pointer-events-none"></div>
 
@@ -1874,6 +1867,9 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight uppercase">
                   Not Sure Which Service You Need?
                 </h2>
+                <p className="text-lg text-slate-600 leading-relaxed font-medium mt-4 max-w-2xl mx-auto">
+                  If your panels are new or you don't have solar yet, start with installation. If your output has dropped, your bill has gone up, or a panel looks damaged, that's a repair job. If your system works fine but hasn't been cleaned or checked in six months, book a maintenance visit. If you're not sure, call 0483 986 444 and describe what you're seeing, we'll point you to the right service.
+                </p>
               </FadeIn>
             </div>
 
@@ -1930,13 +1926,63 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     </p>
                   </div>
                   <div className="mt-6 pt-4 border-t border-slate-950/10">
-                    <a href={`tel:${PRIMARY_PHONE_RAW}`} className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-slate-950 hover:underline">
+                    <a href="tel:0483986444" className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-slate-950 hover:underline">
                       Call 0483 986 444 Now <ArrowRight className="w-4 h-4" />
                     </a>
                   </div>
                 </div>
               </FadeIn>
             </div>
+          </div>
+        </section>
+
+        {/* Built for Darwin's Conditions Section */}
+        <section className="py-24 bg-slate-50 relative overflow-hidden border-b border-slate-200">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+              <FadeIn className="order-2 lg:order-1 relative group cursor-pointer h-[400px] lg:h-[500px]">
+                <div className="absolute inset-0 bg-[#5BC94D]/10 rounded-[2.5rem] transform -rotate-2 scale-105 transition-transform duration-700 group-hover:rotate-4 blur-sm"></div>
+                <div className="relative h-full rounded-[2.5rem] overflow-hidden border border-slate-200 shadow-xl bg-slate-100">
+                  <img referrerPolicy="no-referrer" loading="lazy"
+                    src={cycloneSolarDarwinImg}
+                    alt="cyclone rated solar panel Darwin, Oneroof Solar"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-1000"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
+                </div>
+              </FadeIn>
+
+              <FadeIn className="order-1 lg:order-2">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-[#5BC94D] animate-pulse"></span>
+                  Cyclone Certified
+                </div>
+                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight uppercase">
+                  Built for Darwin's Conditions, Not Copied from Down South
+                </h2>
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">
+                  Darwin is a Category D cyclone wind region with coastal salt air, tropical humidity, and a wet season that stresses electrical connections. Products and installation methods that work in southern states don't always hold up here. Every system we install, repair, or maintain is assessed against Darwin's specific conditions, not a national default.
+                </p>
+              </FadeIn>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Solar Makes Sense in Darwin Section */}
+        <section className="py-24 bg-white relative overflow-hidden border-b border-slate-100">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <FadeIn>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-[#5BC94D] animate-pulse"></span>
+                NT Advantage
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-8 tracking-tight uppercase">
+                Why Solar Makes Sense in Darwin
+              </h2>
+              <p className="text-xl text-slate-600 leading-relaxed font-medium max-w-3xl mx-auto">
+                Darwin averages close to 6 peak sun hours a day, higher in the dry season, so a solar system here works harder than one in the south. The federal STC rebate cuts installation costs, and the NT Government's HBBS battery grant adds further savings on qualifying battery-plus-solar installs. Combined with high NT electricity rates, well-maintained solar panels in Darwin pay for themselves faster than almost anywhere else in Australia.
+              </p>
+            </FadeIn>
           </div>
         </section>
 
@@ -1947,10 +1993,10 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               <div className="bg-[#19281D] p-12 text-center rounded-[2.5rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#5BC94D]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
                 <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 uppercase tracking-tight">
-                  One Team Every Stage of Your Solar Panels Life
+                  One Team, Every Stage of Your Solar Panel's Life
                 </h3>
                 <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto font-medium">
-                  Installation repair or maintenance get a free quote from Darwins most experienced solar panel team
+                  Installation, repair, or maintenance, get a free quote from Darwin's most experienced solar panel team.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Link 
@@ -1971,6 +2017,103 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           </div>
         </section>
 
+        {/* Service Areas Section */}
+        <section className="py-24 bg-slate-50 relative overflow-hidden border-b border-slate-200">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-3xl mx-auto text-center mb-16">
+              <FadeIn>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-[#5BC94D] animate-pulse"></span>
+                  Local Coverage
+                </div>
+                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight uppercase">
+                  Solar Panel Services Across Darwin, Areas We Serve
+                </h2>
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">
+                  Oneroof Solar installs, repairs, and maintains solar panel systems across greater Darwin and the Northern Territory. If you're in any of the suburbs or postcodes below, we're your local team.
+                </p>
+              </FadeIn>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+              {/* Group 1 */}
+              <FadeIn delay={0.1}>
+                <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
+                  <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
+                    Darwin City and Inner Suburbs
+                  </h3>
+                  <div className="text-xs font-bold text-[#5BC94D] uppercase tracking-wider mb-4">
+                    NT 0800 / 0820
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed font-medium">
+                    CBD, Darwin Waterfront, The Esplanade, Larrakeyah, Parap, Cullen Bay, Bayview, East Point, Fannie Bay, Stuart Park, The Gardens, Ludmilla, Winnellie, Woolner.
+                  </p>
+                </div>
+              </FadeIn>
+
+              {/* Group 2 */}
+              <FadeIn delay={0.2}>
+                <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
+                  <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
+                    Nightcliff, Rapid Creek and Northern Suburbs
+                  </h3>
+                  <div className="text-xs font-bold text-[#5BC94D] uppercase tracking-wider mb-4">
+                    NT 0810
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed font-medium">
+                    Nightcliff, Rapid Creek, Coconut Grove, Millner, Wagaman, Moil, Alawa, Lyons, Jingili, Tiwi, Wanguri, Nakara, Brinkin, Lee Point, Muirhead.
+                  </p>
+                </div>
+              </FadeIn>
+
+              {/* Group 3 */}
+              <FadeIn delay={0.3}>
+                <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
+                  <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
+                    Casuarina and East
+                  </h3>
+                  <div className="text-xs font-bold text-[#5BC94D] uppercase tracking-wider mb-4">
+                    NT 0810 / 0812
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed font-medium">
+                    Casuarina, Anula, Leanyer, Wulagi, Malak, Karama, Sanderson, Marrara, Buffalo Creek, Holmes.
+                  </p>
+                </div>
+              </FadeIn>
+
+              {/* Group 4 */}
+              <FadeIn delay={0.4}>
+                <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
+                  <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
+                    Fannie Bay, Stuart Park and Surrounds
+                  </h3>
+                  <div className="text-xs font-bold text-[#5BC94D] uppercase tracking-wider mb-4">
+                    NT 0820
+                  </div>
+                  <p className="text-sm text-slate-600 leading-relaxed font-medium">
+                    Fannie Bay, Stuart Park, East Point, Bayview, Winnellie, Berrimah, Knuckey Lagoon, The Narrows.
+                  </p>
+                </div>
+              </FadeIn>
+            </div>
+
+            <FadeIn delay={0.5} className="max-w-3xl mx-auto text-center border-t border-slate-200 pt-10">
+              <p className="text-base text-slate-700 font-bold mb-6">
+                Not sure if we cover your area? Call us on 0483 986 444 or drop your postcode in the quote form, we'll confirm straight away.
+              </p>
+              <Button
+                size="lg"
+                className="rounded-full px-8 bg-[#5BC94D] hover:bg-[#4cb83f] text-slate-900 font-bold transition-all shadow-md uppercase tracking-wider text-xs"
+                asChild
+              >
+                <Link to="/contact">
+                  Request Free Quote
+                </Link>
+              </Button>
+            </FadeIn>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <FaqSection faqs={solarPanelFaqs} heading="Frequently Asked Questions" />
 
@@ -1986,10 +2129,10 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   Get Your Free Solar Panel Quote Today
                 </h3>
                 <p className="text-slate-300 text-lg mb-4 max-w-2xl mx-auto font-medium">
-                  25 years of solar panel installation repair and maintenance across Darwin and the NT
+                  25 years of solar panel installation, repair, and maintenance across Darwin and the NT.
                 </p>
                 <p className="text-slate-400 text-base mb-10 max-w-xl mx-auto font-medium">
-                  Tell us what you need and we will confirm the right service and the right cost
+                  Tell us what you need and we'll confirm the right service and the right cost.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   <Link 

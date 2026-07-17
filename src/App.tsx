@@ -85,6 +85,8 @@ export default function App() {
                 <Route path="/services/repairs-and-maintenance" element={<Navigate to="/solar-panels-darwin" replace />} />
                 <Route path="/services/solar-panel" element={<Navigate to="/solar-panels-darwin" replace />} />
                 <Route path="/solar-panels-darwin" element={<ServiceDetail slugOverride="solar-panel" />} />
+                <Route path="/solar-panel-installation-darwin" element={<ServiceDetail slugOverride="solar-panel-installation" />} />
+                <Route path="/solar-panel-installation-darwin/" element={<ServiceDetail slugOverride="solar-panel-installation" />} />
                 
                 {/* Residential Solar Redirects */}
                 <Route path="/services/residential-solar-system" element={<Navigate to="/residential-solar-system" replace />} />
