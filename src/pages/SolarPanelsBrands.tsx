@@ -22,6 +22,8 @@ import {
   X,
 } from "lucide-react";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
+import jaSolarImg from "../assets/images/ja_solar_panel_1784285635251.jpg";
+import longiSolarImg from "../assets/images/longi_solar_panel_1784285655984.jpg";
 
 type ProductBrand = {
   id: string;
@@ -64,6 +66,26 @@ const BRAND_PRODUCTS: ProductBrand[] = [
     specLabel: "Full specs and models: Jinko solar panels",
     productLink: "/solar-panels/jinko/",
     image: "https://i.postimg.cc/T58B094S/Jinko-Solar-Tiger-Neo-JKM585N-72HL4-BDV-585W-ver2-1-removebg-preview-(1).png",
+  },
+  {
+    id: "ja-solar",
+    title: "JA Solar - Proven Value and Performance",
+    excerpt: "JA Solar is one of the world’s largest solar manufacturers, with more than 346 gigawatts shipped globally.",
+    remaining: "Its DeepBlue N-type TOPCon panels deliver over 22 per cent efficiency and include a 30-year performance warranty. As a Tier 1 brand, JA Solar offers proven reliability and strong value for NT homeowners.",
+    bestFor: "NT homeowners seeking reliable, high-efficiency solar panels from a globally established brand at a competitive price point.",
+    specLabel: "FULL SPECS AND MODELS: JA SOLAR PANELS",
+    productLink: "/product/ja-solar/",
+    image: jaSolarImg,
+  },
+  {
+    id: "longi-solar",
+    title: "LONGi Solar - High Efficiency and Anti-Dust Design",
+    excerpt: "LONGi is the world’s largest solar panel manufacturer.",
+    remaining: "Its Hi-MO X6 panels use advanced HPBC technology, delivering efficiency of up to 23.3 per cent. The anti-dust frame is well suited to Darwin’s dust, humidity, and coastal salt conditions.",
+    bestFor: "Darwin homeowners seeking high-efficiency solar panels designed to perform reliably in hot, humid, dusty, and coastal environments.",
+    specLabel: "FULL SPECS AND MODELS: LONGi SOLAR PANELS",
+    productLink: "/product/longi-solar/",
+    image: longiSolarImg,
   },
 ];
 
@@ -409,7 +431,7 @@ export function SolarPanelsBrands() {
                   <span className="text-brand-400">We Install Across the NT</span>
                 </h2>
                 <p className="text-slate-400 font-medium text-lg leading-relaxed">
-                  Choosing the right solar panel brand matters more in the Northern Territory than almost anywhere else in Australia. Darwin's dry season pushes rooftop temperatures past 70°C. Cyclone season demands structural wind load certification. And your panels need to keep producing for 25 years in one of the harshest climates on the continent. At Oneroof Solar, we install three brands across Darwin, Palmerston, Alice Springs and the broader NT: AIKO, REC and Jinko. Each one earns its place for a specific reason.
+                  Choosing the right solar panel brand matters more in the Northern Territory than almost anywhere else in Australia. Darwin's dry season pushes rooftop temperatures past 70°C. Cyclone season demands structural wind load certification. And your panels need to keep producing for 25 years in one of the harshest climates on the continent. At Oneroof Solar, we install five brands across Darwin, Palmerston, Alice Springs and the broader NT: AIKO, REC, Jinko, JA Solar and LONGi. Each one earns its place for a specific reason.
                 </p>
               </FadeIn>
             </div>

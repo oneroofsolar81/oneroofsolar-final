@@ -58,7 +58,7 @@ export const FaqItem = ({ q, a, index, isOpen, onClick }: { q: string; a: ReactN
   );
 };
 
-export function FaqSection({ faqs }: { faqs: { q: string; a: ReactNode }[] }) {
+export function FaqSection({ faqs, heading }: { faqs: { q: string; a: ReactNode }[]; heading?: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -78,8 +78,12 @@ export function FaqSection({ faqs }: { faqs: { q: string; a: ReactNode }[] }) {
                 <span className="text-sm font-bold text-slate-700 uppercase tracking-widest">Support</span>
               </div>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.1] mb-6">
-                Common <br className="hidden sm:block" />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-500">Inquiries</span>
+                {heading || (
+                  <>
+                    Common <br className="hidden sm:block" />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-500">Inquiries</span>
+                  </>
+                )}
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed font-medium mb-8 max-w-md">
                 Everything you need to know about making the switch to solar. Can't find the answer you're looking for?
