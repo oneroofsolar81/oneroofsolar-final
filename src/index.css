@@ -111,3 +111,59 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
+/* Premium Warranty Badge Animations */
+@keyframes premium-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes green-glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(140, 198, 63, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 15px 4px rgba(140, 198, 63, 0.7);
+  }
+}
+
+@keyframes shine-sweep {
+  0% {
+    left: -100%;
+  }
+  20%, 100% {
+    left: 200%;
+  }
+}
+
+.premium-warranty-badge {
+  position: absolute !important;
+  animation: premium-float 6s ease-in-out infinite;
+  overflow: hidden;
+}
+
+.premium-warranty-badge::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  transform: skewX(-25deg);
+  animation: shine-sweep 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  pointer-events: none;
+}
+
+.premium-glow-icon {
+  animation: green-glow-pulse 4s ease-in-out infinite;
+}
+
+

@@ -1,4 +1,26 @@
 {
+  "redirects": [
+    {
+      "source": "/services/residential-solar-system",
+      "destination": "/residential-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/residential-solar",
+      "destination": "/residential-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/systems/residential",
+      "destination": "/residential-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/services/solar-panel",
+      "destination": "/solar-panels-darwin",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

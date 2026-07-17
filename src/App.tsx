@@ -82,7 +82,20 @@ export default function App() {
               {/* Public Routes */}
               <Route element={<MainLayout />}>
                 <Route path="/" element={<Home />} />
-                <Route path="/services/repairs-and-maintenance" element={<Navigate to="/services/solar-panel-maintenance-darwin" replace />} />
+                <Route path="/services/repairs-and-maintenance" element={<Navigate to="/solar-panels-darwin" replace />} />
+                <Route path="/services/solar-panel" element={<Navigate to="/solar-panels-darwin" replace />} />
+                <Route path="/solar-panels-darwin" element={<ServiceDetail slugOverride="solar-panel" />} />
+                <Route path="/solar-panel-installation-darwin" element={<ServiceDetail slugOverride="solar-panel-installation" />} />
+                <Route path="/solar-panel-installation-darwin/" element={<ServiceDetail slugOverride="solar-panel-installation" />} />
+                
+                {/* Residential Solar Redirects */}
+                <Route path="/services/residential-solar-system" element={<Navigate to="/residential-solar-system" replace />} />
+                <Route path="/residential-solar" element={<Navigate to="/residential-solar-system" replace />} />
+                <Route path="/systems/residential" element={<Navigate to="/residential-solar-system" replace />} />
+                
+                {/* Residential Solar New Canonical Route */}
+                <Route path="/residential-solar-system" element={<ServiceDetail slugOverride="residential-solar-system" />} />
+                
                 <Route path="/services/:slug" element={<ServiceDetail />} />
                 <Route path="/product/solar-panels-brands" element={<SolarPanelsBrands />} />
                 <Route path="/about" element={<About />} />

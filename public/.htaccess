@@ -2,8 +2,12 @@
   RewriteEngine On
   RewriteBase /
   
-  Redirect 301 /services/repairs-and-maintenance/ /services/solar-panel-maintenance-darwin/
-  Redirect 301 /services/repairs-and-maintenance /services/solar-panel-maintenance-darwin/
+  Redirect 301 /services/solar-panel/ /solar-panels-darwin/
+  Redirect 301 /services/solar-panel /solar-panels-darwin/
+  Redirect 301 /services/repairs-and-maintenance/ /solar-panels-darwin/
+  Redirect 301 /services/repairs-and-maintenance /solar-panels-darwin/
+  Redirect 301 /services/solar-panel-maintenance-darwin/ /solar-panels-darwin/
+  Redirect 301 /services/solar-panel-maintenance-darwin /solar-panels-darwin/
 
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f

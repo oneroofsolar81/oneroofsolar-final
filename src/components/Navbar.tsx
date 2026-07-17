@@ -79,7 +79,7 @@ export function Navbar() {
     {
       label: "Solar System",
       children: [
-        { href: "/services/residential-solar-system", label: "Residential Solar Systems" },
+        { href: "/residential-solar-system", label: "Residential Solar Systems" },
         { href: "/services/commercial-solar-system", label: "Commercial Solar Systems" },
       ],
     },
@@ -95,7 +95,7 @@ export function Navbar() {
     {
       label: "Services",
       children: [
-        { href: "/services/solar-panel", label: "Solar Panel Services" },
+        { href: "/solar-panels-darwin", label: "Solar Panel" },
         { href: "/services/solar-panel-installation", label: "Solar Panel Installation" },
         { href: "/services/solar-inverter-installation", label: "Solar Inverter Installation" },
         { href: "/services/solar-battery-installation", label: "Solar Battery Installation" },

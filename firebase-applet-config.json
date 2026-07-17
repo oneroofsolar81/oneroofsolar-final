@@ -6,5 +6,7 @@
   "firestoreDatabaseId": "ai-studio-remixoneroofsola-fb8d8126-c31b-4b76-a3a6-b7c50afc18c0",
   "storageBucket": "gen-lang-client-0905689483.firebasestorage.app",
   "messagingSenderId": "452635324771",
-  "measurementId": ""
+  "measurementId": "",
+  "oAuthClientId": "452635324771-ufe4vb7onaq338sd53b81u6kvad53caf.apps.googleusercontent.com",
+  "recaptchaSiteKey": ""
 }

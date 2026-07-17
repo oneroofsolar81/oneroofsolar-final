@@ -2,7 +2,13 @@ import React from 'react';
 import { FadeIn } from "@/src/components/ui/FadeIn";
 import { Link } from "react-router-dom";
 
-export function PackagesSection() {
+interface PackagesSectionProps {
+  title?: string;
+  subheadline?: string;
+  subtitle?: string;
+}
+
+export function PackagesSection({ title, subheadline, subtitle }: PackagesSectionProps = {}) {
   return (
     <section className="py-20 lg:py-32 bg-[#f4f7fb] relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -14,11 +20,16 @@ export function PackagesSection() {
               </div>
             </div>
             <div className="inline-flex items-center gap-2 text-slate-800 font-black mb-3 text-[13px] uppercase tracking-widest">
-              Designed for Darwin Homes
+              {subtitle || "Designed for Darwin Homes"}
             </div>
-            <h2 className="text-[40px] md:text-[48px] font-black tracking-tight text-[#223351] mb-12">
-              Exclusive Solar & Battery Deals
+            <h2 className="text-[40px] md:text-[48px] font-black tracking-tight text-[#223351] mb-6">
+              {title || "Exclusive Solar & Battery Deals"}
             </h2>
+            {subheadline && (
+              <p className="text-lg text-slate-600 font-medium max-w-2xl mx-auto mb-12">
+                {subheadline}
+              </p>
+            )}
           </FadeIn>
         </div>
 
