@@ -10,7 +10,8 @@ import {
   Shield,
   Zap,
   CheckCircle2,
-  Loader2
+  Loader2,
+  ChevronRight
 } from "lucide-react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../lib/firebase";
@@ -21,6 +22,103 @@ import { FaqSection } from "@/src/components/FaqSection";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { PartnersMarquee } from "@/src/components/PartnersMarquee";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
+
+const serviceAreas = [
+  {
+    hub: "Darwin and Greater Darwin",
+    postcodes: "0800, 0810, 0820",
+    suburbs: [
+      "Darwin CBD", "Larrakeyah", "Fannie Bay", "Stuart Park", "Nightcliff", 
+      "Rapid Creek", "Coconut Grove", "Casuarina", "Tiwi", "Muirhead", 
+      "Nakara", "Leanyer", "Winnellie", "Berrimah", "Marrara"
+    ],
+    linkText: "View Darwin Solar",
+    status: "Primary Hub"
+  },
+  {
+    hub: "Palmerston and Rosebery",
+    postcodes: "0828-0839",
+    suburbs: [
+      "Durack", "Gray", "Woodroffe", "Farrar", "Archer", "Moulden", "Driver", 
+      "Bellamack", "Bakewell", "Gunn", "Johnston", "Rosebery", "Zuccoli", "Marlow Lagoon"
+    ],
+    linkText: "View Palmerston Solar",
+    status: "Active"
+  },
+  {
+    hub: "Rural Darwin and Humpty Doo",
+    postcodes: "0837-0841",
+    suburbs: [
+      "Humpty Doo", "Girraween", "Coolalinga", "Virginia", "Howard Springs", 
+      "Berry Springs", "Darwin River", "Batchelor", "Wagait Beach", "Mandorah"
+    ],
+    linkText: "View Rural Darwin Solar",
+    status: "Active"
+  },
+  {
+    hub: "Litchfield region",
+    postcodes: "0822, 0837-0841",
+    suburbs: [
+      "Litchfield Park", "Rum Jungle", "Acacia Hills", "Noonamah", "Hughes", 
+      "Manton", "Freds Pass", "Dundee Beach", "Dundee Downs", "Lake Bennett"
+    ],
+    linkText: "View Litchfield Solar",
+    status: "Active"
+  },
+  {
+    hub: "Katherine",
+    postcodes: "0845-0853",
+    suburbs: [
+      "Katherine CBD", "Tindal", "Manbulloo", "Binjari", "Adelaide River", 
+      "Pine Creek", "Mataranka", "Daly Waters"
+    ],
+    linkText: "View Katherine Solar",
+    status: "Regional"
+  },
+  {
+    hub: "Kakadu region",
+    postcodes: "0886",
+    suburbs: [
+      "Jabiru", "Gunbalanya", "Ramingining", "Milingimbi", "Warruwi", "Remote Specialists", "Off-Grid Specialists"
+    ],
+    linkText: "View Kakadu Solar",
+    status: "Remote"
+  },
+  {
+    hub: "Tennant Creek and Barkly",
+    postcodes: "0861",
+    suburbs: [
+      "Tennant Creek", "Elliott", "Renner Springs", "Three Ways", "Ali Curung", "Darwin Corridor", "Alice Corridor"
+    ],
+    linkText: "View Tennant Creek Solar",
+    status: "Regional"
+  },
+  {
+    hub: "Alice Springs",
+    postcodes: "0870-0872",
+    suburbs: [
+      "Alice Springs CBD", "Todd Mall", "Flynn", "Ross", "Sadadeen", "Araluen", 
+      "Larapinta", "Gillen", "Braitling", "Ciccone", "Desert Springs", "Ilparpa"
+    ],
+    linkText: "View Alice Springs Solar",
+    status: "2nd Hub"
+  },
+  {
+    hub: "Yulara and Central NT",
+    postcodes: "0872",
+    suburbs: [
+      "Yulara", "Mutitjulu", "Ti Tree", "Yuendumu", "Hermannsburg", "Finke", "Remote Systems", "Off-Grid Systems"
+    ],
+    linkText: "View Yulara Solar",
+    status: "Remote"
+  }
+];
+
+const allPostcodes = [
+  "0800", "0810", "0812", "0820", "0822", "0828", "0829", "0830", "0832", 
+  "0834", "0835", "0836", "0837", "0838", "0839", "0840", "0841", "0845", 
+  "0846", "0847", "0850", "0852", "0853", "0861", "0870", "0872", "0886"
+];
 
 export function ResidentialSolarSystemPage() {
   // Inject JSON-LD Schema
@@ -820,80 +918,96 @@ export function ResidentialSolarSystemPage() {
       {/* SECTION 7: NT LOCATIONS */}
       <section className="py-24 bg-slate-50 relative overflow-hidden border-t border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+          
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-[#19281D] font-bold text-xs mb-6 border border-emerald-100 uppercase tracking-widest shadow-sm">
-                <MapPin className="w-4 h-4 text-[#5BC94D]" /> Service Areas
-              </div>
+              <span className="text-xs font-bold tracking-widest text-[#5BC94D] uppercase mb-3 block">WHERE WE SERVE</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-tight leading-tight">
-                Residential Solar Installations Across the NT
+                Solar Installations Across <span className="text-[#5BC94D]">Darwin & the NT</span>
               </h2>
               <p className="text-lg text-slate-600 font-medium leading-relaxed">
-                Oneroof Solar installs residential solar systems across Darwin, Palmerston, Alice Springs and the broader Northern Territory. We are the only NT-based solar company with dedicated installation teams in both Darwin and Alice Springs.
+                Oneroof Solar installs residential solar systems across Greater Darwin, Palmerston, Alice Springs, Katherine, and surrounding Northern Territory communities. We are the only NT-based solar company with dedicated installation teams in both Darwin and Alice Springs.
               </p>
             </FadeIn>
           </div>
 
-          <div className="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden max-w-6xl mx-auto">
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse text-left text-sm">
-                <thead>
-                  <tr className="bg-[#19281D] text-white text-[13px] uppercase tracking-wider font-bold">
-                    <th className="p-5 sm:p-6 border-b border-[#19281D]/10">Location Hub</th>
-                    <th className="p-5 sm:p-6 border-b border-[#19281D]/10">Postcodes</th>
-                    <th className="p-5 sm:p-6 border-b border-[#19281D]/10">Key Areas Covered</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-slate-100 text-slate-700 font-medium">
-                  <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="p-5 sm:p-6 font-extrabold text-slate-900 text-base">Darwin and Greater Darwin</td>
-                    <td className="p-5 sm:p-6 font-mono text-emerald-700">0800, 0810, 0820</td>
-                    <td className="p-5 sm:p-6 leading-relaxed">Darwin CBD, Larrakeyah, Fannie Bay, Stuart Park, Nightcliff, Rapid Creek, Coconut Grove, Casuarina, Tiwi, Muirhead, Nakara, Leanyer, Winnellie, Berrimah, Marrara</td>
-                  </tr>
-                  <tr className="bg-slate-50/30 hover:bg-slate-50 transition-colors">
-                    <td className="p-5 sm:p-6 font-extrabold text-slate-900 text-base">Palmerston and Rosebery</td>
-                    <td className="p-5 sm:p-6 font-mono text-emerald-700">0828-0839</td>
-                    <td className="p-5 sm:p-6 leading-relaxed">Durack, Gray, Woodroffe, Farrar, Archer, Moulden, Driver, Bellamack, Bakewell, Gunn, Johnston, Rosebery, Zuccoli, Marlow Lagoon</td>
-                  </tr>
-                  <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="p-5 sm:p-6 font-extrabold text-slate-900 text-base">Rural Darwin and Humpty Doo</td>
-                    <td className="p-5 sm:p-6 font-mono text-emerald-700">0837-0841</td>
-                    <td className="p-5 sm:p-6 leading-relaxed">Humpty Doo, Girraween, Coolalinga, Virginia, Howard Springs, Berry Springs, Darwin River, Batchelor, Wagait Beach, Mandorah</td>
-                  </tr>
-                  <tr className="bg-slate-50/30 hover:bg-slate-50 transition-colors">
-                    <td className="p-5 sm:p-6 font-extrabold text-slate-900 text-base">Litchfield region</td>
-                    <td className="p-5 sm:p-6 font-mono text-emerald-700">0822, 0837-0841</td>
-                    <td className="p-5 sm:p-6 leading-relaxed">Litchfield Park, Rum Jungle, Acacia Hills, Noonamah, Hughes, Manton, Freds Pass, Dundee Beach, Dundee Downs, Lake Bennett</td>
-                  </tr>
-                  <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="p-5 sm:p-6 font-extrabold text-slate-900 text-base">Katherine</td>
-                    <td className="p-5 sm:p-6 font-mono text-emerald-700">0845-0853</td>
-                    <td className="p-5 sm:p-6 leading-relaxed">Katherine CBD, Tindal, Manbulloo, Binjari, Adelaide River, Pine Creek, Mataranka, Daly Waters</td>
-                  </tr>
-                  <tr className="bg-slate-50/30 hover:bg-slate-50 transition-colors">
-                    <td className="p-5 sm:p-6 font-extrabold text-slate-900 text-base">Kakadu region</td>
-                    <td className="p-5 sm:p-6 font-mono text-emerald-700">0886</td>
-                    <td className="p-5 sm:p-6 leading-relaxed">Jabiru, Gunbalanya, Ramingining, Milingimbi, Warruwi, remote and off-grid specialists</td>
-                  </tr>
-                  <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="p-5 sm:p-6 font-extrabold text-slate-900 text-base">Tennant Creek and Barkly</td>
-                    <td className="p-5 sm:p-6 font-mono text-emerald-700">0861</td>
-                    <td className="p-5 sm:p-6 leading-relaxed">Tennant Creek, Elliott, Renner Springs, Three Ways, Ali Curung, Darwin to Alice Springs corridor</td>
-                  </tr>
-                  <tr className="bg-slate-50/30 hover:bg-slate-50 transition-colors">
-                    <td className="p-5 sm:p-6 font-extrabold text-slate-900 text-base">Alice Springs</td>
-                    <td className="p-5 sm:p-6 font-mono text-emerald-700">0870-0872</td>
-                    <td className="p-5 sm:p-6 leading-relaxed">Alice Springs CBD, Todd Mall, Flynn, Ross, Sadadeen, Araluen, Larapinta, Gillen, Braitling, Ciccone, Desert Springs, Ilparpa</td>
-                  </tr>
-                  <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="p-5 sm:p-6 font-extrabold text-slate-900 text-base">Yulara and Central NT</td>
-                    <td className="p-5 sm:p-6 font-mono text-emerald-700">0872</td>
-                    <td className="p-5 sm:p-6 leading-relaxed">Yulara, Mutitjulu, Ti Tree, Yuendumu, Hermannsburg, Finke, remote and off-grid systems</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          {/* Service Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {serviceAreas.map((area, idx) => (
+              <FadeIn key={idx} delay={idx * 0.05} className="h-full">
+                <div className="bg-gradient-to-b from-[#0F2317] to-[#0A120D] border border-emerald-950/40 p-8 rounded-[2rem] flex flex-col relative overflow-hidden h-full shadow-2xl group hover:border-[#5BC94D]/30 transition-all duration-300 min-h-[380px]">
+                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#5BC94D] to-emerald-500" />
+                  
+                  <div className="flex justify-between items-start mb-6">
+                    <div className="w-11 h-11 bg-[#5BC94D]/10 rounded-xl flex items-center justify-center border border-[#5BC94D]/20 text-[#5BC94D]">
+                      <MapPin className="w-5 h-5" />
+                    </div>
+                    <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                      {area.status}
+                    </span>
+                  </div>
+
+                  <div className="flex-grow">
+                    <h3 className="text-2xl font-black text-white mb-2 leading-tight">{area.hub}</h3>
+                    <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider block mb-4">
+                      Postcode: {area.postcodes}
+                    </span>
+                    
+                    <div className="flex flex-wrap gap-1.5 mb-6">
+                      {area.suburbs.map((suburb, i) => (
+                        <span key={i} className="text-[11px] text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full hover:bg-white/10 transition-colors">
+                          {suburb}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <Link to="/contact" className="text-sm font-bold text-[#5BC94D] hover:text-white flex items-center gap-1 group-hover:translate-x-1 transition-all mt-auto">
+                    {area.linkText} <ChevronRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </FadeIn>
+            ))}
+
+            {/* Card 10: Not Sure We Cover Your Area? */}
+            <FadeIn delay={0.5} className="col-span-1 md:col-span-2 lg:col-span-3">
+              <div className="bg-gradient-to-r from-[#0F2317] to-[#0A120D] border border-emerald-950/40 p-10 rounded-[2.5rem] flex flex-col md:flex-row items-center justify-between relative overflow-hidden shadow-2xl group hover:border-[#5BC94D]/30 transition-all duration-300 min-h-[160px] w-full">
+                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#5BC94D] to-emerald-500" />
+                <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#5BC94D]/5 rounded-full blur-2xl pointer-events-none" />
+                
+                <div className="flex-grow max-w-2xl mb-6 md:mb-0">
+                  <h3 className="text-2xl font-black text-white mb-3">Not Sure We Cover Your Area?</h3>
+                  <p className="text-slate-300 text-sm leading-relaxed">
+                    If you are in the Northern Territory, we almost certainly do. Call us and we will confirm within one business day.
+                  </p>
+                </div>
+                <div className="shrink-0 w-full md:w-auto">
+                  <Button size="lg" className="rounded-xl w-full md:w-auto px-8 h-12 text-xs font-bold bg-[#5BC94D] hover:bg-emerald-400 text-slate-900 uppercase tracking-wider shadow-[0_0_15px_rgba(91,201,77,0.2)] group-hover:scale-[1.02] transition-transform duration-300" asChild>
+                    <Link to="/contact">Check My Area</Link>
+                  </Button>
+                </div>
+              </div>
+            </FadeIn>
           </div>
+
+          {/* Postcode Display Section */}
+          <FadeIn delay={0.6}>
+            <div className="bg-slate-50/60 backdrop-blur-sm rounded-2xl sm:rounded-3xl py-5 px-6 sm:px-8 border border-slate-200/60 shadow-sm max-w-5xl mx-auto mt-16">
+              <div className="flex flex-col gap-3.5 items-start text-left">
+                <span className="text-[10px] font-extrabold text-[#5BC94D] uppercase tracking-widest">
+                  ALL NT POSTCODES:
+                </span>
+                <div className="flex flex-wrap items-center gap-2 text-slate-800 text-[11px] font-bold">
+                  {allPostcodes.map((p, idx) => (
+                    <span key={idx} className="bg-white border border-[#5BC94D]/20 hover:border-[#5BC94D]/40 hover:shadow-sm transition-all duration-300 px-2.5 py-1 rounded-full text-slate-800 shadow-sm">
+                      {p}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+
         </div>
       </section>
 
