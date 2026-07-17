@@ -381,6 +381,131 @@ export function Home() {
         </div>
       </section>
 
+      {/* TRUST CREDENTIALS BAR */}
+      <div className="trust-bar select-none">
+        <style dangerouslySetInnerHTML={{ __html: `
+          .trust-bar {
+              width: 100%;
+              overflow: hidden;
+              background: #111111;
+              border-top: 1px solid #55D84A;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+              display: flex;
+          }
+
+          .trust-marquee-track {
+              display: flex;
+              flex-wrap: nowrap;
+              width: max-content;
+              animation: trustMarquee 30s linear infinite;
+          }
+
+          .trust-bar:hover .trust-marquee-track {
+              animation-play-state: paused;
+          }
+
+          @keyframes trustMarquee {
+              0% {
+                  transform: translateX(0);
+              }
+              100% {
+                  transform: translateX(-50%);
+              }
+          }
+
+          .trust-row {
+              display: flex;
+              flex-wrap: nowrap;
+              align-items: center;
+          }
+
+          .trust-item {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              box-sizing: border-box;
+              height: 42px;
+              padding: 0 32px;
+              border-right: 1px solid rgba(255, 255, 255, 0.08);
+              flex-shrink: 0;
+          }
+
+          .trust-item-inner {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-wrap: nowrap;
+              gap: 10px;
+              white-space: nowrap;
+          }
+
+          .trust-dot {
+              display: block;
+              flex: 0 0 7px;
+              width: 7px;
+              height: 7px;
+              border-radius: 50%;
+              background: #55D84A;
+          }
+
+          .trust-text {
+              color: #ffffff;
+              font-family: inherit;
+              font-size: 12px;
+              font-weight: 600;
+              line-height: 1;
+              white-space: nowrap;
+          }
+
+          @media (max-width: 768px) {
+              .trust-item {
+                  padding: 0 20px;
+              }
+              .trust-text {
+                  font-size: 11px;
+              }
+          }
+        ` }} />
+        <div className="trust-marquee-track">
+          {/* First set of items */}
+          <div className="trust-row">
+            {[
+              "CEC Accredited Installers",
+              "NT Licensed Electricians",
+              "$0 Deposit Solar Plans",
+              "NT Battery Grant Approved",
+              "500+ NT Systems Installed",
+              "Tesla & Fronius Authorised"
+            ].map((statement, idx) => (
+              <div key={`set1-${idx}`} className="trust-item">
+                <div className="trust-item-inner">
+                  <span className="trust-dot"></span>
+                  <span className="trust-text">{statement}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* Second identical set for seamless looping */}
+          <div className="trust-row" aria-hidden="true">
+            {[
+              "CEC Accredited Installers",
+              "NT Licensed Electricians",
+              "$0 Deposit Solar Plans",
+              "NT Battery Grant Approved",
+              "500+ NT Systems Installed",
+              "Tesla & Fronius Authorised"
+            ].map((statement, idx) => (
+              <div key={`set2-${idx}`} className="trust-item">
+                <div className="trust-item-inner">
+                  <span className="trust-dot"></span>
+                  <span className="trust-text">{statement}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* PARTNERS LOGO STRIP */}
       <PartnersMarquee />
 
