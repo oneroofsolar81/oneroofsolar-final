@@ -15,6 +15,8 @@ import Projects from "./pages/Projects";
 import { Terms } from "./pages/Terms";
 import { Privacy } from "./pages/Privacy";
 import { SolarPanelsBrands } from "./pages/SolarPanelsBrands";
+import { AikoSolarPanels } from "./pages/AikoSolarPanels";
+import { SolarAliceSprings } from "./pages/SolarAliceSprings";
 import { AuthProvider } from "./context/AuthContext";
 import { NotificationProvider } from "./context/NotificationContext";
 import ScrollToTop from "./components/ScrollToTop";
@@ -98,6 +100,32 @@ export default function App() {
                 
                 <Route path="/services/:slug" element={<ServiceDetail />} />
                 <Route path="/product/solar-panels-brands" element={<SolarPanelsBrands />} />
+                
+                {/* AIKO Solar Brand Landing Page */}
+                <Route path="/solar-panels-brands/aiko" element={<AikoSolarPanels />} />
+                <Route path="/solar-panels-brands/aiko/" element={<AikoSolarPanels />} />
+                
+                {/* Alice Springs Hub Landing Page */}
+                <Route path="/solar-alice-springs" element={<SolarAliceSprings />} />
+                <Route path="/solar-alice-springs/" element={<SolarAliceSprings />} />
+                
+                {/* Legacy Alice Springs redirects */}
+                <Route path="/alice-springs" element={<Navigate to="/solar-alice-springs/" replace />} />
+                <Route path="/alice-springs/" element={<Navigate to="/solar-alice-springs/" replace />} />
+                <Route path="/solar-power-alice-springs-nt" element={<Navigate to="/solar-alice-springs/" replace />} />
+                <Route path="/solar-power-alice-springs-nt/" element={<Navigate to="/solar-alice-springs/" replace />} />
+                
+                {/* External SEO Redirects mapping */}
+                <Route path="/solar-panels/rec" element={<Navigate to="/product/solar-panels-brands" replace />} />
+                <Route path="/solar-panels/rec/" element={<Navigate to="/product/solar-panels-brands" replace />} />
+                <Route path="/solar-panels/jinko" element={<Navigate to="/product/solar-panels-brands" replace />} />
+                <Route path="/solar-panels/jinko/" element={<Navigate to="/product/solar-panels-brands" replace />} />
+                <Route path="/solar-panels" element={<Navigate to="/product/solar-panels-brands" replace />} />
+                <Route path="/solar-panels/" element={<Navigate to="/product/solar-panels-brands" replace />} />
+                <Route path="/solar-panel-installation" element={<Navigate to="/services/solar-panel-installation" replace />} />
+                <Route path="/solar-panel-installation/" element={<Navigate to="/services/solar-panel-installation" replace />} />
+                <Route path="/solar-battery-storage" element={<Navigate to="/services/battery-storage" replace />} />
+                <Route path="/solar-battery-storage/" element={<Navigate to="/services/battery-storage" replace />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
