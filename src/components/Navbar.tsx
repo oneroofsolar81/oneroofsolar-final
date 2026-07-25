@@ -145,7 +145,8 @@ export function Navbar() {
           href: "/product/solar-panels-brands",
           label: "Solar Panel Brands", 
           children: [
-            { href: "/solar-panels-brands/aiko/", label: "AIKO" }
+            { href: "/solar-panels-brands/aiko/", label: "AIKO" },
+            { href: "/product/solar-panels-brands/ja-solar-panels-nt", label: "JA Solar" }
           ] 
         },
         { href: "/services/battery-storage", label: "Battery Storage Solutions" },

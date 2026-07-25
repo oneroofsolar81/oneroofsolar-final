@@ -16,6 +16,7 @@ import { Terms } from "./pages/Terms";
 import { Privacy } from "./pages/Privacy";
 import { SolarPanelsBrands } from "./pages/SolarPanelsBrands";
 import { AikoSolarPanels } from "./pages/AikoSolarPanels";
+import { JaSolarPanels } from "./pages/JaSolarPanels";
 import { SolarAliceSprings } from "./pages/SolarAliceSprings";
 import { AuthProvider } from "./context/AuthContext";
 import { NotificationProvider } from "./context/NotificationContext";
@@ -104,6 +105,10 @@ export default function App() {
                 {/* AIKO Solar Brand Landing Page */}
                 <Route path="/solar-panels-brands/aiko" element={<AikoSolarPanels />} />
                 <Route path="/solar-panels-brands/aiko/" element={<AikoSolarPanels />} />
+                
+                {/* JA Solar Brand Landing Page */}
+                <Route path="/product/solar-panels-brands/ja-solar-panels-nt" element={<JaSolarPanels />} />
+                <Route path="/product/solar-panels-brands/ja-solar-panels-nt/" element={<JaSolarPanels />} />
                 
                 {/* Alice Springs Hub Landing Page */}
                 <Route path="/solar-alice-springs" element={<SolarAliceSprings />} />
