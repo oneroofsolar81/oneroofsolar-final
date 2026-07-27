@@ -1125,7 +1125,7 @@ export function Home() {
                 </div>
               </div>
 
-              <Link to="/contact" className="text-sm font-bold text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
+              <Link to="/solar-alice-springs/" className="text-sm font-bold text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
                 Alice Springs Solar <ChevronRight className="w-4 h-4" />
               </Link>
             </div>

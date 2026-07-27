@@ -7,6 +7,7 @@ import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 function MobileNavItem({ item, setIsOpen, expanded, onToggle }: { item: any; setIsOpen: (val: boolean) => void; expanded: boolean; onToggle: () => void; }) {
   const location = useLocation();
+  const [expandedSubIndex, setExpandedSubIndex] = useState<number | null>(null);
 
   if (item.href) {
     return (
@@ -42,16 +43,68 @@ function MobileNavItem({ item, setIsOpen, expanded, onToggle }: { item: any; set
             className="overflow-hidden"
           >
             <div className="mt-1 mb-2 flex flex-col space-y-1 pl-4 border-l-2 border-brand-100 mx-4">
-              {item.children?.map((child: any) => (
-                <Link
-                  key={child.label}
-                  to={child.href}
-                  onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 text-sm font-semibold text-slate-600 hover:text-brand-600 rounded-lg hover:bg-brand-50/50 transition-colors"
-                >
-                  {child.label}
-                </Link>
-              ))}
+              {item.children?.map((child: any, idx: number) => {
+                if (child.children) {
+                  const subExpanded = expandedSubIndex === idx;
+                  return (
+                    <div key={child.label} className="flex flex-col">
+                      <div className="flex items-center justify-between w-full rounded-lg hover:bg-brand-50/50 transition-colors">
+                        {child.href ? (
+                          <Link
+                            to={child.href}
+                            onClick={() => setIsOpen(false)}
+                            className="flex-grow px-4 py-2.5 text-sm font-semibold text-slate-600 text-left hover:text-brand-600 transition-colors"
+                          >
+                            {child.label}
+                          </Link>
+                        ) : (
+                          <span className="flex-grow px-4 py-2.5 text-sm font-semibold text-slate-600 text-left">
+                            {child.label}
+                          </span>
+                        )}
+                        <button
+                          onClick={() => setExpandedSubIndex(subExpanded ? null : idx)}
+                          className="p-2.5 hover:bg-brand-100/50 rounded-r-lg transition-colors flex items-center justify-center"
+                          aria-label="Toggle sub-menu"
+                        >
+                          <ChevronDown className={`h-4 w-4 text-slate-400 transition-transform ${subExpanded ? "rotate-180" : ""}`} />
+                        </button>
+                      </div>
+                      <AnimatePresence>
+                        {subExpanded && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            className="overflow-hidden pl-4 border-l border-brand-200 mt-1 mb-1 flex flex-col space-y-1"
+                          >
+                            {child.children.map((subChild: any) => (
+                              <Link
+                                key={subChild.label}
+                                to={subChild.href}
+                                onClick={() => setIsOpen(false)}
+                                className="block px-4 py-2 text-xs font-semibold text-slate-500 hover:text-brand-600 rounded-lg hover:bg-brand-50/30 transition-colors"
+                              >
+                                {subChild.label}
+                              </Link>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  );
+                }
+                return (
+                  <Link
+                    key={child.label}
+                    to={child.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block px-4 py-3 text-sm font-semibold text-slate-600 hover:text-brand-600 rounded-lg hover:bg-brand-50/50 transition-colors"
+                  >
+                    {child.label}
+                  </Link>
+                );
+              })}
             </div>
           </motion.div>
         )}
@@ -81,6 +134,7 @@ export function Navbar() {
       children: [
         { href: "/residential-solar-system", label: "Residential Solar Systems" },
         { href: "/services/commercial-solar-system", label: "Commercial Solar Systems" },
+        { href: "/services/off-grid-solar-system", label: "Off-Grid Solar Systems" },
       ],
     },
     {
@@ -88,7 +142,14 @@ export function Navbar() {
       children: [
         { href: "/services/ev-chargers", label: "EV Chargers" },
         { href: "/services/solar-inverters", label: "Solar Inverters" },
-        { href: "/product/solar-panels-brands", label: "Solar Panel Brands" },
+        { 
+          href: "/product/solar-panels-brands",
+          label: "Solar Panel Brands", 
+          children: [
+            { href: "/solar-panels-brands/aiko/", label: "AIKO" },
+            { href: "/product/solar-panels-brands/ja-solar-panels-nt", label: "JA Solar" }
+          ] 
+        },
         { href: "/services/battery-storage", label: "Battery Storage Solutions" },
       ],
     },
@@ -99,8 +160,16 @@ export function Navbar() {
         { href: "/services/solar-panel-installation", label: "Solar Panel Installation" },
         { href: "/services/solar-inverter-installation", label: "Solar Inverter Installation" },
         { href: "/services/solar-battery-installation", label: "Solar Battery Installation" },
+        { href: "/services/off-grid-solar-system", label: "Off-Grid Solar Systems" },
         { href: "/services/solar-panel-maintenance-darwin", label: "Solar Panel Cleaning & Maintenance" },
         { href: "/services/solar-panel-repair-darwin", label: "Solar Panel Repair" },
+      ],
+    },
+    {
+      label: "Locations",
+      children: [
+        { href: "/solar-panels-darwin", label: "Darwin & Palmerston" },
+        { href: "/solar-alice-springs/", label: "Alice Springs" },
       ],
     },
     { href: "/about", label: "About Us" },
@@ -167,15 +236,50 @@ export function Navbar() {
                     <div className="absolute left-1/2 -translate-x-1/2 top-[120%] pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top group-hover:top-full w-64 z-50">
                       <div className="rounded-2xl border border-slate-100/50 bg-white/95 backdrop-blur-xl p-2.5 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.15)] relative">
                         <div className="absolute -top-2 left-1/2 -translate-x-1/2 border-[8px] border-transparent border-b-white/95"></div>
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.label}
-                            to={child.href}
-                            className="block rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition-colors"
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
+                        {item.children.map((child) => {
+                          if (child.children) {
+                            return (
+                              <div key={child.label} className="relative group/sub">
+                                {child.href ? (
+                                  <Link
+                                    to={child.href}
+                                    className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 group-hover/sub:bg-brand-50 group-hover/sub:text-brand-600 transition-all cursor-pointer"
+                                  >
+                                    <span>{child.label}</span>
+                                    <span className="text-[10px] text-slate-400 font-bold group-hover/sub:text-brand-600 transition-colors ml-2">▶</span>
+                                  </Link>
+                                ) : (
+                                  <div className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 group-hover/sub:bg-brand-50 group-hover/sub:text-brand-600 transition-all cursor-pointer">
+                                    <span>{child.label}</span>
+                                    <span className="text-[10px] text-slate-400 font-bold group-hover/sub:text-brand-600 transition-colors ml-2">▶</span>
+                                  </div>
+                                )}
+                                <div className="absolute left-full top-0 pl-2 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 w-64 z-50">
+                                  <div className="rounded-2xl border border-slate-100/50 bg-white/95 backdrop-blur-xl p-2.5 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.15)]">
+                                    {child.children.map((subChild) => (
+                                      <Link
+                                        key={subChild.label}
+                                        to={subChild.href}
+                                        className="block rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition-colors"
+                                      >
+                                        {subChild.label}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                </div>
+                              </div>
+                            );
+                          }
+                          return (
+                            <Link
+                              key={child.label}
+                              to={child.href}
+                              className="block rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition-colors"
+                            >
+                              {child.label}
+                            </Link>
+                          );
+                        })}
                       </div>
                     </div>
                   )}

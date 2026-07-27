@@ -2,13 +2,85 @@ import React from 'react';
 import { FadeIn } from "@/src/components/ui/FadeIn";
 import { Link } from "react-router-dom";
 
+export interface PackageItem {
+  price: string;
+  priceLabel?: string;
+  suitability: string;
+  capacity: string;
+  title: string;
+  features: string[];
+  color?: string;
+}
+
 interface PackagesSectionProps {
   title?: string;
   subheadline?: string;
   subtitle?: string;
+  packages?: PackageItem[];
+  disclaimer?: string;
 }
 
-export function PackagesSection({ title, subheadline, subtitle }: PackagesSectionProps = {}) {
+const defaultPackages: PackageItem[] = [
+  {
+    price: "$7",
+    priceLabel: "per day",
+    suitability: "Small-Medium Homes",
+    capacity: "35%",
+    title: "Smart Saver Package\n7.5kW Solar + 23.3kWh Battery",
+    features: [
+      "Ideal for small to medium homes",
+      "7.5kW high-efficiency solar system",
+      "Large 23.3kWh battery storage",
+      "Reliable 5kW inverter included",
+      "Blackout protection included",
+      "Expandable battery capacity",
+      "Reduce power bills and grid reliance",
+      "Professional installation included"
+    ],
+    color: "green"
+  },
+  {
+    price: "$9",
+    priceLabel: "per day",
+    suitability: "Larger Family Homes",
+    capacity: "70%",
+    title: "Family Power Package\n15.67kW Solar + 23.3kWh Battery",
+    features: [
+      "Perfect for larger family homes",
+      "Ideal for EV charging and higher energy usage",
+      "Powerful 15.67kW solar system",
+      "23.3kWh battery for day & night power",
+      "Premium 10kW inverter included",
+      "Blackout protection included",
+      "Expandable battery storage option",
+      "Maximise savings and energy independence"
+    ],
+    color: "orange"
+  },
+  {
+    price: "$10",
+    priceLabel: "per day",
+    suitability: "High-Energy Homes",
+    capacity: "100%",
+    title: "Ultimate Energy Package\n19.95kW Solar + 23.3kWh Battery",
+    features: [
+      "Maximum power and savings",
+      "Huge 19.95kW solar system",
+      "Large 23.3kWh battery storage",
+      "High-performance 10kW inverter",
+      "Blackout protection included",
+      "Expandable battery capacity",
+      "Ideal for high-energy homes and businesses",
+      "Premium future-ready energy solution"
+    ],
+    color: "blue"
+  }
+];
+
+export function PackagesSection({ title, subheadline, subtitle, packages, disclaimer }: PackagesSectionProps = {}) {
+  const displayPackages = packages || defaultPackages;
+  const defaultDisclaimer = "Displayed Solar & Battery Package pricing includes estimated Federal Government battery rebate deductions. Eligibility criteria apply. Rebates are subject to government approval, program availability, funding, and applicable terms and conditions. Final pricing may vary based on location, system size, installation requirements, and other site-specific factors.";
+
   return (
     <section className="py-20 lg:py-32 bg-[#f4f7fb] relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -35,59 +107,7 @@ export function PackagesSection({ title, subheadline, subtitle }: PackagesSectio
 
         <div className="mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-16">
-            {[
-              {
-                price: "$7",
-                suitability: "Small-Medium Homes",
-                capacity: "35%",
-                title: "Smart Saver Package\n7.5kW Solar + 23.3kWh Battery",
-                features: [
-                  "Ideal for small to medium homes",
-                  "7.5kW high-efficiency solar system",
-                  "Large 23.3kWh battery storage",
-                  "Reliable 5kW inverter included",
-                  "Blackout protection included",
-                  "Expandable battery capacity",
-                  "Reduce power bills and grid reliance",
-                  "Professional installation included"
-                ],
-                color: "green"
-              },
-              {
-                price: "$9",
-                suitability: "Larger Family Homes",
-                capacity: "70%",
-                title: "Family Power Package\n15.67kW Solar + 23.3kWh Battery",
-                features: [
-                  "Perfect for larger family homes",
-                  "Ideal for EV charging and higher energy usage",
-                  "Powerful 15.67kW solar system",
-                  "23.3kWh battery for day & night power",
-                  "Premium 10kW inverter included",
-                  "Blackout protection included",
-                  "Expandable battery storage option",
-                  "Maximise savings and energy independence"
-                ],
-                color: "orange"
-              },
-              {
-                price: "$10",
-                suitability: "High-Energy Homes",
-                capacity: "100%",
-                title: "Ultimate Energy Package\n19.95kW Solar + 23.3kWh Battery",
-                features: [
-                  "Maximum power and savings",
-                  "Huge 19.95kW solar system",
-                  "Large 23.3kWh battery storage",
-                  "High-performance 10kW inverter",
-                  "Blackout protection included",
-                  "Expandable battery capacity",
-                  "Ideal for high-energy homes and businesses",
-                  "Premium future-ready energy solution"
-                ],
-                color: "blue"
-              }
-            ].map((pack, i) => (
+            {displayPackages.map((pack, i) => (
               <FadeIn key={i} delay={i * 0.1}>
                 <div className="bg-white rounded-[24px] px-6 pt-8 pb-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] border-2 border-transparent flex flex-col h-full relative hover:shadow-[0_20px_40px_rgba(140,198,63,0.12)] hover:-translate-y-1 transition-all overflow-hidden group">
                   
@@ -100,7 +120,7 @@ export function PackagesSection({ title, subheadline, subtitle }: PackagesSectio
                         <div className="bg-brand-500 text-white w-[100px] h-[100px] flex flex-col items-center justify-center p-2 rounded-tr-[24px] rounded-bl-[32px] shadow-[0_8px_15px_rgba(140,198,63,0.25)]">
                            <span className="text-[10px] font-black uppercase tracking-wider mb-0.5 text-center leading-tight">From Only</span>
                            <span className="text-[32px] font-black leading-[1] tracking-tighter my-0.5">{pack.price}</span>
-                           <span className="text-[10px] font-bold text-white/90">per day</span>
+                           <span className="text-[10px] font-bold text-white/90">{pack.priceLabel || "per day"}</span>
                         </div>
                      </div>
                   </div>
@@ -144,7 +164,7 @@ export function PackagesSection({ title, subheadline, subtitle }: PackagesSectio
         </div>
 
         <div className="text-center text-[10px] sm:text-xs text-slate-400 max-w-4xl mx-auto px-4 leading-relaxed pb-8">
-          Displayed Solar & Battery Package pricing includes estimated Federal Government battery rebate deductions. Eligibility criteria apply. Rebates are subject to government approval, program availability, funding, and applicable terms and conditions. Final pricing may vary based on location, system size, installation requirements, and other site-specific factors.
+          {disclaimer || defaultDisclaimer}
         </div>
 
       </div>

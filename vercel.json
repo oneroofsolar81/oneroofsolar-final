@@ -19,6 +19,36 @@
       "source": "/services/solar-panel",
       "destination": "/solar-panels-darwin",
       "permanent": true
+    },
+    {
+      "source": "/aiko",
+      "destination": "/solar-panels-brands/aiko/",
+      "permanent": true
+    },
+    {
+      "source": "/aiko/",
+      "destination": "/solar-panels-brands/aiko/",
+      "permanent": true
+    },
+    {
+      "source": "/alice-springs",
+      "destination": "/solar-alice-springs/",
+      "permanent": true
+    },
+    {
+      "source": "/alice-springs/",
+      "destination": "/solar-alice-springs/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-power-alice-springs-nt",
+      "destination": "/solar-alice-springs/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-power-alice-springs-nt/",
+      "destination": "/solar-alice-springs/",
+      "permanent": true
     }
   ],
   "rewrites": [

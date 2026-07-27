@@ -1,8 +1,90 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Global LeadConnector / Third-party Tracking ID Configurator -->
+    <script data-tracking-id="GTM-T4CWMK58">
+      (function() {
+        const DEFAULT_TRACKING_ID = "GTM-T4CWMK58";
+        
+        // Define global tracking IDs on window for scripts checking global variables
+        window.lc_tracking_id = DEFAULT_TRACKING_ID;
+        window.tracking_id = DEFAULT_TRACKING_ID;
+        window.LC_TRACKING_ID = DEFAULT_TRACKING_ID;
+        window.DATA_TRACKING_ID = DEFAULT_TRACKING_ID;
+
+        // Helper to safely apply the required tracking ID attribute to any script element
+        function ensureTrackingId(element) {
+          try {
+            if (element && element.nodeName === 'SCRIPT' && !element.hasAttribute('data-tracking-id')) {
+              element.setAttribute('data-tracking-id', DEFAULT_TRACKING_ID);
+            }
+          } catch (e) {}
+        }
+
+        // Apply immediately to all script elements already in DOM
+        if (document.scripts) {
+          for (let i = 0; i < document.scripts.length; i++) {
+            ensureTrackingId(document.scripts[i]);
+          }
+        }
+
+        // Intercept document.createElement to ensure every newly created script tag gets data-tracking-id
+        const originalCreateElement = document.createElement;
+        document.createElement = function(tagName, options) {
+          const element = originalCreateElement.call(document, tagName, options);
+          if (element && typeof tagName === 'string' && tagName.toLowerCase() === 'script') {
+            ensureTrackingId(element);
+          }
+          return element;
+        };
+
+        // Intercept Node.prototype.appendChild
+        const originalAppendChild = Node.prototype.appendChild;
+        Node.prototype.appendChild = function(node) {
+          if (node && node.nodeName === 'SCRIPT') {
+            ensureTrackingId(node);
+          }
+          return originalAppendChild.call(this, node);
+        };
+
+        // Intercept Node.prototype.insertBefore
+        const originalInsertBefore = Node.prototype.insertBefore;
+        Node.prototype.insertBefore = function(newNode, referenceNode) {
+          if (newNode && newNode.nodeName === 'SCRIPT') {
+            ensureTrackingId(newNode);
+          }
+          return originalInsertBefore.call(this, newNode, referenceNode);
+        };
+
+        // MutationObserver as fallback to ensure any script tag inserted via innerHTML or parser gets data-tracking-id
+        if (typeof MutationObserver !== 'undefined') {
+          const observer = new MutationObserver(function(mutations) {
+            for (let i = 0; i < mutations.length; i++) {
+              const added = mutations[i].addedNodes;
+              for (let j = 0; j < added.length; j++) {
+                const node = added[j];
+                if (node && node.nodeName === 'SCRIPT') {
+                  ensureTrackingId(node);
+                } else if (node && node.querySelectorAll) {
+                  const scripts = node.querySelectorAll('script');
+                  for (let k = 0; k < scripts.length; k++) {
+                    ensureTrackingId(scripts[k]);
+                  }
+                }
+              }
+            }
+          });
+
+          const target = document.documentElement || document.head || document.body;
+          if (target) {
+            observer.observe(target, { childList: true, subtree: true });
+          }
+        }
+      })();
+    </script>
+
     <!-- Google Tag Manager -->
-    <script>
+    <script data-tracking-id="GTM-T4CWMK58">
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -10,57 +92,7 @@
     })(window,document,'script','dataLayer','GTM-T4CWMK58');
     </script>
     <!-- End Google Tag Manager -->
-    <!-- Workaround for LeadConnector / GoHighLevel Tracking script data-tracking-id error -->
-    <script>
-      (function() {
-        const DEFAULT_TRACKING_ID = "GTM-T4CWMK58";
-        const originalCreateElement = document.createElement;
-        document.createElement = function(tagName, options) {
-          const element = originalCreateElement.call(document, tagName, options);
-          if (tagName && tagName.toLowerCase() === 'script') {
-            const originalSetAttribute = element.setAttribute;
-            element.setAttribute = function(name, value) {
-              originalSetAttribute.call(element, name, value);
-              if (name === 'src' && value && (value.includes('msgsndr.com') || value.includes('client.js') || value.includes('leadconnector'))) {
-                if (!element.hasAttribute('data-tracking-id')) {
-                  originalSetAttribute.call(element, 'data-tracking-id', DEFAULT_TRACKING_ID);
-                }
-              }
-            };
-            Object.defineProperty(element, 'src', {
-              get() {
-                return element.getAttribute('src') || '';
-              },
-              set(val) {
-                element.setAttribute('src', val);
-              },
-              configurable: true,
-              enumerable: true
-            });
-          }
-          return element;
-        };
 
-        const observer = new MutationObserver(function(mutations) {
-          mutations.forEach(function(mutation) {
-            mutation.addedNodes.forEach(function(node) {
-              if (node.nodeName === 'SCRIPT') {
-                const src = node.getAttribute('src') || '';
-                if (src && (src.includes('msgsndr.com') || src.includes('client.js') || src.includes('leadconnector'))) {
-                  if (!node.hasAttribute('data-tracking-id')) {
-                    node.setAttribute('data-tracking-id', DEFAULT_TRACKING_ID);
-                  }
-                }
-              }
-            });
-          });
-        });
-        observer.observe(document.documentElement, {
-          childList: true,
-          subtree: true
-        });
-      })();
-    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oneroof Solar | Darwin's #1 Solar & Battery Installation Experts</title>
@@ -68,7 +100,7 @@
     <link rel="icon" type="image/png" href="https://i.postimg.cc/Pqj33KbB/d.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="preload" as="image" href="https://i.postimg.cc/1XWKZZkw/Bayview-0820-(2).webp">
     <link rel="preload" as="image" href="https://i.postimg.cc/vZdTgLm9/oneroof.png">
     <link rel="preload" as="image" href="https://i.postimg.cc/44Dzn7Hk/oneroof-solar-classic.png">
@@ -86,8 +118,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script src="https://backend.leadconnectorhq.com/appengine/loc/AnsjPAwM79kGGDw3JV8x/pool/rSzbiF7FGaxH04n9ubQq/number_pool.js"></script>
-    <script src="https://backend.leadconnectorhq.com/appengine/js/user_session.js"></script>
+
   </body>
 </html>
 

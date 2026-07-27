@@ -44,7 +44,7 @@ const BRAND_PRODUCTS: ProductBrand[] = [
     remaining: "AIKO won the 2025 SolarQuotes Installers Choice Award for best solar panel brand in Australia. Their Gen 3 panels carry a 30-year performance warranty guaranteeing 88.85 per cent output at Year 30.",
     bestFor: "NT rooftops with limited usable space. Maximum output per panel where cyclone strapping or rooftop equipment reduces available area.",
     specLabel: "Full specs and models: AIKO solar panels",
-    productLink: "/solar-panels/aiko/",
+    productLink: "/solar-panels-brands/aiko/",
     image: "https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png",
   },
   {
@@ -543,79 +543,112 @@ export function SolarPanelsBrands() {
                 Compare Our <span className="text-brand-400">Solar Panel Brands</span>
               </h2>
               <p className="text-slate-400 font-medium text-lg leading-relaxed">
-                All three brands are CEC approved, STC eligible and cyclone rated for NT installations. The right choice depends on your roof size, budget and how long you plan to stay in the property.
+                All five brands are CEC approved, STC eligible and cyclone rated for NT installations. The right choice depends on your roof size, budget and how long you plan to stay in the property.
               </p>
             </FadeIn>
           </div>
 
           <FadeIn delay={0.2}>
             <div className="overflow-x-auto rounded-[2rem] border border-white/10 bg-slate-900/40 backdrop-blur-sm shadow-2xl">
-              <table className="w-full text-left border-collapse min-w-[800px]">
+              <table className="w-full text-left border-collapse min-w-[1000px]">
                 <thead>
                   <tr className="border-b border-white/10 bg-slate-900/60">
-                    <th className="p-6 text-sm font-semibold uppercase tracking-wider font-mono text-slate-400">Specifications</th>
-                    <th className="p-6 text-xl font-black text-white text-center border-l border-white/5 bg-brand-500/5">
+                    <th className="sticky left-0 bg-[#0e161f] z-20 p-6 text-sm font-semibold uppercase tracking-wider font-display text-slate-400 border-r border-white/10">Specifications</th>
+                    <th className="p-6 text-xl font-black text-white text-center border-l border-white/5 bg-brand-500/5 font-display">
                       <span className="text-brand-400">AIKO ABC</span>
                     </th>
-                    <th className="p-6 text-xl font-black text-white text-center border-l border-white/5 bg-emerald-500/5">
+                    <th className="p-6 text-xl font-black text-white text-center border-l border-white/5 bg-emerald-500/5 font-display">
                       <span className="text-emerald-400">REC HJT</span>
                     </th>
-                    <th className="p-6 text-xl font-black text-white text-center border-l border-white/5">
+                    <th className="p-6 text-xl font-black text-white text-center border-l border-white/5 font-display">
                       <span>Jinko TOPCon</span>
+                    </th>
+                    <th className="p-6 text-xl font-black text-white text-center border-l border-white/5 font-display">
+                      <span>JA Solar TOPCon</span>
+                    </th>
+                    <th className="p-6 text-xl font-black text-white text-center border-l border-white/5 font-display">
+                      <span>LONGi HPBC</span>
                     </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/5 text-slate-300">
                   <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-6 font-semibold text-white">Cell technology</td>
+                    <td className="sticky left-0 bg-[#0e161f] z-10 p-6 font-display font-semibold text-white border-r border-white/10">Cell technology</td>
                     <td className="p-6 text-center border-l border-white/5 font-medium bg-brand-500/5">All Back Contact N-type</td>
                     <td className="p-6 text-center border-l border-white/5 font-medium bg-emerald-500/5">Heterojunction N-type</td>
                     <td className="p-6 text-center border-l border-white/5 font-medium">TOPCon N-type</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium">TOPCon N-type</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium">HPBC N-type</td>
                   </tr>
                   <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-6 font-semibold text-white">Module efficiency</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium bg-brand-500/5 text-brand-400 font-bold">Above 25%</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium bg-emerald-500/5 text-emerald-400 font-bold">22.3%</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium font-bold">Above 22%</td>
+                    <td className="sticky left-0 bg-[#0e161f] z-10 p-6 font-display font-semibold text-white border-r border-white/10">Module efficiency</td>
+                    <td className="p-6 text-center border-l border-white/5 font-bold bg-brand-500/5 text-[#5BC94D]">Above 25%</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium bg-emerald-500/5 text-slate-300">22.3%</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-300">Above 22%</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-300">Up to 22.7%</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-300">Up to 23.3%</td>
                   </tr>
                   <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-6 font-semibold text-white">Temperature coefficient</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium bg-brand-500/5">-0.26%/°C</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium bg-emerald-500/5 text-emerald-400 font-bold">-0.24%/°C</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium">-0.26%/°C</td>
+                    <td className="sticky left-0 bg-[#0e161f] z-10 p-6 font-display font-semibold text-white border-r border-white/10">Temperature coefficient</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium bg-brand-500/5 text-slate-300">-0.26%/°C</td>
+                    <td className="p-6 text-center border-l border-white/5 font-bold bg-emerald-500/5 text-[#5BC94D]">-0.24%/°C</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-300">-0.26%/°C</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-300">-0.35%/°C</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-300">-0.29%/°C</td>
                   </tr>
                   <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-6 font-semibold text-white">Performance warranty</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium bg-brand-500/5 text-brand-400 font-bold">30 years</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium bg-emerald-500/5 font-bold">25 years</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium font-bold">25 years</td>
+                    <td className="sticky left-0 bg-[#0e161f] z-10 p-6 font-display font-semibold text-white border-r border-white/10">Performance warranty</td>
+                    <td className="p-6 text-center border-l border-white/5 font-bold bg-brand-500/5 text-[#5BC94D]">30 years</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium bg-emerald-500/5 text-slate-300">25 years</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-300">25 years</td>
+                    <td className="p-6 text-center border-l border-white/5 font-bold text-[#5BC94D]">30 years</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-300">25 years</td>
                   </tr>
                   <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-6 font-semibold text-white">Year 25 output guarantee</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium bg-brand-500/5">90.6%</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium bg-emerald-500/5 text-emerald-400 font-bold">92%</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium">84.8%</td>
+                    <td className="sticky left-0 bg-[#0e161f] z-10 p-6 font-display font-semibold text-white border-r border-white/10">Year 25 output guarantee</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium bg-brand-500/5 text-slate-300">90.6%</td>
+                    <td className="p-6 text-center border-l border-white/5 font-bold bg-emerald-500/5 text-[#5BC94D]">92%</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-300">84.8%</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-300">87.4%</td>
+                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-300">89.4%</td>
                   </tr>
                   <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-6 font-semibold text-white">Cyclone rated</td>
+                    <td className="sticky left-0 bg-[#0e161f] z-10 p-6 font-display font-semibold text-white border-r border-white/10">Cyclone rated</td>
                     <td className="p-6 text-center border-l border-white/5 bg-brand-500/5 text-emerald-400 font-bold">Yes</td>
                     <td className="p-6 text-center border-l border-white/5 bg-emerald-500/5 text-emerald-400 font-bold">Yes</td>
                     <td className="p-6 text-center border-l border-white/5 text-emerald-400 font-bold">Yes</td>
-                  </tr>
-                  <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-6 font-semibold text-white">STC eligible NT</td>
-                    <td className="p-6 text-center border-l border-white/5 bg-brand-500/5 text-emerald-400 font-bold">Yes</td>
-                    <td className="p-6 text-center border-l border-white/5 bg-emerald-500/5 text-emerald-400 font-bold">Yes</td>
+                    <td className="p-6 text-center border-l border-white/5 text-emerald-400 font-bold">Yes</td>
                     <td className="p-6 text-center border-l border-white/5 text-emerald-400 font-bold">Yes</td>
                   </tr>
                   <tr className="hover:bg-white/5 transition-colors">
-                    <td className="p-6 font-semibold text-white">Best for NT</td>
-                    <td className="p-6 text-center border-l border-white/5 bg-brand-500/5 font-medium text-brand-400">Limited roof, max output</td>
-                    <td className="p-6 text-center border-l border-white/5 bg-emerald-500/5 font-medium text-emerald-400">Lowest heat loss</td>
-                    <td className="p-6 text-center border-l border-white/5 font-medium text-slate-200">Proven value</td>
+                    <td className="sticky left-0 bg-[#0e161f] z-10 p-6 font-display font-semibold text-white border-r border-white/10">STC eligible NT</td>
+                    <td className="p-6 text-center border-l border-white/5 bg-brand-500/5 text-emerald-400 font-bold">Yes</td>
+                    <td className="p-6 text-center border-l border-white/5 bg-emerald-500/5 text-emerald-400 font-bold">Yes</td>
+                    <td className="p-6 text-center border-l border-white/5 text-emerald-400 font-bold">Yes</td>
+                    <td className="p-6 text-center border-l border-white/5 text-emerald-400 font-bold">Yes</td>
+                    <td className="p-6 text-center border-l border-white/5 text-emerald-400 font-bold">Yes</td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+
+            {/* Brand focus badges */}
+            <div className="mt-10 flex flex-wrap gap-3 justify-center">
+              <span className="px-4 py-2 bg-slate-900/60 border border-white/10 rounded-full text-xs font-semibold text-slate-300 backdrop-blur-sm">
+                <span className="text-[#5BC94D] font-extrabold">AIKO</span> — Limited Roof, Max Output
+              </span>
+              <span className="px-4 py-2 bg-slate-900/60 border border-white/10 rounded-full text-xs font-semibold text-slate-300 backdrop-blur-sm">
+                <span className="text-emerald-400 font-extrabold">REC</span> — Lowest Heat Loss
+              </span>
+              <span className="px-4 py-2 bg-slate-900/60 border border-white/10 rounded-full text-xs font-semibold text-slate-300 backdrop-blur-sm">
+                <span className="text-slate-200 font-extrabold">Jinko</span> — Proven Value
+              </span>
+              <span className="px-4 py-2 bg-slate-900/60 border border-white/10 rounded-full text-xs font-semibold text-slate-300 backdrop-blur-sm">
+                <span className="text-[#5BC94D] font-extrabold">JA Solar</span> — Best 30-Year Warranty at Budget Price
+              </span>
+              <span className="px-4 py-2 bg-slate-900/60 border border-white/10 rounded-full text-xs font-semibold text-slate-300 backdrop-blur-sm">
+                <span className="text-blue-400 font-extrabold">LONGi</span> — World's Largest Manufacturer
+              </span>
             </div>
           </FadeIn>
         </div>
