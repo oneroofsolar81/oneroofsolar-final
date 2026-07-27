@@ -134,6 +134,7 @@ export function Navbar() {
       children: [
         { href: "/residential-solar-system", label: "Residential Solar Systems" },
         { href: "/services/commercial-solar-system", label: "Commercial Solar Systems" },
+        { href: "/services/off-grid-solar-system", label: "Off-Grid Solar Systems" },
       ],
     },
     {
@@ -159,6 +160,7 @@ export function Navbar() {
         { href: "/services/solar-panel-installation", label: "Solar Panel Installation" },
         { href: "/services/solar-inverter-installation", label: "Solar Inverter Installation" },
         { href: "/services/solar-battery-installation", label: "Solar Battery Installation" },
+        { href: "/services/off-grid-solar-system", label: "Off-Grid Solar Systems" },
         { href: "/services/solar-panel-maintenance-darwin", label: "Solar Panel Cleaning & Maintenance" },
         { href: "/services/solar-panel-repair-darwin", label: "Solar Panel Repair" },
       ],

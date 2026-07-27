@@ -25,7 +25,6 @@ import { SEO } from "../components/SEO";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 import { db } from "../lib/firebase";
 import { collection, addDoc } from "firebase/firestore";
-import cycloneSolarDarwinImg from "../assets/images/cyclone_solar_darwin_1784286769053.jpg";
 
 export function AikoSolarPanels() {
   // Form State
@@ -339,46 +338,13 @@ export function AikoSolarPanels() {
                   <Sparkles className="w-3 h-3 text-[#5BC94D]" /> PREMIUM GEN 3 ABC TECHNOLOGY
                 </span>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-6 uppercase">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
                   AIKO Solar Panels Darwin
                 </h1>
 
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 font-medium border-l-2 border-[#5BC94D] pl-6">
+                <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 lg:mb-10 font-medium border-l-2 border-[#5BC94D] pl-6">
                   Oneroof Solar installs AIKO Gen 3 ABC solar panels across Darwin, Palmerston, Alice Springs and the Northern Territory. AIKO is manufactured by Zhejiang Aiko Solar Technology Co., Ltd and won the 2025 SolarQuotes Installers Choice Award for best solar panel brand in Australia. Their All Back Contact (ABC) N-type technology delivers above 25 per cent module efficiency, making them the highest-output residential panel we supply.
                 </p>
-
-                {/* Key Benefits List */}
-                <div className="space-y-4 mb-8 lg:mb-10 max-w-2xl">
-                  <div className="flex items-start gap-3.5 bg-slate-900/30 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
-                    <div className="p-1.5 rounded-lg bg-[#5BC94D]/10 text-[#5BC94D] mt-0.5">
-                      <Award className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-white uppercase tracking-wider">Above 25% module efficiency</h4>
-                      <p className="text-xs text-slate-400 mt-1 leading-relaxed">Highest power yield on the Australian market. Get significantly more kilowatts from your limited roof space.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3.5 bg-slate-900/30 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
-                    <div className="p-1.5 rounded-lg bg-orange-500/10 text-orange-400 mt-0.5">
-                      <Thermometer className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-white uppercase tracking-wider">Strong performance in Darwin heat</h4>
-                      <p className="text-xs text-slate-400 mt-1 leading-relaxed">Exceptional -0.26%/°C temperature coefficient maintains maximum energy output even in scorching rooftop heat.</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3.5 bg-slate-900/30 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
-                    <div className="p-1.5 rounded-lg bg-blue-500/10 text-blue-400 mt-0.5">
-                      <Shield className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-white uppercase tracking-wider">30-year performance warranty</h4>
-                      <p className="text-xs text-slate-400 mt-1 leading-relaxed">Guarantees 88.85% generation performance even at Year 30, securing your long-term energy independence.</p>
-                    </div>
-                  </div>
-                </div>
 
                 <div className="flex flex-wrap gap-4">
                   <Button
@@ -465,238 +431,29 @@ export function AikoSolarPanels() {
       {/* Trust and Accreditation Strip */}
       <PartnersMarquee />
 
-      {/* Redesigned Text-Heavy Sections into Visual Storytelling split layouts */}
-      <section className="py-12 lg:py-24 bg-[#121814] relative overflow-hidden border-b border-white/5">
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#5BC94D]/5 rounded-full blur-[120px] pointer-events-none translate-x-1/3 -translate-y-1/3"></div>
-        
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16 lg:space-y-32">
-          
-          {/* Split Block 1: Premium All Back Contact Cell Technology (Left: Image, Right: Content) */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-20 items-start">
-            
-            {/* Mobile Heading (natural stack order: Heading -> Image -> Content) */}
-            <div className="md:hidden">
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
-                Innovative Cell Design
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-tight leading-tight">
-                Premium All Back Contact Cell Technology
-              </h2>
-            </div>
-
-            {/* Image Column */}
-            <div className="md:col-span-6 relative">
-              <FadeIn>
-                <div className="relative rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl group aspect-[3/4]">
-                  <img 
-                    referrerPolicy="no-referrer"
-                    src="/aiko-roof.png" 
-                    alt="Premium All Back Contact Cell Technology" 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                  <div className="absolute bottom-6 left-6 bg-[#121814]/80 backdrop-blur-sm border border-[#5BC94D]/20 px-4 py-2 rounded-xl text-xs font-bold text-white uppercase tracking-wider">
-                    All Back Contact (ABC) Tech
-                  </div>
-                </div>
-              </FadeIn>
-            </div>
-
-            {/* Text Column */}
-            <div className="md:col-span-6 flex flex-col justify-center">
-              <FadeIn delay={0.2}>
-                {/* Desktop/Tablet Heading */}
-                <div className="hidden md:block">
-                  <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
-                    Innovative Cell Design
-                  </span>
-                  <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-tight leading-tight">
-                    Premium All Back Contact Cell Technology
-                  </h2>
-                </div>
-
-                <div className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium space-y-6">
-                  <p>
-                    Understanding the technology behind AIKO solar panels is simple once the metal contacts are removed from the front of the cell. Standard panels place contact lines across the front, shading parts of the cell and reducing sunlight absorption. The AIKO Gen 3 ABC design moves the electrical connections to the back, allowing the front to receive maximum sunlight.
-                  </p>
-                  <p>
-                    When analysing a solar panel designed for the Northern Territory, heat tolerance is a key consideration. Rooftops in Darwin experience extreme thermal stress, often leading to significant efficiency drops in lesser-quality systems. Because the solar panel design features a superior temperature coefficient of -0.26%/°C, power loss is minimised. This means your system continues to run efficiently even during hot dry-season afternoons.
-                  </p>
-                  <p>
-                    Our complete AIKO solar-panel review indicates that the physical footprint is another major advantage. When maximising solar-panel output in Darwin, the structural constraints of cyclone-rated roofs leave limited usable space. Selecting a compact, high-efficiency panel ensures you receive maximum energy without exceeding your roof limits. While the upfront price is higher than standard TOPCon options, the long-term energy yields and 30-year performance warranty provide a faster return on investment.
-                  </p>
-                </div>
-                
-                {/* Visual callout bullets for ABC tech, heat, and space */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mt-6 lg:mt-8 pt-4 lg:pt-6 border-t border-white/5">
-                  <div className="flex flex-col gap-1 p-3 bg-slate-900/30 rounded-xl border border-white/5">
-                    <span className="text-xs font-black text-[#5BC94D] uppercase tracking-wider">ABC Technology</span>
-                    <span className="text-[10px] text-slate-400">Contacts on back for maximum light</span>
-                  </div>
-                  <div className="flex flex-col gap-1 p-3 bg-slate-900/30 rounded-xl border border-white/5">
-                    <span className="text-xs font-black text-[#5BC94D] uppercase tracking-wider">Heat Performance</span>
-                    <span className="text-[10px] text-slate-400">-0.26%/°C minimal power loss</span>
-                  </div>
-                  <div className="flex flex-col gap-1 p-3 bg-slate-900/30 rounded-xl border border-white/5">
-                    <span className="text-xs font-black text-[#5BC94D] uppercase tracking-wider">Roof-Space Efficiency</span>
-                    <span className="text-[10px] text-slate-400">Compact size for cyclone roofs</span>
-                  </div>
-                </div>
-              </FadeIn>
-            </div>
-
-          </div>
-
-          {/* Split Block 2: High Temperature Reliability (Left: Content, Right: Image) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20 items-center">
-            
-            <div className="lg:col-span-6 lg:order-2 order-2">
-              <FadeIn>
-                <div className="relative rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl aspect-[4/3] group">
-                  <img 
-                    referrerPolicy="no-referrer"
-                    src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=800&q=80" 
-                    alt="Darwin rooftop solar in hot climate" 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                  <div className="absolute bottom-6 left-6 bg-[#121814]/80 backdrop-blur-sm border border-[#5BC94D]/20 px-4 py-2 rounded-xl text-xs font-bold text-white uppercase tracking-wider">
-                    Tested for extreme NT conditions
-                  </div>
-                </div>
-              </FadeIn>
-            </div>
-
-            <div className="lg:col-span-6 lg:order-1 order-1">
-              <FadeIn delay={0.2}>
-                <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
-                  Engineered for Extreme Darwin Heat
-                </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-tight leading-tight">
-                  High Temperature Reliability
-                </h2>
-                <div className="text-slate-300 text-base leading-relaxed font-medium space-y-6">
-                  <p>
-                    AIKO’s temperature coefficient of -0.26%/°C means less power loss on Darwin rooftops reaching 65°C to 75°C. It outperforms standard TOPCon panels rated at approximately -0.29%/°C during the dry season.
-                  </p>
-                  <p>
-                    The result is stronger output retention during extreme heat and more usable solar production across hot Darwin afternoons.
-                  </p>
-                </div>
-
-                {/* Performance stats badges matching requested statistics */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mt-6 lg:mt-8 pt-4 lg:pt-6 border-t border-white/5 text-center">
-                  <div className="bg-slate-900/40 p-4 rounded-xl border border-white/5">
-                    <div className="text-xl sm:text-2xl font-mono font-black text-[#5BC94D]">-0.26%/°C</div>
-                    <div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider mt-1">Temperature Coefficient</div>
-                  </div>
-                  <div className="bg-slate-900/40 p-4 rounded-xl border border-white/5">
-                    <div className="text-xl sm:text-2xl font-mono font-black text-[#5BC94D]">65°C–75°C</div>
-                    <div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider mt-1">Darwin Rooftops</div>
-                  </div>
-                  <div className="bg-slate-900/40 p-4 rounded-xl border border-white/5">
-                    <div className="text-xl sm:text-2xl font-mono font-black text-[#5BC94D]">Better</div>
-                    <div className="text-[9px] text-slate-400 font-bold uppercase tracking-wider mt-1">Heat Retention than TOPCon</div>
-                  </div>
-                </div>
-              </FadeIn>
-            </div>
-
-          </div>
-
-          {/* Split Block 3: Perfect Fit for Territory Roofs (Left: Image, Right: Content) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20 items-center">
-            
-            <div className="lg:col-span-6 relative order-2 lg:order-1">
-              <FadeIn>
-                <div className="relative rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl aspect-[4/3] group">
-                  <img 
-                    referrerPolicy="no-referrer"
-                    src={cycloneSolarDarwinImg} 
-                    alt="Solar panels fitted to a residential roof" 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                  <div className="absolute bottom-6 left-6 bg-[#121814]/80 backdrop-blur-sm border border-[#5BC94D]/20 px-4 py-2 rounded-xl text-xs font-bold text-white uppercase tracking-wider">
-                    Compact & Cyclone Certified
-                  </div>
-                </div>
-              </FadeIn>
-            </div>
-
-            <div className="lg:col-span-6 order-1 lg:order-2">
-              <FadeIn delay={0.2}>
-                <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
-                  Optimized Physical Dimensions
-                </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-tight leading-tight">
-                  Perfect Fit for Territory Roofs
-                </h2>
-                <div className="text-slate-300 text-base leading-relaxed font-medium space-y-6">
-                  <p>
-                    AIKO’s above 25 per cent module efficiency means more kilowatts from the same number of panels. For Darwin homes where cyclone strapping, air-conditioning units and other rooftop equipment reduce usable roof area, this matters.
-                  </p>
-                  <p>
-                    The compact residential footprint allows homeowners to maximise energy production without requiring additional usable roof space. Oneroof Solar provides professional <Link to="/solar-panel-installation/" className="text-[#5BC94D] hover:underline font-bold">solar panel installation in Darwin</Link> matching these exact engineering dimensions.
-                  </p>
-                </div>
-
-                <div className="flex items-center gap-3 bg-slate-900/30 p-4 rounded-2xl border border-white/5 mt-6 lg:mt-8 max-w-lg">
-                  <div className="p-2 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D]">
-                    <Clock className="w-5 h-5" />
-                  </div>
-                  <p className="text-xs text-slate-400 font-medium leading-relaxed">
-                    While the upfront price is higher than standard TOPCon options, the long-term energy yields and 30-year performance warranty provide a faster return on investment.
-                  </p>
-                </div>
-              </FadeIn>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
       {/* Models We Supply - Upgraded to Premium Product Showcase */}
       <section className="py-12 lg:py-24 bg-[#0A1118] relative overflow-hidden border-b border-white/5">
         <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-[#5BC94D]/5 rounded-full blur-[140px] pointer-events-none -translate-x-1/2"></div>
         
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
             
-            {/* Models Intro Column with visual panel display */}
-            <div className="lg:col-span-5 flex flex-col justify-between">
-              <FadeIn className="h-full flex flex-col justify-between">
+            {/* Models Intro Column */}
+            <div className="lg:col-span-5 flex flex-col justify-center">
+              <FadeIn>
                 <div>
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-bold text-[10px] mb-6 border border-[#5BC94D]/20 uppercase tracking-widest">
-                    <Zap className="w-3.5 h-3.5" /> High Power Output
-                  </span>
-                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tighter mb-6 uppercase leading-tight">
+                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
                     AIKO Models We Supply
                   </h2>
-                  <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-8">
-                    We supply the premium AIKO Gen 3 ABC Neostar series for residential and commercial installations across the NT. Every AIKO panel we install across the NT is Clean Energy Council (CEC) approved, cyclone rated and backed by a 30 year performance warranty. 
+                  <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-6">
+                    We supply the AIKO Gen 3 ABC Neostar series for residential and commercial installations across the NT. Every AIKO panel we install across the NT is CEC approved, cyclone rated and backed by a 30-year performance warranty. Download the full datasheet for complete model-level specifications including exact wattages, dimensions and cyclone certification data.
                   </p>
-                </div>
-
-                {/* Elegant split photo showcase box inside intro */}
-                <div className="relative rounded-[2rem] overflow-hidden border border-white/10 bg-slate-900/40 p-6 flex items-center justify-between mt-6 lg:mt-auto">
-                  <div className="space-y-2">
-                    <div className="text-sm font-bold text-white uppercase tracking-wider">AIKO Neostar Gen 3</div>
-                    <div className="text-xs text-slate-400">ABC N-type solar panel certified for Darwin wind speeds.</div>
-                  </div>
-                  <img
-                    referrerPolicy="no-referrer"
-                    src="https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png"
-                    alt="AIKO panel preview"
-                    className="w-24 h-auto object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)] transform hover:scale-110 transition-transform duration-300"
-                  />
                 </div>
               </FadeIn>
             </div>
 
-            {/* Technical specs displayed visually in 6 premium cards */}
+            {/* Technical specs displayed visually in 6 cards */}
             <div className="lg:col-span-7 flex flex-col justify-center mt-8 lg:mt-0">
               <FadeIn delay={0.2} className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 
@@ -708,7 +465,7 @@ export function AikoSolarPanels() {
                     </div>
                     <h3 className="font-bold text-sm text-[#5BC94D] uppercase tracking-wider">Above 25% Module Efficiency</h3>
                   </div>
-                  <p className="text-xs text-slate-300 leading-relaxed font-medium">
+                  <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-medium">
                     N-type ABC monocrystalline cells. Highest-output residential panel Oneroof Solar supplies. More kilowatts from the same roof space.
                   </p>
                 </div>
@@ -721,7 +478,7 @@ export function AikoSolarPanels() {
                     </div>
                     <h3 className="font-bold text-sm text-orange-400 uppercase tracking-wider">Temperature Coefficient: -0.26%/°C</h3>
                   </div>
-                  <p className="text-xs text-slate-300 leading-relaxed font-medium">
+                  <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-medium">
                     Less power loss on Darwin rooftops reaching 65°C to 75°C. Outperforms standard TOPCon panels at -0.29%/°C in the dry season.
                   </p>
                 </div>
@@ -734,7 +491,7 @@ export function AikoSolarPanels() {
                     </div>
                     <h3 className="font-bold text-sm text-blue-400 uppercase tracking-wider">30-Year Performance Warranty</h3>
                   </div>
-                  <p className="text-xs text-slate-300 leading-relaxed font-medium">
+                  <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-medium">
                     90.6% output guaranteed at Year 25. 88.85% at Year 30. One of the strongest long-term guarantees available in Australia in 2026.
                   </p>
                 </div>
@@ -747,8 +504,8 @@ export function AikoSolarPanels() {
                     </div>
                     <h3 className="font-bold text-sm text-cyan-400 uppercase tracking-wider">Annual Degradation: 0.35% per year</h3>
                   </div>
-                  <p className="text-xs text-slate-300 leading-relaxed font-medium">
-                    Lower degradation than standard N-type TOPCon at 0.4% per year. More electricity produced in Year 20 compared with other brands.
+                  <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-medium">
+                    Lower degradation than standard N-type TOPCon at 0.4% per year. More electricity produced in Year 20 compared to other brands.
                   </p>
                 </div>
 
@@ -760,7 +517,7 @@ export function AikoSolarPanels() {
                     </div>
                     <h3 className="font-bold text-sm text-[#5BC94D] uppercase tracking-wider">CEC Approved — March 2026</h3>
                   </div>
-                  <p className="text-xs text-slate-300 leading-relaxed font-medium">
+                  <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-medium">
                     STC rebate eligible for all NT residential and commercial installations.
                   </p>
                 </div>
@@ -773,8 +530,8 @@ export function AikoSolarPanels() {
                     </div>
                     <h3 className="font-bold text-sm text-amber-400 uppercase tracking-wider">Cyclone Rated</h3>
                   </div>
-                  <p className="text-xs text-slate-300 leading-relaxed font-medium">
-                    Structural wind-load certified for Darwin NT building standards. Every installation is completed by CEC-accredited electricians.
+                  <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-medium">
+                    Structural wind-load certified for Darwin NT building standards. Every installation by CEC-accredited electricians.
                   </p>
                 </div>
 
@@ -783,25 +540,14 @@ export function AikoSolarPanels() {
 
           </div>
 
-          {/* Datasheet Action Panel (Clean & visual glass element) */}
-          <FadeIn delay={0.3}>
-            <div className="flex flex-col items-center justify-center p-6 sm:p-10 bg-slate-900/30 rounded-3xl sm:rounded-[2.5rem] border border-white/10 mt-10 lg:mt-16 text-center max-w-2xl mx-auto backdrop-blur-sm">
-              <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[#5BC94D] mb-5">
-                <FileText className="w-6 h-6" />
-              </div>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 text-[10px] font-mono font-bold mb-4 uppercase tracking-wider">
-                Development Review: Datasheet Pending
-              </div>
-              <p className="text-slate-300 text-sm mb-6 leading-relaxed max-w-md font-medium">
-                The technical specification datasheet will be linked here once the file is uploaded to the production directory.
-              </p>
-              <Button
-                disabled
-                className="bg-slate-800 text-slate-400 font-bold px-10 py-5 rounded-xl uppercase tracking-wider text-xs cursor-not-allowed border border-slate-700 w-full sm:w-auto"
-              >
-                Download Full Datasheet
-              </Button>
-            </div>
+          {/* Download Full Datasheet CTA button directly beneath feature grid */}
+          <FadeIn delay={0.3} className="mt-10 lg:mt-12 text-center flex justify-center">
+            <Button
+              disabled
+              className="bg-slate-800 text-slate-400 font-bold px-8 py-4 rounded-xl uppercase tracking-wider text-xs cursor-not-allowed border border-slate-700 inline-flex items-center gap-2"
+            >
+              <FileText className="w-4 h-4" /> Download Full Datasheet
+            </Button>
           </FadeIn>
         </div>
       </section>
@@ -815,7 +561,7 @@ export function AikoSolarPanels() {
               <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
                 Engineered for the Northern Territory climate
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
                 Why AIKO Suits Darwin Conditions
               </h2>
             </FadeIn>
@@ -831,7 +577,7 @@ export function AikoSolarPanels() {
                 <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
                   Maximum Output From Limited Roof Space
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-medium">
+                <p className="text-base text-slate-300 leading-relaxed font-medium">
                   AIKO’s above 25 per cent efficiency means more kilowatts from the same number of panels. For Darwin homes where cyclone strapping and air-conditioning units reduce usable roof area, this matters.
                 </p>
               </div>
@@ -846,7 +592,7 @@ export function AikoSolarPanels() {
                 <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
                   Strong Heat Performance
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-medium">
+                <p className="text-base text-slate-300 leading-relaxed font-medium">
                   The -0.26%/°C temperature coefficient outperforms standard TOPCon panels at -0.29%/°C. On Darwin rooftops reaching 65°C to 75°C in the dry season, AIKO panels retain more of their rated wattage output every day.
                 </p>
               </div>
@@ -861,7 +607,7 @@ export function AikoSolarPanels() {
                 <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
                   30-Year Performance Warranty
                 </h3>
-                <p className="text-sm text-slate-300 leading-relaxed font-medium">
+                <p className="text-base text-slate-300 leading-relaxed font-medium">
                   AIKO guarantees 90.6 per cent output at Year 25 and 88.85 per cent at Year 30, one of the strongest long-term guarantees available in Australia in 2026.
                 </p>
               </div>
@@ -883,7 +629,7 @@ export function AikoSolarPanels() {
                   <span className="text-xs font-bold text-slate-300 uppercase tracking-widest">Support</span>
                 </div>
                 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-white leading-[1.1] mb-6 uppercase">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
                   Frequently Asked Questions
                 </h2>
                 
@@ -969,7 +715,7 @@ export function AikoSolarPanels() {
                           isOpen ? "max-h-[32rem] pb-6 opacity-100" : "max-h-0 opacity-0"
                         }`}
                       >
-                        <div className="text-slate-300 leading-relaxed font-medium pl-12 sm:pl-14 text-xs sm:text-sm">
+                        <div className="text-slate-300 leading-relaxed font-medium pl-12 sm:pl-14 text-base">
                           {faq.a}
                         </div>
                       </div>
@@ -1008,7 +754,7 @@ export function AikoSolarPanels() {
                   Get Started Today
                 </span>
                 
-                <h2 className="text-4xl sm:text-5xl font-black text-white uppercase tracking-tight mb-6 leading-[1.1]">
+                <h2 className="text-4xl sm:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
                   Start Saving With <br/>
                   <span className="text-[#5BC94D]">AIKO Solar Panels</span>
                 </h2>

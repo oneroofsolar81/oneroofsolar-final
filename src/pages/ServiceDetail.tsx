@@ -544,6 +544,8 @@ import { PackagesSection } from "@/src/components/PackagesSection";
 import { FaqSection } from "@/src/components/FaqSection";
 import { ResidentialSolarSystemPage } from "@/src/pages/ResidentialSolarSystemPage";
 import { SolarPanelRepairDarwinPage } from "@/src/pages/SolarPanelRepairDarwinPage";
+import { CommercialSolarSystemPage } from "@/src/pages/CommercialSolarSystemPage";
+import { OffGridSolarSystemPage } from "@/src/pages/OffGridSolarSystemPage";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import {
   CheckCircle2,
@@ -2167,6 +2169,22 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
       <div key={currentSlug} className="bg-[#19281D] text-slate-900 font-sans">
         <SEO seo={seoData} />
         <ResidentialSolarSystemPage />
+      </div>
+    );
+  }
+
+  if (currentSlug === "commercial-solar-system") {
+    return (
+      <div key={currentSlug} className="bg-[#121814] text-slate-100 font-sans">
+        <CommercialSolarSystemPage />
+      </div>
+    );
+  }
+
+  if (currentSlug === "off-grid-solar-system") {
+    return (
+      <div key={currentSlug} className="bg-[#121814] text-slate-100 font-sans">
+        <OffGridSolarSystemPage />
       </div>
     );
   }

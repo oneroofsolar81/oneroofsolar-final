@@ -99,6 +99,31 @@ export default function App() {
                 {/* Residential Solar New Canonical Route */}
                 <Route path="/residential-solar-system" element={<ServiceDetail slugOverride="residential-solar-system" />} />
                 
+                {/* Commercial Solar Canonical Route & Redirects */}
+                <Route path="/services/commercial-solar-system" element={<ServiceDetail slugOverride="commercial-solar-system" />} />
+                <Route path="/commercial-solar-system" element={<Navigate to="/services/commercial-solar-system" replace />} />
+                <Route path="/commercial-solar-system/" element={<Navigate to="/services/commercial-solar-system" replace />} />
+                <Route path="/commercial-solar" element={<Navigate to="/services/commercial-solar-system" replace />} />
+                <Route path="/commercial-solar/" element={<Navigate to="/services/commercial-solar-system" replace />} />
+                <Route path="/services/commercial-solar" element={<Navigate to="/services/commercial-solar-system" replace />} />
+                <Route path="/services/commercial-solar/" element={<Navigate to="/services/commercial-solar-system" replace />} />
+
+                {/* Off-Grid Solar System Canonical Route & Redirects */}
+                <Route path="/services/off-grid-solar-system" element={<ServiceDetail slugOverride="off-grid-solar-system" />} />
+                <Route path="/services/off-grid-solar-system/" element={<ServiceDetail slugOverride="off-grid-solar-system" />} />
+                <Route path="/off-grid-solar-system" element={<Navigate to="/services/off-grid-solar-system" replace />} />
+                <Route path="/off-grid-solar-system/" element={<Navigate to="/services/off-grid-solar-system" replace />} />
+                <Route path="/off-grid-solar" element={<Navigate to="/services/off-grid-solar-system" replace />} />
+                <Route path="/off-grid-solar/" element={<Navigate to="/services/off-grid-solar-system" replace />} />
+                <Route path="/services/off-grid-solar" element={<Navigate to="/services/off-grid-solar-system" replace />} />
+                <Route path="/services/off-grid-solar/" element={<Navigate to="/services/off-grid-solar-system" replace />} />
+
+                {/* Additional SEO Redirects for internal links */}
+                <Route path="/repairs-and-maintenance" element={<Navigate to="/solar-panels-darwin" replace />} />
+                <Route path="/repairs-and-maintenance/" element={<Navigate to="/solar-panels-darwin" replace />} />
+                <Route path="/services/solar-battery-installation" element={<ServiceDetail slugOverride="battery-storage" />} />
+                <Route path="/services/solar-battery-installation/" element={<ServiceDetail slugOverride="battery-storage" />} />
+                
                 <Route path="/services/:slug" element={<ServiceDetail />} />
                 <Route path="/product/solar-panels-brands" element={<SolarPanelsBrands />} />
                 
@@ -107,6 +132,8 @@ export default function App() {
                 <Route path="/solar-panels-brands/aiko/" element={<AikoSolarPanels />} />
                 
                 {/* JA Solar Brand Landing Page */}
+                <Route path="/products/ja-solar-panels" element={<JaSolarPanels />} />
+                <Route path="/products/ja-solar-panels/" element={<JaSolarPanels />} />
                 <Route path="/product/solar-panels-brands/ja-solar-panels-nt" element={<JaSolarPanels />} />
                 <Route path="/product/solar-panels-brands/ja-solar-panels-nt/" element={<JaSolarPanels />} />
                 
@@ -134,6 +161,7 @@ export default function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route path="/projects/" element={<Projects />} />
                 <Route path="/terms" element={<Terms />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="*" element={<div className="min-h-screen flex items-center justify-center pt-24"><div className="text-center"><h1 className="text-6xl font-black text-slate-900 mb-4">404</h1><p className="text-xl text-slate-600 mb-8">The page you are looking for does not exist.</p><Link to="/" className="text-brand-600 font-bold hover:underline">Go back home</Link></div></div>} />
