@@ -67,6 +67,7 @@ export function SEO({ seo }: { seo?: SeoData }) {
 
     // Apply Open Graph (Facebook)
     updateMeta('og:type', true, 'website');
+    updateMeta('og:locale', true, 'en_AU');
     updateMeta('og:title', true, seo.openGraphTitle || titleVal);
     updateMeta('og:description', true, seo.openGraphDescription || descriptionVal);
     if (seo.openGraphImage) {

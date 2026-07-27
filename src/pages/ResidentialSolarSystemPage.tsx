@@ -962,7 +962,10 @@ export function ResidentialSolarSystemPage() {
                     </div>
                   </div>
 
-                  <Link to="/contact" className="text-sm font-bold text-[#5BC94D] hover:text-white flex items-center gap-1 group-hover:translate-x-1 transition-all mt-auto">
+                  <Link 
+                    to={area.hub === "Alice Springs" ? "/solar-alice-springs/" : "/contact"}
+                    className="text-sm font-bold text-[#5BC94D] hover:text-white flex items-center gap-1 group-hover:translate-x-1 transition-all mt-auto"
+                  >
                     {area.linkText} <ChevronRight className="w-4 h-4" />
                   </Link>
                 </div>
