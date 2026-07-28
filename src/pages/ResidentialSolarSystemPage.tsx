@@ -228,14 +228,14 @@ export function ResidentialSolarSystemPage() {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Services",
-            "item": "https://oneroofsolar.com.au/services"
+            "name": "Solar Systems",
+            "item": "https://oneroofsolar.com.au/solar-systems"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Residential Solar Systems",
-            "item": "https://oneroofsolar.com.au/residential-solar-system"
+            "item": "https://oneroofsolar.com.au/solar-systems/residential-solar-system"
           }
         ]
       },
