@@ -51,8 +51,9 @@ export function Footer() {
               Services
             </h3>
             <ul className="space-y-4 text-sm text-slate-400 font-medium">
-              <li><Link to="/residential-solar-system" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Residential Solar Systems</Link></li>
-              <li><Link to="/services/commercial-solar-system" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Commercial Solar Systems</Link></li>
+              <li><Link to="/solar-systems/residential-solar-system" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Residential Solar Systems</Link></li>
+              <li><Link to="/solar-systems/commercial-solar-system" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Commercial Solar Systems</Link></li>
+              <li><Link to="/solar-systems/off-grid-solar-system" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Off-Grid Solar Systems</Link></li>
               <li><Link to="/services/battery-storage" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Battery Storage Solutions</Link></li>
               <li><Link to="/services/ev-chargers" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> EV Chargers</Link></li>
               <li><Link to="/services/solar-inverters" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Solar Inverters</Link></li>

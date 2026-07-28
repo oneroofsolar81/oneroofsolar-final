@@ -1,3 +1,15 @@
+/residential-solar-system /solar-systems/residential-solar-system 301
+/residential-solar-system/ /solar-systems/residential-solar-system 301
+/services/residential-solar-system /solar-systems/residential-solar-system 301
+/services/residential-solar-system/ /solar-systems/residential-solar-system 301
+/services/commercial-solar-system /solar-systems/commercial-solar-system 301
+/services/commercial-solar-system/ /solar-systems/commercial-solar-system 301
+/commercial-solar-system /solar-systems/commercial-solar-system 301
+/commercial-solar-system/ /solar-systems/commercial-solar-system 301
+/services/off-grid-solar-system /solar-systems/off-grid-solar-system 301
+/services/off-grid-solar-system/ /solar-systems/off-grid-solar-system 301
+/off-grid-solar-system /solar-systems/off-grid-solar-system 301
+/off-grid-solar-system/ /solar-systems/off-grid-solar-system 301
 /services/solar-panel/ /solar-panels-darwin/ 301
 /services/solar-panel /solar-panels-darwin/ 301
 /services/repairs-and-maintenance/ /solar-panels-darwin/ 301

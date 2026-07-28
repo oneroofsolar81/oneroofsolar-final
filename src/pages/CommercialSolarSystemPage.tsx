@@ -90,7 +90,7 @@ export function CommercialSolarSystemPage() {
   const seoData = {
     title: "Commercial Solar Systems Darwin and Alice Springs NT | Oneroof Solar",
     metaDescription: "Oneroof Solar installs commercial solar systems for NT businesses from 30kW to 100kW+. STC and LGC incentives, PPA options, 3 to 5-year payback. Get a free business quote.",
-    canonicalUrl: "https://oneroofsolar.com.au/services/commercial-solar-system",
+    canonicalUrl: "https://oneroofsolar.com.au/solar-systems/commercial-solar-system",
     robots: "index, follow",
     openGraphTitle: "Commercial Solar Systems Darwin and Alice Springs NT | Oneroof Solar",
     openGraphDescription: "Oneroof Solar installs commercial solar systems for NT businesses from 30kW to 100kW+. STC and LGC incentives, PPA options, 3 to 5-year payback. Get a free business quote.",
@@ -184,8 +184,14 @@ export function CommercialSolarSystemPage() {
       {
         "@type": "ListItem",
         "position": 2,
+        "name": "Solar Systems",
+        "item": "https://oneroofsolar.com.au/solar-systems"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
         "name": "Commercial Solar Systems",
-        "item": "https://oneroofsolar.com.au/services/commercial-solar-system"
+        "item": "https://oneroofsolar.com.au/solar-systems/commercial-solar-system"
       }
     ]
   };
@@ -279,7 +285,7 @@ export function CommercialSolarSystemPage() {
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">
                   <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
                   <span>/</span>
-                  <Link to="/services/commercial-solar-system" className="hover:text-[#5BC94D] transition-colors">Services</Link>
+                  <span className="text-slate-400">Solar Systems</span>
                   <span>/</span>
                   <span className="text-[#5BC94D]">Commercial Solar</span>
                 </div>
