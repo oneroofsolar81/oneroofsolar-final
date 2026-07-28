@@ -389,14 +389,16 @@ export function AikoSolarPanels() {
                   {/* Highlight Glow */}
                   <div className="absolute -inset-10 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/15 transition-all duration-700 pointer-events-none"></div>
 
-                  {/* AIKO panel image */}
-                  <img
-                    referrerPolicy="no-referrer"
-                    fetchPriority="high"
-                    src="https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png"
-                    alt="AIKO solar panels close-up"
-                    className="w-2/3 sm:w-4/5 h-auto object-contain relative z-10 transition-transform duration-500 group-hover:scale-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)] my-8 sm:my-0"
-                  />
+                  {/* AIKO panel white display container & enlarged image */}
+                  <div className="relative z-10 w-[72%] sm:w-[75%] h-[58%] sm:h-[65%] min-h-[220px] max-h-[290px] sm:max-h-[330px] bg-white rounded-[24px] p-4 sm:p-5 flex items-center justify-center overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-[1.02] my-10 sm:my-0 border border-slate-100">
+                    <img
+                      referrerPolicy="no-referrer"
+                      fetchPriority="high"
+                      src="https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png"
+                      alt="AIKO solar panels close-up"
+                      className="w-full h-full object-contain object-center transform scale-[1.48] transition-transform duration-500 group-hover:scale-[1.55] drop-shadow-[0_10px_20px_rgba(0,0,0,0.12)]"
+                    />
+                  </div>
                   
                   {/* Floating Badges */}
                   <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-[#121814]/90 backdrop-blur-md border border-[#5BC94D]/30 px-3 py-1.5 sm:px-5 sm:py-3 rounded-xl sm:rounded-2xl z-20 shadow-lg text-center transform hover:scale-105 transition-transform">
@@ -540,14 +542,28 @@ export function AikoSolarPanels() {
 
           </div>
 
-          {/* Download Full Datasheet CTA button directly beneath feature grid */}
-          <FadeIn delay={0.3} className="mt-10 lg:mt-12 text-center flex justify-center">
-            <Button
-              disabled
-              className="bg-slate-800 text-slate-400 font-bold px-8 py-4 rounded-xl uppercase tracking-wider text-xs cursor-not-allowed border border-slate-700 inline-flex items-center gap-2"
-            >
-              <FileText className="w-4 h-4" /> Download Full Datasheet
-            </Button>
+          {/* Download Datasheet CTA buttons directly beneath feature grid */}
+          <FadeIn delay={0.3} className="mt-10 lg:mt-12">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 max-w-4xl mx-auto">
+              <a
+                href="/assets/datasheets/AIKO%20470%20panles.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white font-bold px-6 py-4 rounded-xl uppercase tracking-wider text-xs border border-slate-700 hover:border-[#5BC94D]/50 transition-all duration-300 inline-flex items-center justify-center gap-2.5 w-full sm:w-auto shadow-lg hover:shadow-xl group"
+              >
+                <FileText className="w-4 h-4 text-[#5BC94D] group-hover:scale-110 transition-transform" />
+                <span>Download Neostar 2S 440W–470W Datasheet</span>
+              </a>
+              <a
+                href="/assets/datasheets/File-1759375846.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white font-bold px-6 py-4 rounded-xl uppercase tracking-wider text-xs border border-slate-700 hover:border-[#5BC94D]/50 transition-all duration-300 inline-flex items-center justify-center gap-2.5 w-full sm:w-auto shadow-lg hover:shadow-xl group"
+              >
+                <FileText className="w-4 h-4 text-[#5BC94D] group-hover:scale-110 transition-transform" />
+                <span>Download Neostar 3P54 475W–500W Datasheet</span>
+              </a>
+            </div>
           </FadeIn>
         </div>
       </section>

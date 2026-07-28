@@ -2162,7 +2162,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
     const seoData = {
       title: "Residential Solar Systems NT | Darwin, Alice Springs & Palmerston",
       metaDescription: "Get high efficiency home solar systems in Darwin and the NT. Cut your energy bills with reliable cyclone rated solar setups. Request a free quote.",
-      canonicalUrl: "https://oneroofsolar.com.au/residential-solar-system",
+      canonicalUrl: "https://oneroofsolar.com.au/solar-systems/residential-solar-system",
     };
 
     return (
