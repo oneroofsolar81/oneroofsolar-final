@@ -4,7 +4,11 @@ import { initializeFirestore, memoryLocalCache, setLogLevel } from 'firebase/fir
 import firebaseConfig from '../../firebase-applet-config.json';
 
 // Silence non-fatal connection retry warnings from Firestore internal logger
-setLogLevel('error');
+try {
+  setLogLevel('silent');
+} catch {
+  // Ignore if setLogLevel isn't supported
+}
 
 const app = initializeApp(firebaseConfig);
 

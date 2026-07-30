@@ -4,7 +4,7 @@ import App from './App.tsx';
 import { ErrorBoundary } from './components/ErrorBoundary.tsx';
 import './index.css';
 
-// Suppress ResizeObserver, Elfsight/eapps, and Google Tag Manager benign errors
+// Suppress ResizeObserver, Elfsight/eapps, Google Tag Manager, and non-fatal Firestore network retry warnings
 const originalError = console.error;
 console.error = (...args) => {
   const isSuppressed = args.some(arg => {
@@ -23,7 +23,9 @@ console.error = (...args) => {
       lower.includes('lc tracking') ||
       lower.includes('tracking-id') ||
       lower.includes('app_views_limit_reached') ||
-      lower.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a')
+      lower.includes('97fdc0ab-99c9-4ba4-9322-5d5c0458539a') ||
+      lower.includes('could not reach cloud firestore backend') ||
+      lower.includes('code=unavailable')
     );
   });
   if (isSuppressed) return;
