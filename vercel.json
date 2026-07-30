@@ -1,18 +1,63 @@
 {
   "redirects": [
     {
+      "source": "/residential-solar-system",
+      "destination": "/solar-systems/residential-solar-system",
+      "permanent": true
+    },
+    {
       "source": "/services/residential-solar-system",
-      "destination": "/residential-solar-system",
+      "destination": "/solar-systems/residential-solar-system",
       "permanent": true
     },
     {
       "source": "/residential-solar",
-      "destination": "/residential-solar-system",
+      "destination": "/solar-systems/residential-solar-system",
       "permanent": true
     },
     {
       "source": "/systems/residential",
-      "destination": "/residential-solar-system",
+      "destination": "/solar-systems/residential-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/services/commercial-solar-system",
+      "destination": "/solar-systems/commercial-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-solar-system",
+      "destination": "/solar-systems/commercial-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-solar",
+      "destination": "/solar-systems/commercial-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/services/commercial-solar",
+      "destination": "/solar-systems/commercial-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/services/off-grid-solar-system",
+      "destination": "/solar-systems/off-grid-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/off-grid-solar-system",
+      "destination": "/solar-systems/off-grid-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/off-grid-solar",
+      "destination": "/solar-systems/off-grid-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/services/off-grid-solar",
+      "destination": "/solar-systems/off-grid-solar-system",
       "permanent": true
     },
     {

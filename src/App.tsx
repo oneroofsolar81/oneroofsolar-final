@@ -17,7 +17,13 @@ import { Privacy } from "./pages/Privacy";
 import { SolarPanelsBrands } from "./pages/SolarPanelsBrands";
 import { AikoSolarPanels } from "./pages/AikoSolarPanels";
 import { JaSolarPanels } from "./pages/JaSolarPanels";
+import { JinkoSolarPanels } from "./pages/JinkoSolarPanels";
+import { LongiSolarPanels } from "./pages/LongiSolarPanels";
+import { RecSolarPanels } from "./pages/RecSolarPanels";
 import { SolarAliceSprings } from "./pages/SolarAliceSprings";
+import { SolarInverters } from "./pages/SolarInverters";
+import { SolarInverterInstallation } from "./pages/SolarInverterInstallation";
+import { SolarInverterRepair } from "./pages/SolarInverterRepair";
 import { AuthProvider } from "./context/AuthContext";
 import { NotificationProvider } from "./context/NotificationContext";
 import ScrollToTop from "./components/ScrollToTop";
@@ -91,32 +97,40 @@ export default function App() {
                 <Route path="/solar-panel-installation-darwin" element={<ServiceDetail slugOverride="solar-panel-installation" />} />
                 <Route path="/solar-panel-installation-darwin/" element={<ServiceDetail slugOverride="solar-panel-installation" />} />
                 
-                {/* Residential Solar Redirects */}
-                <Route path="/services/residential-solar-system" element={<Navigate to="/residential-solar-system" replace />} />
-                <Route path="/residential-solar" element={<Navigate to="/residential-solar-system" replace />} />
-                <Route path="/systems/residential" element={<Navigate to="/residential-solar-system" replace />} />
+                {/* Solar Systems Canonical Routes & Redirects */}
+                {/* 1. Residential Solar System */}
+                <Route path="/solar-systems/residential-solar-system" element={<ServiceDetail slugOverride="residential-solar-system" />} />
+                <Route path="/solar-systems/residential-solar-system/" element={<ServiceDetail slugOverride="residential-solar-system" />} />
+                <Route path="/residential-solar-system" element={<Navigate to="/solar-systems/residential-solar-system" replace />} />
+                <Route path="/residential-solar-system/" element={<Navigate to="/solar-systems/residential-solar-system" replace />} />
+                <Route path="/services/residential-solar-system" element={<Navigate to="/solar-systems/residential-solar-system" replace />} />
+                <Route path="/services/residential-solar-system/" element={<Navigate to="/solar-systems/residential-solar-system" replace />} />
+                <Route path="/residential-solar" element={<Navigate to="/solar-systems/residential-solar-system" replace />} />
+                <Route path="/systems/residential" element={<Navigate to="/solar-systems/residential-solar-system" replace />} />
                 
-                {/* Residential Solar New Canonical Route */}
-                <Route path="/residential-solar-system" element={<ServiceDetail slugOverride="residential-solar-system" />} />
-                
-                {/* Commercial Solar Canonical Route & Redirects */}
-                <Route path="/services/commercial-solar-system" element={<ServiceDetail slugOverride="commercial-solar-system" />} />
-                <Route path="/commercial-solar-system" element={<Navigate to="/services/commercial-solar-system" replace />} />
-                <Route path="/commercial-solar-system/" element={<Navigate to="/services/commercial-solar-system" replace />} />
-                <Route path="/commercial-solar" element={<Navigate to="/services/commercial-solar-system" replace />} />
-                <Route path="/commercial-solar/" element={<Navigate to="/services/commercial-solar-system" replace />} />
-                <Route path="/services/commercial-solar" element={<Navigate to="/services/commercial-solar-system" replace />} />
-                <Route path="/services/commercial-solar/" element={<Navigate to="/services/commercial-solar-system" replace />} />
+                {/* 2. Commercial Solar System */}
+                <Route path="/solar-systems/commercial-solar-system" element={<ServiceDetail slugOverride="commercial-solar-system" />} />
+                <Route path="/solar-systems/commercial-solar-system/" element={<ServiceDetail slugOverride="commercial-solar-system" />} />
+                <Route path="/services/commercial-solar-system" element={<Navigate to="/solar-systems/commercial-solar-system" replace />} />
+                <Route path="/services/commercial-solar-system/" element={<Navigate to="/solar-systems/commercial-solar-system" replace />} />
+                <Route path="/commercial-solar-system" element={<Navigate to="/solar-systems/commercial-solar-system" replace />} />
+                <Route path="/commercial-solar-system/" element={<Navigate to="/solar-systems/commercial-solar-system" replace />} />
+                <Route path="/commercial-solar" element={<Navigate to="/solar-systems/commercial-solar-system" replace />} />
+                <Route path="/commercial-solar/" element={<Navigate to="/solar-systems/commercial-solar-system" replace />} />
+                <Route path="/services/commercial-solar" element={<Navigate to="/solar-systems/commercial-solar-system" replace />} />
+                <Route path="/services/commercial-solar/" element={<Navigate to="/solar-systems/commercial-solar-system" replace />} />
 
-                {/* Off-Grid Solar System Canonical Route & Redirects */}
-                <Route path="/services/off-grid-solar-system" element={<ServiceDetail slugOverride="off-grid-solar-system" />} />
-                <Route path="/services/off-grid-solar-system/" element={<ServiceDetail slugOverride="off-grid-solar-system" />} />
-                <Route path="/off-grid-solar-system" element={<Navigate to="/services/off-grid-solar-system" replace />} />
-                <Route path="/off-grid-solar-system/" element={<Navigate to="/services/off-grid-solar-system" replace />} />
-                <Route path="/off-grid-solar" element={<Navigate to="/services/off-grid-solar-system" replace />} />
-                <Route path="/off-grid-solar/" element={<Navigate to="/services/off-grid-solar-system" replace />} />
-                <Route path="/services/off-grid-solar" element={<Navigate to="/services/off-grid-solar-system" replace />} />
-                <Route path="/services/off-grid-solar/" element={<Navigate to="/services/off-grid-solar-system" replace />} />
+                {/* 3. Off-Grid Solar System */}
+                <Route path="/solar-systems/off-grid-solar-system" element={<ServiceDetail slugOverride="off-grid-solar-system" />} />
+                <Route path="/solar-systems/off-grid-solar-system/" element={<ServiceDetail slugOverride="off-grid-solar-system" />} />
+                <Route path="/services/off-grid-solar-system" element={<Navigate to="/solar-systems/off-grid-solar-system" replace />} />
+                <Route path="/services/off-grid-solar-system/" element={<Navigate to="/solar-systems/off-grid-solar-system" replace />} />
+                <Route path="/off-grid-solar-system" element={<Navigate to="/solar-systems/off-grid-solar-system" replace />} />
+                <Route path="/off-grid-solar-system/" element={<Navigate to="/solar-systems/off-grid-solar-system" replace />} />
+                <Route path="/off-grid-solar" element={<Navigate to="/solar-systems/off-grid-solar-system" replace />} />
+                <Route path="/off-grid-solar/" element={<Navigate to="/solar-systems/off-grid-solar-system" replace />} />
+                <Route path="/services/off-grid-solar" element={<Navigate to="/solar-systems/off-grid-solar-system" replace />} />
+                <Route path="/services/off-grid-solar/" element={<Navigate to="/solar-systems/off-grid-solar-system" replace />} />
 
                 {/* Additional SEO Redirects for internal links */}
                 <Route path="/repairs-and-maintenance" element={<Navigate to="/solar-panels-darwin" replace />} />
@@ -124,6 +138,28 @@ export default function App() {
                 <Route path="/services/solar-battery-installation" element={<ServiceDetail slugOverride="battery-storage" />} />
                 <Route path="/services/solar-battery-installation/" element={<ServiceDetail slugOverride="battery-storage" />} />
                 
+                {/* Solar Inverters Service Hub Page */}
+                <Route path="/services/solar-inverters" element={<SolarInverters />} />
+                <Route path="/services/solar-inverters/" element={<SolarInverters />} />
+
+                {/* Solar Inverter Installation Child Page & 301 Redirects */}
+                <Route path="/services/solar-inverters/installation" element={<SolarInverterInstallation />} />
+                <Route path="/services/solar-inverters/installation/" element={<SolarInverterInstallation />} />
+                <Route path="/services/solar-inverter-installation" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+                <Route path="/services/solar-inverter-installation/" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+                <Route path="/solar-inverter-installation" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+                <Route path="/solar-inverter-installation/" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+                <Route path="/category/solar-inverter-installation" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+                <Route path="/category/solar-inverter-installation/" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+
+                {/* Solar Inverter Repair Child Page & 301 Redirects */}
+                <Route path="/services/solar-inverters/repair" element={<SolarInverterRepair />} />
+                <Route path="/services/solar-inverters/repair/" element={<SolarInverterRepair />} />
+                <Route path="/category/solar-inverter-repair" element={<Navigate to="/services/solar-inverters/repair" replace />} />
+                <Route path="/category/solar-inverter-repair/" element={<Navigate to="/services/solar-inverters/repair" replace />} />
+                <Route path="/services/solar-inverter-repair" element={<Navigate to="/services/solar-inverters/repair" replace />} />
+                <Route path="/services/solar-inverter-repair/" element={<Navigate to="/services/solar-inverters/repair" replace />} />
+
                 <Route path="/services/:slug" element={<ServiceDetail />} />
                 <Route path="/product/solar-panels-brands" element={<SolarPanelsBrands />} />
                 
@@ -136,6 +172,20 @@ export default function App() {
                 <Route path="/products/ja-solar-panels/" element={<JaSolarPanels />} />
                 <Route path="/product/solar-panels-brands/ja-solar-panels-nt" element={<JaSolarPanels />} />
                 <Route path="/product/solar-panels-brands/ja-solar-panels-nt/" element={<JaSolarPanels />} />
+                
+                {/* Jinko Solar Brand Landing Page */}
+                <Route path="/solar-panels-brands/jinko" element={<JinkoSolarPanels />} />
+                <Route path="/solar-panels-brands/jinko/" element={<JinkoSolarPanels />} />
+                <Route path="/solar-panels/jinko" element={<JinkoSolarPanels />} />
+                <Route path="/solar-panels/jinko/" element={<JinkoSolarPanels />} />
+                
+                {/* LONGi Solar Brand Landing Page */}
+                <Route path="/solar-panels-brands/longi" element={<LongiSolarPanels />} />
+                <Route path="/solar-panels-brands/longi/" element={<LongiSolarPanels />} />
+                
+                {/* REC Solar Brand Landing Page */}
+                <Route path="/solar-panels-brands/rec" element={<RecSolarPanels />} />
+                <Route path="/solar-panels-brands/rec/" element={<RecSolarPanels />} />
                 
                 {/* Alice Springs Hub Landing Page */}
                 <Route path="/solar-alice-springs" element={<SolarAliceSprings />} />
@@ -150,8 +200,6 @@ export default function App() {
                 {/* External SEO Redirects mapping */}
                 <Route path="/solar-panels/rec" element={<Navigate to="/product/solar-panels-brands" replace />} />
                 <Route path="/solar-panels/rec/" element={<Navigate to="/product/solar-panels-brands" replace />} />
-                <Route path="/solar-panels/jinko" element={<Navigate to="/product/solar-panels-brands" replace />} />
-                <Route path="/solar-panels/jinko/" element={<Navigate to="/product/solar-panels-brands" replace />} />
                 <Route path="/solar-panels" element={<Navigate to="/product/solar-panels-brands" replace />} />
                 <Route path="/solar-panels/" element={<Navigate to="/product/solar-panels-brands" replace />} />
                 <Route path="/solar-panel-installation" element={<Navigate to="/services/solar-panel-installation" replace />} />

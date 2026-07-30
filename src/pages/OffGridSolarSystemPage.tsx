@@ -42,10 +42,10 @@ import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
 import { PartnersMarquee } from "../components/PartnersMarquee";
 import { SEO } from "../components/SEO";
-import { GoogleReviews } from "../components/GoogleReviews";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 import { db } from "../lib/firebase";
 import { collection, addDoc } from "firebase/firestore";
+import heroBannerImg from "../assets/images/offgrid_hero_1785224439961.jpg";
 
 export function OffGridSolarSystemPage() {
   const ALICE_PHONE = "0483 937 004";
@@ -94,7 +94,11 @@ export function OffGridSolarSystemPage() {
   const seoData = {
     title: "Off-Grid Solar Systems NT | Remote Darwin and Alice Springs | Oneroof Solar",
     metaDescription: "Oneroof Solar designs and installs off-grid solar systems across remote NT — Darwin, Alice Springs, Katherine, Tennant Creek and beyond. Battery storage, backup generators. Get a free quote.",
-    canonicalUrl: "https://oneroofsolar.com.au/services/off-grid-solar-system"
+    canonicalUrl: "https://oneroofsolar.com.au/solar-systems/off-grid-solar-system",
+    robots: "index, follow",
+    openGraphTitle: "Off-Grid Solar Systems NT | Remote Darwin and Alice Springs | Oneroof Solar",
+    openGraphDescription: "Oneroof Solar designs and installs off-grid solar systems across remote NT — Darwin, Alice Springs, Katherine, Tennant Creek and beyond. Battery storage, backup generators. Get a free quote.",
+    openGraphImage: "https://oneroofsolar.com.au/assets/images/offgrid_hero_1785224439961.jpg"
   };
 
   // Inject Combined JSON-LD Schema
@@ -218,8 +222,14 @@ export function OffGridSolarSystemPage() {
           {
             "@type": "ListItem",
             "position": 2,
+            "name": "Solar Systems",
+            "item": "https://oneroofsolar.com.au/solar-systems"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
             "name": "Off-Grid Solar Systems",
-            "item": "https://oneroofsolar.com.au/services/off-grid-solar-system"
+            "item": "https://oneroofsolar.com.au/solar-systems/off-grid-solar-system"
           }
         ]
       },
@@ -265,7 +275,7 @@ export function OffGridSolarSystemPage() {
         <div className="max-w-7xl mx-auto flex items-center gap-2 font-medium">
           <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
-          <Link to="/services/solar-panel-installation" className="hover:text-[#5BC94D] transition-colors">Services</Link>
+          <span className="text-slate-400">Solar Systems</span>
           <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
           <span className="text-white font-semibold">Off-Grid Solar Systems</span>
         </div>
@@ -276,11 +286,11 @@ export function OffGridSolarSystemPage() {
         {/* Background Image with Dark Overlay */}
         <div className="absolute inset-0 z-0">
           <img referrerPolicy="no-referrer" 
-            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1600&auto=format&fit=crop"
+            src={heroBannerImg}
             alt="Oneroof Solar off-grid solar system installed on remote Northern Territory property with battery storage and backup generator"
-            className="w-full h-full object-cover opacity-25 mix-blend-luminosity"
+            className="w-full h-full object-cover opacity-35 mix-blend-luminosity"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#121814] via-[#121814]/90 to-[#121814]/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#121814] via-[#121814]/85 to-[#121814]/60"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-transparent to-[#0b100d]"></div>
         </div>
 
@@ -619,7 +629,7 @@ export function OffGridSolarSystemPage() {
           {/* Footnote Link Note */}
           <FadeIn delay={0.2}>
             <p className="text-center text-slate-400 text-xs sm:text-sm font-medium mb-10 max-w-3xl mx-auto">
-              For hybrid solar systems, see our <Link to="/residential-solar-system" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">residential solar page</Link>. For grid-connected commercial systems, see our <Link to="/services/commercial-solar-system" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">commercial solar page</Link>.
+              For hybrid solar systems, see our <Link to="/solar-systems/residential-solar-system" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">residential solar page</Link>. For grid-connected commercial systems, see our <Link to="/solar-systems/commercial-solar-system" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">commercial solar page</Link>.
             </p>
           </FadeIn>
 
@@ -1559,8 +1569,8 @@ export function OffGridSolarSystemPage() {
             </FadeIn>
 
             {/* Region 7 */}
-            <FadeIn delay={0.7} className="md:col-span-2 lg:col-span-3">
-              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl hover:border-[#5BC94D]/40 transition-colors">
+            <FadeIn delay={0.7}>
+              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#5BC94D]/40 transition-colors">
                 <h3 className="text-lg font-black text-[#5BC94D] uppercase tracking-wide mb-3 flex items-center gap-2">
                   <MapPin className="w-4 h-4 shrink-0" />
                   Alice Springs and Central NT
@@ -1575,7 +1585,7 @@ export function OffGridSolarSystemPage() {
 
           <FadeIn delay={0.8}>
             <p className="text-center text-slate-400 text-xs sm:text-sm font-medium mb-10 max-w-3xl mx-auto">
-              For Alice Springs specific solar, see our <Link to="/alice-springs" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">Alice Springs solar page</Link>. For residential grid-connected systems, see our <Link to="/residential-solar-system" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">residential solar page</Link>.
+              For Alice Springs specific solar, see our <Link to="/solar-alice-springs/" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">Alice Springs solar page</Link>. For residential grid-connected systems, see our <Link to="/solar-systems/residential-solar-system" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">residential solar page</Link>.
             </p>
           </FadeIn>
 
@@ -1697,9 +1707,6 @@ export function OffGridSolarSystemPage() {
           </div>
         </div>
       </section>
-
-      {/* GOOGLE REVIEWS */}
-      <GoogleReviews />
 
       {/* 13. SECTION 12 — FREQUENTLY ASKED QUESTIONS */}
       <section className="py-16 lg:py-24 bg-[#121814] relative overflow-hidden border-t border-b border-white/10">

@@ -304,7 +304,7 @@ export function SolarPanelsBrands() {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-[0.95] mb-8 uppercase">
                 Premium <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
-                  Solar Panel Brands NT.
+                  Solar Panel Brands NT
                 </span>
               </h1>
 
@@ -379,7 +379,7 @@ export function SolarPanelsBrands() {
                   Selection Criteria
                 </div>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter mb-8 uppercase leading-[0.95]">
-                  How We Choose Which <span className="text-brand-500">Brands to Install.</span>
+                  How We Choose Which <span className="text-brand-500">Brands to Install</span>
                 </h2>
                 <p className="text-slate-400 text-lg font-medium leading-relaxed">
                   We do not add a panel to our inventory because it looks good in a brochure. Every brand we carry is evaluated against three things that matter for NT installations specifically.

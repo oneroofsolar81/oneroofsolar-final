@@ -132,9 +132,9 @@ export function Navbar() {
     {
       label: "Solar System",
       children: [
-        { href: "/residential-solar-system", label: "Residential Solar Systems" },
-        { href: "/services/commercial-solar-system", label: "Commercial Solar Systems" },
-        { href: "/services/off-grid-solar-system", label: "Off-Grid Solar Systems" },
+        { href: "/solar-systems/residential-solar-system", label: "Residential Solar Systems" },
+        { href: "/solar-systems/commercial-solar-system", label: "Commercial Solar Systems" },
+        { href: "/solar-systems/off-grid-solar-system", label: "Off-Grid Solar Systems" },
       ],
     },
     {
@@ -147,7 +147,10 @@ export function Navbar() {
           label: "Solar Panel Brands", 
           children: [
             { href: "/solar-panels-brands/aiko/", label: "AIKO" },
-            { href: "/product/solar-panels-brands/ja-solar-panels-nt", label: "JA Solar" }
+            { href: "/product/solar-panels-brands/ja-solar-panels-nt", label: "JA Solar" },
+            { href: "/solar-panels-brands/jinko/", label: "Jinko Solar" },
+            { href: "/solar-panels-brands/longi/", label: "LONGi Solar" },
+            { href: "/solar-panels-brands/rec/", label: "REC Solar" }
           ] 
         },
         { href: "/services/battery-storage", label: "Battery Storage Solutions" },
@@ -158,9 +161,10 @@ export function Navbar() {
       children: [
         { href: "/solar-panels-darwin", label: "Solar Panel" },
         { href: "/services/solar-panel-installation", label: "Solar Panel Installation" },
-        { href: "/services/solar-inverter-installation", label: "Solar Inverter Installation" },
+        { href: "/services/solar-inverters", label: "Solar Inverters" },
+        { href: "/services/solar-inverters/installation", label: "Solar inverter installation" },
+        { href: "/services/solar-inverters/repair", label: "Solar Inverter Repair" },
         { href: "/services/solar-battery-installation", label: "Solar Battery Installation" },
-        { href: "/services/off-grid-solar-system", label: "Off-Grid Solar Systems" },
         { href: "/services/solar-panel-maintenance-darwin", label: "Solar Panel Cleaning & Maintenance" },
         { href: "/services/solar-panel-repair-darwin", label: "Solar Panel Repair" },
       ],

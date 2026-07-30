@@ -1,33 +1,25 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
-import { initializeFirestore, persistentLocalCache, persistentMultipleTabManager, memoryLocalCache, doc, getDocFromServer } from 'firebase/firestore';
+import { initializeFirestore, memoryLocalCache, setLogLevel } from 'firebase/firestore';
 import firebaseConfig from '../../firebase-applet-config.json';
+
+// Silence non-fatal connection retry warnings from Firestore internal logger
+setLogLevel('error');
 
 const app = initializeApp(firebaseConfig);
 
 let firestoreInstance: any;
 
 try {
-  // In an iframe (like the AI Studio preview environment), persistent storage or tab synchronization (IndexedDB/BroadcastChannel) 
-  // can be partitioned or blocked, leading to connection issues.
-  // Using memoryLocalCache and experimentalAutoDetectLongPolling provides high compatibility and resilience.
-  const isIframe = typeof window !== 'undefined' && window.self !== window.top;
-
+  // Use memoryLocalCache and auto-detect long polling for high iframe sandbox compatibility
   firestoreInstance = initializeFirestore(app, {
     experimentalAutoDetectLongPolling: true,
-    localCache: isIframe
-      ? memoryLocalCache()
-      : persistentLocalCache({
-          tabManager: persistentMultipleTabManager()
-        })
+    localCache: memoryLocalCache()
   }, firebaseConfig.firestoreDatabaseId);
 } catch (e) {
-  console.warn("Failed to initialize Firestore with settings, falling back to default memory cache:", e);
+  console.warn("Failed to initialize Firestore with auto-detect long polling, falling back:", e);
   try {
-    firestoreInstance = initializeFirestore(app, {
-      experimentalAutoDetectLongPolling: true,
-      localCache: memoryLocalCache()
-    }, firebaseConfig.firestoreDatabaseId);
+    firestoreInstance = initializeFirestore(app, {}, firebaseConfig.firestoreDatabaseId);
   } catch (err) {
     console.error("Critical Firestore initialization failure:", err);
   }
@@ -35,19 +27,6 @@ try {
 
 export const db = firestoreInstance;
 export const auth = getAuth(app);
-
-// Non-blocking connection check
-if (typeof window !== 'undefined' && db) {
-  setTimeout(async () => {
-    try {
-      await getDocFromServer(doc(db, '_connection_test', 'ping'));
-    } catch (error) {
-      if (error instanceof Error && error.message.includes('offline')) {
-        console.warn("Firestore client is operating in offline mode.");
-      }
-    }
-  }, 1000);
-}
 
 export enum OperationType {
   CREATE = 'create',
