@@ -21,6 +21,9 @@ import { JinkoSolarPanels } from "./pages/JinkoSolarPanels";
 import { LongiSolarPanels } from "./pages/LongiSolarPanels";
 import { RecSolarPanels } from "./pages/RecSolarPanels";
 import { SolarAliceSprings } from "./pages/SolarAliceSprings";
+import { SolarInverters } from "./pages/SolarInverters";
+import { SolarInverterInstallation } from "./pages/SolarInverterInstallation";
+import { SolarInverterRepair } from "./pages/SolarInverterRepair";
 import { AuthProvider } from "./context/AuthContext";
 import { NotificationProvider } from "./context/NotificationContext";
 import ScrollToTop from "./components/ScrollToTop";
@@ -135,6 +138,28 @@ export default function App() {
                 <Route path="/services/solar-battery-installation" element={<ServiceDetail slugOverride="battery-storage" />} />
                 <Route path="/services/solar-battery-installation/" element={<ServiceDetail slugOverride="battery-storage" />} />
                 
+                {/* Solar Inverters Service Hub Page */}
+                <Route path="/services/solar-inverters" element={<SolarInverters />} />
+                <Route path="/services/solar-inverters/" element={<SolarInverters />} />
+
+                {/* Solar Inverter Installation Child Page & 301 Redirects */}
+                <Route path="/services/solar-inverters/installation" element={<SolarInverterInstallation />} />
+                <Route path="/services/solar-inverters/installation/" element={<SolarInverterInstallation />} />
+                <Route path="/services/solar-inverter-installation" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+                <Route path="/services/solar-inverter-installation/" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+                <Route path="/solar-inverter-installation" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+                <Route path="/solar-inverter-installation/" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+                <Route path="/category/solar-inverter-installation" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+                <Route path="/category/solar-inverter-installation/" element={<Navigate to="/services/solar-inverters/installation" replace />} />
+
+                {/* Solar Inverter Repair Child Page & 301 Redirects */}
+                <Route path="/services/solar-inverters/repair" element={<SolarInverterRepair />} />
+                <Route path="/services/solar-inverters/repair/" element={<SolarInverterRepair />} />
+                <Route path="/category/solar-inverter-repair" element={<Navigate to="/services/solar-inverters/repair" replace />} />
+                <Route path="/category/solar-inverter-repair/" element={<Navigate to="/services/solar-inverters/repair" replace />} />
+                <Route path="/services/solar-inverter-repair" element={<Navigate to="/services/solar-inverters/repair" replace />} />
+                <Route path="/services/solar-inverter-repair/" element={<Navigate to="/services/solar-inverters/repair" replace />} />
+
                 <Route path="/services/:slug" element={<ServiceDetail />} />
                 <Route path="/product/solar-panels-brands" element={<SolarPanelsBrands />} />
                 

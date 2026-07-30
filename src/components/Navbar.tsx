@@ -161,7 +161,9 @@ export function Navbar() {
       children: [
         { href: "/solar-panels-darwin", label: "Solar Panel" },
         { href: "/services/solar-panel-installation", label: "Solar Panel Installation" },
-        { href: "/services/solar-inverter-installation", label: "Solar Inverter Installation" },
+        { href: "/services/solar-inverters", label: "Solar Inverters" },
+        { href: "/services/solar-inverters/installation", label: "Solar inverter installation" },
+        { href: "/services/solar-inverters/repair", label: "Solar Inverter Repair" },
         { href: "/services/solar-battery-installation", label: "Solar Battery Installation" },
         { href: "/services/solar-panel-maintenance-darwin", label: "Solar Panel Cleaning & Maintenance" },
         { href: "/services/solar-panel-repair-darwin", label: "Solar Panel Repair" },
