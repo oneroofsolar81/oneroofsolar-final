@@ -137,7 +137,7 @@ export function LongiSolarPanels() {
   ];
 
   return (
-    <div className="bg-[#121814] text-slate-100 font-sans min-h-screen">
+    <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO seo={seoData} />
 
       {schemas.map((schema, index) => (
@@ -148,11 +148,11 @@ export function LongiSolarPanels() {
         />
       ))}
 
-      {/* 1. Hero Section (Deep Green background #141F17) */}
-      <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#141F17]">
+      {/* 1. Hero Section */}
+      <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-transparent to-[#141F17]/40"></div>
-          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#5BC94D]/5 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-[#0A1118]/40"></div>
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-brand-500/5 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
         </div>
 
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
@@ -163,25 +163,25 @@ export function LongiSolarPanels() {
               <FadeIn isHero>
                 {/* Breadcrumb */}
                 <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono">
-                  <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
+                  <Link to="/" className="hover:text-brand-400 transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <Link to="/product/solar-panels-brands" className="hover:text-[#5BC94D] transition-colors">Solar Panels</Link>
+                  <Link to="/product/solar-panels-brands" className="hover:text-brand-400 transition-colors">Solar Panels</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <span className="text-[#5BC94D]" aria-current="page">LONGi Solar Panels</span>
+                  <span className="text-brand-400" aria-current="page">LONGi Solar Panels</span>
                 </nav>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6">
                   LONGi Solar<br />Panels NT
                 </h1>
 
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-6 mb-8 max-w-2xl">
+                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-brand-500 pl-6 mb-8 max-w-2xl">
                   Stop wasting money on cheap solar panels that degrade in the Darwin heat and leave you with high power bills. Get the world's leading tier one panels built to survive extreme NT weather and deliver maximum savings for decades.
                 </p>
 
                 <div>
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-brand-500 text-slate-900 border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-md uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -195,7 +195,7 @@ export function LongiSolarPanels() {
             {/* Right Side Visual Image (~42% with gap) */}
             <div className="lg:col-span-5 relative mt-6 lg:mt-0">
               <FadeIn isHero delay={0.2}>
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/15 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] bg-[#0D1520] aspect-[4/3] w-full min-h-[300px] sm:min-h-[380px] flex items-center justify-center p-3">
+                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/15 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] bg-slate-900 aspect-[4/3] w-full min-h-[300px] sm:min-h-[380px] flex items-center justify-center p-3">
                   <div className="w-full h-full rounded-xl overflow-hidden bg-slate-950 flex items-center justify-center">
                     <img 
                       referrerPolicy="no-referrer"
@@ -212,15 +212,15 @@ export function LongiSolarPanels() {
         </div>
       </section>
 
-      {/* 2. Why Cheap Solar Panels Cost You More in the NT (Dark Navy background #0A1118) */}
-      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 2. Why Cheap Solar Panels Cost You More in the NT */}
+      <section className="py-16 lg:py-20 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="bg-[#0D1520] border border-white/10 border-l-4 border-l-[#5BC94D] p-6 sm:p-10 rounded-2xl sm:rounded-3xl shadow-xl">
-              <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <div className="bg-white border border-slate-200 border-l-4 border-l-brand-500 p-6 sm:p-10 rounded-2xl sm:rounded-3xl shadow-sm">
+              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
                 Why Cheap Solar Panels Cost You More in the NT
               </h2>
-              <p className="text-slate-300 text-base sm:text-lg leading-[1.7] font-medium max-w-4xl">
+              <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium max-w-4xl">
                 Picking the wrong solar panel brand means paying more for less power over the panel's lifetime. LONGi is one of the most trusted names in solar because it manufactures its own silicon wafers instead of buying from third parties, giving it tighter quality control than most competitors. Here is what LONGi panels bring to homes and businesses across the Northern Territory, and why Oneroof Solar installs them.
               </p>
             </div>
@@ -228,18 +228,18 @@ export function LongiSolarPanels() {
         </div>
       </section>
 
-      {/* 3. Who Is LONGi (Deep Green background #121814) */}
-      <section className="py-16 lg:py-20 bg-[#121814] border-b border-white/5 relative">
+      {/* 3. Who Is LONGi */}
+      <section className="py-16 lg:py-20 bg-white border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-14">
             
             {/* Left Content Column (~52%) */}
             <div className="w-full lg:w-[52%] shrink-0">
               <FadeIn>
-                <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
                   Who Is LONGi
                 </h2>
-                <p className="text-slate-300 text-base sm:text-lg leading-[1.7] font-medium">
+                <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
                   LONGi is the world's largest solar panel manufacturer by shipment volume. The company builds its own silicon ingots and wafers in house, which is rare in the industry and gives it more control over panel quality and consistency. LONGi holds multiple world records for solar cell efficiency and supplies panels to installers across Australia, including here in the NT.
                 </p>
               </FadeIn>
@@ -248,7 +248,7 @@ export function LongiSolarPanels() {
             {/* Right Panel Image Column (~48%) */}
             <div className="w-full lg:w-[48%] shrink-0">
               <FadeIn delay={0.2}>
-                <div className="bg-[#0D1520] rounded-2xl sm:rounded-3xl p-5 sm:p-6 border border-white/10 shadow-xl w-full">
+                <div className="bg-slate-50 rounded-2xl sm:rounded-3xl p-5 sm:p-6 border border-slate-200 shadow-sm w-full">
                   <div className="w-full rounded-xl overflow-hidden bg-slate-950 flex items-center justify-center p-2">
                     <img 
                       referrerPolicy="no-referrer"
@@ -265,55 +265,55 @@ export function LongiSolarPanels() {
         </div>
       </section>
 
-      {/* 4. Why NT Homes and Businesses Choose LONGi (Dark Navy background #0A1118) */}
-      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 4. Why NT Homes and Businesses Choose LONGi */}
+      <section className="py-16 lg:py-20 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
               Why NT Homes and Businesses Choose LONGi
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               {/* Item 1 */}
-              <div className="group bg-[#0D1520] border border-white/5 hover:border-[#5BC94D]/30 hover:bg-[#111B28] p-7 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 shadow-xl hover:-translate-y-1 flex flex-col h-full">
-                <div className="w-8 h-1 rounded-full bg-[#5BC94D] mb-5"></div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 tracking-wide">
+              <div className="group bg-white border border-slate-200 hover:border-brand-500/40 p-7 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 shadow-sm flex flex-col h-full">
+                <div className="w-8 h-1 rounded-full bg-brand-500 mb-5"></div>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
                   Performance in heat and humidity
                 </h3>
-                <p className="text-slate-300 text-base leading-relaxed font-medium">
+                <p className="text-slate-600 text-base leading-relaxed font-medium">
                   LONGi panels are built to keep producing power even as temperatures climb, which matters through Darwin's build up season and the long dry season heat. Their anti-dust frame design also helps in areas with red dust and coastal salt air, common across the Top End.
                 </p>
               </div>
 
               {/* Item 2 */}
-              <div className="group bg-[#0D1520] border border-white/5 hover:border-[#5BC94D]/30 hover:bg-[#111B28] p-7 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 shadow-xl hover:-translate-y-1 flex flex-col h-full">
-                <div className="w-8 h-1 rounded-full bg-[#5BC94D] mb-5"></div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 tracking-wide">
+              <div className="group bg-white border border-slate-200 hover:border-brand-500/40 p-7 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 shadow-sm flex flex-col h-full">
+                <div className="w-8 h-1 rounded-full bg-brand-500 mb-5"></div>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
                   Durability that holds up
                 </h3>
-                <p className="text-slate-300 text-base leading-relaxed font-medium">
+                <p className="text-slate-600 text-base leading-relaxed font-medium">
                   LONGi backs its panels with a strong product and performance warranty, so output is protected for decades, not just a few years. That means fewer surprises and a panel that keeps earning its keep long after installation.
                 </p>
               </div>
 
               {/* Item 3 */}
-              <div className="group bg-[#0D1520] border border-white/5 hover:border-[#5BC94D]/30 hover:bg-[#111B28] p-7 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 shadow-xl hover:-translate-y-1 flex flex-col h-full">
-                <div className="w-8 h-1 rounded-full bg-[#5BC94D] mb-5"></div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 tracking-wide">
+              <div className="group bg-white border border-slate-200 hover:border-brand-500/40 p-7 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 shadow-sm flex flex-col h-full">
+                <div className="w-8 h-1 rounded-full bg-brand-500 mb-5"></div>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
                   Price range
                 </h3>
-                <p className="text-slate-300 text-base leading-relaxed font-medium">
+                <p className="text-slate-600 text-base leading-relaxed font-medium">
                   Cost depends on system size, roof type and how many panels you need. Oneroof Solar provides a full itemised quote before any work begins, so you know exactly what you are paying for.
                 </p>
               </div>
 
               {/* Item 4 */}
-              <div className="group bg-[#0D1520] border border-white/5 hover:border-[#5BC94D]/30 hover:bg-[#111B28] p-7 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 shadow-xl hover:-translate-y-1 flex flex-col h-full">
-                <div className="w-8 h-1 rounded-full bg-[#5BC94D] mb-5"></div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 tracking-wide">
+              <div className="group bg-white border border-slate-200 hover:border-brand-500/40 p-7 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 shadow-sm flex flex-col h-full">
+                <div className="w-8 h-1 rounded-full bg-brand-500 mb-5"></div>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
                   Everyday benefits
                 </h3>
-                <p className="text-slate-300 text-base leading-relaxed font-medium">
+                <p className="text-slate-600 text-base leading-relaxed font-medium">
                   Lower power bills, strong output even on overcast wet season days, and a brand backed by a global manufacturer rather than a smaller, less established name.
                 </p>
               </div>
@@ -322,12 +322,12 @@ export function LongiSolarPanels() {
         </div>
       </section>
 
-      {/* 5. Datasheet Section (Deep Green background #141F17) */}
-      <section className="py-12 lg:py-16 bg-[#141F17] border-b border-white/5 relative">
+      {/* 5. Datasheet Section */}
+      <section className="py-12 lg:py-16 bg-white border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="bg-[#0D1520] border border-white/10 p-6 sm:p-8 rounded-2xl shadow-xl text-center">
-              <p className="text-slate-200 text-base sm:text-lg leading-relaxed font-medium mb-6">
+            <div className="bg-slate-50 border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm text-center">
+              <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-medium mb-6">
                 For full technical specifications and model details, download the LONGi product datasheet:
               </p>
 
@@ -336,11 +336,11 @@ export function LongiSolarPanels() {
                   href="/downloads/longi-hi-mo-x10-lr7-54hvh-datasheet.pdf"
                   download="longi-hi-mo-x10-lr7-54hvh-datasheet.pdf"
                   aria-label="Download LONGi Hi-MO X10 product datasheet PDF"
-                  className="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-white border border-white/15 hover:border-[#5BC94D]/50 font-bold text-sm tracking-wide transition-all shadow-lg hover:shadow-[#5BC94D]/10 hover:-translate-y-0.5 group"
+                  className="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-brand-50 hover:bg-brand-500 text-brand-700 hover:text-slate-900 border border-brand-200 hover:border-brand-500 font-bold text-sm tracking-wide transition-all shadow-sm group"
                 >
-                  <FileText className="w-5 h-5 text-[#5BC94D] group-hover:scale-110 transition-transform" />
+                  <FileText className="w-5 h-5 text-brand-600 group-hover:text-slate-900 group-hover:scale-110 transition-transform" />
                   <span>Download LONGi Product Datasheet (PDF)</span>
-                  <Download className="w-4 h-4 text-slate-400 group-hover:text-[#5BC94D] transition-colors ml-1" />
+                  <Download className="w-4 h-4 text-brand-600 group-hover:text-slate-900 transition-colors ml-1" />
                 </a>
               </div>
             </div>
@@ -348,8 +348,8 @@ export function LongiSolarPanels() {
         </div>
       </section>
 
-      {/* 6. Main CTA (Darker Green Gradient #182c1e to #121814) */}
-      <section className="py-16 lg:py-20 bg-gradient-to-br from-[#182c1e] via-[#0A1118] to-[#121814] relative overflow-hidden border-b border-white/5">
+      {/* 6. Main CTA */}
+      <section className="py-16 lg:py-20 bg-[#0A1118] relative overflow-hidden border-b border-white/5">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <FadeIn>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight max-w-[780px] mx-auto">
@@ -360,7 +360,7 @@ export function LongiSolarPanels() {
             </p>
             <Button
               size="lg"
-              className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+              className="rounded-xl px-8 bg-brand-500 text-slate-900 border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-md uppercase tracking-wider text-xs"
               asChild
             >
               <Link to="/contact">
@@ -371,23 +371,23 @@ export function LongiSolarPanels() {
         </div>
       </section>
 
-      {/* 7. LONGi Across the NT (Dark Navy background #0A1118) */}
-      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 7. LONGi Across the NT */}
+      <section className="py-16 lg:py-20 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="bg-[#0D1520] border border-white/10 p-8 sm:p-10 rounded-2xl sm:rounded-3xl shadow-xl flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+            <div className="bg-white border border-slate-200 p-8 sm:p-10 rounded-2xl sm:rounded-3xl shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-8">
               <div className="max-w-3xl">
-                <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
                   LONGi Across the NT
                 </h2>
-                <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium">
+                <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
                   Oneroof Solar installs LONGi panels across the Northern Territory, including Darwin, Palmerston, Alice Springs, Katherine and Tennant Creek. Contact us for LONGi installations anywhere in the NT.
                 </p>
               </div>
               <div className="shrink-0">
                 <Button
                   size="lg"
-                  className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs w-full sm:w-auto"
+                  className="rounded-xl px-8 bg-brand-500 text-slate-900 border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-md uppercase tracking-wider text-xs w-full sm:w-auto"
                   asChild
                 >
                   <Link to="/contact">
@@ -400,11 +400,11 @@ export function LongiSolarPanels() {
         </div>
       </section>
 
-      {/* 8. FAQ Section (Deep Green background #121814) */}
-      <section className="py-16 lg:py-24 bg-[#121814] border-b border-white/5 relative">
+      {/* 8. FAQ Section */}
+      <section className="py-16 lg:py-24 bg-white border-b border-slate-100 relative">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
               Frequently Asked Questions
             </h2>
 
@@ -416,8 +416,8 @@ export function LongiSolarPanels() {
                     key={i}
                     className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                       isOpen
-                        ? "bg-slate-900/60 shadow-xl border-[#5BC94D]/30"
-                        : "bg-slate-900/20 border-white/5 hover:border-[#5BC94D]/20"
+                        ? "bg-slate-50 shadow-md border-brand-500"
+                        : "bg-white border-slate-200 hover:border-brand-500/40"
                     }`}
                   >
                     <button
@@ -431,15 +431,15 @@ export function LongiSolarPanels() {
                         <div
                           className={`shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold text-xs sm:text-sm transition-colors ${
                             isOpen
-                              ? "bg-[#5BC94D] text-[#19281D] shadow-md shadow-[#5BC94D]/20"
-                              : "bg-white/5 text-slate-400 border border-white/10"
+                              ? "bg-brand-500 text-slate-900 shadow-sm"
+                              : "bg-slate-100 text-slate-500 border border-slate-200"
                           }`}
                         >
                           {i + 1 < 10 ? `0${i + 1}` : i + 1}
                         </div>
                         <h3
                           className={`text-base sm:text-lg font-bold leading-tight transition-colors ${
-                            isOpen ? "text-[#5BC94D]" : "text-white"
+                            isOpen ? "text-brand-600" : "text-slate-900"
                           }`}
                         >
                           {faq.q}
@@ -448,8 +448,8 @@ export function LongiSolarPanels() {
                       <div
                         className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-300 ${
                           isOpen
-                            ? "border-[#5BC94D] bg-[#5BC94D]/10 text-[#5BC94D] rotate-180"
-                            : "border-white/10 text-slate-400 bg-white/5"
+                            ? "border-brand-500 bg-brand-50 text-brand-600 rotate-180"
+                            : "border-slate-200 text-slate-400 bg-slate-50"
                         }`}
                       >
                         <ChevronDown className="w-4 h-4" />
@@ -464,7 +464,7 @@ export function LongiSolarPanels() {
                         isOpen ? "max-h-[32rem] pb-6 opacity-100" : "max-h-0 opacity-0"
                       }`}
                     >
-                      <div className="text-slate-300 leading-relaxed font-medium pl-12 sm:pl-14 text-base sm:text-lg border-t border-white/5 pt-4 mt-2">
+                      <div className="text-slate-600 leading-relaxed font-medium pl-12 sm:pl-14 text-base sm:text-lg border-t border-slate-100 pt-4 mt-2">
                         {faq.a}
                       </div>
                     </div>
@@ -476,13 +476,13 @@ export function LongiSolarPanels() {
         </div>
       </section>
 
-      {/* 9. Final CTA Panel (Dark Navy background #0A1118) */}
+      {/* 9. Final CTA Panel */}
       <section className="py-12 lg:py-16 bg-[#0A1118] relative overflow-hidden">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <FadeIn>
             <Button
               size="lg"
-              className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+              className="rounded-xl px-8 bg-brand-500 text-slate-900 border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-md uppercase tracking-wider text-xs"
               asChild
             >
               <Link to="/contact">

@@ -234,7 +234,7 @@ export function RecSolarPanels() {
   ];
 
   return (
-    <div className="bg-[#121814] text-slate-100 font-sans min-h-screen">
+    <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO seo={seoData} />
 
       {schemas.map((schema, index) => (
@@ -245,11 +245,11 @@ export function RecSolarPanels() {
         />
       ))}
 
-      {/* 1. Hero Section (Deep Green background #141F17) */}
-      <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#141F17]">
+      {/* 1. Hero Section (Deep Navy background #0A1118) */}
+      <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-transparent to-[#141F17]/40"></div>
-          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#5BC94D]/5 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-[#0A1118]/40"></div>
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-brand-500/5 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
         </div>
 
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
@@ -260,18 +260,18 @@ export function RecSolarPanels() {
               <FadeIn isHero>
                 {/* Breadcrumb */}
                 <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono">
-                  <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
+                  <Link to="/" className="hover:text-brand-400 transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <Link to="/product/solar-panels-brands" className="hover:text-[#5BC94D] transition-colors">Solar Panels</Link>
+                  <Link to="/product/solar-panels-brands" className="hover:text-brand-400 transition-colors">Solar Panels</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <span className="text-[#5BC94D]" aria-current="page">REC Solar Panels</span>
+                  <span className="text-brand-400" aria-current="page">REC Solar Panels</span>
                 </nav>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6">
                   REC Solar<br />Panels NT
                 </h1>
 
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-6 mb-8 max-w-2xl">
+                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-brand-500 pl-6 mb-8 max-w-2xl">
                   Oneroof Solar installs REC solar panels across Darwin, Palmerston, Alice Springs and the broader Northern Territory. REC is a Norwegian-founded brand, manufacturing in Singapore, and is consistently rated by Australian solar installers as one of the most reliable panel brands available. If you want panels that hold up well in NT heat, last the distance and come backed by a warranty that actually covers you, REC is worth a close look.
                 </p>
               </FadeIn>
@@ -280,7 +280,7 @@ export function RecSolarPanels() {
             {/* Right Side Visual Image (~42% with gap) */}
             <div className="lg:col-span-5 relative mt-6 lg:mt-0">
               <FadeIn isHero delay={0.2}>
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/15 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] bg-[#0D1520] aspect-[4/3] w-full min-h-[300px] sm:min-h-[380px] flex items-center justify-center p-3">
+                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/15 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)] bg-slate-900 aspect-[4/3] w-full min-h-[300px] sm:min-h-[380px] flex items-center justify-center p-3">
                   <div className="w-full h-full rounded-xl overflow-hidden bg-slate-950 flex items-center justify-center">
                     <img 
                       referrerPolicy="no-referrer"
@@ -297,32 +297,32 @@ export function RecSolarPanels() {
         </div>
       </section>
 
-      {/* 2. About REC Solar (Dark Navy background #0A1118) */}
-      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 2. About REC Solar */}
+      <section className="py-16 lg:py-20 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
               About REC Solar
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
               {/* Card 1 */}
-              <div className="bg-[#0D1520] border border-white/10 p-7 sm:p-8 rounded-2xl sm:rounded-3xl shadow-xl flex flex-col justify-between h-full">
-                <p className="text-slate-300 text-base sm:text-lg leading-[1.7] font-medium">
+              <div className="bg-white border border-slate-200 p-7 sm:p-8 rounded-2xl sm:rounded-3xl shadow-sm flex flex-col justify-between h-full">
+                <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
                   REC was founded in Norway in 1996 and has been manufacturing solar panels in Singapore since 2010. They are one of the few premium solar brands that does not manufacture in China, which is a key reason many Australian homeowners and installers choose them.
                 </p>
               </div>
 
               {/* Card 2 */}
-              <div className="bg-[#0D1520] border border-white/10 p-7 sm:p-8 rounded-2xl sm:rounded-3xl shadow-xl flex flex-col justify-between h-full">
-                <p className="text-slate-300 text-base sm:text-lg leading-[1.7] font-medium">
+              <div className="bg-white border border-slate-200 p-7 sm:p-8 rounded-2xl sm:rounded-3xl shadow-sm flex flex-col justify-between h-full">
+                <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
                   In the SolarQuotes Installers Choice Awards, voted by Australian solar installers, REC ranked 1st in 2023 and 2nd in 2025. That is a consistent result that reflects real-world installer confidence, not marketing claims. Only 1 in 14,000 REC panels require a warranty claim, which is one of the best reliability records of any brand in the Australian market.
                 </p>
               </div>
 
               {/* Card 3 */}
-              <div className="bg-[#0D1520] border border-white/10 p-7 sm:p-8 rounded-2xl sm:rounded-3xl shadow-xl flex flex-col justify-between h-full">
-                <p className="text-slate-300 text-base sm:text-lg leading-[1.7] font-medium">
+              <div className="bg-white border border-slate-200 p-7 sm:p-8 rounded-2xl sm:rounded-3xl shadow-sm flex flex-col justify-between h-full">
+                <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
                   REC has a dedicated Australian office in Melbourne and an accredited installer network across the country including the NT, which means warranty support stays local if you ever need it.
                 </p>
               </div>
@@ -331,14 +331,14 @@ export function RecSolarPanels() {
         </div>
       </section>
 
-      {/* 3. REC Solar Panel Highlights (Deep Green background #121814) */}
-      <section className="py-16 lg:py-20 bg-[#121814] border-b border-white/5 relative">
+      {/* 3. REC Solar Panel Highlights */}
+      <section className="py-16 lg:py-20 bg-white border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
               REC Solar Panel Highlights
             </h2>
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-10 max-w-3xl">
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-10 max-w-3xl">
               Here is what makes REC panels stand out in plain terms. For full technical specifications, download the datasheet below.
             </p>
 
@@ -346,13 +346,13 @@ export function RecSolarPanels() {
               {highlights.map((item, idx) => (
                 <div 
                   key={idx}
-                  className="group bg-[#0D1520] border border-white/5 hover:border-[#5BC94D]/30 hover:bg-[#111B28] p-7 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 shadow-xl hover:-translate-y-1 flex flex-col h-full"
+                  className="group bg-slate-50 border border-slate-100 hover:border-brand-500/40 p-7 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 shadow-sm flex flex-col h-full"
                 >
-                  <div className="w-8 h-1 rounded-full bg-[#5BC94D] mb-5"></div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 tracking-wide">
+                  <div className="w-8 h-1 rounded-full bg-brand-500 mb-5"></div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
                     {item.title}
                   </h3>
-                  <p className="text-slate-300 text-base leading-relaxed font-medium">
+                  <p className="text-slate-600 text-base leading-relaxed font-medium">
                     {item.desc}
                   </p>
                 </div>
@@ -362,12 +362,12 @@ export function RecSolarPanels() {
         </div>
       </section>
 
-      {/* 4. REC Datasheet Download Section (Dark Navy background #0A1118) */}
-      <section className="py-12 lg:py-16 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 4. REC Datasheet Download Section */}
+      <section className="py-12 lg:py-16 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="bg-[#0D1520] border border-white/10 p-6 sm:p-8 rounded-2xl shadow-xl text-center">
-              <p className="text-slate-200 text-base sm:text-lg leading-relaxed font-medium mb-6">
+            <div className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm text-center">
+              <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-6">
                 Want the full technical specifications? Download the REC datasheet for all wattages, dimensions, efficiency ratings and certification details.
               </p>
 
@@ -376,11 +376,11 @@ export function RecSolarPanels() {
                   href="/downloads/rec-alpha-pure-rx-datasheet.pdf"
                   download="rec-alpha-pure-rx-datasheet.pdf"
                   aria-label="Download REC Alpha Pure-RX datasheet PDF"
-                  className="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-white border border-white/15 hover:border-[#5BC94D]/50 font-bold text-sm tracking-wide transition-all shadow-lg hover:shadow-[#5BC94D]/10 hover:-translate-y-0.5 group"
+                  className="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-brand-50 hover:bg-brand-500 text-brand-700 hover:text-slate-900 border border-brand-200 hover:border-brand-500 font-bold text-sm tracking-wide transition-all shadow-sm group"
                 >
-                  <FileText className="w-5 h-5 text-[#5BC94D] group-hover:scale-110 transition-transform" />
+                  <FileText className="w-5 h-5 text-brand-600 group-hover:text-slate-900 group-hover:scale-110 transition-transform" />
                   <span>Download Models Sheet</span>
-                  <Download className="w-4 h-4 text-slate-400 group-hover:text-[#5BC94D] transition-colors ml-1" />
+                  <Download className="w-4 h-4 text-brand-600 group-hover:text-slate-900 transition-colors ml-1" />
                 </a>
               </div>
             </div>
@@ -388,41 +388,41 @@ export function RecSolarPanels() {
         </div>
       </section>
 
-      {/* 5. How REC Panels Perform in the NT (Deep Green background #121814) */}
-      <section className="py-16 lg:py-20 bg-[#121814] border-b border-white/5 relative">
+      {/* 5. How REC Panels Perform in the NT */}
+      <section className="py-16 lg:py-20 bg-white border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
               How REC Panels Perform in the NT
             </h2>
 
             <div className="space-y-6">
               {/* Item 1 */}
-              <div className="bg-[#0D1520] border border-white/10 border-l-4 border-l-[#5BC94D] p-7 sm:p-9 rounded-2xl sm:rounded-3xl shadow-xl">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 tracking-wide">
+              <div className="bg-slate-50 border border-slate-200 border-l-4 border-l-brand-500 p-7 sm:p-9 rounded-2xl sm:rounded-3xl shadow-sm">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
                   They stay strong in Darwin's heat
                 </h3>
-                <p className="text-slate-300 text-base sm:text-lg leading-[1.7] font-medium">
+                <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
                   The NT dry season pushes rooftop temperatures well above 60 degrees Celsius. Most solar panels lose a noticeable amount of output at those temperatures. REC panels are designed to handle high heat better than most brands available in Australia — they lose less power on hot days, which means more electricity generated and more savings on your Jacana Energy bill during the hottest months of the year.
                 </p>
               </div>
 
               {/* Item 2 */}
-              <div className="bg-[#0D1520] border border-white/10 border-l-4 border-l-[#5BC94D] p-7 sm:p-9 rounded-2xl sm:rounded-3xl shadow-xl">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 tracking-wide">
+              <div className="bg-slate-50 border border-slate-200 border-l-4 border-l-brand-500 p-7 sm:p-9 rounded-2xl sm:rounded-3xl shadow-sm">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
                   They keep working through the wet season
                 </h3>
-                <p className="text-slate-300 text-base sm:text-lg leading-[1.7] font-medium">
+                <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
                   Darwin's wet season brings months of cloud cover. REC panels are designed to capture diffused light effectively, which means they continue generating electricity on overcast days rather than dropping off significantly. You will not lose as much output during the build-up and wet season as you would with a standard panel.
                 </p>
               </div>
 
               {/* Item 3 */}
-              <div className="bg-[#0D1520] border border-white/10 border-l-4 border-l-[#5BC94D] p-7 sm:p-9 rounded-2xl sm:rounded-3xl shadow-xl">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 tracking-wide">
+              <div className="bg-slate-50 border border-slate-200 border-l-4 border-l-brand-500 p-7 sm:p-9 rounded-2xl sm:rounded-3xl shadow-sm">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
                   They are built to last
                 </h3>
-                <p className="text-slate-300 text-base sm:text-lg leading-[1.7] font-medium">
+                <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
                   REC Alpha Pure panels are designed for 25 years of reliable operation with minimal power loss over time. The frames are reinforced for high wind loads and tested against hailstones. The all-black frame design includes salt mist corrosion certification, which matters for Darwin's coastal suburbs and year-round humidity. Oneroof Solar installs every REC system to full NT building standards with cyclone-rated mounting.
                 </p>
               </div>
@@ -431,8 +431,8 @@ export function RecSolarPanels() {
         </div>
       </section>
 
-      {/* 6. First CTA Section (Darker Green Gradient #182c1e to #0A1118) */}
-      <section className="py-16 lg:py-20 bg-gradient-to-br from-[#182c1e] via-[#0A1118] to-[#121814] relative overflow-hidden border-b border-white/5">
+      {/* 6. First CTA Section (Deep Navy background #0A1118) */}
+      <section className="py-16 lg:py-20 bg-[#0A1118] relative overflow-hidden border-b border-white/5">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <FadeIn>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight max-w-[780px] mx-auto">
@@ -446,19 +446,19 @@ export function RecSolarPanels() {
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm sm:text-base font-bold text-slate-200 mb-8">
-              <a href="tel:0483986444" className="inline-flex items-center gap-2 hover:text-[#5BC94D] transition-colors">
-                <Phone className="w-5 h-5 text-[#5BC94D]" />
+              <a href="tel:0483986444" className="inline-flex items-center gap-2 hover:text-brand-400 transition-colors">
+                <Phone className="w-5 h-5 text-brand-400" />
                 <span>Call Us: 0483 986 444</span>
               </a>
-              <a href="mailto:info@oneroofsolar.com.au" className="inline-flex items-center gap-2 hover:text-[#5BC94D] transition-colors">
-                <Mail className="w-5 h-5 text-[#5BC94D]" />
+              <a href="mailto:info@oneroofsolar.com.au" className="inline-flex items-center gap-2 hover:text-brand-400 transition-colors">
+                <Mail className="w-5 h-5 text-brand-400" />
                 <span>Email: info@oneroofsolar.com.au</span>
               </a>
             </div>
 
             <Button
               size="lg"
-              className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+              className="rounded-xl px-8 bg-brand-500 text-slate-900 border-none font-black hover:bg-brand-600 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(140,198,63,0.3)] uppercase tracking-wider text-xs"
               asChild
             >
               <Link to="/contact">
@@ -469,15 +469,15 @@ export function RecSolarPanels() {
         </div>
       </section>
 
-      {/* 7. How Much Do REC Solar Panels Cost in the NT (Dark Navy background #0A1118) */}
-      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 7. How Much Do REC Solar Panels Cost in the NT */}
+      <section className="py-16 lg:py-20 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="bg-[#0D1520] border border-white/10 p-8 sm:p-10 rounded-2xl sm:rounded-3xl shadow-xl">
-              <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <div className="bg-white border border-slate-200 p-8 sm:p-10 rounded-2xl sm:rounded-3xl shadow-sm">
+              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
                 How Much Do REC Solar Panels Cost in the NT
               </h2>
-              <div className="space-y-4 text-slate-300 text-base sm:text-lg leading-[1.7] font-medium max-w-4xl">
+              <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-[1.7] font-medium max-w-4xl">
                 <p>
                   REC panels are a premium brand and carry a higher price than standard panel options. For most NT homeowners, a system using REC Alpha Pure panels will cost $700 to $1,200 more than the same-sized system using a standard Tier 1 brand. The STC rebate applies to all REC installations in the NT and is deducted before you pay.
                 </p>
@@ -485,7 +485,7 @@ export function RecSolarPanels() {
                   Because every NT roof is different in size, orientation, shading and access, we provide personalised quotes rather than fixed package pricing for REC systems. Contact Oneroof Solar for a free quote that reflects your actual energy bills and roof layout.
                 </p>
                 <p>
-                  For a general sense of system pricing with and without battery storage, see our <Link to="/solar-panel-installation/" className="text-[#5BC94D] hover:underline font-bold">solar panel installation page</Link>.
+                  For a general sense of system pricing with and without battery storage, see our <Link to="/solar-panel-installation/" className="text-brand-600 hover:underline font-bold">solar panel installation page</Link>.
                 </p>
               </div>
             </div>
@@ -493,15 +493,15 @@ export function RecSolarPanels() {
         </div>
       </section>
 
-      {/* 8. Serving the NT (Deep Green background #121814) */}
-      <section className="py-16 lg:py-20 bg-[#121814] border-b border-white/5 relative">
+      {/* 8. Serving the NT */}
+      <section className="py-16 lg:py-20 bg-white border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="bg-[#0D1520] border border-white/10 p-8 sm:p-10 rounded-2xl sm:rounded-3xl shadow-xl">
-              <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <div className="bg-slate-50 border border-slate-200 p-8 sm:p-10 rounded-2xl sm:rounded-3xl shadow-sm">
+              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
                 Serving the NT - Darwin to Alice Springs
               </h2>
-              <div className="space-y-4 text-slate-300 text-base sm:text-lg leading-[1.7] font-medium max-w-4xl">
+              <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-[1.7] font-medium max-w-4xl">
                 <p>
                   Oneroof Solar installs REC panels across the Northern Territory. Our primary service hubs are Darwin, Palmerston, Alice Springs, Katherine and Tennant Creek. We also cover rural Darwin, Litchfield, Humpty Doo, Howard Springs and remote NT properties including off-grid installations.
                 </p>
@@ -514,11 +514,11 @@ export function RecSolarPanels() {
         </div>
       </section>
 
-      {/* 9. Frequently Asked Questions (Dark Navy background #0A1118) */}
-      <section className="py-16 lg:py-24 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 9. Frequently Asked Questions */}
+      <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
               Frequently Asked Questions
             </h2>
 
@@ -530,8 +530,8 @@ export function RecSolarPanels() {
                     key={i}
                     className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                       isOpen
-                        ? "bg-slate-900/60 shadow-xl border-[#5BC94D]/30"
-                        : "bg-slate-900/20 border-white/5 hover:border-[#5BC94D]/20"
+                        ? "bg-white shadow-md border-brand-500"
+                        : "bg-white border-slate-200 hover:border-brand-500/40"
                     }`}
                   >
                     <button
@@ -545,15 +545,15 @@ export function RecSolarPanels() {
                         <div
                           className={`shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold text-xs sm:text-sm transition-colors ${
                             isOpen
-                              ? "bg-[#5BC94D] text-[#19281D] shadow-md shadow-[#5BC94D]/20"
-                              : "bg-white/5 text-slate-400 border border-white/10"
+                              ? "bg-brand-500 text-slate-900 shadow-sm"
+                              : "bg-slate-100 text-slate-500 border border-slate-200"
                           }`}
                         >
                           {i + 1 < 10 ? `0${i + 1}` : i + 1}
                         </div>
                         <h3
                           className={`text-base sm:text-lg font-bold leading-tight transition-colors ${
-                            isOpen ? "text-[#5BC94D]" : "text-white"
+                            isOpen ? "text-brand-600" : "text-slate-900"
                           }`}
                         >
                           {faq.q}
@@ -562,8 +562,8 @@ export function RecSolarPanels() {
                       <div
                         className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-300 ${
                           isOpen
-                            ? "border-[#5BC94D] bg-[#5BC94D]/10 text-[#5BC94D] rotate-180"
-                            : "border-white/10 text-slate-400 bg-white/5"
+                            ? "border-brand-500 bg-brand-50 text-brand-600 rotate-180"
+                            : "border-slate-200 text-slate-400 bg-slate-50"
                         }`}
                       >
                         <ChevronDown className="w-4 h-4" />
@@ -578,7 +578,7 @@ export function RecSolarPanels() {
                         isOpen ? "max-h-[32rem] pb-6 opacity-100" : "max-h-0 opacity-0"
                       }`}
                     >
-                      <div className="text-slate-300 leading-relaxed font-medium pl-12 sm:pl-14 text-base sm:text-lg border-t border-white/5 pt-4 mt-2">
+                      <div className="text-slate-600 leading-relaxed font-medium pl-12 sm:pl-14 text-base sm:text-lg border-t border-slate-100 pt-4 mt-2">
                         {faq.a}
                       </div>
                     </div>
@@ -590,11 +590,11 @@ export function RecSolarPanels() {
         </div>
       </section>
 
-      {/* 10. Final CTA (Deep Green background #121814) */}
-      <section className="py-16 lg:py-20 bg-[#121814] relative overflow-hidden">
+      {/* 10. Final CTA (Deep Navy background #0A1118) */}
+      <section className="py-16 lg:py-20 bg-[#0A1118] relative overflow-hidden">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <FadeIn>
-            <div className="bg-[#0D1520] border border-white/10 p-8 sm:p-12 rounded-2xl sm:rounded-3xl shadow-xl max-w-4xl mx-auto">
+            <div className="bg-slate-900/90 border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl shadow-xl max-w-4xl mx-auto backdrop-blur-md">
               <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
                 Stop Paying Too Much to Jacana Energy
               </h2>
@@ -603,19 +603,19 @@ export function RecSolarPanels() {
               </p>
 
               <div className="flex flex-wrap items-center justify-center gap-6 text-sm sm:text-base font-bold text-slate-200 mb-8">
-                <a href="tel:0483986444" className="inline-flex items-center gap-2 hover:text-[#5BC94D] transition-colors">
-                  <Phone className="w-5 h-5 text-[#5BC94D]" />
+                <a href="tel:0483986444" className="inline-flex items-center gap-2 hover:text-brand-400 transition-colors">
+                  <Phone className="w-5 h-5 text-brand-400" />
                   <span>Phone: 0483 986 444</span>
                 </a>
-                <a href="mailto:info@oneroofsolar.com.au" className="inline-flex items-center gap-2 hover:text-[#5BC94D] transition-colors">
-                  <Mail className="w-5 h-5 text-[#5BC94D]" />
+                <a href="mailto:info@oneroofsolar.com.au" className="inline-flex items-center gap-2 hover:text-brand-400 transition-colors">
+                  <Mail className="w-5 h-5 text-brand-400" />
                   <span>Email: info@oneroofsolar.com.au</span>
                 </a>
               </div>
 
               <Button
                 size="lg"
-                className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                className="rounded-xl px-8 bg-brand-500 text-slate-900 border-none font-black hover:bg-brand-600 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(140,198,63,0.3)] uppercase tracking-wider text-xs"
                 asChild
               >
                 <Link to="/contact">

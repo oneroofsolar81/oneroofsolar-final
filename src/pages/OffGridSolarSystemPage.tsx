@@ -267,13 +267,13 @@ export function OffGridSolarSystemPage() {
   }, []);
 
   return (
-    <div className="bg-[#121814] text-slate-100 font-sans min-h-screen">
+    <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO seo={seoData} />
 
       {/* 1. BREADCRUMB */}
-      <div className="bg-[#0b100d] border-b border-white/10 py-3 px-4 sm:px-6 lg:px-8 text-xs sm:text-sm text-slate-400">
+      <div className="bg-[#0A1118] border-b border-white/10 py-3 px-4 sm:px-6 lg:px-8 text-xs sm:text-sm text-slate-400">
         <div className="max-w-7xl mx-auto flex items-center gap-2 font-medium">
-          <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
+          <Link to="/" className="hover:text-brand-400 transition-colors">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
           <span className="text-slate-400">Solar Systems</span>
           <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
@@ -282,23 +282,23 @@ export function OffGridSolarSystemPage() {
       </div>
 
       {/* 2. HERO SECTION (Section 1) */}
-      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-[#0b100d] via-[#121814] to-[#121814] border-b border-white/10">
+      <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden bg-[#0A1118] border-b border-slate-800">
         {/* Background Image with Dark Overlay */}
         <div className="absolute inset-0 z-0">
           <img referrerPolicy="no-referrer" 
             src={heroBannerImg}
             alt="Oneroof Solar off-grid solar system installed on remote Northern Territory property with battery storage and backup generator"
-            className="w-full h-full object-cover opacity-35 mix-blend-luminosity"
+            className="w-full h-full object-cover opacity-30 mix-blend-luminosity"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#121814] via-[#121814]/85 to-[#121814]/60"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-transparent to-[#0b100d]"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A1118] via-[#0A1118]/85 to-[#0A1118]/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-[#0A1118]/80"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl">
             {/* Top Pill */}
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] font-bold text-xs sm:text-sm uppercase tracking-wider mb-6 backdrop-blur-md">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-400 font-bold text-xs sm:text-sm uppercase tracking-wider mb-6 backdrop-blur-md">
                 <Sun className="w-4 h-4 animate-spin-slow" />
                 NT Standalone Remote Power Solutions
               </div>
@@ -313,7 +313,7 @@ export function OffGridSolarSystemPage() {
 
             {/* Subheadline */}
             <FadeIn delay={0.2}>
-              <p className="text-lg sm:text-xl text-slate-300 leading-relaxed font-medium mb-8 max-w-3xl">
+              <p className="text-lg sm:text-xl text-slate-300 leading-relaxed font-medium mb-8 max-w-3xl border-l-2 border-brand-400 pl-6">
                 No power line to your NT property? Oneroof Solar designs and installs off-grid solar systems for remote properties, stations and communities across Darwin, Alice Springs and the Northern Territory. Complete energy independence with no ongoing electricity bills.
               </p>
             </FadeIn>
@@ -322,7 +322,7 @@ export function OffGridSolarSystemPage() {
             <FadeIn delay={0.3}>
               <div className="flex flex-wrap items-center gap-4 mb-10">
                 <Button 
-                  className="bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-black px-8 py-4 rounded-xl text-sm sm:text-base uppercase tracking-wider transition-all duration-300 shadow-[0_4px_20px_rgba(91,201,77,0.3)] hover:-translate-y-0.5 border-none"
+                  className="bg-brand-500 text-slate-900 hover:bg-brand-400 font-black px-8 py-4 rounded-xl text-sm sm:text-base uppercase tracking-wider transition-all duration-300 shadow-[0_4px_20px_rgba(140,198,63,0.3)] hover:-translate-y-0.5 border-none"
                   asChild
                 >
                   <a href="#quote-form">
@@ -334,7 +334,7 @@ export function OffGridSolarSystemPage() {
                   href={`tel:${PRIMARY_PHONE_RAW}`}
                   className="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-6 py-4 rounded-xl text-sm sm:text-base uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 backdrop-blur-md"
                 >
-                  <Phone className="w-4 h-4 text-[#5BC94D]" />
+                  <Phone className="w-4 h-4 text-brand-400" />
                   Call Darwin: {PRIMARY_PHONE}
                 </a>
 
@@ -342,7 +342,7 @@ export function OffGridSolarSystemPage() {
                   href={`tel:${ALICE_PHONE_RAW}`}
                   className="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-6 py-4 rounded-xl text-sm sm:text-base uppercase tracking-wider transition-all duration-300 hover:-translate-y-0.5 backdrop-blur-md"
                 >
-                  <Phone className="w-4 h-4 text-[#5BC94D]" />
+                  <Phone className="w-4 h-4 text-brand-400" />
                   Alice Springs: {ALICE_PHONE}
                 </a>
               </div>
@@ -356,19 +356,19 @@ export function OffGridSolarSystemPage() {
                   <span className="text-xs font-bold text-white uppercase tracking-wider">4.9 Stars</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-2.5 rounded-xl backdrop-blur-sm">
-                  <Award className="w-4 h-4 text-[#5BC94D] shrink-0" />
+                  <Award className="w-4 h-4 text-brand-400 shrink-0" />
                   <span className="text-xs font-bold text-white uppercase tracking-wider">CEC Accredited</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-2.5 rounded-xl backdrop-blur-sm">
-                  <MapPin className="w-4 h-4 text-[#5BC94D] shrink-0" />
+                  <MapPin className="w-4 h-4 text-brand-400 shrink-0" />
                   <span className="text-xs font-bold text-white uppercase tracking-wider">NT Remote Specialists</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-2.5 rounded-xl backdrop-blur-sm">
-                  <Zap className="w-4 h-4 text-[#5BC94D] shrink-0" />
+                  <Zap className="w-4 h-4 text-brand-400 shrink-0" />
                   <span className="text-xs font-bold text-white uppercase tracking-wider">Off-Grid & On-Grid</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-2.5 rounded-xl backdrop-blur-sm col-span-2 sm:col-span-1">
-                  <CheckCircle className="w-4 h-4 text-[#5BC94D] shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-brand-400 shrink-0" />
                   <span className="text-xs font-bold text-white uppercase tracking-wider">STC Approved</span>
                 </div>
               </div>
@@ -382,36 +382,36 @@ export function OffGridSolarSystemPage() {
       <PartnersMarquee />
 
       {/* 3. SECTION 2 — WHAT IS AN OFF-GRID SOLAR SYSTEM */}
-      <section className="py-16 lg:py-24 bg-[#121814] relative overflow-hidden border-b border-white/10">
+      <section className="py-16 lg:py-24 bg-white relative overflow-hidden border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-6">
               <FadeIn>
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#5BC94D] font-mono text-xs uppercase tracking-wider mb-2">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-700 font-mono text-xs uppercase tracking-wider mb-2">
                   <Shield className="w-3.5 h-3.5" />
                   Total Energy Independence
                 </div>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
                   What Is an Off-Grid Solar System
                 </h2>
               </FadeIn>
 
               <FadeIn delay={0.1}>
-                <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium">
+                <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
                   An off-grid solar system operates completely independently of the Power and Water Corporation electricity grid. There is no grid connection, no electricity retailer and no ongoing electricity bills. Your property generates, stores and uses its own solar power, 24 hours a day, 365 days a year.
                 </p>
               </FadeIn>
 
               <FadeIn delay={0.2}>
-                <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium">
+                <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
                   Off-grid solar is the right solution for remote NT properties where connecting to the Power and Water Corporation grid is either impossible, impractical or prohibitively expensive due to distance. This includes remote stations, rural Darwin properties, Kakadu region homes, communities across the NT corridor and any property more than a few kilometres from an existing grid connection.
                 </p>
               </FadeIn>
 
               <FadeIn delay={0.3}>
-                <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium">
+                <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
                   Off-grid is different from hybrid solar, which stays connected to the grid as a backup. Off-grid systems are completely self-sufficient — they rely entirely on solar generation, battery storage and where needed, a backup generator.
                 </p>
               </FadeIn>
@@ -420,21 +420,21 @@ export function OffGridSolarSystemPage() {
             {/* Right Visual Image Card */}
             <div className="lg:col-span-5">
               <FadeIn delay={0.2}>
-                <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
+                <div className="relative rounded-3xl overflow-hidden border border-slate-200 shadow-xl group">
                   <img referrerPolicy="no-referrer" 
                     src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=800&auto=format&fit=crop"
                     alt="Oneroof Solar off-grid battery storage and solar inverter installation on remote NT property"
                     className="w-full h-[400px] sm:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-transparent to-transparent opacity-80"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
                   <div className="absolute bottom-6 left-6 right-6 bg-slate-900/90 border border-white/10 p-5 rounded-2xl backdrop-blur-md">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/20 text-[#5BC94D] flex items-center justify-center shrink-0">
+                      <div className="w-10 h-10 rounded-xl bg-brand-500/20 text-brand-400 flex items-center justify-center shrink-0">
                         <Battery className="w-5 h-5" />
                       </div>
                       <div>
                         <h4 className="text-white font-bold text-sm uppercase tracking-wider">100% Standalone Autonomy</h4>
-                        <p className="text-slate-400 text-xs font-medium">Designed for Territory heat & cyclone endurance</p>
+                        <p className="text-slate-300 text-xs font-medium">Designed for Territory heat & cyclone endurance</p>
                       </div>
                     </div>
                   </div>
@@ -444,13 +444,13 @@ export function OffGridSolarSystemPage() {
           </div>
 
           {/* SUBSECTION: HOW AN OFF-GRID SOLAR SYSTEM WORKS */}
-          <div className="pt-12 border-t border-white/10">
+          <div className="pt-12 border-t border-slate-200">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <FadeIn>
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] mb-4">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] mb-4">
                   How an Off-Grid Solar System Works
                 </h3>
-                <p className="text-slate-300 text-base sm:text-lg font-medium leading-relaxed">
+                <p className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
                   Your off-grid system has five core components that work together to power your property around the clock.
                 </p>
               </FadeIn>
@@ -461,13 +461,13 @@ export function OffGridSolarSystemPage() {
               
               {/* Component 1: Solar Panels */}
               <FadeIn delay={0.1}>
-                <div className="bg-slate-900/70 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all duration-300 group">
-                  <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-slate-50 border border-slate-200/80 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/40 hover:shadow-lg transition-all duration-300 group">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Sun className="w-6 h-6" />
                   </div>
-                  <span className="text-xs font-mono text-[#5BC94D] font-bold uppercase tracking-wider mb-1">Component 01</span>
-                  <h4 className="text-xl font-black text-white uppercase tracking-wide mb-3">Solar Panels</h4>
-                  <p className="text-slate-300 text-sm leading-relaxed font-medium flex-1">
+                  <span className="text-xs font-mono text-brand-600 font-bold uppercase tracking-wider mb-1">Component 01</span>
+                  <h4 className="text-xl font-black text-slate-900 uppercase tracking-wide mb-3">Solar Panels</h4>
+                  <p className="text-slate-600 text-sm leading-relaxed font-medium flex-1">
                     Installed on your roof or as a ground mount, they generate DC electricity during daylight hours. The NT's high solar irradiance means exceptional daily generation, even accounting for wet season cloud cover.
                   </p>
                 </div>
@@ -475,13 +475,13 @@ export function OffGridSolarSystemPage() {
 
               {/* Component 2: MPPT Charge Controller */}
               <FadeIn delay={0.2}>
-                <div className="bg-slate-900/70 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all duration-300 group">
-                  <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-slate-50 border border-slate-200/80 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/40 hover:shadow-lg transition-all duration-300 group">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Sliders className="w-6 h-6" />
                   </div>
-                  <span className="text-xs font-mono text-[#5BC94D] font-bold uppercase tracking-wider mb-1">Component 02</span>
-                  <h4 className="text-xl font-black text-white uppercase tracking-wide mb-3">MPPT Charge Controller</h4>
-                  <p className="text-slate-300 text-sm leading-relaxed font-medium flex-1">
+                  <span className="text-xs font-mono text-brand-600 font-bold uppercase tracking-wider mb-1">Component 02</span>
+                  <h4 className="text-xl font-black text-slate-900 uppercase tracking-wide mb-3">MPPT Charge Controller</h4>
+                  <p className="text-slate-600 text-sm leading-relaxed font-medium flex-1">
                     Regulates the flow of electricity from your panels to the battery bank. An MPPT (Maximum Power Point Tracking) controller maximises energy harvest from your panels in all light conditions.
                   </p>
                 </div>
@@ -489,13 +489,13 @@ export function OffGridSolarSystemPage() {
 
               {/* Component 3: Battery Bank */}
               <FadeIn delay={0.3}>
-                <div className="bg-slate-900/70 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all duration-300 group">
-                  <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-slate-50 border border-slate-200/80 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/40 hover:shadow-lg transition-all duration-300 group">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Battery className="w-6 h-6" />
                   </div>
-                  <span className="text-xs font-mono text-[#5BC94D] font-bold uppercase tracking-wider mb-1">Component 03</span>
-                  <h4 className="text-xl font-black text-white uppercase tracking-wide mb-3">Battery Bank</h4>
-                  <p className="text-slate-300 text-sm leading-relaxed font-medium flex-1">
+                  <span className="text-xs font-mono text-brand-600 font-bold uppercase tracking-wider mb-1">Component 03</span>
+                  <h4 className="text-xl font-black text-slate-900 uppercase tracking-wide mb-3">Battery Bank</h4>
+                  <p className="text-slate-600 text-sm leading-relaxed font-medium flex-1">
                     Stores the electricity your panels generate during the day for use at night or during cloudy periods. Battery bank size determines how many days of autonomy your system provides without solar input.
                   </p>
                 </div>
@@ -503,13 +503,13 @@ export function OffGridSolarSystemPage() {
 
               {/* Component 4: Off-Grid Inverter */}
               <FadeIn delay={0.4}>
-                <div className="bg-slate-900/70 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all duration-300 group">
-                  <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-slate-50 border border-slate-200/80 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/40 hover:shadow-lg transition-all duration-300 group">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Cpu className="w-6 h-6" />
                   </div>
-                  <span className="text-xs font-mono text-[#5BC94D] font-bold uppercase tracking-wider mb-1">Component 04</span>
-                  <h4 className="text-xl font-black text-white uppercase tracking-wide mb-3">Off-Grid Inverter</h4>
-                  <p className="text-slate-300 text-sm leading-relaxed font-medium flex-1">
+                  <span className="text-xs font-mono text-brand-600 font-bold uppercase tracking-wider mb-1">Component 04</span>
+                  <h4 className="text-xl font-black text-slate-900 uppercase tracking-wide mb-3">Off-Grid Inverter</h4>
+                  <p className="text-slate-600 text-sm leading-relaxed font-medium flex-1">
                     Converts DC battery power into AC electricity for your household appliances, air conditioning, pumps and all standard electrical equipment.
                   </p>
                 </div>
@@ -517,16 +517,16 @@ export function OffGridSolarSystemPage() {
 
               {/* Component 5: Backup Generator */}
               <FadeIn delay={0.5} className="md:col-span-2 lg:col-span-2">
-                <div className="bg-slate-900/70 border border-[#5BC94D]/30 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D] transition-all duration-300 group relative overflow-hidden">
-                  <div className="absolute top-0 right-0 bg-[#5BC94D]/10 text-[#5BC94D] font-bold text-xs uppercase tracking-widest px-4 py-1.5 rounded-bl-2xl border-l border-b border-[#5BC94D]/30">
+                <div className="bg-slate-50 border border-brand-200 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500 transition-all duration-300 group relative overflow-hidden">
+                  <div className="absolute top-0 right-0 bg-brand-500 text-slate-900 font-bold text-xs uppercase tracking-widest px-4 py-1.5 rounded-bl-2xl">
                     Recommended for NT Wet Season
                   </div>
-                  <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Radio className="w-6 h-6" />
                   </div>
-                  <span className="text-xs font-mono text-[#5BC94D] font-bold uppercase tracking-wider mb-1">Component 05</span>
-                  <h4 className="text-xl font-black text-white uppercase tracking-wide mb-3">Backup Generator (recommended for NT)</h4>
-                  <p className="text-slate-300 text-sm leading-relaxed font-medium flex-1">
+                  <span className="text-xs font-mono text-brand-600 font-bold uppercase tracking-wider mb-1">Component 05</span>
+                  <h4 className="text-xl font-black text-slate-900 uppercase tracking-wide mb-3">Backup Generator (recommended for NT)</h4>
+                  <p className="text-slate-600 text-sm leading-relaxed font-medium flex-1">
                     Supplements solar during extended low-sun periods. Darwin's wet season can produce 5 to 10 consecutive days of heavy overcast. A backup generator ensures power security through these periods.
                   </p>
                 </div>
@@ -536,7 +536,7 @@ export function OffGridSolarSystemPage() {
 
             {/* CTA BAR */}
             <FadeIn delay={0.6}>
-              <div className="bg-gradient-to-r from-slate-900 via-[#19281D] to-slate-900 border border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
+              <div className="bg-[#0A1118] border border-brand-500/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
                 <div className="text-left">
                   <h4 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide mb-2">
                     Want to know if off-grid solar suits your NT property?
@@ -546,7 +546,7 @@ export function OffGridSolarSystemPage() {
                   </p>
                 </div>
                 <Button 
-                  className="bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(91,201,77,0.3)] border-none"
+                  className="bg-brand-500 text-slate-900 hover:bg-brand-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(140,198,63,0.3)] border-none"
                   asChild
                 >
                   <a href="#quote-form">
@@ -562,18 +562,18 @@ export function OffGridSolarSystemPage() {
       </section>
 
       {/* 4. SECTION 3 — OFF-GRID VS HYBRID VS GRID-CONNECTED */}
-      <section className="py-16 lg:py-24 bg-[#0b100d] relative overflow-hidden border-b border-white/10">
+      <section className="py-16 lg:py-24 bg-slate-50 relative overflow-hidden border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] font-mono text-xs uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-700 font-mono text-xs uppercase tracking-wider mb-4">
                 <Layers className="w-3.5 h-3.5" />
                 NT Power Configuration Comparison
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
                 Off-Grid, Hybrid or Grid-Connected — Which Is Right for Your NT Property
               </h2>
-              <p className="text-slate-300 text-base sm:text-lg font-medium leading-relaxed">
+              <p className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
                 Compare grid dependency, operational characteristics and suitability across Northern Territory property types.
               </p>
             </FadeIn>
@@ -581,39 +581,39 @@ export function OffGridSolarSystemPage() {
 
           {/* Comparison Table */}
           <FadeIn delay={0.1}>
-            <div className="bg-slate-900/80 border border-white/10 rounded-3xl overflow-hidden shadow-2xl mb-8 backdrop-blur-md">
+            <div className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-xl mb-8">
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse min-w-[700px]">
                   <thead>
-                    <tr className="bg-white/5 border-b border-white/10 text-xs font-mono text-[#5BC94D] uppercase tracking-wider">
+                    <tr className="bg-slate-900 text-xs font-mono text-brand-400 uppercase tracking-wider">
                       <th className="py-4 px-6 font-bold">System Type</th>
                       <th className="py-4 px-6 font-bold">Grid Connection</th>
                       <th className="py-4 px-6 font-bold">Best For NT</th>
                       <th className="py-4 px-6 font-bold">Key Difference</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-white/5 text-sm text-slate-300 font-medium">
-                    <tr className="hover:bg-white/[0.02] transition-colors bg-[#5BC94D]/5">
-                      <td className="py-5 px-6 font-black text-white uppercase tracking-wider flex items-center gap-2">
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#5BC94D]"></div>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700 font-medium">
+                    <tr className="hover:bg-slate-50 transition-colors bg-brand-50/50">
+                      <td className="py-5 px-6 font-black text-slate-900 uppercase tracking-wider flex items-center gap-2">
+                        <div className="w-2.5 h-2.5 rounded-full bg-brand-500"></div>
                         Off-Grid Solar
                       </td>
-                      <td className="py-5 px-6 text-slate-200">None — fully independent</td>
-                      <td className="py-5 px-6 text-slate-200">Remote properties more than 2 to 3km from grid, stations, Kakadu, Barkly region</td>
-                      <td className="py-5 px-6 text-slate-200">No electricity bills. Completely self-sufficient. Backup generator recommended.</td>
+                      <td className="py-5 px-6 text-slate-800">None — fully independent</td>
+                      <td className="py-5 px-6 text-slate-800">Remote properties more than 2 to 3km from grid, stations, Kakadu, Barkly region</td>
+                      <td className="py-5 px-6 text-slate-800">No electricity bills. Completely self-sufficient. Backup generator recommended.</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02] transition-colors">
-                      <td className="py-5 px-6 font-black text-white uppercase tracking-wider flex items-center gap-2">
-                        <div className="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="py-5 px-6 font-black text-slate-900 uppercase tracking-wider flex items-center gap-2">
+                        <div className="w-2.5 h-2.5 rounded-full bg-amber-500"></div>
                         Hybrid Solar and Battery
                       </td>
                       <td className="py-5 px-6">Connected to grid as backup</td>
                       <td className="py-5 px-6">Darwin and Alice Springs homes that want maximum self-sufficiency but grid security</td>
                       <td className="py-5 px-6">Uses solar and battery first. Draws from grid only when battery is depleted.</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02] transition-colors">
-                      <td className="py-5 px-6 font-black text-white uppercase tracking-wider flex items-center gap-2">
-                        <div className="w-2.5 h-2.5 rounded-full bg-sky-400"></div>
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="py-5 px-6 font-black text-slate-900 uppercase tracking-wider flex items-center gap-2">
+                        <div className="w-2.5 h-2.5 rounded-full bg-sky-500"></div>
                         Grid-Connected Solar
                       </td>
                       <td className="py-5 px-6">Connected to Jacana or Rimfire Energy</td>
@@ -628,14 +628,14 @@ export function OffGridSolarSystemPage() {
 
           {/* Footnote Link Note */}
           <FadeIn delay={0.2}>
-            <p className="text-center text-slate-400 text-xs sm:text-sm font-medium mb-10 max-w-3xl mx-auto">
-              For hybrid solar systems, see our <Link to="/solar-systems/residential-solar-system" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">residential solar page</Link>. For grid-connected commercial systems, see our <Link to="/solar-systems/commercial-solar-system" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">commercial solar page</Link>.
+            <p className="text-center text-slate-600 text-xs sm:text-sm font-medium mb-10 max-w-3xl mx-auto">
+              For hybrid solar systems, see our <Link to="/solar-systems/residential-solar-system" className="text-brand-600 font-bold underline hover:text-brand-700 transition-colors">residential solar page</Link>. For grid-connected commercial systems, see our <Link to="/solar-systems/commercial-solar-system" className="text-brand-600 font-bold underline hover:text-brand-700 transition-colors">commercial solar page</Link>.
             </p>
           </FadeIn>
 
           {/* CTA Bar */}
           <FadeIn delay={0.3}>
-            <div className="bg-gradient-to-r from-slate-900 via-[#19281D] to-slate-900 border border-[#5BC94D]/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
+            <div className="bg-[#0A1118] border border-brand-500/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
               <div className="text-left">
                 <h4 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide mb-2">
                   Not sure which system type suits your NT property?
@@ -645,7 +645,7 @@ export function OffGridSolarSystemPage() {
                 </p>
               </div>
               <Button 
-                className="bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(91,201,77,0.3)] border-none"
+                className="bg-brand-500 text-slate-900 hover:bg-brand-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(140,198,63,0.3)] border-none"
                 asChild
               >
                 <a href="#quote-form">
@@ -658,18 +658,18 @@ export function OffGridSolarSystemPage() {
       </section>
 
       {/* 5. SECTION 4 — OFF-GRID SOLAR PACKAGES */}
-      <section className="py-16 lg:py-24 bg-[#121814] relative overflow-hidden border-b border-white/10">
+      <section className="py-16 lg:py-24 bg-white relative overflow-hidden border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] font-mono text-xs uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-700 font-mono text-xs uppercase tracking-wider mb-4">
                 <PackageCheck className="w-3.5 h-3.5" />
                 NT Engineered Standalone Packages
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
                 Exclusive Off-Grid Solar and Battery Packages
               </h2>
-              <p className="text-slate-300 text-base sm:text-lg font-medium leading-relaxed">
+              <p className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
                 Complete off-grid solar systems designed for remote NT properties. Every package includes N-type panels, off-grid inverter, battery bank, cyclone-rated mounting, CEC-accredited installation and full system commissioning.
               </p>
             </FadeIn>
@@ -680,42 +680,42 @@ export function OffGridSolarSystemPage() {
             
             {/* Card 1: Starter Off-Grid Package */}
             <FadeIn delay={0.1}>
-              <div className="bg-slate-900/80 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col h-full hover:border-[#5BC94D]/50 transition-all duration-300 group shadow-xl relative overflow-hidden">
+              <div className="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 flex flex-col h-full hover:border-brand-500/50 hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
                 <div className="mb-6">
-                  <span className="text-xs font-mono text-[#5BC94D] font-bold uppercase tracking-wider block mb-2">Package 01</span>
-                  <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-2">Starter Off-Grid Package</h3>
-                  <p className="text-slate-400 text-xs font-medium">Ideal for small remote homes, cabins, weekender properties or hunting shacks.</p>
+                  <span className="text-xs font-mono text-brand-600 font-bold uppercase tracking-wider block mb-2">Package 01</span>
+                  <h3 className="text-2xl font-black text-slate-900 uppercase tracking-wide mb-2">Starter Off-Grid Package</h3>
+                  <p className="text-slate-500 text-xs font-medium">Ideal for small remote homes, cabins, weekender properties or hunting shacks.</p>
                 </div>
 
-                <div className="py-4 border-y border-white/10 mb-6 space-y-3 flex-1">
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                <div className="py-4 border-y border-slate-200 mb-6 space-y-3 flex-1">
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span><strong>5.5kW N-Type</strong> High-Efficiency Solar Array</span>
                   </div>
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span><strong>10.2kWh Modular</strong> Lithium Battery Storage</span>
                   </div>
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span><strong>5kW Off-Grid</strong> Pure Sine Inverter</span>
                   </div>
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span><strong>Cyclone-Rated C2/C3</strong> Framing & Mounting</span>
                   </div>
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span>Generator Auto-Start Integration Ready</span>
                   </div>
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span>Full CEC Installation & System Commissioning</span>
                   </div>
                 </div>
 
                 <Button 
-                  className="w-full bg-white/10 hover:bg-[#5BC94D] hover:text-[#19281D] text-white font-black py-4 rounded-xl uppercase tracking-wider text-xs transition-all duration-300 border-none mt-auto"
+                  className="w-full bg-slate-900 hover:bg-brand-500 hover:text-slate-900 text-white font-black py-4 rounded-xl uppercase tracking-wider text-xs transition-all duration-300 border-none mt-auto"
                   asChild
                 >
                   <a href="#quote-form">Get Starter Quote</a>
@@ -725,45 +725,45 @@ export function OffGridSolarSystemPage() {
 
             {/* Card 2: Remote Property Package [Most Popular] */}
             <FadeIn delay={0.2}>
-              <div className="bg-slate-900/95 border-2 border-[#5BC94D] rounded-3xl p-6 sm:p-8 flex flex-col h-full shadow-[0_0_30px_rgba(91,201,77,0.2)] group relative overflow-hidden">
-                <div className="absolute top-0 right-0 bg-[#5BC94D] text-[#19281D] font-black text-[10px] uppercase tracking-widest px-4 py-1 rounded-bl-2xl">
+              <div className="bg-[#0A1118] border-2 border-brand-500 rounded-3xl p-6 sm:p-8 flex flex-col h-full shadow-[0_0_30px_rgba(140,198,63,0.2)] group relative overflow-hidden">
+                <div className="absolute top-0 right-0 bg-brand-500 text-slate-900 font-black text-[10px] uppercase tracking-widest px-4 py-1 rounded-bl-2xl">
                   Most Popular
                 </div>
                 <div className="mb-6">
-                  <span className="text-xs font-mono text-[#5BC94D] font-bold uppercase tracking-wider block mb-2">Package 02</span>
+                  <span className="text-xs font-mono text-brand-400 font-bold uppercase tracking-wider block mb-2">Package 02</span>
                   <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-2">Remote Property Package</h3>
                   <p className="text-slate-300 text-xs font-medium">Tailored for standard remote homes, rural homesteads with AC & pumps.</p>
                 </div>
 
                 <div className="py-4 border-y border-white/10 mb-6 space-y-3 flex-1">
                   <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                     <span><strong>10.8kW N-Type</strong> High-Output Solar Array</span>
                   </div>
                   <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                     <span><strong>20.4kWh High-Capacity</strong> Lithium Storage</span>
                   </div>
                   <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                     <span><strong>8kW Off-Grid</strong> Heavy-Duty Inverter</span>
                   </div>
                   <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                     <span><strong>Heavy-Duty Cyclone</strong> Mounting + Surge Protection</span>
                   </div>
                   <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                     <span>Smart Generator Auto-Transfer Switch</span>
                   </div>
                   <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                     <span>Full On-Site CEC Commissioning & Training</span>
                   </div>
                 </div>
 
                 <Button 
-                  className="w-full bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-black py-4 rounded-xl uppercase tracking-wider text-xs transition-all duration-300 shadow-[0_4px_20px_rgba(91,201,77,0.3)] border-none mt-auto"
+                  className="w-full bg-brand-500 text-slate-900 hover:bg-brand-400 font-black py-4 rounded-xl uppercase tracking-wider text-xs transition-all duration-300 shadow-[0_4px_20px_rgba(140,198,63,0.3)] border-none mt-auto"
                   asChild
                 >
                   <a href="#quote-form">Choose Remote Package</a>
@@ -773,45 +773,45 @@ export function OffGridSolarSystemPage() {
 
             {/* Card 3: Ultimate Off-Grid Package */}
             <FadeIn delay={0.3}>
-              <div className="bg-slate-900/80 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col h-full hover:border-[#5BC94D]/50 transition-all duration-300 group shadow-xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 bg-white/10 text-slate-300 font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-bl-2xl">
+              <div className="bg-slate-50 border border-slate-200 rounded-3xl p-6 sm:p-8 flex flex-col h-full hover:border-brand-500/50 hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                <div className="absolute top-0 right-0 bg-slate-200 text-slate-700 font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-bl-2xl">
                   Station & Commercial Grade
                 </div>
                 <div className="mb-6">
-                  <span className="text-xs font-mono text-[#5BC94D] font-bold uppercase tracking-wider block mb-2">Package 03</span>
-                  <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-2">Ultimate Off-Grid Package</h3>
-                  <p className="text-slate-400 text-xs font-medium">Built for large cattle stations, remote lodges, communities and commercial setups.</p>
+                  <span className="text-xs font-mono text-brand-600 font-bold uppercase tracking-wider block mb-2">Package 03</span>
+                  <h3 className="text-2xl font-black text-slate-900 uppercase tracking-wide mb-2">Ultimate Off-Grid Package</h3>
+                  <p className="text-slate-500 text-xs font-medium">Built for large cattle stations, remote lodges, communities and commercial setups.</p>
                 </div>
 
-                <div className="py-4 border-y border-white/10 mb-6 space-y-3 flex-1">
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                <div className="py-4 border-y border-slate-200 mb-6 space-y-3 flex-1">
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span><strong>20kW+ High-Capacity</strong> N-Type Solar Array</span>
                   </div>
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span><strong>40kWh+ Modular</strong> Battery Storage Stack</span>
                   </div>
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span><strong>15kW+ Industrial</strong> Off-Grid Inverter Cluster</span>
                   </div>
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span><strong>Severe-Weather</strong> Cyclone Frame Structure</span>
                   </div>
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span>Integrated Generator & Load-Shedding Controller</span>
                   </div>
-                  <div className="flex items-start gap-3 text-sm text-slate-200">
-                    <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 text-sm text-slate-700">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                     <span>Remote Telemetry & Monitoring Access</span>
                   </div>
                 </div>
 
                 <Button 
-                  className="w-full bg-white/10 hover:bg-[#5BC94D] hover:text-[#19281D] text-white font-black py-4 rounded-xl uppercase tracking-wider text-xs transition-all duration-300 border-none mt-auto"
+                  className="w-full bg-slate-900 hover:bg-brand-500 hover:text-slate-900 text-white font-black py-4 rounded-xl uppercase tracking-wider text-xs transition-all duration-300 border-none mt-auto"
                   asChild
                 >
                   <a href="#quote-form">Request Commercial Quote</a>
@@ -822,7 +822,7 @@ export function OffGridSolarSystemPage() {
           </div>
 
           <FadeIn delay={0.4}>
-            <p className="text-center text-slate-400 text-xs sm:text-sm font-medium">
+            <p className="text-center text-slate-500 text-xs sm:text-sm font-medium">
               Prices include STC rebate where applicable. All systems sized to your specific property after a free site assessment. Generator packages available on request.
             </p>
           </FadeIn>
@@ -830,18 +830,18 @@ export function OffGridSolarSystemPage() {
       </section>
 
       {/* 6. SECTION 5 — COMMON CHALLENGES AND NT SOLUTIONS */}
-      <section className="py-16 lg:py-24 bg-[#0b100d] relative overflow-hidden border-b border-white/10">
+      <section className="py-16 lg:py-24 bg-slate-50 relative overflow-hidden border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] font-mono text-xs uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-700 font-mono text-xs uppercase tracking-wider mb-4">
                 <AlertTriangle className="w-3.5 h-3.5" />
                 NT Environmental Engineering
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
                 Common Off-Grid Solar Challenges and How We Address Them in the NT
               </h2>
-              <p className="text-slate-300 text-base sm:text-lg font-medium leading-relaxed">
+              <p className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
                 Off-grid solar requires careful design. These are the most common challenges and how Oneroof Solar addresses them for NT properties.
               </p>
             </FadeIn>
@@ -852,23 +852,23 @@ export function OffGridSolarSystemPage() {
             
             {/* Challenge 1 */}
             <FadeIn delay={0.1}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all duration-300">
+              <div className="bg-white border border-slate-200 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/40 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-400 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-600 flex items-center justify-center shrink-0">
                     <CloudRain className="w-5 h-5" />
                   </div>
-                  <h3 className="text-lg font-black text-white uppercase tracking-wide">Wet Season Low Generation</h3>
+                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-wide">Wet Season Low Generation</h3>
                 </div>
                 <div className="space-y-3 text-sm">
-                  <div className="bg-white/5 p-3.5 rounded-xl border border-white/5">
-                    <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-1">NT Context</span>
-                    <p className="text-slate-300 font-medium leading-relaxed">
+                  <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80">
+                    <span className="text-xs font-mono text-slate-500 uppercase tracking-wider block mb-1">NT Context</span>
+                    <p className="text-slate-700 font-medium leading-relaxed">
                       Darwin's wet season (October to April) can produce 5 to 10 consecutive days of heavy overcast, reducing solar output by 70 to 90 per cent.
                     </p>
                   </div>
-                  <div className="bg-[#5BC94D]/10 p-3.5 rounded-xl border border-[#5BC94D]/20">
-                    <span className="text-xs font-mono text-[#5BC94D] uppercase tracking-wider block mb-1">How We Address It</span>
-                    <p className="text-slate-200 font-medium leading-relaxed">
+                  <div className="bg-brand-50 p-3.5 rounded-xl border border-brand-200">
+                    <span className="text-xs font-mono text-brand-700 uppercase tracking-wider block mb-1">How We Address It</span>
+                    <p className="text-slate-800 font-medium leading-relaxed">
                       We size battery banks for 3 to 5 days autonomy and include a backup generator in every remote NT system design. Generator auto-start is recommended for unattended properties.
                     </p>
                   </div>
@@ -878,23 +878,23 @@ export function OffGridSolarSystemPage() {
 
             {/* Challenge 2 */}
             <FadeIn delay={0.2}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all duration-300">
+              <div className="bg-white border border-slate-200 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/40 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-600 flex items-center justify-center shrink-0">
                     <Battery className="w-5 h-5" />
                   </div>
-                  <h3 className="text-lg font-black text-white uppercase tracking-wide">Battery Bank Undersizing</h3>
+                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-wide">Battery Bank Undersizing</h3>
                 </div>
                 <div className="space-y-3 text-sm">
-                  <div className="bg-white/5 p-3.5 rounded-xl border border-white/5">
-                    <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-1">NT Context</span>
-                    <p className="text-slate-300 font-medium leading-relaxed">
+                  <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80">
+                    <span className="text-xs font-mono text-slate-500 uppercase tracking-wider block mb-1">NT Context</span>
+                    <p className="text-slate-700 font-medium leading-relaxed">
                       Remote NT properties often have higher than expected loads from air conditioning, water pumps and refrigeration.
                     </p>
                   </div>
-                  <div className="bg-[#5BC94D]/10 p-3.5 rounded-xl border border-[#5BC94D]/20">
-                    <span className="text-xs font-mono text-[#5BC94D] uppercase tracking-wider block mb-1">How We Address It</span>
-                    <p className="text-slate-200 font-medium leading-relaxed">
+                  <div className="bg-brand-50 p-3.5 rounded-xl border border-brand-200">
+                    <span className="text-xs font-mono text-brand-700 uppercase tracking-wider block mb-1">How We Address It</span>
+                    <p className="text-slate-800 font-medium leading-relaxed">
                       We review your actual appliance list and daily usage profile, not generic estimates. Battery bank capacity is sized for your real load plus a safety buffer.
                     </p>
                   </div>
@@ -904,23 +904,23 @@ export function OffGridSolarSystemPage() {
 
             {/* Challenge 3 */}
             <FadeIn delay={0.3}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all duration-300">
+              <div className="bg-white border border-slate-200 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/40 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/30 text-red-600 flex items-center justify-center shrink-0">
                     <Thermometer className="w-5 h-5" />
                   </div>
-                  <h3 className="text-lg font-black text-white uppercase tracking-wide">High AC Loads in NT Heat</h3>
+                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-wide">High AC Loads in NT Heat</h3>
                 </div>
                 <div className="space-y-3 text-sm">
-                  <div className="bg-white/5 p-3.5 rounded-xl border border-white/5">
-                    <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-1">NT Context</span>
-                    <p className="text-slate-300 font-medium leading-relaxed">
+                  <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80">
+                    <span className="text-xs font-mono text-slate-500 uppercase tracking-wider block mb-1">NT Context</span>
+                    <p className="text-slate-700 font-medium leading-relaxed">
                       NT properties run air conditioning for 8 to 12 hours per day, far more than southern properties.
                     </p>
                   </div>
-                  <div className="bg-[#5BC94D]/10 p-3.5 rounded-xl border border-[#5BC94D]/20">
-                    <span className="text-xs font-mono text-[#5BC94D] uppercase tracking-wider block mb-1">How We Address It</span>
-                    <p className="text-slate-200 font-medium leading-relaxed">
+                  <div className="bg-brand-50 p-3.5 rounded-xl border border-brand-200">
+                    <span className="text-xs font-mono text-brand-700 uppercase tracking-wider block mb-1">How We Address It</span>
+                    <p className="text-slate-800 font-medium leading-relaxed">
                       We factor full AC load into system design. Inverter capacity must handle simultaneous AC startup current, which is 3 to 5 times running current.
                     </p>
                   </div>
@@ -930,24 +930,24 @@ export function OffGridSolarSystemPage() {
 
             {/* Challenge 4 */}
             <FadeIn delay={0.4}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all duration-300">
+              <div className="bg-white border border-slate-200 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/40 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/30 text-orange-400 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/30 text-orange-600 flex items-center justify-center shrink-0">
                     <Wrench className="w-5 h-5" />
                   </div>
-                  <h3 className="text-lg font-black text-white uppercase tracking-wide">Panel Soiling & Maintenance</h3>
+                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-wide">Panel Soiling & Maintenance</h3>
                 </div>
                 <div className="space-y-3 text-sm">
-                  <div className="bg-white/5 p-3.5 rounded-xl border border-white/5">
-                    <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-1">NT Context</span>
-                    <p className="text-slate-300 font-medium leading-relaxed">
+                  <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80">
+                    <span className="text-xs font-mono text-slate-500 uppercase tracking-wider block mb-1">NT Context</span>
+                    <p className="text-slate-700 font-medium leading-relaxed">
                       Remote NT properties accumulate dust and bird droppings rapidly, reducing output.
                     </p>
                   </div>
-                  <div className="bg-[#5BC94D]/10 p-3.5 rounded-xl border border-[#5BC94D]/20">
-                    <span className="text-xs font-mono text-[#5BC94D] uppercase tracking-wider block mb-1">How We Address It</span>
-                    <p className="text-slate-200 font-medium leading-relaxed">
-                      We advise on panel tilt angle for natural rain cleaning and provide a maintenance schedule. Our repairs team services remote NT systems. See our <Link to="/services/solar-panel-repair-darwin" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">repairs and maintenance page</Link>.
+                  <div className="bg-brand-50 p-3.5 rounded-xl border border-brand-200">
+                    <span className="text-xs font-mono text-brand-700 uppercase tracking-wider block mb-1">How We Address It</span>
+                    <p className="text-slate-800 font-medium leading-relaxed">
+                      We advise on panel tilt angle for natural rain cleaning and provide a maintenance schedule. Our repairs team services remote NT systems. See our <Link to="/services/solar-panel-repair-darwin" className="text-brand-600 font-bold underline hover:text-brand-700 transition-colors">repairs and maintenance page</Link>.
                     </p>
                   </div>
                 </div>
@@ -956,23 +956,23 @@ export function OffGridSolarSystemPage() {
 
             {/* Challenge 5 */}
             <FadeIn delay={0.5}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all duration-300">
+              <div className="bg-white border border-slate-200 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/40 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/30 text-teal-400 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/30 text-teal-600 flex items-center justify-center shrink-0">
                     <Wind className="w-5 h-5" />
                   </div>
-                  <h3 className="text-lg font-black text-white uppercase tracking-wide">Cyclone Panel Ratings</h3>
+                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-wide">Cyclone Panel Ratings</h3>
                 </div>
                 <div className="space-y-3 text-sm">
-                  <div className="bg-white/5 p-3.5 rounded-xl border border-white/5">
-                    <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-1">NT Context</span>
-                    <p className="text-slate-300 font-medium leading-relaxed">
+                  <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80">
+                    <span className="text-xs font-mono text-slate-500 uppercase tracking-wider block mb-1">NT Context</span>
+                    <p className="text-slate-700 font-medium leading-relaxed">
                       Darwin and Top End NT require cyclone-rated panel mounting for all installations.
                     </p>
                   </div>
-                  <div className="bg-[#5BC94D]/10 p-3.5 rounded-xl border border-[#5BC94D]/20">
-                    <span className="text-xs font-mono text-[#5BC94D] uppercase tracking-wider block mb-1">How We Address It</span>
-                    <p className="text-slate-200 font-medium leading-relaxed">
+                  <div className="bg-brand-50 p-3.5 rounded-xl border border-brand-200">
+                    <span className="text-xs font-mono text-brand-700 uppercase tracking-wider block mb-1">How We Address It</span>
+                    <p className="text-slate-800 font-medium leading-relaxed">
                       Every off-grid Oneroof Solar installation uses cyclone-rated mounting regardless of location, as extreme weather events extend across the NT.
                     </p>
                   </div>
@@ -982,23 +982,23 @@ export function OffGridSolarSystemPage() {
 
             {/* Challenge 6 */}
             <FadeIn delay={0.6}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all duration-300">
+              <div className="bg-white border border-slate-200 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/40 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/30 text-purple-400 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/30 text-purple-600 flex items-center justify-center shrink-0">
                     <Zap className="w-5 h-5" />
                   </div>
-                  <h3 className="text-lg font-black text-white uppercase tracking-wide">Inverter Overload from Motor Starts</h3>
+                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-wide">Inverter Overload from Motor Starts</h3>
                 </div>
                 <div className="space-y-3 text-sm">
-                  <div className="bg-white/5 p-3.5 rounded-xl border border-white/5">
-                    <span className="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-1">NT Context</span>
-                    <p className="text-slate-300 font-medium leading-relaxed">
+                  <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80">
+                    <span className="text-xs font-mono text-slate-500 uppercase tracking-wider block mb-1">NT Context</span>
+                    <p className="text-slate-700 font-medium leading-relaxed">
                       Water pumps, bore pumps and large compressors have high startup current demands.
                     </p>
                   </div>
-                  <div className="bg-[#5BC94D]/10 p-3.5 rounded-xl border border-[#5BC94D]/20">
-                    <span className="text-xs font-mono text-[#5BC94D] uppercase tracking-wider block mb-1">How We Address It</span>
-                    <p className="text-slate-200 font-medium leading-relaxed">
+                  <div className="bg-brand-50 p-3.5 rounded-xl border border-brand-200">
+                    <span className="text-xs font-mono text-brand-700 uppercase tracking-wider block mb-1">How We Address It</span>
+                    <p className="text-slate-800 font-medium leading-relaxed">
                       We specify off-grid inverters with appropriate surge capacity for your specific motor loads. Bore pumps in particular need careful inverter matching.
                     </p>
                   </div>
@@ -1010,7 +1010,7 @@ export function OffGridSolarSystemPage() {
 
           {/* CTA Bar */}
           <FadeIn delay={0.7}>
-            <div className="bg-gradient-to-r from-slate-900 via-[#19281D] to-slate-900 border border-[#5BC94D]/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
+            <div className="bg-[#0A1118] border border-brand-500/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
               <div className="text-left">
                 <h4 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide mb-2">
                   Not sure if your remote NT property has any of these challenges?
@@ -1020,7 +1020,7 @@ export function OffGridSolarSystemPage() {
                 </p>
               </div>
               <Button 
-                className="bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(91,201,77,0.3)] border-none"
+                className="bg-brand-500 text-slate-900 hover:bg-brand-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(140,198,63,0.3)] border-none"
                 asChild
               >
                 <a href="#quote-form">
@@ -1034,18 +1034,18 @@ export function OffGridSolarSystemPage() {
       </section>
 
       {/* 7. SECTION 6 — OFF-GRID SYSTEM SIZING GUIDE */}
-      <section className="py-16 lg:py-24 bg-[#121814] relative overflow-hidden border-b border-white/10">
+      <section className="py-16 lg:py-24 bg-white relative overflow-hidden border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] font-mono text-xs uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-700 font-mono text-xs uppercase tracking-wider mb-4">
                 <Cpu className="w-3.5 h-3.5" />
                 NT Property Load Sizing Matrix
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
                 How to Size an Off-Grid Solar System for Your NT Property
               </h2>
-              <p className="text-slate-300 text-base sm:text-lg font-medium leading-relaxed">
+              <p className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
                 The right off-grid system size depends on your daily electricity consumption, the number of days of battery autonomy you need and your location in the NT. Here is a general guide based on common NT property types.
               </p>
             </FadeIn>
@@ -1053,11 +1053,11 @@ export function OffGridSolarSystemPage() {
 
           {/* Sizing Table */}
           <FadeIn delay={0.1}>
-            <div className="bg-slate-900/80 border border-white/10 rounded-3xl overflow-hidden shadow-2xl mb-8 backdrop-blur-md">
+            <div className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-xl mb-8">
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse min-w-[750px]">
                   <thead>
-                    <tr className="bg-white/5 border-b border-white/10 text-xs font-mono text-[#5BC94D] uppercase tracking-wider">
+                    <tr className="bg-slate-900 text-xs font-mono text-brand-400 uppercase tracking-wider">
                       <th className="py-4 px-6 font-bold">Property Type</th>
                       <th className="py-4 px-6 font-bold">Daily Power Use</th>
                       <th className="py-4 px-6 font-bold">Solar Array Size</th>
@@ -1065,34 +1065,34 @@ export function OffGridSolarSystemPage() {
                       <th className="py-4 px-6 font-bold">Generator</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-white/5 text-sm text-slate-300 font-medium">
-                    <tr className="hover:bg-white/[0.02] transition-colors">
-                      <td className="py-5 px-6 font-bold text-white">Small remote home or cabin</td>
-                      <td className="py-5 px-6 text-slate-200">5 to 15 kWh/day</td>
-                      <td className="py-5 px-6 text-slate-200">5kW to 10kW panels</td>
-                      <td className="py-5 px-6 text-slate-200">10 to 20kWh battery</td>
-                      <td className="py-5 px-6 text-slate-300">Optional — 3 to 5kVA</td>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700 font-medium">
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="py-5 px-6 font-bold text-slate-900">Small remote home or cabin</td>
+                      <td className="py-5 px-6 text-slate-700">5 to 15 kWh/day</td>
+                      <td className="py-5 px-6 text-slate-700">5kW to 10kW panels</td>
+                      <td className="py-5 px-6 text-slate-700">10 to 20kWh battery</td>
+                      <td className="py-5 px-6 text-slate-600">Optional — 3 to 5kVA</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02] transition-colors bg-white/[0.01]">
-                      <td className="py-5 px-6 font-bold text-white">Standard remote home with AC</td>
-                      <td className="py-5 px-6 text-slate-200">20 to 40 kWh/day</td>
-                      <td className="py-5 px-6 text-slate-200">10kW to 20kW panels</td>
-                      <td className="py-5 px-6 text-slate-200">20 to 40kWh battery</td>
-                      <td className="py-5 px-6 text-emerald-400 font-semibold">Recommended — 6 to 10kVA</td>
+                    <tr className="hover:bg-slate-50 transition-colors bg-brand-50/30">
+                      <td className="py-5 px-6 font-bold text-slate-900">Standard remote home with AC</td>
+                      <td className="py-5 px-6 text-slate-700">20 to 40 kWh/day</td>
+                      <td className="py-5 px-6 text-slate-700">10kW to 20kW panels</td>
+                      <td className="py-5 px-6 text-slate-700">20 to 40kWh battery</td>
+                      <td className="py-5 px-6 text-emerald-600 font-semibold">Recommended — 6 to 10kVA</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02] transition-colors">
-                      <td className="py-5 px-6 font-bold text-white">Large home or small station</td>
-                      <td className="py-5 px-6 text-slate-200">40 to 80 kWh/day</td>
-                      <td className="py-5 px-6 text-slate-200">20kW to 40kW panels</td>
-                      <td className="py-5 px-6 text-slate-200">40 to 80kWh battery</td>
-                      <td className="py-5 px-6 text-[#5BC94D] font-bold">Required — 10 to 20kVA</td>
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="py-5 px-6 font-bold text-slate-900">Large home or small station</td>
+                      <td className="py-5 px-6 text-slate-700">40 to 80 kWh/day</td>
+                      <td className="py-5 px-6 text-slate-700">20kW to 40kW panels</td>
+                      <td className="py-5 px-6 text-slate-700">40 to 80kWh battery</td>
+                      <td className="py-5 px-6 text-brand-700 font-bold">Required — 10 to 20kVA</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02] transition-colors bg-white/[0.01]">
-                      <td className="py-5 px-6 font-bold text-white">Large station or community</td>
-                      <td className="py-5 px-6 text-slate-200">80 to 200+ kWh/day</td>
-                      <td className="py-5 px-6 text-slate-200">40kW to 100kW+ panels</td>
-                      <td className="py-5 px-6 text-slate-200">80 to 200kWh+ battery</td>
-                      <td className="py-5 px-6 text-[#5BC94D] font-bold">Required — 20 to 50kVA+</td>
+                    <tr className="hover:bg-slate-50 transition-colors bg-brand-50/30">
+                      <td className="py-5 px-6 font-bold text-slate-900">Large station or community</td>
+                      <td className="py-5 px-6 text-slate-700">80 to 200+ kWh/day</td>
+                      <td className="py-5 px-6 text-slate-700">40kW to 100kW+ panels</td>
+                      <td className="py-5 px-6 text-slate-700">80 to 200kWh+ battery</td>
+                      <td className="py-5 px-6 text-brand-700 font-bold">Required — 20 to 50kVA+</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1101,13 +1101,13 @@ export function OffGridSolarSystemPage() {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <p className="text-center text-slate-400 text-xs sm:text-sm font-medium mb-10 max-w-4xl mx-auto">
+            <p className="text-center text-slate-600 text-xs sm:text-sm font-medium mb-10 max-w-4xl mx-auto">
               These are indicative ranges only. Every Oneroof Solar off-grid system is sized after a detailed assessment of your property's actual appliance list, usage hours, roof or land area and access requirements. Remote NT installations also factor in transport and access costs to your site.
             </p>
           </FadeIn>
 
           <FadeIn delay={0.3}>
-            <div className="bg-gradient-to-r from-slate-900 via-[#19281D] to-slate-900 border border-[#5BC94D]/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
+            <div className="bg-[#0A1118] border border-brand-500/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
               <div className="text-left">
                 <h4 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide mb-2">
                   Want an accurate size recommendation for your NT off-grid property?
@@ -1117,7 +1117,7 @@ export function OffGridSolarSystemPage() {
                 </p>
               </div>
               <Button 
-                className="bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(91,201,77,0.3)] border-none"
+                className="bg-brand-500 text-slate-900 hover:bg-brand-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(140,198,63,0.3)] border-none"
                 asChild
               >
                 <a href="#quote-form">
@@ -1131,18 +1131,18 @@ export function OffGridSolarSystemPage() {
       </section>
 
       {/* 8. SECTION 7 — OFF-GRID SYSTEM COST */}
-      <section className="py-16 lg:py-24 bg-[#0b100d] relative overflow-hidden border-b border-white/10">
+      <section className="py-16 lg:py-24 bg-slate-50 relative overflow-hidden border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] font-mono text-xs uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-700 font-mono text-xs uppercase tracking-wider mb-4">
                 <DollarSign className="w-3.5 h-3.5" />
                 NT Investment Guide
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
                 How Much Does an Off-Grid Solar System Cost in the NT
               </h2>
-              <p className="text-slate-300 text-base sm:text-lg font-medium leading-relaxed">
+              <p className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
                 Off-grid solar systems cost more than grid-connected systems of the same panel capacity because they require a battery bank, off-grid inverter, charge controller and backup generator. For NT remote properties, transport and access costs also add to the total installation price.
               </p>
             </FadeIn>
@@ -1150,36 +1150,36 @@ export function OffGridSolarSystemPage() {
 
           {/* Cost Table */}
           <FadeIn delay={0.1}>
-            <div className="bg-slate-900/80 border border-white/10 rounded-3xl overflow-hidden shadow-2xl mb-8 backdrop-blur-md">
+            <div className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-xl mb-8">
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse min-w-[700px]">
                   <thead>
-                    <tr className="bg-white/5 border-b border-white/10 text-xs font-mono text-[#5BC94D] uppercase tracking-wider">
+                    <tr className="bg-slate-900 text-xs font-mono text-brand-400 uppercase tracking-wider">
                       <th className="py-4 px-6 font-bold">System Size</th>
                       <th className="py-4 px-6 font-bold">Indicative Cost Range</th>
                       <th className="py-4 px-6 font-bold">Notes</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-white/5 text-sm text-slate-300 font-medium">
-                    <tr className="hover:bg-white/[0.02] transition-colors">
-                      <td className="py-5 px-6 font-bold text-white">5kW to 10kW (small remote home)</td>
-                      <td className="py-5 px-6 text-[#5BC94D] font-black text-base">$25,000 to $50,000</td>
-                      <td className="py-5 px-6 text-slate-300">Basic off-grid for small loads. Limited AC capacity.</td>
+                  <tbody className="divide-y divide-slate-200 text-sm text-slate-700 font-medium">
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="py-5 px-6 font-bold text-slate-900">5kW to 10kW (small remote home)</td>
+                      <td className="py-5 px-6 text-brand-600 font-black text-base">$25,000 to $50,000</td>
+                      <td className="py-5 px-6 text-slate-600">Basic off-grid for small loads. Limited AC capacity.</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02] transition-colors bg-white/[0.01]">
-                      <td className="py-5 px-6 font-bold text-white">10kW to 20kW (standard remote home)</td>
-                      <td className="py-5 px-6 text-[#5BC94D] font-black text-base">$45,000 to $90,000</td>
-                      <td className="py-5 px-6 text-slate-300">Suitable for full household loads including AC. 3 to 5 day battery autonomy.</td>
+                    <tr className="hover:bg-slate-50 transition-colors bg-brand-50/30">
+                      <td className="py-5 px-6 font-bold text-slate-900">10kW to 20kW (standard remote home)</td>
+                      <td className="py-5 px-6 text-brand-600 font-black text-base">$45,000 to $90,000</td>
+                      <td className="py-5 px-6 text-slate-600">Suitable for full household loads including AC. 3 to 5 day battery autonomy.</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02] transition-colors">
-                      <td className="py-5 px-6 font-bold text-white">20kW to 50kW (large home or small station)</td>
-                      <td className="py-5 px-6 text-[#5BC94D] font-black text-base">$80,000 to $200,000</td>
-                      <td className="py-5 px-6 text-slate-300">Large battery bank, generator integration, monitoring system.</td>
+                    <tr className="hover:bg-slate-50 transition-colors">
+                      <td className="py-5 px-6 font-bold text-slate-900">20kW to 50kW (large home or small station)</td>
+                      <td className="py-5 px-6 text-brand-600 font-black text-base">$80,000 to $200,000</td>
+                      <td className="py-5 px-6 text-slate-600">Large battery bank, generator integration, monitoring system.</td>
                     </tr>
-                    <tr className="hover:bg-white/[0.02] transition-colors bg-white/[0.01]">
-                      <td className="py-5 px-6 font-bold text-white">50kW+ (large station or community)</td>
-                      <td className="py-5 px-6 text-[#5BC94D] font-black text-base">$200,000 to $1,000,000+</td>
-                      <td className="py-5 px-6 text-slate-300">Custom design. Includes power station, fuel management, remote monitoring.</td>
+                    <tr className="hover:bg-slate-50 transition-colors bg-brand-50/30">
+                      <td className="py-5 px-6 font-bold text-slate-900">50kW+ (large station or community)</td>
+                      <td className="py-5 px-6 text-brand-600 font-black text-base">$200,000 to $1,000,000+</td>
+                      <td className="py-5 px-6 text-slate-600">Custom design. Includes power station, fuel management, remote monitoring.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -1188,13 +1188,13 @@ export function OffGridSolarSystemPage() {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <p className="text-center text-slate-400 text-xs sm:text-sm font-medium mb-10 max-w-4xl mx-auto">
+            <p className="text-center text-slate-600 text-xs sm:text-sm font-medium mb-10 max-w-4xl mx-auto">
               The federal STC rebate applies to off-grid systems under 100kW and reduces upfront cost. Remote NT installations may also access additional state and territory energy support programs — contact Oneroof Solar to confirm current eligibility.
             </p>
           </FadeIn>
 
           <FadeIn delay={0.3}>
-            <div className="bg-gradient-to-r from-slate-900 via-[#19281D] to-slate-900 border border-[#5BC94D]/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
+            <div className="bg-[#0A1118] border border-brand-500/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
               <div className="text-left">
                 <h4 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide mb-2">
                   Want an accurate cost estimate for your NT off-grid system?
@@ -1204,7 +1204,7 @@ export function OffGridSolarSystemPage() {
                 </p>
               </div>
               <Button 
-                className="bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(91,201,77,0.3)] border-none"
+                className="bg-brand-500 text-slate-900 hover:bg-brand-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(140,198,63,0.3)] border-none"
                 asChild
               >
                 <a href="#quote-form">
@@ -1217,15 +1217,15 @@ export function OffGridSolarSystemPage() {
       </section>
 
       {/* 9. SECTION 8 — WHY CHOOSE ONEROOF SOLAR FOR OFF-GRID NT */}
-      <section className="py-16 lg:py-24 bg-[#121814] relative overflow-hidden border-b border-white/10">
+      <section className="py-16 lg:py-24 bg-white relative overflow-hidden border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] font-mono text-xs uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-700 font-mono text-xs uppercase tracking-wider mb-4">
                 <Award className="w-3.5 h-3.5" />
                 NT Standalone Power Leadership
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
                 Why NT Properties Choose Oneroof Solar for Off-Grid
               </h2>
             </FadeIn>
@@ -1235,14 +1235,14 @@ export function OffGridSolarSystemPage() {
             
             {/* Card 1 */}
             <FadeIn delay={0.1}>
-              <div className="bg-slate-900/80 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/50 transition-all duration-300 group shadow-xl">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/50 hover:shadow-xl transition-all duration-300 group">
+                <div className="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <MapPin className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-white uppercase tracking-wide mb-3">
+                <h3 className="text-xl font-black text-slate-900 uppercase tracking-wide mb-3">
                   NT Remote Specialists
                 </h3>
-                <p className="text-slate-300 text-sm leading-relaxed font-medium">
+                <p className="text-slate-600 text-sm leading-relaxed font-medium">
                   We have designed and installed off-grid systems across Darwin, Alice Springs, Katherine, the Barkly, Kakadu and remote Central NT. We understand NT remote property challenges that interstate providers do not.
                 </p>
               </div>
@@ -1250,14 +1250,14 @@ export function OffGridSolarSystemPage() {
 
             {/* Card 2 */}
             <FadeIn delay={0.2}>
-              <div className="bg-slate-900/80 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/50 transition-all duration-300 group shadow-xl">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/50 hover:shadow-xl transition-all duration-300 group">
+                <div className="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <Wind className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-white uppercase tracking-wide mb-3">
+                <h3 className="text-xl font-black text-slate-900 uppercase tracking-wide mb-3">
                   Cyclone-Rated All Installations
                 </h3>
-                <p className="text-slate-300 text-sm leading-relaxed font-medium">
+                <p className="text-slate-600 text-sm leading-relaxed font-medium">
                   Every off-grid installation we carry out uses cyclone-rated mounting, regardless of location. Extreme weather events affect the full NT, not just coastal Darwin.
                 </p>
               </div>
@@ -1265,14 +1265,14 @@ export function OffGridSolarSystemPage() {
 
             {/* Card 3 */}
             <FadeIn delay={0.3}>
-              <div className="bg-slate-900/80 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/50 transition-all duration-300 group shadow-xl">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/50 hover:shadow-xl transition-all duration-300 group">
+                <div className="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <Battery className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-white uppercase tracking-wide mb-3">
+                <h3 className="text-xl font-black text-slate-900 uppercase tracking-wide mb-3">
                   Right-Sized Battery Banks
                 </h3>
-                <p className="text-slate-300 text-sm leading-relaxed font-medium">
+                <p className="text-slate-600 text-sm leading-relaxed font-medium">
                   We size battery banks to your real load — not industry averages. An undersized battery bank is the single biggest cause of off-grid system failure. We get this right from the start.
                 </p>
               </div>
@@ -1280,14 +1280,14 @@ export function OffGridSolarSystemPage() {
 
             {/* Card 4 */}
             <FadeIn delay={0.4}>
-              <div className="bg-slate-900/80 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/50 transition-all duration-300 group shadow-xl">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/50 hover:shadow-xl transition-all duration-300 group">
+                <div className="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <Fuel className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-white uppercase tracking-wide mb-3">
+                <h3 className="text-xl font-black text-slate-900 uppercase tracking-wide mb-3">
                   Generator Integration Specialists
                 </h3>
-                <p className="text-slate-300 text-sm leading-relaxed font-medium">
+                <p className="text-slate-600 text-sm leading-relaxed font-medium">
                   We design generator backup into every remote NT off-grid system. Darwin's wet season makes generator backup non-negotiable for uninterrupted power at remote properties.
                 </p>
               </div>
@@ -1295,14 +1295,14 @@ export function OffGridSolarSystemPage() {
 
             {/* Card 5 */}
             <FadeIn delay={0.5}>
-              <div className="bg-slate-900/80 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/50 transition-all duration-300 group shadow-xl">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/50 hover:shadow-xl transition-all duration-300 group">
+                <div className="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <Lightbulb className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-white uppercase tracking-wide mb-3">
+                <h3 className="text-xl font-black text-slate-900 uppercase tracking-wide mb-3">
                   N-Type Panels Only
                 </h3>
-                <p className="text-slate-300 text-sm leading-relaxed font-medium">
+                <p className="text-slate-600 text-sm leading-relaxed font-medium">
                   We supply AIKO, REC and Jinko N-type panels — the highest-performing technology in NT heat and wet season conditions. Maximum output means smaller battery banks and lower total system cost.
                 </p>
               </div>
@@ -1310,15 +1310,15 @@ export function OffGridSolarSystemPage() {
 
             {/* Card 6 */}
             <FadeIn delay={0.6}>
-              <div className="bg-slate-900/80 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/50 transition-all duration-300 group shadow-xl">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="bg-slate-50 border border-slate-200 p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/50 hover:shadow-xl transition-all duration-300 group">
+                <div className="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/30 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <PhoneCall className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-white uppercase tracking-wide mb-3">
+                <h3 className="text-xl font-black text-slate-900 uppercase tracking-wide mb-3">
                   Remote NT Support
                 </h3>
-                <p className="text-slate-300 text-sm leading-relaxed font-medium">
-                  Off-grid systems need ongoing support. Our Darwin and Alice Springs teams service remote NT systems. See our <Link to="/services/solar-panel-maintenance-darwin" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">repairs and maintenance page</Link> for off-grid service details.
+                <p className="text-slate-600 text-sm leading-relaxed font-medium">
+                  Off-grid systems need ongoing support. Our Darwin and Alice Springs teams service remote NT systems. See our <Link to="/services/solar-panel-maintenance-darwin" className="text-brand-600 font-bold underline hover:text-brand-700 transition-colors">repairs and maintenance page</Link> for off-grid service details.
                 </p>
               </div>
             </FadeIn>
@@ -1328,7 +1328,7 @@ export function OffGridSolarSystemPage() {
           <FadeIn delay={0.7}>
             <div className="text-center">
               <Button 
-                className="bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-black px-10 py-4 rounded-2xl text-sm uppercase tracking-wider transition-all duration-300 shadow-[0_4px_20px_rgba(91,201,77,0.3)] border-none"
+                className="bg-brand-500 text-slate-900 hover:bg-brand-400 font-black px-10 py-4 rounded-2xl text-sm uppercase tracking-wider transition-all duration-300 shadow-[0_4px_20px_rgba(140,198,63,0.3)] border-none"
                 asChild
               >
                 <a href="#quote-form">
@@ -1341,18 +1341,18 @@ export function OffGridSolarSystemPage() {
       </section>
 
       {/* 10. SECTION 9 — OUR OFF-GRID INSTALLATION PROCESS */}
-      <section className="py-16 lg:py-24 bg-[#0b100d] relative overflow-hidden border-b border-white/10">
+      <section className="py-16 lg:py-24 bg-slate-50 relative overflow-hidden border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] font-mono text-xs uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200 text-brand-700 font-mono text-xs uppercase tracking-wider mb-4">
                 <ClipboardCheck className="w-3.5 h-3.5" />
                 End-to-End Implementation
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
                 How We Design and Install Your NT Off-Grid Solar System
               </h2>
-              <p className="text-slate-300 text-base sm:text-lg font-medium leading-relaxed">
+              <p className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
                 Off-grid system design requires more detailed planning than grid-connected installations. Here is how we approach it.
               </p>
             </FadeIn>
@@ -1362,15 +1362,15 @@ export function OffGridSolarSystemPage() {
             
             {/* Step 1 */}
             <FadeIn delay={0.1}>
-              <div className="bg-slate-900/80 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start hover:border-[#5BC94D]/40 transition-colors">
-                <div className="w-14 h-14 rounded-2xl bg-[#5BC94D] text-[#19281D] font-black text-xl flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(91,201,77,0.3)]">
+              <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start hover:border-brand-500/40 transition-colors shadow-sm">
+                <div className="w-14 h-14 rounded-2xl bg-brand-500 text-slate-900 font-black text-xl flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(140,198,63,0.3)]">
                   01
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide mb-3">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide mb-3">
                     Remote Property Assessment
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
+                  <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
                     We assess your property's daily electricity consumption by reviewing your appliance list, usage hours and any existing generator fuel costs. For remote sites, we request GPS coordinates, satellite roof imagery and access road information. This is done by phone and video call for properties Oneroof Solar has not visited previously.
                   </p>
                 </div>
@@ -1379,15 +1379,15 @@ export function OffGridSolarSystemPage() {
 
             {/* Step 2 */}
             <FadeIn delay={0.2}>
-              <div className="bg-slate-900/80 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start hover:border-[#5BC94D]/40 transition-colors">
-                <div className="w-14 h-14 rounded-2xl bg-[#5BC94D] text-[#19281D] font-black text-xl flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(91,201,77,0.3)]">
+              <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start hover:border-brand-500/40 transition-colors shadow-sm">
+                <div className="w-14 h-14 rounded-2xl bg-brand-500 text-slate-900 font-black text-xl flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(140,198,63,0.3)]">
                   02
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide mb-3">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide mb-3">
                     System Design and Proposal
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
+                  <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
                     Our engineers design your complete off-grid system including panel array size, battery bank capacity, inverter selection, charge controller, generator integration and monitoring setup. You receive a detailed proposal with full system specifications, STC rebate calculation and estimated fuel savings versus your current generator costs.
                   </p>
                 </div>
@@ -1396,15 +1396,15 @@ export function OffGridSolarSystemPage() {
 
             {/* Step 3 */}
             <FadeIn delay={0.3}>
-              <div className="bg-slate-900/80 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start hover:border-[#5BC94D]/40 transition-colors">
-                <div className="w-14 h-14 rounded-2xl bg-[#5BC94D] text-[#19281D] font-black text-xl flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(91,201,77,0.3)]">
+              <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start hover:border-brand-500/40 transition-colors shadow-sm">
+                <div className="w-14 h-14 rounded-2xl bg-brand-500 text-slate-900 font-black text-xl flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(140,198,63,0.3)]">
                   03
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide mb-3">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide mb-3">
                     Equipment Procurement and Transport
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
+                  <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
                     We procure all system components and arrange transport to your NT property. Remote NT deliveries require advance planning — we coordinate transport logistics as part of the project management process at no additional administrative cost to you.
                   </p>
                 </div>
@@ -1413,15 +1413,15 @@ export function OffGridSolarSystemPage() {
 
             {/* Step 4 */}
             <FadeIn delay={0.4}>
-              <div className="bg-slate-900/80 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start hover:border-[#5BC94D]/40 transition-colors">
-                <div className="w-14 h-14 rounded-2xl bg-[#5BC94D] text-[#19281D] font-black text-xl flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(91,201,77,0.3)]">
+              <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start hover:border-brand-500/40 transition-colors shadow-sm">
+                <div className="w-14 h-14 rounded-2xl bg-brand-500 text-slate-900 font-black text-xl flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(140,198,63,0.3)]">
                   04
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide mb-3">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide mb-3">
                     Installation
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
+                  <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
                     Our CEC-accredited off-grid installation team travels to your NT property and completes full system installation including panel mounting, battery bank setup, inverter and charge controller wiring, generator integration and monitoring system configuration. Remote NT installations typically take 2 to 5 days on site.
                   </p>
                 </div>
@@ -1430,16 +1430,16 @@ export function OffGridSolarSystemPage() {
 
             {/* Step 5 */}
             <FadeIn delay={0.5}>
-              <div className="bg-slate-900/80 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start hover:border-[#5BC94D]/40 transition-colors">
-                <div className="w-14 h-14 rounded-2xl bg-[#5BC94D] text-[#19281D] font-black text-xl flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(91,201,77,0.3)]">
+              <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start hover:border-brand-500/40 transition-colors shadow-sm">
+                <div className="w-14 h-14 rounded-2xl bg-brand-500 text-slate-900 font-black text-xl flex items-center justify-center shrink-0 shadow-[0_4px_20px_rgba(140,198,63,0.3)]">
                   05
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide mb-3">
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide mb-3">
                     Commissioning, Training and Handover
                   </h3>
-                  <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
-                    We commission every component, test full system operation under load and train your property manager or family on system monitoring, generator startup procedures and basic maintenance. See our <Link to="/services/solar-panel-maintenance-darwin" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">repairs and maintenance page</Link> for ongoing remote NT off-grid support.
+                  <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
+                    We commission every component, test full system operation under load and train your property manager or family on system monitoring, generator startup procedures and basic maintenance. See our <Link to="/services/solar-panel-maintenance-darwin" className="text-brand-600 font-bold underline hover:text-brand-700 transition-colors">repairs and maintenance page</Link> for ongoing remote NT off-grid support.
                   </p>
                 </div>
               </div>
@@ -1448,7 +1448,7 @@ export function OffGridSolarSystemPage() {
           </div>
 
           <FadeIn delay={0.6}>
-            <div className="bg-gradient-to-r from-slate-900 via-[#19281D] to-slate-900 border border-[#5BC94D]/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
+            <div className="bg-[#0A1118] border border-brand-500/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
               <div className="text-left">
                 <h4 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide mb-2">
                   Ready to get your remote NT property off the grid?
@@ -1458,7 +1458,7 @@ export function OffGridSolarSystemPage() {
                 </p>
               </div>
               <Button 
-                className="bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(91,201,77,0.3)] border-none"
+                className="bg-brand-500 text-slate-900 hover:bg-brand-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(140,198,63,0.3)] border-none"
                 asChild
               >
                 <a href="#quote-form">
