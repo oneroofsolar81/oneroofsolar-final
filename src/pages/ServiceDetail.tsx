@@ -2183,7 +2183,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
 
   if (currentSlug === "off-grid-solar-system") {
     return (
-      <div key={currentSlug} className="bg-[#121814] text-slate-100 font-sans">
+      <div key={currentSlug} className="bg-white text-slate-900 font-sans">
         <OffGridSolarSystemPage />
       </div>
     );

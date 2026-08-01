@@ -295,7 +295,7 @@ export function SolarInverterRepair() {
   ];
 
   return (
-    <div className="bg-[#121814] text-slate-100 font-sans min-h-screen">
+    <div className="bg-slate-50 text-slate-900 font-sans min-h-screen">
       <SEO seo={seoData} />
 
       {schemas.map((schema, index) => (
@@ -307,10 +307,10 @@ export function SolarInverterRepair() {
       ))}
 
       {/* 1. HERO SECTION */}
-      <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#141F17]">
+      <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-transparent to-[#141F17]/40"></div>
-          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#5BC94D]/5 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-[#0A1118]/60"></div>
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#5BC94D]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
         </div>
 
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
@@ -351,7 +351,7 @@ export function SolarInverterRepair() {
                   </Button>
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-slate-900/80 hover:bg-slate-900 text-white border border-white/20 font-bold transition-all h-14 uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold transition-all h-14 uppercase tracking-wider text-xs"
                     asChild
                   >
                     <RouterLink to="/contact">
@@ -382,14 +382,14 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 2. WHAT DOES SOLAR INVERTER REPAIR INVOLVE IN DARWIN? (50/50 Layout: Left Image, Right Text) */}
-      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 2. WHAT DOES SOLAR INVERTER REPAIR INVOLVE IN DARWIN? (White section) */}
+      <section className="py-16 lg:py-20 bg-white border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
               {/* Left Image */}
               <div className="lg:col-span-6">
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 bg-[#0D1520] shadow-xl aspect-[4/3]">
+                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200 bg-slate-50 shadow-lg aspect-[4/3]">
                   <img 
                     referrerPolicy="no-referrer"
                     src={whatRepairImage} 
@@ -401,15 +401,15 @@ export function SolarInverterRepair() {
 
               {/* Right Text */}
               <div className="lg:col-span-6">
-                <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
                   What Does Solar Inverter Repair Involve in Darwin?
                 </h2>
-                <div className="space-y-4 text-slate-300 text-base sm:text-lg leading-[1.7] font-medium">
+                <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
                   <p>
                     A dead or faulty inverter usually shows a blank display, a flashing fault light, a power bill that jumps even though the panels look fine, or a monitoring app that has gone quiet. If left alone, a small fault gets worse fast. A loose connection or a failing fan can turn into a fried circuit board within weeks in Darwin's heat, and what would have been a two hundred dollar fix becomes a full inverter replacement.
                   </p>
                   <p>
-                    Oneroof Solar diagnoses and repairs <RouterLink to="/services/solar-inverters" className="text-[#5BC94D] underline hover:text-emerald-400">solar inverters</RouterLink> across Darwin, Palmerston and rural NT. We service GoodWe, Sungrow, Fox ESS, Elpha ESS, Sigenergy and most other major brands, covering fault codes, blown fuses, fan and cooling failures, communication and monitoring faults, and storm or surge damage, with an honest call on whether a repair or a replacement is the better spend.
+                    Oneroof Solar diagnoses and repairs <RouterLink to="/services/solar-inverters" className="text-brand-600 font-bold underline hover:text-brand-700">solar inverters</RouterLink> across Darwin, Palmerston and rural NT. We service GoodWe, Sungrow, Fox ESS, Elpha ESS, Sigenergy and most other major brands, covering fault codes, blown fuses, fan and cooling failures, communication and monitoring faults, and storm or surge damage, with an honest call on whether a repair or a replacement is the better spend.
                   </p>
                 </div>
               </div>
@@ -418,14 +418,14 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 3. SIGNS YOUR SOLAR INVERTER NEEDS REPAIR (50/50 Layout: Left Text with Checklist, Right Image) */}
-      <section className="py-16 lg:py-20 bg-[#121814] border-b border-white/5 relative">
+      {/* 3. SIGNS YOUR SOLAR INVERTER NEEDS REPAIR (Light off-white section) */}
+      <section className="py-16 lg:py-20 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
               {/* Left Text */}
               <div className="lg:col-span-6">
-                <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
                   Signs Your Solar Inverter Needs Repair
                 </h2>
 
@@ -433,23 +433,23 @@ export function SolarInverterRepair() {
                   {signsList.map((sign, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <div className="shrink-0 mt-1">
-                        <CheckCircle2 className="w-5 h-5 text-[#5BC94D]" />
+                        <CheckCircle2 className="w-5 h-5 text-brand-600" />
                       </div>
-                      <p className="text-slate-200 text-base leading-snug font-medium">
+                      <p className="text-slate-700 text-base leading-snug font-medium">
                         {sign}
                       </p>
                     </div>
                   ))}
                 </div>
 
-                <p className="text-slate-300 text-base sm:text-lg leading-[1.7] font-medium border-t border-white/10 pt-4">
+                <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium border-t border-slate-200 pt-4">
                   If you notice any of these, switch off at the isolator if it's safe to do so and call a licensed technician. Opening the unit yourself can void your warranty and is a genuine electrical risk.
                 </p>
               </div>
 
               {/* Right Image */}
               <div className="lg:col-span-6">
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 bg-[#0D1520] shadow-xl aspect-[4/3]">
+                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200 bg-white shadow-lg aspect-[4/3]">
                   <img 
                     referrerPolicy="no-referrer"
                     src={faultPanelImage} 
@@ -463,14 +463,14 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 4. WHY DARWIN INVERTERS FAIL MORE OFTEN THAN OTHER CITIES (50/50 Layout: Left Image, Right Text) */}
-      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 4. WHY DARWIN INVERTERS FAIL MORE OFTEN THAN OTHER CITIES (Deep Navy contrast section) */}
+      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-slate-800 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
               {/* Left Image */}
               <div className="lg:col-span-6">
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 bg-[#0D1520] shadow-xl aspect-[4/3]">
+                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 bg-slate-900 shadow-xl aspect-[4/3]">
                   <img 
                     referrerPolicy="no-referrer"
                     src={whyFailImage} 
@@ -504,11 +504,11 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 5. WHO NEEDS SOLAR INVERTER REPAIR IN DARWIN (3 Cards) */}
-      <section className="py-16 lg:py-20 bg-[#121814] border-b border-white/5 relative">
+      {/* 5. WHO NEEDS SOLAR INVERTER REPAIR IN DARWIN (White section) */}
+      <section className="py-16 lg:py-20 bg-white border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
               Who Needs Solar Inverter Repair in Darwin
             </h2>
 
@@ -518,16 +518,16 @@ export function SolarInverterRepair() {
                 return (
                   <div 
                     key={idx}
-                    className="bg-[#0D1520] border border-white/10 p-7 sm:p-8 rounded-2xl sm:rounded-3xl shadow-xl flex flex-col justify-between h-full"
+                    className="bg-slate-50 border border-slate-200 p-7 sm:p-8 rounded-2xl sm:rounded-3xl shadow-sm hover:border-brand-500/40 transition-all flex flex-col justify-between h-full"
                   >
                     <div>
-                      <div className="w-12 h-12 rounded-xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 flex items-center justify-center text-[#5BC94D] mb-6">
+                      <div className="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-600 mb-6">
                         <IconComponent className="w-6 h-6" />
                       </div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 tracking-wide">
+                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
                         {item.title}
                       </h3>
-                      <p className="text-slate-300 text-base leading-relaxed font-medium">
+                      <p className="text-slate-600 text-base leading-relaxed font-medium">
                         {item.desc}
                       </p>
                     </div>
@@ -539,21 +539,21 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 6. CTA BANNER (Full-width rounded light green background, centered text and two buttons) */}
-      <section className="py-12 lg:py-16 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 6. CTA BANNER (Light off-white section with Deep Navy card) */}
+      <section className="py-12 lg:py-16 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="bg-[#5BC94D]/10 border border-[#5BC94D]/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
+            <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 uppercase tracking-wide max-w-4xl mx-auto leading-tight">
                 Every Day Your Inverter Sits Broken, You're Paying Full Price for Zero Solar Power.
               </h2>
-              <p className="text-slate-200 text-base sm:text-lg max-w-3xl mx-auto mb-8 font-medium leading-relaxed">
+              <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto mb-8 font-medium leading-relaxed">
                 A small fault today is a full replacement bill in a few months if it's left alone. Call our CEC-accredited team for a fast diagnosis and a straight answer on repair versus replace, no upsell, just the fix your system actually needs.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 uppercase tracking-wider text-xs shadow-lg shadow-[#5BC94D]/20"
+                  className="w-full sm:w-auto rounded-xl px-8 bg-brand-500 text-slate-900 border-none font-black hover:bg-brand-400 transition-all h-14 uppercase tracking-wider text-xs shadow-lg shadow-brand-500/20"
                   asChild
                 >
                   <RouterLink to="/contact">
@@ -562,7 +562,7 @@ export function SolarInverterRepair() {
                 </Button>
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto rounded-xl px-8 bg-slate-900/80 hover:bg-slate-900 text-white border border-white/20 font-bold transition-all h-14 uppercase tracking-wider text-xs"
+                  className="w-full sm:w-auto rounded-xl px-8 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold transition-all h-14 uppercase tracking-wider text-xs"
                   asChild
                 >
                   <RouterLink to="/contact">
@@ -575,11 +575,11 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 7. REPAIR OR REPLACE? HOW WE DECIDE (4 Cards) */}
-      <section className="py-16 lg:py-20 bg-[#121814] border-b border-white/5 relative">
+      {/* 7. REPAIR OR REPLACE? HOW WE DECIDE (White section) */}
+      <section className="py-16 lg:py-20 bg-white border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
               Repair or Replace? How We Decide
             </h2>
 
@@ -589,16 +589,16 @@ export function SolarInverterRepair() {
                 return (
                   <div 
                     key={idx}
-                    className="bg-[#0D1520] border border-white/10 p-7 rounded-2xl shadow-xl flex flex-col justify-between h-full"
+                    className="bg-slate-50 border border-slate-200 p-7 rounded-2xl shadow-sm hover:border-brand-500/40 transition-all flex flex-col justify-between h-full"
                   >
                     <div>
-                      <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 flex items-center justify-center text-[#5BC94D] mb-5">
+                      <div className="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-600 mb-5">
                         <IconComp className="w-5 h-5" />
                       </div>
-                      <h3 className="text-xl font-bold text-white mb-3 tracking-wide">
+                      <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-wide">
                         {item.title}
                       </h3>
-                      <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
+                      <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
                         {item.desc}
                       </p>
                     </div>
@@ -610,8 +610,8 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 8. SOLAR INVERTER REPAIR COSTS IN DARWIN (Table Section) */}
-      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 8. SOLAR INVERTER REPAIR COSTS IN DARWIN (Deep Navy section) */}
+      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-slate-800 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -625,7 +625,7 @@ export function SolarInverterRepair() {
             </div>
 
             {/* Pricing Table */}
-            <div className="overflow-x-auto mb-10 rounded-2xl border border-white/10 shadow-xl bg-[#0D1520]">
+            <div className="overflow-x-auto mb-10 rounded-2xl border border-white/10 shadow-xl bg-slate-900">
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10 bg-white/5 text-white font-bold text-base sm:text-lg">
@@ -649,30 +649,30 @@ export function SolarInverterRepair() {
                   <tr className="hover:bg-white/[0.02] transition-colors">
                     <td className="py-4 px-6 sm:px-8 font-semibold text-white">Full inverter replacement</td>
                     <td className="py-4 px-6 sm:px-8">
-                      $1,500–$6,000 (link to the <RouterLink to="/services/solar-inverters/installation" className="text-[#5BC94D] underline hover:text-emerald-400 font-semibold">installation page</RouterLink>)
+                      $1,500–$6,000 (link to the <RouterLink to="/services/solar-inverters/installation" className="text-[#5BC94D] font-bold underline hover:text-emerald-400">installation page</RouterLink>)
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium bg-[#0D1520] border border-white/10 p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-xl">
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium bg-slate-900 border border-white/10 p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-xl">
               Final price depends on your inverter's brand and age, whether parts are still available from the manufacturer, and the extent of the damage. Rural callouts to Litchfield, Humpty Doo or Berry Springs may carry a small travel component. We always confirm the exact price before any work starts, no surprises on the invoice.
             </p>
           </FadeIn>
         </div>
       </section>
 
-      {/* 9. WHY CHOOSE ONEROOF SOLAR FOR SOLAR INVERTER REPAIR */}
-      <section className="py-16 lg:py-20 bg-[#121814] border-b border-white/5 relative">
+      {/* 9. WHY CHOOSE ONEROOF SOLAR FOR SOLAR INVERTER REPAIR (White section) */}
+      <section className="py-16 lg:py-20 bg-white border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
               Why Choose Oneroof Solar for Solar Inverter Repair
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-              <div className="lg:col-span-7 bg-[#0D1520] border border-white/10 p-8 rounded-2xl sm:rounded-3xl shadow-xl space-y-4 text-slate-300 text-base sm:text-lg leading-relaxed font-medium">
+              <div className="lg:col-span-7 bg-slate-50 border border-slate-200 p-8 rounded-2xl sm:rounded-3xl shadow-sm space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
                 <p>
                   We're a locally based, CEC-accredited team in Berrimah, not a call centre booking system that dispatches whoever's free. That matters for repair work, because whoever turns up already understands what Darwin's heat, humidity and Wet season storms do to an inverter over time.
                 </p>
@@ -681,7 +681,7 @@ export function SolarInverterRepair() {
                 </p>
               </div>
 
-              <div className="lg:col-span-5 bg-[#142918] border border-[#5BC94D]/30 p-8 rounded-2xl sm:rounded-3xl shadow-xl flex flex-col justify-between">
+              <div className="lg:col-span-5 bg-[#0A1118] border border-brand-500/40 p-8 rounded-2xl sm:rounded-3xl shadow-xl flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-2 text-[#5BC94D] mb-4">
                     <Star className="w-5 h-5 fill-current" />
@@ -710,11 +710,11 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 10. OUR SOLAR INVERTER REPAIR PROCESS (6 Step Grid) */}
-      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 10. OUR SOLAR INVERTER REPAIR PROCESS (Light off-white section) */}
+      <section className="py-16 lg:py-20 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
               Our Solar Inverter Repair Process
             </h2>
 
@@ -722,16 +722,16 @@ export function SolarInverterRepair() {
               {repairProcessSteps.map((item, idx) => (
                 <div 
                   key={idx}
-                  className="bg-[#0D1520] border border-white/10 p-7 sm:p-8 rounded-2xl sm:rounded-3xl shadow-xl flex flex-col justify-between h-full"
+                  className="bg-white border border-slate-200 p-7 sm:p-8 rounded-2xl sm:rounded-3xl shadow-sm flex flex-col justify-between h-full"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-full bg-[#5BC94D]/20 text-[#5BC94D] font-black text-lg flex items-center justify-center mb-6">
+                    <div className="w-12 h-12 rounded-full bg-brand-500/20 text-brand-700 font-black text-lg flex items-center justify-center mb-6">
                       {item.step}
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3 tracking-wide">
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-wide">
                       {item.title}
                     </h3>
-                    <p className="text-slate-300 text-base leading-relaxed font-medium">
+                    <p className="text-slate-600 text-base leading-relaxed font-medium">
                       {item.desc}
                     </p>
                   </div>
@@ -742,15 +742,15 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 11. BRANDS WE REPAIR */}
-      <section className="py-16 lg:py-20 bg-[#121814] border-b border-white/5 relative">
+      {/* 11. BRANDS WE REPAIR (White section) */}
+      <section className="py-16 lg:py-20 bg-white border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
               Brands We Repair
             </h2>
 
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-8 max-w-4xl">
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-8 max-w-4xl">
               We repair GoodWe, Sungrow, Fox ESS, Elpha ESS and Sigenergy inverters, along with most other major brands installed across Darwin homes and businesses. If you're not sure whether we service your brand, send us a photo of the unit and we'll confirm before you book a callout.
             </p>
 
@@ -758,9 +758,9 @@ export function SolarInverterRepair() {
               {brands.map((brandName, idx) => (
                 <div 
                   key={idx}
-                  className="bg-[#0D1520] border border-white/10 p-5 rounded-2xl shadow-xl text-center flex items-center justify-center"
+                  className="bg-slate-50 border border-slate-200 p-5 rounded-2xl shadow-sm text-center flex items-center justify-center hover:border-brand-500/40 transition-colors"
                 >
-                  <span className="text-white font-bold text-lg tracking-wide">{brandName}</span>
+                  <span className="text-slate-900 font-bold text-lg tracking-wide">{brandName}</span>
                 </div>
               ))}
             </div>
@@ -768,14 +768,14 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 12. LOCATIONS SECTION (Solar Inverter Repair Across Darwin, Areas We Serve) */}
-      <section className="py-16 lg:py-20 bg-[#0A1118] border-b border-white/5 relative">
+      {/* 12. LOCATIONS SECTION (Light off-white section) */}
+      <section className="py-16 lg:py-20 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
               Solar Inverter Repair Across Darwin, Areas We Serve
             </h2>
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-10 max-w-4xl">
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-10 max-w-4xl">
               Oneroof Solar diagnoses and repairs solar inverters across greater Darwin and the Northern Territory. If you're in any of the suburbs or postcodes below, we're your local team.
             </p>
 
@@ -783,23 +783,23 @@ export function SolarInverterRepair() {
               {locationCards.map((loc, idx) => (
                 <div 
                   key={idx}
-                  className="bg-[#0D1520] border border-white/10 p-7 rounded-2xl shadow-xl flex flex-col justify-between h-full"
+                  className="bg-white border border-slate-200 p-7 rounded-2xl shadow-sm hover:border-brand-500/40 transition-all flex flex-col justify-between h-full"
                 >
                   <div>
                     {/* Rounded pin icon at top of each card */}
-                    <div className="w-10 h-10 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 flex items-center justify-center text-[#5BC94D] mb-5">
+                    <div className="w-10 h-10 rounded-full bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-600 mb-5">
                       <MapPin className="w-5 h-5" />
                     </div>
                     {/* Suburb group name */}
-                    <h3 className="text-xl font-bold text-white mb-3 tracking-wide">
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-wide">
                       {loc.title}
                     </h3>
                     {/* Postcode chip */}
-                    <div className="inline-block bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] px-3 py-1 rounded-full text-xs font-mono font-bold mb-4">
+                    <div className="inline-block bg-brand-500/10 border border-brand-500/20 text-brand-700 px-3 py-1 rounded-full text-xs font-mono font-bold mb-4">
                       {loc.postcode}
                     </div>
                     {/* Comma-separated suburb list */}
-                    <p className="text-slate-300 text-sm leading-relaxed font-medium">
+                    <p className="text-slate-600 text-sm leading-relaxed font-medium">
                       {loc.suburbs}
                     </p>
                   </div>
@@ -810,11 +810,11 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 13. FREQUENTLY ASKED QUESTIONS (Accordion) */}
-      <section className="py-16 lg:py-24 bg-[#121814] border-b border-white/5 relative">
+      {/* 13. FREQUENTLY ASKED QUESTIONS (Light off-white section) */}
+      <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
               Frequently Asked Questions
             </h2>
 
@@ -826,8 +826,8 @@ export function SolarInverterRepair() {
                     key={i}
                     className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                       isOpen
-                        ? "bg-slate-900/60 shadow-xl border-[#5BC94D]/30"
-                        : "bg-slate-900/20 border-white/5 hover:border-[#5BC94D]/20"
+                        ? "bg-white shadow-md border-brand-500/50"
+                        : "bg-white border-slate-200 hover:border-brand-500/30 shadow-sm"
                     }`}
                   >
                     <button
@@ -841,15 +841,15 @@ export function SolarInverterRepair() {
                         <div
                           className={`shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold text-xs sm:text-sm transition-colors ${
                             isOpen
-                              ? "bg-[#5BC94D] text-[#19281D] shadow-md shadow-[#5BC94D]/20"
-                              : "bg-white/5 text-slate-400 border border-white/10"
+                              ? "bg-brand-500 text-slate-900 shadow-md shadow-brand-500/20"
+                              : "bg-slate-100 text-slate-700 border border-slate-200"
                           }`}
                         >
                           {i + 1 < 10 ? `0${i + 1}` : i + 1}
                         </div>
                         <h3
                           className={`text-base sm:text-lg font-bold leading-tight transition-colors ${
-                            isOpen ? "text-[#5BC94D]" : "text-white"
+                            isOpen ? "text-brand-600" : "text-slate-900"
                           }`}
                         >
                           {faq.q}
@@ -858,8 +858,8 @@ export function SolarInverterRepair() {
                       <div
                         className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-300 ${
                           isOpen
-                            ? "border-[#5BC94D] bg-[#5BC94D]/10 text-[#5BC94D] rotate-180"
-                            : "border-white/10 text-slate-400 bg-white/5"
+                            ? "border-brand-500 bg-brand-500/10 text-brand-600 rotate-180"
+                            : "border-slate-200 text-slate-500 bg-slate-50"
                         }`}
                       >
                         <ChevronDown className="w-4 h-4" />
@@ -874,7 +874,7 @@ export function SolarInverterRepair() {
                         isOpen ? "max-h-[32rem] pb-6 opacity-100" : "max-h-0 opacity-0"
                       }`}
                     >
-                      <div className="text-slate-300 leading-relaxed font-medium pl-12 sm:pl-14 text-base sm:text-lg border-t border-white/5 pt-4 mt-2">
+                      <div className="text-slate-600 leading-relaxed font-medium pl-12 sm:pl-14 text-base sm:text-lg border-t border-slate-100 pt-4 mt-2">
                         {faq.a}
                       </div>
                     </div>
@@ -886,22 +886,22 @@ export function SolarInverterRepair() {
         </div>
       </section>
 
-      {/* 14. END CTA BANNER */}
+      {/* 14. END CTA BANNER (Deep Navy section) */}
       <section className="py-16 lg:py-20 bg-[#0A1118] relative overflow-hidden">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#5BC94D]/30 bg-[#5BC94D]/10 p-8 sm:p-14 text-center shadow-xl">
+            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-500/30 bg-slate-900/90 p-8 sm:p-14 text-center shadow-2xl">
               <div className="max-w-3xl mx-auto relative z-10">
                 <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
                   Book Your Solar Inverter Repair
                 </h2>
-                <p className="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto mb-8 font-medium">
+                <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-8 font-medium">
                   If your inverter is showing a fault light, your bill has spiked, or your monitoring app has gone quiet, don't wait for it to get worse.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <Button
                     size="lg"
-                    className="w-full sm:w-auto rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 uppercase tracking-wider text-xs shadow-lg shadow-[#5BC94D]/30"
+                    className="w-full sm:w-auto rounded-xl px-8 bg-brand-500 text-slate-900 border-none font-black hover:bg-brand-400 transition-all h-14 uppercase tracking-wider text-xs shadow-lg shadow-brand-500/30"
                     asChild
                   >
                     <a href="tel:0483986444">
@@ -911,7 +911,7 @@ export function SolarInverterRepair() {
                   </Button>
                   <Button
                     size="lg"
-                    className="w-full sm:w-auto rounded-xl px-8 bg-slate-900/80 hover:bg-slate-900 text-white border border-white/20 font-bold transition-all h-14 uppercase tracking-wider text-xs"
+                    className="w-full sm:w-auto rounded-xl px-8 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold transition-all h-14 uppercase tracking-wider text-xs"
                     asChild
                   >
                     <RouterLink to="/contact">
