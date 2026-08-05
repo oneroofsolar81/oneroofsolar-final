@@ -16,4 +16,6 @@
 /services/repairs-and-maintenance /solar-panels-darwin/ 301
 /services/solar-panel-maintenance-darwin/ /solar-panels-darwin/ 301
 /services/solar-panel-maintenance-darwin /solar-panels-darwin/ 301
+/solar-inverters /products/solar-inverters 301
+/solar-inverters/ /products/solar-inverters 301
 /* /index.html 200
