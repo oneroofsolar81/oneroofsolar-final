@@ -457,30 +457,54 @@ export function Navbar() {
                       {/* Top Product Cards Grid */}
                       <div className="grid grid-cols-3 gap-6 mb-7">
                         {productCategoryItems.map((prod) => (
-                          <Link
+                          <div
                             key={prod.label}
-                            to={formatHref(prod.href)}
-                            onClick={() => setActiveMegaMenu(null)}
                             className="group flex flex-col justify-between p-5 rounded-xl border border-slate-100 bg-slate-50/70 hover:bg-brand-50/40 hover:border-brand-200 transition-all duration-200 h-full"
                           >
                             <div>
                               <div className="w-11 h-11 rounded-xl bg-white shadow-sm border border-slate-200/60 text-brand-600 flex items-center justify-center mb-4 group-hover:scale-105 group-hover:bg-brand-500 group-hover:text-white transition-all">
                                 {renderMenuIcon(prod.iconName, "w-5 h-5")}
                               </div>
-                              <h3 className="text-[17px] font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
+                              <Link
+                                to={formatHref(prod.href)}
+                                onClick={() => setActiveMegaMenu(null)}
+                                className="text-[17px] font-bold text-slate-900 hover:text-brand-600 transition-colors block"
+                              >
                                 {prod.label}
-                              </h3>
+                              </Link>
                               {prod.description && (
                                 <p className="text-[13px] text-slate-500 mt-1.5 leading-relaxed">
                                   {prod.description}
                                 </p>
                               )}
+
+                              {prod.children && prod.children.length > 0 && (
+                                <div className="mt-3 pt-2.5 border-t border-slate-200/60 flex flex-col space-y-1">
+                                  {prod.children.map((sub) => (
+                                    <Link
+                                      key={sub.label}
+                                      to={formatHref(sub.href)}
+                                      onClick={() => setActiveMegaMenu(null)}
+                                      className="group/sub flex items-center justify-between text-[13px] font-semibold text-slate-700 hover:text-brand-600 py-1 px-1.5 rounded hover:bg-white transition-all"
+                                    >
+                                      <span>{sub.label}</span>
+                                      <ArrowRight className="w-3.5 h-3.5 text-brand-600 opacity-60 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5 transition-all" />
+                                    </Link>
+                                  ))}
+                                </div>
+                              )}
                             </div>
                             <div className="flex items-center gap-1.5 text-[13px] font-bold text-brand-600 mt-4 pt-3 border-t border-slate-200/50">
-                              <span>Explore Solution</span>
-                              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                              <Link
+                                to={formatHref(prod.href)}
+                                onClick={() => setActiveMegaMenu(null)}
+                                className="flex items-center gap-1.5 hover:text-brand-700 transition-colors"
+                              >
+                                <span>Explore Solution</span>
+                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                              </Link>
                             </div>
-                          </Link>
+                          </div>
                         ))}
                       </div>
 
@@ -752,5 +776,5 @@ export function Navbar() {
 // Data helpers for Products & Services Mega Menus
 const servicesCategories = mainNavConfig.find((n) => n.label === "Services")?.children || [];
 const productsChildren = mainNavConfig.find((n) => n.label === "Products")?.children || [];
-const productCategoryItems = productsChildren.filter((item) => !item.children || item.children.length === 0);
-const productBrandsItem = productsChildren.find((item) => item.children && item.children.length > 0);
+const productCategoryItems = productsChildren.filter((item) => item.label !== "Solar Panel Brands");
+const productBrandsItem = productsChildren.find((item) => item.label === "Solar Panel Brands");

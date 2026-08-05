@@ -24,6 +24,8 @@ import { SolarAliceSprings } from "./pages/SolarAliceSprings";
 import { SolarInverters } from "./pages/SolarInverters";
 import { SolarInverterInstallation } from "./pages/SolarInverterInstallation";
 import { SolarInverterRepair } from "./pages/SolarInverterRepair";
+import { SolarInvertersProductPage } from "./pages/SolarInvertersProductPage";
+import { SungrowInvertersPage } from "./pages/SungrowInvertersPage";
 import { AuthProvider } from "./context/AuthContext";
 import { NotificationProvider } from "./context/NotificationContext";
 import ScrollToTop from "./components/ScrollToTop";
@@ -141,6 +143,14 @@ export default function App() {
                 {/* Solar Inverters Service Hub Page */}
                 <Route path="/services/solar-inverters" element={<SolarInverters />} />
                 <Route path="/services/solar-inverters/" element={<SolarInverters />} />
+
+                {/* Solar Inverters Product Landing Page & 301 Redirects */}
+                <Route path="/products/solar-inverters" element={<SolarInvertersProductPage />} />
+                <Route path="/products/solar-inverters/" element={<SolarInvertersProductPage />} />
+                <Route path="/products/solar-inverters/sungrow-inverters" element={<SungrowInvertersPage />} />
+                <Route path="/products/solar-inverters/sungrow-inverters/" element={<SungrowInvertersPage />} />
+                <Route path="/solar-inverters" element={<Navigate to="/products/solar-inverters" replace />} />
+                <Route path="/solar-inverters/" element={<Navigate to="/products/solar-inverters" replace />} />
 
                 {/* Solar Inverter Installation Child Page & 301 Redirects */}
                 <Route path="/services/solar-inverters/installation" element={<SolarInverterInstallation />} />
