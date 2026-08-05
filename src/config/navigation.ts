@@ -148,9 +148,15 @@ export const mainNavConfig: NavItem[] = [
       },
       {
         label: "Solar Inverters",
-        href: "/services/solar-inverters",
+        href: "/products/solar-inverters",
         description: "High-efficiency string & hybrid inverters.",
         iconName: "Cpu",
+        children: [
+          {
+            label: "Sungrow Inverters",
+            href: "/products/solar-inverters/sungrow-inverters",
+          },
+        ],
       },
       {
         label: "Battery Storage Solutions",

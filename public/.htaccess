@@ -20,6 +20,8 @@
   Redirect 301 /services/repairs-and-maintenance /solar-panels-darwin/
   Redirect 301 /services/solar-panel-maintenance-darwin/ /solar-panels-darwin/
   Redirect 301 /services/solar-panel-maintenance-darwin /solar-panels-darwin/
+  Redirect 301 /solar-inverters /products/solar-inverters
+  Redirect 301 /solar-inverters/ /products/solar-inverters
 
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
