@@ -94,16 +94,6 @@
       "source": "/solar-power-alice-springs-nt/",
       "destination": "/solar-alice-springs/",
       "permanent": true
-    },
-    {
-      "source": "/solar-inverters",
-      "destination": "/products/solar-inverters",
-      "permanent": true
-    },
-    {
-      "source": "/solar-inverters/",
-      "destination": "/products/solar-inverters",
-      "permanent": true
     }
   ],
   "rewrites": [
