@@ -26,6 +26,10 @@ import { SolarInverterInstallation } from "./pages/SolarInverterInstallation";
 import { SolarInverterRepair } from "./pages/SolarInverterRepair";
 import { SolarInvertersProductPage } from "./pages/SolarInvertersProductPage";
 import { SungrowInvertersPage } from "./pages/SungrowInvertersPage";
+import { GoodWeInvertersPage } from "./pages/GoodWeInvertersPage";
+import { SigenergyInvertersPage } from "./pages/SigenergyInvertersPage";
+import { FoxEssInvertersPage } from "./pages/FoxEssInvertersPage";
+import { AlphaEssInvertersPage } from "./pages/AlphaEssInvertersPage";
 import { AuthProvider } from "./context/AuthContext";
 import { NotificationProvider } from "./context/NotificationContext";
 import ScrollToTop from "./components/ScrollToTop";
@@ -149,6 +153,18 @@ export default function App() {
                 <Route path="/products/solar-inverters/" element={<SolarInvertersProductPage />} />
                 <Route path="/products/solar-inverters/sungrow-inverters" element={<SungrowInvertersPage />} />
                 <Route path="/products/solar-inverters/sungrow-inverters/" element={<SungrowInvertersPage />} />
+                <Route path="/products/solar-inverters/goodwe" element={<GoodWeInvertersPage />} />
+                <Route path="/products/solar-inverters/goodwe/" element={<GoodWeInvertersPage />} />
+                <Route path="/products/solar-inverters/sigenergy" element={<SigenergyInvertersPage />} />
+                <Route path="/products/solar-inverters/sigenergy/" element={<SigenergyInvertersPage />} />
+                <Route path="/products/solar-inverters/fox-ess" element={<FoxEssInvertersPage />} />
+                <Route path="/products/solar-inverters/fox-ess/" element={<FoxEssInvertersPage />} />
+                <Route path="/products/solar-inverters/foxess" element={<Navigate to="/products/solar-inverters/fox-ess" replace />} />
+                <Route path="/products/solar-inverters/foxess/" element={<Navigate to="/products/solar-inverters/fox-ess" replace />} />
+                <Route path="/products/solar-inverters/alpha-ess" element={<AlphaEssInvertersPage />} />
+                <Route path="/products/solar-inverters/alpha-ess/" element={<AlphaEssInvertersPage />} />
+                <Route path="/products/solar-inverters/alphaess" element={<Navigate to="/products/solar-inverters/alpha-ess" replace />} />
+                <Route path="/products/solar-inverters/alphaess/" element={<Navigate to="/products/solar-inverters/alpha-ess" replace />} />
                 <Route path="/solar-inverters" element={<Navigate to="/products/solar-inverters" replace />} />
                 <Route path="/solar-inverters/" element={<Navigate to="/products/solar-inverters" replace />} />
 

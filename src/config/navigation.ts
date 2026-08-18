@@ -156,6 +156,22 @@ export const mainNavConfig: NavItem[] = [
             label: "Sungrow Inverters",
             href: "/products/solar-inverters/sungrow-inverters",
           },
+          {
+            label: "GoodWe Inverters",
+            href: "/products/solar-inverters/goodwe",
+          },
+          {
+            label: "Sigenergy Inverters",
+            href: "/products/solar-inverters/sigenergy",
+          },
+          {
+            label: "Fox ESS Inverters",
+            href: "/products/solar-inverters/fox-ess",
+          },
+          {
+            label: "Alpha ESS Inverters",
+            href: "/products/solar-inverters/alpha-ess",
+          },
         ],
       },
       {
