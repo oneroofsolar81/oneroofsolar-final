@@ -19,7 +19,10 @@ import {
   Check,
   ChevronDown,
   HelpCircle,
-  Wrench
+  Wrench,
+  Download,
+  X,
+  FileText
 } from "lucide-react";
 import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
@@ -518,9 +521,11 @@ export function SungrowInvertersPage() {
                       href="/downloads/Sungrow Single phase hybrid inverter 5-6Kw.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group"
+                      download
+                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group cursor-pointer"
                     >
-                      <span>View Spec →</span>
+                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <span>Download Datasheet PDF →</span>
                     </a>
                   </div>
                 </div>
@@ -588,9 +593,11 @@ export function SungrowInvertersPage() {
                       href="/downloads/Sungrow Single phase hybrid inverter 8-10Kw.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group"
+                      download
+                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group cursor-pointer"
                     >
-                      <span>View Spec →</span>
+                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <span>Download Datasheet PDF →</span>
                     </a>
                   </div>
                 </div>
@@ -670,9 +677,11 @@ export function SungrowInvertersPage() {
                       href="/downloads/SH15-20-25T Hybrid Three Phase Inverter.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group"
+                      download
+                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group cursor-pointer"
                     >
-                      <span>View Spec →</span>
+                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <span>Download Datasheet PDF →</span>
                     </a>
                   </div>
                 </div>
@@ -763,9 +772,11 @@ export function SungrowInvertersPage() {
                       href="/downloads/Single phase On Grid Inverter.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group"
+                      download
+                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group cursor-pointer"
                     >
-                      <span>View Spec →</span>
+                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <span>Download Datasheet PDF →</span>
                     </a>
                   </div>
                 </div>
@@ -842,9 +853,11 @@ export function SungrowInvertersPage() {
                       href="/downloads/Sungrow three phase grid inverter 5-10Kw.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group"
+                      download
+                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group cursor-pointer"
                     >
-                      <span>View Spec →</span>
+                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <span>Download Datasheet PDF →</span>
                     </a>
                   </div>
                 </div>
@@ -911,9 +924,11 @@ export function SungrowInvertersPage() {
                       href="/downloads/Sungrow three phase inverter 15&20Kw.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group"
+                      download
+                      className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group cursor-pointer"
                     >
-                      <span>View Spec →</span>
+                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <span>Download Datasheet PDF →</span>
                     </a>
                   </div>
                 </div>
@@ -999,9 +1014,11 @@ export function SungrowInvertersPage() {
                     href="/downloads/Sungrow threephase inverter 30Kw.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group"
+                    download
+                    className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group cursor-pointer"
                   >
-                    <span>View Spec →</span>
+                    <Download className="w-4 h-4 text-[#5BC94D]" />
+                    <span>Download Datasheet PDF →</span>
                   </a>
                 </div>
               </div>
@@ -1067,9 +1084,11 @@ export function SungrowInvertersPage() {
                     href="/downloads/Sungrow threephase inverter 100Kw.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group"
+                    download
+                    className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider hover:bg-slate-800 transition-all gap-2 border border-slate-800 shadow-xs group cursor-pointer"
                   >
-                    <span>View Spec →</span>
+                    <Download className="w-4 h-4 text-[#5BC94D]" />
+                    <span>Download Datasheet PDF →</span>
                   </a>
                 </div>
               </div>
@@ -1513,6 +1532,7 @@ export function SungrowInvertersPage() {
           </FadeIn>
         </div>
       </section>
+
     </div>
   );
 }
