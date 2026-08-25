@@ -1089,51 +1089,66 @@ const servicesData: Record<
     ],
   },
   "solar-battery-installation": {
-    title: "Solar Battery Installation",
+    title: "Solar Battery Installation Darwin, NT",
     description:
-      "Expert integration of high-capacity storage batteries to bulletproof your home against grid outages.",
+      "Expert integration of high-capacity storage batteries to protect your Darwin home or business against grid outages, installed by our CEC accredited team.",
     introExtra1:
-      "Installing a massive lithium-ion battery requires rigorous electrical safety standards. We manage the heavy-lifting, secure mounting, and complex software syncing to your home network.",
+      "Installing a large lithium-ion battery requires strict electrical safety standards. We handle the heavy lifting, secure mounting, and software syncing to your home network, so the system is ready to run from day one.",
     introExtra2:
-      "Keep Your Home Powered During Outages: We all know the wet season can bring severe disruptions and impact grid reliability. With a dedicated battery backup system, you can securely power your essential loads through any blackout, achieving true energy independence.",
+      "We install for both residential and commercial solar battery installation projects, whether you're adding storage to an existing solar system or starting fresh.",
     products: [
       {
-        title: "Wall-Mounted Units",
+        title: "Tesla Powerwall 3",
         description:
-          "Sleek, low-profile storage modules bolted securely to solid brickwork, ensuring space-saving and aesthetic appeal.",
+          "The ultimate home battery that stores solar energy for blackout protection and night-time use with a sleek, minimalist design.",
         image:
-          "https://jmhpower.com/wp-content/uploads/2024/07/WALL-MOUNTED-SOLAR-PANELS.jpg",
+          "https://solarjuice.com.au/wp-content/uploads/2026/05/Powerwall-and-Backup-Gateway-2-copy-1280x720-Edited-Edited-600x618.png",
       },
       {
-        title: "Stackable Systems",
+        title: "Sigenergy",
         description:
-          "Modular floor-standing battery arrays that can easily scale as your family’s energy demands grow.",
+          "Advanced energy storage systems that integrate seamlessly with your solar panel arrays to provide efficient and reliable backup power.",
         image:
-          "https://skyenergy.com.au/wp-content/uploads/2021/10/battery-install-1-1024x768.jpg",
+          "https://i.postimg.cc/qMznYkKw/Sigen-Battery-8-k-Wh-with-LED-removebg-preview.png",
+      },
+      {
+        title: "Sungrow",
+        description:
+          "High-performance modular battery storage solutions offering scalable capacity, deep cycling capabilities, and robust longevity.",
+        image:
+          "https://i.postimg.cc/6qnsnGMk/6383980259759580924379243-1-removebg-preview.png",
       },
     ],
     image:
-      "https://www.solarquotes.com.au/wp-content/uploads/2023/10/byd-fronius-backboard.jpg",
+      "https://i.postimg.cc/Nf2ytHrg/Sigenergy-(1).webp",
     faqs: [
       {
         q: "Is it safe to have a big battery inside?",
-        a: "Modern battery units are tested to be highly safe and are meticulously engineered with advanced automated thermal regulation systems. However, as a best-practice precaution, we typically recommend installing them in insulated garages or against fully shaded external walls.",
+        a: "Modern battery units are tested to be highly safe and are engineered with automated thermal regulation systems. As a best-practice precaution, we typically recommend installing them in insulated garages or against fully shaded external walls.",
       },
       {
         q: "Will I lose power during installation?",
-        a: "Brief scheduled outages are necessary while tying the battery into your switchboard, usually lasting out a short duration.",
+        a: "In most cases, no. Any brief disconnection is scheduled for a short window during final connection and testing, not the whole installation day.",
       },
       {
         q: "Can it charge from the grid?",
-        a: "Yes, they can be configured to draw from the grid during super off-peak tariffs, saving you even more money.",
+        a: "Yes. Most battery systems can charge from solar during the day and top up from the grid if needed, useful if you're on a time-of-use tariff or want guaranteed backup heading into the Wet season.",
       },
       {
         q: "Where is the best place to install the battery?",
-        a: "Batteries are best installed in a cool, shaded area like a garage or on a south-facing exterior wall. This protects the unit from direct sunlight and temperature extremes, prolonging its lifespan.",
+        a: "A shaded, well-ventilated spot such as an insulated garage or a shielded external wall, out of direct sun. Darwin's heat makes placement especially important for battery lifespan and warranty.",
       },
       {
         q: "How long does a battery installation typically take?",
-        a: "A standard battery retrofit usually takes half a day to a full day, depending on the complexity of your switchboard and the specific battery chemistry being installed.",
+        a: "Most residential installs in Darwin take one to two days from start to commissioning, depending on system size and whether it's paired with new panels or added to an existing solar system.",
+      },
+      {
+        q: "Can I add a battery to my existing solar system?",
+        a: "Yes. Most existing solar systems can be retrofitted with a battery, either AC-coupled for a simpler retrofit or DC-coupled through a hybrid inverter for higher efficiency. We'll confirm which suits your current setup during your quote.",
+      },
+      {
+        q: "How long does a solar battery last?",
+        a: "Most quality batteries are warrantied for 10 years and can last well beyond that with correct installation and placement, particularly important given Darwin's heat.",
       },
     ],
   },

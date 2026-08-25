@@ -25,6 +25,7 @@ import { SolarInverters } from "./pages/SolarInverters";
 import { SolarInverterInstallation } from "./pages/SolarInverterInstallation";
 import { SolarInverterRepair } from "./pages/SolarInverterRepair";
 import { SolarInvertersProductPage } from "./pages/SolarInvertersProductPage";
+import { SolarBatteryInstallation } from "./pages/SolarBatteryInstallation";
 import { SungrowInvertersPage } from "./pages/SungrowInvertersPage";
 import { GoodWeInvertersPage } from "./pages/GoodWeInvertersPage";
 import { SigenergyInvertersPage } from "./pages/SigenergyInvertersPage";
@@ -141,8 +142,9 @@ export default function App() {
                 {/* Additional SEO Redirects for internal links */}
                 <Route path="/repairs-and-maintenance" element={<Navigate to="/solar-panels-darwin" replace />} />
                 <Route path="/repairs-and-maintenance/" element={<Navigate to="/solar-panels-darwin" replace />} />
-                <Route path="/services/solar-battery-installation" element={<ServiceDetail slugOverride="battery-storage" />} />
-                <Route path="/services/solar-battery-installation/" element={<ServiceDetail slugOverride="battery-storage" />} />
+                {/* Solar Battery Installation Page */}
+                <Route path="/services/solar-battery-installation" element={<SolarBatteryInstallation />} />
+                <Route path="/services/solar-battery-installation/" element={<SolarBatteryInstallation />} />
                 
                 {/* Solar Inverters Service Hub Page */}
                 <Route path="/services/solar-inverters" element={<SolarInverters />} />
@@ -198,6 +200,10 @@ export default function App() {
                 <Route path="/products/ja-solar-panels/" element={<JaSolarPanels />} />
                 <Route path="/product/solar-panels-brands/ja-solar-panels-nt" element={<JaSolarPanels />} />
                 <Route path="/product/solar-panels-brands/ja-solar-panels-nt/" element={<JaSolarPanels />} />
+                <Route path="/product/ja-solar" element={<Navigate to="/product/solar-panels-brands/ja-solar-panels-nt" replace />} />
+                <Route path="/product/ja-solar/" element={<Navigate to="/product/solar-panels-brands/ja-solar-panels-nt" replace />} />
+                <Route path="/solar-panels-brands/ja-solar" element={<Navigate to="/product/solar-panels-brands/ja-solar-panels-nt" replace />} />
+                <Route path="/solar-panels-brands/ja-solar/" element={<Navigate to="/product/solar-panels-brands/ja-solar-panels-nt" replace />} />
                 
                 {/* Jinko Solar Brand Landing Page */}
                 <Route path="/solar-panels-brands/jinko" element={<JinkoSolarPanels />} />
@@ -208,6 +214,10 @@ export default function App() {
                 {/* LONGi Solar Brand Landing Page */}
                 <Route path="/solar-panels-brands/longi" element={<LongiSolarPanels />} />
                 <Route path="/solar-panels-brands/longi/" element={<LongiSolarPanels />} />
+                <Route path="/product/longi-solar" element={<Navigate to="/solar-panels-brands/longi/" replace />} />
+                <Route path="/product/longi-solar/" element={<Navigate to="/solar-panels-brands/longi/" replace />} />
+                <Route path="/solar-panels/longi" element={<Navigate to="/solar-panels-brands/longi/" replace />} />
+                <Route path="/solar-panels/longi/" element={<Navigate to="/solar-panels-brands/longi/" replace />} />
                 
                 {/* REC Solar Brand Landing Page */}
                 <Route path="/solar-panels-brands/rec" element={<RecSolarPanels />} />
@@ -224,8 +234,8 @@ export default function App() {
                 <Route path="/solar-power-alice-springs-nt/" element={<Navigate to="/solar-alice-springs/" replace />} />
                 
                 {/* External SEO Redirects mapping */}
-                <Route path="/solar-panels/rec" element={<Navigate to="/product/solar-panels-brands" replace />} />
-                <Route path="/solar-panels/rec/" element={<Navigate to="/product/solar-panels-brands" replace />} />
+                <Route path="/solar-panels/rec" element={<Navigate to="/solar-panels-brands/rec/" replace />} />
+                <Route path="/solar-panels/rec/" element={<Navigate to="/solar-panels-brands/rec/" replace />} />
                 <Route path="/solar-panels" element={<Navigate to="/product/solar-panels-brands" replace />} />
                 <Route path="/solar-panels/" element={<Navigate to="/product/solar-panels-brands" replace />} />
                 <Route path="/solar-panel-installation" element={<Navigate to="/services/solar-panel-installation" replace />} />

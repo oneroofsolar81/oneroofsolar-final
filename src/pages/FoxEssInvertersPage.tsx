@@ -8,17 +8,27 @@ import {
   Zap,
   ShieldCheck,
   Award,
-  Battery
+  Battery,
+  Flame,
+  CheckCircle2
 } from "lucide-react";
 import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
 import { SEO } from "../components/SEO";
 import { PRIMARY_PHONE_RAW } from "../lib/constants";
 
-// Fox ESS Datasheet PDF URLs (Placeholder constants for real PDF assets)
-export const FOX_F_SERIES_PDF_URL = "#"; 
-export const FOX_H1_SERIES_PDF_URL = "#"; 
-export const FOX_H3_SERIES_PDF_URL = "#"; 
+// Fox ESS Datasheet PDF URLs
+export const FOX_H1_G2_PDF_URL = "/downloads/Fox ESS H1 G2 Single Phase Hybrid Inverter Datasheet.pdf";
+export const FOX_KH_KA_PDF_URL = "/downloads/Fox ESS KH KA Single Phase Hybrid Inverter Datasheet.pdf";
+export const FOX_H3_SMART_PDF_URL = "/downloads/Fox ESS H3 Smart Three Phase Hybrid Inverter Datasheet.pdf";
+export const FOX_EQ4800_PDF_URL = "/downloads/Fox ESS EQ4800 High Voltage Storage Battery Datasheet.pdf";
+export const FOX_EQ5500_PDF_URL = "/downloads/Fox ESS EQ5500 High Voltage Storage Battery Datasheet.pdf";
+export const FOX_EP11_PDF_URL = "/downloads/Fox ESS EP11 High Voltage Storage Battery Datasheet.pdf";
+export const FOX_EP12_PLUS_PDF_URL = "/downloads/Fox ESS EP12 Plus High Voltage Storage Battery Datasheet.pdf";
+export const FOX_L_SERIES_PDF_URL = "/downloads/Fox ESS L Series EV Charger Datasheet.pdf";
+export const FOX_L_MAX_PDF_URL = "/downloads/Fox ESS L Max Series EV Charger Datasheet.pdf";
+export const FOX_A_SERIES_PDF_URL = "/downloads/Fox ESS A Series EV Charger Datasheet.pdf";
+export const FOX_C_SERIES_PDF_URL = "/downloads/Fox ESS C Series Dual EV Charger Datasheet.pdf"; 
 
 export function FoxEssInvertersPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -295,142 +305,509 @@ export function FoxEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-slate-50 border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
+            <div className="flex items-center gap-3 mb-3">
+              <span className="h-px w-10 bg-[#5BC94D]"></span>
+              <span className="text-xs font-black uppercase tracking-widest text-[#5BC94D] font-mono">
+                Official Engineering Datasheets &amp; Downloads
+              </span>
+            </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
-              SAA Approved Fox ESS Inverter Range Available in the NT
+              Fox ESS Solar Inverter, Battery &amp; EV Charger Range
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-12 max-w-4xl">
-              We do not believe in a one-size-fits-all approach to solar. The Northern Territory grid requires robust hardware that can manage highly variable solar inputs and severe outdoor conditions. Below are the specific Fox ESS models we supply, maintain, and install, along with their official engineering sheets.
+              We do not believe in a one-size-fits-all approach to solar. The Northern Territory grid requires robust hardware that can manage highly variable solar inputs and severe outdoor conditions. Below is the complete Fox ESS lineup we supply, install, and support with direct access to official engineering spec sheets.
             </p>
 
-            {/* 3-Column Product Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-              
-              {/* CARD 1: F-SERIES */}
-              <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
-                <div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-6 leading-tight">
-                    Fox ESS F-Series (Single-Phase Residential, 3.0kW to 6.0kW)
-                  </h3>
+            {/* CATEGORY 1: HYBRID & SOLAR INVERTERS */}
+            <div className="mb-16">
+              <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-3">
+                <Zap className="w-6 h-6 text-[#5BC94D]" />
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide">
+                  1. Hybrid &amp; Energy Storage Solar Inverters
+                </h3>
+              </div>
 
-                  <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1 font-mono">Who it benefits</span>
-                    <p className="text-slate-700 text-sm leading-relaxed font-medium">
-                      Ideal for standard Darwin families and everyday suburban homes looking to slash their residential electricity accounts without adding battery storage immediately. It offers a compact layout that fits neatly on exterior walls while maximizing small roof spaces.
-                    </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                {/* CARD 1: H1(G2) SERIES */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30 font-mono">Single-Phase Hybrid</span>
+                      <span className="text-xs font-bold text-slate-500">3.0kW – 6.0kW</span>
+                    </div>
+                    <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
+                      Fox ESS H1(G2) / AC1(G2)
+                    </h4>
+
+                    <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1 font-mono">Key Highlights</span>
+                      <p className="text-slate-700 text-sm leading-relaxed font-medium">
+                        Next-generation single-phase hybrid inverter with dual MPPTs (16A/16A), 80–480V high-voltage battery connection, and EPS power switch time under 20ms.
+                      </p>
+                    </div>
+
+                    <div className="space-y-3 mb-8 text-xs">
+                      <div className="flex justify-between py-1.5 border-b border-slate-100">
+                        <span className="font-semibold text-slate-500">MPPT Voltage Range</span>
+                        <span className="font-bold text-slate-900 font-mono">80V – 550V (75V Start)</span>
+                      </div>
+                      <div className="flex justify-between py-1.5 border-b border-slate-100">
+                        <span className="font-semibold text-slate-500">Battery Charge/Discharge</span>
+                        <span className="font-bold text-slate-900 font-mono">40.0 A Max</span>
+                      </div>
+                      <div className="flex justify-between py-1.5 border-b border-slate-100">
+                        <span className="font-semibold text-slate-500">Ingress Protection</span>
+                        <span className="font-bold text-slate-900 font-mono">IP65 Weatherproof</span>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="space-y-4 mb-8">
-                    <div>
-                      <span className="text-xs font-extrabold text-slate-900 uppercase tracking-wider block mb-1 font-mono">IP65 Casing</span>
-                      <p className="text-slate-600 text-sm leading-relaxed font-medium">
-                        Completely sealed against tropical wet season downpours and fine coastal salt vapor.
-                      </p>
-                    </div>
-                    <div>
-                      <span className="text-xs font-extrabold text-slate-900 uppercase tracking-wider block mb-1 font-mono">Low Startup Voltage</span>
-                      <p className="text-slate-600 text-sm leading-relaxed font-medium">
-                        Kicks in early in the morning and keeps running later into the twilight hours.
-                      </p>
-                    </div>
+                  <div className="pt-4 border-t border-slate-100">
+                    <a
+                      href={FOX_H1_G2_PDF_URL}
+                      download="Fox ESS H1 G2 Single Phase Hybrid Inverter Datasheet.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-extrabold transition-colors uppercase tracking-wider shadow-sm"
+                    >
+                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <span>Download H1(G2) Spec Sheet</span>
+                    </a>
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-slate-100">
+                {/* CARD 2: KH / KA SERIES */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30 font-mono">High-Power Single Phase</span>
+                      <span className="text-xs font-bold text-slate-500">7.0kW – 10.5kW</span>
+                    </div>
+                    <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
+                      Fox ESS KH / KA Series
+                    </h4>
+
+                    <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1 font-mono">Key Highlights</span>
+                      <p className="text-slate-700 text-sm leading-relaxed font-medium">
+                        Heavy-duty single-phase hybrid inverter with 3 or 4 MPPT trackers, up to 21kW PV array support, 63A Australian breaker capacity, and ultra-fast EPS &lt;10ms switchover.
+                      </p>
+                    </div>
+
+                    <div className="space-y-3 mb-8 text-xs">
+                      <div className="flex justify-between py-1.5 border-b border-slate-100">
+                        <span className="font-semibold text-slate-500">No. of MPPT Trackers</span>
+                        <span className="font-bold text-slate-900 font-mono">3 / 4 Trackers (16A)</span>
+                      </div>
+                      <div className="flex justify-between py-1.5 border-b border-slate-100">
+                        <span className="font-semibold text-slate-500">Max AC Throughput</span>
+                        <span className="font-bold text-slate-900 font-mono">63A / 14,500 VA (AU)</span>
+                      </div>
+                      <div className="flex justify-between py-1.5 border-b border-slate-100">
+                        <span className="font-semibold text-slate-500">Battery Voltage</span>
+                        <span className="font-bold text-slate-900 font-mono">85V – 480V (50A)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 border-t border-slate-100">
+                    <a
+                      href={FOX_KH_KA_PDF_URL}
+                      download="Fox ESS KH KA Single Phase Hybrid Inverter Datasheet.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-extrabold transition-colors uppercase tracking-wider shadow-sm"
+                    >
+                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <span>Download KH/KA Spec Sheet</span>
+                    </a>
+                  </div>
+                </div>
+
+                {/* CARD 3: H3 SMART THREE PHASE */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30 font-mono">Three-Phase Hybrid</span>
+                      <span className="text-xs font-bold text-slate-500">5.0kW – 15.0kW</span>
+                    </div>
+                    <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
+                      Fox ESS H3 Smart Series
+                    </h4>
+
+                    <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1 font-mono">Key Highlights</span>
+                      <p className="text-slate-700 text-sm leading-relaxed font-medium">
+                        Three-phase commercial &amp; large residential hybrid inverter with 3 MPPT trackers, 1000V DC input, 100–800V HV battery interface, and up to 15kW charge/discharge power.
+                      </p>
+                    </div>
+
+                    <div className="space-y-3 mb-8 text-xs">
+                      <div className="flex justify-between py-1.5 border-b border-slate-100">
+                        <span className="font-semibold text-slate-500">Max. PV Array Power</span>
+                        <span className="font-bold text-slate-900 font-mono">Up to 30,000 Wp</span>
+                      </div>
+                      <div className="flex justify-between py-1.5 border-b border-slate-100">
+                        <span className="font-semibold text-slate-500">MPPT Trackers</span>
+                        <span className="font-bold text-slate-900 font-mono">3 MPPT (20A / 20A / 20A)</span>
+                      </div>
+                      <div className="flex justify-between py-1.5 border-b border-slate-100">
+                        <span className="font-semibold text-slate-500">Peak Charge/Discharge</span>
+                        <span className="font-bold text-slate-900 font-mono">Up to 15 kW (50A)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 border-t border-slate-100">
+                    <a
+                      href={FOX_H3_SMART_PDF_URL}
+                      download="Fox ESS H3 Smart Three Phase Hybrid Inverter Datasheet.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-extrabold transition-colors uppercase tracking-wider shadow-sm"
+                    >
+                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <span>Download H3 Smart Spec Sheet</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* CATEGORY 2: HIGH-VOLTAGE BATTERY STORAGE */}
+            <div className="mb-16">
+              <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-3">
+                <Battery className="w-6 h-6 text-[#5BC94D]" />
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide">
+                  2. High Voltage Lithium Storage Batteries (LFP)
+                </h3>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+                {/* BATTERY CARD 1: EQ4800 */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                  <div>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800 font-mono block w-fit mb-3">Stackable Series</span>
+                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                      Fox ESS EQ4800
+                    </h4>
+                    <p className="text-xs text-slate-500 font-medium mb-4">
+                      4.66kWh Modular LFP | Scalable to 41.93kWh (2 to 9 modules)
+                    </p>
+
+                    <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Nominal Voltage:</span>
+                        <span className="font-bold text-slate-800 font-mono">89.6V - 403.2V</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Depth of Discharge:</span>
+                        <span className="font-bold text-slate-800 font-mono">100% DoD</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Efficiency / IP:</span>
+                        <span className="font-bold text-slate-800 font-mono">&gt;95% | IP65</span>
+                      </div>
+                    </div>
+                  </div>
+
                   <a
-                    href={FOX_F_SERIES_PDF_URL}
-                    onClick={(e) => handlePdfDownload(e, "Fox ESS F-Series", FOX_F_SERIES_PDF_URL)}
-                    className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-extrabold transition-colors uppercase tracking-wider border border-slate-200"
+                    href={FOX_EQ4800_PDF_URL}
+                    download="Fox ESS EQ4800 High Voltage Storage Battery Datasheet.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
                   >
-                    <Download className="w-4 h-4 text-[#5BC94D]" />
-                    <span>Download F-Series PDF Datasheet</span>
+                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <span>Download EQ4800 PDF</span>
+                  </a>
+                </div>
+
+                {/* BATTERY CARD 2: EQ5500 */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                  <div>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800 font-mono block w-fit mb-3">High-Capacity Series</span>
+                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                      Fox ESS EQ5500
+                    </h4>
+                    <p className="text-xs text-slate-500 font-medium mb-4">
+                      5.46kWh Modular LFP | Scalable to 49.14kWh (122Ah Cell)
+                    </p>
+
+                    <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Nominal Voltage:</span>
+                        <span className="font-bold text-slate-800 font-mono">89.6V - 403.2V</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Charge/Discharge:</span>
+                        <span className="font-bold text-slate-800 font-mono">50A Continuous</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Depth of Discharge:</span>
+                        <span className="font-bold text-slate-800 font-mono">100% DoD</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    href={FOX_EQ5500_PDF_URL}
+                    download="Fox ESS EQ5500 High Voltage Storage Battery Datasheet.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
+                  >
+                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <span>Download EQ5500 PDF</span>
+                  </a>
+                </div>
+
+                {/* BATTERY CARD 3: EP11 */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                  <div>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-mono block w-fit mb-3">Wall / Floor Mount</span>
+                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                      Fox ESS EP11
+                    </h4>
+                    <p className="text-xs text-slate-500 font-medium mb-4">
+                      10.36kWh All-in-One | Scalable to 41.6kWh (4 in Parallel)
+                    </p>
+
+                    <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Nominal Voltage:</span>
+                        <span className="font-bold text-slate-800 font-mono">384 V High Voltage</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Compatibility:</span>
+                        <span className="font-bold text-slate-800 font-mono">H1, KH, H3 Series</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Profile / Weight:</span>
+                        <span className="font-bold text-slate-800 font-mono">147mm slim / 99kg</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    href={FOX_EP11_PDF_URL}
+                    download="Fox ESS EP11 High Voltage Storage Battery Datasheet.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
+                  >
+                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <span>Download EP11 PDF</span>
+                  </a>
+                </div>
+
+                {/* BATTERY CARD 4: EP12 PLUS */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                  <div>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-rose-100 text-rose-800 font-mono block w-fit mb-3">Fire-Protected LFP</span>
+                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                      Fox ESS EP12 Plus (w)
+                    </h4>
+                    <p className="text-xs text-slate-500 font-medium mb-4">
+                      11.52kWh All-in-One | Scalable to 46.08kWh with Fire Protection
+                    </p>
+
+                    <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Nominal Voltage:</span>
+                        <span className="font-bold text-slate-800 font-mono">384 V High Voltage</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Fire Protection:</span>
+                        <span className="font-bold text-rose-600 font-mono">Integrated Built-in</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Scalability:</span>
+                        <span className="font-bold text-slate-800 font-mono">Up to 4 Units</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    href={FOX_EP12_PLUS_PDF_URL}
+                    download="Fox ESS EP12 Plus High Voltage Storage Battery Datasheet.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
+                  >
+                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <span>Download EP12 Plus PDF</span>
                   </a>
                 </div>
               </div>
+            </div>
 
-              {/* CARD 2: H1 HYBRID SERIES */}
-              <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
-                <div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-6 leading-tight">
-                    Fox ESS H1 Series (Single-Phase Hybrid, 3.0kW to 6.0kW)
-                  </h3>
+            {/* CATEGORY 3: SMART EV CHARGERS */}
+            <div>
+              <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-3">
+                <ShieldCheck className="w-6 h-6 text-[#5BC94D]" />
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide">
+                  3. Fox ESS Smart EV Chargers (Residential &amp; Commercial)
+                </h3>
+              </div>
 
-                  <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1 font-mono">Who it benefits</span>
-                    <p className="text-slate-700 text-sm leading-relaxed font-medium">
-                      The perfect choice for household financial managers who want to eliminate their reliance on the main electricity grid during peak evening hours. It allows you to lock in immediate solar savings now and expand your system as your family grows.
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+                {/* EV CARD 1: L SERIES */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                  <div>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800 font-mono block w-fit mb-3">Residential Smart</span>
+                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                      Fox ESS L Series
+                    </h4>
+                    <p className="text-xs text-slate-500 font-medium mb-4">
+                      7.3kW Single-Phase / 11kW Three-Phase with Type 2 Cable
                     </p>
+
+                    <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Solar Linkage:</span>
+                        <span className="font-bold text-slate-800 font-mono">Excess Solar Charge</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Control:</span>
+                        <span className="font-bold text-slate-800 font-mono">Bluetooth + App</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Durability:</span>
+                        <span className="font-bold text-slate-800 font-mono">IP55 / IK08</span>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="space-y-4 mb-8">
-                    <div>
-                      <span className="text-xs font-extrabold text-slate-900 uppercase tracking-wider block mb-1 font-mono">Native Battery Integration</span>
-                      <p className="text-slate-600 text-sm leading-relaxed font-medium">
-                        Connects directly with high-voltage scalable battery storage systems.
-                      </p>
-                    </div>
-                    <div>
-                      <span className="text-xs font-extrabold text-slate-900 uppercase tracking-wider block mb-1 font-mono">Smart App Monitoring</span>
-                      <p className="text-slate-600 text-sm leading-relaxed font-medium">
-                        Tracks your live production and battery levels over your local home Wi-Fi network.
-                      </p>
-                    </div>
-                  </div>
+                  <a
+                    href={FOX_L_SERIES_PDF_URL}
+                    download="Fox ESS L Series EV Charger Datasheet.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
+                  >
+                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <span>Download L Series PDF</span>
+                  </a>
                 </div>
 
-                <div className="pt-4 border-t border-slate-100">
+                {/* EV CARD 2: L MAX SERIES */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                  <div>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800 font-mono block w-fit mb-3">RFID + OCPP</span>
+                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                      Fox ESS L MAX Series
+                    </h4>
+                    <p className="text-xs text-slate-500 font-medium mb-4">
+                      7.3kW / 11kW with Mifare RFID Card Reader &amp; OCPP 1.6/2.0.1
+                    </p>
+
+                    <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Protocol:</span>
+                        <span className="font-bold text-slate-800 font-mono">OCPP 1.6 / 2.0.1</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Access:</span>
+                        <span className="font-bold text-slate-800 font-mono">RFID Card / App</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Connectivity:</span>
+                        <span className="font-bold text-slate-800 font-mono">RJ45 + WiFi + BLE</span>
+                      </div>
+                    </div>
+                  </div>
+
                   <a
-                    href={FOX_H1_SERIES_PDF_URL}
-                    onClick={(e) => handlePdfDownload(e, "Fox ESS H1 Hybrid Series", FOX_H1_SERIES_PDF_URL)}
-                    className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-extrabold transition-colors uppercase tracking-wider border border-slate-200"
+                    href={FOX_L_MAX_PDF_URL}
+                    download="Fox ESS L Max Series EV Charger Datasheet.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
                   >
-                    <Download className="w-4 h-4 text-[#5BC94D]" />
-                    <span>Download H1 Hybrid Series PDF Datasheet</span>
+                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <span>Download L MAX PDF</span>
+                  </a>
+                </div>
+
+                {/* EV CARD 3: A SERIES */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                  <div>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-mono block w-fit mb-3">Plug &amp; Socket | V2G</span>
+                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                      Fox ESS A Series
+                    </h4>
+                    <p className="text-xs text-slate-500 font-medium mb-4">
+                      7.3kW / 11kW / 22kW | Plug &amp; Shutter Socket | ISO 15118 V2G
+                    </p>
+
+                    <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Max Power:</span>
+                        <span className="font-bold text-slate-800 font-mono">Up to 22 kW</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">V2G Hardware:</span>
+                        <span className="font-bold text-slate-800 font-mono">ISO 15118 Ready</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Variants:</span>
+                        <span className="font-bold text-slate-800 font-mono">Tethered / Socket</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    href={FOX_A_SERIES_PDF_URL}
+                    download="Fox ESS A Series EV Charger Datasheet.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
+                  >
+                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <span>Download A Series PDF</span>
+                  </a>
+                </div>
+
+                {/* EV CARD 4: C SERIES DUAL COMMERCIAL */}
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                  <div>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-slate-900 text-white font-mono block w-fit mb-3">Commercial Dual Port</span>
+                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                      Fox ESS C Series
+                    </h4>
+                    <p className="text-xs text-slate-500 font-medium mb-4">
+                      14.6kW / 22kW / 44kW Dual Guns with 3.5&quot; IPS LCD &amp; MID Meters
+                    </p>
+
+                    <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Dual Charging:</span>
+                        <span className="font-bold text-slate-800 font-mono">22kW * 2 (44kW)</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Billing / Pay:</span>
+                        <span className="font-bold text-slate-800 font-mono">QR Cloud + RFID</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-500">Protection:</span>
+                        <span className="font-bold text-slate-800 font-mono">IK10 Impact / IP55</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    href={FOX_C_SERIES_PDF_URL}
+                    download="Fox ESS C Series Dual EV Charger Datasheet.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
+                  >
+                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <span>Download C Series PDF</span>
                   </a>
                 </div>
               </div>
-
-              {/* CARD 3: H3 THREE-PHASE HYBRID SERIES */}
-              <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
-                <div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-6 leading-tight">
-                    Fox ESS H3 Series (Three-Phase Hybrid, 5.0kW to 12.0kW)
-                  </h3>
-
-                  <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1 font-mono">Who it benefits</span>
-                    <p className="text-slate-700 text-sm leading-relaxed font-medium">
-                      Engineered specifically for larger multi-generational households, heavy domestic power users, and commercial setups in busy industrial zones like Berrimah.
-                    </p>
-                  </div>
-
-                  <div className="space-y-4 mb-8">
-                    <div>
-                      <span className="text-xs font-extrabold text-slate-900 uppercase tracking-wider block mb-1 font-mono">Balanced Three-Phase Output</span>
-                      <p className="text-slate-600 text-sm leading-relaxed font-medium">
-                        Manages larger electrical loads across commercial machinery, large pumps, and ducted air conditioning units.
-                      </p>
-                    </div>
-                    <div>
-                      <span className="text-xs font-extrabold text-slate-900 uppercase tracking-wider block mb-1 font-mono">Dual MPPT Trackers</span>
-                      <p className="text-slate-600 text-sm leading-relaxed font-medium">
-                        Allows panels to be installed across completely different roof angles, optimizing generation during cloudy monsoonal days.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="pt-4 border-t border-slate-100">
-                  <a
-                    href={FOX_H3_SERIES_PDF_URL}
-                    onClick={(e) => handlePdfDownload(e, "Fox ESS H3 Commercial Hybrid", FOX_H3_SERIES_PDF_URL)}
-                    className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-extrabold transition-colors uppercase tracking-wider border border-slate-200"
-                  >
-                    <Download className="w-4 h-4 text-[#5BC94D]" />
-                    <span>Download H3 Commercial Hybrid PDF Datasheet</span>
-                  </a>
-                </div>
-              </div>
-
             </div>
           </FadeIn>
         </div>

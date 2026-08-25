@@ -13,6 +13,7 @@ import {
   Check,
   HelpCircle,
   FileText,
+  Download,
   Battery,
   Award,
   Sun,
@@ -510,10 +511,15 @@ export function GoodWeInvertersPage() {
                     className="w-full rounded-xl bg-slate-900 text-white hover:bg-slate-800 font-bold text-xs uppercase tracking-wider h-12 flex items-center justify-center gap-2"
                     asChild
                   >
-                    <Link to="/contact">
-                      <FileText className="w-4 h-4 text-[#5BC94D]" />
-                      <span>View GoodWe ESA 3–10kW Spec Sheet</span>
-                    </Link>
+                    <a
+                      href="/downloads/GoodWe ESA 3-10kW Residential All-In-One Energy Storage System.pdf"
+                      download="GoodWe ESA 3-10kW Residential All-In-One Energy Storage System.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <span>Download GoodWe ESA 3–10kW Manual</span>
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -576,10 +582,15 @@ export function GoodWeInvertersPage() {
                     className="w-full rounded-xl bg-slate-900 text-white hover:bg-slate-800 font-bold text-xs uppercase tracking-wider h-12 flex items-center justify-center gap-2"
                     asChild
                   >
-                    <Link to="/contact">
-                      <FileText className="w-4 h-4 text-[#5BC94D]" />
-                      <span>View GoodWe ET G2 Spec Sheet</span>
-                    </Link>
+                    <a
+                      href="/downloads/GoodWe ET G2 Three Phase Hybrid Inverter 6-15Kw.pdf"
+                      download="GoodWe ET G2 Three Phase Hybrid Inverter 6-15Kw.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <span>Download GoodWe ET G2 Spec Sheet</span>
+                    </a>
                   </Button>
                 </div>
               </div>
