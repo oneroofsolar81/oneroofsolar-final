@@ -73,15 +73,15 @@ export function Home() {
       el.setAttribute('content', content);
     };
 
-    updateMeta('description', false, "Darwin's local solar panel installers. Residential & commercial solar, battery storage, EV chargers, NT Battery Grant paperwork handled for you. $0 deposit - Darwin, Palmerston & Alice Springs.");
+    updateMeta('description', false, "Darwin's local solar panel installers. Residential & commercial solar, battery storage, EV chargers, federal STC incentives applied upfront. $0 deposit - Darwin, Palmerston & Alice Springs.");
     updateMeta('og:title', true, "Solar Panels Darwin | Oneroof Solar - Installation, Battery & NT Rebates");
-    updateMeta('og:description', true, "Darwin's local solar panel installers. Residential & commercial solar, battery storage, EV chargers, NT Battery Grant paperwork handled for you. $0 deposit - Darwin, Palmerston & Alice Springs.");
+    updateMeta('og:description', true, "Darwin's local solar panel installers. Residential & commercial solar, battery storage, EV chargers, federal STC incentives applied upfront. $0 deposit - Darwin, Palmerston & Alice Springs.");
     updateMeta('og:type', true, "website");
     updateMeta('og:url', true, "https://oneroofsolar.com.au/");
     updateMeta('og:locale', true, "en_AU");
     updateMeta('twitter:card', false, "summary_large_image");
     updateMeta('twitter:title', false, "Solar Panels Darwin | Oneroof Solar - Installation, Battery & NT Rebates");
-    updateMeta('twitter:description', false, "Darwin's local solar panel installers. Residential & commercial solar, battery storage, EV chargers, NT Battery Grant paperwork handled for you.");
+    updateMeta('twitter:description', false, "Darwin's local solar panel installers. Residential & commercial solar, battery storage, EV chargers, federal STC incentives applied upfront.");
 
     let canonicalEl = document.querySelector('link[rel="canonical"]');
     if (!canonicalEl) {
@@ -98,10 +98,10 @@ export function Home() {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-          {"@type": "Question", "name": "How much do solar panels cost in Darwin?", "acceptedAnswer": {"@type": "Answer", "text": "A standard 6.6kW residential solar system in Darwin costs between $7,500 and $10,000 before government incentives. After STCs the net cost is typically lower. Darwin homeowners also have access to the NT Battery Grant Scheme which reduces battery costs by up to $6,000. We provide written quotes at no charge."}},
+          {"@type": "Question", "name": "How much do solar panels cost in Darwin?", "acceptedAnswer": {"@type": "Answer", "text": "A standard 6.6kW residential solar system in Darwin costs between $7,500 and $10,000 before government incentives. After STCs the net cost is typically lower. Federal solar incentives help reduce upfront system costs. We provide written quotes at no charge."}},
           {"@type": "Question", "name": "Is solar worth it in Darwin's wet season?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Darwin receives high solar irradiance even during the wet season. While cloud cover reduces output on heavy rain days, Darwin's annual solar hours remain well above the national average. Darwin electricity prices are among the highest in Australia, which strengthens the financial case for solar year-round."}},
           {"@type": "Question", "name": "Do you install solar panels in Palmerston?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Palmerston is one of our core service areas. We install across Durack, Driver, Moulden, Gray, Woodroffe, Rosebery, Bellamack, Bakewell, Gunn, Zuccoli, Johnston, and Mitchell. Our team works in Palmerston regularly."}},
-          {"@type": "Question", "name": "What is the NT Battery Grant Scheme?", "acceptedAnswer": {"@type": "Answer", "text": "The NT Battery Grant Scheme is a Northern Territory Government program that provides eligible homeowners with a rebate of up to $6,000 towards the purchase and installation of a battery storage system. Oneroof Solar is an approved installer and handles all grant applications on your behalf."}},
+          {"@type": "Question", "name": "How do battery storage systems work in Darwin?", "acceptedAnswer": {"@type": "Answer", "text": "A solar battery stores surplus solar power generated during the day for use during peak evening hours or during wet season grid outages, maximising self-consumption and lowering your electricity bills."}},
           {"@type": "Question", "name": "Do you install solar in Alice Springs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Oneroof Solar services Alice Springs for residential and commercial solar installations. Alice Springs has excellent solar resource with very high irradiance levels year-round. Our team travels to Alice Springs regularly. Contact us for a quote specific to your Alice Springs property."}},
           {"@type": "Question", "name": "Are your solar panels cyclone rated?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All panels and racking systems we install across the NT are rated to withstand cyclone-strength winds. Darwin's building codes require higher wind load standards than most of mainland Australia. We only use mounting systems certified to NT wind categories, with a structural assessment before every installation."}},
           {"@type": "Question", "name": "Can I get solar with $0 upfront in Darwin?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Oneroof Solar offers $0 deposit solar plans through approved finance partners. Finance terms vary by product. Our team will walk you through all available options at your consultation so you can compare the true cost of each plan before committing."}},
@@ -408,7 +408,7 @@ export function Home() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-500"></span>
                 </span>
-                CEC Accredited · NT Owned & Operated
+                NT Licensed Electricians · NT Owned &amp; Operated
               </div>
               
               {/* Exact H1 markup & styles */}
@@ -422,14 +422,14 @@ export function Home() {
               
               {/* Subheading */}
               <p className="max-w-xl text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed font-light">
-                Darwin's local solar panel installers. Residential and commercial solar, battery storage, EV chargers, and $0 deposit plans across Darwin, Palmerston and Alice Springs. NT Battery Grant paperwork handled for you.
+                Darwin's local solar panel installers. Residential and commercial solar, battery storage, EV chargers, and $0 deposit plans across Darwin, Palmerston and Alice Springs. Federal STC rebates applied upfront.
               </p>
 
               {/* Stat badges */}
               <div className="flex flex-wrap gap-x-6 gap-y-3 mb-10 text-sm font-semibold text-white">
                 {[
                   "$0 Deposit Available",
-                  "NT Battery Grant Approved",
+                  "Battery Storage Specialists",
                   "Cyclone-Rated Systems",
                   "10yr Workmanship Warranty"
                 ].map((feat, i) => (
@@ -672,10 +672,10 @@ export function Home() {
           {/* First set of items */}
           <div className="trust-row">
             {[
-              "CEC Accredited Installers",
-              "NT Licensed Electricians",
+              "Licensed NT Electricians",
+              "NT Licensed Electrical Contractors",
               "$0 Deposit Solar Plans",
-              "NT Battery Grant Approved",
+              "Battery Storage Specialists",
               "500+ NT Systems Installed",
               "Tesla & Fronius Authorised"
             ].map((statement, idx) => (
@@ -690,10 +690,10 @@ export function Home() {
           {/* Second identical set for seamless looping */}
           <div className="trust-row" aria-hidden="true">
             {[
-              "CEC Accredited Installers",
-              "NT Licensed Electricians",
+              "Licensed NT Electricians",
+              "NT Licensed Electrical Contractors",
               "$0 Deposit Solar Plans",
-              "NT Battery Grant Approved",
+              "Battery Storage Specialists",
               "500+ NT Systems Installed",
               "Tesla & Fronius Authorised"
             ].map((statement, idx) => (
@@ -750,12 +750,12 @@ export function Home() {
                   </div>
                   <span className="px-4 py-1.5 rounded-full bg-brand-500/20 text-brand-400 text-xs font-bold uppercase tracking-wider border border-brand-500/30 flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse"></span>
-                    REBATE ELIGIBLE
+                    BACKUP POWER
                   </span>
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4 relative z-10 group-hover:text-brand-400 transition-colors">Battery Storage Systems</h3>
                 <p className="text-slate-400 leading-relaxed font-medium mb-6 relative z-10 flex-grow">
-                  Store your solar energy for nighttime use and protect against wet season grid outages. NT Battery Grant rebates up to $6,000 - we handle all paperwork.
+                  Store your solar energy for nighttime use and protect against wet season grid outages. Maximise daytime solar self-consumption with premium battery storage.
                 </p>
               </div>
 
@@ -1032,15 +1032,15 @@ export function Home() {
                 Your Expert Darwin Solar Installer
               </h2>
               <p className="text-slate-600 text-lg leading-relaxed mb-8">
-                As a CEC-accredited and locally owned Darwin solar company, we bring real NT expertise to every installation. We are not an interstate call centre - we are your neighbours. Our team understands Darwin's grid, Darwin's weather, and Darwin's building requirements.
+                As a licensed, locally owned Darwin solar company, we bring real NT expertise to every installation. We are not an interstate call centre - we are your neighbours. Our team understands Darwin's grid, Darwin's weather, and Darwin's building requirements.
               </p>
 
               {/* 4 Points Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
-                  { title: "CEC Accredited", desc: "Clean Energy Council accredited installer for residential and commercial systems.", icon: ShieldCheck },
+                  { title: "Licensed Electricians", desc: "Fully qualified and licensed electrical contractors for residential and commercial systems.", icon: ShieldCheck },
                   { title: "Darwin Based", desc: "NT-owned, Darwin-based team. We understand the Top End like no interstate company can.", icon: MapPin },
-                  { title: "NT Grant Partners", desc: "Approved under the NT Battery Grant Scheme. We handle all paperwork on your behalf.", icon: Award },
+                  { title: "STC Rebate Processing", desc: "We process and apply all eligible federal Small-scale Technology Certificates upfront.", icon: Award },
                   { title: "500+ Installations", desc: "Over 500 solar systems installed across Darwin, Palmerston, and the NT.", icon: Activity }
                 ].map((item, idx) => (
                   <div key={idx} className="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex gap-4">
@@ -1053,69 +1053,6 @@ export function Home() {
                     </div>
                   </div>
                 ))}
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* NT BATTERY GRANT SECTION */}
-      <section className="py-24 bg-slate-50 relative overflow-hidden border-b border-slate-100">
-        <div className="absolute inset-0 bg-dot-slate-200 opacity-40 pointer-events-none" />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-            
-            {/* Left Content */}
-            <div className="lg:col-span-7">
-              <span className="text-xs font-bold tracking-widest text-brand-600 uppercase mb-3 block">NT Government Scheme</span>
-              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-6">
-                Save Up to $6,000 on Your Solar Battery
-              </h2>
-              <p className="text-slate-600 text-lg leading-relaxed mb-8">
-                The NT Government's Battery Grant Scheme provides eligible Darwin and Northern Territory homeowners with a rebate of up to $6,000 towards the cost of a solar battery storage system. Oneroof Solar is an approved installer - we handle all paperwork on your behalf.
-              </p>
-
-              {/* Bullet list */}
-              <div className="space-y-4 mb-8">
-                {[
-                  "$6,000 NT Battery Grant Rebate",
-                  "Available to NT homeowners across all postcodes",
-                  "Oneroof Solar handles all grant paperwork",
-                  "Combine with $0 deposit finance for zero upfront cost",
-                  "Available while scheme funds last - enquire now"
-                ].map((pt, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-brand-100 border border-brand-200 flex items-center justify-center text-brand-600 flex-shrink-0">
-                      <CheckCircle2 className="w-3.5 h-3.5" />
-                    </div>
-                    <span className="text-slate-700 text-base font-medium">{pt}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right Callout Box */}
-            <div className="lg:col-span-5 w-full">
-              <div className="bg-white rounded-3xl border border-slate-200 p-8 shadow-xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-24 h-24 bg-brand-500/5 rounded-bl-[80px] pointer-events-none" />
-                <span className="px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-600 text-xs font-bold uppercase tracking-wider border border-brand-200 flex items-center gap-1.5 mb-6 w-max">
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse"></span>
-                  REBATE ENQUIRY
-                </span>
-                <h3 className="text-2xl font-black text-slate-900 mb-3">Check Your Eligibility Today</h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-8 font-medium">
-                  Speak with our Darwin team to confirm your eligibility for the NT Battery Grant Scheme. We prepare and submit the complete application on your behalf - you just need to be an NT homeowner.
-                </p>
-
-                <div className="space-y-3 flex flex-col">
-                  <Button size="lg" className="rounded-full w-full h-12 text-base font-bold bg-[#8cc63f] hover:bg-[#7bc034] text-slate-900" asChild>
-                    <Link to="/contact">View NT Battery Grant Details</Link>
-                  </Button>
-                  <Button size="lg" variant="outline" className="rounded-full w-full h-12 text-base font-bold text-slate-700 border-slate-200" asChild>
-                    <Link to="/contact">Talk to Our Darwin Team</Link>
-                  </Button>
-                </div>
               </div>
             </div>
 
@@ -1184,7 +1121,7 @@ export function Home() {
                 {[
                   { title: "Wet Season Backup Power", desc: "Keep your fridge, lights, and critical appliances running during Darwin wet season grid outages.", icon: ShieldCheck },
                   { title: "Store Energy - Use It at Night", desc: "Store excess solar energy during the day and use it during evening peak hours. Cut your power bill significantly.", icon: Sun },
-                  { title: "NT Battery Grant - Up to $6,000 Off", desc: "Eligible homeowners save up to $6,000 on battery installation. We are an approved NT Grant Scheme installer.", icon: Award }
+                  { title: "Smart Energy Storage", desc: "Maximise daytime solar self-consumption and protect your home against unexpected grid interruptions.", icon: Award }
                 ].map((pt, idx) => (
                   <div key={idx} className="flex gap-4">
                     <div className="flex-shrink-0 w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-brand-400">
@@ -1541,7 +1478,7 @@ export function Home() {
               <div className="lg:w-2/3 z-10 grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                 {[
                   { title: "25-Year Performance Warranty", description: "Your solar panels are guaranteed to produce high yields for a quarter of a century." },
-                  { title: "CEC Accredited Experts", description: "Every installation is carried out by Clean Energy Council approved electricians." },
+                  { title: "Licensed NT Electricians", description: "Every installation is carried out by fully qualified and licensed NT electricians." },
                   { title: "10-Year Workmanship Warranty", description: "Flawless execution backed by our rigorous quality control and extended guarantee." },
                   { title: "Local NT Support", description: "We're right here in the Territory. Fast response times and dedicated local service." }
                 ].map((item, i) => {
@@ -1609,7 +1546,7 @@ export function Home() {
                   name: "David L.",
                   location: "Bakewell, Palmerston",
                   project: "Battery Storage",
-                  text: "The NT Battery Grant paperwork looked complicated. Oneroof handled the whole application, confirmed we were eligible, and the rebate came through without any issues. Would have been stuck without their help."
+                  text: "We were looking for reliable battery storage for our Palmerston home. Oneroof handled the entire installation and system setup smoothly. The battery has been flawless through storm season."
                 },
                 {
                   name: "Jane R.",
@@ -1687,7 +1624,7 @@ export function Home() {
             {[
               {
                 q: "How much do solar panels cost in Darwin?",
-                a: "A standard 6.6kW residential solar system in Darwin costs between $7,500 and $10,000 before government incentives. After STCs the net cost is typically lower. Darwin homeowners also have access to the NT Battery Grant Scheme which reduces battery costs by up to $6,000. We provide written quotes at no charge."
+                a: "A standard 6.6kW residential solar system in Darwin costs between $7,500 and $10,000 before government incentives. After STCs the net cost is typically lower. Federal solar incentives help reduce upfront system costs. We provide written quotes at no charge."
               },
               {
                 q: "Is solar worth it in Darwin's wet season?",
@@ -1698,8 +1635,8 @@ export function Home() {
                 a: "Yes. Palmerston is one of our core service areas. We install across Durack, Driver, Moulden, Gray, Woodroffe, Rosebery, Bellamack, Bakewell, Gunn, Zuccoli, Johnston, and Mitchell. Our team works in Palmerston regularly."
               },
               {
-                q: "What is the NT Battery Grant Scheme?",
-                a: "The NT Battery Grant Scheme is a Northern Territory Government program that provides eligible homeowners with a rebate of up to $6,000 towards the purchase and installation of a battery storage system. Oneroof Solar is an approved installer and handles all grant applications on your behalf."
+                q: "How do battery storage systems work in Darwin?",
+                a: "A solar battery stores surplus solar power generated during the day for use during peak evening hours or during wet season grid outages, maximising self-consumption and lowering your electricity bills."
               },
               {
                 q: "Do you install solar in Alice Springs?",

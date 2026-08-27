@@ -160,7 +160,7 @@ export function GoodWeInvertersPage() {
                 <div className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-6 text-xs text-slate-400 font-semibold font-mono">
                   <span className="flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-[#5BC94D]" />
-                    CEC Approved Inverters
+                    Certified Quality Inverters
                   </span>
                   <span className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-[#5BC94D]" />
@@ -1136,7 +1136,7 @@ export function GoodWeInvertersPage() {
             <div className="relative rounded-3xl overflow-hidden border border-[#5BC94D]/30 bg-gradient-to-b from-slate-900 to-[#0B1520] p-8 sm:p-14 lg:p-16 text-center shadow-2xl">
               <div className="max-w-3xl mx-auto relative z-10">
                 <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/15 text-[#5BC94D] border border-[#5BC94D]/30 text-xs font-mono font-bold uppercase tracking-wider mb-6">
-                  CEC Accredited Supply &amp; Installation
+                  Licensed Supply &amp; Installation
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide leading-tight mb-6">
@@ -1144,7 +1144,7 @@ export function GoodWeInvertersPage() {
                 </h2>
 
                 <p className="text-slate-200 text-base sm:text-lg lg:text-xl leading-relaxed font-medium mb-8 max-w-2xl mx-auto">
-                  Whether it's a compact single phase system for a standard Darwin home or a larger three phase hybrid for a bigger property or business, our CEC-accredited team will help you choose the right GoodWe system and handle the full supply and installation. Call 0483 986 444 or book your free assessment today.
+                  Whether it's a compact single phase system for a standard Darwin home or a larger three phase hybrid for a bigger property or business, our licensed local team will help you choose the right GoodWe system and handle the full supply and installation. Call 0483 986 444 or book your free assessment today.
                 </p>
 
                 <div className="flex flex-wrap items-center justify-center gap-4 pt-4 border-t border-slate-800/80">

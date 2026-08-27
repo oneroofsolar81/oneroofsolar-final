@@ -137,7 +137,7 @@ export function SolarAliceSprings() {
           "name": "What solar rebates are available in Alice Springs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Alice Springs homeowners qualify for the federal STC rebate, along with the NT Battery Scheme for eligible homeowners adding battery storage. Both are applied upfront, no separate claiming required."
+            "text": "Alice Springs homeowners qualify for the federal STC rebate on eligible solar and battery installations, which is applied upfront with no separate claiming required."
           }
         },
         {
@@ -255,7 +255,7 @@ export function SolarAliceSprings() {
     },
     {
       q: "What solar rebates are available in Alice Springs?",
-      a: "Alice Springs homeowners qualify for the federal STC rebate, along with the NT Battery Scheme for eligible homeowners adding battery storage. Both are applied upfront, no separate claiming required."
+      a: "Alice Springs homeowners qualify for the federal STC rebate on eligible solar and battery installations, which is applied upfront with no separate claiming required."
     },
     {
       q: "Who is the best solar company in Alice Springs?",
@@ -516,7 +516,7 @@ export function SolarAliceSprings() {
                   Hybrid Solar and Battery System
                 </h3>
                 <p className="text-slate-300 text-sm leading-relaxed mb-4">
-                  A solar and battery system combines your PV panels with a home or commercial battery. Excess energy generated during the long desert days is stored for use in the evening, reducing your grid import rate to near zero on most days. Battery scheme rebates may apply to eligible NT homeowners adding storage.
+                  A solar and battery system combines your PV panels with a home or commercial battery. Excess energy generated during the long desert days is stored for use in the evening, reducing your grid import rate to near zero on most days, maximizing your daytime solar generation.
                 </p>
               </div>
               <div className="mt-4 pt-4 border-t border-white/5">
@@ -558,7 +558,7 @@ export function SolarAliceSprings() {
                 How We Deliver Your Solar System in Alice Springs
               </h2>
               <p className="text-[#5BC94D] text-xs sm:text-sm font-bold uppercase tracking-widest">
-                A fully managed 5 step process from your first call to switching on your new system. We handle every stage including permits, CEC compliance and grid connection.
+                A fully managed 5 step process from your first call to switching on your new system. We handle every stage including permits, safety compliance and grid connection.
               </p>
             </FadeIn>
           </div>
@@ -599,7 +599,7 @@ export function SolarAliceSprings() {
                 <FadeIn>
                   <h3 className="text-lg font-black text-white uppercase tracking-tight mb-2">3. Permits and Approvals</h3>
                   <p className="text-slate-300 text-sm leading-relaxed">
-                    We prepare all required documentation for NT building approvals and grid interconnection. No building permit is required for most residential solar installations in Alice Springs, provided the panels are CEC approved and the installer is CEC accredited. All systems must comply with AS 4777 grid connection standards.
+                    We prepare all required documentation for NT building approvals and grid interconnection. No building permit is required for most residential solar installations in Alice Springs, provided the panels and components are certified to Australian standards and installed by licensed electricians. All systems must comply with AS 4777 grid connection standards.
                   </p>
                 </FadeIn>
               </div>
@@ -614,7 +614,7 @@ export function SolarAliceSprings() {
                 <FadeIn>
                   <h3 className="text-lg font-black text-white uppercase tracking-tight mb-2">4. Expert Installation</h3>
                   <p className="text-slate-300 text-sm leading-relaxed">
-                    Our CEC accredited electricians install your system to full NT building standards with heat rated mounting. Most residential solar system installations are completed in 1 to 2 days with minimal disruption to your household or business.
+                    Our licensed electricians install your system to full NT building standards with heat rated mounting. Most residential solar system installations are completed in 1 to 2 days with minimal disruption to your household or business.
                   </p>
                 </FadeIn>
               </div>
@@ -646,7 +646,7 @@ export function SolarAliceSprings() {
                 Solar Rebates Available to Alice Springs Home and Business Owners in 2026
               </h2>
               <p className="text-slate-400 text-sm sm:text-base font-semibold uppercase tracking-widest text-[#5BC94D]">
-                Alice Springs homeowners and businesses qualify for federal and territory level incentives that significantly reduce the upfront cost of a solar system. All rebates are applied before you pay.
+                Alice Springs homeowners and businesses qualify for federal incentives that significantly reduce the upfront cost of a solar system. All rebates are applied before you pay.
               </p>
             </FadeIn>
           </div>
@@ -663,9 +663,9 @@ export function SolarAliceSprings() {
 
             <FadeIn delay={0.2} className="bg-slate-900/40 rounded-[2.5rem] p-8 border border-white/10 flex flex-col h-full justify-between shadow-lg">
               <div>
-                <h3 className="text-xl font-black text-white mb-4 uppercase tracking-tight">NT Battery Scheme</h3>
+                <h3 className="text-xl font-black text-white mb-4 uppercase tracking-tight">Feed-in Tariffs & Grid Incentives</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  The Northern Territory Government offers additional rebates for eligible NT homeowners adding battery storage to a new or existing solar system. Contact Oneroof Solar to confirm current eligibility for your Alice Springs property and system size.
+                  Export your excess solar power back to the grid and receive feed-in credits on your Jacana Energy electricity bill. Our team ensures your system is properly metered and registered to maximize ongoing financial returns.
                 </p>
               </div>
             </FadeIn>

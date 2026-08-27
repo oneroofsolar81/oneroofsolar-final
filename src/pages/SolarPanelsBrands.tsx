@@ -109,7 +109,7 @@ export function SolarPanelsBrands() {
     },
     {
       q: "Are these panels covered by the STC rebate in the NT?",
-      a: "Yes. AIKO received Clean Energy Council approval in March 2026. REC and Jinko have been CEC approved for years. All three qualify for the federal STC rebate on NT installations, which is deducted from your system price before you pay.",
+      a: "Yes. AIKO, REC, and Jinko panels are fully certified and compliant with Australian standards. All three qualify for the federal STC rebate on NT installations, which is deducted from your system price before you pay.",
     },
     {
       q: "Which solar panel has the best warranty?",
@@ -221,7 +221,7 @@ export function SolarPanelsBrands() {
           "name": "Are these panels covered by the STC rebate in the NT?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. AIKO received Clean Energy Council approval in March 2026. REC and Jinko have been CEC approved for years. All three qualify for the federal STC rebate on NT installations, which is deducted from your system price before you pay."
+            "text": "Yes. AIKO, REC, and Jinko panels are fully certified and compliant with Australian standards. All three qualify for the federal STC rebate on NT installations, which is deducted from your system price before you pay."
           }
         },
         {
@@ -534,7 +534,7 @@ export function SolarPanelsBrands() {
                 Compare Our <span className="text-brand-600">Solar Panel Brands</span>
               </h2>
               <p className="text-slate-600 font-medium text-base sm:text-lg leading-relaxed">
-                All five brands are CEC approved, STC eligible and cyclone rated for NT installations. The right choice depends on your roof size, budget and how long you plan to stay in the property.
+                All five brands are fully certified, STC eligible and cyclone rated for NT installations. The right choice depends on your roof size, budget and how long you plan to stay in the property.
               </p>
             </FadeIn>
           </div>
@@ -759,7 +759,7 @@ export function SolarPanelsBrands() {
                 Safe and Certified
               </h3>
               <p className="text-slate-600 font-medium leading-relaxed text-sm sm:text-base">
-                Every installation is carried out exclusively by our Clean Energy Council (CEC) accredited electricians to meet strict Australian safety standards and Northern Territory building regulations. Your system is grid connected through Power and Water Corporation once all certifications are confirmed.
+                Every installation is carried out exclusively by our licensed electricians to meet strict Australian safety standards and Northern Territory building regulations. Your system is grid connected through Power and Water Corporation once all certifications are confirmed.
               </p>
             </FadeIn>
           </div>
@@ -801,7 +801,7 @@ export function SolarPanelsBrands() {
               <span className="text-4xl font-black text-brand-500 font-mono block mb-4">03</span>
               <h3 className="text-lg font-bold text-slate-900 mb-3">3. Expert Installation</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
-                Our CEC accredited installers fit your system safely and neatly to NT building standards. The installation is swift and causes minimal disruption to your household. All cyclone-rated mounting requirements are handled by our team.
+                Our licensed installers fit your system safely and neatly to NT building standards. The installation is swift and causes minimal disruption to your household. All cyclone-rated mounting requirements are handled by our team.
               </p>
             </FadeIn>
 

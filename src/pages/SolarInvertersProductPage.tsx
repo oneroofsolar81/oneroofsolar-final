@@ -138,7 +138,7 @@ export function SolarInvertersProductPage() {
           "name": "Does my solar inverter need to be AS 4777 compliant?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. All solar inverters installed must be AS 4777 compliant before Power and Water Corporation approves grid connection. All five inverter brands Oneroof Solar installs are AS 4777 certified and CEC approved. Our installers handle all compliance documentation and Power and Water Corporation paperwork as part of every installation."
+            "text": "Yes. All solar inverters installed must be AS 4777 compliant before Power and Water Corporation approves grid connection. All five inverter brands Oneroof Solar installs are AS 4777 certified and fully approved for Australian grid connection. Our installers handle all compliance documentation and Power and Water Corporation paperwork as part of every installation."
           }
         },
         {
@@ -155,7 +155,7 @@ export function SolarInvertersProductPage() {
 
   const trustBadges = [
     "5 Brands Available",
-    "CEC Approved",
+    "Grid Approved",
     "Local Team",
     "AS 4777 Compliant",
     "Residential and Commercial"
@@ -241,7 +241,7 @@ export function SolarInvertersProductPage() {
     },
     {
       q: "Does my solar inverter need to be AS 4777 compliant?",
-      a: "Yes. All solar inverters installed must be AS 4777 compliant before Power and Water Corporation approves grid connection. All five inverter brands Oneroof Solar installs are AS 4777 certified and CEC approved. Our installers handle all compliance documentation and Power and Water Corporation paperwork as part of every installation."
+      a: "Yes. All solar inverters installed must be AS 4777 compliant before Power and Water Corporation approves grid connection. All five inverter brands Oneroof Solar installs are AS 4777 certified and fully approved for Australian grid connection. Our installers handle all compliance documentation and Power and Water Corporation paperwork as part of every installation."
     },
     {
       q: "What does a hybrid inverter do that a standard inverter does not?",
@@ -478,7 +478,7 @@ export function SolarInvertersProductPage() {
               Solar Inverter Brands We Install
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-12 max-w-4xl">
-              All five brands are CEC approved, AS 4777 compliant and supported by our Darwin and Alice Springs installation teams.
+              All five brands are AS 4777 compliant, grid-approved and supported by our Darwin and Alice Springs installation teams.
             </p>
 
             {/* Brand Cards Grid */}

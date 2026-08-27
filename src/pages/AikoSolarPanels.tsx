@@ -188,7 +188,7 @@ export function AikoSolarPanels() {
           "name": "How much do AIKO solar panels cost in Darwin?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "AIKO panels cost around $700 to $900 more than standard brands for a full 6.6kW system. The STC rebate applies to all AIKO installations in Darwin as CEC approval was granted in March 2026. Contact Oneroof Solar for a current quote with the STC discount already applied."
+            "text": "AIKO panels cost around $700 to $900 more than standard brands for a full 6.6kW system. The STC rebate applies to all AIKO installations in Darwin as they meet all Australian certification standards. Contact Oneroof Solar for a current quote with the STC discount already applied."
           }
         },
         {
@@ -196,7 +196,7 @@ export function AikoSolarPanels() {
           "name": "Are AIKO solar panels cyclone rated for Darwin?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. AIKO Gen 3 panels meet the structural wind load requirements for Darwin's cyclone zone. Every Oneroof Solar installation is carried out by CEC accredited electricians to full Northern Territory building standards, satisfying Power and Water Corporation grid connection requirements."
+            "text": "Yes. AIKO Gen 3 panels meet the structural wind load requirements for Darwin's cyclone zone. Every Oneroof Solar installation is carried out by licensed electricians to full Northern Territory building standards, satisfying Power and Water Corporation grid connection requirements."
           }
         },
         {
@@ -237,12 +237,12 @@ export function AikoSolarPanels() {
       info: "Lower degradation than standard N-type TOPCon at 0.4% per year. More electricity produced in Year 20 compared with other brands."
     },
     {
-      title: "CEC Approved — March 2026",
+      title: "Australian Standards Certified",
       info: "STC rebate eligible for all NT residential and commercial installations."
     },
     {
       title: "Cyclone Rated",
-      info: "Structural wind-load certified for Darwin NT building standards. Every installation is completed by CEC-accredited electricians."
+      info: "Structural wind-load certified for Darwin NT building standards. Every installation is completed by licensed electricians."
     }
   ];
 
@@ -261,11 +261,11 @@ export function AikoSolarPanels() {
     },
     {
       q: "How much do AIKO solar panels cost in Darwin?",
-      a: "AIKO panels cost around $700 to $900 more than standard brands for a full 6.6 kW system. The STC rebate applies to all AIKO installations in Darwin, as CEC approval was granted in March 2026. Contact Oneroof Solar for a current quote with the STC discount already applied."
+      a: "AIKO panels cost around $700 to $900 more than standard brands for a full 6.6 kW system. The STC rebate applies to all AIKO installations in Darwin, as they meet all Australian certification standards. Contact Oneroof Solar for a current quote with the STC discount already applied."
     },
     {
       q: "Are AIKO solar panels cyclone rated for Darwin?",
-      a: "Yes. AIKO Gen 3 panels meet the structural wind-load requirements for Darwin’s cyclone zone. Every Oneroof Solar installation is carried out by CEC-accredited electricians to full Northern Territory building standards, satisfying Power and Water Corporation grid-connection requirements."
+      a: "Yes. AIKO Gen 3 panels meet the structural wind-load requirements for Darwin’s cyclone zone. Every Oneroof Solar installation is carried out by licensed electricians to full Northern Territory building standards, satisfying Power and Water Corporation grid-connection requirements."
     },
     {
       q: "How do AIKO panels compare with Jinko and REC?",
@@ -447,7 +447,7 @@ export function AikoSolarPanels() {
                     AIKO Models We Supply
                   </h2>
                   <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-6">
-                    We supply the AIKO Gen 3 ABC Neostar series for residential and commercial installations across the NT. Every AIKO panel we install across the NT is CEC approved, cyclone rated and backed by a 30-year performance warranty. Download the full datasheet for complete model-level specifications including exact wattages, dimensions and cyclone certification data.
+                    We supply the AIKO Gen 3 ABC Neostar series for residential and commercial installations across the NT. Every AIKO panel we install across the NT is fully certified, cyclone rated and backed by a 30-year performance warranty. Download the full datasheet for complete model-level specifications including exact wattages, dimensions and cyclone certification data.
                   </p>
                 </div>
               </FadeIn>
@@ -515,7 +515,7 @@ export function AikoSolarPanels() {
                     <div className="p-2.5 rounded-xl bg-brand-50 text-brand-600 border border-brand-100">
                       <Check className="w-5 h-5" />
                     </div>
-                    <h3 className="font-bold text-sm text-slate-900 uppercase tracking-wider">CEC Approved — March 2026</h3>
+                    <h3 className="font-bold text-sm text-slate-900 uppercase tracking-wider">Australian Standards Certified</h3>
                   </div>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
                     STC rebate eligible for all NT residential and commercial installations.
@@ -531,7 +531,7 @@ export function AikoSolarPanels() {
                     <h3 className="font-bold text-sm text-slate-900 uppercase tracking-wider">Cyclone Rated</h3>
                   </div>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
-                    Structural wind-load certified for Darwin NT building standards. Every installation by CEC-accredited electricians.
+                    Structural wind-load certified for Darwin NT building standards. Every installation by licensed electricians.
                   </p>
                 </div>
 
