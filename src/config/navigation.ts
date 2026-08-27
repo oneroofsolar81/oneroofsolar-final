@@ -59,7 +59,6 @@ export const servicesMenu: NavItem[] = [
   {
     label: "Solar Panels",
     href: "/solar-panels-darwin",
-    overviewLabel: "Solar Panels Overview",
     iconName: "Sun",
     children: [
       {
@@ -79,7 +78,6 @@ export const servicesMenu: NavItem[] = [
   {
     label: "Solar Inverters",
     href: "/services/solar-inverters",
-    overviewLabel: "Solar Inverters Overview",
     iconName: "Cpu",
     children: [
       {
@@ -94,8 +92,7 @@ export const servicesMenu: NavItem[] = [
   },
   {
     label: "Solar Batteries",
-    href: "/services/battery-storage",
-    overviewLabel: "Solar Batteries Overview",
+    href: "/services/solar-battery-installation",
     iconName: "Battery",
     children: [
       {
@@ -141,12 +138,6 @@ export const mainNavConfig: NavItem[] = [
     type: "mega-menu",
     children: [
       {
-        label: "EV Chargers",
-        href: "/services/ev-chargers",
-        description: "Smart EV charging solutions for home & business.",
-        iconName: "Zap",
-      },
-      {
         label: "Solar Inverters",
         href: "/products/solar-inverters",
         description: "High-efficiency string & hybrid inverters.",
@@ -175,21 +166,28 @@ export const mainNavConfig: NavItem[] = [
         ],
       },
       {
-        label: "Battery Storage Solutions",
-        href: "/services/battery-storage",
-        description: "Store excess solar energy for day & night.",
-        iconName: "BatteryCharging",
-      },
-      {
         label: "Solar Panel Brands",
         href: "/product/solar-panels-brands",
+        iconName: "Sun",
         children: [
           { label: "AIKO", href: "/solar-panels-brands/aiko/" },
-          { label: "JA Solar", href: "/product/solar-panels-brands/ja-solar-panels-nt" },
-          { label: "Jinko Solar", href: "/solar-panels-brands/jinko/" },
+          { label: "Jinko Solar", href: "/solar-panels/jinko/" },
           { label: "LONGi Solar", href: "/solar-panels-brands/longi/" },
           { label: "REC Solar", href: "/solar-panels-brands/rec/" },
+          { label: "JA Solar", href: "/product/solar-panels-brands/ja-solar-panels-nt" },
         ],
+      },
+      {
+        label: "EV Chargers",
+        href: "/services/ev-chargers",
+        description: "Smart EV charging solutions for home & business.",
+        iconName: "Zap",
+      },
+      {
+        label: "Battery Storage Solutions",
+        href: "/services/solar-battery-installation",
+        description: "Store excess solar energy for day & night.",
+        iconName: "BatteryCharging",
       },
     ],
   },
