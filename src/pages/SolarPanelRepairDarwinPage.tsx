@@ -90,7 +90,7 @@ export function SolarPanelRepairDarwinPage() {
             "name": "Who do I contact about solar panel repairs in Darwin?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "You should contact Oneroof Solar on 0483 986 444. Always ensure you hire a Clean Energy Council (CEC) accredited solar technician for any diagnostics or repairs, as solar systems operate at high DC voltages that require specialized safety training and equipment."
+              "text": "You should contact Oneroof Solar on 0483 986 444. Always ensure you hire a licensed solar electrician for any diagnostics or repairs, as solar systems operate at high DC voltages that require specialized safety training and equipment."
             }
           },
           {
@@ -198,7 +198,7 @@ export function SolarPanelRepairDarwinPage() {
     },
     {
       q: "Who do I contact about solar panel repairs in Darwin?",
-      a: "You should contact Oneroof Solar on 0483 986 444. Always ensure you hire a Clean Energy Council (CEC) accredited solar technician for any diagnostics or repairs, as solar systems operate at high DC voltages that require specialized safety training and equipment."
+      a: "You should contact Oneroof Solar on 0483 986 444. Always ensure you hire a licensed solar electrician for any diagnostics or repairs, as solar systems operate at high DC voltages that require specialized safety training and equipment."
     },
     {
       q: "Do you repair solar panels you did not install?",
@@ -304,7 +304,7 @@ export function SolarPanelRepairDarwinPage() {
                 Darwin's Local Solar Panel Repair Specialists
               </h2>
               <p className="text-lg font-medium text-slate-600 leading-relaxed max-w-2xl mx-auto">
-                Oneroof Solar is a locally operated solar company serving Darwin, Palmerston, and the wider NT. Our CEC-accredited technicians repair all panel brands and all system types — residential and commercial, grid-tied and off-grid. We assess each panel individually, diagnose the exact fault, and quote before we touch anything.
+                Oneroof Solar is a locally operated solar company serving Darwin, Palmerston, and the wider NT. Our licensed technicians repair all panel brands and all system types — residential and commercial, grid-tied and off-grid. We assess each panel individually, diagnose the exact fault, and quote before we touch anything.
               </p>
             </FadeIn>
           </div>
@@ -318,7 +318,7 @@ export function SolarPanelRepairDarwinPage() {
                 icon: MapPin,
               },
               {
-                title: "CEC-Accredited",
+                title: "Licensed Specialists",
                 desc: "Certified for all solar electrical work, guaranteeing top safety and regulatory compliance.",
                 icon: Shield,
               },
@@ -385,7 +385,7 @@ export function SolarPanelRepairDarwinPage() {
                 Solar Panel Repair Services We Provide
               </h2>
               <p className="text-lg font-medium text-slate-600">
-                Professional repair, restoration, and replacement services delivered by Darwin's local Clean Energy Council accredited team.
+                Professional repair, restoration, and replacement services delivered by Darwin's local licensed solar team.
               </p>
             </FadeIn>
           </div>
@@ -449,7 +449,7 @@ export function SolarPanelRepairDarwinPage() {
             <div className="absolute bottom-8 left-8 right-8 text-white flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div className="max-w-xl">
                 <span className="text-brand-400 font-black text-xs uppercase tracking-widest">// professional_excellence</span>
-                <h4 className="text-2xl sm:text-3xl font-black mt-2 leading-tight uppercase">CEC Accredited Workmanship</h4>
+                <h4 className="text-2xl sm:text-3xl font-black mt-2 leading-tight uppercase">Certified Quality Workmanship</h4>
                 <p className="text-slate-200 font-medium text-sm sm:text-base mt-2">Every inspection, repair, and component installation is certified to comply with standard NT cyclonic wind loads and Australian electrical regulations.</p>
               </div>
             </div>

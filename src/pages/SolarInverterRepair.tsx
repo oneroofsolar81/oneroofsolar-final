@@ -32,14 +32,14 @@ export function SolarInverterRepair() {
 
   const seoData = {
     title: "Solar Inverter Repair Darwin NT | Fast Diagnosis | Oneroof Solar",
-    metaDescription: "CEC-accredited solar inverter repair in Darwin. Fast fault diagnosis of all major brands and honest repair-or-replace advice. Book a callout today.",
+    metaDescription: "Licensed solar inverter repair in Darwin. Fast fault diagnosis of all major brands and honest repair-or-replace advice. Book a callout today.",
     canonicalUrl: "https://oneroofsolar.com.au/services/solar-inverters/repair",
     robots: "index, follow",
     openGraphTitle: "Solar Inverter Repair Darwin NT | Fast Diagnosis | Oneroof Solar",
-    openGraphDescription: "CEC-accredited solar inverter repair in Darwin. Fast fault diagnosis of all major brands and honest repair-or-replace advice. Book a callout today.",
+    openGraphDescription: "Licensed solar inverter repair in Darwin. Fast fault diagnosis of all major brands and honest repair-or-replace advice. Book a callout today.",
     openGraphImage: "https://oneroofsolar.com.au/assets/images/repair_hero_diag_1785343403327.jpg",
     twitterTitle: "Solar Inverter Repair Darwin NT | Fast Diagnosis | Oneroof Solar",
-    twitterDescription: "CEC-accredited solar inverter repair in Darwin. Fast fault diagnosis of all major brands and honest repair-or-replace advice.",
+    twitterDescription: "Licensed solar inverter repair in Darwin. Fast fault diagnosis of all major brands and honest repair-or-replace advice.",
     twitterImage: "https://oneroofsolar.com.au/assets/images/repair_hero_diag_1785343403327.jpg",
   };
 
@@ -55,7 +55,7 @@ export function SolarInverterRepair() {
         "email": "info@oneroofsolar.com.au"
       },
       "areaServed": "Darwin, Northern Territory",
-      "description": "Fast, CEC-accredited solar inverter repairs for Darwin homes, businesses, and off grid properties.",
+      "description": "Fast, licensed solar inverter repairs for Darwin homes, businesses, and off grid properties.",
       "url": "https://oneroofsolar.com.au/services/solar-inverters/repair"
     },
     {
@@ -121,7 +121,7 @@ export function SolarInverterRepair() {
           "name": "Can I repair a solar inverter myself?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Solar inverters carry both DC and AC voltage and remain live even when the grid is switched off. DIY repair is a genuine electrical hazard and will usually void your warranty. Always use a licensed, CEC-accredited technician."
+            "text": "No. Solar inverters carry both DC and AC voltage and remain live even when the grid is switched off. DIY repair is a genuine electrical hazard and will usually void your warranty. Always use a licensed solar technician."
           }
         },
         {
@@ -137,7 +137,7 @@ export function SolarInverterRepair() {
           "name": "Does a repair void my inverter's warranty?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Not if it's carried out by an authorised, CEC-accredited technician. Unauthorised repairs, including DIY attempts, are what typically void a manufacturer's warranty, so we check your warranty status before doing any work."
+            "text": "Not if it's carried out by an authorised, licensed technician. Unauthorised repairs, including DIY attempts, are what typically void a manufacturer's warranty, so we check your warranty status before doing any work."
           }
         }
       ]
@@ -282,7 +282,7 @@ export function SolarInverterRepair() {
     },
     {
       q: "Can I repair a solar inverter myself?",
-      a: "No. Solar inverters carry both DC and AC voltage and remain live even when the grid is switched off. DIY repair is a genuine electrical hazard and will usually void your warranty. Always use a licensed, CEC-accredited technician."
+      a: "No. Solar inverters carry both DC and AC voltage and remain live even when the grid is switched off. DIY repair is a genuine electrical hazard and will usually void your warranty. Always use a licensed solar technician."
     },
     {
       q: "How long does a solar inverter repair take?",
@@ -290,7 +290,7 @@ export function SolarInverterRepair() {
     },
     {
       q: "Does a repair void my inverter's warranty?",
-      a: "Not if it's carried out by an authorised, CEC-accredited technician. Unauthorised repairs, including DIY attempts, are what typically void a manufacturer's warranty, so we check your warranty status before doing any work."
+      a: "Not if it's carried out by an authorised, licensed technician. Unauthorised repairs, including DIY attempts, are what typically void a manufacturer's warranty, so we check your warranty status before doing any work."
     }
   ];
 
@@ -335,7 +335,7 @@ export function SolarInverterRepair() {
                 </h1>
 
                 <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-6 mb-8 max-w-2xl">
-                  Fast, CEC-accredited solar inverter repairs for Darwin homes, businesses, and off grid properties, built to handle wet season lightning strikes and Dry season heat. Get your system back online without paying for a full replacement you don't need.
+                  Fast, licensed solar inverter repairs for Darwin homes, businesses, and off grid properties, built to handle wet season lightning strikes and Dry season heat. Get your system back online without paying for a full replacement you don't need.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
@@ -370,7 +370,7 @@ export function SolarInverterRepair() {
                     <img 
                       referrerPolicy="no-referrer"
                       src={heroImage} 
-                      alt="CEC-accredited technician running diagnostics on a wall-mounted inverter with a handheld tester" 
+                      alt="Licensed technician running diagnostics on a wall-mounted inverter with a handheld tester" 
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -548,7 +548,7 @@ export function SolarInverterRepair() {
                 Every Day Your Inverter Sits Broken, You're Paying Full Price for Zero Solar Power.
               </h2>
               <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto mb-8 font-medium leading-relaxed">
-                A small fault today is a full replacement bill in a few months if it's left alone. Call our CEC-accredited team for a fast diagnosis and a straight answer on repair versus replace, no upsell, just the fix your system actually needs.
+                A small fault today is a full replacement bill in a few months if it's left alone. Call our licensed solar team for a fast diagnosis and a straight answer on repair versus replace, no upsell, just the fix your system actually needs.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button
@@ -674,7 +674,7 @@ export function SolarInverterRepair() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
               <div className="lg:col-span-7 bg-slate-50 border border-slate-200 p-8 rounded-2xl sm:rounded-3xl shadow-sm space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
                 <p>
-                  We're a locally based, CEC-accredited team in Berrimah, not a call centre booking system that dispatches whoever's free. That matters for repair work, because whoever turns up already understands what Darwin's heat, humidity and Wet season storms do to an inverter over time.
+                  We're a locally based, licensed solar team in Berrimah, not a call centre booking system that dispatches whoever's free. That matters for repair work, because whoever turns up already understands what Darwin's heat, humidity and Wet season storms do to an inverter over time.
                 </p>
                 <p>
                   We repair GoodWe, Sungrow, Fox ESS, Elpha ESS and Sigenergy systems regularly, so the diagnosis is fast and the fix is right the first time. Every repair is priced before we start, every repair is done in a way that keeps your manufacturer warranty intact, and if replacement genuinely is the better option, we'll tell you that too instead of patching something that won't last. Oneroof Solar is rated 4.9 stars from 127 reviews across our solar work in Darwin.
@@ -691,7 +691,7 @@ export function SolarInverterRepair() {
                     <Star className="w-5 h-5 fill-current" />
                     <span className="text-white font-bold ml-2">4.9 / 5.0</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Local CEC-Accredited Team</h3>
+                  <h3 className="text-2xl font-bold text-white mb-4">Local Licensed Team</h3>
                   <p className="text-slate-200 text-base font-medium leading-relaxed">
                     Based in Berrimah, servicing Darwin, Palmerston, and rural NT with honest advice and warranty-safe repairs.
                   </p>

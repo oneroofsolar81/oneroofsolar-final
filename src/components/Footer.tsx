@@ -131,7 +131,7 @@ export function Footer() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-medium text-slate-400">
             <span className="px-3 py-1 pb-1.5 rounded-full bg-slate-800/50 border border-slate-700/50">Electrical Licence: NT12345</span>
-            <span className="px-3 py-1 pb-1.5 rounded-full bg-slate-800/50 border border-slate-700/50">CEC Accredited Installer</span>
+            <span className="px-3 py-1 pb-1.5 rounded-full bg-slate-800/50 border border-slate-700/50">NT Owned &amp; Operated</span>
           </div>
         </div>
       </div>

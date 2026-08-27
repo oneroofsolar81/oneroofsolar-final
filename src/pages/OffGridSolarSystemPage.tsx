@@ -357,7 +357,7 @@ export function OffGridSolarSystemPage() {
                 </div>
                 <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-2.5 rounded-xl backdrop-blur-sm">
                   <Award className="w-4 h-4 text-brand-400 shrink-0" />
-                  <span className="text-xs font-bold text-white uppercase tracking-wider">CEC Accredited</span>
+                  <span className="text-xs font-bold text-white uppercase tracking-wider">Licensed Electricians</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3.5 py-2.5 rounded-xl backdrop-blur-sm">
                   <MapPin className="w-4 h-4 text-brand-400 shrink-0" />
@@ -542,7 +542,7 @@ export function OffGridSolarSystemPage() {
                     Want to know if off-grid solar suits your NT property?
                   </h4>
                   <p className="text-slate-300 text-sm sm:text-base font-medium">
-                    Our CEC-accredited engineers model your load profile and seasonal generation.
+                    Our qualified solar engineers model your load profile and seasonal generation.
                   </p>
                 </div>
                 <Button 
@@ -670,7 +670,7 @@ export function OffGridSolarSystemPage() {
                 Exclusive Off-Grid Solar and Battery Packages
               </h2>
               <p className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
-                Complete off-grid solar systems designed for remote NT properties. Every package includes N-type panels, off-grid inverter, battery bank, cyclone-rated mounting, CEC-accredited installation and full system commissioning.
+                Complete off-grid solar systems designed for remote NT properties. Every package includes N-type panels, off-grid inverter, battery bank, cyclone-rated mounting, licensed installation and full system commissioning.
               </p>
             </FadeIn>
           </div>
@@ -710,7 +710,7 @@ export function OffGridSolarSystemPage() {
                   </div>
                   <div className="flex items-start gap-3 text-sm text-slate-700">
                     <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
-                    <span>Full CEC Installation & System Commissioning</span>
+                    <span>Full Professional Installation & System Commissioning</span>
                   </div>
                 </div>
 
@@ -758,7 +758,7 @@ export function OffGridSolarSystemPage() {
                   </div>
                   <div className="flex items-start gap-3 text-sm text-slate-200">
                     <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
-                    <span>Full On-Site CEC Commissioning & Training</span>
+                    <span>Full On-Site System Commissioning & Training</span>
                   </div>
                 </div>
 
@@ -1422,7 +1422,7 @@ export function OffGridSolarSystemPage() {
                     Installation
                   </h3>
                   <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-                    Our CEC-accredited off-grid installation team travels to your NT property and completes full system installation including panel mounting, battery bank setup, inverter and charge controller wiring, generator integration and monitoring system configuration. Remote NT installations typically take 2 to 5 days on site.
+                    Our licensed off-grid installation team travels to your NT property and completes full system installation including panel mounting, battery bank setup, inverter and charge controller wiring, generator integration and monitoring system configuration. Remote NT installations typically take 2 to 5 days on site.
                   </p>
                 </div>
               </div>
@@ -1454,7 +1454,7 @@ export function OffGridSolarSystemPage() {
                   Ready to get your remote NT property off the grid?
                 </h4>
                 <p className="text-slate-300 text-sm sm:text-base font-medium">
-                  Contact our CEC-accredited engineering team to discuss your project.
+                  Contact our qualified engineering team to discuss your project.
                 </p>
               </div>
               <Button 
@@ -1818,7 +1818,7 @@ export function OffGridSolarSystemPage() {
                     "Battery bank and generator recommendations included",
                     "STC rebate calculated and applied upfront",
                     "Transport and site access planning included",
-                    "CEC-accredited off-grid installers"
+                    "Licensed NT off-grid installers"
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />

@@ -252,7 +252,7 @@ async function generateGoodWeETG2PDF() {
     color: textDark,
   });
 
-  page1.drawText('Certified by Clean Energy Council (CEC) for installation across Darwin, Palmerston and Regional Northern Territory.', {
+  page1.drawText('Fully certified to Australian Standards for installation across Darwin, Palmerston and Regional Northern Territory.', {
     x: 55,
     y: auBoxY - 94,
     size: 8.5,

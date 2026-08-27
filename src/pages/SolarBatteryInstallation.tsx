@@ -29,14 +29,14 @@ export function SolarBatteryInstallation() {
 
   const seoData = {
     title: "Solar Battery Installation Darwin, NT | Oneroof Solar",
-    metaDescription: "CEC accredited solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
+    metaDescription: "Licensed solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
     canonicalUrl: "https://oneroofsolar.com.au/services/solar-battery-installation",
     robots: "index, follow",
     openGraphTitle: "Solar Battery Installation Darwin, NT | Oneroof Solar",
-    openGraphDescription: "CEC accredited solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
+    openGraphDescription: "Licensed solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
     openGraphImage: "https://i.postimg.cc/Nf2ytHrg/Sigenergy-(1).webp",
     twitterTitle: "Solar Battery Installation Darwin, NT | Oneroof Solar",
-    twitterDescription: "CEC accredited solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
+    twitterDescription: "Licensed solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
     twitterImage: "https://i.postimg.cc/Nf2ytHrg/Sigenergy-(1).webp",
   };
 
@@ -59,7 +59,7 @@ export function SolarBatteryInstallation() {
       }
     },
     "areaServed": "Darwin NT",
-    "description": "CEC accredited solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
+    "description": "Licensed solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
     "url": "https://oneroofsolar.com.au/services/solar-battery-installation"
   };
 
@@ -177,7 +177,7 @@ export function SolarBatteryInstallation() {
   const whyChooseUsCards = [
     {
       title: "Best Warranties",
-      desc: "Full peace of mind with comprehensive performance guarantees backed by our CEC accredited team.",
+      desc: "Full peace of mind with comprehensive performance guarantees backed by our licensed NT team.",
       icon: ShieldCheck
     },
     {
@@ -211,7 +211,7 @@ export function SolarBatteryInstallation() {
     {
       step: "3",
       title: "3. Expert Installation",
-      desc: "Our CEC accredited installers fit your system safely and to strict regulations with minimal disruption to your day."
+      desc: "Our licensed installers fit your system safely and to strict regulations with minimal disruption to your day."
     },
     {
       step: "4",
@@ -322,7 +322,7 @@ export function SolarBatteryInstallation() {
                     <Star className="w-3.5 h-3.5 fill-current" />
                     <Star className="w-3.5 h-3.5 fill-current" />
                   </div>
-                  <span>Google Rating 5.0 | CEC Accredited Installer</span>
+                  <span>Google Rating 5.0 | Licensed Solar Specialists</span>
                 </div>
 
                 {/* H1 Heading */}
@@ -406,7 +406,7 @@ export function SolarBatteryInstallation() {
               </h2>
               <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
                 <p>
-                  Expert integration of high capacity storage batteries to protect your home or business against grid outages, backed by CEC accredited installation across Darwin and the wider NT.
+                  Expert integration of high capacity storage batteries to protect your home or business against grid outages, backed by licensed installation across Darwin and the wider NT.
                 </p>
                 <p>
                   Installing a large lithium ion battery requires strict electrical safety standards. We handle the heavy lifting, secure mounting, and software syncing to your home network, so the system is ready to run from day one.
@@ -638,13 +638,13 @@ export function SolarBatteryInstallation() {
           <FadeIn>
             <div className="max-w-4xl">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-bold uppercase tracking-wider mb-4">
-                <Shield className="w-3.5 h-3.5" /> Clean Energy Council Standards
+                <Shield className="w-3.5 h-3.5" /> Australian Safety Standards
               </div>
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
-                CEC Accredited and Compliant Installation
+                Licensed and Compliant Installation
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
-                Every installation is carried out to Clean Energy Council standards and Australian wiring and safety regulations so your system is compliant insurable and eligible for any applicable rebates. Our installers handle the paperwork and inspections so you do not have to.
+                Every installation is carried out to Australian wiring and battery safety standards (AS/NZS 5139 and AS/NZS 5033) so your system is compliant, insurable and eligible for any applicable rebates. Our licensed installers handle the paperwork and inspections so you do not have to.
               </p>
             </div>
           </FadeIn>

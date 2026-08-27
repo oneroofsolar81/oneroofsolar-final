@@ -108,7 +108,7 @@ export const Terms = () => {
             6.3 The Seller may at any time sub contract or assign any right or obligation under this agreement for the purpose of providing the services. If, the Seller sub contracts any of the services the Seller warrants that it remains fully responsible for the services.
           </p>
           <p>
-            6.4 Seller will arrange (via contractors, employees and installers) the installation on your behalf of your solar PV System through CEC Accredited solar designer/installers and fully licenced electricians according to the relevant Australian standards.
+            6.4 Seller will arrange (via contractors, employees and installers) the installation on your behalf of your solar PV System through accredited solar designer/installers and fully licenced electricians according to the relevant Australian standards.
           </p>
           <p>
             6.5 Standard installation, testing and commissioning will be performed by installers in accordance with AS 4777. and ASNZS3100.
@@ -117,7 +117,7 @@ export const Terms = () => {
             6.6 Testing and commissioning documentation will be provided in accordance with AS4777 and AS4509.
           </p>
           <p>
-            6.7 All design, installation and commissioning is to be carried out by CEC accredited designers and installers for the RECs rebate.
+            6.7 All design, installation and commissioning is to be carried out by accredited designers and licensed installers for applicable rebate and regulatory compliance.
           </p>
 
           <h3>7) Installation Charges</h3>
@@ -216,7 +216,7 @@ export const Terms = () => {
             14.1 All hardware, cable and accessories are provided by the Seller for mounting, wiring and connection of product.
           </p>
           <p>
-            14.2 The Seller will arrange the ordering, delivery and installation on Your behalf for all PV components which meet all relevant Australian Standards and suitable to meet the technical requirements of CEC guidelines.
+            14.2 The Seller will arrange the ordering, delivery and installation on Your behalf for all PV components which meet all relevant Australian Standards and suitable to meet all technical requirements and regulatory guidelines.
           </p>
 
           <h3>15) Privacy</h3>

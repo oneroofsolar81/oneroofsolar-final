@@ -101,8 +101,8 @@ export function About() {
                    <Sun className="h-10 w-10" />
                 </div>
                 <div>
-                   <p className="text-lg lg:text-xl font-bold text-slate-900 leading-tight mb-1">Clean Energy Council</p>
-                   <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider">Approved Retailer</p>
+                   <p className="text-lg lg:text-xl font-bold text-slate-900 leading-tight mb-1">100% NT Local</p>
+                   <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider">Solar &amp; Battery Experts</p>
                 </div>
               </div>
             </FadeIn>
