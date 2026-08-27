@@ -226,116 +226,119 @@ export function Navbar() {
               isSolidHeader ? "py-3" : "px-2 py-2"
             }`}
           >
-            {/* Logo */}
-            <div className="flex items-center gap-2">
-              <Link to="/" className="flex items-center gap-2 relative z-50">
-                <img
-                  referrerPolicy="no-referrer"
-                  src={
+            {/* Left Section: Logo & Desktop Navigation with consistent gap across all desktop sizes */}
+            <div className="flex items-center gap-6 xl:gap-8 2xl:gap-10">
+              {/* Logo */}
+              <div className="flex items-center gap-2 flex-shrink-0">
+                <Link to="/" className="flex items-center gap-2 relative z-50">
+                  <img
+                    referrerPolicy="no-referrer"
+                    src={
+                      isSolidHeader
+                        ? "https://i.postimg.cc/44Dzn7Hk/oneroof-solar-classic.png"
+                        : "https://i.postimg.cc/vZdTgLm9/oneroof.png"
+                    }
+                    alt="Oneroof Solar Logo"
+                    className={`${
+                      scrolled ? "h-[42px] sm:h-[50px] md:h-[58px]" : "h-[50px] sm:h-[58px] md:h-[74px]"
+                    } w-auto transition-all duration-300`}
+                    fetchPriority="high"
+                    loading="eager"
+                  />
+                </Link>
+              </div>
+
+              {/* Desktop Navigation Menu */}
+              <div className="hidden lg:flex items-center">
+                <div
+                  className={`flex items-center gap-1 rounded-full p-1 transition-colors ${
                     isSolidHeader
-                      ? "https://i.postimg.cc/44Dzn7Hk/oneroof-solar-classic.png"
-                      : "https://i.postimg.cc/vZdTgLm9/oneroof.png"
-                  }
-                  alt="Oneroof Solar Logo"
-                  className={`${
-                    scrolled ? "h-[42px] sm:h-[50px] md:h-[58px]" : "h-[50px] sm:h-[58px] md:h-[74px]"
-                  } w-auto transition-all duration-300`}
-                  fetchPriority="high"
-                  loading="eager"
-                />
-              </Link>
-            </div>
+                      ? "bg-slate-100/80 border border-slate-200/60"
+                      : "bg-black/5 backdrop-blur-sm border border-black/5"
+                  }`}
+                >
+                  {navItems.map((item) => {
+                    const isDirect = item.type === "direct" || !item.children || item.children.length === 0;
+                    const itemHref = formatHref(item.href);
+                    const isItemActive = activeMegaMenu === item.label;
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
-              <div
-                className={`flex items-center gap-1 rounded-full p-1 transition-colors ${
-                  isSolidHeader
-                    ? "bg-slate-100/80 border border-slate-200/60"
-                    : "bg-black/5 backdrop-blur-sm border border-black/5"
-                }`}
-              >
-                {navItems.map((item) => {
-                  const isDirect = item.type === "direct" || !item.children || item.children.length === 0;
-                  const itemHref = formatHref(item.href);
-                  const isItemActive = activeMegaMenu === item.label;
+                    if (!isDirect) {
+                      return (
+                        <button
+                          key={item.label}
+                          onMouseEnter={() => handleMouseEnter(item)}
+                          onClick={() => setActiveMegaMenu(isItemActive ? null : item.label)}
+                          aria-expanded={isItemActive}
+                          aria-haspopup="true"
+                          aria-controls={`desktop-menu-${item.label}`}
+                          className={`desktop-nav-link text-[14px] font-semibold px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
+                            isItemActive
+                              ? "is-active bg-white text-brand-600 shadow-sm"
+                              : isSolidHeader
+                              ? "text-slate-800 hover:bg-white/60 hover:text-brand-600"
+                              : "text-white hover:bg-white/10"
+                          }`}
+                        >
+                          <span>{item.label}</span>
+                          <ChevronDown
+                            className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                              isItemActive
+                                ? "rotate-180 text-brand-600"
+                                : isSolidHeader
+                                ? "text-slate-800"
+                                : "text-white/80"
+                            }`}
+                          />
+                        </button>
+                      );
+                    }
 
-                  if (!isDirect) {
                     return (
-                      <button
+                      <Link
                         key={item.label}
+                        to={itemHref}
                         onMouseEnter={() => handleMouseEnter(item)}
-                        onClick={() => setActiveMegaMenu(isItemActive ? null : item.label)}
-                        aria-expanded={isItemActive}
-                        aria-haspopup="true"
-                        aria-controls={`desktop-menu-${item.label}`}
-                        className={`desktop-nav-link text-[14px] font-semibold px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
-                          isItemActive
-                            ? "is-active bg-white text-brand-600 shadow-sm"
+                        className={`desktop-nav-link text-[14px] font-semibold px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
+                          location.pathname === itemHref
+                            ? "bg-white text-brand-600 shadow-sm"
                             : isSolidHeader
                             ? "text-slate-800 hover:bg-white/60 hover:text-brand-600"
                             : "text-white hover:bg-white/10"
                         }`}
                       >
-                        <span>{item.label}</span>
-                        <ChevronDown
-                          className={`h-3.5 w-3.5 transition-transform duration-200 ${
-                            isItemActive
-                              ? "rotate-180 text-brand-600"
-                              : isSolidHeader
-                              ? "text-slate-800"
-                              : "text-white/80"
-                          }`}
-                        />
-                      </button>
+                        {item.label}
+                      </Link>
                     );
-                  }
-
-                  return (
-                    <Link
-                      key={item.label}
-                      to={itemHref}
-                      onMouseEnter={() => handleMouseEnter(item)}
-                      className={`desktop-nav-link text-[14px] font-semibold px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
-                        location.pathname === itemHref
-                          ? "bg-white text-brand-600 shadow-sm"
-                          : isSolidHeader
-                          ? "text-slate-800 hover:bg-white/60 hover:text-brand-600"
-                          : "text-white hover:bg-white/10"
-                      }`}
-                    >
-                      {item.label}
-                    </Link>
-                  );
-                })}
+                  })}
+                </div>
               </div>
+            </div>
 
-              {/* Call Action */}
-              <div className="flex items-center">
-                <a href={`tel:${PRIMARY_PHONE_RAW}`} className="hidden lg:flex items-center gap-2.5 group">
-                  <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                    <div className="w-7 h-7 rounded-full bg-brand-500 flex items-center justify-center">
-                      <Phone className="w-3.5 h-3.5 text-white fill-current" />
-                    </div>
+            {/* Right Section: Call Action for Desktop */}
+            <div className="hidden lg:flex items-center">
+              <a href={`tel:${PRIMARY_PHONE_RAW}`} className="flex items-center gap-2.5 group">
+                <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
+                  <div className="w-7 h-7 rounded-full bg-brand-500 flex items-center justify-center">
+                    <Phone className="w-3.5 h-3.5 text-white fill-current" />
                   </div>
-                  <div className="flex flex-col -space-y-1">
-                    <span
-                      className={`text-[13px] font-medium transition-colors ${
-                        isSolidHeader ? "text-slate-600" : "text-white/90"
-                      }`}
-                    >
-                      Give Us a Call
-                    </span>
-                    <span
-                      className={`text-[18px] font-extrabold tracking-tight transition-colors ${
-                        isSolidHeader ? "text-slate-900" : "text-white"
-                      }`}
-                    >
-                      {PRIMARY_PHONE}
-                    </span>
-                  </div>
-                </a>
-              </div>
+                </div>
+                <div className="flex flex-col -space-y-1">
+                  <span
+                    className={`text-[13px] font-medium transition-colors ${
+                      isSolidHeader ? "text-slate-600" : "text-white/90"
+                    }`}
+                  >
+                    Give Us a Call
+                  </span>
+                  <span
+                    className={`text-[18px] font-extrabold tracking-tight transition-colors ${
+                      isSolidHeader ? "text-slate-900" : "text-white"
+                    }`}
+                  >
+                    {PRIMARY_PHONE}
+                  </span>
+                </div>
+              </a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -553,44 +556,35 @@ export function Navbar() {
                           const catHref = formatHref(category.href);
                           return (
                             <div key={category.label} className="flex flex-col space-y-3">
-                              {/* Category Heading with Line Icon */}
-                              <div className="flex items-center gap-2.5 pb-3 border-b border-slate-100">
-                                <div className="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0">
-                                  {renderMenuIcon(category.iconName, "w-4 h-4")}
-                                </div>
+                              {/* Category Heading with Line Icon (Clickable Hub Heading linking to overview) */}
+                              <div className="pb-3 border-b border-slate-100">
                                 {catHref ? (
                                   <Link
                                     to={catHref}
                                     onClick={() => setActiveMegaMenu(null)}
-                                    className="text-[18px] font-bold text-slate-900 hover:text-brand-600 transition-colors"
+                                    className="flex items-center gap-2.5 group/cat"
                                   >
-                                    {category.label}
+                                    <div className="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0 group-hover/cat:bg-brand-500 group-hover/cat:text-white transition-all">
+                                      {renderMenuIcon(category.iconName, "w-4 h-4")}
+                                    </div>
+                                    <span className="text-[18px] font-bold text-slate-900 group-hover/cat:text-brand-600 transition-colors">
+                                      {category.label}
+                                    </span>
                                   </Link>
                                 ) : (
-                                  <span className="text-[18px] font-bold text-slate-900">
-                                    {category.label}
-                                  </span>
+                                  <div className="flex items-center gap-2.5">
+                                    <div className="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0">
+                                      {renderMenuIcon(category.iconName, "w-4 h-4")}
+                                    </div>
+                                    <span className="text-[18px] font-bold text-slate-900">
+                                      {category.label}
+                                    </span>
+                                  </div>
                                 )}
                               </div>
 
                               {/* Category Links List */}
                               <div className="flex flex-col space-y-1 pt-1">
-                                {/* Overview Link */}
-                                {category.overviewLabel && catHref && (
-                                  <Link
-                                    to={catHref}
-                                    onClick={() => setActiveMegaMenu(null)}
-                                    className={`text-[15px] font-semibold py-1.5 px-3 -mx-3 rounded-lg transition-colors flex items-center justify-between ${
-                                      location.pathname === catHref
-                                        ? "text-brand-600 bg-brand-50/70"
-                                        : "text-brand-600 hover:text-brand-700 hover:bg-brand-50/50"
-                                    }`}
-                                  >
-                                    <span>{category.overviewLabel}</span>
-                                    <ArrowRight className="w-3.5 h-3.5 opacity-60" />
-                                  </Link>
-                                )}
-
                                 {/* Child Links */}
                                 {category.children?.map((child) => {
                                   const childHref = formatHref(child.href);
@@ -695,30 +689,27 @@ export function Navbar() {
                     </div>
                   )}
 
-                  {/* Stack Section Heading */}
+                  {/* Stack Section Heading (Clickable to overview if href exists) */}
                   {currentMobileItem && (
                     <div className="mb-4">
-                      <h2 className="text-[24px] font-extrabold text-slate-900 tracking-tight">
-                        {currentMobileItem.label}
-                      </h2>
+                      {currentMobileItem.href ? (
+                        <Link
+                          to={formatHref(currentMobileItem.href)}
+                          onClick={handleMobileClose}
+                          className="text-[24px] font-extrabold text-slate-900 tracking-tight hover:text-brand-600 transition-colors inline-block"
+                        >
+                          {currentMobileItem.label}
+                        </Link>
+                      ) : (
+                        <h2 className="text-[24px] font-extrabold text-slate-900 tracking-tight">
+                          {currentMobileItem.label}
+                        </h2>
+                      )}
                     </div>
                   )}
 
                   {/* Navigation Item Rows */}
                   <div className="flex flex-col divide-y divide-slate-100">
-                    {/* If currentMobileItem has an href, offer Overview link first */}
-                    {currentMobileItem?.href && (
-                      <Link
-                        to={formatHref(currentMobileItem.href)}
-                        onClick={handleMobileClose}
-                        className="flex items-center justify-between min-h-[56px] py-3.5 text-[17px] font-bold text-brand-600 hover:text-brand-700 transition-colors"
-                      >
-                        <span>
-                          {currentMobileItem.overviewLabel || `${currentMobileItem.label} Overview`}
-                        </span>
-                      </Link>
-                    )}
-
                     {currentMobileList.map((item) => {
                       const hasChildren = item.children && item.children.length > 0;
                       const itemHref = formatHref(item.href);

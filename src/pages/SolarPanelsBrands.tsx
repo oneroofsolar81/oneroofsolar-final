@@ -54,7 +54,7 @@ const BRAND_PRODUCTS: ProductBrand[] = [
     remaining: "On Darwin rooftops reaching 65°C to 75°C in the dry season, REC panels retain more rated output than any other panel in our range. Backed by a comprehensive 25-year ProTrust warranty and a strong long-term track record with Australian installers.",
     bestFor: "Darwin homes where heat performance is the top priority and the NT dry season runs your panels hard every day.",
     specLabel: "Full specs and models: REC solar panels",
-    productLink: "/solar-panels/rec/",
+    productLink: "/solar-panels-brands/rec/",
     image: "https://i.postimg.cc/Th46LV0n/REC-Alpha-Series-removebg-preview.png",
   },
   {
@@ -74,7 +74,7 @@ const BRAND_PRODUCTS: ProductBrand[] = [
     remaining: "Its DeepBlue N-type TOPCon panels deliver over 22 per cent efficiency and include a 30-year performance warranty. As a Tier 1 brand, JA Solar offers proven reliability and strong value for NT homeowners.",
     bestFor: "NT homeowners seeking reliable, high-efficiency solar panels from a globally established brand at a competitive price point.",
     specLabel: "FULL SPECS AND MODELS: JA SOLAR PANELS",
-    productLink: "/product/ja-solar/",
+    productLink: "/product/solar-panels-brands/ja-solar-panels-nt",
     image: jaSolarImg,
   },
   {
@@ -84,7 +84,7 @@ const BRAND_PRODUCTS: ProductBrand[] = [
     remaining: "Its Hi-MO X6 panels use advanced HPBC technology, delivering efficiency of up to 23.3 per cent. The anti-dust frame is well suited to Darwin’s dust, humidity, and coastal salt conditions.",
     bestFor: "Darwin homeowners seeking high-efficiency solar panels designed to perform reliably in hot, humid, dusty, and coastal environments.",
     specLabel: "FULL SPECS AND MODELS: LONGi SOLAR PANELS",
-    productLink: "/product/longi-solar/",
+    productLink: "/solar-panels-brands/longi/",
     image: longiSolarImg,
   },
 ];

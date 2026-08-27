@@ -108,26 +108,228 @@ export function Home() {
           {"@type": "Question", "name": "How long does solar installation take in Darwin?", "acceptedAnswer": {"@type": "Answer", "text": "Most residential solar installations in Darwin are completed in a single day. From quote approval to switching on, most Darwin customers are operational within two to four weeks, depending on Power and Water Corporation connection timelines."}}
         ]
       },
-      // LocalBusiness
+      // LocalBusiness & OfferCatalog
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
+        "@id": "https://www.oneroofsolar.com.au/#localbusiness",
         "name": "Oneroof Solar",
-        "url": "https://oneroofsolar.com.au",
-        "telephone": "0483986444",
-        "email": "info@oneroofsolar.com.au",
-        "address": {"@type": "PostalAddress", "streetAddress": "Darwin", "addressLocality": "Darwin", "addressRegion": "NT", "postalCode": "0800", "addressCountry": "AU"},
-        "areaServed": ["0800","0810","0812","0820","0822","0828","0829","0830","0832","0836","0837","0838","0839","0840","0841","0845","0846","0847","0850","0852","0853","0886"],
-        "hasCredential": "CEC Accredited Installer",
-        "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "500"},
-        "review": [
-          {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "author": {"@type": "Person", "name": "Mark T."}, "reviewBody": "We got three quotes before going with Oneroof Solar. They were the only company that came out, looked at the roof properly, and explained why our Palmerston home needed a different system size. Done in a day, working perfectly since."},
-          {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "author": {"@type": "Person", "name": "Sarah K."}, "reviewBody": "I specifically asked about wet season performance before signing. They gave me realistic savings figures rather than best-case numbers. The battery has already paid off during two wet season outages."},
-          {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "author": {"@type": "Person", "name": "David L."}, "reviewBody": "The NT Battery Grant paperwork looked complicated. Oneroof handled the whole application, confirmed we were eligible, and the rebate came through without any issues. Would have been stuck without their help."},
-          {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "author": {"@type": "Person", "name": "Jane R."}, "reviewBody": "Based in Alice Springs so we don't get many solar companies willing to come out. Oneroof were straightforward about travel costs, quoted fairly, and did the job properly first time. Monitoring shows above projected performance."},
-          {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "author": {"@type": "Person", "name": "Rachel M."}, "reviewBody": "I had an existing solar system and wanted a battery added. Oneroof assessed the inverter compatibility, explained what would work, and installed without replacing the whole system. Very honest advice."},
-          {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "author": {"@type": "Person", "name": "Tom B."}, "reviewBody": "Used Oneroof for our commercial warehouse solar in Darwin City. The system was designed around our peak usage hours rather than just maximum panel count. The payback calculation has proven accurate six months in."}
-        ]
+        "url": "https://www.oneroofsolar.com.au/",
+        "telephone": "+61 483 986 444",
+        "description": "Oneroof Solar is a solar energy company providing solar panel installation, solar panel repair, solar battery installation, solar inverter installation and repair, residential and commercial solar systems, and off-grid solar solutions in Darwin and the Northern Territory.",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3/97 Pruen Rd",
+          "addressLocality": "Berrimah",
+          "addressRegion": "NT",
+          "postalCode": "0828",
+          "addressCountry": "AU"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Darwin"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Northern Territory"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "128",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "knowsAbout": [
+          "Solar panel installation",
+          "Solar photovoltaic systems",
+          "Solar battery systems",
+          "Solar inverter installation",
+          "Solar inverter repair",
+          "Solar panel repair",
+          "Residential solar systems",
+          "Commercial solar systems",
+          "Off-grid solar systems"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Solar Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://www.oneroofsolar.com.au/services/solar-panel-installation#service",
+                "name": "Solar Panel Installation",
+                "url": "https://www.oneroofsolar.com.au/services/solar-panel-installation",
+                "serviceType": "Solar panel installation",
+                "provider": {
+                  "@id": "https://www.oneroofsolar.com.au/#localbusiness"
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Darwin"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://www.oneroofsolar.com.au/solar-panels-darwin/#service",
+                "name": "Solar Panels Darwin",
+                "url": "https://www.oneroofsolar.com.au/solar-panels-darwin/",
+                "serviceType": "Solar panels",
+                "provider": {
+                  "@id": "https://www.oneroofsolar.com.au/#localbusiness"
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Darwin"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://www.oneroofsolar.com.au/services/solar-panel-repair-darwin#service",
+                "name": "Solar Panel Repair",
+                "url": "https://www.oneroofsolar.com.au/services/solar-panel-repair-darwin",
+                "serviceType": "Solar panel repair",
+                "provider": {
+                  "@id": "https://www.oneroofsolar.com.au/#localbusiness"
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Darwin"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://www.oneroofsolar.com.au/services/solar-battery-installation#service",
+                "name": "Solar Battery Installation",
+                "url": "https://www.oneroofsolar.com.au/services/solar-battery-installation",
+                "serviceType": "Solar battery installation",
+                "provider": {
+                  "@id": "https://www.oneroofsolar.com.au/#localbusiness"
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Darwin"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://www.oneroofsolar.com.au/services/solar-inverters#service",
+                "name": "Solar Inverters",
+                "url": "https://www.oneroofsolar.com.au/services/solar-inverters",
+                "serviceType": "Solar inverters",
+                "provider": {
+                  "@id": "https://www.oneroofsolar.com.au/#localbusiness"
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Darwin"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://www.oneroofsolar.com.au/services/solar-inverters/installation#service",
+                "name": "Solar Inverter Installation",
+                "url": "https://www.oneroofsolar.com.au/services/solar-inverters/installation",
+                "serviceType": "Solar inverter installation",
+                "provider": {
+                  "@id": "https://www.oneroofsolar.com.au/#localbusiness"
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Darwin"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://www.oneroofsolar.com.au/services/solar-inverters/repair#service",
+                "name": "Solar Inverter Repair",
+                "url": "https://www.oneroofsolar.com.au/services/solar-inverters/repair",
+                "serviceType": "Solar inverter repair",
+                "provider": {
+                  "@id": "https://www.oneroofsolar.com.au/#localbusiness"
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Darwin"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://www.oneroofsolar.com.au/solar-systems/residential-solar-system#service",
+                "name": "Residential Solar Systems",
+                "url": "https://www.oneroofsolar.com.au/solar-systems/residential-solar-system",
+                "serviceType": "Residential solar systems",
+                "provider": {
+                  "@id": "https://www.oneroofsolar.com.au/#localbusiness"
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Darwin"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://www.oneroofsolar.com.au/solar-systems/commercial-solar-system#service",
+                "name": "Commercial Solar Systems",
+                "url": "https://www.oneroofsolar.com.au/solar-systems/commercial-solar-system",
+                "serviceType": "Commercial solar systems",
+                "provider": {
+                  "@id": "https://www.oneroofsolar.com.au/#localbusiness"
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Darwin"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://www.oneroofsolar.com.au/solar-systems/off-grid-solar-system#service",
+                "name": "Off-Grid Solar Systems",
+                "url": "https://www.oneroofsolar.com.au/solar-systems/off-grid-solar-system",
+                "serviceType": "Off-grid solar systems",
+                "provider": {
+                  "@id": "https://www.oneroofsolar.com.au/#localbusiness"
+                },
+                "areaServed": {
+                  "@type": "AdministrativeArea",
+                  "name": "Northern Territory"
+                }
+              }
+            }
+          ]
+        }
       },
       // Organization
       {
