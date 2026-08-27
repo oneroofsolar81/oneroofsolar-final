@@ -31,14 +31,14 @@ export function SolarInverters() {
 
   const seoData = {
     title: "Solar Inverters Darwin, NT | Installation & Repair",
-    metaDescription: "CEC accredited solar inverter experts in Darwin, NT. Hybrid, string and off-grid inverters built for the Top End climate. Get a free quote.",
+    metaDescription: "Licensed solar inverter experts in Darwin, NT. Hybrid, string and off-grid inverters built for the Top End climate. Get a free quote.",
     canonicalUrl: "https://oneroofsolar.com.au/services/solar-inverters",
     robots: "index, follow",
     openGraphTitle: "Solar Inverters Darwin, NT | Installation & Repair",
-    openGraphDescription: "CEC accredited solar inverter experts in Darwin, NT. Hybrid, string and off-grid inverters built for the Top End climate. Get a free quote.",
+    openGraphDescription: "Licensed solar inverter experts in Darwin, NT. Hybrid, string and off-grid inverters built for the Top End climate. Get a free quote.",
     openGraphImage: "https://oneroofsolar.com.au/assets/images/inverter_hero_install_1785339518164.jpg",
     twitterTitle: "Solar Inverters Darwin, NT | Installation & Repair",
-    twitterDescription: "CEC accredited solar inverter experts in Darwin, NT. Hybrid, string and off-grid inverters built for the Top End climate.",
+    twitterDescription: "Licensed solar inverter experts in Darwin, NT. Hybrid, string and off-grid inverters built for the Top End climate.",
     twitterImage: "https://oneroofsolar.com.au/assets/images/inverter_hero_install_1785339518164.jpg",
   };
 
@@ -54,7 +54,7 @@ export function SolarInverters() {
         "email": "info@oneroofsolar.com.au"
       },
       "areaServed": "Darwin, Northern Territory",
-      "description": "CEC accredited solar inverter experts in Darwin, NT. Hybrid, string and off-grid inverters built for the Top End climate.",
+      "description": "Licensed solar inverter experts in Darwin, NT. Hybrid, string and off-grid inverters built for the Top End climate.",
       "url": "https://oneroofsolar.com.au/services/solar-inverters"
     },
     {
@@ -106,7 +106,7 @@ export function SolarInverters() {
           "name": "Is there a solar battery or inverter rebate in the NT?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The Northern Territory's own Home and Business Battery Scheme has reached its funding cap and is currently closed to new applications. Eligible batteries can still receive a discount through the federal Cheaper Home Batteries Program, which reduces the upfront cost through Small-scale Technology Certificates. Our team can confirm what applies to your system as part of your quote."
+            "text": "The Northern Territory offers federal incentives such as Small-scale Technology Certificates (STCs) to reduce upfront solar installation costs. Eligible solar batteries can also receive discounts through available government programs. Our team can confirm what incentives apply to your system as part of your quote."
           }
         },
         {
@@ -181,7 +181,7 @@ export function SolarInverters() {
     },
     {
       title: "Built for Darwin's Heat",
-      desc: "We are CEC-certified experts who know how tropical humidity and heat ruin cheap inverters. We only install gear that actually lasts in Top End weather.",
+      desc: "We are licensed solar specialists who know how tropical humidity and heat ruin cheap inverters. We only install gear that actually lasts in Top End weather.",
       icon: ShieldCheck
     },
     {
@@ -226,7 +226,7 @@ export function SolarInverters() {
     },
     {
       q: "Is there a solar battery or inverter rebate in the NT?",
-      a: "The Northern Territory's own Home and Business Battery Scheme has reached its funding cap and is currently closed to new applications. Eligible batteries can still receive a discount through the federal Cheaper Home Batteries Program, which reduces the upfront cost through Small-scale Technology Certificates. Our team can confirm what applies to your system as part of your quote."
+      a: "The Northern Territory offers federal incentives such as Small-scale Technology Certificates (STCs) to reduce upfront solar installation costs. Eligible solar batteries can also receive discounts through available government programs. Our team can confirm what incentives apply to your system as part of your quote."
     },
     {
       q: "How much does a solar inverter cost in Darwin?",
@@ -277,7 +277,7 @@ export function SolarInverters() {
                 </h1>
 
                 <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-6 mb-8 max-w-2xl">
-                  Darwin's heat and humidity put more strain on a solar inverter than almost anywhere else in Australia. The wrong inverter overheats, throttles output through the Wet season, and can fail years before its warranty runs out. Oneroof Solar supplies, installs and repairs inverters built for Top End conditions, backed by CEC accreditation and a local Darwin team.
+                  Darwin's heat and humidity put more strain on a solar inverter than almost anywhere else in Australia. The wrong inverter overheats, throttles output through the Wet season, and can fail years before its warranty runs out. Oneroof Solar supplies, installs and repairs inverters built for Top End conditions, backed by licensed installation and a local Darwin team.
                 </p>
 
                 <Button
@@ -300,7 +300,7 @@ export function SolarInverters() {
                     <img 
                       referrerPolicy="no-referrer"
                       src={heroImage} 
-                      alt="CEC-accredited technician installing a hybrid solar inverter on a Darwin home exterior wall" 
+                      alt="Licensed technician installing a hybrid solar inverter on a Darwin home exterior wall" 
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -492,7 +492,7 @@ export function SolarInverters() {
                     Solar Inverter Installation
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium mb-8">
-                    We supply and install tropical-rated inverters custom-sized and strategically positioned for shaded airflow to prevent heat derating from day one. Fitted by our CEC-accredited local team, every system is built to handle Darwin's extreme climate with battery-ready flexibility for the future.
+                    We supply and install tropical-rated inverters custom-sized and strategically positioned for shaded airflow to prevent heat derating from day one. Fitted by our licensed local team, every system is built to handle Darwin's extreme climate with battery-ready flexibility for the future.
                   </p>
                 </div>
                 <Button
@@ -545,7 +545,7 @@ export function SolarInverters() {
                 Ready for an Inverter Built for Darwin's Heat?
               </h2>
               <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-8 font-medium">
-                Get an honest, zero-obligation quote from our local CEC-accredited team.
+                Get an honest, zero-obligation quote from our local licensed team.
               </p>
               <Button
                 size="lg"

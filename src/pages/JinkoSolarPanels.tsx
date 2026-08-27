@@ -23,14 +23,14 @@ export function JinkoSolarPanels() {
 
   const seoData = {
     title: "Jinko Solar Panels NT | Installed by Oneroof Solar",
-    metaDescription: "Oneroof Solar installs Jinko N-type solar panels across Darwin, Alice Springs, Palmerston and the NT. CEC approved, cyclone rated, 25-year warranty. Get a free quote.",
+    metaDescription: "Oneroof Solar installs Jinko N-type solar panels across Darwin, Alice Springs, Palmerston and the NT. Cyclone rated, 25-year warranty, premium N-type technology. Get a free quote.",
     canonicalUrl: "https://oneroofsolar.com.au/solar-panels-brands/jinko/",
     robots: "index, follow",
     openGraphTitle: "Jinko Solar Panels NT | Installed by Oneroof Solar",
-    openGraphDescription: "Oneroof Solar installs Jinko N-type solar panels across Darwin, Alice Springs, Palmerston and the NT. CEC approved, cyclone rated, 25-year warranty. Get a free quote.",
+    openGraphDescription: "Oneroof Solar installs Jinko N-type solar panels across Darwin, Alice Springs, Palmerston and the NT. Cyclone rated, 25-year warranty, premium N-type technology. Get a free quote.",
     openGraphImage: "https://oneroofsolar.com.au/assets/images/jinko_topcon_cell.jpg",
     twitterTitle: "Jinko Solar Panels NT | Installed by Oneroof Solar",
-    twitterDescription: "Oneroof Solar installs Jinko N-type solar panels across Darwin, Alice Springs, Palmerston and the NT. CEC approved, cyclone rated, 25-year warranty. Get a free quote.",
+    twitterDescription: "Oneroof Solar installs Jinko N-type solar panels across Darwin, Alice Springs, Palmerston and the NT. Cyclone rated, 25-year warranty, premium N-type technology. Get a free quote.",
     twitterImage: "https://oneroofsolar.com.au/assets/images/jinko_topcon_cell.jpg",
   };
 
@@ -119,7 +119,7 @@ export function JinkoSolarPanels() {
           "name": "What are common problems with Jinko solar panels?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Jinko panels do not have a known systematic fault specific to the NT. The most common issues reported across any solar brand in Australia relate to installation quality, not the panels themselves. This is why choosing a CEC-accredited installer matters as much as choosing the right panel brand. All Oneroof Solar installations are carried out to full NT building standards by our accredited team."
+            "text": "Jinko panels do not have a known systematic fault specific to the NT. The most common issues reported across any solar brand in Australia relate to installation quality, not the panels themselves. This is why choosing an experienced, licensed installer matters as much as choosing the right panel brand. All Oneroof Solar installations are carried out to full NT building standards by our qualified team."
           }
         },
         {
@@ -151,7 +151,7 @@ export function JinkoSolarPanels() {
           "name": "How do I know if Jinko solar panels are genuine?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "All Jinko panels installed by Oneroof Solar are sourced through authorised Australian distributors and are CEC approved. Every panel carries a traceable serial number. If you are comparing quotes from other installers, ask for the exact model number and verify it against Jinko's official Australian product list at jinkosolar.com.au before signing any contract."
+            "text": "All Jinko panels installed by Oneroof Solar are sourced through authorised Australian distributors and meet all Australian certification standards. Every panel carries a traceable serial number. If you are comparing quotes from other installers, ask for the exact model number and verify it against Jinko's official Australian product list at jinkosolar.com.au before signing any contract."
           }
         },
         {
@@ -201,7 +201,7 @@ export function JinkoSolarPanels() {
     },
     {
       q: "What are common problems with Jinko solar panels?",
-      a: "Jinko panels do not have a known systematic fault specific to the NT. The most common issues reported across any solar brand in Australia relate to installation quality, not the panels themselves. This is why choosing a CEC-accredited installer matters as much as choosing the right panel brand. All Oneroof Solar installations are carried out to full NT building standards by our accredited team."
+      a: "Jinko panels do not have a known systematic fault specific to the NT. The most common issues reported across any solar brand in Australia relate to installation quality, not the panels themselves. This is why choosing an experienced, licensed installer matters as much as choosing the right panel brand. All Oneroof Solar installations are carried out to full NT building standards by our qualified team."
     },
     {
       q: "How long do Jinko solar panels last?",
@@ -217,7 +217,7 @@ export function JinkoSolarPanels() {
     },
     {
       q: "How do I know if Jinko solar panels are genuine?",
-      a: "All Jinko panels installed by Oneroof Solar are sourced through authorised Australian distributors and are CEC approved. Every panel carries a traceable serial number. If you are comparing quotes from other installers, ask for the exact model number and verify it against Jinko's official Australian product list at jinkosolar.com.au before signing any contract."
+      a: "All Jinko panels installed by Oneroof Solar are sourced through authorised Australian distributors and meet all Australian certification standards. Every panel carries a traceable serial number. If you are comparing quotes from other installers, ask for the exact model number and verify it against Jinko's official Australian product list at jinkosolar.com.au before signing any contract."
     },
     {
       q: "Is a 10kW solar system enough to run a Darwin home?",
@@ -477,7 +477,7 @@ export function JinkoSolarPanels() {
                     <td className="p-4">Yes — certified</td>
                   </tr>
                   <tr className="hover:bg-slate-50 transition-colors">
-                    <td className="p-4 font-bold text-slate-900">CEC approved</td>
+                    <td className="p-4 font-bold text-slate-900">Australian certified</td>
                     <td className="p-4">Yes</td>
                   </tr>
                   <tr className="hover:bg-slate-50 transition-colors">
@@ -539,7 +539,7 @@ export function JinkoSolarPanels() {
                   Cyclone rating for NT installations
                 </h3>
                 <p className="text-slate-600 text-base leading-relaxed font-medium">
-                  Every Jinko panel we install meets the structural wind load certification required for Darwin's cyclone zone. Our Clean Energy Council (CEC) accredited electricians install every system to full NT building standards before Power and Water Corporation approves grid connection.
+                  Every Jinko panel we install meets the structural wind load certification required for Darwin's cyclone zone. Our licensed electricians install every system to full NT building standards before Power and Water Corporation approves grid connection.
                 </p>
               </div>
 
@@ -581,7 +581,7 @@ export function JinkoSolarPanels() {
               Jinko vs AIKO vs REC — Which Is Right for Your NT Roof
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-8 font-medium">
-              All three brands Oneroof Solar installs use N-type cell technology and are cyclone rated and CEC approved for NT installations. The right choice depends on your roof size, budget and priorities.
+              All three brands Oneroof Solar installs use N-type cell technology and are cyclone rated and certified for NT installations. The right choice depends on your roof size, budget and priorities.
             </p>
 
             {/* Comparison Table */}

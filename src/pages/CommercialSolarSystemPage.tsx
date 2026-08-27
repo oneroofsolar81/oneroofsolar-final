@@ -346,7 +346,7 @@ export function CommercialSolarSystemPage() {
                     <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400" /> 4.9 Stars
                   </span>
                   <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
-                    <Award className="w-3.5 h-3.5 text-[#5BC94D]" /> CEC Accredited
+                    <Award className="w-3.5 h-3.5 text-[#5BC94D]" /> Licensed Installers
                   </span>
                   <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
                     <Building2 className="w-3.5 h-3.5 text-[#5BC94D]" /> NT Based Team
@@ -527,7 +527,7 @@ export function CommercialSolarSystemPage() {
       <PackagesSection 
         subtitle="COMMERCIAL SOLAR SOLUTIONS FOR NT BUSINESSES"
         title="Exclusive Commercial Solar and Battery Deals"
-        subheadline="Premium solar systems designed for NT businesses. All packages include N-type panels, commercial-grade Sungrow inverter, cyclone-rated mounting, CEC-accredited installation and Power and Water Corporation grid connection."
+        subheadline="Premium solar systems designed for NT businesses. All packages include N-type panels, commercial-grade Sungrow inverter, cyclone-rated mounting, licensed installation and Power and Water Corporation grid connection."
         packages={[
           {
             title: "Smart Commercial Package\n30kW Commercial System",
@@ -543,7 +543,7 @@ export function CommercialSolarSystemPage() {
               "Upfront STC government rebate included",
               "Power & Water Corporation grid connection approval",
               "Estimated 3.2 - 3.8 years capital payback",
-              "Professional CEC-accredited installation"
+              "Professional licensed installation"
             ],
             color: "green"
           },
@@ -579,7 +579,7 @@ export function CommercialSolarSystemPage() {
               "HV/LV transformer engineering & grid interconnection",
               "24/7 dedicated remote performance monitoring",
               "Battery storage & microgrid expansion ready",
-              "CEC accredited commercial SLA support"
+              "Dedicated commercial SLA support"
             ],
             color: "blue"
           }
@@ -1165,7 +1165,7 @@ export function CommercialSolarSystemPage() {
               {
                 num: "04",
                 title: "Commercial Installation",
-                desc: "CEC-accredited installation with cyclone-rated mounting and minimal operational disruption."
+                desc: "Licensed installation with cyclone-rated mounting and minimal operational disruption."
               },
               {
                 num: "05",
@@ -1649,7 +1649,7 @@ export function CommercialSolarSystemPage() {
                     "STC or LGC value calculation",
                     "ROI projections",
                     "Finance options",
-                    "CEC accredited installers",
+                    "Licensed installers",
                     "NT based team"
                   ].map((item) => (
                     <div key={item} className="flex items-center gap-3 text-slate-300 font-medium text-sm">

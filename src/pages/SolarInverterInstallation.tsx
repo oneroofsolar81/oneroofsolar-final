@@ -23,14 +23,14 @@ export function SolarInverterInstallation() {
 
   const seoData = {
     title: "Solar Inverter Installation Darwin NT | Oneroof Solar",
-    metaDescription: "CEC-accredited solar inverter installation in Darwin, Palmerston and rural NT. Cyclone-rated string, hybrid and off-grid inverters. Book a free assessment today.",
+    metaDescription: "Licensed solar inverter installation in Darwin, Palmerston and rural NT. Cyclone-rated string, hybrid and off-grid inverters. Book a free assessment today.",
     canonicalUrl: "https://oneroofsolar.com.au/services/solar-inverters/installation",
     robots: "index, follow",
     openGraphTitle: "Solar Inverter Installation Darwin NT | Oneroof Solar",
-    openGraphDescription: "CEC-accredited solar inverter installation in Darwin, Palmerston and rural NT. Cyclone-rated string, hybrid and off-grid inverters.",
+    openGraphDescription: "Licensed solar inverter installation in Darwin, Palmerston and rural NT. Cyclone-rated string, hybrid and off-grid inverters.",
     openGraphImage: "https://oneroofsolar.com.au/assets/images/inverter_install_hero_1785312441730.jpg",
     twitterTitle: "Solar Inverter Installation Darwin NT | Oneroof Solar",
-    twitterDescription: "CEC-accredited solar inverter installation in Darwin, Palmerston and rural NT.",
+    twitterDescription: "Licensed solar inverter installation in Darwin, Palmerston and rural NT.",
     twitterImage: "https://oneroofsolar.com.au/assets/images/inverter_install_hero_1785312441730.jpg",
   };
 
@@ -46,7 +46,7 @@ export function SolarInverterInstallation() {
         "email": "info@oneroofsolar.com.au"
       },
       "areaServed": "Darwin, Northern Territory",
-      "description": "CEC-accredited solar inverter installation in Darwin, Palmerston and rural NT.",
+      "description": "Licensed solar inverter installation in Darwin, Palmerston and rural NT.",
       "url": "https://oneroofsolar.com.au/services/solar-inverters/installation"
     },
     {
@@ -268,7 +268,7 @@ export function SolarInverterInstallation() {
                 </h1>
 
                 <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-6 mb-8 max-w-2xl">
-                  CEC-accredited installers fitting cyclone-rated inverters built for Darwin's heat, humidity and Wet season storms. From new homes to ageing systems and off-grid properties, we size every inverter to match your roof and your power bill.
+                  Licensed NT installers fitting cyclone-rated inverters built for Darwin's heat, humidity and Wet season storms. From new homes to ageing systems and off-grid properties, we size every inverter to match your roof and your power bill.
                 </p>
 
                 <Button
@@ -331,7 +331,7 @@ export function SolarInverterInstallation() {
                     Most solar systems in Darwin do not underperform because of bad panels. They underperform because the inverter was never matched to the roof, the switchboard or Darwin's tropical climate. An oversized inverter wastes money on equipment you do not need. An undersized one clips your output on the sunniest days of the year, which in Darwin is most days. And an inverter without proper heat and cyclone rating can fail years before it should once the humidity and Wet season storms set in.
                   </p>
                   <p>
-                    Oneroof Solar installs and replaces CEC-accredited <Link to="/services/solar-inverters" className="text-brand-600 font-bold underline hover:text-brand-700">solar inverters</Link> across Darwin, Palmerston and rural NT. We size, supply and fit string, hybrid and off-grid inverters matched to your roof, your switchboard and Power and Water Corporation's network rules, installed to AS/NZS 5033 wiring standards with cyclone-rated mounting and isolators.
+                    Oneroof Solar installs and replaces AS/NZS-compliant <Link to="/services/solar-inverters" className="text-brand-600 font-bold underline hover:text-brand-700">solar inverters</Link> across Darwin, Palmerston and rural NT. We size, supply and fit string, hybrid and off-grid inverters matched to your roof, your switchboard and Power and Water Corporation's network rules, installed to AS/NZS 5033 wiring standards with cyclone-rated mounting and isolators.
                   </p>
                 </div>
               </div>
@@ -429,7 +429,7 @@ export function SolarInverterInstallation() {
                 Your Inverter Is Either Making You Money or Costing You Money. There Is No In Between.
               </h2>
               <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto mb-8 font-medium leading-relaxed">
-                If your power bill still stings even with panels on the roof, your inverter is probably the problem, not your panels. Book a free on-site inverter assessment with our CEC-accredited team. We will show you exactly what your current setup is costing you, and what a properly sized inverter would save you every quarter.
+                If your power bill still stings even with panels on the roof, your inverter is probably the problem, not your panels. Book a free on-site inverter assessment with our licensed NT team. We will show you exactly what your current setup is costing you, and what a properly sized inverter would save you every quarter.
               </p>
               <Button
                 size="lg"
@@ -594,7 +594,7 @@ export function SolarInverterInstallation() {
                   Book Your Solar Inverter Installation
                 </h2>
                 <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-8 font-medium">
-                  Whether you're installing a new system, replacing an ageing inverter, or setting up off-grid power in rural NT, our CEC-accredited team sizes and fits the right inverter for your property. Call 0483 986 444 or book your free on-site assessment today.
+                  Whether you're installing a new system, replacing an ageing inverter, or setting up off-grid power in rural NT, our licensed NT team sizes and fits the right inverter for your property. Call 0483 986 444 or book your free on-site assessment today.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <Button

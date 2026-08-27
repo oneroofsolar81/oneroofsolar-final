@@ -145,7 +145,7 @@ const DEFAULT_HOME_DATA = {
       ],
       features: [
         {
-          title: "CEC Accredited",
+          title: "Licensed Installers",
           description: "Certified professionals ensuring the strictest safety standards."
         },
         {
@@ -186,8 +186,8 @@ const DEFAULT_HOME_DATA = {
           description: "Your solar panels are guaranteed to produce high yields for a quarter of a century."
         },
         {
-          title: "CEC Accredited Experts",
-          description: "Every installation is carried out by Clean Energy Council approved electricians."
+          title: "Licensed Solar Experts",
+          description: "Every installation is carried out by licensed, qualified electricians."
         },
         {
           title: "10-Year Workmanship Warranty",
@@ -1062,7 +1062,7 @@ export function AdminPageEditor() {
               <div className="space-y-6">
                 <div className="border-b border-slate-100 pb-4 mb-4">
                   <h2 className="text-xl font-bold text-slate-900">Darwin Local Installers</h2>
-                  <p className="text-slate-500 text-xs">Section explaining team expertise, with Clean Energy Council (CEC) accreditation details.</p>
+                  <p className="text-slate-500 text-xs">Section explaining team expertise and licensing qualifications.</p>
                 </div>
 
                 <div className="space-y-4">
@@ -1146,12 +1146,12 @@ export function AdminPageEditor() {
                   </div>
 
                   <div className="border-t border-slate-100 pt-6">
-                    <label className="block text-base font-bold text-slate-800 mb-3">CEC Accreditation Highlights (2 cards)</label>
+                    <label className="block text-base font-bold text-slate-800 mb-3">Licensing & Quality Highlights (2 cards)</label>
                     <ObjectListEditor
                       items={data.sections?.installer?.features || []}
                       onChange={(newFeats) => updateHomeSection('installer', 'features', newFeats)}
                       fields={[
-                        { key: 'title', label: 'Feature title (e.g. CEC Accredited)', type: 'text' },
+                        { key: 'title', label: 'Feature title (e.g. Licensed Installers)', type: 'text' },
                         { key: 'description', label: 'Detail sentence', type: 'text' }
                       ]}
                     />

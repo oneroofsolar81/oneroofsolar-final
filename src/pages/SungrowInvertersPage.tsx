@@ -1443,7 +1443,7 @@ export function SungrowInvertersPage() {
                 },
                 {
                   question: "Is Sungrow a good brand for solar inverters?",
-                  answer: "Yes. Sungrow is one of the world's largest solar inverter manufacturers by sales volume, Clean Energy Council approved for the Australian market, and has been supplying Australian installers for over a decade."
+                  answer: "Yes. Sungrow is one of the world's largest solar inverter manufacturers by sales volume, certified to Australian standards, and has been supplying Australian installers for over a decade."
                 },
                 {
                   question: "How long is the warranty on a Sungrow inverter?",

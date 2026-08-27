@@ -466,7 +466,7 @@ function DarkBenefits({ service, slug }: { service: any; slug: string }) {
 
   const b3Title = "Safe & Certified";
   const b3Desc =
-    "Installed exclusively by our Clean Energy Council accredited electricians to meet strict Australian safety standards.";
+    "Installed exclusively by our licensed solar electricians to meet strict Australian safety standards.";
 
   return (
     <section className="py-24 bg-brand-500 relative overflow-hidden">
@@ -995,7 +995,7 @@ const servicesData: Record<
     description:
       "Seamless start-to-finish solar panel installations tailored to maximize the output of your rooftop.",
     introExtra1:
-      "Our CEC accredited installers manage every angle, ensuring correct tilt, secure rail mounting, and fault-free integration with your electrical board.",
+      "Our licensed installers manage every angle, ensuring correct tilt, secure rail mounting, and fault-free integration with your electrical board.",
     introExtra2:
       "Precision is key. A sub-optimal installation can cost you heavily in lost energy. Trust Oneroof Solar for diligent and robust installation workmanship that stands the test of time.",
     products: [
@@ -1091,7 +1091,7 @@ const servicesData: Record<
   "solar-battery-installation": {
     title: "Solar Battery Installation Darwin, NT",
     description:
-      "Expert integration of high-capacity storage batteries to protect your Darwin home or business against grid outages, installed by our CEC accredited team.",
+      "Expert integration of high-capacity storage batteries to protect your Darwin home or business against grid outages, installed by our licensed solar team.",
     introExtra1:
       "Installing a large lithium-ion battery requires strict electrical safety standards. We handle the heavy lifting, secure mounting, and software syncing to your home network, so the system is ready to run from day one.",
     introExtra2:
@@ -1433,8 +1433,7 @@ function EvChargerBenefits({ service }: { service: any }) {
               Safe & Certified
             </h3>
             <p className="text-white/90 font-medium leading-relaxed text-[15px]">
-              Installed exclusively by our Clean Energy Council accredited
-              electricians to meet strict Australian safety standards.
+              Installed exclusively by our licensed solar electricians to meet strict Australian safety standards.
             </p>
           </FadeIn>
         </div>
@@ -1487,7 +1486,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
   if (currentSlug === "solar-panel") {
     const seoData = {
       title: "Solar Panels Darwin | Installation, Repair & Maintenance | Oneroof Solar",
-      metaDescription: "Call 0483 986 444 for solar panel installation, repair, and maintenance across Darwin and the NT. CEC-accredited. 25 years experience. Free quote.",
+      metaDescription: "Call 0483 986 444 for solar panel installation, repair, and maintenance across Darwin and the NT. Licensed & qualified. 25 years experience. Free quote.",
       canonicalUrl: "https://oneroofsolar.com.au/solar-panels-darwin/",
     };
 
@@ -1556,7 +1555,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           "@type": "AdministrativeArea",
           "name": "Darwin"
         },
-        "description": "Call 0483 986 444 for solar panel installation, repair, and maintenance across Darwin and the NT. CEC-accredited. 25 years experience. Free quote."
+        "description": "Call 0483 986 444 for solar panel installation, repair, and maintenance across Darwin and the NT. Licensed & qualified. 25 years experience. Free quote."
       },
       {
         "@context": "https://schema.org",
@@ -1575,7 +1574,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
             "name": "Can you repair solar panels installed by another company?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. We repair, service, and maintain all solar systems, regardless of who installed them. If the original installer has gone out of business or is unable to help, our CEC-accredited team can diagnose the issue, handle any manufacturer warranty claims on your behalf, and get your system back online safely."
+              "text": "Yes. We repair, service, and maintain all solar systems, regardless of who installed them. If the original installer has gone out of business or is unable to help, our licensed team can diagnose the issue, handle any manufacturer warranty claims on your behalf, and get your system back online safely."
             }
           },
           {
@@ -1655,7 +1654,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   One team for installation, repair, and maintenance, all under one roof.
                 </p>
                 <p className="text-lg text-slate-300 leading-relaxed max-w-lg mb-10 font-medium">
-                  Oneroof Solar handles every stage of your solar panel's life in Darwin and across the Northern Territory. We install new systems, repair underperforming panels, and keep existing systems clean and maintained, all with the same CEC-accredited team.
+                  Oneroof Solar handles every stage of your solar panel's life in Darwin and across the Northern Territory. We install new systems, repair underperforming panels, and keep existing systems clean and maintained, all with our licensed local team.
                 </p>
                 <div className="flex flex-wrap items-center gap-4">
                   <Button
@@ -1703,7 +1702,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
         <div className="bg-slate-50 border-b border-slate-200 py-6 relative z-10 overflow-hidden">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex md:grid md:grid-cols-5 overflow-x-auto md:overflow-visible gap-8 md:gap-0 pb-4 md:pb-0 text-center md:divide-x md:divide-slate-200 scrollbar-none snap-x snap-mandatory">
-              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-4 md:px-2 flex-shrink-0 md:flex-shrink snap-center">CEC-Accredited Installers</div>
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-4 md:px-2 flex-shrink-0 md:flex-shrink snap-center">Licensed Solar Installers</div>
               <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-4 md:px-2 flex-shrink-0 md:flex-shrink snap-center">25 Years in the NT</div>
               <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-4 md:px-2 flex-shrink-0 md:flex-shrink snap-center">Cyclone-Rated Installations</div>
               <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-4 md:px-2 flex-shrink-0 md:flex-shrink snap-center">Residential, Commercial, Off-Grid</div>
@@ -1997,7 +1996,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 Why Solar Makes Sense in Darwin
               </h2>
               <p className="text-xl text-slate-600 leading-relaxed font-medium max-w-3xl mx-auto">
-                Darwin averages close to 6 peak sun hours a day, higher in the dry season, so a solar system here works harder than one in the south. The federal STC rebate cuts installation costs, and the NT Government's HBBS battery grant adds further savings on qualifying battery-plus-solar installs. Combined with high NT electricity rates, well-maintained solar panels in Darwin pay for themselves faster than almost anywhere else in Australia.
+                Darwin averages close to 6 peak sun hours a day, higher in the dry season, so a solar system here works harder than one in the south. Federal STC incentives significantly cut upfront installation costs, and high NT electricity rates ensure well-maintained solar panels in Darwin pay for themselves faster than almost anywhere else in Australia.
               </p>
             </FadeIn>
           </div>
@@ -2222,7 +2221,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
   const seoData = isSolarInstall
     ? {
         title: "Solar Panel Installation Darwin | Oneroof Solar",
-        metaDescription: `Call ${PRIMARY_PHONE} for CEC-accredited solar panel installation in Darwin, homes, businesses and remote NT properties. 25 years experience. Free quote.`
+        metaDescription: `Call ${PRIMARY_PHONE} for licensed solar panel installation in Darwin, homes, businesses and remote NT properties. 25 years experience. Free quote.`
       }
     : (dbSeo || { title: service.title, metaDescription: service.description });
 
@@ -2346,7 +2345,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
         <div className="bg-slate-50 border-b border-slate-200 py-6 relative z-10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-y-4 md:gap-x-8 text-center md:divide-x md:divide-slate-200">
-              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">CEC-Accredited Installers.</div>
+              <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">Licensed Solar Installers.</div>
               <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">25 Years in the NT.</div>
               <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">Cyclone-Rated Installations.</div>
               <div className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider flex items-center justify-center px-2">Residential, Commercial, Off-Grid.</div>
@@ -2678,7 +2677,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-2xl h-[300px] sm:h-[400px] lg:h-[450px] group">
                 <img referrerPolicy="no-referrer" loading="lazy"
                   src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop"
-                  alt="cyclone rated solar panel mounting Darwin, CEC accredited Oneroof Solar"
+                  alt="cyclone rated solar panel mounting Darwin, Oneroof Solar"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
@@ -2899,7 +2898,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     Expert Installation
                   </h3>
                   <p className="text-slate-600 leading-relaxed font-medium">
-                    Our CEC accredited installers fit your system safely,
+                    Our licensed installers fit your system safely,
                     neatly, and to strict regulations. The installation process
                     is swift and minimally disruptive.
                   </p>

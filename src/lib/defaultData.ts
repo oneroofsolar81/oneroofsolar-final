@@ -168,7 +168,7 @@ export const DEFAULT_PAGES = [
           ],
           features: [
             {
-              title: "CEC Accredited",
+              title: "Licensed Installers",
               description: "Certified professionals ensuring the strictest safety standards."
             },
             {
@@ -232,8 +232,8 @@ export const DEFAULT_PAGES = [
               description: "Your solar panels are guaranteed to produce high yields for a quarter of a century."
             },
             {
-              title: "CEC Accredited Experts",
-              description: "Every installation is carried out by Clean Energy Council approved electricians."
+              title: "Licensed Solar Experts",
+              description: "Every installation is carried out by licensed, qualified electricians."
             },
             {
               title: "10-Year Workmanship Warranty",

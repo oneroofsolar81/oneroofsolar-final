@@ -162,7 +162,7 @@ export function ResidentialSolarSystemPage() {
             "name": "What solar rebates are available in the Northern Territory?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "NT homeowners qualify for the federal STC rebate worth up to $2,563 off a 6.6kW system in 2026. The NT Battery Scheme provides additional rebates for eligible homeowners adding battery storage. Both are applied upfront, no separate claiming required."
+              "text": "NT homeowners qualify for the federal STC rebate worth up to $2,563 off a 6.6kW system in 2026. All eligible federal rebates are applied upfront on your quote, no separate claiming required."
             }
           },
           {
@@ -202,7 +202,7 @@ export function ResidentialSolarSystemPage() {
             "name": "Can I add battery storage to my residential solar system later?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Every Oneroof Solar residential system is installed with a hybrid-ready inverter so battery storage can be added at any time. The NT Battery Scheme rebate may apply. See our solar battery installation page."
+              "text": "Yes. Every Oneroof Solar residential system is installed with a hybrid-ready inverter so battery storage can be added at any time. See our solar battery installation page."
             }
           },
           {
@@ -279,7 +279,7 @@ export function ResidentialSolarSystemPage() {
     },
     {
       q: "What solar rebates are available in the Northern Territory?",
-      a: "NT homeowners qualify for the federal STC rebate worth up to $2,563 off a 6.6kW system in 2026. The NT Battery Scheme provides additional rebates for eligible homeowners adding battery storage. Both are applied upfront, no separate claiming required."
+      a: "NT homeowners qualify for the federal STC rebate worth up to $2,563 off a 6.6kW system in 2026. All eligible federal rebates are applied upfront on your quote, no separate claiming required."
     },
     {
       q: "Is 10kW solar enough to run a house in Darwin?",
@@ -299,7 +299,7 @@ export function ResidentialSolarSystemPage() {
     },
     {
       q: "Can I add battery storage to my residential solar system later?",
-      a: "Yes. Every Oneroof Solar residential system is installed with a hybrid-ready inverter so battery storage can be added at any time. The NT Battery Scheme rebate may apply. See our solar battery installation page."
+      a: "Yes. Every Oneroof Solar residential system is installed with a hybrid-ready inverter so battery storage can be added at any time. See our solar battery installation page."
     },
     {
       q: "How do I choose the best residential solar system for my NT home?",
@@ -623,7 +623,7 @@ export function ResidentialSolarSystemPage() {
                   <CheckCircle2 className="w-3.5 h-3.5 text-[#5BC94D]" />
                 </div>
                 <span className="text-[10px] sm:text-xs font-bold text-slate-200 tracking-wide uppercase leading-tight">
-                  NT Battery Grant Approved
+                  Battery Storage Specialists
                 </span>
               </div>
 
@@ -750,7 +750,7 @@ export function ResidentialSolarSystemPage() {
                 </h3>
                 <div className="text-slate-600 leading-relaxed font-medium space-y-4 flex-grow mb-8">
                   <p>
-                    A residential solar and battery system combines your PV panels with a home battery such as Sungrow or Tesla Powerwall. Excess energy generated during the day is stored for use in the evening, reducing your grid import rate to near zero on most days. The NT Battery Scheme rebate applies to eligible NT homeowners adding battery storage.
+                    A residential solar and battery system combines your PV panels with a home battery such as Sungrow or Tesla Powerwall. Excess energy generated during the day is stored for use in the evening, reducing your grid import rate to near zero on most days.
                   </p>
                   <p className="text-sm bg-slate-50 p-4 rounded-xl border border-slate-100 text-[#19281D] font-bold">
                     Best for: Families with high evening electricity use.
@@ -791,7 +791,7 @@ export function ResidentialSolarSystemPage() {
                 How We Deliver Your Residential Solar System
               </h2>
               <p className="text-lg text-slate-600 font-medium leading-relaxed">
-                A fully managed 5-step process from your first call to switching on your new system. We handle every stage including permits, CEC compliance and Power and Water Corporation grid connection.
+                A fully managed 5-step process from your first call to switching on your new system. We handle every stage including permits, safety compliance and Power and Water Corporation grid connection.
               </p>
             </FadeIn>
           </div>
@@ -811,12 +811,12 @@ export function ResidentialSolarSystemPage() {
               {
                 num: "3",
                 title: "3. Permits and Approvals",
-                desc: "We prepare all required documentation for NT building approvals and Power and Water Corporation interconnection. No building permit is required for most residential solar installations in Darwin or Alice Springs, provided the panels are CEC-approved and the installer is CEC-accredited. All systems must comply with AS 4777 grid-connection standards."
+                desc: "We prepare all required documentation for NT building approvals and Power and Water Corporation interconnection. No building permit is required for most residential solar installations in Darwin or Alice Springs, provided standard compliance conditions are met. All systems must comply with AS 4777 grid-connection standards."
               },
               {
                 num: "4",
                 title: "4. Expert Installation",
-                desc: "Our CEC-accredited electricians install your system to full NT building standards with cyclone-rated mounting. Most 6.6kW to 13kW residential solar system installations are completed in 1 to 2 days with minimal disruption to your household."
+                desc: "Our licensed NT electricians install your system to full NT building standards with cyclone-rated mounting. Most 6.6kW to 13kW residential solar system installations are completed in 1 to 2 days with minimal disruption to your household."
               },
               {
                 num: "5",
@@ -854,7 +854,7 @@ export function ResidentialSolarSystemPage() {
                 Solar Rebates Available to NT Homeowners in 2026
               </h2>
               <p className="text-lg text-slate-300 font-medium">
-                NT homeowners qualify for federal and territory-level incentives that significantly reduce the upfront cost of a residential solar system. All rebates are applied before you pay.
+                NT homeowners qualify for federal incentives that significantly reduce the upfront cost of a residential solar system. All rebates are applied before you pay.
               </p>
             </FadeIn>
           </div>
@@ -875,17 +875,17 @@ export function ResidentialSolarSystemPage() {
               </div>
             </FadeIn>
 
-            {/* NT Battery Scheme */}
+            {/* Feed-in Tariff Benefits */}
             <FadeIn delay={0.2}>
               <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-[#5BC94D]/30 transition-all duration-300 h-full flex flex-col">
                 <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6 border border-[#5BC94D]/20">
-                  <Battery className="w-6 h-6" />
+                  <Zap className="w-6 h-6" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4 uppercase tracking-tight">
-                  NT Battery Scheme (Additional Rebates for Battery Storage)
+                  Jacana Energy Feed-in Tariffs
                 </h3>
                 <p className="text-slate-300 leading-relaxed font-medium">
-                  The Northern Territory Government offers additional rebates for eligible NT homeowners adding battery storage to a new or existing solar system. Contact Oneroof Solar to confirm current eligibility for your NT property and system size.
+                  Export your excess clean solar power back to the NT electricity grid and earn credits on your power bills. We handle full interconnection and registration with Power and Water Corporation and Jacana Energy so you start benefiting immediately.
                 </p>
               </div>
             </FadeIn>

@@ -116,7 +116,7 @@ export function RecSolarPanels() {
           "name": "Are REC panels suitable for Darwin's cyclone season?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. REC Alpha Pure panels are tested to high wind load ratings suitable for Darwin's cyclone zone. Every Oneroof Solar installation uses cyclone-rated mounting and is carried out by CEC-accredited electricians to full NT building standards before Power and Water Corporation grid connection is approved."
+            "text": "Yes. REC Alpha Pure panels are tested to high wind load ratings suitable for Darwin's cyclone zone. Every Oneroof Solar installation uses cyclone-rated mounting and is carried out by licensed electricians to full NT building standards before Power and Water Corporation grid connection is approved."
           }
         },
         {
@@ -211,7 +211,7 @@ export function RecSolarPanels() {
       q: "Are REC panels suitable for Darwin's cyclone season?",
       a: (
         <>
-          Yes. REC Alpha Pure panels are tested to high wind load ratings suitable for Darwin's cyclone zone. Every Oneroof Solar installation uses cyclone-rated mounting and is carried out by CEC-accredited electricians to full NT building standards before Power and Water Corporation grid connection is approved.
+          Yes. REC Alpha Pure panels are tested to high wind load ratings suitable for Darwin's cyclone zone. Every Oneroof Solar installation uses cyclone-rated mounting and is carried out by licensed electricians to full NT building standards before Power and Water Corporation grid connection is approved.
         </>
       )
     },

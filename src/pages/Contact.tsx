@@ -112,7 +112,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="text-slate-900 font-bold text-lg mb-1">Expert Advice</h4>
-                    <p className="text-slate-600 text-sm font-medium leading-relaxed">Speak directly with CEC-accredited solar experts, not salespeople. We size systems that make sense for your roof and power bill.</p>
+                    <p className="text-slate-600 text-sm font-medium leading-relaxed">Speak directly with licensed solar experts, not salespeople. We size systems that make sense for your roof and power bill.</p>
                   </div>
                 </div>
                 
