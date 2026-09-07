@@ -23,6 +23,7 @@ import { Button } from "@/src/components/ui/Button";
 import { FaqSection } from "@/src/components/FaqSection";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
+import { QuoteForm } from "@/src/components/QuoteForm";
 import { db } from "../lib/firebase";
 import { collection, addDoc } from "firebase/firestore";
 
@@ -277,7 +278,7 @@ export function SolarPanelRepairDarwinPage() {
               {/* Floating Stat Card */}
               <div className="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-950/80 border border-white/10 backdrop-blur-md flex items-center justify-between">
                 <div>
-                  <p className="text-brand-400 text-xs font-mono uppercase tracking-widest mb-1">// service_response</p>
+                  <p className="text-brand-400 text-xs  uppercase tracking-widest mb-1">// service_response</p>
                   <p className="text-white text-xl font-black uppercase">Rapid Diagnosis</p>
                 </div>
                 <div className="bg-brand-500 text-slate-900 px-4 py-2 rounded-xl font-black text-xs uppercase tracking-wider">
@@ -665,7 +666,7 @@ export function SolarPanelRepairDarwinPage() {
                 
                 {/* Dark green card body */}
                 <div className="bg-[#19281D] px-6 py-8 flex flex-col flex-grow text-white">
-                  <p className="text-brand-300 text-xs font-mono uppercase tracking-wider mb-4">
+                  <p className="text-brand-300 text-xs  uppercase tracking-wider mb-4">
                     Primary Suburbs Covered:
                   </p>
                   
@@ -781,124 +782,12 @@ export function SolarPanelRepairDarwinPage() {
               </div>
 
               {/* Right Side Enquiry Form */}
-              <div className="p-8 sm:p-12 lg:p-16 bg-slate-900/30 backdrop-blur-md relative z-10 flex flex-col justify-center">
-                <h3 className="text-3xl font-black text-white mb-2 uppercase tracking-tight">
-                  Book Your Repair
-                </h3>
-                <p className="text-slate-400 font-medium mb-8">
-                  Complete your details below to schedule a technician or request a fast, transparent quote.
-                </p>
-
-                {isSuccess ? (
-                  <div className="p-8 rounded-2xl bg-brand-500/10 border border-brand-500/30 text-center">
-                    <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center text-slate-900 mx-auto mb-6 shadow-lg">
-                      <Check className="w-8 h-8 stroke-[3]" />
-                    </div>
-                    <h4 className="text-2xl font-black text-white mb-3">Repair Request Received!</h4>
-                    <p className="text-slate-300 font-medium leading-relaxed">
-                      Thank you! One of our local Darwin solar repair specialists will contact you within one business day to confirm your assessment.
-                    </p>
-                    <Button 
-                      className="mt-6 bg-brand-500 text-slate-900 font-bold px-6 py-2 rounded-full hover:bg-brand-400 transition-colors"
-                      onClick={() => setIsSuccess(false)}
-                    >
-                      Submit Another Request
-                    </Button>
-                  </div>
-                ) : (
-                  <form onSubmit={handleFormSubmit} className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-slate-300 text-sm font-bold mb-2">First Name</label>
-                        <input
-                          type="text"
-                          name="firstName"
-                          required
-                          value={formState.firstName}
-                          onChange={handleInputChange}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 transition-colors font-medium"
-                          placeholder="John"
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-slate-300 text-sm font-bold mb-2">Last Name</label>
-                        <input
-                          type="text"
-                          name="lastName"
-                          required
-                          value={formState.lastName}
-                          onChange={handleInputChange}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 transition-colors font-medium"
-                          placeholder="Doe"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <div>
-                        <label className="block text-slate-300 text-sm font-bold mb-2">Phone Number</label>
-                        <input
-                          type="tel"
-                          name="phone"
-                          required
-                          value={formState.phone}
-                          onChange={handleInputChange}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 transition-colors font-medium"
-                          placeholder="0400 000 000"
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-slate-300 text-sm font-bold mb-2">Email Address</label>
-                        <input
-                          type="email"
-                          name="email"
-                          required
-                          value={formState.email}
-                          onChange={handleInputChange}
-                          className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 transition-colors font-medium"
-                          placeholder="john@example.com"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label className="block text-slate-300 text-sm font-bold mb-2">Suburb</label>
-                      <input
-                        type="text"
-                        name="suburb"
-                        required
-                        value={formState.suburb}
-                        onChange={handleInputChange}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 transition-colors font-medium"
-                        placeholder="Darwin CBD, Fannie Bay, Nightcliff"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-slate-300 text-sm font-bold mb-2">Inquiry / System Status</label>
-                      <textarea
-                        name="message"
-                        rows={4}
-                        value={formState.message}
-                        onChange={handleInputChange}
-                        className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 transition-colors font-medium resize-none"
-                        placeholder="Briefly describe the issue (e.g., cracked glass, inverter error codes, output dropped, storm damage)"
-                      />
-                    </div>
-
-                    {errorMessage && (
-                      <p className="text-red-500 text-sm font-bold">{errorMessage}</p>
-                    )}
-
-                    <Button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-brand-500 text-slate-900 font-black py-4 rounded-xl hover:bg-brand-400 transition-all uppercase tracking-widest h-14"
-                    >
-                      {isSubmitting ? "Submitting..." : "Submit Repair Request"}
-                    </Button>
-                  </form>
-                )}
+              <div className="p-4 sm:p-8 lg:p-12 relative z-10 flex flex-col justify-center">
+                <QuoteForm 
+                  title="Book Your Repair"
+                  defaultInterest="Solar System Repairs & Maintenance"
+                  source="solar_panel_repair_page"
+                />
               </div>
             </div>
           </div>

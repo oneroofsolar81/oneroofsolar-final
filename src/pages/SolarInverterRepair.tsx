@@ -320,7 +320,7 @@ export function SolarInverterRepair() {
             <div className="lg:col-span-7">
               <FadeIn isHero>
                 {/* Breadcrumb */}
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono flex-wrap">
+                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
                   <RouterLink to="/" className="hover:text-[#5BC94D] transition-colors">Home</RouterLink>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <span className="text-slate-400">Services</span>
@@ -795,7 +795,7 @@ export function SolarInverterRepair() {
                       {loc.title}
                     </h3>
                     {/* Postcode chip */}
-                    <div className="inline-block bg-brand-500/10 border border-brand-500/20 text-brand-700 px-3 py-1 rounded-full text-xs font-mono font-bold mb-4">
+                    <div className="inline-block bg-brand-500/10 border border-brand-500/20 text-brand-700 px-3 py-1 rounded-full text-xs  font-bold mb-4">
                       {loc.postcode}
                     </div>
                     {/* Comma-separated suburb list */}

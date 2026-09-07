@@ -6,6 +6,7 @@ import { FaqSection } from "@/src/components/FaqSection";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { SEO } from "@/src/components/SEO";
 import { Button } from "@/src/components/ui/Button";
+import { QuoteForm } from "@/src/components/QuoteForm";
 import {
   ArrowRight,
   Shield,
@@ -295,7 +296,7 @@ export function SolarPanelsBrands() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <FadeIn isHero>
               {/* Breadcrumb */}
-              <div className="flex items-center gap-2 text-slate-500 text-sm font-semibold uppercase tracking-wider mb-6 font-mono">
+              <div className="flex items-center gap-2 text-slate-500 text-sm font-semibold uppercase tracking-wider mb-6">
                 <Link to="/" className="hover:text-brand-400 transition-colors">Home</Link>
                 <span>&gt;</span>
                 <span className="text-slate-300">Solar Panels</span>
@@ -354,7 +355,7 @@ export function SolarPanelsBrands() {
                   <span className="text-5xl font-black text-white">25</span>
                   <span className="text-brand-400 font-bold mb-1">Yrs</span>
                 </div>
-                <div className="text-slate-400 text-xs uppercase tracking-widest font-mono">
+                <div className="text-slate-400 text-xs uppercase tracking-widest">
                   Minimum Warranty
                 </div>
               </div>
@@ -463,10 +464,10 @@ export function SolarPanelsBrands() {
                       </div>
 
                       <div className="flex items-center gap-2.5 mb-3">
-                        <span className="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-slate-600 text-xs font-mono uppercase shadow-xs">
+                        <span className="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-slate-600 text-xs  uppercase shadow-xs">
                           Solar Panel
                         </span>
-                        <span className="px-2.5 py-1 bg-brand-50 border border-brand-200 rounded-md text-brand-700 text-xs font-mono uppercase shadow-xs flex items-center gap-1 font-bold">
+                        <span className="px-2.5 py-1 bg-brand-50 border border-brand-200 rounded-md text-brand-700 text-xs  uppercase shadow-xs flex items-center gap-1 font-bold">
                           <Zap className="w-3 h-3 text-brand-500" /> High Yield
                         </span>
                       </div>
@@ -482,7 +483,7 @@ export function SolarPanelsBrands() {
                           <div className="mt-4 space-y-4 pt-4 border-t border-slate-200">
                             <p className="text-slate-600">{product.remaining}</p>
                             <div className="p-4 rounded-xl bg-white border border-slate-200">
-                              <p className="text-xs font-bold text-brand-600 uppercase tracking-widest mb-1 font-mono">Best For</p>
+                              <p className="text-xs font-bold text-brand-600 uppercase tracking-widest mb-1">Best For</p>
                               <p className="text-slate-700 text-sm font-medium leading-relaxed">{product.bestFor}</p>
                             </div>
                           </div>
@@ -499,7 +500,7 @@ export function SolarPanelsBrands() {
                       <div className="mt-4 pt-4 border-t border-slate-200">
                         <Link
                           to={product.productLink}
-                          className="text-brand-600 hover:text-brand-700 text-xs font-bold transition-colors block mb-3 underline hover:no-underline font-mono uppercase tracking-wider"
+                          className="text-brand-600 hover:text-brand-700 text-xs font-bold transition-colors block mb-3 underline hover:no-underline  uppercase tracking-wider"
                         >
                           {product.specLabel} →
                         </Link>
@@ -782,7 +783,7 @@ export function SolarPanelsBrands() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             <FadeIn delay={0.1} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
-              <span className="text-4xl font-black text-brand-500 font-mono block mb-4">01</span>
+              <span className="text-4xl font-black text-brand-500  block mb-4">01</span>
               <h3 className="text-lg font-bold text-slate-900 mb-3">1. Consultation and Quote</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 We review your last three Jacana Energy bills and survey your roof to understand your exact usage pattern and available space. You receive a transparent, custom quote with the STC rebate already applied.
@@ -790,7 +791,7 @@ export function SolarPanelsBrands() {
             </FadeIn>
 
             <FadeIn delay={0.2} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
-              <span className="text-4xl font-black text-brand-500 font-mono block mb-4">02</span>
+              <span className="text-4xl font-black text-brand-500  block mb-4">02</span>
               <h3 className="text-lg font-bold text-slate-900 mb-3">2. System Design</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 Our engineers design a custom layout to maximise sunlight capture across your specific roof orientation. We confirm which panel brand suits your space, select the right inverter and size the system to your actual daytime consumption.
@@ -798,7 +799,7 @@ export function SolarPanelsBrands() {
             </FadeIn>
 
             <FadeIn delay={0.3} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
-              <span className="text-4xl font-black text-brand-500 font-mono block mb-4">03</span>
+              <span className="text-4xl font-black text-brand-500  block mb-4">03</span>
               <h3 className="text-lg font-bold text-slate-900 mb-3">3. Expert Installation</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 Our licensed installers fit your system safely and neatly to NT building standards. The installation is swift and causes minimal disruption to your household. All cyclone-rated mounting requirements are handled by our team.
@@ -806,7 +807,7 @@ export function SolarPanelsBrands() {
             </FadeIn>
 
             <FadeIn delay={0.4} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
-              <span className="text-4xl font-black text-brand-500 font-mono block mb-4">04</span>
+              <span className="text-4xl font-black text-brand-500  block mb-4">04</span>
               <h3 className="text-lg font-bold text-slate-900 mb-3">4. Commissioning & Handover</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 We test every component, complete the grid connection paperwork with Power and Water Corporation and walk you through your monitoring app so you can track savings from day one.
@@ -836,7 +837,7 @@ export function SolarPanelsBrands() {
               {/* Content Side */}
               <div className="p-8 sm:p-12 lg:p-20 flex flex-col justify-center">
                 <FadeIn>
-                  <span className="text-brand-400 font-mono tracking-widest uppercase text-xs mb-4 block">
+                  <span className="text-brand-400  tracking-widest uppercase text-xs mb-4 block">
                     Contact Our Team
                   </span>
                   <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-6 uppercase">
@@ -896,7 +897,7 @@ export function SolarPanelsBrands() {
                       <p className="text-slate-500 text-sm font-medium mb-1 uppercase tracking-wider">
                         Email Us
                       </p>
-                      <p className="text-white font-bold text-lg group-hover:text-brand-400 transition-colors font-mono">
+                      <p className="text-white font-bold text-lg group-hover:text-brand-400 transition-colors">
                         info@oneroofsolar.com.au
                       </p>
                     </div>
@@ -919,32 +920,12 @@ export function SolarPanelsBrands() {
               </div>
 
               {/* Form Side */}
-              <div className="p-6 sm:p-10 lg:p-16 bg-slate-800/30 backdrop-blur-md relative z-10 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-white/10">
-                <h3 className="text-3xl font-bold text-white mb-2">
-                  Book Your Consultation
-                </h3>
-                <p className="text-slate-400 font-medium mb-8">
-                  We will get back to you within one business day.
-                </p>
-
-                <div
-                  className="w-full relative bg-transparent rounded-xl overflow-hidden"
-                  style={{ minHeight: "720px" }}
-                >
-                  <iframe
-                    src="https://api.oneroofsolar.com.au/widget/form/3uXInokjWftJSJgePj2x"
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      border: "none",
-                      borderRadius: "8px",
-                      minHeight: "720px",
-                      overflow: "hidden",
-                    }}
-                    scrolling="no"
-                    title="Book Consultation Form"
-                  ></iframe>
-                </div>
+              <div className="p-4 sm:p-8 lg:p-12 relative z-10 flex flex-col justify-center border-t lg:border-t-0 lg:border-l border-white/10">
+                <QuoteForm 
+                  title="Book Your Consultation"
+                  defaultInterest="Residential Solar Panels"
+                  source="solar_panel_brands_page"
+                />
               </div>
             </div>
           </div>

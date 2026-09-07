@@ -193,7 +193,7 @@ export function FoxEssInvertersPage() {
             <div className="lg:col-span-7 text-left">
               <FadeIn isHero>
                 {/* Breadcrumbs */}
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono flex-wrap">
+                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
                   <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <Link to="/products/solar-inverters" className="hover:text-[#5BC94D] transition-colors">Solar Inverters</Link>
@@ -307,7 +307,7 @@ export function FoxEssInvertersPage() {
           <FadeIn>
             <div className="flex items-center gap-3 mb-3">
               <span className="h-px w-10 bg-[#5BC94D]"></span>
-              <span className="text-xs font-black uppercase tracking-widest text-[#5BC94D] font-mono">
+              <span className="text-xs font-black uppercase tracking-widest text-[#5BC94D]">
                 Official Engineering Datasheets &amp; Downloads
               </span>
             </div>
@@ -332,7 +332,7 @@ export function FoxEssInvertersPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30 font-mono">Single-Phase Hybrid</span>
+                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30">Single-Phase Hybrid</span>
                       <span className="text-xs font-bold text-slate-500">3.0kW – 6.0kW</span>
                     </div>
                     <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
@@ -340,7 +340,7 @@ export function FoxEssInvertersPage() {
                     </h4>
 
                     <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
-                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1 font-mono">Key Highlights</span>
+                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1">Key Highlights</span>
                       <p className="text-slate-700 text-sm leading-relaxed font-medium">
                         Next-generation single-phase hybrid inverter with dual MPPTs (16A/16A), 80–480V high-voltage battery connection, and EPS power switch time under 20ms.
                       </p>
@@ -349,15 +349,15 @@ export function FoxEssInvertersPage() {
                     <div className="space-y-3 mb-8 text-xs">
                       <div className="flex justify-between py-1.5 border-b border-slate-100">
                         <span className="font-semibold text-slate-500">MPPT Voltage Range</span>
-                        <span className="font-bold text-slate-900 font-mono">80V – 550V (75V Start)</span>
+                        <span className="font-bold text-slate-900">80V – 550V (75V Start)</span>
                       </div>
                       <div className="flex justify-between py-1.5 border-b border-slate-100">
                         <span className="font-semibold text-slate-500">Battery Charge/Discharge</span>
-                        <span className="font-bold text-slate-900 font-mono">40.0 A Max</span>
+                        <span className="font-bold text-slate-900">40.0 A Max</span>
                       </div>
                       <div className="flex justify-between py-1.5 border-b border-slate-100">
                         <span className="font-semibold text-slate-500">Ingress Protection</span>
-                        <span className="font-bold text-slate-900 font-mono">IP65 Weatherproof</span>
+                        <span className="font-bold text-slate-900">IP65 Weatherproof</span>
                       </div>
                     </div>
                   </div>
@@ -380,7 +380,7 @@ export function FoxEssInvertersPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30 font-mono">High-Power Single Phase</span>
+                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30">High-Power Single Phase</span>
                       <span className="text-xs font-bold text-slate-500">7.0kW – 10.5kW</span>
                     </div>
                     <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
@@ -388,7 +388,7 @@ export function FoxEssInvertersPage() {
                     </h4>
 
                     <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
-                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1 font-mono">Key Highlights</span>
+                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1">Key Highlights</span>
                       <p className="text-slate-700 text-sm leading-relaxed font-medium">
                         Heavy-duty single-phase hybrid inverter with 3 or 4 MPPT trackers, up to 21kW PV array support, 63A Australian breaker capacity, and ultra-fast EPS &lt;10ms switchover.
                       </p>
@@ -397,15 +397,15 @@ export function FoxEssInvertersPage() {
                     <div className="space-y-3 mb-8 text-xs">
                       <div className="flex justify-between py-1.5 border-b border-slate-100">
                         <span className="font-semibold text-slate-500">No. of MPPT Trackers</span>
-                        <span className="font-bold text-slate-900 font-mono">3 / 4 Trackers (16A)</span>
+                        <span className="font-bold text-slate-900">3 / 4 Trackers (16A)</span>
                       </div>
                       <div className="flex justify-between py-1.5 border-b border-slate-100">
                         <span className="font-semibold text-slate-500">Max AC Throughput</span>
-                        <span className="font-bold text-slate-900 font-mono">63A / 14,500 VA (AU)</span>
+                        <span className="font-bold text-slate-900">63A / 14,500 VA (AU)</span>
                       </div>
                       <div className="flex justify-between py-1.5 border-b border-slate-100">
                         <span className="font-semibold text-slate-500">Battery Voltage</span>
-                        <span className="font-bold text-slate-900 font-mono">85V – 480V (50A)</span>
+                        <span className="font-bold text-slate-900">85V – 480V (50A)</span>
                       </div>
                     </div>
                   </div>
@@ -428,7 +428,7 @@ export function FoxEssInvertersPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30 font-mono">Three-Phase Hybrid</span>
+                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30">Three-Phase Hybrid</span>
                       <span className="text-xs font-bold text-slate-500">5.0kW – 15.0kW</span>
                     </div>
                     <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
@@ -436,7 +436,7 @@ export function FoxEssInvertersPage() {
                     </h4>
 
                     <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
-                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1 font-mono">Key Highlights</span>
+                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1">Key Highlights</span>
                       <p className="text-slate-700 text-sm leading-relaxed font-medium">
                         Three-phase commercial &amp; large residential hybrid inverter with 3 MPPT trackers, 1000V DC input, 100–800V HV battery interface, and up to 15kW charge/discharge power.
                       </p>
@@ -445,15 +445,15 @@ export function FoxEssInvertersPage() {
                     <div className="space-y-3 mb-8 text-xs">
                       <div className="flex justify-between py-1.5 border-b border-slate-100">
                         <span className="font-semibold text-slate-500">Max. PV Array Power</span>
-                        <span className="font-bold text-slate-900 font-mono">Up to 30,000 Wp</span>
+                        <span className="font-bold text-slate-900">Up to 30,000 Wp</span>
                       </div>
                       <div className="flex justify-between py-1.5 border-b border-slate-100">
                         <span className="font-semibold text-slate-500">MPPT Trackers</span>
-                        <span className="font-bold text-slate-900 font-mono">3 MPPT (20A / 20A / 20A)</span>
+                        <span className="font-bold text-slate-900">3 MPPT (20A / 20A / 20A)</span>
                       </div>
                       <div className="flex justify-between py-1.5 border-b border-slate-100">
                         <span className="font-semibold text-slate-500">Peak Charge/Discharge</span>
-                        <span className="font-bold text-slate-900 font-mono">Up to 15 kW (50A)</span>
+                        <span className="font-bold text-slate-900">Up to 15 kW (50A)</span>
                       </div>
                     </div>
                   </div>
@@ -487,7 +487,7 @@ export function FoxEssInvertersPage() {
                 {/* BATTERY CARD 1: EQ4800 */}
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800 font-mono block w-fit mb-3">Stackable Series</span>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800  block w-fit mb-3">Stackable Series</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
                       Fox ESS EQ4800
                     </h4>
@@ -498,15 +498,15 @@ export function FoxEssInvertersPage() {
                     <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
                       <div className="flex justify-between">
                         <span className="text-slate-500">Nominal Voltage:</span>
-                        <span className="font-bold text-slate-800 font-mono">89.6V - 403.2V</span>
+                        <span className="font-bold text-slate-800">89.6V - 403.2V</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Depth of Discharge:</span>
-                        <span className="font-bold text-slate-800 font-mono">100% DoD</span>
+                        <span className="font-bold text-slate-800">100% DoD</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Efficiency / IP:</span>
-                        <span className="font-bold text-slate-800 font-mono">&gt;95% | IP65</span>
+                        <span className="font-bold text-slate-800">&gt;95% | IP65</span>
                       </div>
                     </div>
                   </div>
@@ -526,7 +526,7 @@ export function FoxEssInvertersPage() {
                 {/* BATTERY CARD 2: EQ5500 */}
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800 font-mono block w-fit mb-3">High-Capacity Series</span>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800  block w-fit mb-3">High-Capacity Series</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
                       Fox ESS EQ5500
                     </h4>
@@ -537,15 +537,15 @@ export function FoxEssInvertersPage() {
                     <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
                       <div className="flex justify-between">
                         <span className="text-slate-500">Nominal Voltage:</span>
-                        <span className="font-bold text-slate-800 font-mono">89.6V - 403.2V</span>
+                        <span className="font-bold text-slate-800">89.6V - 403.2V</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Charge/Discharge:</span>
-                        <span className="font-bold text-slate-800 font-mono">50A Continuous</span>
+                        <span className="font-bold text-slate-800">50A Continuous</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Depth of Discharge:</span>
-                        <span className="font-bold text-slate-800 font-mono">100% DoD</span>
+                        <span className="font-bold text-slate-800">100% DoD</span>
                       </div>
                     </div>
                   </div>
@@ -565,7 +565,7 @@ export function FoxEssInvertersPage() {
                 {/* BATTERY CARD 3: EP11 */}
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-mono block w-fit mb-3">Wall / Floor Mount</span>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800  block w-fit mb-3">Wall / Floor Mount</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
                       Fox ESS EP11
                     </h4>
@@ -576,15 +576,15 @@ export function FoxEssInvertersPage() {
                     <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
                       <div className="flex justify-between">
                         <span className="text-slate-500">Nominal Voltage:</span>
-                        <span className="font-bold text-slate-800 font-mono">384 V High Voltage</span>
+                        <span className="font-bold text-slate-800">384 V High Voltage</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Compatibility:</span>
-                        <span className="font-bold text-slate-800 font-mono">H1, KH, H3 Series</span>
+                        <span className="font-bold text-slate-800">H1, KH, H3 Series</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Profile / Weight:</span>
-                        <span className="font-bold text-slate-800 font-mono">147mm slim / 99kg</span>
+                        <span className="font-bold text-slate-800">147mm slim / 99kg</span>
                       </div>
                     </div>
                   </div>
@@ -604,7 +604,7 @@ export function FoxEssInvertersPage() {
                 {/* BATTERY CARD 4: EP12 PLUS */}
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-rose-100 text-rose-800 font-mono block w-fit mb-3">Fire-Protected LFP</span>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-rose-100 text-rose-800  block w-fit mb-3">Fire-Protected LFP</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
                       Fox ESS EP12 Plus (w)
                     </h4>
@@ -615,15 +615,15 @@ export function FoxEssInvertersPage() {
                     <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
                       <div className="flex justify-between">
                         <span className="text-slate-500">Nominal Voltage:</span>
-                        <span className="font-bold text-slate-800 font-mono">384 V High Voltage</span>
+                        <span className="font-bold text-slate-800">384 V High Voltage</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Fire Protection:</span>
-                        <span className="font-bold text-rose-600 font-mono">Integrated Built-in</span>
+                        <span className="font-bold text-rose-600">Integrated Built-in</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Scalability:</span>
-                        <span className="font-bold text-slate-800 font-mono">Up to 4 Units</span>
+                        <span className="font-bold text-slate-800">Up to 4 Units</span>
                       </div>
                     </div>
                   </div>
@@ -655,7 +655,7 @@ export function FoxEssInvertersPage() {
                 {/* EV CARD 1: L SERIES */}
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800 font-mono block w-fit mb-3">Residential Smart</span>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800  block w-fit mb-3">Residential Smart</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
                       Fox ESS L Series
                     </h4>
@@ -666,15 +666,15 @@ export function FoxEssInvertersPage() {
                     <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
                       <div className="flex justify-between">
                         <span className="text-slate-500">Solar Linkage:</span>
-                        <span className="font-bold text-slate-800 font-mono">Excess Solar Charge</span>
+                        <span className="font-bold text-slate-800">Excess Solar Charge</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Control:</span>
-                        <span className="font-bold text-slate-800 font-mono">Bluetooth + App</span>
+                        <span className="font-bold text-slate-800">Bluetooth + App</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Durability:</span>
-                        <span className="font-bold text-slate-800 font-mono">IP55 / IK08</span>
+                        <span className="font-bold text-slate-800">IP55 / IK08</span>
                       </div>
                     </div>
                   </div>
@@ -694,7 +694,7 @@ export function FoxEssInvertersPage() {
                 {/* EV CARD 2: L MAX SERIES */}
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800 font-mono block w-fit mb-3">RFID + OCPP</span>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800  block w-fit mb-3">RFID + OCPP</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
                       Fox ESS L MAX Series
                     </h4>
@@ -705,15 +705,15 @@ export function FoxEssInvertersPage() {
                     <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
                       <div className="flex justify-between">
                         <span className="text-slate-500">Protocol:</span>
-                        <span className="font-bold text-slate-800 font-mono">OCPP 1.6 / 2.0.1</span>
+                        <span className="font-bold text-slate-800">OCPP 1.6 / 2.0.1</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Access:</span>
-                        <span className="font-bold text-slate-800 font-mono">RFID Card / App</span>
+                        <span className="font-bold text-slate-800">RFID Card / App</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Connectivity:</span>
-                        <span className="font-bold text-slate-800 font-mono">RJ45 + WiFi + BLE</span>
+                        <span className="font-bold text-slate-800">RJ45 + WiFi + BLE</span>
                       </div>
                     </div>
                   </div>
@@ -733,7 +733,7 @@ export function FoxEssInvertersPage() {
                 {/* EV CARD 3: A SERIES */}
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-mono block w-fit mb-3">Plug &amp; Socket | V2G</span>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800  block w-fit mb-3">Plug &amp; Socket | V2G</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
                       Fox ESS A Series
                     </h4>
@@ -744,15 +744,15 @@ export function FoxEssInvertersPage() {
                     <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
                       <div className="flex justify-between">
                         <span className="text-slate-500">Max Power:</span>
-                        <span className="font-bold text-slate-800 font-mono">Up to 22 kW</span>
+                        <span className="font-bold text-slate-800">Up to 22 kW</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">V2G Hardware:</span>
-                        <span className="font-bold text-slate-800 font-mono">ISO 15118 Ready</span>
+                        <span className="font-bold text-slate-800">ISO 15118 Ready</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Variants:</span>
-                        <span className="font-bold text-slate-800 font-mono">Tethered / Socket</span>
+                        <span className="font-bold text-slate-800">Tethered / Socket</span>
                       </div>
                     </div>
                   </div>
@@ -772,7 +772,7 @@ export function FoxEssInvertersPage() {
                 {/* EV CARD 4: C SERIES DUAL COMMERCIAL */}
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-slate-900 text-white font-mono block w-fit mb-3">Commercial Dual Port</span>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-slate-900 text-white  block w-fit mb-3">Commercial Dual Port</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
                       Fox ESS C Series
                     </h4>
@@ -783,15 +783,15 @@ export function FoxEssInvertersPage() {
                     <div className="space-y-2 mb-6 text-xs bg-slate-50 p-3 rounded-xl border border-slate-100">
                       <div className="flex justify-between">
                         <span className="text-slate-500">Dual Charging:</span>
-                        <span className="font-bold text-slate-800 font-mono">22kW * 2 (44kW)</span>
+                        <span className="font-bold text-slate-800">22kW * 2 (44kW)</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Billing / Pay:</span>
-                        <span className="font-bold text-slate-800 font-mono">QR Cloud + RFID</span>
+                        <span className="font-bold text-slate-800">QR Cloud + RFID</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-500">Protection:</span>
-                        <span className="font-bold text-slate-800 font-mono">IK10 Impact / IP55</span>
+                        <span className="font-bold text-slate-800">IK10 Impact / IP55</span>
                       </div>
                     </div>
                   </div>

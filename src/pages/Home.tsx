@@ -5,8 +5,7 @@ import { PartnersMarquee } from "@/src/components/PartnersMarquee";
 import { PackagesSection } from "@/src/components/PackagesSection";
 import { SEO } from "@/src/components/SEO";
 import { Link } from "react-router-dom";
-import { addDoc, collection } from "firebase/firestore";
-import { db } from "@/src/lib/firebase";
+import { QuoteForm } from "@/src/components/QuoteForm";
 import { 
   ArrowRight, CheckCircle2, Zap, Battery, HomeIcon, Building2, 
   CircleDollarSign, Lightbulb, Grid, Activity, Wrench, 
@@ -16,47 +15,6 @@ import {
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 export function Home() {
-  // Quote form state
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    suburb: "",
-    interest: "Residential Solar Panels"
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [errorMsg, setErrorMsg] = useState("");
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleFormSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.name || !formData.phone) {
-      setErrorMsg("Please fill in your name and phone number.");
-      return;
-    }
-    setIsSubmitting(true);
-    setErrorMsg("");
-    try {
-      await addDoc(collection(db, "leads"), {
-        ...formData,
-        source: "home_quote_widget",
-        createdAt: new Date().toISOString()
-      });
-      setIsSuccess(true);
-      setFormData({ name: "", phone: "", suburb: "", interest: "Residential Solar Panels" });
-    } catch (err: any) {
-      console.error("Error submitting lead to Firestore:", err);
-      // Fallback: simulate success so the user doesn't get blocked
-      setIsSuccess(true);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   // Dynamic SEO and JSON-LD structured data injection
   useEffect(() => {
     // 1. Title, Description & Canonical
@@ -403,7 +361,7 @@ export function Home() {
             {/* Left Content */}
             <FadeIn isHero className="lg:col-span-7">
               {/* Pill */}
-              <div className="inline-flex items-center gap-2 rounded-full border border-brand-500/40 bg-brand-500/10 backdrop-blur-md px-5 py-2.5 text-sm font-semibold text-brand-400 mb-8 shadow-[0_0_20px_rgba(140,198,63,0.15)]">
+              <div className="inline-flex items-center gap-2 rounded-full border border-brand-500/40 bg-brand-500/10 backdrop-blur-md px-5 py-2.5 text-[0.875rem] font-normal leading-[1.5] text-brand-400 mb-8 shadow-[0_0_20px_rgba(140,198,63,0.15)]">
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-500"></span>
@@ -413,20 +371,19 @@ export function Home() {
               
               {/* Exact H1 markup & styles */}
               <h1 
-                style={{ fontSize: "clamp(34px, 4.2vw, 58px)", fontWeight: 900, lineHeight: 1.15, letterSpacing: "-1px" }}
-                className="text-white mb-[22px]"
+                className="hero-heading text-white mb-[22px] break-words"
               >
                 Solar Panels <span className="text-brand-500">Darwin</span><br />
                 Trusted Installations Across the NT
               </h1>
               
               {/* Subheading */}
-              <p className="max-w-xl text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed font-light">
+              <p className="max-w-xl text-[1rem] font-normal leading-[1.6] text-slate-300 mb-8">
                 Darwin's local solar panel installers. Residential and commercial solar, battery storage, EV chargers, and $0 deposit plans across Darwin, Palmerston and Alice Springs. Federal STC rebates applied upfront.
               </p>
 
               {/* Stat badges */}
-              <div className="flex flex-wrap gap-x-6 gap-y-3 mb-10 text-sm font-semibold text-white">
+              <div className="flex flex-wrap gap-x-6 gap-y-3 mb-10 text-[0.875rem] font-normal leading-[1.5] text-white">
                 {[
                   "$0 Deposit Available",
                   "Battery Storage Specialists",
@@ -442,10 +399,10 @@ export function Home() {
               
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-                <Button size="lg" className="rounded-full font-bold text-base px-8 h-14 bg-brand-500 hover:bg-brand-600 text-slate-900 hover:scale-[1.02] transition-all" asChild>
+                <Button size="lg" className="rounded-full text-[1rem] font-medium leading-[1] px-8 h-14 bg-brand-500 hover:bg-brand-600 text-slate-900 hover:scale-[1.02] transition-all" asChild>
                   <Link to="/contact">Get Your Free Quote <ArrowRight className="ml-2 h-5 w-5" /></Link>
                 </Button>
-                <Button size="lg" variant="outline" className="rounded-full font-bold text-base px-8 h-14 border-white/20 text-white bg-transparent hover:bg-white/10 hover:border-white/30" asChild>
+                <Button size="lg" variant="outline" className="rounded-full text-[1rem] font-medium leading-[1] px-8 h-14 border-white/20 text-white bg-transparent hover:bg-white/10 hover:border-white/30" asChild>
                   <a href={`tel:${PRIMARY_PHONE_RAW}`}>Call Us {PRIMARY_PHONE}</a>
                 </Button>
               </div>
@@ -455,128 +412,7 @@ export function Home() {
             <FadeIn isHero delay={0.2} className="lg:col-span-5 relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-500/20 to-transparent blur-3xl rounded-[3rem] -z-10 mt-10 animate-pulse"></div>
               
-              <div className="rounded-[2.5rem] bg-slate-900/90 backdrop-blur-xl border border-white/10 p-8 sm:p-10 shadow-2xl relative overflow-hidden max-w-[480px] lg:ml-auto">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-brand-500/10 rounded-bl-[100px] pointer-events-none"></div>
-                
-                <h3 className="text-2xl font-black text-white mb-1">Get Your Free Quote</h3>
-                <p className="text-brand-400 font-bold text-sm mb-6 flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-brand-400 animate-pulse"></span>
-                  Response within 2 business hours
-                </p>
-
-                {isSuccess ? (
-                  <div className="py-8 text-center">
-                    <div className="w-16 h-16 bg-brand-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-brand-500/30">
-                      <CheckCircle2 className="w-8 h-8 text-brand-400" />
-                    </div>
-                    <h4 className="text-xl font-bold text-white mb-2">Thank You!</h4>
-                    <p className="text-slate-300 text-sm leading-relaxed">
-                      Your quote request has been received. Our NT solar experts will contact you within 2 business hours.
-                    </p>
-                    <Button onClick={() => setIsSuccess(false)} variant="outline" className="mt-6 rounded-full border-white/20 text-white hover:bg-white/10">
-                      Submit Another
-                    </Button>
-                  </div>
-                ) : (
-                  <form onSubmit={handleFormSubmit} className="space-y-4 relative z-10">
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
-                      <input 
-                        type="text" 
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        placeholder="e.g. John Citizen" 
-                        required
-                        className="w-full h-12 px-4 rounded-xl bg-slate-800/80 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm font-medium"
-                      />
-                    </div>
-                    
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
-                      <input 
-                        type="tel" 
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        placeholder="e.g. 0483 986 444" 
-                        required
-                        className="w-full h-12 px-4 rounded-xl bg-slate-800/80 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm font-medium"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Suburb / Postcode</label>
-                      <input 
-                        type="text" 
-                        name="suburb"
-                        value={formData.suburb}
-                        onChange={handleInputChange}
-                        placeholder="e.g. Darwin 0800" 
-                        className="w-full h-12 px-4 rounded-xl bg-slate-800/80 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-brand-500 text-sm font-medium"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">I Am Interested In</label>
-                      <select 
-                        name="interest"
-                        value={formData.interest}
-                        onChange={handleInputChange}
-                        className="w-full h-12 px-4 rounded-xl bg-slate-800/80 border border-white/10 text-white focus:outline-none focus:border-brand-500 text-sm font-medium appearance-none"
-                      >
-                        <option value="Residential Solar Panels">Residential Solar Panels</option>
-                        <option value="Commercial Solar">Commercial Solar</option>
-                        <option value="Battery Storage (NT Grant)">Battery Storage (NT Grant)</option>
-                        <option value="Solar + Battery Package">Solar + Battery Package</option>
-                        <option value="EV Charger Installation">EV Charger Installation</option>
-                      </select>
-                    </div>
-
-                    {errorMsg && <p className="text-rose-400 text-xs font-medium">{errorMsg}</p>}
-
-                    <Button 
-                      type="submit" 
-                      disabled={isSubmitting}
-                      className="w-full h-12 rounded-xl font-bold bg-brand-500 hover:bg-brand-600 text-slate-900 mt-2 shadow-lg shadow-brand-500/20"
-                    >
-                      {isSubmitting ? "Processing..." : "Request Free Quote"}
-                    </Button>
-                    
-                    <p className="text-[11px] text-slate-400 text-center font-medium mt-3">
-                      Your details are private and never shared
-                    </p>
-                  </form>
-                )}
-
-                {/* Social proof widget */}
-                <div className="mt-6 pt-6 border-t border-white/10 flex items-center gap-3">
-                  <div className="flex -space-x-2">
-                    {[
-                      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80",
-                      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80",
-                      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100&q=80"
-                    ].map((src, i) => (
-                      <div key={i} className="w-8 h-8 rounded-full border border-slate-900 bg-slate-800 overflow-hidden flex items-center justify-center">
-                        <img 
-                          referrerPolicy="no-referrer"
-                          src={src} 
-                          alt={`Customer avatar ${i + 1}`} 
-                          className="w-full h-full object-cover" 
-                        />
-                      </div>
-                    ))}
-                    <div className="w-8 h-8 rounded-full border border-slate-900 bg-brand-500/20 text-brand-400 flex items-center justify-center text-[10px] font-black">+500</div>
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-0.5 text-yellow-400 mb-0.5">
-                      {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-3 h-3 fill-current" />)}
-                    </div>
-                    <p className="text-xs font-bold text-slate-300">Loved by Darwin homeowners</p>
-                  </div>
-                </div>
-
-              </div>
+              <QuoteForm className="max-w-[480px] lg:ml-auto" source="home_hero" />
             </FadeIn>
             
           </div>
@@ -653,9 +489,9 @@ export function Home() {
           .trust-text {
               color: #ffffff;
               font-family: inherit;
-              font-size: 12px;
-              font-weight: 600;
-              line-height: 1;
+              font-size: 0.875rem;
+              font-weight: 400;
+              line-height: 1.5;
               white-space: nowrap;
           }
 
@@ -664,7 +500,7 @@ export function Home() {
                   padding: 0 20px;
               }
               .trust-text {
-                  font-size: 11px;
+                  font-size: 0.875rem;
               }
           }
         ` }} />
@@ -719,19 +555,19 @@ export function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-16">
             <div className="lg:col-span-6">
-              <span className="text-xs font-bold tracking-widest text-brand-600 uppercase mb-3 block">Complete Energy Solutions</span>
-              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-6">
+              <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">Complete Energy Solutions</span>
+              <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6">
                 Solar Panels Built for Darwin's Climate and Conditions
               </h2>
             </div>
             <div className="lg:col-span-6 lg:pt-8">
-              <p className="text-slate-600 text-lg leading-relaxed mb-4">
+              <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-4">
                 Darwin gets more sunshine per year than almost any other Australian city. That means solar panels here work harder, produce more, and pay back faster than anywhere else in the country. Oneroof Solar was founded in Darwin to install solar systems specifically suited to the Top End - high UV, heavy wet seasons, cyclone-rated equipment, and territory humidity.
               </p>
-              <p className="text-slate-600 text-lg leading-relaxed mb-6">
+              <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-6">
                 We handle everything from your initial consultation and system design through to installation, grid connection, and ongoing support. Our team are NT-based, locally licensed, and familiar with Darwin's unique grid setup, power bills, and weather patterns.
               </p>
-              <Link to="/contact" className="inline-flex items-center gap-2 text-brand-600 font-extrabold text-base hover:text-brand-700 uppercase tracking-wider transition-colors">
+              <Link to="/contact" className="inline-flex items-center gap-2 text-brand-600 text-[1rem] font-medium leading-[1] hover:text-brand-700 uppercase tracking-wider transition-colors">
                 LEARN MORE <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
@@ -748,13 +584,13 @@ export function Home() {
                   <div className="inline-flex rounded-2xl bg-white/10 backdrop-blur-md p-4 text-white border border-white/10">
                     <Battery className="h-7 w-7" />
                   </div>
-                  <span className="px-4 py-1.5 rounded-full bg-brand-500/20 text-brand-400 text-xs font-bold uppercase tracking-wider border border-brand-500/30 flex items-center gap-1.5">
+                  <span className="px-4 py-1.5 rounded-full bg-brand-500/20 text-brand-400 text-[0.875rem] font-normal leading-[1.5] uppercase tracking-wider border border-brand-500/30 flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse"></span>
                     BACKUP POWER
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4 relative z-10 group-hover:text-brand-400 transition-colors">Battery Storage Systems</h3>
-                <p className="text-slate-400 leading-relaxed font-medium mb-6 relative z-10 flex-grow">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-4 relative z-10 group-hover:text-brand-400 transition-colors">Battery Storage Systems</h3>
+                <p className="text-slate-400 text-[1rem] font-normal leading-[1.6] mb-6 relative z-10 flex-grow">
                   Store your solar energy for nighttime use and protect against wet season grid outages. Maximise daytime solar self-consumption with premium battery storage.
                 </p>
               </div>
@@ -767,8 +603,8 @@ export function Home() {
                 <div className="mb-8 inline-flex rounded-2xl bg-brand-50 p-4 text-brand-600 border border-brand-100 w-max">
                   <Grid className="h-7 w-7" />
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-brand-600 transition-colors">Residential & Commercial Solar</h3>
-                <p className="text-slate-600 leading-relaxed font-medium mb-6 flex-grow">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-4 group-hover:text-brand-600 transition-colors">Residential & Commercial Solar</h3>
+                <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-6 flex-grow">
                   Custom-designed systems for Darwin homes and NT businesses. Sized to your actual power bills, not a generic quote.
                 </p>
               </div>
@@ -781,8 +617,8 @@ export function Home() {
                 <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
                   <Zap className="h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">Smart Inverters</h3>
-                <p className="text-slate-600 text-sm leading-relaxed font-medium flex-grow">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">Smart Inverters</h3>
+                <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] flex-grow">
                   Fronius and premium hybrid inverters with real-time monitoring apps for your Darwin system.
                 </p>
               </div>
@@ -792,8 +628,8 @@ export function Home() {
                 <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
                   <Wrench className="h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">Repairs & Maintenance</h3>
-                <p className="text-slate-600 text-sm leading-relaxed font-medium flex-grow">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">Repairs & Maintenance</h3>
+                <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] flex-grow">
                   Keep your system running at peak performance. Fast response from our Darwin-based team.
                 </p>
               </div>
@@ -803,8 +639,8 @@ export function Home() {
                 <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
                   <Activity className="h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">EV Charger Installation Darwin</h3>
-                <p className="text-slate-600 text-sm leading-relaxed font-medium flex-grow">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">EV Charger Installation Darwin</h3>
+                <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] flex-grow">
                   Home and commercial EV charger installs. Pair with solar and charge your car for free.
                 </p>
               </div>
@@ -821,11 +657,11 @@ export function Home() {
             
             {/* Left Points Content */}
             <FadeIn className="lg:col-span-7">
-              <span className="text-xs font-bold tracking-widest text-brand-600 uppercase mb-3 block">Premium Solar for Darwin Homes</span>
-              <h2 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-6">
+              <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">Premium Solar for Darwin Homes</span>
+              <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6">
                 Premium Solar Systems For The Northern Territory
               </h2>
-              <p className="text-slate-600 text-lg leading-relaxed mb-8">
+              <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-8">
                 Most solar companies in Australia operate from interstate. Oneroof Solar is based in Darwin, owned in Darwin, and installs entirely across the Northern Territory. That makes a real difference in how we design systems, source equipment, and support customers after installation.
               </p>
               
@@ -852,18 +688,18 @@ export function Home() {
                       <pt.icon className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">{pt.title}</h3>
-                      <p className="text-slate-600 text-sm leading-relaxed">{pt.text}</p>
+                      <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">{pt.title}</h3>
+                      <p className="text-slate-600 text-[1rem] font-normal leading-[1.6]">{pt.text}</p>
                     </div>
                   </div>
                 ))}
               </div>
               
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="rounded-full h-12 px-8 text-base font-bold bg-[#8cc63f] hover:bg-[#7bc034] text-slate-900 shadow-md" asChild>
+                <Button size="lg" className="rounded-full h-12 px-8 text-[1rem] font-medium leading-[1] bg-[#8cc63f] hover:bg-[#7bc034] text-slate-900 shadow-md" asChild>
                   <Link to="/contact">Get Your Free Quote</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-base font-bold text-slate-700 border-slate-200" asChild>
+                <Button size="lg" variant="outline" className="rounded-full h-12 px-8 text-[1rem] font-medium leading-[1] text-slate-700 border-slate-200" asChild>
                   <a href={`tel:${PRIMARY_PHONE_RAW}`}>Call Us 0483 986 444</a>
                 </Button>
               </div>
@@ -887,8 +723,8 @@ export function Home() {
                     <Award className="w-5 h-5" />
                   </div>
                   <div className="relative z-10">
-                    <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-0.5">Premium Warranty</p>
-                    <p className="text-white font-extrabold text-sm leading-none">25yr Panel Warranty</p>
+                    <p className="text-[0.875rem] font-normal leading-[1.5] text-slate-400 uppercase tracking-widest mb-0.5">Premium Warranty</p>
+                    <p className="text-white text-[0.875rem] font-normal leading-[1.5]">25yr Panel Warranty</p>
                   </div>
                 </div>
               </div>
@@ -911,16 +747,16 @@ export function Home() {
           {/* Top Row Grid Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-[55%_1fr] lg:gap-[10%] items-center mb-24">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 backdrop-blur-md px-4 py-1.5 text-xs font-bold text-brand-400 mb-8 uppercase tracking-widest">
+              <div className="inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 backdrop-blur-md px-4 py-1.5 text-[0.875rem] font-normal leading-[1.5] text-brand-400 mb-8 uppercase tracking-widest">
                 HOW IT WORKS
               </div>
-              <h2 className="text-4xl sm:text-5xl md:text-[3.25rem] font-black text-white tracking-tight leading-[1.1] max-w-xl">
+              <h2 className="text-[2rem] font-bold leading-[1.25] text-white tracking-tight max-w-xl">
                 Your Seamless Journey to<br />
                 <span className="text-brand-400">Solar Energy</span>
               </h2>
             </div>
             <div className="pl-6 border-l-2 border-brand-400/80">
-              <p className="text-slate-400 text-lg font-light leading-relaxed max-w-sm">
+              <p className="text-slate-400 text-[1rem] font-normal leading-[1.6] max-w-sm">
                 We have completely streamlined our process to make switching to solar as easy, fast, and stress-free as possible.
               </p>
             </div>
@@ -980,11 +816,11 @@ export function Home() {
                   <step.icon className="h-6 w-6 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-brand-400 transition-colors duration-300">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-3 group-hover:text-brand-400 transition-colors duration-300">
                   {step.title}
                 </h3>
                 
-                <p className="text-slate-400 text-sm leading-relaxed flex-grow relative z-10 font-normal">
+                <p className="text-slate-400 text-[1rem] font-normal leading-[1.6] flex-grow relative z-10">
                   {step.desc}
                 </p>
                 
@@ -1018,8 +854,8 @@ export function Home() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-slate-900 text-lg leading-none mb-1">Local Darwin Team</h4>
-                    <p className="text-xs font-semibold text-brand-600 uppercase tracking-widest">Proudly Territory Owned</p>
+                    <h4 className="text-[1.25rem] font-semibold leading-[1.4] text-slate-900 mb-1">Local Darwin Team</h4>
+                    <p className="text-[0.875rem] font-normal leading-[1.5] text-brand-600 uppercase tracking-widest">Proudly Territory Owned</p>
                   </div>
                 </div>
               </div>
@@ -1027,11 +863,11 @@ export function Home() {
 
             {/* Right Text */}
             <div className="lg:col-span-7">
-              <span className="text-xs font-bold tracking-widest text-brand-600 uppercase mb-3 block">About Oneroof Solar</span>
-              <h2 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-6">
+              <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">About Oneroof Solar</span>
+              <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6">
                 Your Expert Darwin Solar Installer
               </h2>
-              <p className="text-slate-600 text-lg leading-relaxed mb-8">
+              <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-8">
                 As a licensed, locally owned Darwin solar company, we bring real NT expertise to every installation. We are not an interstate call centre - we are your neighbours. Our team understands Darwin's grid, Darwin's weather, and Darwin's building requirements.
               </p>
 
@@ -1048,8 +884,8 @@ export function Home() {
                       <item.icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-base font-bold text-slate-900 mb-1">{item.title}</h4>
-                      <p className="text-slate-500 text-xs leading-relaxed">{item.desc}</p>
+                      <h4 className="text-[1.25rem] font-semibold leading-[1.4] text-slate-900 mb-1">{item.title}</h4>
+                      <p className="text-slate-500 text-[1rem] font-normal leading-[1.6]">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -1087,16 +923,16 @@ export function Home() {
                       <div className="w-9 h-9 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center">
                         <BatteryMedium className="w-5 h-5 text-brand-400" />
                       </div>
-                      <div className="text-white font-extrabold text-sm">Home Battery</div>
+                      <div className="text-white text-[0.875rem] font-normal leading-[1.5]">Home Battery</div>
                     </div>
-                    <div className="text-brand-400 font-black text-base">13.5 kWh</div>
+                    <div className="text-brand-400 text-[1rem] font-medium leading-[1]">13.5 kWh</div>
                   </div>
                   <div className="w-full bg-slate-950 rounded-full h-2.5 mb-3 overflow-hidden border border-slate-800">
                     <div className="bg-gradient-to-r from-brand-600 to-emerald-400 h-full rounded-full w-[85%] relative">
                       <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.2)_50%,transparent_75%,transparent_100%)] bg-[length:20px_20px] animate-[bg-slide_1s_linear_infinite]"></div>
                     </div>
                   </div>
-                  <div className="flex justify-between items-center text-[10px] font-bold uppercase tracking-wider">
+                  <div className="flex justify-between items-center text-[0.875rem] font-normal leading-[1.5] uppercase tracking-wider">
                     <span className="text-slate-400">STATUS: SYSTEM ACTIVE</span>
                     <span className="text-emerald-400 flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -1109,11 +945,11 @@ export function Home() {
 
             {/* Right Points Content */}
             <div className="lg:col-span-7 order-1 lg:order-2">
-              <span className="text-xs font-bold tracking-widest text-brand-400 uppercase mb-3 block">BATTERY STORAGE DARWIN</span>
-              <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-6">
+              <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-400 uppercase mb-3 block">BATTERY STORAGE DARWIN</span>
+              <h2 className="text-[2rem] font-bold leading-[1.25] text-white tracking-tight mb-6">
                 Uninterrupted Power for Your Home
               </h2>
-              <p className="text-slate-300 text-lg leading-relaxed mb-8">
+              <p className="text-slate-300 text-[1rem] font-normal leading-[1.6] mb-8">
                 Darwin's wet season brings grid outages that can last hours. A solar battery keeps your home powered through any outage and stores excess solar energy produced during the day for use at night, cutting your power bill significantly year-round.
               </p>
 
@@ -1128,15 +964,15 @@ export function Home() {
                       <pt.icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="text-base font-bold text-white mb-1">{pt.title}</h3>
-                      <p className="text-slate-400 text-sm leading-relaxed font-medium">{pt.desc}</p>
+                      <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-1">{pt.title}</h3>
+                      <p className="text-slate-400 text-[1rem] font-normal leading-[1.6]">{pt.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
               <div className="mt-10">
-                <Button size="lg" className="rounded-full h-14 px-8 font-bold text-base bg-brand-500 hover:bg-brand-600 text-slate-900 shadow-lg shadow-brand-500/20" asChild>
+                <Button size="lg" className="rounded-full h-14 px-8 text-[1rem] font-medium leading-[1] bg-brand-500 hover:bg-brand-600 text-slate-900 shadow-lg shadow-brand-500/20" asChild>
                   <Link to="/contact">Learn About Battery Storage</Link>
                 </Button>
               </div>
@@ -1152,11 +988,11 @@ export function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           
           <div className="mx-auto text-center max-w-3xl mb-20">
-            <span className="text-xs font-bold tracking-widest text-brand-600 uppercase mb-3 block">WHERE WE SERVE</span>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-6">
+            <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">WHERE WE SERVE</span>
+            <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6">
               Solar Installations Across <span className="text-brand-600">Darwin & the NT</span>
             </h2>
-            <p className="text-slate-600 text-lg font-light leading-relaxed max-w-2xl mx-auto">
+            <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] max-w-2xl mx-auto">
               Oneroof Solar installs across every suburb in Greater Darwin, plus Alice Springs, Katherine, and surrounding NT communities.
             </p>
           </div>
@@ -1172,27 +1008,27 @@ export function Home() {
                 <div className="w-11 h-11 bg-brand-500/10 rounded-xl flex items-center justify-center border border-brand-500/20 text-brand-400">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
                   Primary
                 </span>
               </div>
 
               <div className="flex-grow">
-                <h3 className="text-2xl font-black text-white mb-2">Darwin City</h3>
-                <span className="text-[10px] font-bold text-brand-400 uppercase tracking-wider block mb-4">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2">Darwin City</h3>
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 uppercase tracking-wider block mb-4">
                   Primary Hub — (0800, 0820) — Residential & Commercial
                 </span>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {["Darwin City", "Fannie Bay", "Stuart Park", "East Point", "Bayview", "Winnellie"].map((suburb, i) => (
-                    <span key={i} className="text-xs text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
+                    <span key={i} className="text-[0.875rem] font-normal leading-[1.5] text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
                       {suburb}
                     </span>
                   ))}
                 </div>
               </div>
 
-              <Link to="/contact" className="text-sm font-bold text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
+              <Link to="/contact" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
                 View Darwin Solar <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
@@ -1205,27 +1041,27 @@ export function Home() {
                 <div className="w-11 h-11 bg-brand-500/10 rounded-xl flex items-center justify-center border border-brand-500/20 text-brand-400">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
                   Active
                 </span>
               </div>
 
               <div className="flex-grow">
-                <h3 className="text-2xl font-black text-white mb-2">Northern Darwin</h3>
-                <span className="text-[10px] font-bold text-brand-400 uppercase tracking-wider block mb-4">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2">Northern Darwin</h3>
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 uppercase tracking-wider block mb-4">
                   (0810, 0812) — Residential & Commercial
                 </span>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {["Nightcliff", "Casuarina", "Rapid Creek", "Coconut Grove", "Tiwi", "Muirhead", "Wanguri", "Karama", "Leanyer", "Alawa"].map((suburb, i) => (
-                    <span key={i} className="text-xs text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
+                    <span key={i} className="text-[0.875rem] font-normal leading-[1.5] text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
                       {suburb}
                     </span>
                   ))}
                 </div>
               </div>
 
-              <Link to="/contact" className="text-sm font-bold text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
+              <Link to="/contact" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
                 View All Suburbs <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
@@ -1238,25 +1074,25 @@ export function Home() {
                 <div className="w-11 h-11 bg-brand-500/10 rounded-xl flex items-center justify-center border border-brand-500/20 text-brand-400">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
                   Regional
                 </span>
               </div>
 
               <div className="flex-grow">
-                <h3 className="text-2xl font-black text-white mb-2">Alice Springs</h3>
-                <span className="text-[10px] font-bold text-brand-400 uppercase tracking-wider block mb-4">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2">Alice Springs</h3>
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 uppercase tracking-wider block mb-4">
                   2nd Hub — (0870) — Residential & Commercial
                 </span>
                 
-                <p className="text-slate-300 text-sm leading-relaxed mb-4">
+                <p className="text-slate-300 text-[1rem] font-normal leading-[1.6] mb-4">
                   Alice Springs has some of the highest solar irradiance in Australia. Our team travels regularly for residential and commercial installations.
                 </p>
                 <div className="mt-4">
-                  <span className="text-[10px] font-black text-brand-400 uppercase tracking-widest block mb-2">Coverage:</span>
+                  <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 uppercase tracking-widest block mb-2">Coverage:</span>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {["Alice Springs", "Katherine", "Tennant Creek"].map((place, i) => (
-                      <span key={i} className="text-xs text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
+                      <span key={i} className="text-[0.875rem] font-normal leading-[1.5] text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
                         {place}
                       </span>
                     ))}
@@ -1264,7 +1100,7 @@ export function Home() {
                 </div>
               </div>
 
-              <Link to="/solar-alice-springs/" className="text-sm font-bold text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
+              <Link to="/solar-alice-springs/" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
                 Alice Springs Solar <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
@@ -1277,27 +1113,27 @@ export function Home() {
                 <div className="w-11 h-11 bg-brand-500/10 rounded-xl flex items-center justify-center border border-brand-500/20 text-brand-400">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
                   Active
                 </span>
               </div>
 
               <div className="flex-grow">
-                <h3 className="text-2xl font-black text-white mb-2">Palmerston</h3>
-                <span className="text-[10px] font-bold text-brand-400 uppercase tracking-wider block mb-4">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2">Palmerston</h3>
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 uppercase tracking-wider block mb-4">
                   (0830, 0832) — Residential & Commercial
                 </span>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {["Palmerston City", "Driver", "Moulden", "Gray", "Woodroffe", "Durack", "Rosebery", "Bellamack", "Bakewell", "Gunn", "Zuccoli"].map((suburb, i) => (
-                    <span key={i} className="text-xs text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
+                    <span key={i} className="text-[0.875rem] font-normal leading-[1.5] text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
                       {suburb}
                     </span>
                   ))}
                 </div>
               </div>
 
-              <Link to="/contact" className="text-sm font-bold text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
+              <Link to="/contact" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
                 Palmerston Solar <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
@@ -1310,27 +1146,27 @@ export function Home() {
                 <div className="w-11 h-11 bg-brand-500/10 rounded-xl flex items-center justify-center border border-brand-500/20 text-brand-400">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
                   Active
                 </span>
               </div>
 
               <div className="flex-grow">
-                <h3 className="text-2xl font-black text-white mb-2">Darwin Rural</h3>
-                <span className="text-[10px] font-bold text-brand-400 uppercase tracking-wider block mb-4">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2">Darwin Rural</h3>
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 uppercase tracking-wider block mb-4">
                   (0822, 0836–0847) — Residential & Commercial
                 </span>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {["Humpty Doo", "Howard Springs", "Litchfield", "Berry Springs", "Noonamah", "Coolalinga", "Batchelor", "Darwin River", "Adelaide River"].map((suburb, i) => (
-                    <span key={i} className="text-xs text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
+                    <span key={i} className="text-[0.875rem] font-normal leading-[1.5] text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
                       {suburb}
                     </span>
                   ))}
                 </div>
               </div>
 
-              <Link to="/contact" className="text-sm font-bold text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
+              <Link to="/contact" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
                 Darwin Rural <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
@@ -1351,13 +1187,13 @@ export function Home() {
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-400 to-emerald-500" />
               
               <div className="flex-grow relative z-10 pt-6">
-                <h3 className="text-2xl font-black text-white mb-4">Not Sure We Cover Your Area?</h3>
-                <p className="text-slate-300 text-sm leading-relaxed font-normal mb-8">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-4">Not Sure We Cover Your Area?</h3>
+                <p className="text-slate-300 text-[1rem] font-normal leading-[1.6] mb-8">
                   If you are in the Northern Territory, we almost certainly do. Call us and we will confirm within one business day.
                 </p>
               </div>
               <div className="relative z-10 mt-auto">
-                <Button size="lg" className="rounded-full w-full h-12 text-sm font-bold bg-[#8cc63f] hover:bg-[#7bc034] text-slate-900 group-hover:scale-[1.02] transition-transform duration-300" asChild>
+                <Button size="lg" className="rounded-full w-full h-12 text-[1rem] font-medium leading-[1] bg-[#8cc63f] hover:bg-[#7bc034] text-slate-900 group-hover:scale-[1.02] transition-transform duration-300" asChild>
                   <Link to="/contact">Check My Area</Link>
                 </Button>
               </div>
@@ -1368,10 +1204,10 @@ export function Home() {
           {/* Postcode strip */}
           <div className="bg-slate-50/60 backdrop-blur-sm rounded-2xl sm:rounded-3xl py-5 px-6 sm:px-8 border border-slate-200/60 shadow-sm max-w-5xl mx-auto">
             <div className="flex flex-col gap-3.5 items-start text-left">
-              <span className="text-[10px] font-extrabold text-brand-600 uppercase tracking-widest">
+              <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-600 uppercase tracking-widest">
                 ALL NT POSTCODES:
               </span>
-              <div className="flex flex-wrap items-center gap-2 text-slate-800 text-[11px] font-bold">
+              <div className="flex flex-wrap items-center gap-2 text-slate-800 text-[0.875rem] font-normal leading-[1.5]">
                 {[
                   "0800", "0810", "0812", "0820", "0822", "0828", "0829", "0830", "0832", "0834", 
                   "0835", "0836", "0837", "0838", "0839", "0840", "0841", "0845", "0846", "0847", 
@@ -1394,17 +1230,17 @@ export function Home() {
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div className="max-w-2xl">
               <FadeIn>
-                <div className="inline-flex items-center gap-2 text-brand-600 font-bold mb-4 uppercase tracking-wider text-sm">
+                <div className="inline-flex items-center gap-2 text-brand-600 text-[0.875rem] font-normal leading-[1.5] mb-4 uppercase tracking-wider">
                   <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
                   Our Portfolio
                 </div>
-                <h2 className="text-4xl md:text-5xl font-black tracking-tight text-slate-900 leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight">
                   Recent <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-500">Installations</span>
                 </h2>
               </FadeIn>
             </div>
             <FadeIn delay={0.2}>
-              <Button variant="outline" className="rounded-full font-bold" asChild>
+              <Button variant="outline" className="rounded-full text-[1rem] font-medium leading-[1]" asChild>
                 <Link to="/projects">View All Projects <ArrowRight className="ml-2 w-4 h-4" /></Link>
               </Button>
             </FadeIn>
@@ -1421,7 +1257,7 @@ export function Home() {
                   <div className="relative h-64 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent z-10 opacity-60 group-hover:opacity-80 transition-opacity"></div>
                     <img referrerPolicy="no-referrer" loading="lazy" src={p.img} alt={p.title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
-                    <div className="absolute bottom-4 left-4 z-20 flex gap-4 text-white text-sm font-medium">
+                    <div className="absolute bottom-4 left-4 z-20 flex gap-4 text-white text-[0.875rem] font-normal leading-[1.5]">
                       <div className="flex items-center gap-1.5 drop-shadow-md">
                         <MapPin className="w-4 h-4 text-brand-400" />
                         {p.loc}
@@ -1429,22 +1265,22 @@ export function Home() {
                     </div>
                   </div>
                   <div className="p-8 flex flex-col flex-grow">
-                    <h3 className="text-2xl font-black text-slate-900 mb-4 group-hover:text-brand-600 transition-colors line-clamp-2">
+                    <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-4 group-hover:text-brand-600 transition-colors line-clamp-2">
                       {p.title}
                     </h3>
-                    <p className="text-slate-600 mb-6 flex-grow">
+                    <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-6 flex-grow">
                       {p.desc}
                     </p>
                     <div className="grid grid-cols-2 gap-4 pt-6 border-t border-slate-100">
                       <div>
-                        <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest block mb-1">System Size</span>
-                        <div className="flex items-center gap-1.5 font-bold text-slate-800">
+                        <span className="text-[0.875rem] font-normal leading-[1.5] text-slate-400 uppercase tracking-widest block mb-1">System Size</span>
+                        <div className="flex items-center gap-1.5 text-[1rem] font-medium leading-[1] text-slate-800">
                           <Sun className="w-4 h-4 text-brand-500" /> {p.systemSize}
                         </div>
                       </div>
                       <div>
-                        <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest block mb-1">Battery Storage</span>
-                        <div className="flex items-center gap-1.5 font-bold text-slate-800">
+                        <span className="text-[0.875rem] font-normal leading-[1.5] text-slate-400 uppercase tracking-widest block mb-1">Battery Storage</span>
+                        <div className="flex items-center gap-1.5 text-[1rem] font-medium leading-[1] text-slate-800">
                           <Battery className="w-4 h-4 text-brand-500" /> {p.battery}
                         </div>
                       </div>
@@ -1468,8 +1304,8 @@ export function Home() {
               <div className="lg:w-1/3 z-10">
                 <FadeIn>
                   <Award className="w-16 h-16 text-brand-500 mb-6" />
-                  <h2 className="text-3xl md:text-4xl font-black text-white mb-4">The Oneroof Guarantee</h2>
-                  <p className="text-slate-400 text-lg leading-relaxed">
+                  <h2 className="text-[2rem] font-bold leading-[1.25] text-white mb-4">The Oneroof Guarantee</h2>
+                  <p className="text-slate-400 text-[1rem] font-normal leading-[1.6]">
                     Peace of mind comes standard. We stand behind our work with industry-leading warranties and local NT support you can count on.
                   </p>
                 </FadeIn>
@@ -1499,8 +1335,8 @@ export function Home() {
                         : "bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-colors h-full text-slate-300"
                       }>
                         {renderIcon(i)}
-                        <h3 className={isLast ? "text-xl font-bold text-slate-900 mb-2" : "text-xl font-bold text-white mb-2"}>{item.title}</h3>
-                        <p className={isLast ? "text-slate-900/80 font-medium" : "text-slate-400"}>{item.description}</p>
+                        <h3 className={isLast ? "text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-2" : "text-[1.5rem] font-semibold leading-[1.3] text-white mb-2"}>{item.title}</h3>
+                        <p className={isLast ? "text-[1rem] font-normal leading-[1.6] text-slate-900/80" : "text-[1rem] font-normal leading-[1.6] text-slate-400"}>{item.description}</p>
                       </div>
                     </FadeIn>
                   );
@@ -1518,12 +1354,12 @@ export function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <FadeIn>
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-1 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full text-xs font-semibold text-emerald-600 mb-4 shadow-sm">
+              <div className="inline-flex items-center gap-1 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full text-[0.875rem] font-normal leading-[1.5] text-emerald-600 mb-4 shadow-sm">
                 <Star className="w-3.5 h-3.5 fill-emerald-500 text-emerald-500" />
                 <span>Verified 5-Star Reviews</span>
               </div>
-              <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl mb-4">What Our Clients Say</h2>
-              <p className="text-lg text-slate-655 max-w-2xl mx-auto">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4">What Our Clients Say</h2>
+              <p className="text-[1rem] font-normal leading-[1.6] text-slate-600 max-w-2xl mx-auto">
                 Real feedback from NT customers across Darwin, Palmerston, Alice Springs, and surrounding NT communities.
               </p>
             </div>
@@ -1577,17 +1413,17 @@ export function Home() {
                         <Star key={star} className="w-4 h-4 fill-amber-400 text-amber-400" />
                       ))}
                     </div>
-                    <p className="text-slate-600 text-[14px] leading-relaxed italic">
+                    <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] italic">
                       "{rev.text}"
                     </p>
                   </div>
                   <div className="flex items-center gap-3.5 mt-6 pt-5 border-t border-slate-100">
-                    <div className="w-10 h-10 bg-slate-100/80 text-slate-700 font-bold text-xs flex items-center justify-center rounded-full border border-slate-200/50">
+                    <div className="w-10 h-10 bg-slate-100/80 text-slate-700 text-[0.875rem] font-normal leading-[1.5] flex items-center justify-center rounded-full border border-slate-200/50">
                       {rev.name.substring(0, 2)}
                     </div>
                     <div>
-                      <h4 className="text-sm font-bold text-slate-800 leading-snug">{rev.name}</h4>
-                      <p className="text-[11px] text-slate-400 font-medium">
+                      <h4 className="text-[1.25rem] font-semibold leading-[1.4] text-slate-800 mb-1">{rev.name}</h4>
+                      <p className="text-[0.875rem] font-normal leading-[1.5] text-slate-400">
                         {rev.location} • <span className="text-brand-600 font-bold">{rev.project}</span>
                       </p>
                     </div>
@@ -1597,7 +1433,7 @@ export function Home() {
             </div>
 
             <div className="text-center mt-12">
-              <Link to="/contact" className="inline-flex items-center gap-2 font-bold text-brand-600 hover:text-brand-700">
+              <Link to="/contact" className="inline-flex items-center gap-2 text-[1rem] font-medium leading-[1] text-brand-600 hover:text-brand-700">
                 See All Customer Reviews →
               </Link>
             </div>
@@ -1610,11 +1446,11 @@ export function Home() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
           
           <div className="text-center mb-16">
-            <span className="text-xs font-bold tracking-widest text-brand-600 uppercase mb-3 block">Common Inquiries</span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">
+            <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">Common Inquiries</span>
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900">
               Common Solar Questions from Darwin Homeowners
             </h2>
-            <p className="text-slate-500 text-sm mt-3">
+            <p className="text-slate-500 text-[1rem] font-normal leading-[1.6] mt-3">
               Answers to the questions we hear most from customers across Darwin, Palmerston, and Alice Springs.
             </p>
           </div>
@@ -1660,7 +1496,7 @@ export function Home() {
                 <div key={index} className="border border-slate-200 rounded-2xl overflow-hidden transition-all duration-300">
                   <button 
                     onClick={() => setIsOpen(!isOpen)}
-                    className="w-full px-6 py-5 text-left font-bold text-slate-900 bg-slate-50 hover:bg-slate-100/70 transition-colors flex justify-between items-center"
+                    className="w-full px-6 py-5 text-left text-[1rem] font-medium leading-[1] text-slate-900 bg-slate-50 hover:bg-slate-100/70 transition-colors flex justify-between items-center"
                   >
                     <span>{faq.q}</span>
                     <span className={`transform transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
@@ -1670,7 +1506,7 @@ export function Home() {
                     </span>
                   </button>
                   <div className={`transition-all duration-300 overflow-hidden ${isOpen ? 'max-h-[300px] border-t border-slate-200' : 'max-h-0'}`}>
-                    <p className="px-6 py-5 text-slate-600 text-sm leading-relaxed bg-white">
+                    <p className="px-6 py-5 text-slate-600 text-[1rem] font-normal leading-[1.6] bg-white">
                       {faq.a}
                     </p>
                   </div>
@@ -1680,7 +1516,7 @@ export function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Link to="/contact" className="inline-flex items-center gap-2 font-bold text-brand-600 hover:text-brand-700">
+            <Link to="/contact" className="inline-flex items-center gap-2 text-[1rem] font-medium leading-[1] text-brand-600 hover:text-brand-700">
               View All Solar FAQs →
             </Link>
           </div>
@@ -1701,13 +1537,13 @@ export function Home() {
                 <FadeIn>
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 shadow-sm mb-6 backdrop-blur-md">
                     <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
-                    <span className="text-xs font-bold text-white uppercase tracking-widest">GET STARTED TODAY</span>
+                    <span className="text-[0.875rem] font-normal leading-[1.5] text-white uppercase tracking-widest">GET STARTED TODAY</span>
                   </div>
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white mb-6 leading-[1.1]">
+                  <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6">
                     Ready to slash your <br className="hidden lg:block" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">electricity bills?</span>
                   </h2>
-                  <p className="text-lg text-slate-400 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                  <p className="text-[1rem] font-normal leading-[1.6] text-slate-400 max-w-2xl mx-auto lg:mx-0">
                     Schedule a free consultation today. Our experts will design the perfect system for your roof and energy needs in Darwin, Alice Springs, or Palmerston.
                   </p>
                 </FadeIn>
@@ -1715,13 +1551,13 @@ export function Home() {
               
               <div className="lg:col-span-5 flex flex-col sm:flex-row lg:flex-col justify-center sm:justify-start lg:items-end gap-4 w-full">
                 <FadeIn delay={0.2} className="w-full sm:w-auto lg:w-full max-w-sm flex flex-col gap-4">
-                  <Button size="lg" className="rounded-full w-full h-16 text-lg font-bold bg-gradient-to-r from-brand-500 to-emerald-500 hover:from-brand-500 hover:to-emerald-500 text-slate-900 shadow-[0_0_40px_rgba(140,198,63,0.3)] hover:shadow-[0_0_60px_rgba(140,198,63,0.4)] transition-all hover:-translate-y-1" asChild>
+                  <Button size="lg" className="rounded-full w-full h-16 text-[1rem] font-medium leading-[1] bg-gradient-to-r from-brand-500 to-emerald-500 hover:from-brand-500 hover:to-emerald-500 text-slate-900 shadow-[0_0_40px_rgba(140,198,63,0.3)] hover:shadow-[0_0_60px_rgba(140,198,63,0.4)] transition-all hover:-translate-y-1" asChild>
                     <Link to="/contact">Book Free Consultation <ArrowRight className="ml-2 w-6 h-6" /></Link>
                   </Button>
-                  <a href={`tel:${PRIMARY_PHONE_RAW}`} className="inline-flex items-center justify-center rounded-full w-full h-16 text-lg font-bold border-2 border-white/20 text-white hover:bg-transparent hover:text-white hover:border-white/20 backdrop-blur-sm transition-all shadow-sm">
+                  <a href={`tel:${PRIMARY_PHONE_RAW}`} className="inline-flex items-center justify-center rounded-full w-full h-16 text-[1rem] font-medium leading-[1] border-2 border-white/20 text-white hover:bg-transparent hover:text-white hover:border-white/20 backdrop-blur-sm transition-all shadow-sm">
                     Call Us: {PRIMARY_PHONE}
                   </a>
-                  <p className="text-slate-500 text-sm font-medium text-center mt-2">
+                  <p className="text-slate-500 text-[0.875rem] font-normal leading-[1.5] text-center mt-2">
                     No obligations. 100% free quote.
                   </p>
                 </FadeIn>

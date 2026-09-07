@@ -139,7 +139,7 @@ export function AdminLogin() {
         </div>
 
         <div className="w-full">
-          <h1 className="text-2xl font-display font-semibold mb-1 text-white text-center">
+          <h1 className="text-2xl  font-semibold mb-1 text-white text-center">
             {isRegister ? 'Create Account' : 'Sign In'}
           </h1>
           <p className="text-slate-400 text-sm mb-6 text-center">

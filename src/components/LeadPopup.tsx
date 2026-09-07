@@ -125,55 +125,57 @@ export function LeadPopup() {
 
                 <div className="relative z-10 flex flex-col h-full justify-center">
                   {/* Logo */}
-                  <div className="mb-6 lg:mb-10 relative">
+                  <div className="mb-4 lg:mb-6 relative">
                     <div className="absolute inset-0 bg-white/10 blur-xl rounded-full" />
                     <img referrerPolicy="no-referrer" 
                       src="https://i.postimg.cc/vZdTgLm9/oneroof.png" 
                       alt="Oneroof Solar Logo" 
-                      className="h-[50px] lg:h-[74px] w-auto opacity-100 drop-shadow-lg relative z-10"
+                      className="h-[50px] lg:h-[70px] w-auto opacity-100 drop-shadow-lg relative z-10"
                     />
                   </div>
 
-                  <div className="relative z-10">
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 lg:px-4 lg:py-2 rounded-full bg-gradient-to-r from-yellow-500/10 to-yellow-600/10 border border-yellow-500/30 text-xs lg:text-sm font-semibold mb-6 lg:mb-8 shadow-[0_0_20px_rgba(234,179,8,0.15)] ring-1 ring-yellow-500/30">
+                  <div className="relative z-10 max-w-[520px] [overflow-wrap:normal] [word-break:normal]">
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 lg:px-4 lg:py-2 rounded-full bg-gradient-to-r from-yellow-500/10 to-yellow-600/10 border border-yellow-500/30 text-xs lg:text-sm font-semibold mb-3 lg:mb-4 shadow-[0_0_20px_rgba(234,179,8,0.15)] ring-1 ring-yellow-500/30 font-['Inter',sans-serif]">
                       <Zap size={16} className="text-yellow-400 animate-pulse" />
                       <span className="text-yellow-50">Limited Time Offer</span>
                     </div>
                     
-                    <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 lg:mb-6 leading-[1.1] drop-shadow-2xl">
-                      <span className="text-white">Claim Your</span> <br />
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 drop-shadow-sm whitespace-nowrap">
+                    <h2 className="font-['Inter',sans-serif] text-[32px] sm:text-[40px] lg:text-[48px] font-black tracking-tight mb-3 lg:mb-4 leading-[1.1] drop-shadow-2xl max-w-[520px] [overflow-wrap:normal] [word-break:normal]">
+                      <span className="text-white">Claim Your</span>{" "}
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 drop-shadow-sm inline-block max-w-full py-0.5">
                         $13,000 Rebate
-                      </span><br />
-                      <span className="text-white text-2xl sm:text-3xl lg:text-4xl mt-2 block">on Solar and Battery</span>
+                      </span>
+                      <span className="text-white text-xl sm:text-2xl lg:text-3xl mt-1.5 block font-extrabold tracking-tight">
+                        on Solar and Battery
+                      </span>
                     </h2>
                     
-                    <p className="text-sm lg:text-lg text-neutral-200 mb-6 lg:mb-10 leading-relaxed max-w-md font-medium">
+                    <p className="font-['Inter',sans-serif] text-sm lg:text-base text-neutral-200 mb-5 lg:mb-6 leading-relaxed max-w-[480px] font-medium [overflow-wrap:normal] [word-break:normal]">
                       Switch to premium solar and battery storage. Lock in lower energy bills and secure your government rebate today.
                     </p>
 
-                    <div className="space-y-4 lg:space-y-6">
+                    <div className="space-y-3.5 lg:space-y-4">
                       <div className="flex items-center gap-4 lg:gap-5 group">
-                        <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-2xl bg-gradient-to-br from-yellow-400/20 to-yellow-600/10 flex items-center justify-center border border-yellow-500/30 shrink-0 shadow-[0_0_15px_rgba(234,179,8,0.1)] group-hover:scale-105 transition-transform duration-300">
-                          <Banknote className="w-6 h-6 lg:w-7 lg:h-7 text-yellow-400" />
+                        <div className="w-11 h-11 lg:w-12 lg:h-12 rounded-2xl bg-gradient-to-br from-yellow-400/20 to-yellow-600/10 flex items-center justify-center border border-yellow-500/30 shrink-0 shadow-[0_0_15px_rgba(234,179,8,0.1)] group-hover:scale-105 transition-transform duration-300">
+                          <Banknote className="w-5 h-5 lg:w-6 lg:h-6 text-yellow-400" />
                         </div>
                         <div>
-                          <h4 className="font-bold text-white text-base lg:text-lg tracking-wide">Free Savings Estimate</h4>
-                          <p className="text-xs lg:text-sm text-neutral-300 font-medium">See exactly how much you can save</p>
+                          <h4 className="font-['Inter',sans-serif] font-bold text-white text-base lg:text-lg tracking-wide">Free Savings Estimate</h4>
+                          <p className="font-['Inter',sans-serif] text-xs lg:text-sm text-neutral-300 font-medium">See exactly how much you can save</p>
                         </div>
                       </div>
                       <div className="flex items-center gap-4 lg:gap-5 group">
-                        <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-2xl bg-gradient-to-br from-yellow-400/20 to-yellow-600/10 flex items-center justify-center border border-yellow-500/30 shrink-0 shadow-[0_0_15px_rgba(234,179,8,0.1)] group-hover:scale-105 transition-transform duration-300">
-                          <ShieldCheck className="w-6 h-6 lg:w-7 lg:h-7 text-yellow-400" />
+                        <div className="w-11 h-11 lg:w-12 lg:h-12 rounded-2xl bg-gradient-to-br from-yellow-400/20 to-yellow-600/10 flex items-center justify-center border border-yellow-500/30 shrink-0 shadow-[0_0_15px_rgba(234,179,8,0.1)] group-hover:scale-105 transition-transform duration-300">
+                          <ShieldCheck className="w-5 h-5 lg:w-6 lg:h-6 text-yellow-400" />
                         </div>
                         <div>
-                          <h4 className="font-bold text-white text-base lg:text-lg tracking-wide">Premium Tier-1 Tech</h4>
-                          <p className="text-xs lg:text-sm text-neutral-300 font-medium">Industry-leading panels & batteries</p>
+                          <h4 className="font-['Inter',sans-serif] font-bold text-white text-base lg:text-lg tracking-wide">Premium Tier-1 Tech</h4>
+                          <p className="font-['Inter',sans-serif] text-xs lg:text-sm text-neutral-300 font-medium">Industry-leading panels & batteries</p>
                         </div>
                       </div>
                     </div>
 
-                    <div className="mt-8 lg:mt-12 text-[10px] leading-relaxed text-neutral-400/80 max-w-sm">
+                    <div className="mt-6 lg:mt-8 text-[10px] leading-relaxed text-neutral-400/80 max-w-sm font-['Inter',sans-serif]">
                       Terms and conditions apply. <br/>
                       Estimated rebates are calculated using a 48 kWh battery and a 20 kW solar PV system. Actual rebates are subject to eligibility, program terms, and government approval.
                     </div>

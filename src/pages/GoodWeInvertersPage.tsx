@@ -115,7 +115,7 @@ export function GoodWeInvertersPage() {
             <div className="lg:col-span-7">
               <FadeIn isHero>
                 {/* Breadcrumb */}
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono flex-wrap">
+                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
                   <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <Link to="/products/solar-inverters" className="hover:text-[#5BC94D] transition-colors">Solar Inverters</Link>
@@ -157,7 +157,7 @@ export function GoodWeInvertersPage() {
                 </div>
 
                 {/* Micro Badges */}
-                <div className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-6 text-xs text-slate-400 font-semibold font-mono">
+                <div className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-6 text-xs text-slate-400 font-semibold">
                   <span className="flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-[#5BC94D]" />
                     Certified Quality Inverters
@@ -184,10 +184,10 @@ export function GoodWeInvertersPage() {
                   {/* Floating Badge */}
                   <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 border border-slate-800 backdrop-blur-md flex items-center justify-between">
                     <div>
-                      <span className="text-[10px] font-mono uppercase tracking-widest text-[#5BC94D] font-bold block mb-1">Top End Certified</span>
+                      <span className="text-[10px]  uppercase tracking-widest text-[#5BC94D] font-bold block mb-1">Top End Certified</span>
                       <p className="text-white text-xs font-bold">GoodWe ESA &amp; ET G2 Series Available</p>
                     </div>
-                    <span className="px-3 py-1 rounded-full bg-[#5BC94D]/20 text-[#5BC94D] font-mono text-[11px] font-bold border border-[#5BC94D]/30">
+                    <span className="px-3 py-1 rounded-full bg-[#5BC94D]/20 text-[#5BC94D]  text-[11px] font-bold border border-[#5BC94D]/30">
                       Single &amp; 3-Phase
                     </span>
                   </div>
@@ -220,7 +220,7 @@ export function GoodWeInvertersPage() {
                         <Award className="w-5 h-5" />
                       </div>
                       <div>
-                        <div className="text-xs font-bold text-slate-900 font-mono">Global Tier 1 Manufacturer</div>
+                        <div className="text-xs font-bold text-slate-900">Global Tier 1 Manufacturer</div>
                         <div className="text-[11px] text-slate-600 font-medium">Ranked Top Solar Supplier</div>
                       </div>
                     </div>
@@ -230,7 +230,7 @@ export function GoodWeInvertersPage() {
 
               {/* Right Column: Content */}
               <div className="lg:col-span-7 order-1 lg:order-2">
-                <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3 font-mono">
+                <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
                   Global Solar Manufacturer
                 </div>
                 
@@ -293,7 +293,7 @@ export function GoodWeInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-3xl mb-12">
-              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3 font-mono">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
                 System Comparison
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
@@ -311,10 +311,10 @@ export function GoodWeInvertersPage() {
               <div className="bg-white border-2 border-slate-200 hover:border-[#5BC94D] rounded-2xl p-6 sm:p-8 shadow-sm transition-all flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-100">
-                    <span className="px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider font-mono">
+                    <span className="px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider">
                       Single Phase
                     </span>
-                    <span className="text-xs font-extrabold text-slate-500 font-mono">3–10kW Capacity</span>
+                    <span className="text-xs font-extrabold text-slate-500">3–10kW Capacity</span>
                   </div>
 
                   <h3 className="text-2xl font-black text-slate-900 mb-2 uppercase tracking-wide">
@@ -353,7 +353,7 @@ export function GoodWeInvertersPage() {
                 </div>
 
                 <div className="pt-4 border-t border-slate-100">
-                  <span className="inline-block text-xs font-bold text-slate-500 uppercase tracking-wider font-mono">
+                  <span className="inline-block text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Residential Solution
                   </span>
                 </div>
@@ -363,10 +363,10 @@ export function GoodWeInvertersPage() {
               <div className="bg-white border-2 border-slate-200 hover:border-[#5BC94D] rounded-2xl p-6 sm:p-8 shadow-sm transition-all flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-100">
-                    <span className="px-3 py-1 rounded-full bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider font-mono">
+                    <span className="px-3 py-1 rounded-full bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider">
                       Three Phase
                     </span>
-                    <span className="text-xs font-extrabold text-slate-500 font-mono">6–15kW Capacity</span>
+                    <span className="text-xs font-extrabold text-slate-500">6–15kW Capacity</span>
                   </div>
 
                   <h3 className="text-2xl font-black text-slate-900 mb-2 uppercase tracking-wide">
@@ -405,7 +405,7 @@ export function GoodWeInvertersPage() {
                 </div>
 
                 <div className="pt-4 border-t border-slate-100">
-                  <span className="inline-block text-xs font-bold text-slate-500 uppercase tracking-wider font-mono">
+                  <span className="inline-block text-xs font-bold text-slate-500 uppercase tracking-wider">
                     High-Voltage Commercial &amp; Residential
                   </span>
                 </div>
@@ -439,7 +439,7 @@ export function GoodWeInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto mb-14">
-              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3 font-mono">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Product Lineup
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -454,7 +454,7 @@ export function GoodWeInvertersPage() {
               <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#5BC94D]/60 transition-all shadow-xs">
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-4">
-                    <span className="px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-mono text-xs font-extrabold uppercase tracking-wider">
+                    <span className="px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D]  text-xs font-extrabold uppercase tracking-wider">
                       Single Phase · 3–10kW
                     </span>
                     <Battery className="w-5 h-5 text-slate-400" />
@@ -463,7 +463,7 @@ export function GoodWeInvertersPage() {
                   <h3 className="text-2xl sm:text-3xl font-black text-slate-900 mb-1 uppercase tracking-wide">
                     GoodWe ESA Series
                   </h3>
-                  <p className="text-sm font-bold text-slate-600 mb-6 font-mono">
+                  <p className="text-sm font-bold text-slate-600 mb-6">
                     Single Phase · 3–10kW · All-in-One Energy Storage
                   </p>
 
@@ -478,10 +478,10 @@ export function GoodWeInvertersPage() {
 
                   {/* Models Covered */}
                   <div className="mb-6 p-4 rounded-xl bg-white border border-slate-200/80">
-                    <h4 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-2.5 font-mono">
+                    <h4 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-2.5">
                       Supported Model Configurations:
                     </h4>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 font-mono text-xs text-slate-800 font-semibold mb-3">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2  text-xs text-slate-800 font-semibold mb-3">
                       <span className="px-2.5 py-1.5 rounded-md bg-slate-100 border border-slate-200 text-center">GW5.1-BAT-D-G20</span>
                       <span className="px-2.5 py-1.5 rounded-md bg-slate-100 border border-slate-200 text-center">GW8.3-BAT-D-G20</span>
                       <span className="px-2.5 py-1.5 rounded-md bg-slate-100 border border-slate-200 text-center">GW5.1-BAT-D-G21</span>
@@ -496,7 +496,7 @@ export function GoodWeInvertersPage() {
 
                   {/* Best for */}
                   <div className="mb-8 p-4 rounded-xl bg-emerald-50/60 border border-emerald-200/60">
-                    <span className="text-xs font-black text-emerald-800 uppercase tracking-wider block mb-1 font-mono">
+                    <span className="text-xs font-black text-emerald-800 uppercase tracking-wider block mb-1">
                       Best for:
                     </span>
                     <p className="text-slate-800 text-sm font-semibold leading-relaxed">
@@ -528,7 +528,7 @@ export function GoodWeInvertersPage() {
               <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#5BC94D]/60 transition-all shadow-xs">
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-4">
-                    <span className="px-3.5 py-1 rounded-full bg-slate-900 text-white font-mono text-xs font-extrabold uppercase tracking-wider">
+                    <span className="px-3.5 py-1 rounded-full bg-slate-900 text-white  text-xs font-extrabold uppercase tracking-wider">
                       Three Phase · 6–15kW
                     </span>
                     <Zap className="w-5 h-5 text-slate-400" />
@@ -537,7 +537,7 @@ export function GoodWeInvertersPage() {
                   <h3 className="text-2xl sm:text-3xl font-black text-slate-900 mb-1 uppercase tracking-wide">
                     GoodWe ET G2 Series
                   </h3>
-                  <p className="text-sm font-bold text-slate-600 mb-6 font-mono">
+                  <p className="text-sm font-bold text-slate-600 mb-6">
                     Three Phase · 6–15kW · Hybrid Inverter
                   </p>
 
@@ -555,7 +555,7 @@ export function GoodWeInvertersPage() {
                     <div className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0 mt-0.5" />
                       <div>
-                        <h4 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-1 font-mono">
+                        <h4 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-1">
                           MPPT &amp; High-Voltage Battery Flexibility:
                         </h4>
                         <p className="text-xs text-slate-700 font-semibold leading-relaxed">
@@ -567,7 +567,7 @@ export function GoodWeInvertersPage() {
 
                   {/* Best for */}
                   <div className="mb-8 p-4 rounded-xl bg-emerald-50/60 border border-emerald-200/60">
-                    <span className="text-xs font-black text-emerald-800 uppercase tracking-wider block mb-1 font-mono">
+                    <span className="text-xs font-black text-emerald-800 uppercase tracking-wider block mb-1">
                       Best for:
                     </span>
                     <p className="text-slate-800 text-sm font-semibold leading-relaxed">
@@ -606,7 +606,7 @@ export function GoodWeInvertersPage() {
           <FadeIn>
             <div className="bg-white border-2 border-slate-200 rounded-3xl p-8 sm:p-12 lg:p-14 shadow-sm">
               <div className="max-w-4xl">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-mono text-xs font-extrabold uppercase tracking-wider mb-4">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D]  text-xs font-extrabold uppercase tracking-wider mb-4">
                   <SlidersHorizontal className="w-3.5 h-3.5" />
                   <span>Selection Guidance</span>
                 </div>
@@ -657,7 +657,7 @@ export function GoodWeInvertersPage() {
               
               {/* Left Column: Content */}
               <div className="lg:col-span-7">
-                <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3 font-mono">
+                <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
                   Standalone &amp; Remote Power
                 </div>
 
@@ -676,7 +676,7 @@ export function GoodWeInvertersPage() {
 
                 {/* Complete List */}
                 <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-7 mb-8">
-                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wider mb-4 font-mono">
+                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wider mb-4">
                     A Complete Off-Grid System Includes:
                   </h3>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-slate-800 text-base font-semibold">
@@ -730,7 +730,7 @@ export function GoodWeInvertersPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-transparent opacity-85"></div>
                   
                   <div className="absolute bottom-6 left-6 right-6 p-5 rounded-xl bg-slate-900/90 border border-slate-800 backdrop-blur-md">
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#5BC94D] font-bold block mb-1">
+                    <span className="text-[10px]  uppercase tracking-widest text-[#5BC94D] font-bold block mb-1">
                       Remote &amp; Rural NT
                     </span>
                     <h4 className="text-white text-sm font-bold mb-1">
@@ -753,7 +753,7 @@ export function GoodWeInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-3xl mb-12">
-              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3 font-mono">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
                 System Recommendation Process
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
@@ -771,7 +771,7 @@ export function GoodWeInvertersPage() {
               <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white font-mono font-black text-sm flex items-center justify-center">
+                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       01
                     </span>
                     <Building2 className="w-5 h-5 text-[#5BC94D]" />
@@ -789,7 +789,7 @@ export function GoodWeInvertersPage() {
               <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white font-mono font-black text-sm flex items-center justify-center">
+                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       02
                     </span>
                     <Zap className="w-5 h-5 text-[#5BC94D]" />
@@ -807,7 +807,7 @@ export function GoodWeInvertersPage() {
               <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white font-mono font-black text-sm flex items-center justify-center">
+                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       03
                     </span>
                     <Sun className="w-5 h-5 text-[#5BC94D]" />
@@ -825,7 +825,7 @@ export function GoodWeInvertersPage() {
               <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white font-mono font-black text-sm flex items-center justify-center">
+                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       04
                     </span>
                     <SlidersHorizontal className="w-5 h-5 text-[#5BC94D]" />
@@ -843,7 +843,7 @@ export function GoodWeInvertersPage() {
               <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white font-mono font-black text-sm flex items-center justify-center">
+                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       05
                     </span>
                     <Battery className="w-5 h-5 text-[#5BC94D]" />
@@ -861,7 +861,7 @@ export function GoodWeInvertersPage() {
               <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white font-mono font-black text-sm flex items-center justify-center">
+                    <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       06
                     </span>
                     <ShieldCheck className="w-5 h-5 text-[#5BC94D]" />
@@ -885,7 +885,7 @@ export function GoodWeInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto mb-14">
-              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3 font-mono">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Proven Local Performance
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -967,7 +967,7 @@ export function GoodWeInvertersPage() {
           <FadeIn>
             <div className="bg-white border-2 border-slate-200 rounded-3xl p-8 sm:p-12 lg:p-14 shadow-sm">
               <div className="max-w-4xl">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-mono text-xs font-extrabold uppercase tracking-wider mb-4">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D]  text-xs font-extrabold uppercase tracking-wider mb-4">
                   <Award className="w-3.5 h-3.5" />
                   <span>Local Expertise</span>
                 </div>
@@ -982,7 +982,7 @@ export function GoodWeInvertersPage() {
                   </p>
 
                   <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-7 my-6">
-                    <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wider mb-4 font-mono">
+                    <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wider mb-4">
                       Our Complete Service Scope Includes:
                     </h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-800 text-base font-semibold">
@@ -1044,7 +1044,7 @@ export function GoodWeInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3 font-mono">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Got Questions?
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -1135,7 +1135,7 @@ export function GoodWeInvertersPage() {
           <FadeIn>
             <div className="relative rounded-3xl overflow-hidden border border-[#5BC94D]/30 bg-gradient-to-b from-slate-900 to-[#0B1520] p-8 sm:p-14 lg:p-16 text-center shadow-2xl">
               <div className="max-w-3xl mx-auto relative z-10">
-                <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/15 text-[#5BC94D] border border-[#5BC94D]/30 text-xs font-mono font-bold uppercase tracking-wider mb-6">
+                <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/15 text-[#5BC94D] border border-[#5BC94D]/30 text-xs  font-bold uppercase tracking-wider mb-6">
                   Licensed Supply &amp; Installation
                 </div>
 

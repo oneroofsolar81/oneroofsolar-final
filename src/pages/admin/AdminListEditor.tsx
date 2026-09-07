@@ -42,7 +42,7 @@ export function AdminListEditor() {
   return (
     <div className="max-w-5xl mx-auto">
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-3xl font-display font-semibold capitalize">Manage {collectionId}</h1>
+        <h1 className="text-3xl  font-semibold capitalize">Manage {collectionId}</h1>
         <Link 
           to={`/admin/collections/${collectionId}/edit/new`}
           className="px-4 py-2 bg-brand-500 text-white rounded-lg font-medium hover:bg-brand-600 transition"

@@ -126,7 +126,7 @@ function DarkHero({ service, slug }: { service: any; slug: string }) {
                   {statUnit}
                 </span>
               </div>
-              <div className="text-slate-400 text-xs uppercase tracking-widest font-mono">
+              <div className="text-slate-400 text-xs uppercase tracking-widest">
                 {statLabel}
               </div>
             </div>
@@ -367,10 +367,10 @@ function DarkProducts({ service, slug }: { service: any; slug: string }) {
                   </div>
 
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-slate-300 text-xs font-mono tracking-widest uppercase shadow-sm">
+                    <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-slate-300 text-xs  tracking-widest uppercase shadow-sm">
                       {productTag}
                     </span>
-                    <span className="px-3 py-1 bg-brand-500/10 border border-brand-500/20 rounded-md text-brand-400 text-xs font-mono tracking-widest uppercase shadow-sm flex items-center gap-1">
+                    <span className="px-3 py-1 bg-brand-500/10 border border-brand-500/20 rounded-md text-brand-400 text-xs  tracking-widest uppercase shadow-sm flex items-center gap-1">
                       <Zap className="w-3 h-3" /> {featureTag}
                     </span>
                   </div>
@@ -540,6 +540,7 @@ function DarkBenefits({ service, slug }: { service: any; slug: string }) {
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { FadeIn } from "@/src/components/ui/FadeIn";
+import { QuoteForm } from "@/src/components/QuoteForm";
 import { PackagesSection } from "@/src/components/PackagesSection";
 import { FaqSection } from "@/src/components/FaqSection";
 import { ResidentialSolarSystemPage } from "@/src/pages/ResidentialSolarSystemPage";
@@ -1214,7 +1215,7 @@ function EvChargerHero({ service }: { service: any }) {
                 <span className="text-5xl font-black text-white">22</span>
                 <span className="text-brand-400 font-bold mb-1">kW</span>
               </div>
-              <div className="text-slate-400 text-xs uppercase tracking-widest font-mono">
+              <div className="text-slate-400 text-xs uppercase tracking-widest">
                 Max Charging Speed
               </div>
             </div>
@@ -1337,10 +1338,10 @@ function EvChargerProducts({ service }: { service: any }) {
                   </div>
 
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-slate-300 text-xs font-mono tracking-widest uppercase shadow-sm">
+                    <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-md text-slate-300 text-xs  tracking-widest uppercase shadow-sm">
                       EV Charger
                     </span>
-                    <span className="px-3 py-1 bg-brand-500/10 border border-brand-500/20 rounded-md text-brand-400 text-xs font-mono tracking-widest uppercase shadow-sm flex items-center gap-1">
+                    <span className="px-3 py-1 bg-brand-500/10 border border-brand-500/20 rounded-md text-brand-400 text-xs  tracking-widest uppercase shadow-sm flex items-center gap-1">
                       <Zap className="w-3 h-3" /> Smart Ready
                     </span>
                   </div>
@@ -3024,22 +3025,12 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               </div>
 
               {/* Form Side */}
-              <div className="p-6 sm:p-10 lg:p-16 bg-slate-800/30 backdrop-blur-md relative z-10 flex flex-col justify-center">
-                <h3 className="text-3xl font-bold text-white mb-2">
-                  Book Your Consultation
-                </h3>
-                <p className="text-slate-400 font-medium mb-8">
-                  We will get back to you within one business day.
-                </p>
-
-                <div className="w-full relative bg-transparent rounded-xl overflow-hidden" style={{ minHeight: "720px" }}>
-                  <iframe
-                    src="https://api.oneroofsolar.com.au/widget/form/3uXInokjWftJSJgePj2x"
-                    style={{ width: "100%", height: "100%", border: "none", borderRadius: "8px", minHeight: "720px", overflow: "hidden" }}
-                    scrolling="no"
-                    title="Book Consultation Form"
-                  ></iframe>
-                </div>
+              <div className="p-4 sm:p-8 lg:p-12 relative z-10 flex flex-col justify-center">
+                <QuoteForm 
+                  title="Book Your Consultation"
+                  defaultInterest={service.title || "Residential Solar Panels"}
+                  source={`service_detail_${slug}`}
+                />
               </div>
             </div>
           </div>

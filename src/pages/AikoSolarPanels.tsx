@@ -23,6 +23,7 @@ import { Button } from "../components/ui/Button";
 import { PartnersMarquee } from "../components/PartnersMarquee";
 import { SEO } from "../components/SEO";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
+import { QuoteForm } from "../components/QuoteForm";
 import { db } from "../lib/firebase";
 import { collection, addDoc } from "firebase/firestore";
 
@@ -326,7 +327,7 @@ export function AikoSolarPanels() {
             <div className="lg:col-span-7">
               <FadeIn isHero>
                 {/* Breadcrumb */}
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono">
+                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6">
                   <a href="https://oneroofsolar.com.au/" className="hover:text-brand-400 transition-colors">Home</a>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <Link to="/solar-panels/" className="hover:text-brand-400 transition-colors">Solar Panels</Link>
@@ -403,14 +404,14 @@ export function AikoSolarPanels() {
                   {/* Floating Badges */}
                   <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-slate-900/90 backdrop-blur-md border border-brand-500/30 px-3 py-1.5 sm:px-5 sm:py-3 rounded-xl sm:rounded-2xl z-20 shadow-lg text-center transform hover:scale-105 transition-transform">
                     <div className="text-lg sm:text-2xl font-black text-brand-400 leading-none">25%+</div>
-                    <div className="text-[8px] sm:text-[9px] text-slate-300 uppercase tracking-widest font-mono font-bold mt-1">
+                    <div className="text-[8px] sm:text-[9px] text-slate-300 uppercase tracking-widest  font-bold mt-1">
                       Efficiency
                     </div>
                   </div>
 
                   <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-slate-900/90 backdrop-blur-md border border-brand-500/30 px-3 py-1.5 sm:px-5 sm:py-3 rounded-xl sm:rounded-2xl z-20 shadow-lg text-center transform hover:scale-105 transition-transform">
                     <div className="text-lg sm:text-2xl font-black text-brand-400 leading-none">30 YR</div>
-                    <div className="text-[8px] sm:text-[9px] text-slate-300 uppercase tracking-widest font-mono font-bold mt-1">
+                    <div className="text-[8px] sm:text-[9px] text-slate-300 uppercase tracking-widest  font-bold mt-1">
                       Warranty
                     </div>
                   </div>
@@ -571,7 +572,7 @@ export function AikoSolarPanels() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-8 lg:mb-16">
             <FadeIn>
-              <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3 font-mono">
+              <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                 Engineered for the Northern Territory climate
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
@@ -763,7 +764,7 @@ export function AikoSolarPanels() {
             {/* Left Side Info */}
             <div className="lg:col-span-6">
               <FadeIn>
-                <span className="text-xs font-bold text-brand-400 uppercase tracking-widest block mb-3 font-mono">
+                <span className="text-xs font-bold text-brand-400 uppercase tracking-widest block mb-3">
                   Get Started Today
                 </span>
                 
@@ -786,7 +787,7 @@ export function AikoSolarPanels() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-400 font-bold uppercase tracking-wider">Call Our Team</div>
-                      <div className="text-lg font-black font-mono">{PRIMARY_PHONE}</div>
+                      <div className="text-lg font-black">{PRIMARY_PHONE}</div>
                     </div>
                   </a>
 
@@ -799,177 +800,21 @@ export function AikoSolarPanels() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-400 font-bold uppercase tracking-wider">Email Inquiry</div>
-                      <div className="text-lg font-black font-mono">info@oneroofsolar.com.au</div>
+                      <div className="text-lg font-black">info@oneroofsolar.com.au</div>
                     </div>
                   </a>
                 </div>
               </FadeIn>
             </div>
 
-            {/* Right Side Quote Form on a glass-style card */}
+            {/* Right Side Quote Form */}
             <div className="lg:col-span-6 mt-8 lg:mt-0">
-              <FadeIn delay={0.2} className="backdrop-blur-xl bg-slate-900/90 rounded-3xl sm:rounded-[2.5rem] p-5 sm:p-10 border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)]">
-                {submitted ? (
-                  <div className="p-8 text-center">
-                    <div className="w-16 h-16 bg-brand-500 rounded-full flex items-center justify-center text-slate-900 mx-auto mb-6 shadow-lg">
-                      <Check className="w-8 h-8 stroke-[3]" />
-                    </div>
-                    <h3 className="text-2xl font-black text-white mb-3 uppercase tracking-tight">
-                      Assessment Request Received
-                    </h3>
-                    <p className="text-slate-300 font-medium leading-relaxed mb-6">
-                      Thank you. A solar expert from Oneroof Solar will reach out shortly with your customized quote options and solar savings report.
-                    </p>
-                    <Button 
-                      className="bg-brand-500 text-slate-900 font-bold px-6 py-2 rounded-xl hover:bg-brand-600 transition-colors uppercase tracking-wider text-xs border-none"
-                      onClick={() => setSubmitted(false)}
-                    >
-                      Submit Another Inquiry
-                    </Button>
-                  </div>
-                ) : (
-                  <div>
-                    <div className="mb-6">
-                      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-500/10 text-brand-400 font-bold text-[10px] mb-3 border border-brand-500/20 uppercase tracking-widest">
-                        <Sun className="w-3.5 h-3.5" /> Free Assessment
-                      </div>
-                      <h3 className="text-2xl font-black text-white uppercase tracking-tight">
-                        Claim Your Solar Quote
-                      </h3>
-                      <p className="text-xs text-slate-400 mt-1">
-                        Fill in your details for a customized system design & savings report.
-                      </p>
-                    </div>
-
-                    <form onSubmit={handleFormSubmit} className="space-y-4">
-                      {errorMsg && (
-                        <div className="p-3 bg-red-500/10 border border-red-500/20 text-red-200 text-xs rounded-xl font-bold">
-                          {errorMsg}
-                        </div>
-                      )}
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                          <label htmlFor="lead-name" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Full Name <span className="text-brand-400">*</span>
-                          </label>
-                          <input
-                            type="text"
-                            id="lead-name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleInputChange}
-                            placeholder="Your Name"
-                            required
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all"
-                          />
-                        </div>
-
-                        <div>
-                          <label htmlFor="lead-phone" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Phone Number <span className="text-brand-400">*</span>
-                          </label>
-                          <input
-                            type="tel"
-                            id="lead-phone"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleInputChange}
-                            placeholder="e.g. 0400 000 000"
-                            required
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all"
-                          />
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                          <label htmlFor="lead-email" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Email Address <span className="text-brand-400">*</span>
-                          </label>
-                          <input
-                            type="email"
-                            id="lead-email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            placeholder="your@email.com"
-                            required
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all"
-                          />
-                        </div>
-
-                        <div>
-                          <label htmlFor="lead-suburb" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Suburb / Postcode <span className="text-brand-400">*</span>
-                          </label>
-                          <input
-                            type="text"
-                            id="lead-suburb"
-                            name="suburb"
-                            value={formData.suburb}
-                            onChange={handleInputChange}
-                            placeholder="e.g. Berrimah, 0828"
-                            required
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all"
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <label htmlFor="lead-bill" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                          Average Quarterly Electricity Bill <span className="text-brand-400">*</span>
-                        </label>
-                        <select
-                          id="lead-bill"
-                          name="bill"
-                          value={formData.bill}
-                          onChange={handleInputChange}
-                          required
-                          className="w-full h-11 px-4 rounded-xl bg-slate-900 border border-white/10 text-white text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all"
-                        >
-                          <option value="" disabled className="text-slate-500">Select average bill</option>
-                          <option value="Under $500">Under $500</option>
-                          <option value="$500 - $1,000">$500 - $1,000</option>
-                          <option value="$1,000 - $1,500">$1,000 - $1,500</option>
-                          <option value="$1,500+">$1,500+</option>
-                          <option value="Unsure">Unsure / Request Assessment</option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <label htmlFor="lead-message" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                          Message / Roof Material (Optional)
-                        </label>
-                        <textarea
-                          id="lead-message"
-                          name="message"
-                          value={formData.message}
-                          onChange={handleInputChange}
-                          placeholder="e.g. tile/tin roof, single-story, best time to call..."
-                          rows={2}
-                          className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all resize-none"
-                        />
-                      </div>
-
-                      <Button
-                        type="submit"
-                        disabled={submitting}
-                        className="w-full rounded-xl bg-brand-500 text-slate-900 hover:bg-brand-600 border-none font-bold h-12 transition-all uppercase tracking-wider text-xs shadow-[0_4px_20px_rgba(140,198,63,0.3)] disabled:opacity-50 disabled:pointer-events-none"
-                      >
-                        {submitting ? (
-                          <span className="flex items-center justify-center gap-2">
-                            <Loader2 className="w-4 h-4 animate-spin" /> Submitting...
-                          </span>
-                        ) : (
-                          <span className="flex items-center justify-center gap-1">
-                            Get a Free Quote <ArrowRight className="w-4 h-4" />
-                          </span>
-                        )}
-                      </Button>
-                    </form>
-                  </div>
-                )}
+              <FadeIn delay={0.2}>
+                <QuoteForm 
+                  title="Claim Your Solar Quote"
+                  defaultInterest="Residential Solar Panels"
+                  source="aiko_solar_panels_page"
+                />
               </FadeIn>
             </div>
 

@@ -174,7 +174,7 @@ export function JaSolarPanels() {
             <div className="lg:col-span-7">
               <FadeIn isHero>
                 {/* Breadcrumb */}
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono">
+                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6">
                   <a href="https://oneroofsolar.com.au/" className="hover:text-brand-400 transition-colors">Home</a>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <Link to="/product/solar-panels-brands" className="hover:text-brand-400 transition-colors">Products</Link>
@@ -224,14 +224,14 @@ export function JaSolarPanels() {
 
                   <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-slate-900/90 backdrop-blur-md border border-brand-500/30 px-3 py-1.5 sm:px-5 sm:py-3 rounded-xl sm:rounded-2xl z-20 shadow-lg text-center transform hover:scale-105 transition-transform">
                     <div className="text-lg sm:text-2xl font-black text-brand-400 leading-none">Tier 1</div>
-                    <div className="text-[8px] sm:text-[9px] text-slate-300 uppercase tracking-widest font-mono font-bold mt-1">
+                    <div className="text-[8px] sm:text-[9px] text-slate-300 uppercase tracking-widest  font-bold mt-1">
                       Global Leader
                     </div>
                   </div>
 
                   <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-slate-900/90 backdrop-blur-md border border-brand-500/30 px-3 py-1.5 sm:px-5 sm:py-3 rounded-xl sm:rounded-2xl z-20 shadow-lg text-center transform hover:scale-105 transition-transform">
                     <div className="text-lg sm:text-2xl font-black text-brand-400 leading-none">25-30 YR</div>
-                    <div className="text-[8px] sm:text-[9px] text-slate-300 uppercase tracking-widest font-mono font-bold mt-1">
+                    <div className="text-[8px] sm:text-[9px] text-slate-300 uppercase tracking-widest  font-bold mt-1">
                       Warranty
                     </div>
                   </div>
@@ -264,7 +264,7 @@ export function JaSolarPanels() {
 
             <div className="md:col-span-6 flex flex-col justify-center">
               <FadeIn delay={0.2}>
-                <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3 font-mono">
+                <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                   Smart Value Solar
                 </span>
                 <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -285,7 +285,7 @@ export function JaSolarPanels() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-16 items-center">
             <div className="md:col-span-6 flex flex-col justify-center order-2 md:order-1">
               <FadeIn delay={0.2}>
-                <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3 font-mono">
+                <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                   Global Leader
                 </span>
                 <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -334,7 +334,7 @@ export function JaSolarPanels() {
 
             <div className="md:col-span-6 flex flex-col justify-center">
               <FadeIn delay={0.2}>
-                <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3 font-mono">
+                <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                   Advanced Technology
                 </span>
                 <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -390,7 +390,7 @@ export function JaSolarPanels() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3 font-mono">
+              <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                 Key Advantages
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -465,7 +465,7 @@ export function JaSolarPanels() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
             <div className="lg:col-span-6">
               <FadeIn>
-                <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3 font-mono">
+                <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                   Territory Wide
                 </span>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] mb-6">

@@ -259,7 +259,7 @@ export function RecSolarPanels() {
             <div className="lg:col-span-7">
               <FadeIn isHero>
                 {/* Breadcrumb */}
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono">
+                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6">
                   <Link to="/" className="hover:text-brand-400 transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <Link to="/product/solar-panels-brands" className="hover:text-brand-400 transition-colors">Solar Panels</Link>

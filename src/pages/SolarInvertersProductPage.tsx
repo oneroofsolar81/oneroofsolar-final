@@ -275,7 +275,7 @@ export function SolarInvertersProductPage() {
             <div className="lg:col-span-7">
               <FadeIn isHero>
                 {/* Breadcrumb */}
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono flex-wrap">
+                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
                   <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <span className="text-[#5BC94D]" aria-current="page">Solar Inverters</span>
@@ -504,10 +504,10 @@ export function SolarInvertersProductPage() {
 
                     {/* Badges */}
                     <div className="flex items-center gap-2 mb-4 flex-wrap">
-                      <span className="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-slate-300 text-xs font-mono uppercase font-semibold">
+                      <span className="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-slate-300 text-xs  uppercase font-semibold">
                         INVERTER
                       </span>
-                      <span className="px-3 py-1 bg-[#5BC94D]/10 border border-[#5BC94D]/30 rounded-md text-[#5BC94D] text-xs font-mono uppercase font-bold flex items-center gap-1">
+                      <span className="px-3 py-1 bg-[#5BC94D]/10 border border-[#5BC94D]/30 rounded-md text-[#5BC94D] text-xs  uppercase font-bold flex items-center gap-1">
                         <Zap className="w-3.5 h-3.5" /> SMART SYNC
                       </span>
                     </div>
@@ -524,7 +524,7 @@ export function SolarInvertersProductPage() {
 
                     {/* Best For */}
                     <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 mb-8">
-                      <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-wider block mb-1 font-mono">Best For</span>
+                      <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-wider block mb-1">Best For</span>
                       <p className="text-slate-200 text-sm font-medium leading-relaxed">{card.bestFor}</p>
                     </div>
                   </div>
@@ -554,7 +554,7 @@ export function SolarInvertersProductPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-slate-50 border border-slate-200 rounded-2xl sm:rounded-3xl p-8 sm:p-12 shadow-sm">
-              <div className="flex items-center gap-3 text-[#5BC94D] font-bold text-sm uppercase tracking-wider mb-4 font-mono">
+              <div className="flex items-center gap-3 text-[#5BC94D] font-bold text-sm uppercase tracking-wider mb-4">
                 <MapPin className="w-5 h-5" />
                 <span>Wide Coverage &amp; Service</span>
               </div>
