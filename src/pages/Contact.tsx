@@ -8,6 +8,7 @@ import { DEFAULT_PAGES } from "../lib/defaultData";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { SEO } from "@/src/components/SEO";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
+import { QuoteForm } from "@/src/components/QuoteForm";
 
 export function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
@@ -130,16 +131,7 @@ export function Contact() {
 
             {/* Form Side */}
             <FadeIn delay={0.2}>
-              <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm relative overflow-hidden">
-                <div className="w-full relative bg-transparent rounded-xl overflow-hidden" style={{ minHeight: "720px" }}>
-                  <iframe
-                    src="https://api.oneroofsolar.com.au/widget/form/3uXInokjWftJSJgePj2x"
-                    style={{ width: "100%", height: "100%", border: "none", borderRadius: "8px", minHeight: "720px", overflow: "hidden" }}
-                    scrolling="no"
-                    title="Contact Us Form"
-                  ></iframe>
-                </div>
-              </div>
+              <QuoteForm title="Get Your Free Quote" source="contact_page" className="shadow-xl" />
             </FadeIn>
           </div>
         </div>
@@ -154,7 +146,7 @@ export function Contact() {
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-600 mb-5 border border-slate-200 shadow-xs group-hover:bg-brand-500 group-hover:text-slate-900 transition-colors">
                   <Mail className="w-6 h-6" />
                 </div>
-                <h3 className="text-slate-500 text-xs font-bold uppercase tracking-widest mb-2 font-mono">Email Us</h3>
+                <h3 className="text-slate-500 text-xs font-bold uppercase tracking-widest mb-2">Email Us</h3>
                 <div className="text-base sm:text-lg font-bold text-slate-900">info@oneroofsolar.com.au</div>
               </div>
             </FadeIn>
@@ -164,7 +156,7 @@ export function Contact() {
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-600 mb-5 border border-slate-200 shadow-xs group-hover:bg-brand-500 group-hover:text-slate-900 transition-colors">
                   <Phone className="w-6 h-6" />
                 </div>
-                <h3 className="text-slate-500 text-xs font-bold uppercase tracking-widest mb-2 font-mono">Call Us</h3>
+                <h3 className="text-slate-500 text-xs font-bold uppercase tracking-widest mb-2">Call Us</h3>
                 <div className="text-base font-bold text-slate-900">Darwin: <a href={`tel:${PRIMARY_PHONE_RAW}`} className="hover:text-brand-600 transition-colors">{PRIMARY_PHONE}</a></div>
                 <div className="text-base font-bold text-slate-900 mt-1">Alice Springs: <a href={`tel:${PRIMARY_PHONE_RAW}`} className="hover:text-brand-600 transition-colors">{PRIMARY_PHONE}</a></div>
               </div>
@@ -175,7 +167,7 @@ export function Contact() {
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-600 mb-5 border border-slate-200 shadow-xs group-hover:bg-brand-500 group-hover:text-slate-900 transition-colors">
                   <MapPin className="w-6 h-6" />
                 </div>
-                <h3 className="text-slate-500 text-xs font-bold uppercase tracking-widest mb-2 font-mono">Visit Us</h3>
+                <h3 className="text-slate-500 text-xs font-bold uppercase tracking-widest mb-2">Visit Us</h3>
                 <div className="text-sm font-bold text-slate-900">Darwin: 3/97 Pruen Rd, Berrimah NT 0828</div>
                 <div className="text-sm font-bold text-slate-900 mt-2 pt-2 border-t border-slate-200 w-full">Alice Springs: 44 Zeil St, Araluen NT 0870</div>
               </div>

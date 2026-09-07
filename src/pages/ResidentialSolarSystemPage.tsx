@@ -22,6 +22,7 @@ import { FaqSection } from "@/src/components/FaqSection";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { PartnersMarquee } from "@/src/components/PartnersMarquee";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
+import { QuoteForm } from "@/src/components/QuoteForm";
 
 const serviceAreas = [
   {
@@ -430,179 +431,11 @@ export function ResidentialSolarSystemPage() {
             <FadeIn isHero delay={0.2} className="relative w-full max-w-xl mx-auto lg:ml-auto">
               <div className="w-full aspect-square bg-gradient-to-br from-[#5BC94D]/10 to-emerald-600/10 rounded-full blur-3xl absolute inset-0 animate-pulse pointer-events-none"></div>
               
-              <div className="relative z-10 bg-slate-950/85 backdrop-blur-md p-6 sm:p-8 rounded-[2.5rem] border border-white/10 shadow-2xl text-white">
-                {submitted ? (
-                  <div className="text-center py-12 px-4">
-                    <div className="w-16 h-16 bg-[#5BC94D]/10 rounded-full flex items-center justify-center text-[#5BC94D] mx-auto mb-6 border border-[#5BC94D]/30 animate-bounce">
-                      <CheckCircle2 className="w-8 h-8" />
-                    </div>
-                    <h3 className="text-2xl font-black text-white mb-4 uppercase tracking-tight">
-                      Request Received!
-                    </h3>
-                    <p className="text-slate-300 text-base leading-relaxed mb-8">
-                      Thank you! Your request for a free solar assessment has been successfully submitted. Our Darwin-based experts will review your details and contact you within 24 hours.
-                    </p>
-                    <div className="space-y-3">
-                      <Button
-                        onClick={() => setSubmitted(false)}
-                        className="w-full rounded-xl bg-white/10 text-white hover:bg-white/20 border-none font-bold h-12 transition-all uppercase tracking-wider text-xs"
-                      >
-                        Submit Another Request
-                      </Button>
-                      <Button
-                        className="w-full rounded-xl bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 border-none font-bold h-12 transition-all uppercase tracking-wider text-xs"
-                        asChild
-                      >
-                        <a href={`tel:${PRIMARY_PHONE_RAW}`}>
-                          Call Us Now: {PRIMARY_PHONE}
-                        </a>
-                      </Button>
-                    </div>
-                  </div>
-                ) : (
-                  <div>
-                    <div className="mb-6">
-                      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-bold text-[10px] mb-3 border border-[#5BC94D]/20 uppercase tracking-widest">
-                        <Sun className="w-3.5 h-3.5" /> Free Assessment
-                      </div>
-                      <h3 className="text-2xl font-black text-white uppercase tracking-tight">
-                        Claim Your Solar Quote
-                      </h3>
-                      <p className="text-xs text-slate-400 mt-1">
-                        Fill in your details for a customized system design & savings report.
-                      </p>
-                    </div>
-
-                    <form onSubmit={handleFormSubmit} className="space-y-4">
-                      {errorMsg && (
-                        <div className="p-3 bg-red-500/10 border border-red-500/20 text-red-200 text-xs rounded-xl">
-                          {errorMsg}
-                        </div>
-                      )}
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                          <label htmlFor="lead-name" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Full Name <span className="text-[#5BC94D]">*</span>
-                          </label>
-                          <input
-                            type="text"
-                            id="lead-name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleInputChange}
-                            placeholder="Your Name"
-                            required
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all"
-                          />
-                        </div>
-
-                        <div>
-                          <label htmlFor="lead-phone" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Phone Number <span className="text-[#5BC94D]">*</span>
-                          </label>
-                          <input
-                            type="tel"
-                            id="lead-phone"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleInputChange}
-                            placeholder="e.g. 0400 000 000"
-                            required
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all"
-                          />
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                          <label htmlFor="lead-email" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Email Address <span className="text-[#5BC94D]">*</span>
-                          </label>
-                          <input
-                            type="email"
-                            id="lead-email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            placeholder="your@email.com"
-                            required
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all"
-                          />
-                        </div>
-
-                        <div>
-                          <label htmlFor="lead-suburb" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Suburb / Postcode <span className="text-[#5BC94D]">*</span>
-                          </label>
-                          <input
-                            type="text"
-                            id="lead-suburb"
-                            name="suburb"
-                            value={formData.suburb}
-                            onChange={handleInputChange}
-                            placeholder="e.g. Berrimah, 0828"
-                            required
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all"
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <label htmlFor="lead-bill" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                          Average Quarterly Electricity Bill <span className="text-[#5BC94D]">*</span>
-                        </label>
-                        <select
-                          id="lead-bill"
-                          name="bill"
-                          value={formData.bill}
-                          onChange={handleInputChange}
-                          required
-                          className="w-full h-11 px-4 rounded-xl bg-slate-950 border border-white/10 text-white text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all"
-                        >
-                          <option value="" disabled className="text-slate-500">Select average bill</option>
-                          <option value="Under $500">Under $500</option>
-                          <option value="$500 - $1,000">$500 - $1,000</option>
-                          <option value="$1,000 - $1,500">$1,000 - $1,500</option>
-                          <option value="$1,500+">$1,500+</option>
-                          <option value="Unsure">Unsure / Request Assessment</option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <label htmlFor="lead-message" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                          Message / Roof Material (Optional)
-                        </label>
-                        <textarea
-                          id="lead-message"
-                          name="message"
-                          value={formData.message}
-                          onChange={handleInputChange}
-                          placeholder="e.g. tile/tin roof, single-story, best time to call..."
-                          rows={2}
-                          className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all resize-none"
-                        />
-                      </div>
-
-                      <Button
-                        type="submit"
-                        disabled={submitting}
-                        className="w-full rounded-xl bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 border-none font-bold h-12 transition-all uppercase tracking-wider text-xs shadow-[0_0_15px_rgba(91,201,77,0.2)] disabled:opacity-50 disabled:pointer-events-none"
-                      >
-                        {submitting ? (
-                          <span className="flex items-center justify-center gap-2">
-                            <Loader2 className="w-4 h-4 animate-spin" /> Submitting...
-                          </span>
-                        ) : (
-                          <span className="flex items-center justify-center gap-1">
-                            Claim Free Solar Assessment <ArrowRight className="w-4 h-4" />
-                          </span>
-                        )}
-                      </Button>
-                    </form>
-                  </div>
-                )}
-              </div>
+              <QuoteForm 
+                title="Get Your Free Quote" 
+                defaultInterest="Residential Solar Panels" 
+                source="residential_solar_page"
+              />
             </FadeIn>
           </div>
 

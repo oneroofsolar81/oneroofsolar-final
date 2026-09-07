@@ -271,7 +271,7 @@ export function Navbar() {
                           aria-expanded={isItemActive}
                           aria-haspopup="true"
                           aria-controls={`desktop-menu-${item.label}`}
-                          className={`desktop-nav-link text-[14px] font-semibold px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
+                          className={`desktop-nav-link nav-link-item text-[15px] font-semibold leading-[1.2] tracking-normal px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
                             isItemActive
                               ? "is-active bg-white text-brand-600 shadow-sm"
                               : isSolidHeader
@@ -281,7 +281,7 @@ export function Navbar() {
                         >
                           <span>{item.label}</span>
                           <ChevronDown
-                            className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                            className={`h-3.5 w-3.5 shrink-0 transition-transform duration-200 ${
                               isItemActive
                                 ? "rotate-180 text-brand-600"
                                 : isSolidHeader
@@ -298,7 +298,7 @@ export function Navbar() {
                         key={item.label}
                         to={itemHref}
                         onMouseEnter={() => handleMouseEnter(item)}
-                        className={`desktop-nav-link text-[14px] font-semibold px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
+                        className={`desktop-nav-link nav-link-item text-[15px] font-semibold leading-[1.2] tracking-normal px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
                           location.pathname === itemHref
                             ? "bg-white text-brand-600 shadow-sm"
                             : isSolidHeader
@@ -306,7 +306,7 @@ export function Navbar() {
                             : "text-white hover:bg-white/10"
                         }`}
                       >
-                        {item.label}
+                        <span>{item.label}</span>
                       </Link>
                     );
                   })}
@@ -681,9 +681,9 @@ export function Navbar() {
                     <div className="flex items-center mb-4 pb-2 border-b border-slate-100">
                       <button
                         onClick={handleMobileBack}
-                        className="flex items-center gap-1.5 text-brand-600 hover:text-brand-700 font-semibold text-[15px] py-2 px-1 -ml-1 transition-colors group"
+                        className="mobile-nav-link nav-link-item flex items-center gap-1.5 text-brand-600 hover:text-brand-700 font-semibold text-[15px] leading-[1.2] tracking-normal py-2 px-1 -ml-1 transition-colors group"
                       >
-                        <ChevronLeft className="w-5 h-5 transition-transform group-hover:-translate-x-0.5" />
+                        <ChevronLeft className="w-5 h-5 shrink-0 transition-transform group-hover:-translate-x-0.5" />
                         <span>{backLabel}</span>
                       </button>
                     </div>
@@ -719,7 +719,7 @@ export function Navbar() {
                           <button
                             key={item.label}
                             onClick={() => handleMobileNext(item)}
-                            className="flex items-center justify-between min-h-[56px] py-3.5 text-left text-[18px] sm:text-[19px] font-semibold text-slate-900 hover:text-brand-600 transition-colors w-full group"
+                            className="mobile-nav-link nav-link-item flex items-center justify-between min-h-[56px] py-3.5 text-left text-[15px] font-semibold leading-[1.2] tracking-normal text-slate-900 hover:text-brand-600 transition-colors w-full group"
                           >
                             <span>{item.label}</span>
                             <ChevronRight className="w-5 h-5 text-slate-400 group-hover:text-brand-600 transition-colors flex-shrink-0 ml-2" />
@@ -732,9 +732,9 @@ export function Navbar() {
                           key={item.label}
                           to={itemHref}
                           onClick={handleMobileClose}
-                          className={`flex items-center justify-between min-h-[56px] py-3.5 text-[18px] sm:text-[19px] font-semibold transition-colors ${
+                          className={`mobile-nav-link nav-link-item flex items-center justify-between min-h-[56px] py-3.5 text-[15px] font-semibold leading-[1.2] tracking-normal transition-colors ${
                             location.pathname === itemHref
-                              ? "text-brand-600 font-bold"
+                              ? "text-brand-600"
                               : "text-slate-800 hover:text-brand-600"
                           }`}
                         >

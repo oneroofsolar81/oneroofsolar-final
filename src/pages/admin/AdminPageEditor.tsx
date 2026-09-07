@@ -889,7 +889,7 @@ export function AdminPageEditor() {
             {activeTab === 'expertise' && (
               <div className="space-y-6">
                 <div className="border-b border-slate-100 pb-4 mb-4">
-                  <h2 className="text-xl font-bold text-slate-900 font-display">Expertise (Services Grid)</h2>
+                  <h2 className="text-xl font-bold text-slate-900">Expertise (Services Grid)</h2>
                   <p className="text-slate-500 text-xs">Four main columns shown on the home page highlighting specific products.</p>
                 </div>
 

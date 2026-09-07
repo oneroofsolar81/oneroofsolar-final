@@ -285,7 +285,7 @@ export function JinkoSolarPanels() {
             <div className="lg:col-span-7">
               <FadeIn isHero>
                 {/* Breadcrumb */}
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono">
+                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6">
                   <a href="https://oneroofsolar.com.au/" className="hover:text-brand-400 transition-colors">Home</a>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <RouterLink to="/product/solar-panels-brands" className="hover:text-brand-400 transition-colors">Solar Panels</RouterLink>
@@ -754,7 +754,7 @@ export function JinkoSolarPanels() {
                 Ready to install Jinko solar panels on your NT property? Get a free quote from Oneroof Solar today.
               </h2>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-lg sm:text-xl font-bold font-mono text-white">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-lg sm:text-xl font-bold  text-white">
                 <a 
                   href={`tel:${PRIMARY_PHONE_RAW}`}
                   className="flex items-center gap-3 hover:text-brand-400 transition-colors"

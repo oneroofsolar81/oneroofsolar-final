@@ -14,7 +14,7 @@ export function AdminLayout() {
   return (
     <div className="flex h-screen bg-slate-100 font-sans">
       <aside className="w-64 bg-slate-900 text-white p-6 flex flex-col gap-6 overflow-y-auto">
-        <h1 className="text-xl font-bold font-display tracking-tight text-white/90">Oneroof Admin</h1>
+        <h1 className="text-xl font-bold  tracking-tight text-white/90">Oneroof Admin</h1>
         <nav className="flex flex-col gap-1.5">
           <Link to="/admin" className="px-3 py-1.5 rounded hover:bg-slate-800 transition text-sm font-semibold">Dashboard</Link>
           
@@ -49,7 +49,7 @@ export function AdminLayout() {
             </div>
             <div className="flex items-center gap-1.5 mt-0.5">
               <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full shrink-0"></span>
-              <span className="text-[10px] text-slate-400 font-mono">
+              <span className="text-[10px] text-slate-400">
                 {user?.role || 'Administrator'}
               </span>
             </div>

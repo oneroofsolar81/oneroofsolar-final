@@ -264,7 +264,7 @@ export function SolarInverters() {
             <div className="lg:col-span-7">
               <FadeIn isHero>
                 {/* Breadcrumb */}
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono flex-wrap">
+                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
                   <RouterLink to="/" className="hover:text-[#5BC94D] transition-colors">Home</RouterLink>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <span className="text-slate-400">Services</span>
@@ -735,7 +735,7 @@ export function SolarInverters() {
                   <div>
                     <div className="flex items-center gap-2 text-brand-600 mb-4">
                       <MapPin className="w-5 h-5" />
-                      <span className="text-xs font-mono uppercase tracking-wider font-bold">NT Coverage</span>
+                      <span className="text-xs  uppercase tracking-wider font-bold">NT Coverage</span>
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-wide">
                       {loc.title}

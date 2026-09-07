@@ -202,7 +202,7 @@ export function AlphaEssInvertersPage() {
             <div className="lg:col-span-7 text-left">
               <FadeIn isHero>
                 {/* Breadcrumbs */}
-                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 font-mono flex-wrap">
+                <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
                   <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <Link to="/products/solar-inverters" className="hover:text-[#5BC94D] transition-colors">Solar Inverters</Link>
@@ -540,7 +540,7 @@ export function AlphaEssInvertersPage() {
                   <div className="w-16 h-16 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mx-auto">
                     <ShieldCheck className="w-8 h-8" />
                   </div>
-                  <p className="text-sm font-extrabold text-white uppercase tracking-wider font-mono">
+                  <p className="text-sm font-extrabold text-white uppercase tracking-wider">
                     SAA Accredited Installer &amp; Certified Product
                   </p>
                 </div>

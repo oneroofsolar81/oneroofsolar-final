@@ -35,7 +35,7 @@ export const Privacy = () => {
           <div className="inline-flex items-center justify-center p-3 bg-brand-100 text-brand-600 rounded-2xl mb-6">
             <Lock className="w-8 h-8" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl  font-bold text-slate-900 mb-6 tracking-tight">
             Privacy Policy
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">

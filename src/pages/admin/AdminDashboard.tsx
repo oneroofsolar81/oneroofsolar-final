@@ -322,7 +322,7 @@ export function AdminDashboard() {
   return (
     <div>
       <div className="flex items-center justify-between mb-8">
-        <h1 className="text-3xl font-display font-semibold">Dashboard</h1>
+        <h1 className="text-3xl  font-semibold">Dashboard</h1>
         <div className="flex items-center gap-4">
           <span className="text-sm text-slate-600">Logged in as {user?.email}</span>
           <button 

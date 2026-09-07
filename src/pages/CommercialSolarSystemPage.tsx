@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
+import { QuoteForm } from "../components/QuoteForm";
 import { PartnersMarquee } from "../components/PartnersMarquee";
 import { SEO } from "../components/SEO";
 import { PackagesSection, PackageItem } from "../components/PackagesSection";
@@ -389,14 +390,14 @@ export function CommercialSolarSystemPage() {
                   
                   <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-[#121814]/90 backdrop-blur-md border border-[#5BC94D]/30 px-4 py-2 rounded-2xl z-20 shadow-lg text-center">
                     <div className="text-xl sm:text-2xl font-black text-[#5BC94D] leading-none">25 YRS</div>
-                    <div className="text-[9px] text-slate-300 uppercase tracking-widest font-mono font-bold mt-1">
+                    <div className="text-[9px] text-slate-300 uppercase tracking-widest  font-bold mt-1">
                       Performance
                     </div>
                   </div>
 
                   <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-[#121814]/90 backdrop-blur-md border border-[#5BC94D]/30 px-4 py-2 rounded-2xl z-20 shadow-lg text-center">
                     <div className="text-xl sm:text-2xl font-black text-[#5BC94D] leading-none">100kW+</div>
-                    <div className="text-[9px] text-slate-300 uppercase tracking-widest font-mono font-bold mt-1">
+                    <div className="text-[9px] text-slate-300 uppercase tracking-widest  font-bold mt-1">
                       Turnkey Arrays
                     </div>
                   </div>
@@ -434,7 +435,7 @@ export function CommercialSolarSystemPage() {
 
             <div className="lg:col-span-6 flex flex-col justify-center">
               <FadeIn delay={0.2}>
-                <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
+                <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
                   Commercial Energy Expertise
                 </span>
                 <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -592,7 +593,7 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
+              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
                 Commercial Benefits
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -694,7 +695,7 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
+              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
                 System Size Comparison
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
@@ -713,7 +714,7 @@ export function CommercialSolarSystemPage() {
                 <span className="w-2.5 h-2.5 rounded-full bg-[#5BC94D]"></span>
                 Table 1: System Sizing & Financial Overview
               </h3>
-              <span className="text-xs text-slate-400 font-mono">STC & LGC Eligible</span>
+              <span className="text-xs text-slate-400">STC & LGC Eligible</span>
             </div>
             <div className="bg-slate-900/60 border border-white/10 rounded-3xl overflow-hidden shadow-2xl">
               <div className="overflow-x-auto">
@@ -772,7 +773,7 @@ export function CommercialSolarSystemPage() {
                 <span className="w-2.5 h-2.5 rounded-full bg-[#5BC94D]"></span>
                 NT Business Types & Recommended Commercial System Sizes
               </h3>
-              <span className="text-xs text-slate-400 font-mono">Territory Wide Deployments</span>
+              <span className="text-xs text-slate-400">Territory Wide Deployments</span>
             </div>
             <div className="bg-slate-900/60 border border-white/10 rounded-3xl overflow-hidden shadow-2xl">
               <div className="overflow-x-auto">
@@ -833,7 +834,7 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
+              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
                 Government Rebates & Tax Offsets
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -962,7 +963,7 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
+              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
                 Flexible Funding Options
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -1034,7 +1035,7 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
+              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
                 The Oneroof Solar Advantage
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -1136,7 +1137,7 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
+              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
                 Streamlined Deployment
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -1231,13 +1232,13 @@ export function CommercialSolarSystemPage() {
                         <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                       ))}
                     </div>
-                    <span className="text-[10px] font-bold text-slate-400 font-mono bg-white/5 px-2.5 py-1 rounded-full border border-white/5">
+                    <span className="text-[10px] font-bold text-slate-400  bg-white/5 px-2.5 py-1 rounded-full border border-white/5">
                       {rev.date}
                     </span>
                   </div>
 
                   <div className="mb-4">
-                    <span className="text-[11px] font-bold text-[#5BC94D] uppercase tracking-wider font-mono block">
+                    <span className="text-[11px] font-bold text-[#5BC94D] uppercase tracking-wider  block">
                       ⚡ {rev.system}
                     </span>
                   </div>
@@ -1250,7 +1251,7 @@ export function CommercialSolarSystemPage() {
                     <div>
                       <h4 className="text-sm font-bold text-white uppercase tracking-wider">{rev.name}</h4>
                       <p className="text-[11px] text-slate-400 font-medium">{rev.company}</p>
-                      <p className="text-[10px] text-[#5BC94D] font-mono mt-0.5">📍 {rev.location}</p>
+                      <p className="text-[10px] text-[#5BC94D]  mt-0.5">📍 {rev.location}</p>
                     </div>
                     <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
                       <Quote className="w-4 h-4 text-[#5BC94D]" />
@@ -1269,7 +1270,7 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
+              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
                 Territory Wide Coverage
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -1287,7 +1288,7 @@ export function CommercialSolarSystemPage() {
                   <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center">
                     <Building2 className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider font-mono border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
+                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
                     Primary Hub
                   </span>
                 </div>
@@ -1319,7 +1320,7 @@ export function CommercialSolarSystemPage() {
                   <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center">
                     <Building2 className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider font-mono border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
+                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
                     Industrial Hub
                   </span>
                 </div>
@@ -1351,7 +1352,7 @@ export function CommercialSolarSystemPage() {
                   <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center">
                     <Building2 className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider font-mono border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
+                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
                     Central Hub
                   </span>
                 </div>
@@ -1383,7 +1384,7 @@ export function CommercialSolarSystemPage() {
                   <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center">
                     <Building2 className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider font-mono border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
+                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
                     Growth Corridor
                   </span>
                 </div>
@@ -1415,7 +1416,7 @@ export function CommercialSolarSystemPage() {
                   <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center">
                     <Building2 className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider font-mono border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
+                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
                     Rural & Agriculture
                   </span>
                 </div>
@@ -1447,7 +1448,7 @@ export function CommercialSolarSystemPage() {
                   <div className="w-10 h-10 rounded-xl bg-[#5BC94D] text-[#19281D] flex items-center justify-center">
                     <MapPin className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider font-mono border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/10">
+                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/10">
                     All NT Regions
                   </span>
                 </div>
@@ -1495,7 +1496,7 @@ export function CommercialSolarSystemPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white/5 border border-white/5 p-5 sm:p-6 rounded-2xl">
                   <h4 className="text-sm font-bold text-[#5BC94D] uppercase tracking-wider mb-2 flex items-start gap-2">
-                    <span className="shrink-0 font-mono text-[#5BC94D]">Q:</span>
+                    <span className="shrink-0  text-[#5BC94D]">Q:</span>
                     Is 10kW Solar Enough for a Commercial Business?
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
@@ -1505,7 +1506,7 @@ export function CommercialSolarSystemPage() {
 
                 <div className="bg-white/5 border border-white/5 p-5 sm:p-6 rounded-2xl">
                   <h4 className="text-sm font-bold text-[#5BC94D] uppercase tracking-wider mb-2 flex items-start gap-2">
-                    <span className="shrink-0 font-mono text-[#5BC94D]">Q:</span>
+                    <span className="shrink-0  text-[#5BC94D]">Q:</span>
                     What is the 33% Rule in Solar Panel Inverters?
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
@@ -1631,7 +1632,7 @@ export function CommercialSolarSystemPage() {
             {/* Left Column Benefits, Phone Numbers & Email */}
             <div className="lg:col-span-6">
               <FadeIn>
-                <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3 font-mono">
+                <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
                   Get Started Today
                 </span>
                 
@@ -1670,7 +1671,7 @@ export function CommercialSolarSystemPage() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-400 font-bold uppercase tracking-wider">Darwin Commercial Division</div>
-                      <div className="text-lg font-black font-mono">{PRIMARY_PHONE}</div>
+                      <div className="text-lg font-black">{PRIMARY_PHONE}</div>
                     </div>
                   </a>
 
@@ -1684,7 +1685,7 @@ export function CommercialSolarSystemPage() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-400 font-bold uppercase tracking-wider">Alice Springs Division</div>
-                      <div className="text-lg font-black font-mono">{PRIMARY_PHONE}</div>
+                      <div className="text-lg font-black">{PRIMARY_PHONE}</div>
                     </div>
                   </a>
 
@@ -1698,7 +1699,7 @@ export function CommercialSolarSystemPage() {
                     </div>
                     <div>
                       <div className="text-xs text-slate-400 font-bold uppercase tracking-wider">Email Commercial Division</div>
-                      <div className="text-lg font-black font-mono">info@oneroofsolar.com.au</div>
+                      <div className="text-lg font-black">info@oneroofsolar.com.au</div>
                     </div>
                   </a>
                 </div>
@@ -1707,157 +1708,12 @@ export function CommercialSolarSystemPage() {
 
             {/* Right Column Enquiry Form */}
             <div className="lg:col-span-6 mt-8 lg:mt-0">
-              <FadeIn delay={0.2} className="backdrop-blur-xl bg-slate-900/80 rounded-3xl p-6 sm:p-10 border border-white/10 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.8)]">
-                {submitted ? (
-                  <div className="p-8 text-center">
-                    <div className="w-16 h-16 bg-[#5BC94D] rounded-full flex items-center justify-center text-[#19281D] mx-auto mb-6 shadow-lg">
-                      <Check className="w-8 h-8 stroke-[3]" />
-                    </div>
-                    <h3 className="text-2xl font-black text-white mb-3 uppercase tracking-wide">
-                      Commercial Request Received
-                    </h3>
-                    <p className="text-slate-300 font-medium leading-relaxed mb-6 text-sm">
-                      Thank you. A commercial solar engineer from Oneroof Solar will contact you shortly to review your site requirements and interval power data.
-                    </p>
-                    <Button 
-                      className="bg-[#5BC94D] text-[#19281D] font-bold px-6 py-2 rounded-xl hover:bg-emerald-400 transition-colors uppercase tracking-wider text-xs border-none"
-                      onClick={() => setSubmitted(false)}
-                    >
-                      Submit Another Inquiry
-                    </Button>
-                  </div>
-                ) : (
-                  <div>
-                    <div className="mb-6">
-                      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-bold text-[10px] mb-3 border border-[#5BC94D]/20 uppercase tracking-widest">
-                        <Building2 className="w-3.5 h-3.5" /> Commercial Assessment
-                      </div>
-                      <h3 className="text-2xl font-black text-white uppercase tracking-wide">
-                        Claim your free energy savings quote now
-                      </h3>
-                      <p className="text-xs text-slate-400 mt-1">
-                        Fill in your business details for a customized commercial feasibility study.
-                      </p>
-                    </div>
-
-                    <form onSubmit={handleFormSubmit} className="space-y-4">
-                      {errorMsg && (
-                        <div className="p-3 bg-red-500/10 border border-red-500/20 text-red-200 text-xs rounded-xl font-bold">
-                          {errorMsg}
-                        </div>
-                      )}
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                          <label htmlFor="comm-lead-name" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Full Name <span className="text-[#5BC94D]">*</span>
-                          </label>
-                          <input
-                            type="text"
-                            id="comm-lead-name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleInputChange}
-                            placeholder="Your Name"
-                            required
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all"
-                          />
-                        </div>
-
-                        <div>
-                          <label htmlFor="comm-lead-phone" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Phone Number <span className="text-[#5BC94D]">*</span>
-                          </label>
-                          <input
-                            type="tel"
-                            id="comm-lead-phone"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleInputChange}
-                            placeholder="e.g. 0400 000 000"
-                            required
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all"
-                          />
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                          <label htmlFor="comm-lead-email" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Business Email <span className="text-[#5BC94D]">*</span>
-                          </label>
-                          <input
-                            type="email"
-                            id="comm-lead-email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            placeholder="name@company.com.au"
-                            required
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all"
-                          />
-                        </div>
-
-                        <div>
-                          <label htmlFor="comm-lead-company" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                            Company Name / Suburb
-                          </label>
-                          <input
-                            type="text"
-                            id="comm-lead-company"
-                            name="company"
-                            value={formData.company}
-                            onChange={handleInputChange}
-                            placeholder="Company & Suburb"
-                            className="w-full h-11 px-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all"
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <label htmlFor="comm-lead-bill" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                          Estimated Quarterly Electricity Bill
-                        </label>
-                        <select
-                          id="comm-lead-bill"
-                          name="bill"
-                          value={formData.bill}
-                          onChange={handleInputChange}
-                          className="w-full h-11 px-4 rounded-xl bg-[#141F17] border border-white/10 text-white text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all"
-                        >
-                          <option value="">Select bill range</option>
-                          <option value="$1,500 - $3,000 / quarter">$1,500 - $3,000 / quarter</option>
-                          <option value="$3,000 - $7,000 / quarter">$3,000 - $7,000 / quarter</option>
-                          <option value="$7,000 - $15,000 / quarter">$7,000 - $15,000 / quarter</option>
-                          <option value="$15,000+ / quarter">$15,000+ / quarter</option>
-                        </select>
-                      </div>
-
-                      <div>
-                        <label htmlFor="comm-lead-message" className="block text-[11px] font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                          Site Requirements or Message
-                        </label>
-                        <textarea
-                          id="comm-lead-message"
-                          name="message"
-                          rows={3}
-                          value={formData.message}
-                          onChange={handleInputChange}
-                          placeholder="Tell us about your property, roof type, or energy goals..."
-                          className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-[#5BC94D] focus:ring-1 focus:ring-[#5BC94D] transition-all resize-none"
-                        ></textarea>
-                      </div>
-
-                      <Button
-                        type="submit"
-                        disabled={submitting}
-                        className="w-full h-12 bg-[#5BC94D] text-[#19281D] font-black rounded-xl hover:bg-emerald-400 transition-all uppercase tracking-wider text-xs border-none shadow-[0_4px_20px_rgba(91,201,77,0.3)] mt-2"
-                      >
-                        {submitting ? "Submitting Inquiry..." : "Book your free NT commercial energy assessment today"}
-                      </Button>
-                    </form>
-                  </div>
-                )}
+              <FadeIn delay={0.2}>
+                <QuoteForm 
+                  title="Claim Your Commercial Quote" 
+                  defaultInterest="Commercial Solar Systems"
+                  source="commercial_solar_page"
+                />
               </FadeIn>
             </div>
 
