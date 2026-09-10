@@ -187,7 +187,7 @@ export function EvChargerRepair() {
   ];
 
   return (
-    <div className="bg-[#0A1118] text-slate-900 font-sans min-h-screen">
+    <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO seo={seoData} />
 
       {schemas.map((schema, index) => (
@@ -260,13 +260,13 @@ export function EvChargerRepair() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
               What Does EV Charger Repair Involve in Darwin?
             </h2>
-            <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
+            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
               <p>
                 A faulty EV charger usually shows as a car that will not charge overnight, a unit that trips the breaker, an error light, or a charger that died after rain or a storm. Left alone, a small wiring or seal fault can turn into a failed board, and what would have been a repair becomes a full replacement.
               </p>
@@ -280,32 +280,32 @@ export function EvChargerRepair() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
                 Signs Your EV Charger Needs Repair
               </h2>
               <div className="space-y-4 mb-8">
                 {signsList.map((sign) => (
                   <div key={sign} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0 mt-1" />
-                    <p className="text-slate-300 text-base leading-snug font-medium">{sign}</p>
+                    <p className="text-slate-600 text-base leading-snug font-medium">{sign}</p>
                   </div>
                 ))}
               </div>
-              <p className="text-slate-400 text-sm sm:text-base leading-relaxed font-medium border-t border-white/10 pt-4">
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium border-t border-slate-200 pt-4">
                 If you notice any of these, switch off at the isolator if it is safe to do so and call a licensed technician. Opening the unit yourself can void the warranty and is a genuine electrical risk.
               </p>
             </FadeIn>
             <FadeIn delay={0.15}>
-              <div className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10">
+              <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm">
                 <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                   <AlertTriangle className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-white mb-4 tracking-tight uppercase">Do not wait on a dead charger</h3>
-                <p className="text-slate-300 text-sm leading-relaxed mb-6">
+                <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">Do not wait on a dead charger</h3>
+                <p className="text-slate-600 text-sm leading-relaxed mb-6">
                   A charger that trips, runs hot, or took on water can get worse quickly in Darwin heat. Diagnosis first means you only pay for the fix you actually need.
                 </p>
                 <a href={`tel:${PRIMARY_PHONE_RAW}`} className="inline-flex items-center gap-2 text-[#8cc63f] font-bold uppercase tracking-wider text-xs hover:underline">
@@ -317,7 +317,7 @@ export function EvChargerRepair() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-[#0A1118] relative border-b border-slate-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
@@ -342,43 +342,43 @@ export function EvChargerRepair() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
                 Who Needs EV Charger Repair in Darwin
               </h2>
             </FadeIn>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {whoNeedsRepair.map((card, idx) => (
-              <FadeIn key={card.title} delay={idx * 0.08} className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 hover:border-[#8cc63f]/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-lg">
+              <FadeIn key={card.title} delay={idx * 0.08} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 hover:border-brand-500/40 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-sm">
                 <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                   <card.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-white mb-4 tracking-tight uppercase">{card.title}</h3>
-                <p className="text-slate-300 text-sm leading-relaxed flex-grow">{card.text}</p>
+                <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">{card.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed flex-grow">{card.text}</p>
               </FadeIn>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-10">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-10">
               Repair or Replace? How We Decide
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {repairOrReplace.map((item, idx) => (
-                <FadeIn key={item.title} delay={idx * 0.08} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full">
+                <FadeIn key={item.title} delay={idx * 0.08} className="bg-white rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full shadow-sm">
                   <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                     <item.icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-lg font-black text-white mb-3 tracking-tight uppercase">{item.title}</h3>
-                  <p className="text-slate-300 text-sm leading-relaxed">{item.desc}</p>
+                  <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">{item.title}</h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
                 </FadeIn>
               ))}
             </div>
@@ -386,13 +386,13 @@ export function EvChargerRepair() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
               EV Charger Repair Cost in Darwin
             </h2>
-            <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
+            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
               <p>
                 Repair cost comes down to what actually failed, not just the brand. A tripped breaker, damaged cable, or failed socket is a smaller job. A fried control board, or water inside the housing after a storm, costs more and can tip the decision toward replacement.
               </p>
@@ -410,40 +410,40 @@ export function EvChargerRepair() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
                 Why Choose Our EV Charger Repair Team
               </h2>
             </FadeIn>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <FadeIn delay={0.1} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full text-center">
+            <FadeIn delay={0.1} className="bg-white rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full text-center shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <MapPin className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-white mb-3 tracking-tight uppercase">Locally Owned &amp; Operated</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Locally Owned &amp; Operated</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
                 Based in Berrimah, not a national call centre. We already know what Darwin heat, humidity, and Wet season storms do to outdoor chargers.
               </p>
             </FadeIn>
-            <FadeIn delay={0.15} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full text-center">
+            <FadeIn delay={0.15} className="bg-white rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full text-center shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <BadgeCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-white mb-3 tracking-tight uppercase">Licensed &amp; SAA Accredited</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Licensed &amp; SAA Accredited</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
                 Every electrician on our team is fully licensed and SAA Accredited, with real experience installing and diagnosing EV chargers across Darwin, NT.
               </p>
             </FadeIn>
-            <FadeIn delay={0.2} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full text-center">
+            <FadeIn delay={0.2} className="bg-white rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full text-center shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <ShieldCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-white mb-3 tracking-tight uppercase">Warranty-Safe Work</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Warranty-Safe Work</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
                 We check manufacturer cover before we start. If replacement is the honest option, we will say so instead of patching a unit that will not last.
               </p>
             </FadeIn>
@@ -451,45 +451,45 @@ export function EvChargerRepair() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
                 Our EV Charger Repair Process
               </h2>
             </FadeIn>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, idx) => (
-              <FadeIn key={step.title} delay={idx * 0.1} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full text-center relative">
+              <FadeIn key={step.title} delay={idx * 0.1} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full text-center relative">
                 <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                   <step.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-black text-white mb-3 tracking-tight uppercase">{step.title}</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">{step.text}</p>
+                <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">{step.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{step.text}</p>
               </FadeIn>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
               Chargers We Diagnose &amp; Repair
             </h2>
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-8 max-w-4xl">
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-8 max-w-4xl">
               We regularly work with Sigenergy, Myenergi, and Fronius chargers, the same brands we install. We also diagnose other home and commercial units after an inspection. If you are not sure whether we service your model, send a photo of the unit and we will confirm before you book.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {brands.map((brandName) => (
                 <div
                   key={brandName}
-                  className="bg-slate-900/40 border border-white/10 p-5 rounded-2xl text-center flex items-center justify-center hover:border-[#8cc63f]/40 transition-colors"
+                  className="bg-white border border-slate-200 p-5 rounded-2xl text-center flex items-center justify-center hover:border-brand-500/40 transition-colors shadow-sm"
                 >
-                  <span className="text-white font-bold text-lg tracking-wide">{brandName}</span>
+                  <span className="text-slate-900 font-bold text-lg tracking-wide">{brandName}</span>
                 </div>
               ))}
             </div>
@@ -497,12 +497,12 @@ export function EvChargerRepair() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 lg:sticky lg:top-32">
               <FadeIn>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-white leading-[1.1] mb-6 uppercase">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 leading-[1.1] mb-6 uppercase">
                   FAQs
                 </h2>
               </FadeIn>
@@ -512,19 +512,19 @@ export function EvChargerRepair() {
                 const isOpen = openFaqIndex === i;
                 return (
                   <FadeIn key={faq.q} delay={i * 0.05}>
-                    <div className={`border rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? "bg-slate-900/60 shadow-xl border-[#8cc63f]/30" : "bg-slate-900/20 border-white/5 hover:border-[#8cc63f]/20"}`}>
+                    <div className={`border rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? "bg-white shadow-md border-brand-500/50" : "bg-slate-50 border-slate-200 hover:border-brand-500/30 shadow-sm"}`}>
                       <button
                         onClick={() => setOpenFaqIndex(isOpen ? null : i)}
                         aria-expanded={isOpen}
                         className="w-full text-left px-6 py-5 flex items-start justify-between gap-4"
                       >
-                        <h3 className={`text-sm sm:text-base font-bold leading-tight ${isOpen ? "text-[#8cc63f]" : "text-white"}`}>{faq.q}</h3>
-                        <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border ${isOpen ? "border-[#8cc63f] bg-[#8cc63f]/10 text-[#8cc63f] rotate-180" : "border-white/10 text-slate-400 bg-white/5"}`}>
+                        <h3 className={`text-sm sm:text-base font-bold leading-tight ${isOpen ? "text-[#8cc63f]" : "text-slate-900"}`}>{faq.q}</h3>
+                        <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border ${isOpen ? "border-[#8cc63f] bg-[#8cc63f]/10 text-[#8cc63f] rotate-180" : "border-slate-200 text-slate-500 bg-white"}`}>
                           <ChevronDown className="w-4 h-4" />
                         </div>
                       </button>
                       <div className={`overflow-hidden transition-all duration-500 px-6 ${isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"}`}>
-                        <div className="text-slate-300 leading-relaxed font-medium text-xs sm:text-sm">{faq.a}</div>
+                        <div className="text-slate-600 leading-relaxed font-medium text-xs sm:text-sm">{faq.a}</div>
                       </div>
                     </div>
                   </FadeIn>
@@ -535,7 +535,7 @@ export function EvChargerRepair() {
         </div>
       </section>
 
-      <section id="quote-form" className="py-24 bg-[#121814] relative overflow-hidden">
+      <section id="quote-form" className="py-24 bg-[#0A1118] relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <FadeIn>

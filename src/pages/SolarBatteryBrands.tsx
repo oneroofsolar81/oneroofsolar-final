@@ -169,7 +169,7 @@ export function SolarBatteryBrands() {
   ];
 
   return (
-    <div className="bg-[#121814] text-slate-100 font-sans min-h-screen">
+    <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO seo={seoData} />
 
       {schemas.map((schema, index) => (
@@ -239,13 +239,13 @@ export function SolarBatteryBrands() {
 
       <PartnersMarquee />
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
               Which Battery Actually Holds Up in Darwin's Heat?
             </h2>
-            <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
+            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
               <p>
                 Not every solar battery on the market is built for a climate like ours. Plenty of brands are designed and tested down south, where the weather is mild and the humidity is nothing like what we get here in the wet season.
               </p>
@@ -260,21 +260,23 @@ export function SolarBatteryBrands() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#0A1118] relative border-b border-white/5">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-12 lg:py-16 bg-slate-50 relative border-b border-slate-200">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
-              Stop Paying Jacana Energy to Cool Your Home at Night.
-            </h3>
-            <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
-              Generating solar during the day is only half the battle. When the sun goes down and the aircons switch on, most Darwin homes bleed money straight back to the grid. A battery stores your daytime power so you can run your aircon all night without the bill shock.
-            </p>
-            <a
-              href="#quote-form"
-              className="inline-block bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
-            >
-              Book Your Battery Backup Installation
-            </a>
+            <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+                Stop Paying Jacana Energy to Cool Your Home at Night.
+              </h3>
+              <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
+                Generating solar during the day is only half the battle. When the sun goes down and the aircons switch on, most Darwin homes bleed money straight back to the grid. A battery stores your daytime power so you can run your aircon all night without the bill shock.
+              </p>
+              <a
+                href="#quote-form"
+                className="inline-block bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
+              >
+                Book Your Battery Backup Installation
+              </a>
+            </div>
           </FadeIn>
         </div>
       </section>
@@ -362,45 +364,45 @@ export function SolarBatteryBrands() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
                 Battery Storage Built for Homes, Businesses, and Off-Grid Properties
               </h2>
             </FadeIn>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <FadeIn delay={0.1} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full shadow-lg">
+            <FadeIn delay={0.1} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Home className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Residential</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <p className="text-slate-600 text-sm leading-relaxed">
                 Perfect for Darwin families who want lower power bills and backup power when the grid goes down. We size your battery to match how your household actually uses electricity. Learn more about{" "}
                 <Link to="/solar-systems/residential-solar-system" className={linkClass}>residential solar systems</Link>.
               </p>
             </FadeIn>
 
-            <FadeIn delay={0.2} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full shadow-lg">
+            <FadeIn delay={0.2} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Building2 className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Commercial</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <p className="text-slate-600 text-sm leading-relaxed">
                 Running a business means power reliability matters even more. We help commercial properties across the NT cut running costs and keep operations going during outages. Learn more about{" "}
                 <Link to="/solar-systems/commercial-solar-system" className={linkClass}>commercial solar systems</Link>.
               </p>
             </FadeIn>
 
-            <FadeIn delay={0.3} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full shadow-lg">
+            <FadeIn delay={0.3} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Compass className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Off-Grid</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <p className="text-slate-600 text-sm leading-relaxed">
                 Living remotely doesn't mean going without reliable power. We design battery systems built to handle full off-grid living across the Territory. Learn more about{" "}
                 <Link to="/solar-systems/off-grid-solar-system" className={linkClass}>off-grid solar systems</Link>.
               </p>
@@ -460,13 +462,13 @@ export function SolarBatteryBrands() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
               SAA Compliance You Can Trust
             </h2>
-            <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
+            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
               <p>
                 When you're spending real money on a battery system, you want to know it's been done properly. That's exactly what SAA accreditation means for you.
               </p>
@@ -485,13 +487,13 @@ export function SolarBatteryBrands() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
               Upfront Savings on Your Battery
             </h2>
-            <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
+            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
               <p>Here's the honest state of play on incentives right now.</p>
               <p>
                 The NT Government's own local solar and battery grant scheme has closed. It's no longer available, and we won't pretend otherwise.
@@ -507,34 +509,36 @@ export function SolarBatteryBrands() {
         </div>
       </section>
 
-      <section className="py-16 bg-[#0A1118] relative border-b border-white/5">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-12 lg:py-16 bg-white relative border-b border-slate-200">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
-              Keep your power on when wet season storms trip the grid.
-            </h3>
-            <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
-              Most rooftop solar systems switch off automatically during a blackout for safety. Adding a battery ensures your home stays powered, keeping your food fresh and your family cool when local lines go down.
-            </p>
-            <a
-              href="#quote-form"
-              className="inline-block bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
-            >
-              Book Your Battery Backup Setup
-            </a>
+            <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+                Keep your power on when wet season storms trip the grid.
+              </h3>
+              <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
+                Most rooftop solar systems switch off automatically during a blackout for safety. Adding a battery ensures your home stays powered, keeping your food fresh and your family cool when local lines go down.
+              </p>
+              <a
+                href="#quote-form"
+                className="inline-block bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
+              >
+                Book Your Battery Backup Setup
+              </a>
+            </div>
           </FadeIn>
         </div>
       </section>
 
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
             <div className="lg:col-span-5 lg:sticky lg:top-32">
               <FadeIn>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-white leading-[1.1] mb-6 uppercase">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 leading-[1.1] mb-6 uppercase">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-base sm:text-lg text-slate-400 leading-relaxed font-medium mb-8 max-w-md">
+                <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-medium mb-8 max-w-md">
                   Honest answers on battery brands, rebates, and Darwin installs.
                 </p>
               </FadeIn>
@@ -548,8 +552,8 @@ export function SolarBatteryBrands() {
                     <div
                       className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                         isOpen
-                          ? "bg-slate-900/60 shadow-xl border-[#8cc63f]/30"
-                          : "bg-slate-900/20 border-white/5 hover:border-[#8cc63f]/20"
+                          ? "bg-white shadow-md border-brand-500/50"
+                          : "bg-white border-slate-200 hover:border-brand-500/30 shadow-sm"
                       }`}
                     >
                       <button
@@ -557,16 +561,16 @@ export function SolarBatteryBrands() {
                         aria-expanded={isOpen}
                         aria-controls={`faq-panel-${i}`}
                         id={`faq-button-${i}`}
-                        className="w-full text-left px-6 py-5 sm:p-6 flex items-start sm:items-center justify-between focus:outline-none gap-4 focus-visible:ring-2 focus-visible:ring-[#8cc63f] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121814] transition-all"
+                        className="w-full text-left px-6 py-5 sm:p-6 flex items-start sm:items-center justify-between focus:outline-none gap-4 focus-visible:ring-2 focus-visible:ring-[#8cc63f] focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50 transition-all"
                       >
-                        <h3 className={`text-sm sm:text-base font-bold leading-tight transition-colors ${isOpen ? "text-[#8cc63f]" : "text-white"}`}>
+                        <h3 className={`text-sm sm:text-base font-bold leading-tight transition-colors ${isOpen ? "text-[#8cc63f]" : "text-slate-900"}`}>
                           {faq.q}
                         </h3>
                         <div
                           className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-300 ${
                             isOpen
                               ? "border-[#8cc63f] bg-[#8cc63f]/10 text-[#8cc63f] rotate-180"
-                              : "border-white/10 text-slate-400 bg-white/5"
+                              : "border-slate-200 text-slate-500 bg-slate-50"
                           }`}
                         >
                           <ChevronDown className="w-4 h-4" />
@@ -578,7 +582,7 @@ export function SolarBatteryBrands() {
                         role="region"
                         className={`overflow-hidden transition-all duration-500 px-6 ${isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"}`}
                       >
-                        <div className="text-slate-300 leading-relaxed font-medium text-xs sm:text-sm">
+                        <div className="text-slate-600 leading-relaxed font-medium text-xs sm:text-sm">
                           {faq.a}
                         </div>
                       </div>

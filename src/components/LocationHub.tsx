@@ -130,7 +130,7 @@ export function LocationHub({ data }: { data: LocationData }) {
   ];
 
   return (
-    <div className="bg-[#121814] text-slate-100 font-sans min-h-screen">
+    <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO seo={seoData} />
 
       {schemas.map((schema, index) => (
@@ -228,13 +228,13 @@ export function LocationHub({ data }: { data: LocationData }) {
       <PartnersMarquee />
 
       {/* Intro Section */}
-      <section className="py-20 bg-[#121814] relative border-b border-white/5">
+      <section className="py-20 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl font-black text-center text-white mb-8 uppercase tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-black text-center text-slate-900 mb-8 uppercase tracking-tight">
               {data.introHeading}
             </h2>
-            <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
+            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
               {data.introParagraphs.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
@@ -244,14 +244,14 @@ export function LocationHub({ data }: { data: LocationData }) {
       </section>
 
       {/* Why solar makes sense (2-col with image) */}
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
                 {data.whyHeading}
               </h2>
-              <div className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium space-y-5">
+              <div className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium space-y-5">
                 {data.whyParagraphs.map((p, i) => (
                   <p key={i}>{p}</p>
                 ))}
@@ -259,7 +259,7 @@ export function LocationHub({ data }: { data: LocationData }) {
             </FadeIn>
 
             <FadeIn delay={0.15} className="relative">
-              <div className="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl aspect-[4/3]">
+              <div className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl aspect-[4/3]">
                 <img
                   src={data.secondaryImage}
                   alt={data.secondaryImageAlt}
@@ -273,34 +273,36 @@ export function LocationHub({ data }: { data: LocationData }) {
       </section>
 
       {/* Mid CTA */}
-      <section className="py-16 bg-[#121814] relative border-b border-white/5">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-12 lg:py-16 bg-white border-b border-slate-200 relative">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
-              {data.midCtaHeading}
-            </h3>
-            <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
-              {data.midCtaSubtext}
-            </p>
-            <a
-              href="#quote-form"
-              className="inline-block bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
-            >
-              {data.midCtaButton}
-            </a>
+            <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+                {data.midCtaHeading}
+              </h3>
+              <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
+                {data.midCtaSubtext}
+              </p>
+              <a
+                href="#quote-form"
+                className="inline-block bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
+              >
+                {data.midCtaButton}
+              </a>
+            </div>
           </FadeIn>
         </div>
       </section>
 
       {/* Suburbs We Cover */}
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
                 {data.suburbsHeading}
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                 {data.suburbsIntro}
               </p>
             </FadeIn>
@@ -311,16 +313,16 @@ export function LocationHub({ data }: { data: LocationData }) {
               <FadeIn
                 key={s.name}
                 delay={Math.min(i * 0.05, 0.3)}
-                className="bg-slate-900/40 rounded-2xl p-6 border border-white/10 hover:border-[#8cc63f]/30 transition-all duration-300 hover:-translate-y-1 flex items-start gap-4 h-full shadow-lg"
+                className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-500/40 transition-all duration-300 hover:-translate-y-1 flex items-start gap-4 h-full shadow-sm"
               >
                 <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-black text-white tracking-tight uppercase mb-1">
+                  <h3 className="text-base font-black text-slate-900 tracking-tight uppercase mb-1">
                     {s.name}
                   </h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">{s.descriptor}</p>
+                  <p className="text-slate-600 text-sm leading-relaxed">{s.descriptor}</p>
                 </div>
               </FadeIn>
             ))}
@@ -329,11 +331,11 @@ export function LocationHub({ data }: { data: LocationData }) {
       </section>
 
       {/* Why Choose Oneroof + silo service links */}
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-8">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-8">
                 {data.whyChooseHeading}
               </h2>
               <ul className="space-y-5">
@@ -342,7 +344,7 @@ export function LocationHub({ data }: { data: LocationData }) {
                     <div className="w-8 h-8 rounded-full bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 shrink-0 mt-0.5">
                       <Check className="w-4 h-4" />
                     </div>
-                    <span className="text-slate-200 text-base sm:text-lg font-medium leading-relaxed">
+                    <span className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
                       {point}
                     </span>
                   </li>
@@ -351,11 +353,11 @@ export function LocationHub({ data }: { data: LocationData }) {
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <div className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 shadow-lg">
-                <h3 className="text-xl font-black text-white uppercase tracking-tight mb-2">
+              <div className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 shadow-sm">
+                <h3 className="text-xl font-black text-slate-900 uppercase tracking-tight mb-2">
                   Explore Our Solar Services
                 </h3>
-                <p className="text-slate-400 text-sm mb-6">
+                <p className="text-slate-600 text-sm mb-6">
                   Every {data.breadcrumbName} install is backed by our full range of solar services.
                 </p>
                 <div className="space-y-3">
@@ -365,12 +367,12 @@ export function LocationHub({ data }: { data: LocationData }) {
                       <Link
                         key={svc.href}
                         to={svc.href}
-                        className="group flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-[#8cc63f]/30 hover:bg-white/[0.07] transition-all"
+                        className="group flex items-center gap-4 p-4 rounded-2xl bg-white border border-slate-200 hover:border-brand-500/40 hover:shadow-sm transition-all"
                       >
                         <div className="w-11 h-11 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 shrink-0">
                           <Icon className="w-5 h-5" />
                         </div>
-                        <span className="flex-1 text-white font-bold text-sm sm:text-base">{svc.label}</span>
+                        <span className="flex-1 text-slate-900 font-bold text-sm sm:text-base">{svc.label}</span>
                         <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-[#8cc63f] group-hover:translate-x-1 transition-all" />
                       </Link>
                     );

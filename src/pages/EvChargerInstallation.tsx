@@ -194,7 +194,7 @@ export function EvChargerInstallation() {
   ];
 
   return (
-    <div className="bg-[#121814] text-slate-100 font-sans min-h-screen">
+    <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO seo={seoData} />
 
       {schemas.map((schema, index) => (
@@ -269,13 +269,13 @@ export function EvChargerInstallation() {
 
       <PartnersMarquee />
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
               EV Charger Installation Experts
             </h2>
-            <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
+            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
               <p>
                 Oneroof Solar provides professional EV charger installation across Darwin and the wider NT, for homes, businesses, apartments, and off-grid properties. An EV charger is a dedicated unit installed at your property that lets you charge your electric vehicle faster and more safely than a standard power point, usually overnight for homes or throughout the day for businesses and fleets.
               </p>
@@ -289,14 +289,14 @@ export function EvChargerInstallation() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
                 Home &amp; Commercial EV Charger Installation in Darwin
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                 Need a charger for the family car, or a full fleet setup for the whole business? Either way, we can sort it.
               </p>
             </FadeIn>
@@ -304,18 +304,18 @@ export function EvChargerInstallation() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {installCards.map((card, idx) => (
-              <FadeIn key={card.title} delay={idx * 0.08} className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 hover:border-[#8cc63f]/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-lg">
+              <FadeIn key={card.title} delay={idx * 0.08} className="bg-white rounded-[2rem] p-8 border border-slate-200 hover:border-brand-500/40 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-sm">
                 <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                   <card.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-white mb-4 tracking-tight uppercase">{card.title}</h3>
-                <p className="text-slate-300 text-sm leading-relaxed flex-grow">{card.text}</p>
+                <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">{card.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed flex-grow">{card.text}</p>
               </FadeIn>
             ))}
           </div>
 
           <FadeIn delay={0.2}>
-            <p className="text-slate-300 text-base sm:text-lg leading-relaxed mt-12 max-w-4xl mx-auto text-center">
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed mt-12 max-w-4xl mx-auto text-center">
               Every installer on our team is fully licensed and SAA Accredited, so you know the job's done right. We also supply and install chargers from a range of trusted brands, so you're not locked into a single option.
             </p>
           </FadeIn>
@@ -382,7 +382,7 @@ export function EvChargerInstallation() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-[#0A1118] relative border-b border-slate-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
@@ -415,13 +415,13 @@ export function EvChargerInstallation() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
               EV Charger Installation Cost in Darwin
             </h2>
-            <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
+            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
               <p>
                 Every home and business is different, so your price depends on a few things: the type of charger you choose, whether it's single phase or three phase, and the condition of your existing switchboard. We'll always give you a clear, upfront quote before any work starts. No surprise add ons.
               </p>
@@ -440,49 +440,49 @@ export function EvChargerInstallation() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
                 Why Choose Our EV Charger Installers
               </h2>
             </FadeIn>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <FadeIn delay={0.1} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full text-center">
+            <FadeIn delay={0.1} className="bg-white rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full text-center shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <Calendar className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-white mb-3 tracking-tight uppercase">Fast Local Response</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Fast Local Response</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
                 We aim to complete your site assessment within 24 hours of booking, with a clear written quote so you know exactly what's involved before you commit.
               </p>
             </FadeIn>
-            <FadeIn delay={0.15} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full text-center">
+            <FadeIn delay={0.15} className="bg-white rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full text-center shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <MapPin className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-white mb-3 tracking-tight uppercase">Locally Owned &amp; Operated</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Locally Owned &amp; Operated</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
                 We're part of the Darwin community, not a national call centre that dispatches a random contractor. Our reputation is built on honest work and treating every customer properly.
               </p>
             </FadeIn>
-            <FadeIn delay={0.2} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full text-center">
+            <FadeIn delay={0.2} className="bg-white rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full text-center shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <BadgeCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-white mb-3 tracking-tight uppercase">Licensed &amp; SAA Accredited</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Licensed &amp; SAA Accredited</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
                 Every electrician on our team is fully licensed and SAA Accredited, with real experience installing EV chargers across Darwin, NT.
               </p>
             </FadeIn>
-            <FadeIn delay={0.25} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full text-center">
+            <FadeIn delay={0.25} className="bg-white rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full text-center shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <Sparkles className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-white mb-3 tracking-tight uppercase">Clean, Respectful Installation</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Clean, Respectful Installation</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">
                 We treat your home or business like our own. Tidy work, clear communication, and nothing left behind when the job's done.
               </p>
             </FadeIn>
@@ -490,11 +490,11 @@ export function EvChargerInstallation() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
                 Our Ev Charger Installation Process
               </h2>
             </FadeIn>
@@ -506,24 +506,24 @@ export function EvChargerInstallation() {
               { icon: FileText, title: "Upfront Quote", text: "You get a clear quote with any eligible discounts already applied. No hidden extras, no surprises later." },
               { icon: Wrench, title: "Installation & Handover", text: "Our licensed team installs your charger, tests everything, and walks you through how to use it before we go." },
             ].map((step, idx) => (
-              <FadeIn key={step.title} delay={idx * 0.1} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full text-center relative">
+              <FadeIn key={step.title} delay={idx * 0.1} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full text-center relative">
                 <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                   <step.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-black text-white mb-3 tracking-tight uppercase">{step.title}</h3>
-                <p className="text-slate-300 text-sm leading-relaxed">{step.text}</p>
+                <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">{step.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{step.text}</p>
               </FadeIn>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 lg:sticky lg:top-32">
               <FadeIn>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-white leading-[1.1] mb-6 uppercase">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 leading-[1.1] mb-6 uppercase">
                   FAQs
                 </h2>
               </FadeIn>
@@ -533,19 +533,19 @@ export function EvChargerInstallation() {
                 const isOpen = openFaqIndex === i;
                 return (
                   <FadeIn key={i} delay={i * 0.05}>
-                    <div className={`border rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? "bg-slate-900/60 shadow-xl border-[#8cc63f]/30" : "bg-slate-900/20 border-white/5 hover:border-[#8cc63f]/20"}`}>
+                    <div className={`border rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? "bg-white shadow-md border-brand-500/50" : "bg-white border-slate-200 hover:border-brand-500/30 shadow-sm"}`}>
                       <button
                         onClick={() => setOpenFaqIndex(isOpen ? null : i)}
                         aria-expanded={isOpen}
                         className="w-full text-left px-6 py-5 flex items-start justify-between gap-4"
                       >
-                        <h3 className={`text-sm sm:text-base font-bold leading-tight ${isOpen ? "text-[#8cc63f]" : "text-white"}`}>{faq.q}</h3>
-                        <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border ${isOpen ? "border-[#8cc63f] bg-[#8cc63f]/10 text-[#8cc63f] rotate-180" : "border-white/10 text-slate-400 bg-white/5"}`}>
+                        <h3 className={`text-sm sm:text-base font-bold leading-tight ${isOpen ? "text-[#8cc63f]" : "text-slate-900"}`}>{faq.q}</h3>
+                        <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border ${isOpen ? "border-[#8cc63f] bg-[#8cc63f]/10 text-[#8cc63f] rotate-180" : "border-slate-200 text-slate-500 bg-slate-50"}`}>
                           <ChevronDown className="w-4 h-4" />
                         </div>
                       </button>
                       <div className={`overflow-hidden transition-all duration-500 px-6 ${isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"}`}>
-                        <div className="text-slate-300 leading-relaxed font-medium text-xs sm:text-sm">{faq.a}</div>
+                        <div className="text-slate-600 leading-relaxed font-medium text-xs sm:text-sm">{faq.a}</div>
                       </div>
                     </div>
                   </FadeIn>

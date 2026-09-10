@@ -133,7 +133,7 @@ export function SigenergyBatteryPage() {
   ];
 
   return (
-    <div className="bg-[#121814] text-slate-100 font-sans min-h-screen">
+    <div className="bg-white text-slate-900 font-sans min-h-screen">
       <SEO seo={seoData} />
 
       {schemas.map((schema, index) => (
@@ -224,14 +224,14 @@ export function SigenergyBatteryPage() {
       <PartnersMarquee />
 
       {/* What Is a Sigenergy Battery? */}
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
                 What Is a Sigenergy Battery?
               </h2>
-              <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
+              <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
                 <p>
                   A Sigenergy battery is a home and commercial energy storage system that stores solar power for use at night, during outages, or off grid. It uses LiFePO4 cells rated for around 10,000 charge cycles, carries an IP66 rating for dust and moisture protection, and comes in 5.0 kWh or 8.0 kWh sizes that stack together for bigger capacity.
                 </p>
@@ -245,7 +245,7 @@ export function SigenergyBatteryPage() {
             </FadeIn>
 
             <FadeIn delay={0.15} className="relative">
-              <div className="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl aspect-[4/3]">
+              <div className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-lg aspect-[4/3]">
                 <img
                   src={detailImg}
                   alt="Close up of a weatherproof Sigenergy home battery unit"
@@ -259,90 +259,92 @@ export function SigenergyBatteryPage() {
       </section>
 
       {/* CTA Block 1 (Hero) */}
-      <section className="py-16 bg-[#0A1118] relative border-b border-white/5">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-12 lg:py-16 bg-slate-50 relative border-b border-slate-200">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 mb-5">
-              <Phone className="w-6 h-6" />
-            </div>
-            <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
-              Get Your Sigenergy Quote, STC Discount Already Applied
-            </h3>
-            <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
-              Call us or fill in the quick form below. No waiting around for the rebate, it is already knocked off your price before we send the quote.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <a
-                href="#quote-form"
-                className="inline-block bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
-              >
-                Get My Free Quote
-              </a>
-              <a
-                href={`tel:${PRIMARY_PHONE_RAW}`}
-                className="inline-block border border-white/20 bg-white/5 text-white px-8 py-4 rounded-xl font-bold transition-all hover:bg-white/10 hover:border-white/30 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
-              >
-                Call Now
-              </a>
+            <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 mb-5">
+                <Phone className="w-6 h-6" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+                Get Your Sigenergy Quote, STC Discount Already Applied
+              </h3>
+              <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
+                Call us or fill in the quick form below. No waiting around for the rebate, it is already knocked off your price before we send the quote.
+              </p>
+              <div className="flex flex-wrap gap-4 justify-center">
+                <a
+                  href="#quote-form"
+                  className="inline-block bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
+                >
+                  Get My Free Quote
+                </a>
+                <a
+                  href={`tel:${PRIMARY_PHONE_RAW}`}
+                  className="inline-block border border-white/20 bg-white/5 text-white px-8 py-4 rounded-xl font-bold transition-all hover:bg-white/10 hover:border-white/30 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
+                >
+                  Call Now
+                </a>
+              </div>
             </div>
           </FadeIn>
         </div>
       </section>
 
       {/* The Sigenergy Battery Range We Supply */}
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
                 The Sigenergy Battery Range We Supply
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                 We keep it simple. Two battery sizes, one smart system that ties it all together.
               </p>
             </FadeIn>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <FadeIn delay={0.1} className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 hover:border-[#8cc63f]/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-lg">
+            <FadeIn delay={0.1} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 hover:border-[#8cc63f]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <Battery className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-white mb-4 tracking-tight uppercase">Sigen Battery 5.0 kWh</h3>
-              <p className="text-slate-300 text-sm sm:text-base font-medium leading-relaxed">
+              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">Sigen Battery 5.0 kWh</h3>
+              <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
                 Usable capacity of 5.2 kWh. Runs on LiFePO4 cells, which are known for being safe and long lasting. Can sit on the floor or mount on a wall, whatever suits your space.
               </p>
             </FadeIn>
 
-            <FadeIn delay={0.2} className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 hover:border-[#8cc63f]/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-lg">
+            <FadeIn delay={0.2} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 hover:border-[#8cc63f]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <BatteryCharging className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-white mb-4 tracking-tight uppercase">Sigen Battery 8.0 kWh</h3>
-              <p className="text-slate-300 text-sm sm:text-base font-medium leading-relaxed">
+              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">Sigen Battery 8.0 kWh</h3>
+              <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
                 Usable capacity of 7.8 kWh, same reliable platform, just more room to store power for bigger households or higher usage.
               </p>
             </FadeIn>
 
-            <FadeIn delay={0.3} className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 hover:border-[#8cc63f]/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-lg">
+            <FadeIn delay={0.3} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 hover:border-[#8cc63f]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <Cpu className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-white mb-4 tracking-tight uppercase">SigenStor, The Full System</h3>
-              <p className="text-slate-300 text-sm sm:text-base font-medium leading-relaxed">
+              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">SigenStor, The Full System</h3>
+              <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
                 This pairs the Sigen Energy Controller with your battery, and you can add an EV DC Charging Module if you drive electric. It runs at 100% depth of discharge, meaning you actually get to use the full capacity you paid for, not just a slice of it.
               </p>
             </FadeIn>
           </div>
 
-          <FadeIn delay={0.15} className="mt-8 bg-slate-900/30 rounded-[2rem] p-8 border border-[#8cc63f]/15 shadow-lg">
+          <FadeIn delay={0.15} className="mt-8 bg-slate-50 rounded-[2rem] p-8 border border-[#8cc63f]/30 shadow-sm">
             <div className="flex items-start gap-4">
               <div className="w-11 h-11 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 shrink-0">
                 <Layers className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-lg font-black text-white uppercase tracking-tight mb-2">Modular Flexibility</h3>
-                <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                <h3 className="text-lg font-black text-slate-900 uppercase tracking-tight mb-2">Modular Flexibility</h3>
+                <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                   The built-in battery optimiser allows mixing older and newer modules over time. You can scale up storage in the future without discarding your existing units.
                 </p>
               </div>
@@ -350,7 +352,7 @@ export function SigenergyBatteryPage() {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <p className="text-slate-400 text-sm sm:text-base leading-relaxed mt-8 max-w-4xl">
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed mt-8 max-w-4xl">
               Full technical specs, including voltage range and MPPT compatibility, are available on request. Pair it with a solid{" "}
               <Link to="/solar-systems/residential-solar-system" className={linkClass}>residential solar system</Link>{" "}
               or check compatibility with your{" "}
@@ -362,16 +364,16 @@ export function SigenergyBatteryPage() {
       </section>
 
       {/* Sigenergy Battery Safety & SAA Accreditation */}
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
               <ShieldCheck className="w-6 h-6" />
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
               Sigenergy Battery Safety &amp; SAA Accreditation
             </h2>
-            <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
+            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
               <p>
                 Every Sigenergy product we supply is SAA Approved/Certified. We are also SAA Accredited Installers, which means your setup is fitted by people who meet the required Australian standards for safety and compliance.
               </p>
@@ -389,13 +391,13 @@ export function SigenergyBatteryPage() {
       </section>
 
       {/* Save More With the Cheaper Home Batteries Program */}
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
               Save More With the Cheaper Home Batteries Program
             </h2>
-            <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
+            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
               <p>Let's talk money, because that's usually the first question anyway.</p>
               <p>
                 If your Sigenergy battery setup is eligible, you can access a discount through the Cheaper Home Batteries Program. We check your eligibility as part of your quote, so you know exactly what you're saving before you commit to anything.
@@ -409,76 +411,78 @@ export function SigenergyBatteryPage() {
       </section>
 
       {/* CTA Block 2 (Mid Page) */}
-      <section className="py-16 bg-[#0A1118] relative border-b border-white/5">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-12 lg:py-16 bg-slate-50 relative border-b border-slate-200">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
-              Not Sure Which Battery Size Fits Your Home?
-            </h3>
-            <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
-              Give us a quick call and we will help you work out whether the 5.0 kWh or 8.0 kWh setup makes more sense for your household or business.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <a
-                href={`tel:${PRIMARY_PHONE_RAW}`}
-                className="inline-block bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
-              >
-                Talk to Our Team
-              </a>
-              <a
-                href="#quote-form"
-                className="inline-block border border-white/20 bg-white/5 text-white px-8 py-4 rounded-xl font-bold transition-all hover:bg-white/10 hover:border-white/30 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
-              >
-                Request a Callback
-              </a>
+            <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+                Not Sure Which Battery Size Fits Your Home?
+              </h3>
+              <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
+                Give us a quick call and we will help you work out whether the 5.0 kWh or 8.0 kWh setup makes more sense for your household or business.
+              </p>
+              <div className="flex flex-wrap gap-4 justify-center">
+                <a
+                  href={`tel:${PRIMARY_PHONE_RAW}`}
+                  className="inline-block bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
+                >
+                  Talk to Our Team
+                </a>
+                <a
+                  href="#quote-form"
+                  className="inline-block border border-white/20 bg-white/5 text-white px-8 py-4 rounded-xl font-bold transition-all hover:bg-white/10 hover:border-white/30 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
+                >
+                  Request a Callback
+                </a>
+              </div>
             </div>
           </FadeIn>
         </div>
       </section>
 
       {/* Who This System Suits */}
-      <section className="py-24 bg-[#121814] relative border-b border-white/5">
+      <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
                 Who This System Suits
               </h2>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                 Sigenergy batteries work well for a wide range of NT properties.
               </p>
             </FadeIn>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <FadeIn delay={0.1} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full shadow-lg">
+            <FadeIn delay={0.1} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Home className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Homeowners and Families</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <p className="text-slate-600 text-sm leading-relaxed">
                 If you want lower power bills and backup during outages, this is a straightforward, low maintenance option that just gets on with the job.
               </p>
             </FadeIn>
 
-            <FadeIn delay={0.2} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full shadow-lg">
+            <FadeIn delay={0.2} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Building2 className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Commercial Property Managers</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <p className="text-slate-600 text-sm leading-relaxed">
                 Businesses across Darwin and Palmerston are turning to battery storage to manage rising energy costs and keep operations running during grid interruptions. Check out our{" "}
                 <Link to="/solar-systems/commercial-solar-system" className={linkClass}>commercial solar systems</Link>{" "}
                 for a full setup.
               </p>
             </FadeIn>
 
-            <FadeIn delay={0.3} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col h-full shadow-lg">
+            <FadeIn delay={0.3} className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 flex flex-col h-full shadow-sm">
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Off Grid Properties</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <p className="text-slate-600 text-sm leading-relaxed">
                 For rural NT properties not connected to the main grid, Sigenergy's stackable battery design gives you room to scale up storage as your needs grow. Have a look at our{" "}
                 <Link to="/solar-systems/off-grid-solar-system" className={linkClass}>off grid solar systems</Link>{" "}
                 page for more detail.
@@ -487,7 +491,7 @@ export function SigenergyBatteryPage() {
           </div>
 
           <FadeIn delay={0.2}>
-            <p className="text-slate-400 text-sm sm:text-base leading-relaxed mt-8 max-w-4xl mx-auto text-center">
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed mt-8 max-w-4xl mx-auto text-center">
               If you are exploring inverter options alongside your battery, our{" "}
               <Link to="/products/solar-inverters" className={linkClass}>solar inverters range</Link>{" "}
               and{" "}
@@ -503,19 +507,19 @@ export function SigenergyBatteryPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 bg-[#0A1118] relative border-b border-white/5">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
             <div className="lg:col-span-5 lg:sticky lg:top-32">
               <FadeIn>
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 font-semibold text-xs mb-6 shadow-sm">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 font-semibold text-xs mb-6 shadow-sm">
                   <span className="h-2 w-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
-                  <span className="text-xs font-bold text-slate-300 uppercase tracking-widest">Support</span>
+                  <span className="text-xs font-bold text-slate-600 uppercase tracking-widest">Support</span>
                 </div>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-white leading-[1.1] mb-6 uppercase">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 leading-[1.1] mb-6 uppercase">
                   Common Questions About Sigenergy Batteries
                 </h2>
-                <p className="text-base sm:text-lg text-slate-400 leading-relaxed font-medium mb-8 max-w-md">
+                <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-medium mb-8 max-w-md">
                   Everything you need to know about Sigenergy battery storage for your NT property.
                 </p>
                 <div className="mt-8">
@@ -536,8 +540,8 @@ export function SigenergyBatteryPage() {
                     <div
                       className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                         isOpen
-                          ? "bg-slate-900/60 shadow-xl border-[#8cc63f]/30"
-                          : "bg-slate-900/20 border-white/5 hover:border-[#8cc63f]/20"
+                          ? "bg-white shadow-md border-brand-500/50"
+                          : "bg-white border-slate-200 hover:border-brand-500/30 shadow-sm"
                       }`}
                     >
                       <button
@@ -545,21 +549,21 @@ export function SigenergyBatteryPage() {
                         aria-expanded={isOpen}
                         aria-controls={`faq-panel-${i}`}
                         id={`faq-button-${i}`}
-                        className="w-full text-left px-6 py-5 sm:p-6 flex items-start sm:items-center justify-between focus:outline-none gap-4 focus-visible:ring-2 focus-visible:ring-[#8cc63f] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121814] transition-all"
+                        className="w-full text-left px-6 py-5 sm:p-6 flex items-start sm:items-center justify-between focus:outline-none gap-4 focus-visible:ring-2 focus-visible:ring-[#8cc63f] focus-visible:ring-offset-2 focus-visible:ring-offset-slate-50 transition-all"
                       >
                         <div className="flex items-start sm:items-center gap-4">
                           <div
                             className={`shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold text-xs sm:text-sm transition-colors ${
                               isOpen
                                 ? "bg-[#8cc63f] text-[#19281D] shadow-md shadow-[#8cc63f]/20"
-                                : "bg-white/5 text-slate-400 border border-white/10"
+                                : "bg-slate-50 text-slate-500 border border-slate-200"
                             }`}
                           >
                             0{i + 1}
                           </div>
                           <h3
                             className={`text-sm sm:text-base font-bold leading-tight transition-colors ${
-                              isOpen ? "text-[#8cc63f]" : "text-white"
+                              isOpen ? "text-[#8cc63f]" : "text-slate-900"
                             }`}
                           >
                             {faq.q}
@@ -569,7 +573,7 @@ export function SigenergyBatteryPage() {
                           className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-300 ${
                             isOpen
                               ? "border-[#8cc63f] bg-[#8cc63f]/10 text-[#8cc63f] rotate-180"
-                              : "border-white/10 text-slate-400 bg-white/5"
+                              : "border-slate-200 text-slate-500 bg-slate-50"
                           }`}
                         >
                           <ChevronDown className="w-4 h-4" />
@@ -584,7 +588,7 @@ export function SigenergyBatteryPage() {
                           isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"
                         }`}
                       >
-                        <div className="text-slate-300 leading-relaxed font-medium pl-12 sm:pl-14 text-xs sm:text-sm">
+                        <div className="text-slate-600 leading-relaxed font-medium pl-12 sm:pl-14 text-xs sm:text-sm">
                           {faq.a}
                         </div>
                       </div>
