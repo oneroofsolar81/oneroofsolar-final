@@ -94,6 +94,76 @@
       "source": "/solar-power-alice-springs-nt/",
       "destination": "/solar-alice-springs/",
       "permanent": true
+    },
+    {
+      "source": "/services/battery-storage",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/services/battery-storage/",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/battery-storage",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/battery-storage/",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-battery",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-battery/",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-battery-storage",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-battery-storage/",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/services/ev-chargers",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
+    },
+    {
+      "source": "/services/ev-chargers/",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
+    },
+    {
+      "source": "/ev-charger",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
+    },
+    {
+      "source": "/ev-charger/",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
+    },
+    {
+      "source": "/ev-chargers",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
+    },
+    {
+      "source": "/ev-chargers/",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
     }
   ],
   "rewrites": [

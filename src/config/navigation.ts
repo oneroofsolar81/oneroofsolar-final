@@ -99,6 +99,10 @@ export const servicesMenu: NavItem[] = [
         label: "Solar Battery Installation",
         href: "/services/solar-battery-installation",
       },
+      {
+        label: "Solar Battery Brands",
+        href: "/products/solar-battery-brands/",
+      },
     ],
   },
 ];
@@ -179,7 +183,7 @@ export const mainNavConfig: NavItem[] = [
       },
       {
         label: "EV Chargers",
-        href: "/services/ev-chargers",
+        href: "/services/ev-chargers/installation",
         description: "Smart EV charging solutions for home & business.",
         iconName: "Zap",
       },
@@ -189,6 +193,7 @@ export const mainNavConfig: NavItem[] = [
         description: "Store excess solar energy for day & night.",
         iconName: "BatteryCharging",
         children: [
+          { label: "All Battery Brands", href: "/products/solar-battery-brands/" },
           { label: "Sigenergy Batteries", href: "/products/solar-battery-brands/sigenergy" },
         ],
       },

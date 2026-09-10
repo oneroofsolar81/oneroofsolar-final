@@ -236,7 +236,7 @@ export function JinkoSolarPanels() {
       a: (
         <span>
           The most common reason is that most energy consumption happens at night or early morning when panels are not generating. Solar savings come primarily from self-consumption during daylight hours. If your household uses most electricity in the evening, pairing your panels with a{" "}
-          <RouterLink to="/services/battery-storage" className="text-brand-600 hover:underline font-bold">
+          <RouterLink to="/products/solar-battery-brands/" className="text-brand-600 hover:underline font-bold">
             battery storage system
           </RouterLink>{" "}
           allows you to use your own solar after dark. Oneroof Solar can assess whether battery storage is cost-effective for your NT usage pattern.

@@ -37,6 +37,8 @@ const NorthernDarwin = lazy(() => import("./pages/NorthernDarwin").then(m => ({ 
 const Palmerston = lazy(() => import("./pages/Palmerston").then(m => ({ default: m.Palmerston })));
 const DarwinRural = lazy(() => import("./pages/DarwinRural").then(m => ({ default: m.DarwinRural })));
 const SigenergyBatteryPage = lazy(() => import("./pages/SigenergyBatteryPage").then(m => ({ default: m.SigenergyBatteryPage })));
+const SolarBatteryBrands = lazy(() => import("./pages/SolarBatteryBrands").then(m => ({ default: m.SolarBatteryBrands })));
+const EvChargerInstallation = lazy(() => import("./pages/EvChargerInstallation").then(m => ({ default: m.EvChargerInstallation })));
 const SolarInverters = lazy(() => import("./pages/SolarInverters").then(m => ({ default: m.SolarInverters })));
 const SolarInverterInstallation = lazy(() => import("./pages/SolarInverterInstallation").then(m => ({ default: m.SolarInverterInstallation })));
 const SolarInverterRepair = lazy(() => import("./pages/SolarInverterRepair").then(m => ({ default: m.SolarInverterRepair })));
@@ -210,6 +212,24 @@ export default function App() {
                 <Route path="/services/solar-inverter-repair" element={<Navigate to="/services/solar-inverters/repair" replace />} />
                 <Route path="/services/solar-inverter-repair/" element={<Navigate to="/services/solar-inverters/repair" replace />} />
 
+                {/* EV Charger Installation + 301 redirects from the old products URL */}
+                <Route path="/services/ev-chargers/installation" element={<EvChargerInstallation />} />
+                <Route path="/services/ev-chargers/installation/" element={<EvChargerInstallation />} />
+                <Route path="/services/ev-chargers" element={<Navigate to="/services/ev-chargers/installation" replace />} />
+                <Route path="/services/ev-chargers/" element={<Navigate to="/services/ev-chargers/installation" replace />} />
+                <Route path="/ev-charger" element={<Navigate to="/services/ev-chargers/installation" replace />} />
+                <Route path="/ev-charger/" element={<Navigate to="/services/ev-chargers/installation" replace />} />
+                <Route path="/ev-chargers" element={<Navigate to="/services/ev-chargers/installation" replace />} />
+                <Route path="/ev-chargers/" element={<Navigate to="/services/ev-chargers/installation" replace />} />
+
+                {/* Battery brands hub + 301 redirects from the live battery-storage page */}
+                <Route path="/services/battery-storage" element={<Navigate to="/products/solar-battery-brands/" replace />} />
+                <Route path="/services/battery-storage/" element={<Navigate to="/products/solar-battery-brands/" replace />} />
+                <Route path="/battery-storage" element={<Navigate to="/products/solar-battery-brands/" replace />} />
+                <Route path="/battery-storage/" element={<Navigate to="/products/solar-battery-brands/" replace />} />
+                <Route path="/solar-battery" element={<Navigate to="/products/solar-battery-brands/" replace />} />
+                <Route path="/solar-battery/" element={<Navigate to="/products/solar-battery-brands/" replace />} />
+
                 <Route path="/services/:slug" element={<ServiceDetail />} />
                 <Route path="/product/solar-panels-brands" element={<SolarPanelsBrands />} />
                 
@@ -266,6 +286,8 @@ export default function App() {
                 <Route path="/locations/darwin-rural/" element={<DarwinRural />} />
 
                 {/* Solar Battery Brand Pages */}
+                <Route path="/products/solar-battery-brands" element={<SolarBatteryBrands />} />
+                <Route path="/products/solar-battery-brands/" element={<SolarBatteryBrands />} />
                 <Route path="/products/solar-battery-brands/sigenergy" element={<SigenergyBatteryPage />} />
                 <Route path="/products/solar-battery-brands/sigenergy/" element={<SigenergyBatteryPage />} />
 
@@ -276,8 +298,8 @@ export default function App() {
                 <Route path="/solar-panels/" element={<Navigate to="/product/solar-panels-brands" replace />} />
                 <Route path="/solar-panel-installation" element={<Navigate to="/services/solar-panel-installation" replace />} />
                 <Route path="/solar-panel-installation/" element={<Navigate to="/services/solar-panel-installation" replace />} />
-                <Route path="/solar-battery-storage" element={<Navigate to="/services/battery-storage" replace />} />
-                <Route path="/solar-battery-storage/" element={<Navigate to="/services/battery-storage" replace />} />
+                <Route path="/solar-battery-storage" element={<Navigate to="/products/solar-battery-brands/" replace />} />
+                <Route path="/solar-battery-storage/" element={<Navigate to="/products/solar-battery-brands/" replace />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
