@@ -39,6 +39,7 @@ const DarwinRural = lazy(() => import("./pages/DarwinRural").then(m => ({ defaul
 const SigenergyBatteryPage = lazy(() => import("./pages/SigenergyBatteryPage").then(m => ({ default: m.SigenergyBatteryPage })));
 const SolarBatteryBrands = lazy(() => import("./pages/SolarBatteryBrands").then(m => ({ default: m.SolarBatteryBrands })));
 const EvChargerInstallation = lazy(() => import("./pages/EvChargerInstallation").then(m => ({ default: m.EvChargerInstallation })));
+const EvChargerRepair = lazy(() => import("./pages/EvChargerRepair").then(m => ({ default: m.EvChargerRepair })));
 const SolarInverters = lazy(() => import("./pages/SolarInverters").then(m => ({ default: m.SolarInverters })));
 const SolarInverterInstallation = lazy(() => import("./pages/SolarInverterInstallation").then(m => ({ default: m.SolarInverterInstallation })));
 const SolarInverterRepair = lazy(() => import("./pages/SolarInverterRepair").then(m => ({ default: m.SolarInverterRepair })));
@@ -212,9 +213,11 @@ export default function App() {
                 <Route path="/services/solar-inverter-repair" element={<Navigate to="/services/solar-inverters/repair" replace />} />
                 <Route path="/services/solar-inverter-repair/" element={<Navigate to="/services/solar-inverters/repair" replace />} />
 
-                {/* EV Charger Installation + 301 redirects from the old products URL */}
+                {/* EV Charger Installation + Repair, then 301s from the old products URL */}
                 <Route path="/services/ev-chargers/installation" element={<EvChargerInstallation />} />
                 <Route path="/services/ev-chargers/installation/" element={<EvChargerInstallation />} />
+                <Route path="/services/ev-chargers/repair" element={<EvChargerRepair />} />
+                <Route path="/services/ev-chargers/repair/" element={<EvChargerRepair />} />
                 <Route path="/services/ev-chargers" element={<Navigate to="/services/ev-chargers/installation" replace />} />
                 <Route path="/services/ev-chargers/" element={<Navigate to="/services/ev-chargers/installation" replace />} />
                 <Route path="/ev-charger" element={<Navigate to="/services/ev-chargers/installation" replace />} />

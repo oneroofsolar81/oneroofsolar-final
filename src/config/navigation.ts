@@ -105,6 +105,21 @@ export const servicesMenu: NavItem[] = [
       },
     ],
   },
+  {
+    label: "EV Chargers",
+    href: "/services/ev-chargers/installation",
+    iconName: "Zap",
+    children: [
+      {
+        label: "EV Charger Installation",
+        href: "/services/ev-chargers/installation",
+      },
+      {
+        label: "EV Charger Repair",
+        href: "/services/ev-chargers/repair",
+      },
+    ],
+  },
 ];
 
 export const mainNavConfig: NavItem[] = [
@@ -186,6 +201,16 @@ export const mainNavConfig: NavItem[] = [
         href: "/services/ev-chargers/installation",
         description: "Smart EV charging solutions for home & business.",
         iconName: "Zap",
+        children: [
+          {
+            label: "EV Charger Installation",
+            href: "/services/ev-chargers/installation",
+          },
+          {
+            label: "EV Charger Repair",
+            href: "/services/ev-chargers/repair",
+          },
+        ],
       },
       {
         label: "Battery Storage Solutions",

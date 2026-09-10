@@ -206,6 +206,7 @@ export function Navbar() {
     isOpen ||
     isDesktopMenuOpen ||
     (location.pathname !== "/" && !location.pathname.startsWith("/services"));
+  const isDarkHeader = isDesktopMenuOpen || isOpen;
 
   return (
     <>
@@ -215,7 +216,9 @@ export function Navbar() {
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           isDesktopMenuOpen ? "is-menu-open" : ""
         } ${
-          isSolidHeader
+          isDarkHeader
+            ? "bg-[#0A1118]/95 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
+            : isSolidHeader
             ? "bg-white/95 backdrop-blur-xl border-b border-slate-200/60 shadow-sm"
             : "bg-transparent py-4 lg:py-6"
         }`}
@@ -234,7 +237,9 @@ export function Navbar() {
                   <img
                     referrerPolicy="no-referrer"
                     src={
-                      isSolidHeader
+                      isDarkHeader
+                        ? "https://i.postimg.cc/vZdTgLm9/oneroof.png"
+                        : isSolidHeader
                         ? "https://i.postimg.cc/44Dzn7Hk/oneroof-solar-classic.png"
                         : "https://i.postimg.cc/vZdTgLm9/oneroof.png"
                     }
@@ -252,7 +257,9 @@ export function Navbar() {
               <div className="hidden lg:flex items-center">
                 <div
                   className={`flex items-center gap-1 rounded-full p-1 transition-colors ${
-                    isSolidHeader
+                    isDarkHeader
+                      ? "bg-white/5 border border-white/10"
+                      : isSolidHeader
                       ? "bg-slate-100/80 border border-slate-200/60"
                       : "bg-black/5 backdrop-blur-sm border border-black/5"
                   }`}
@@ -273,7 +280,9 @@ export function Navbar() {
                           aria-controls={`desktop-menu-${item.label}`}
                           className={`desktop-nav-link nav-link-item text-[15px] font-semibold leading-[1.2] tracking-normal px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
                             isItemActive
-                              ? "is-active bg-white text-brand-600 shadow-sm"
+                              ? "is-active bg-[#8cc63f] text-[#19281D] shadow-[0_0_18px_rgba(140,198,63,0.35)]"
+                              : isDarkHeader
+                              ? "text-white hover:bg-white/10 hover:text-[#8cc63f]"
                               : isSolidHeader
                               ? "text-slate-800 hover:bg-white/60 hover:text-brand-600"
                               : "text-white hover:bg-white/10 hover:text-brand-300"
@@ -283,7 +292,9 @@ export function Navbar() {
                           <ChevronDown
                             className={`h-3.5 w-3.5 shrink-0 transition-transform duration-200 ${
                               isItemActive
-                                ? "rotate-180 text-brand-600"
+                                ? "rotate-180 text-[#19281D]"
+                                : isDarkHeader
+                                ? "text-white/80"
                                 : isSolidHeader
                                 ? "text-slate-800"
                                 : "text-white/80"
@@ -300,7 +311,11 @@ export function Navbar() {
                         onMouseEnter={() => handleMouseEnter(item)}
                         className={`desktop-nav-link nav-link-item text-[15px] font-semibold leading-[1.2] tracking-normal px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
                           location.pathname === itemHref
-                            ? "bg-white text-brand-600 shadow-sm"
+                            ? isDarkHeader
+                              ? "bg-[#8cc63f] text-[#19281D] shadow-[0_0_18px_rgba(140,198,63,0.35)]"
+                              : "bg-white text-brand-600 shadow-sm"
+                            : isDarkHeader
+                            ? "text-white hover:bg-white/10 hover:text-[#8cc63f]"
                             : isSolidHeader
                             ? "text-slate-800 hover:bg-white/60 hover:text-brand-600"
                             : "text-white hover:bg-white/10 hover:text-brand-300"
@@ -317,22 +332,22 @@ export function Navbar() {
             {/* Right Section: Call Action for Desktop */}
             <div className="hidden lg:flex items-center">
               <a href={`tel:${PRIMARY_PHONE_RAW}`} className="flex items-center gap-2.5 group">
-                <div className="w-10 h-10 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
-                  <div className="w-7 h-7 rounded-full bg-brand-500 flex items-center justify-center">
-                    <Phone className="w-3.5 h-3.5 text-white fill-current" />
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform ${isDarkHeader ? "bg-[#8cc63f]/15" : "bg-brand-100"}`}>
+                  <div className="w-7 h-7 rounded-full bg-[#8cc63f] flex items-center justify-center">
+                    <Phone className={`w-3.5 h-3.5 fill-current ${isDarkHeader ? "text-[#19281D]" : "text-white"}`} />
                   </div>
                 </div>
                 <div className="flex flex-col -space-y-1">
                   <span
                     className={`text-[13px] font-medium transition-colors ${
-                      isSolidHeader ? "text-slate-600" : "text-white/90"
+                      isDarkHeader ? "text-slate-300" : isSolidHeader ? "text-slate-600" : "text-white/90"
                     }`}
                   >
                     Give Us a Call
                   </span>
                   <span
                     className={`text-[18px] font-extrabold tracking-tight transition-colors ${
-                      isSolidHeader ? "text-slate-900" : "text-white"
+                      isDarkHeader ? "text-white" : isSolidHeader ? "text-slate-900" : "text-white"
                     }`}
                   >
                     {PRIMARY_PHONE}
@@ -354,7 +369,7 @@ export function Navbar() {
                 aria-expanded={isOpen}
                 aria-label={isOpen ? "Close menu" : "Open main menu"}
                 className={`focus:outline-none p-2.5 rounded-full transition-colors ${
-                  !scrolled && !isOpen && (location.pathname === "/" || location.pathname.startsWith("/services"))
+                  isDarkHeader || (!scrolled && !isOpen && (location.pathname === "/" || location.pathname.startsWith("/services")))
                     ? "text-white bg-white/10 hover:bg-white/20"
                     : "text-slate-800 bg-slate-100 hover:bg-slate-200"
                 }`}
@@ -386,27 +401,28 @@ export function Navbar() {
                 {/* 1. SOLAR SYSTEM - COMPACT DROPDOWN (460px) */}
                 {activeDesktopItem.label === "Solar System" && (
                   <div className="flex justify-start pl-[280px]">
-                    <div className="w-[460px] bg-white border border-slate-200/80 rounded-2xl shadow-[0_20px_40px_-15px_rgba(15,23,42,0.15)] p-3 backdrop-blur-xl">
+                    <div className="w-[460px] bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.7),0_0_32px_rgba(140,198,63,0.08)] p-3 backdrop-blur-xl relative overflow-hidden">
+                      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
                       <div className="flex flex-col space-y-1">
                         {activeDesktopItem.children?.map((child) => (
                           <Link
                             key={child.label}
                             to={formatHref(child.href)}
                             onClick={() => setActiveMegaMenu(null)}
-                            className="group flex items-start gap-3.5 p-3.5 rounded-xl hover:bg-slate-50 transition-all duration-150"
+                            className="group flex items-start gap-3.5 p-3.5 rounded-xl hover:bg-white/5 hover:shadow-[0_0_20px_rgba(140,198,63,0.12)] transition-all duration-150"
                           >
-                            <div className="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                            <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] group-hover:shadow-[0_0_16px_rgba(140,198,63,0.45)] transition-all">
                               {renderMenuIcon(child.iconName, "w-5 h-5")}
                             </div>
                             <div className="flex-1 min-w-0 pt-0.5">
                               <div className="flex items-center justify-between">
-                                <span className="text-[15px] font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
+                                <span className="text-[15px] font-bold text-white group-hover:text-[#8cc63f] transition-colors">
                                   {child.label}
                                 </span>
-                                <ArrowRight className="w-4 h-4 text-slate-400 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-brand-600 transition-all" />
+                                <ArrowRight className="w-4 h-4 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-[#8cc63f] transition-all" />
                               </div>
                               {child.description && (
-                                <p className="text-[13px] text-slate-500 line-clamp-1 mt-0.5 font-normal">
+                                <p className="text-[13px] text-slate-400 line-clamp-1 mt-0.5 font-normal">
                                   {child.description}
                                 </p>
                               )}
@@ -421,27 +437,28 @@ export function Navbar() {
                 {/* 2. LOCATIONS - COMPACT DROPDOWN (380px) */}
                 {activeDesktopItem.label === "Locations" && (
                   <div className="flex justify-start pl-[620px]">
-                    <div className="w-[380px] bg-white border border-slate-200/80 rounded-2xl shadow-[0_20px_40px_-15px_rgba(15,23,42,0.15)] p-3 backdrop-blur-xl">
+                    <div className="w-[380px] bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.7),0_0_32px_rgba(140,198,63,0.08)] p-3 backdrop-blur-xl relative overflow-hidden">
+                      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
                       <div className="flex flex-col space-y-1">
                         {activeDesktopItem.children?.map((child) => (
                           <Link
                             key={child.label}
                             to={formatHref(child.href)}
                             onClick={() => setActiveMegaMenu(null)}
-                            className="group flex items-start gap-3.5 p-3.5 rounded-xl hover:bg-slate-50 transition-all duration-150"
+                            className="group flex items-start gap-3.5 p-3.5 rounded-xl hover:bg-white/5 hover:shadow-[0_0_20px_rgba(140,198,63,0.12)] transition-all duration-150"
                           >
-                            <div className="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                            <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] group-hover:shadow-[0_0_16px_rgba(140,198,63,0.45)] transition-all">
                               {renderMenuIcon(child.iconName, "w-5 h-5")}
                             </div>
                             <div className="flex-1 min-w-0 pt-0.5">
                               <div className="flex items-center justify-between">
-                                <span className="text-[15px] font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
+                                <span className="text-[15px] font-bold text-white group-hover:text-[#8cc63f] transition-colors">
                                   {child.label}
                                 </span>
-                                <ArrowRight className="w-4 h-4 text-slate-400 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-brand-600 transition-all" />
+                                <ArrowRight className="w-4 h-4 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-[#8cc63f] transition-all" />
                               </div>
                               {child.description && (
-                                <p className="text-[13px] text-slate-500 line-clamp-1 mt-0.5 font-normal">
+                                <p className="text-[13px] text-slate-400 line-clamp-1 mt-0.5 font-normal">
                                   {child.description}
                                 </p>
                               )}
@@ -456,52 +473,58 @@ export function Navbar() {
                 {/* 3. PRODUCTS - BALANCED MEGA MENU */}
                 {activeDesktopItem.label === "Products" && (
                   <div className="mx-auto max-w-[1140px]">
-                    <div className="bg-white border border-slate-200/80 rounded-2xl shadow-[0_25px_50px_-12px_rgba(15,23,42,0.15)] p-7 sm:p-8 backdrop-blur-xl">
+                    <div className="bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),0_0_40px_rgba(140,198,63,0.1)] p-7 sm:p-8 backdrop-blur-xl relative overflow-hidden">
+                      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
+                      <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[520px] h-[180px] bg-[#8cc63f]/10 blur-[90px] rounded-full" />
                       {/* Top Product Cards Grid */}
-                      <div className="grid grid-cols-3 gap-6 mb-7">
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-7 relative z-10">
                         {productCategoryItems.map((prod) => (
                           <div
                             key={prod.label}
-                            className="group flex flex-col justify-between p-5 rounded-xl border border-slate-100 bg-slate-50/70 hover:bg-brand-50/40 hover:border-brand-200 transition-all duration-200 h-full"
+                            className="group flex flex-col justify-between p-5 rounded-xl border border-white/10 bg-slate-900/50 hover:bg-slate-900/80 hover:border-[#8cc63f]/40 hover:shadow-[0_0_24px_rgba(140,198,63,0.14)] transition-all duration-200 h-full"
                           >
                             <div>
-                              <div className="w-11 h-11 rounded-xl bg-white shadow-sm border border-slate-200/60 text-brand-600 flex items-center justify-center mb-4 group-hover:scale-105 group-hover:bg-brand-500 group-hover:text-white transition-all">
+                              <div className="w-11 h-11 rounded-xl bg-[#8cc63f]/10 border border-[#8cc63f]/20 text-[#8cc63f] flex items-center justify-center mb-4 group-hover:scale-105 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] group-hover:shadow-[0_0_16px_rgba(140,198,63,0.45)] transition-all">
                                 {renderMenuIcon(prod.iconName, "w-5 h-5")}
                               </div>
                               <Link
                                 to={formatHref(prod.href)}
                                 onClick={() => setActiveMegaMenu(null)}
-                                className="text-[17px] font-bold text-slate-900 hover:text-brand-600 transition-colors block"
+                                className="text-[17px] font-bold text-white hover:text-[#8cc63f] transition-colors block"
                               >
                                 {prod.label}
                               </Link>
                               {prod.description && (
-                                <p className="text-[13px] text-slate-500 mt-1.5 leading-relaxed">
+                                <p className="text-[13px] text-slate-400 mt-1.5 leading-relaxed">
                                   {prod.description}
                                 </p>
                               )}
 
                               {prod.children && prod.children.length > 0 && (
-                                <div className="mt-3 pt-2.5 border-t border-slate-200/60 flex flex-col space-y-1">
+                                <div className="mt-3 pt-2.5 border-t border-white/10 flex flex-col space-y-1">
                                   {prod.children.map((sub) => (
                                     <Link
                                       key={sub.label}
                                       to={formatHref(sub.href)}
                                       onClick={() => setActiveMegaMenu(null)}
-                                      className="group/sub flex items-center justify-between text-[13px] font-semibold text-slate-700 hover:text-brand-600 py-1 px-1.5 rounded hover:bg-white transition-all"
+                                      className={`group/sub flex items-center justify-between text-[13px] font-semibold py-1 px-1.5 rounded transition-all ${
+                                        location.pathname === formatHref(sub.href)
+                                          ? "text-[#8cc63f] bg-[#8cc63f]/10"
+                                          : "text-slate-300 hover:text-[#8cc63f] hover:bg-white/5"
+                                      }`}
                                     >
                                       <span>{sub.label}</span>
-                                      <ArrowRight className="w-3.5 h-3.5 text-brand-600 opacity-60 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5 transition-all" />
+                                      <ArrowRight className="w-3.5 h-3.5 text-[#8cc63f] opacity-60 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5 transition-all" />
                                     </Link>
                                   ))}
                                 </div>
                               )}
                             </div>
-                            <div className="flex items-center gap-1.5 text-[13px] font-bold text-brand-600 mt-4 pt-3 border-t border-slate-200/50">
+                            <div className="flex items-center gap-1.5 text-[13px] font-bold text-[#8cc63f] mt-4 pt-3 border-t border-white/10">
                               <Link
                                 to={formatHref(prod.href)}
                                 onClick={() => setActiveMegaMenu(null)}
-                                className="flex items-center gap-1.5 hover:text-brand-700 transition-colors"
+                                className="flex items-center gap-1.5 hover:text-brand-300 transition-colors"
                               >
                                 <span>Explore Solution</span>
                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -513,29 +536,29 @@ export function Navbar() {
 
                       {/* Solar Panel Brands Grid */}
                       {productBrandsItem && (
-                        <div className="bg-slate-50/80 rounded-xl p-5 border border-slate-100">
-                          <div className="flex items-center justify-between mb-3.5">
+                        <div className="bg-slate-900/40 rounded-xl p-5 border border-white/10 relative z-10">
+                          <div className="flex items-center justify-between mb-3.5 gap-3">
                             <div className="flex items-center gap-2">
-                              <Sun className="w-4 h-4 text-brand-600" />
-                              <h4 className="text-[15px] font-bold text-slate-900">
+                              <Sun className="w-4 h-4 text-[#8cc63f]" />
+                              <h4 className="text-[15px] font-bold text-white">
                                 Solar Panel Brands
                               </h4>
                             </div>
                             <Link
                               to={formatHref(productBrandsItem.href)}
                               onClick={() => setActiveMegaMenu(null)}
-                              className="text-[13px] font-semibold text-brand-600 hover:text-brand-700 hover:underline"
+                              className="text-[13px] font-semibold text-[#8cc63f] hover:text-brand-300 hover:underline whitespace-nowrap"
                             >
                               View All Brands →
                             </Link>
                           </div>
-                          <div className="grid grid-cols-5 gap-3">
+                          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
                             {productBrandsItem.children?.map((brand) => (
                               <Link
                                 key={brand.label}
                                 to={formatHref(brand.href)}
                                 onClick={() => setActiveMegaMenu(null)}
-                                className="flex items-center justify-center py-2.5 px-3 rounded-lg bg-white border border-slate-200/80 text-[14px] font-bold text-slate-800 hover:text-brand-600 hover:border-brand-400 hover:shadow-sm transition-all text-center"
+                                className="flex items-center justify-center py-2.5 px-3 rounded-lg bg-[#0A1118] border border-white/10 text-[14px] font-bold text-slate-200 hover:text-[#19281D] hover:bg-[#8cc63f] hover:border-[#8cc63f] hover:shadow-[0_0_16px_rgba(140,198,63,0.35)] transition-all text-center"
                               >
                                 {brand.label}
                               </Link>
@@ -549,34 +572,36 @@ export function Navbar() {
 
                 {/* 4. SERVICES - THREE-COLUMN MEGA MENU */}
                 {activeDesktopItem.label === "Services" && (
-                  <div className="mx-auto max-w-[1140px]">
-                    <div className="bg-white border border-slate-200/80 rounded-2xl shadow-[0_25px_50px_-12px_rgba(15,23,42,0.15)] p-7 sm:p-8 backdrop-blur-xl">
-                      <div className="grid grid-cols-3 gap-10">
+                  <div className="mx-auto max-w-[1280px]">
+                    <div className="bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),0_0_40px_rgba(140,198,63,0.1)] p-7 sm:p-8 backdrop-blur-xl relative overflow-hidden">
+                      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
+                      <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[520px] h-[180px] bg-[#8cc63f]/10 blur-[90px] rounded-full" />
+                      <div className="grid grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-6 relative z-10">
                         {servicesCategories.map((category) => {
                           const catHref = formatHref(category.href);
                           return (
                             <div key={category.label} className="flex flex-col space-y-3">
                               {/* Category Heading with Line Icon (Clickable Hub Heading linking to overview) */}
-                              <div className="pb-3 border-b border-slate-100">
+                              <div className="pb-3 border-b border-white/10">
                                 {catHref ? (
                                   <Link
                                     to={catHref}
                                     onClick={() => setActiveMegaMenu(null)}
                                     className="flex items-center gap-2.5 group/cat"
                                   >
-                                    <div className="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0 group-hover/cat:bg-brand-500 group-hover/cat:text-white transition-all">
+                                    <div className="w-8 h-8 rounded-lg bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 flex items-center justify-center flex-shrink-0 group-hover/cat:bg-[#8cc63f] group-hover/cat:text-[#19281D] group-hover/cat:shadow-[0_0_14px_rgba(140,198,63,0.45)] transition-all">
                                       {renderMenuIcon(category.iconName, "w-4 h-4")}
                                     </div>
-                                    <span className="text-[18px] font-bold text-slate-900 group-hover/cat:text-brand-600 transition-colors">
+                                    <span className="text-[18px] font-bold text-white group-hover/cat:text-[#8cc63f] transition-colors">
                                       {category.label}
                                     </span>
                                   </Link>
                                 ) : (
                                   <div className="flex items-center gap-2.5">
-                                    <div className="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center flex-shrink-0">
+                                    <div className="w-8 h-8 rounded-lg bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 flex items-center justify-center flex-shrink-0">
                                       {renderMenuIcon(category.iconName, "w-4 h-4")}
                                     </div>
-                                    <span className="text-[18px] font-bold text-slate-900">
+                                    <span className="text-[18px] font-bold text-white">
                                       {category.label}
                                     </span>
                                   </div>
@@ -594,10 +619,10 @@ export function Navbar() {
                                       key={child.label}
                                       to={childHref}
                                       onClick={() => setActiveMegaMenu(null)}
-                                      className={`text-[15px] font-medium py-1.5 px-3 -mx-3 rounded-lg transition-colors ${
+                                      className={`text-[15px] font-medium py-1.5 px-3 -mx-3 rounded-lg transition-all ${
                                         location.pathname === childHref
-                                          ? "text-brand-600 bg-brand-50/70 font-semibold"
-                                          : "text-slate-600 hover:text-brand-600 hover:bg-slate-50"
+                                          ? "text-[#8cc63f] bg-[#8cc63f]/10 font-semibold shadow-[0_0_16px_rgba(140,198,63,0.12)]"
+                                          : "text-slate-300 hover:text-[#8cc63f] hover:bg-white/5"
                                       }`}
                                     >
                                       {child.label}
@@ -626,7 +651,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="hidden lg:block fixed inset-0 top-[76px] bg-slate-950/20 backdrop-blur-[2px] z-40 pointer-events-auto"
+            className="hidden lg:block fixed inset-0 top-[76px] bg-[#0A1118]/50 backdrop-blur-[3px] z-40 pointer-events-auto"
             onClick={() => setActiveMegaMenu(null)}
           />
         )}
@@ -642,14 +667,14 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-[100] bg-white flex flex-col lg:hidden overflow-hidden"
+            className="fixed inset-0 z-[100] bg-[#0A1118] flex flex-col lg:hidden overflow-hidden"
           >
             {/* Mobile Header Bar */}
-            <div className="flex-shrink-0 flex items-center justify-between px-5 py-4 border-b border-slate-100 bg-white z-10">
+            <div className="flex-shrink-0 flex items-center justify-between px-5 py-4 border-b border-white/10 bg-[#0A1118] z-10">
               <Link to="/" onClick={handleMobileClose} className="flex items-center gap-2">
                 <img
                   referrerPolicy="no-referrer"
-                  src="https://i.postimg.cc/44Dzn7Hk/oneroof-solar-classic.png"
+                  src="https://i.postimg.cc/vZdTgLm9/oneroof.png"
                   alt="Oneroof Solar Logo"
                   className="h-[46px] sm:h-[54px] w-auto"
                 />
@@ -657,14 +682,14 @@ export function Navbar() {
               <button
                 onClick={handleMobileClose}
                 aria-label="Close menu"
-                className="p-2.5 rounded-full text-slate-500 hover:bg-slate-100 transition-colors focus:outline-none"
+                className="p-2.5 rounded-full text-slate-300 hover:bg-white/10 hover:text-white transition-colors focus:outline-none"
               >
                 <X className="h-6 w-6" />
               </button>
             </div>
 
             {/* Drill-Down Animated Stack Container */}
-            <div className="flex-1 relative overflow-hidden bg-white">
+            <div className="flex-1 relative overflow-hidden bg-[#0A1118]">
               <AnimatePresence mode="wait" custom={slideDirection}>
                 <motion.div
                   key={mobileStack.length > 0 ? mobileStack.map((s) => s.label).join("-") : "root"}
@@ -678,10 +703,10 @@ export function Navbar() {
                 >
                   {/* Back Navigation Bar if deep in stack */}
                   {mobileStack.length > 0 && (
-                    <div className="flex items-center mb-4 pb-2 border-b border-slate-100">
+                    <div className="flex items-center mb-4 pb-2 border-b border-white/10">
                       <button
                         onClick={handleMobileBack}
-                        className="mobile-nav-link nav-link-item flex items-center gap-1.5 text-brand-600 hover:text-brand-700 font-semibold text-[15px] leading-[1.2] tracking-normal py-2 px-1 -ml-1 transition-colors group"
+                        className="mobile-nav-link nav-link-item flex items-center gap-1.5 text-[#8cc63f] hover:text-brand-300 font-semibold text-[15px] leading-[1.2] tracking-normal py-2 px-1 -ml-1 transition-colors group"
                       >
                         <ChevronLeft className="w-5 h-5 shrink-0 transition-transform group-hover:-translate-x-0.5" />
                         <span>{backLabel}</span>
@@ -696,12 +721,12 @@ export function Navbar() {
                         <Link
                           to={formatHref(currentMobileItem.href)}
                           onClick={handleMobileClose}
-                          className="text-[24px] font-extrabold text-slate-900 tracking-tight hover:text-brand-600 transition-colors inline-block"
+                          className="text-[24px] font-extrabold text-white tracking-tight hover:text-[#8cc63f] transition-colors inline-block"
                         >
                           {currentMobileItem.label}
                         </Link>
                       ) : (
-                        <h2 className="text-[24px] font-extrabold text-slate-900 tracking-tight">
+                        <h2 className="text-[24px] font-extrabold text-white tracking-tight">
                           {currentMobileItem.label}
                         </h2>
                       )}
@@ -709,7 +734,7 @@ export function Navbar() {
                   )}
 
                   {/* Navigation Item Rows */}
-                  <div className="flex flex-col divide-y divide-slate-100">
+                  <div className="flex flex-col divide-y divide-white/10">
                     {currentMobileList.map((item) => {
                       const hasChildren = item.children && item.children.length > 0;
                       const itemHref = formatHref(item.href);
@@ -719,10 +744,10 @@ export function Navbar() {
                           <button
                             key={item.label}
                             onClick={() => handleMobileNext(item)}
-                            className="mobile-nav-link nav-link-item flex items-center justify-between min-h-[56px] py-3.5 text-left text-[15px] font-semibold leading-[1.2] tracking-normal text-slate-900 hover:text-brand-600 transition-colors w-full group"
+                            className="mobile-nav-link nav-link-item flex items-center justify-between min-h-[56px] py-3.5 text-left text-[15px] font-semibold leading-[1.2] tracking-normal text-white hover:text-[#8cc63f] transition-colors w-full group"
                           >
                             <span>{item.label}</span>
-                            <ChevronRight className="w-5 h-5 text-slate-400 group-hover:text-brand-600 transition-colors flex-shrink-0 ml-2" />
+                            <ChevronRight className="w-5 h-5 text-slate-500 group-hover:text-[#8cc63f] transition-colors flex-shrink-0 ml-2" />
                           </button>
                         );
                       }
@@ -734,8 +759,8 @@ export function Navbar() {
                           onClick={handleMobileClose}
                           className={`mobile-nav-link nav-link-item flex items-center justify-between min-h-[56px] py-3.5 text-[15px] font-semibold leading-[1.2] tracking-normal transition-colors ${
                             location.pathname === itemHref
-                              ? "text-brand-600"
-                              : "text-slate-800 hover:text-brand-600"
+                              ? "text-[#8cc63f]"
+                              : "text-slate-200 hover:text-[#8cc63f]"
                           }`}
                         >
                           <span>{item.label}</span>
@@ -748,7 +773,7 @@ export function Navbar() {
                   <div className="mt-auto pt-8 pb-4">
                     <a
                       href={`tel:${PRIMARY_PHONE_RAW}`}
-                      className="flex items-center justify-center gap-3 w-full py-4 px-6 rounded-2xl bg-brand-500 hover:bg-brand-600 text-white font-extrabold text-[16px] transition-all active:scale-[0.98] shadow-lg shadow-brand-500/10"
+                      className="flex items-center justify-center gap-3 w-full py-4 px-6 rounded-2xl bg-[#8cc63f] hover:bg-brand-400 text-[#19281D] font-extrabold text-[16px] transition-all active:scale-[0.98] shadow-lg shadow-[#8cc63f]/20"
                     >
                       <Phone className="w-5 h-5" />
                       <span>Call Us: {PRIMARY_PHONE}</span>

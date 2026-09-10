@@ -32,7 +32,10 @@
     <loc>https://www.oneroofsolar.com.au/services/solar-battery-installation</loc>
   </url>
   <url>
-    <loc>https://www.oneroofsolar.com.au/services/ev-chargers</loc>
+    <loc>https://www.oneroofsolar.com.au/services/ev-chargers/installation</loc>
+  </url>
+  <url>
+    <loc>https://www.oneroofsolar.com.au/services/ev-chargers/repair</loc>
   </url>
 
   <!-- Solar Systems -->

@@ -214,8 +214,10 @@ export function EvChargerInstallation() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn isHero>
-              <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6">
-                <a href="https://oneroofsolar.com.au/" className="hover:text-[#8cc63f] transition-colors">Home</a>
+              <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6 flex-wrap">
+                <Link to="/" className="hover:text-[#8cc63f] transition-colors">Home</Link>
+                <span className="text-slate-500" aria-hidden="true">&gt;</span>
+                <span className="text-slate-400">Services</span>
                 <span className="text-slate-500" aria-hidden="true">&gt;</span>
                 <span className="text-[#8cc63f]" aria-current="page">EV Charger Installation</span>
               </nav>
@@ -278,7 +280,9 @@ export function EvChargerInstallation() {
                 Oneroof Solar provides professional EV charger installation across Darwin and the wider NT, for homes, businesses, apartments, and off-grid properties. An EV charger is a dedicated unit installed at your property that lets you charge your electric vehicle faster and more safely than a standard power point, usually overnight for homes or throughout the day for businesses and fleets.
               </p>
               <p>
-                We handle the entire process, from checking your property's electrical capacity through to a fully compliant, SAA accredited installation, so you can charge with confidence.
+                We handle the entire process, from checking your property's electrical capacity through to a fully compliant, SAA accredited installation, so you can charge with confidence. Already have a charger that will not start, trips the breaker, or died after a storm? See our{" "}
+                <Link to="/services/ev-chargers/repair" className={linkClass}>EV charger repair</Link>{" "}
+                service.
               </p>
             </div>
           </FadeIn>
