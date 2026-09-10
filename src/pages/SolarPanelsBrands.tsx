@@ -23,8 +23,8 @@ import {
   X,
 } from "lucide-react";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
-import jaSolarImg from "../assets/images/ja_solar_panel_1784285635251.jpg";
-import longiSolarImg from "../assets/images/longi_solar_panel_1784285655984.jpg";
+import jaSolarImg from "../assets/images/ja_solar_panel_1784285635251.webp";
+import longiSolarImg from "../assets/images/longi_solar_panel_1784285655984.webp";
 
 type ProductBrand = {
   id: string;
@@ -302,9 +302,9 @@ export function SolarPanelsBrands() {
                 <span className="text-slate-300">Solar Panels</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-[0.95] mb-8 uppercase">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase">
                 Premium <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                   Solar Panel Brands NT
                 </span>
               </h1>
@@ -341,7 +341,7 @@ export function SolarPanelsBrands() {
             </FadeIn>
 
             <FadeIn isHero delay={0.2} className="relative hidden lg:block">
-              <div className="w-full aspect-square bg-gradient-to-br from-brand-500/20 to-emerald-600/20 rounded-full blur-3xl absolute inset-0 animate-pulse"></div>
+              <div className="w-full aspect-square bg-gradient-to-br from-brand-500/20 to-brand-600/20 rounded-full blur-3xl absolute inset-0 animate-pulse"></div>
               <img
                 referrerPolicy="no-referrer"
                 fetchPriority="high"
@@ -549,8 +549,8 @@ export function SolarPanelsBrands() {
                     <th className="p-5 text-lg font-black text-slate-900 text-center border-l border-slate-200 bg-brand-50/50">
                       <span className="text-brand-700">AIKO ABC</span>
                     </th>
-                    <th className="p-5 text-lg font-black text-slate-900 text-center border-l border-slate-200 bg-emerald-50/50">
-                      <span className="text-emerald-700">REC HJT</span>
+                    <th className="p-5 text-lg font-black text-slate-900 text-center border-l border-slate-200 bg-brand-100/50">
+                      <span className="text-brand-700">REC HJT</span>
                     </th>
                     <th className="p-5 text-lg font-black text-slate-900 text-center border-l border-slate-200">
                       <span>Jinko TOPCon</span>
@@ -567,7 +567,7 @@ export function SolarPanelsBrands() {
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Cell technology</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-50/30">All Back Contact N-type</td>
-                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-emerald-50/30">Heterojunction N-type</td>
+                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-100/30">Heterojunction N-type</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium">TOPCon N-type</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium">TOPCon N-type</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium">HPBC N-type</td>
@@ -575,7 +575,7 @@ export function SolarPanelsBrands() {
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Module efficiency</td>
                     <td className="p-5 text-center border-l border-slate-200 font-bold bg-brand-50/30 text-brand-700">Above 25%</td>
-                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-emerald-50/30 text-slate-700">22.3%</td>
+                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-100/30 text-slate-700">22.3%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">Above 22%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">Up to 22.7%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">Up to 23.3%</td>
@@ -583,7 +583,7 @@ export function SolarPanelsBrands() {
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Temperature coefficient</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-50/30 text-slate-700">-0.26%/°C</td>
-                    <td className="p-5 text-center border-l border-slate-200 font-bold bg-emerald-50/30 text-brand-700">-0.24%/°C</td>
+                    <td className="p-5 text-center border-l border-slate-200 font-bold bg-brand-100/30 text-brand-700">-0.24%/°C</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">-0.26%/°C</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">-0.35%/°C</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">-0.29%/°C</td>
@@ -591,7 +591,7 @@ export function SolarPanelsBrands() {
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Performance warranty</td>
                     <td className="p-5 text-center border-l border-slate-200 font-bold bg-brand-50/30 text-brand-700">30 years</td>
-                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-emerald-50/30 text-slate-700">25 years</td>
+                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-100/30 text-slate-700">25 years</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">25 years</td>
                     <td className="p-5 text-center border-l border-slate-200 font-bold text-brand-700">30 years</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">25 years</td>
@@ -599,26 +599,26 @@ export function SolarPanelsBrands() {
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Year 25 output guarantee</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-50/30 text-slate-700">90.6%</td>
-                    <td className="p-5 text-center border-l border-slate-200 font-bold bg-emerald-50/30 text-brand-700">92%</td>
+                    <td className="p-5 text-center border-l border-slate-200 font-bold bg-brand-100/30 text-brand-700">92%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">84.8%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">87.4%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">89.4%</td>
                   </tr>
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Cyclone rated</td>
-                    <td className="p-5 text-center border-l border-slate-200 bg-brand-50/30 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 bg-emerald-50/30 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 bg-brand-50/30 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 bg-brand-100/30 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
                   </tr>
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">STC eligible NT</td>
-                    <td className="p-5 text-center border-l border-slate-200 bg-brand-50/30 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 bg-emerald-50/30 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 bg-brand-50/30 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 bg-brand-100/30 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
                   </tr>
                 </tbody>
               </table>
@@ -630,7 +630,7 @@ export function SolarPanelsBrands() {
                 <span className="text-brand-600 font-extrabold">AIKO</span> — Limited Roof, Max Output
               </span>
               <span className="px-3.5 py-1.5 bg-white border border-slate-200 rounded-full text-xs font-semibold text-slate-700 shadow-xs">
-                <span className="text-emerald-700 font-extrabold">REC</span> — Lowest Heat Loss
+                <span className="text-brand-700 font-extrabold">REC</span> — Lowest Heat Loss
               </span>
               <span className="px-3.5 py-1.5 bg-white border border-slate-200 rounded-full text-xs font-semibold text-slate-700 shadow-xs">
                 <span className="text-slate-800 font-extrabold">Jinko</span> — Proven Value
@@ -677,7 +677,7 @@ export function SolarPanelsBrands() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto rounded-xl px-8 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 transition-all h-14 uppercase tracking-wider text-xs"
+                  className="w-full sm:w-auto rounded-xl px-8 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:text-white transition-all h-14 uppercase tracking-wider text-xs"
                   asChild
                 >
                   <a href="tel:0483986444">
@@ -827,7 +827,7 @@ export function SolarPanelsBrands() {
       <section className="relative py-24 sm:py-32 bg-[#0A1118] overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[150px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05] mix-blend-overlay"></div>
         </div>
 
@@ -842,7 +842,7 @@ export function SolarPanelsBrands() {
                   </span>
                   <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-6 uppercase">
                     Ready to Switch <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                       To Premium Solar?
                     </span>
                   </h2>

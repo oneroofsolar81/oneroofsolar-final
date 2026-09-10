@@ -349,6 +349,8 @@ export function Home() {
             src="https://i.postimg.cc/1XWKZZkw/Bayview-0820-(2).webp"
             alt="Solar Panel Installation Background"
             className="absolute inset-0 w-full h-full object-cover brightness-[0.5] max-w-none"
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A1118] via-[#0A1118]/85 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-[#0A1118]/40 opacity-90" />
@@ -373,7 +375,7 @@ export function Home() {
               <h1 
                 className="hero-heading text-white mb-[22px] break-words"
               >
-                Solar Panels <span className="text-brand-500">Darwin</span><br />
+                Solar Panels <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Darwin</span><br />
                 Trusted Installations Across the NT
               </h1>
               
@@ -402,7 +404,7 @@ export function Home() {
                 <Button size="lg" className="rounded-full text-[1rem] font-medium leading-[1] px-8 h-14 bg-brand-500 hover:bg-brand-600 text-slate-900 hover:scale-[1.02] transition-all" asChild>
                   <Link to="/contact">Get Your Free Quote <ArrowRight className="ml-2 h-5 w-5" /></Link>
                 </Button>
-                <Button size="lg" variant="outline" className="rounded-full text-[1rem] font-medium leading-[1] px-8 h-14 border-white/20 text-white bg-transparent hover:bg-white/10 hover:border-white/30" asChild>
+                <Button size="lg" variant="outline" className="rounded-full text-[1rem] font-medium leading-[1] px-8 h-14 border-white/20 text-white bg-transparent hover:bg-white/10 hover:text-white hover:border-white/30" asChild>
                   <a href={`tel:${PRIMARY_PHONE_RAW}`}>Call Us {PRIMARY_PHONE}</a>
                 </Button>
               </div>
@@ -613,7 +615,7 @@ export function Home() {
             {/* Row 2 - Three Standard Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Card 3: Smart Inverters */}
-              <div className="rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.03)] border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 flex flex-col group">
+              <div className="rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.03)] border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 flex flex-col group h-full">
                 <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
                   <Zap className="h-6 w-6" />
                 </div>
@@ -624,7 +626,7 @@ export function Home() {
               </div>
 
               {/* Card 4: Repairs & Maintenance */}
-              <div className="rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.03)] border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 flex flex-col group">
+              <div className="rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.03)] border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 flex flex-col group h-full">
                 <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
                   <Wrench className="h-6 w-6" />
                 </div>
@@ -635,7 +637,7 @@ export function Home() {
               </div>
 
               {/* Card 5: EV Charger Installation Darwin */}
-              <div className="rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.03)] border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 flex flex-col group">
+              <div className="rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.03)] border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 flex flex-col group h-full">
                 <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
                   <Activity className="h-6 w-6" />
                 </div>
@@ -738,7 +740,7 @@ export function Home() {
       <PackagesSection />
 
       {/* HOW IT WORKS / PROCESS SECTION */}
-      <section className="py-28 bg-[#030712] bg-gradient-to-b from-[#030712] via-[#0B1524] to-[#030712] overflow-hidden relative border-b border-slate-950">
+      <section className="py-24 bg-[#030712] bg-gradient-to-b from-[#030712] via-[#0B1524] to-[#030712] overflow-hidden relative border-b border-slate-950">
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-15 mix-blend-overlay pointer-events-none" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none" />
         
@@ -770,7 +772,7 @@ export function Home() {
                 title: "Free Consultation", 
                 desc: "We assess your power bills, roof space, and energy goals. You receive a written quote with no pressure to proceed.",
                 icon: HeadphonesIcon,
-                gradient: "from-[#8cc63f] to-[#7bc034]",
+                gradient: "from-brand-500 to-brand-300",
                 shadow: "shadow-brand-500/10",
                 yOffset: "lg:translate-y-0"
               },
@@ -788,8 +790,8 @@ export function Home() {
                 title: "Installation", 
                 desc: "Our NT-licensed team installs your system in one day in most cases. Clean, cyclone-rated, and grid-ready from panel to inverter.",
                 icon: Wrench,
-                gradient: "from-teal-400 to-emerald-600",
-                shadow: "shadow-teal-500/10",
+                gradient: "from-brand-500 to-brand-300",
+                shadow: "shadow-brand-500/10",
                 yOffset: "lg:translate-y-2"
               },
               { 
@@ -797,7 +799,7 @@ export function Home() {
                 title: "Power On", 
                 desc: "System commissioned, grid-connected, monitoring set up. Start tracking your savings from your phone from day one.",
                 icon: Zap,
-                gradient: "from-[#8cc63f] to-emerald-500",
+                gradient: "from-brand-500 to-brand-300",
                 shadow: "shadow-brand-500/10",
                 yOffset: "lg:translate-y-8"
               }
@@ -928,14 +930,14 @@ export function Home() {
                     <div className="text-brand-400 text-[1rem] font-medium leading-[1]">13.5 kWh</div>
                   </div>
                   <div className="w-full bg-slate-950 rounded-full h-2.5 mb-3 overflow-hidden border border-slate-800">
-                    <div className="bg-gradient-to-r from-brand-600 to-emerald-400 h-full rounded-full w-[85%] relative">
+                    <div className="bg-gradient-to-r from-brand-500 to-brand-300 h-full rounded-full w-[85%] relative">
                       <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.2)_50%,transparent_75%,transparent_100%)] bg-[length:20px_20px] animate-[bg-slide_1s_linear_infinite]"></div>
                     </div>
                   </div>
                   <div className="flex justify-between items-center text-[0.875rem] font-normal leading-[1.5] uppercase tracking-wider">
                     <span className="text-slate-400">STATUS: SYSTEM ACTIVE</span>
-                    <span className="text-emerald-400 flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span className="text-brand-400 flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse"></span>
                       Active
                     </span>
                   </div>
@@ -1002,13 +1004,13 @@ export function Home() {
             
             {/* Card 1: Darwin City */}
             <div className="bg-gradient-to-b from-[#0F2317] to-[#0A120D] border border-emerald-950/40 p-8 rounded-[2rem] flex flex-col relative overflow-hidden h-full shadow-2xl group hover:border-brand-500/30 transition-all duration-300 min-h-[360px]">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-400 to-emerald-500" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-500 to-brand-300" />
               
               <div className="flex justify-between items-start mb-6">
                 <div className="w-11 h-11 bg-brand-500/10 rounded-xl flex items-center justify-center border border-brand-500/20 text-brand-400">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-[0.875rem] font-normal leading-[1.5] text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded-full border border-brand-500/25 uppercase tracking-widest">
                   Primary
                 </span>
               </div>
@@ -1028,20 +1030,20 @@ export function Home() {
                 </div>
               </div>
 
-              <Link to="/contact" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
+              <Link to="/locations/darwin-city" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
                 View Darwin Solar <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
 
             {/* Card 2: Northern Darwin */}
             <div className="bg-gradient-to-b from-[#0F2317] to-[#0A120D] border border-emerald-950/40 p-8 rounded-[2rem] flex flex-col relative overflow-hidden h-full shadow-2xl group hover:border-brand-500/30 transition-all duration-300 min-h-[360px]">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-400 to-emerald-500" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-500 to-brand-300" />
               
               <div className="flex justify-between items-start mb-6">
                 <div className="w-11 h-11 bg-brand-500/10 rounded-xl flex items-center justify-center border border-brand-500/20 text-brand-400">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-[0.875rem] font-normal leading-[1.5] text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded-full border border-brand-500/25 uppercase tracking-widest">
                   Active
                 </span>
               </div>
@@ -1061,20 +1063,20 @@ export function Home() {
                 </div>
               </div>
 
-              <Link to="/contact" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
+              <Link to="/locations/northern-darwin" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
                 View All Suburbs <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
 
             {/* Card 3: Alice Springs */}
             <div className="bg-gradient-to-b from-[#0F2317] to-[#0A120D] border border-emerald-950/40 p-8 rounded-[2rem] flex flex-col relative overflow-hidden h-full shadow-2xl group hover:border-brand-500/30 transition-all duration-300 min-h-[360px]">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-400 to-emerald-500" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-500 to-brand-300" />
               
               <div className="flex justify-between items-start mb-6">
                 <div className="w-11 h-11 bg-brand-500/10 rounded-xl flex items-center justify-center border border-brand-500/20 text-brand-400">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-[0.875rem] font-normal leading-[1.5] text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded-full border border-brand-500/25 uppercase tracking-widest">
                   Regional
                 </span>
               </div>
@@ -1107,13 +1109,13 @@ export function Home() {
 
             {/* Card 4: Palmerston */}
             <div className="bg-gradient-to-b from-[#0F2317] to-[#0A120D] border border-emerald-950/40 p-8 rounded-[2rem] flex flex-col relative overflow-hidden h-full shadow-2xl group hover:border-brand-500/30 transition-all duration-300 min-h-[360px]">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-400 to-emerald-500" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-500 to-brand-300" />
               
               <div className="flex justify-between items-start mb-6">
                 <div className="w-11 h-11 bg-brand-500/10 rounded-xl flex items-center justify-center border border-brand-500/20 text-brand-400">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-[0.875rem] font-normal leading-[1.5] text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded-full border border-brand-500/25 uppercase tracking-widest">
                   Active
                 </span>
               </div>
@@ -1133,20 +1135,20 @@ export function Home() {
                 </div>
               </div>
 
-              <Link to="/contact" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
+              <Link to="/locations/palmerston" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
                 Palmerston Solar <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
 
             {/* Card 5: Darwin Rural */}
             <div className="bg-gradient-to-b from-[#0F2317] to-[#0A120D] border border-emerald-950/40 p-8 rounded-[2rem] flex flex-col relative overflow-hidden h-full shadow-2xl group hover:border-brand-500/30 transition-all duration-300 min-h-[360px]">
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-400 to-emerald-500" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-500 to-brand-300" />
               
               <div className="flex justify-between items-start mb-6">
                 <div className="w-11 h-11 bg-brand-500/10 rounded-xl flex items-center justify-center border border-brand-500/20 text-brand-400">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <span className="text-[0.875rem] font-normal leading-[1.5] text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded-full border border-brand-500/25 uppercase tracking-widest">
                   Active
                 </span>
               </div>
@@ -1166,7 +1168,7 @@ export function Home() {
                 </div>
               </div>
 
-              <Link to="/contact" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
+              <Link to="/locations/darwin-rural" className="text-[1rem] font-medium leading-[1] text-[#8cc63f] hover:text-brand-300 flex items-center gap-1 group-hover:translate-x-1 transition-transform mt-auto">
                 Darwin Rural <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
@@ -1184,7 +1186,7 @@ export function Home() {
                 </svg>
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0A120D]" />
               </div>
-              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-400 to-emerald-500" />
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-500 to-brand-300" />
               
               <div className="flex-grow relative z-10 pt-6">
                 <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-4">Not Sure We Cover Your Area?</h3>
@@ -1296,7 +1298,7 @@ export function Home() {
       {/* THE ONEROOF GUARANTEE */}
       <section className="py-24 bg-slate-900 relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="bg-gradient-to-r from-brand-600 to-green-500 rounded-[3rem] p-1 shadow-2xl relative overflow-hidden">
+          <div className="bg-gradient-to-r from-brand-500 to-brand-300 rounded-[3rem] p-1 shadow-2xl relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
             <div className="bg-slate-900 rounded-[2.8rem] px-6 py-16 md:px-12 md:py-20 flex flex-col lg:flex-row items-center gap-12 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-500/10 rounded-full blur-[100px]"></div>
@@ -1354,8 +1356,8 @@ export function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <FadeIn>
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-1 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full text-[0.875rem] font-normal leading-[1.5] text-emerald-600 mb-4 shadow-sm">
-                <Star className="w-3.5 h-3.5 fill-emerald-500 text-emerald-500" />
+              <div className="inline-flex items-center gap-1 bg-brand-500/10 border border-brand-500/20 px-3 py-1 rounded-full text-[0.875rem] font-normal leading-[1.5] text-brand-600 mb-4 shadow-sm">
+                <Star className="w-3.5 h-3.5 fill-brand-500 text-brand-500" />
                 <span>Verified 5-Star Reviews</span>
               </div>
               <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4">What Our Clients Say</h2>
@@ -1529,7 +1531,7 @@ export function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl sm:rounded-[3rem] overflow-hidden bg-[#0A1118] border border-slate-800 px-6 py-12 sm:p-10 md:p-16 lg:p-20 shadow-2xl shadow-brand-500/10">
             <div className="absolute top-0 right-0 w-[600px] h-full bg-gradient-to-r from-transparent to-brand-500/20 rounded-l-full blur-[80px] pointer-events-none"></div>
-            <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+            <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-brand-500/20 rounded-full blur-[100px] pointer-events-none"></div>
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] mix-blend-overlay pointer-events-none" />
             
             <div className="relative z-10 grid lg:grid-cols-12 gap-12 items-center">
@@ -1541,7 +1543,7 @@ export function Home() {
                   </div>
                   <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6">
                     Ready to slash your <br className="hidden lg:block" />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">electricity bills?</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">electricity bills?</span>
                   </h2>
                   <p className="text-[1rem] font-normal leading-[1.6] text-slate-400 max-w-2xl mx-auto lg:mx-0">
                     Schedule a free consultation today. Our experts will design the perfect system for your roof and energy needs in Darwin, Alice Springs, or Palmerston.
@@ -1551,7 +1553,7 @@ export function Home() {
               
               <div className="lg:col-span-5 flex flex-col sm:flex-row lg:flex-col justify-center sm:justify-start lg:items-end gap-4 w-full">
                 <FadeIn delay={0.2} className="w-full sm:w-auto lg:w-full max-w-sm flex flex-col gap-4">
-                  <Button size="lg" className="rounded-full w-full h-16 text-[1rem] font-medium leading-[1] bg-gradient-to-r from-brand-500 to-emerald-500 hover:from-brand-500 hover:to-emerald-500 text-slate-900 shadow-[0_0_40px_rgba(140,198,63,0.3)] hover:shadow-[0_0_60px_rgba(140,198,63,0.4)] transition-all hover:-translate-y-1" asChild>
+                  <Button size="lg" className="rounded-full w-full h-16 text-[1rem] font-medium leading-[1] bg-gradient-to-r from-brand-500 to-brand-300 hover:from-brand-400 hover:to-brand-300 text-slate-900 shadow-[0_0_40px_rgba(140,198,63,0.3)] hover:shadow-[0_0_60px_rgba(140,198,63,0.4)] transition-all hover:-translate-y-1" asChild>
                     <Link to="/contact">Book Free Consultation <ArrowRight className="ml-2 w-6 h-6" /></Link>
                   </Button>
                   <a href={`tel:${PRIMARY_PHONE_RAW}`} className="inline-flex items-center justify-center rounded-full w-full h-16 text-[1rem] font-medium leading-[1] border-2 border-white/20 text-white hover:bg-transparent hover:text-white hover:border-white/20 backdrop-blur-sm transition-all shadow-sm">

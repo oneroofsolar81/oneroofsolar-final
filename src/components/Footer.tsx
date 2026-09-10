@@ -90,7 +90,7 @@ export function Footer() {
                   <MapPin className="h-4 w-4 text-brand-400" />
                 </div>
                 <div>
-                  <Link to="/solar-panels-darwin" className="text-white hover:text-[#5BC94D] transition-colors font-semibold block mb-1">
+                  <Link to="/solar-panels-darwin" className="text-white hover:text-[#8cc63f] transition-colors font-semibold block mb-1">
                     Darwin
                   </Link>
                   <span className="text-slate-400 block leading-tight">3/97 Pruen Rd, Berrimah<br/>NT 0828</span>
@@ -104,7 +104,7 @@ export function Footer() {
                   <MapPin className="h-4 w-4 text-brand-400" />
                 </div>
                 <div>
-                  <Link to="/solar-alice-springs/" className="text-white hover:text-[#5BC94D] transition-colors font-semibold block mb-1">
+                  <Link to="/solar-alice-springs/" className="text-white hover:text-[#8cc63f] transition-colors font-semibold block mb-1">
                     Alice Springs
                   </Link>
                   <span className="text-slate-400 block leading-tight">44 Zeil St, Araluen<br/>NT 0870</span>

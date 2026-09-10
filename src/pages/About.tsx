@@ -55,12 +55,12 @@ export function About() {
               </div>
               {pageData?.heroTitle ? (
                 <h1 
-                  className="text-[40px] md:text-[48px] lg:text-[57px] font-black tracking-tight text-white mb-8 leading-[1.1]"
+                  className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-8 leading-[1.1]"
                   dangerouslySetInnerHTML={{ __html: pageData.heroTitle }}
                 />
               ) : (
-                <h1 className="text-[40px] md:text-[48px] lg:text-[57px] font-black tracking-tight text-white mb-8 leading-[1.1]">
-                  Your Trusted Solar Partner in the <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">Northern Territory</span>
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-8 leading-[1.1]">
+                  Your Trusted Solar Partner in the <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Northern Territory</span>
                 </h1>
               )}
               <div className="text-[18px] lg:text-[20px] text-slate-300 font-light mb-12 leading-relaxed border-l-4 border-brand-500/50 pl-6 lg:pl-10 relative">
@@ -171,7 +171,7 @@ export function About() {
                
                <FadeIn delay={0.2} className="order-1 lg:order-2 flex flex-col justify-center">
                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6">
-                   Our Core <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-green-500">Values</span>
+                   Our Core <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Values</span>
                  </h2>
                  <p className="text-slate-600 text-lg leading-relaxed mb-8">
                     We believe in delivering excellence at every stage of your solar journey. Our commitment goes beyond installation; it's about providing long-term value.

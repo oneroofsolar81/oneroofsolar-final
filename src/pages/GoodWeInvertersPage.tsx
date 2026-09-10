@@ -23,9 +23,9 @@ import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
 import { SEO } from "../components/SEO";
 
-import heroInverterImg from "../assets/images/inverter_hero_install_1785339518164.jpg";
-import closeUpImg from "../assets/images/inverter_macro_close_up_1785339540642.jpg";
-import quoteTabletImg from "../assets/images/inverter_quote_tablet_1785339577877.jpg";
+import heroInverterImg from "../assets/images/inverter_hero_install_1785339518164.webp";
+import closeUpImg from "../assets/images/inverter_macro_close_up_1785339540642.webp";
+import quoteTabletImg from "../assets/images/inverter_quote_tablet_1785339577877.webp";
 
 export function GoodWeInvertersPage() {
   const [openFaqs, setOpenFaqs] = useState<number[]>([0]);
@@ -105,7 +105,7 @@ export function GoodWeInvertersPage() {
       <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-[#0A1118]/60"></div>
-          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#5BC94D]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#8cc63f]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
         </div>
 
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
@@ -116,18 +116,18 @@ export function GoodWeInvertersPage() {
               <FadeIn isHero>
                 {/* Breadcrumb */}
                 <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
-                  <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
+                  <Link to="/" className="hover:text-[#8cc63f] transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <Link to="/products/solar-inverters" className="hover:text-[#5BC94D] transition-colors">Solar Inverters</Link>
+                  <Link to="/products/solar-inverters" className="hover:text-[#8cc63f] transition-colors">Solar Inverters</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <span className="text-[#5BC94D]" aria-current="page">GoodWe Inverters</span>
+                  <span className="text-[#8cc63f]" aria-current="page">GoodWe Inverters</span>
                 </nav>
 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6">
                   GoodWe Solar Inverters Darwin &amp; NT
                 </h1>
 
-                <div className="space-y-4 text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-6 mb-8 max-w-2xl">
+                <div className="space-y-4 text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#8cc63f] pl-6 mb-8 max-w-2xl">
                   <p>
                     Oneroof Solar supplies and installs GoodWe solar and hybrid energy-storage inverters across Darwin and the Northern Territory.
                   </p>
@@ -139,7 +139,7 @@ export function GoodWeInvertersPage() {
                 <div className="flex flex-wrap items-center gap-4 mb-6">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -151,7 +151,7 @@ export function GoodWeInvertersPage() {
                     href="tel:0483986444"
                     className="inline-flex items-center justify-center h-14 px-8 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold transition-all border border-white/20 text-xs uppercase tracking-wider gap-2"
                   >
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>Call 0483 986 444</span>
                   </a>
                 </div>
@@ -159,11 +159,11 @@ export function GoodWeInvertersPage() {
                 {/* Micro Badges */}
                 <div className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center gap-6 text-xs text-slate-400 font-semibold">
                   <span className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-[#5BC94D]" />
+                    <ShieldCheck className="w-4 h-4 text-[#8cc63f]" />
                     Certified Quality Inverters
                   </span>
                   <span className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-[#5BC94D]" />
+                    <MapPin className="w-4 h-4 text-[#8cc63f]" />
                     Darwin &amp; NT Local Installation
                   </span>
                 </div>
@@ -184,10 +184,10 @@ export function GoodWeInvertersPage() {
                   {/* Floating Badge */}
                   <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 border border-slate-800 backdrop-blur-md flex items-center justify-between">
                     <div>
-                      <span className="text-[10px]  uppercase tracking-widest text-[#5BC94D] font-bold block mb-1">Top End Certified</span>
+                      <span className="text-[10px]  uppercase tracking-widest text-[#8cc63f] font-bold block mb-1">Top End Certified</span>
                       <p className="text-white text-xs font-bold">GoodWe ESA &amp; ET G2 Series Available</p>
                     </div>
-                    <span className="px-3 py-1 rounded-full bg-[#5BC94D]/20 text-[#5BC94D]  text-[11px] font-bold border border-[#5BC94D]/30">
+                    <span className="px-3 py-1 rounded-full bg-[#8cc63f]/20 text-[#8cc63f]  text-[11px] font-bold border border-[#8cc63f]/30">
                       Single &amp; 3-Phase
                     </span>
                   </div>
@@ -216,7 +216,7 @@ export function GoodWeInvertersPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
                   <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-white/95 border border-slate-200 shadow-md">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center font-bold">
+                      <div className="w-10 h-10 rounded-lg bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center font-bold">
                         <Award className="w-5 h-5" />
                       </div>
                       <div>
@@ -230,7 +230,7 @@ export function GoodWeInvertersPage() {
 
               {/* Right Column: Content */}
               <div className="lg:col-span-7 order-1 lg:order-2">
-                <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
+                <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                   Global Solar Manufacturer
                 </div>
                 
@@ -250,7 +250,7 @@ export function GoodWeInvertersPage() {
                 {/* Key Specification Highlights */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
                     <div>
                       <h4 className="text-sm font-extrabold text-slate-900">Wood Mackenzie Top Supplier</h4>
                       <p className="text-xs text-slate-600 font-medium mt-0.5">Global leader in inverter supply volume (H1 2025).</p>
@@ -258,7 +258,7 @@ export function GoodWeInvertersPage() {
                   </div>
 
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
                     <div>
                       <h4 className="text-sm font-extrabold text-slate-900">S&amp;P Tier 1 Supplier</h4>
                       <p className="text-xs text-slate-600 font-medium mt-0.5">Proven quality and financial stability.</p>
@@ -266,7 +266,7 @@ export function GoodWeInvertersPage() {
                   </div>
 
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
                     <div>
                       <h4 className="text-sm font-extrabold text-slate-900">Built for NT Climate</h4>
                       <p className="text-xs text-slate-600 font-medium mt-0.5">Reliable performance in Darwin heat &amp; humidity.</p>
@@ -274,7 +274,7 @@ export function GoodWeInvertersPage() {
                   </div>
 
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
                     <div>
                       <h4 className="text-sm font-extrabold text-slate-900">Multi-MPPT Tracking</h4>
                       <p className="text-xs text-slate-600 font-medium mt-0.5">Optimized yield across varied roof orientations.</p>
@@ -293,7 +293,7 @@ export function GoodWeInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-3xl mb-12">
-              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 System Comparison
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
@@ -308,10 +308,10 @@ export function GoodWeInvertersPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
               
               {/* GOODWE ESA SERIES CARD */}
-              <div className="bg-white border-2 border-slate-200 hover:border-[#5BC94D] rounded-2xl p-6 sm:p-8 shadow-sm transition-all flex flex-col justify-between">
+              <div className="bg-white border-2 border-slate-200 hover:border-[#8cc63f] rounded-2xl p-6 sm:p-8 shadow-sm transition-all flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-100">
-                    <span className="px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider">
+                    <span className="px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider">
                       Single Phase
                     </span>
                     <span className="text-xs font-extrabold text-slate-500">3–10kW Capacity</span>
@@ -326,27 +326,27 @@ export function GoodWeInvertersPage() {
 
                   <ul className="space-y-3.5 text-slate-700 text-base font-medium mb-6">
                     <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-[#5BC94D] shrink-0 mt-2"></span>
+                      <span className="w-2 h-2 rounded-full bg-[#8cc63f] shrink-0 mt-2"></span>
                       <span><strong className="text-slate-900 font-extrabold">Power phase:</strong> Single phase</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-[#5BC94D] shrink-0 mt-2"></span>
+                      <span className="w-2 h-2 rounded-full bg-[#8cc63f] shrink-0 mt-2"></span>
                       <span><strong className="text-slate-900 font-extrabold">Capacity:</strong> 3–10kW</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-[#5BC94D] shrink-0 mt-2"></span>
+                      <span className="w-2 h-2 rounded-full bg-[#8cc63f] shrink-0 mt-2"></span>
                       <span><strong className="text-slate-900 font-extrabold">System type:</strong> All-in-one energy-storage system</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-[#5BC94D] shrink-0 mt-2"></span>
+                      <span className="w-2 h-2 rounded-full bg-[#8cc63f] shrink-0 mt-2"></span>
                       <span><strong className="text-slate-900 font-extrabold">Best for:</strong> Standard homes</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-[#5BC94D] shrink-0 mt-2"></span>
+                      <span className="w-2 h-2 rounded-full bg-[#8cc63f] shrink-0 mt-2"></span>
                       <span><strong className="text-slate-900 font-extrabold">Battery setup:</strong> Coordinated modular system</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="w-2 h-2 rounded-full bg-[#5BC94D] shrink-0 mt-2"></span>
+                      <span className="w-2 h-2 rounded-full bg-[#8cc63f] shrink-0 mt-2"></span>
                       <span><strong className="text-slate-900 font-extrabold">Off-grid projects:</strong> Subject to site assessment</span>
                     </li>
                   </ul>
@@ -360,7 +360,7 @@ export function GoodWeInvertersPage() {
               </div>
 
               {/* GOODWE ET G2 SERIES CARD */}
-              <div className="bg-white border-2 border-slate-200 hover:border-[#5BC94D] rounded-2xl p-6 sm:p-8 shadow-sm transition-all flex flex-col justify-between">
+              <div className="bg-white border-2 border-slate-200 hover:border-[#8cc63f] rounded-2xl p-6 sm:p-8 shadow-sm transition-all flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-4 pb-4 border-b border-slate-100">
                     <span className="px-3 py-1 rounded-full bg-slate-900 text-white font-extrabold text-xs uppercase tracking-wider">
@@ -421,7 +421,7 @@ export function GoodWeInvertersPage() {
 
               <Button
                 size="lg"
-                className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 uppercase tracking-wider text-xs shrink-0 w-full md:w-auto"
+                className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 uppercase tracking-wider text-xs shrink-0 w-full md:w-auto"
                 asChild
               >
                 <Link to="/contact">
@@ -439,7 +439,7 @@ export function GoodWeInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto mb-14">
-              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Product Lineup
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -451,10 +451,10 @@ export function GoodWeInvertersPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
               
               {/* GOODWE ESA SERIES PRODUCT CARD */}
-              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#5BC94D]/60 transition-all shadow-xs">
+              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#8cc63f]/60 transition-all shadow-xs">
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-4">
-                    <span className="px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D]  text-xs font-extrabold uppercase tracking-wider">
+                    <span className="px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f]  text-xs font-extrabold uppercase tracking-wider">
                       Single Phase · 3–10kW
                     </span>
                     <Battery className="w-5 h-5 text-slate-400" />
@@ -495,8 +495,8 @@ export function GoodWeInvertersPage() {
                   </div>
 
                   {/* Best for */}
-                  <div className="mb-8 p-4 rounded-xl bg-emerald-50/60 border border-emerald-200/60">
-                    <span className="text-xs font-black text-emerald-800 uppercase tracking-wider block mb-1">
+                  <div className="mb-8 p-4 rounded-xl bg-brand-100/60 border border-brand-200/60">
+                    <span className="text-xs font-black text-brand-800 uppercase tracking-wider block mb-1">
                       Best for:
                     </span>
                     <p className="text-slate-800 text-sm font-semibold leading-relaxed">
@@ -517,7 +517,7 @@ export function GoodWeInvertersPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <Download className="w-4 h-4 text-[#8cc63f]" />
                       <span>Download GoodWe ESA 3–10kW Manual</span>
                     </a>
                   </Button>
@@ -525,7 +525,7 @@ export function GoodWeInvertersPage() {
               </div>
 
               {/* GOODWE ET G2 SERIES PRODUCT CARD */}
-              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#5BC94D]/60 transition-all shadow-xs">
+              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-[#8cc63f]/60 transition-all shadow-xs">
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-4">
                     <span className="px-3.5 py-1 rounded-full bg-slate-900 text-white  text-xs font-extrabold uppercase tracking-wider">
@@ -553,7 +553,7 @@ export function GoodWeInvertersPage() {
                   {/* MPPT Specification Note */}
                   <div className="mb-6 p-4 rounded-xl bg-white border border-slate-200/80">
                     <div className="flex items-start gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
                       <div>
                         <h4 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-1">
                           MPPT &amp; High-Voltage Battery Flexibility:
@@ -566,8 +566,8 @@ export function GoodWeInvertersPage() {
                   </div>
 
                   {/* Best for */}
-                  <div className="mb-8 p-4 rounded-xl bg-emerald-50/60 border border-emerald-200/60">
-                    <span className="text-xs font-black text-emerald-800 uppercase tracking-wider block mb-1">
+                  <div className="mb-8 p-4 rounded-xl bg-brand-100/60 border border-brand-200/60">
+                    <span className="text-xs font-black text-brand-800 uppercase tracking-wider block mb-1">
                       Best for:
                     </span>
                     <p className="text-slate-800 text-sm font-semibold leading-relaxed">
@@ -588,7 +588,7 @@ export function GoodWeInvertersPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <Download className="w-4 h-4 text-[#8cc63f]" />
                       <span>Download GoodWe ET G2 Spec Sheet</span>
                     </a>
                   </Button>
@@ -606,7 +606,7 @@ export function GoodWeInvertersPage() {
           <FadeIn>
             <div className="bg-white border-2 border-slate-200 rounded-3xl p-8 sm:p-12 lg:p-14 shadow-sm">
               <div className="max-w-4xl">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D]  text-xs font-extrabold uppercase tracking-wider mb-4">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f]  text-xs font-extrabold uppercase tracking-wider mb-4">
                   <SlidersHorizontal className="w-3.5 h-3.5" />
                   <span>Selection Guidance</span>
                 </div>
@@ -627,7 +627,7 @@ export function GoodWeInvertersPage() {
                 <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-slate-100">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -639,7 +639,7 @@ export function GoodWeInvertersPage() {
                     href="tel:0483986444"
                     className="inline-flex items-center justify-center h-14 px-8 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold transition-all text-xs uppercase tracking-wider gap-2 border border-slate-200"
                   >
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>0483 986 444</span>
                   </a>
                 </div>
@@ -657,7 +657,7 @@ export function GoodWeInvertersPage() {
               
               {/* Left Column: Content */}
               <div className="lg:col-span-7">
-                <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
+                <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                   Standalone &amp; Remote Power
                 </div>
 
@@ -681,23 +681,23 @@ export function GoodWeInvertersPage() {
                   </h3>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-slate-800 text-base font-semibold">
                     <li className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                       <span>A suitable GoodWe inverter</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                       <span>Solar panels and battery storage</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                       <span>Essential-load circuits</span>
                     </li>
                     <li className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                       <span>Generator integration</span>
                     </li>
                     <li className="flex items-center gap-3 sm:col-span-2">
-                      <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                       <span>Monitoring and load management</span>
                     </li>
                   </ul>
@@ -710,7 +710,7 @@ export function GoodWeInvertersPage() {
 
                 <Button
                   size="lg"
-                  className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 uppercase tracking-wider text-xs"
+                  className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 uppercase tracking-wider text-xs"
                   asChild
                 >
                   <Link to="/contact">
@@ -730,7 +730,7 @@ export function GoodWeInvertersPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-transparent opacity-85"></div>
                   
                   <div className="absolute bottom-6 left-6 right-6 p-5 rounded-xl bg-slate-900/90 border border-slate-800 backdrop-blur-md">
-                    <span className="text-[10px]  uppercase tracking-widest text-[#5BC94D] font-bold block mb-1">
+                    <span className="text-[10px]  uppercase tracking-widest text-[#8cc63f] font-bold block mb-1">
                       Remote &amp; Rural NT
                     </span>
                     <h4 className="text-white text-sm font-bold mb-1">
@@ -753,7 +753,7 @@ export function GoodWeInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-3xl mb-12">
-              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 System Recommendation Process
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
@@ -768,13 +768,13 @@ export function GoodWeInvertersPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-10">
               
               {/* STEP 1 */}
-              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
+              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#8cc63f] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       01
                     </span>
-                    <Building2 className="w-5 h-5 text-[#5BC94D]" />
+                    <Building2 className="w-5 h-5 text-[#8cc63f]" />
                   </div>
                   <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
                     Confirm the Property Type
@@ -786,13 +786,13 @@ export function GoodWeInvertersPage() {
               </div>
 
               {/* STEP 2 */}
-              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
+              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#8cc63f] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       02
                     </span>
-                    <Zap className="w-5 h-5 text-[#5BC94D]" />
+                    <Zap className="w-5 h-5 text-[#8cc63f]" />
                   </div>
                   <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
                     Confirm the Power Phase and Grid Connection
@@ -804,13 +804,13 @@ export function GoodWeInvertersPage() {
               </div>
 
               {/* STEP 3 */}
-              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
+              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#8cc63f] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       03
                     </span>
-                    <Sun className="w-5 h-5 text-[#5BC94D]" />
+                    <Sun className="w-5 h-5 text-[#8cc63f]" />
                   </div>
                   <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
                     Review Electricity Use
@@ -822,13 +822,13 @@ export function GoodWeInvertersPage() {
               </div>
 
               {/* STEP 4 */}
-              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
+              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#8cc63f] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       04
                     </span>
-                    <SlidersHorizontal className="w-5 h-5 text-[#5BC94D]" />
+                    <SlidersHorizontal className="w-5 h-5 text-[#8cc63f]" />
                   </div>
                   <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
                     Check High-Demand Equipment
@@ -840,13 +840,13 @@ export function GoodWeInvertersPage() {
               </div>
 
               {/* STEP 5 */}
-              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
+              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#8cc63f] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       05
                     </span>
-                    <Battery className="w-5 h-5 text-[#5BC94D]" />
+                    <Battery className="w-5 h-5 text-[#8cc63f]" />
                   </div>
                   <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
                     Select the Battery Capacity
@@ -858,13 +858,13 @@ export function GoodWeInvertersPage() {
               </div>
 
               {/* STEP 6 */}
-              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#5BC94D] transition-all">
+              <div className="bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xs hover:border-[#8cc63f] transition-all">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <span className="w-10 h-10 rounded-xl bg-slate-900 text-white  font-black text-sm flex items-center justify-center">
                       06
                     </span>
-                    <ShieldCheck className="w-5 h-5 text-[#5BC94D]" />
+                    <ShieldCheck className="w-5 h-5 text-[#8cc63f]" />
                   </div>
                   <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
                     Plan Backup or Off-Grid Operation
@@ -885,7 +885,7 @@ export function GoodWeInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto mb-14">
-              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Proven Local Performance
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -897,8 +897,8 @@ export function GoodWeInvertersPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               
               {/* POINT 1 */}
-              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex items-start gap-5 hover:border-[#5BC94D] transition-all">
-                <div className="w-12 h-12 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center shrink-0 mt-1 font-bold">
+              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex items-start gap-5 hover:border-[#8cc63f] transition-all">
+                <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center shrink-0 mt-1 font-bold">
                   <Sun className="w-6 h-6" />
                 </div>
                 <div>
@@ -912,8 +912,8 @@ export function GoodWeInvertersPage() {
               </div>
 
               {/* POINT 2 */}
-              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex items-start gap-5 hover:border-[#5BC94D] transition-all">
-                <div className="w-12 h-12 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center shrink-0 mt-1 font-bold">
+              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex items-start gap-5 hover:border-[#8cc63f] transition-all">
+                <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center shrink-0 mt-1 font-bold">
                   <Award className="w-6 h-6" />
                 </div>
                 <div>
@@ -927,8 +927,8 @@ export function GoodWeInvertersPage() {
               </div>
 
               {/* POINT 3 */}
-              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex items-start gap-5 hover:border-[#5BC94D] transition-all">
-                <div className="w-12 h-12 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center shrink-0 mt-1 font-bold">
+              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex items-start gap-5 hover:border-[#8cc63f] transition-all">
+                <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center shrink-0 mt-1 font-bold">
                   <Zap className="w-6 h-6" />
                 </div>
                 <div>
@@ -942,8 +942,8 @@ export function GoodWeInvertersPage() {
               </div>
 
               {/* POINT 4 */}
-              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex items-start gap-5 hover:border-[#5BC94D] transition-all">
-                <div className="w-12 h-12 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center shrink-0 mt-1 font-bold">
+              <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-8 flex items-start gap-5 hover:border-[#8cc63f] transition-all">
+                <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center shrink-0 mt-1 font-bold">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
                 <div>
@@ -967,7 +967,7 @@ export function GoodWeInvertersPage() {
           <FadeIn>
             <div className="bg-white border-2 border-slate-200 rounded-3xl p-8 sm:p-12 lg:p-14 shadow-sm">
               <div className="max-w-4xl">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D]  text-xs font-extrabold uppercase tracking-wider mb-4">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f]  text-xs font-extrabold uppercase tracking-wider mb-4">
                   <Award className="w-3.5 h-3.5" />
                   <span>Local Expertise</span>
                 </div>
@@ -987,31 +987,31 @@ export function GoodWeInvertersPage() {
                     </h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-800 text-base font-semibold">
                       <div className="flex items-center gap-2.5">
-                        <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                        <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                         <span>System Assessment</span>
                       </div>
                       <div className="flex items-center gap-2.5">
-                        <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                        <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                         <span>Equipment Selection</span>
                       </div>
                       <div className="flex items-center gap-2.5">
-                        <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                        <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                         <span>Supply</span>
                       </div>
                       <div className="flex items-center gap-2.5">
-                        <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                        <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                         <span>Installation</span>
                       </div>
                       <div className="flex items-center gap-2.5">
-                        <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                        <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                         <span>Commissioning</span>
                       </div>
                       <div className="flex items-center gap-2.5">
-                        <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                        <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                         <span>Monitoring Setup</span>
                       </div>
                       <div className="flex items-center gap-2.5 sm:col-span-2">
-                        <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                        <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                         <span>Warranty Documentation</span>
                       </div>
                     </div>
@@ -1025,7 +1025,7 @@ export function GoodWeInvertersPage() {
                 <div className="pt-4 border-t border-slate-100">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -1044,7 +1044,7 @@ export function GoodWeInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] font-extrabold text-xs uppercase tracking-wider mb-3">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Got Questions?
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
@@ -1110,7 +1110,7 @@ export function GoodWeInvertersPage() {
                       <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug pr-2">
                         {faq.question}
                       </h3>
-                      <div className={`shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center transition-transform duration-200 ${isOpen ? "rotate-180 bg-[#5BC94D]/10 border-[#5BC94D]/40 text-[#5BC94D]" : "text-slate-500"}`}>
+                      <div className={`shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center transition-transform duration-200 ${isOpen ? "rotate-180 bg-[#8cc63f]/10 border-[#8cc63f]/40 text-[#8cc63f]" : "text-slate-500"}`}>
                         <ChevronDown className="w-4 h-4" />
                       </div>
                     </button>
@@ -1133,9 +1133,9 @@ export function GoodWeInvertersPage() {
       <section className="py-16 lg:py-24 bg-[#0A1118] relative overflow-hidden">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <div className="relative rounded-3xl overflow-hidden border border-[#5BC94D]/30 bg-gradient-to-b from-slate-900 to-[#0B1520] p-8 sm:p-14 lg:p-16 text-center shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden border border-[#8cc63f]/30 bg-gradient-to-b from-slate-900 to-[#0B1520] p-8 sm:p-14 lg:p-16 text-center shadow-2xl">
               <div className="max-w-3xl mx-auto relative z-10">
-                <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/15 text-[#5BC94D] border border-[#5BC94D]/30 text-xs  font-bold uppercase tracking-wider mb-6">
+                <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/15 text-[#8cc63f] border border-[#8cc63f]/30 text-xs  font-bold uppercase tracking-wider mb-6">
                   Licensed Supply &amp; Installation
                 </div>
 
@@ -1150,7 +1150,7 @@ export function GoodWeInvertersPage() {
                 <div className="flex flex-wrap items-center justify-center gap-4 pt-4 border-t border-slate-800/80">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 uppercase tracking-wider text-xs sm:text-sm"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 uppercase tracking-wider text-xs sm:text-sm"
                     asChild
                   >
                     <Link to="/contact">
@@ -1162,7 +1162,7 @@ export function GoodWeInvertersPage() {
                     href="tel:0483986444"
                     className="inline-flex items-center justify-center h-14 px-8 rounded-xl bg-slate-800 text-white font-bold transition-all hover:bg-slate-700 text-xs sm:text-sm uppercase tracking-wider gap-2 border border-slate-700"
                   >
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>0483 986 444</span>
                   </a>
                 </div>

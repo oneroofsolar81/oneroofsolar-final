@@ -46,7 +46,7 @@ import { SEO } from "../components/SEO";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 import { db } from "../lib/firebase";
 import { collection, addDoc } from "firebase/firestore";
-import heroBannerImg from "../assets/images/offgrid_hero_1785224439961.jpg";
+import heroBannerImg from "../assets/images/offgrid_hero_1785224439961.webp";
 
 export function OffGridSolarSystemPage() {
   const ALICE_PHONE = "0483 937 004";
@@ -959,7 +959,7 @@ export function OffGridSolarSystemPage() {
             <FadeIn delay={0.5}>
               <div className="bg-white border border-slate-200 p-6 sm:p-8 rounded-3xl h-full flex flex-col hover:border-brand-500/40 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/30 text-teal-600 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/30 text-brand-600 flex items-center justify-center shrink-0">
                     <Wind className="w-5 h-5" />
                   </div>
                   <h3 className="text-lg font-black text-slate-900 uppercase tracking-wide">Cyclone Panel Ratings</h3>
@@ -1079,7 +1079,7 @@ export function OffGridSolarSystemPage() {
                       <td className="py-5 px-6 text-slate-700">20 to 40 kWh/day</td>
                       <td className="py-5 px-6 text-slate-700">10kW to 20kW panels</td>
                       <td className="py-5 px-6 text-slate-700">20 to 40kWh battery</td>
-                      <td className="py-5 px-6 text-emerald-600 font-semibold">Recommended — 6 to 10kVA</td>
+                      <td className="py-5 px-6 text-brand-600 font-semibold">Recommended — 6 to 10kVA</td>
                     </tr>
                     <tr className="hover:bg-slate-50 transition-colors">
                       <td className="py-5 px-6 font-bold text-slate-900">Large home or small station</td>
@@ -1476,7 +1476,7 @@ export function OffGridSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D]  text-xs uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f]  text-xs uppercase tracking-wider mb-4">
                 <Compass className="w-3.5 h-3.5" />
                 Territory Wide Coverage
               </div>
@@ -1493,8 +1493,8 @@ export function OffGridSolarSystemPage() {
             
             {/* Region 1 */}
             <FadeIn delay={0.1}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#5BC94D]/40 transition-colors">
-                <h3 className="text-lg font-black text-[#5BC94D] uppercase tracking-wide mb-3 flex items-center gap-2">
+              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#8cc63f]/40 transition-colors">
+                <h3 className="text-lg font-black text-[#8cc63f] uppercase tracking-wide mb-3 flex items-center gap-2">
                   <MapPin className="w-4 h-4 shrink-0" />
                   Darwin and Greater Darwin
                 </h3>
@@ -1506,8 +1506,8 @@ export function OffGridSolarSystemPage() {
 
             {/* Region 2 */}
             <FadeIn delay={0.2}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#5BC94D]/40 transition-colors">
-                <h3 className="text-lg font-black text-[#5BC94D] uppercase tracking-wide mb-3 flex items-center gap-2">
+              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#8cc63f]/40 transition-colors">
+                <h3 className="text-lg font-black text-[#8cc63f] uppercase tracking-wide mb-3 flex items-center gap-2">
                   <MapPin className="w-4 h-4 shrink-0" />
                   Palmerston and Rosebery
                 </h3>
@@ -1519,8 +1519,8 @@ export function OffGridSolarSystemPage() {
 
             {/* Region 3 */}
             <FadeIn delay={0.3}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#5BC94D]/40 transition-colors">
-                <h3 className="text-lg font-black text-[#5BC94D] uppercase tracking-wide mb-3 flex items-center gap-2">
+              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#8cc63f]/40 transition-colors">
+                <h3 className="text-lg font-black text-[#8cc63f] uppercase tracking-wide mb-3 flex items-center gap-2">
                   <MapPin className="w-4 h-4 shrink-0" />
                   Rural Darwin and Litchfield
                 </h3>
@@ -1532,8 +1532,8 @@ export function OffGridSolarSystemPage() {
 
             {/* Region 4 */}
             <FadeIn delay={0.4}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#5BC94D]/40 transition-colors">
-                <h3 className="text-lg font-black text-[#5BC94D] uppercase tracking-wide mb-3 flex items-center gap-2">
+              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#8cc63f]/40 transition-colors">
+                <h3 className="text-lg font-black text-[#8cc63f] uppercase tracking-wide mb-3 flex items-center gap-2">
                   <MapPin className="w-4 h-4 shrink-0" />
                   Kakadu and Top End remote
                 </h3>
@@ -1545,8 +1545,8 @@ export function OffGridSolarSystemPage() {
 
             {/* Region 5 */}
             <FadeIn delay={0.5}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#5BC94D]/40 transition-colors">
-                <h3 className="text-lg font-black text-[#5BC94D] uppercase tracking-wide mb-3 flex items-center gap-2">
+              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#8cc63f]/40 transition-colors">
+                <h3 className="text-lg font-black text-[#8cc63f] uppercase tracking-wide mb-3 flex items-center gap-2">
                   <MapPin className="w-4 h-4 shrink-0" />
                   Katherine and corridor
                 </h3>
@@ -1558,8 +1558,8 @@ export function OffGridSolarSystemPage() {
 
             {/* Region 6 */}
             <FadeIn delay={0.6}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#5BC94D]/40 transition-colors">
-                <h3 className="text-lg font-black text-[#5BC94D] uppercase tracking-wide mb-3 flex items-center gap-2">
+              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#8cc63f]/40 transition-colors">
+                <h3 className="text-lg font-black text-[#8cc63f] uppercase tracking-wide mb-3 flex items-center gap-2">
                   <MapPin className="w-4 h-4 shrink-0" />
                   Tennant Creek and Barkly
                 </h3>
@@ -1571,8 +1571,8 @@ export function OffGridSolarSystemPage() {
 
             {/* Region 7 */}
             <FadeIn delay={0.7}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#5BC94D]/40 transition-colors">
-                <h3 className="text-lg font-black text-[#5BC94D] uppercase tracking-wide mb-3 flex items-center gap-2">
+              <div className="bg-slate-900/80 border border-white/10 p-6 rounded-3xl h-full hover:border-[#8cc63f]/40 transition-colors">
+                <h3 className="text-lg font-black text-[#8cc63f] uppercase tracking-wide mb-3 flex items-center gap-2">
                   <MapPin className="w-4 h-4 shrink-0" />
                   Alice Springs and Central NT
                 </h3>
@@ -1584,21 +1584,21 @@ export function OffGridSolarSystemPage() {
 
           </div>
 
-          <FadeIn delay={0.8}>
+          <FadeIn delay={0.3}>
             <p className="text-center text-slate-400 text-xs sm:text-sm font-medium mb-10 max-w-3xl mx-auto">
-              For Alice Springs specific solar, see our <Link to="/solar-alice-springs/" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">Alice Springs solar page</Link>. For residential grid-connected systems, see our <Link to="/solar-systems/residential-solar-system" className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors">residential solar page</Link>.
+              For Alice Springs specific solar, see our <Link to="/solar-alice-springs/" className="text-[#8cc63f] font-bold underline hover:text-brand-400 transition-colors">Alice Springs solar page</Link>. For residential grid-connected systems, see our <Link to="/solar-systems/residential-solar-system" className="text-[#8cc63f] font-bold underline hover:text-brand-400 transition-colors">residential solar page</Link>.
             </p>
           </FadeIn>
 
-          <FadeIn delay={0.9}>
-            <div className="bg-gradient-to-r from-slate-900 via-[#19281D] to-slate-900 border border-[#5BC94D]/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
+          <FadeIn delay={0.35}>
+            <div className="bg-gradient-to-r from-slate-900 via-[#0A1118] to-slate-900 border border-[#8cc63f]/30 p-6 sm:p-8 rounded-3xl text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
               <div className="text-left">
                 <p className="text-lg sm:text-xl font-bold text-white mb-1">
                   Oneroof Solar services off-grid properties across all NT postcodes including remote Central NT and Top End communities.
                 </p>
               </div>
               <Button 
-                className="bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(91,201,77,0.3)] border-none"
+                className="bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 font-black px-8 py-4 rounded-2xl text-sm uppercase tracking-wider shrink-0 transition-all duration-300 shadow-[0_4px_20px_rgba(91,201,77,0.3)] border-none"
                 asChild
               >
                 <a href="#quote-form">
@@ -1616,15 +1616,15 @@ export function OffGridSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D]  text-xs uppercase tracking-wider mb-4">
-                <Star className="w-3.5 h-3.5 fill-[#5BC94D]" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f]  text-xs uppercase tracking-wider mb-4">
+                <Star className="w-3.5 h-3.5 fill-[#8cc63f]" />
                 NT Customer Testimonials
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
                 What NT Customers Say About Oneroof Solar
               </h2>
               <div className="flex flex-wrap items-center justify-center gap-3 text-slate-300 font-bold text-base mb-2">
-                <span className="text-[#5BC94D] text-2xl font-black">4.9 / 5</span>
+                <span className="text-[#8cc63f] text-2xl font-black">4.9 / 5</span>
                 <div className="flex text-amber-400">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
@@ -1633,7 +1633,7 @@ export function OffGridSolarSystemPage() {
                 <span>Based on 124+ Google reviews</span>
               </div>
               <div className="mt-2">
-                <Link to="/projects" className="text-xs  text-[#5BC94D] uppercase tracking-wider font-bold underline hover:text-emerald-400 transition-colors">
+                <Link to="/projects" className="text-xs  text-[#8cc63f] uppercase tracking-wider font-bold underline hover:text-brand-400 transition-colors">
                   See Our Projects →
                 </Link>
               </div>
@@ -1644,14 +1644,14 @@ export function OffGridSolarSystemPage() {
             
             {/* Review 1 */}
             <FadeIn delay={0.1}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl flex flex-col justify-between h-full hover:border-[#5BC94D]/40 transition-colors">
+              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl flex flex-col justify-between h-full hover:border-[#8cc63f]/40 transition-colors">
                 <div>
                   <div className="flex text-amber-400 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <Quote className="w-8 h-8 text-[#5BC94D]/30 mb-3" />
+                  <Quote className="w-8 h-8 text-[#8cc63f]/30 mb-3" />
                   <p className="text-slate-300 text-sm leading-relaxed font-medium italic mb-6">
                     "I had a great experience with Oneroof Solar from start to finish for the installation of my Solar and Sungrow Battery System in Katherine, NT. A friend recommended them for their outstanding support, and they certainly did not disappoint. Aman was excellent to work with, the installation team arrived on time and worked efficiently. Highly recommend."
                   </p>
@@ -1665,14 +1665,14 @@ export function OffGridSolarSystemPage() {
 
             {/* Review 2 */}
             <FadeIn delay={0.2}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl flex flex-col justify-between h-full hover:border-[#5BC94D]/40 transition-colors">
+              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl flex flex-col justify-between h-full hover:border-[#8cc63f]/40 transition-colors">
                 <div>
                   <div className="flex text-amber-400 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <Quote className="w-8 h-8 text-[#5BC94D]/30 mb-3" />
+                  <Quote className="w-8 h-8 text-[#8cc63f]/30 mb-3" />
                   <p className="text-slate-300 text-sm leading-relaxed font-medium italic mb-6">
                     "I purchased a huge 80kW Sungrow battery along with 30kW AIKO 470W panels providing full backup power for my entire property. So far, everything is running smoothly and I am saving around $2,000 each quarter. Aman designed the right size system for my needs."
                   </p>
@@ -1686,14 +1686,14 @@ export function OffGridSolarSystemPage() {
 
             {/* Review 3 */}
             <FadeIn delay={0.3}>
-              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl flex flex-col justify-between h-full hover:border-[#5BC94D]/40 transition-colors">
+              <div className="bg-slate-900/80 border border-white/10 p-6 sm:p-8 rounded-3xl flex flex-col justify-between h-full hover:border-[#8cc63f]/40 transition-colors">
                 <div>
                   <div className="flex text-amber-400 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                     ))}
                   </div>
-                  <Quote className="w-8 h-8 text-[#5BC94D]/30 mb-3" />
+                  <Quote className="w-8 h-8 text-[#8cc63f]/30 mb-3" />
                   <p className="text-slate-300 text-sm leading-relaxed font-medium italic mb-6">
                     "From start to finish, I cannot fault this company. The team is very informative and flexible. The install crew explained everything clearly and did a great job. Would recommend to anyone looking to get into the solar battery space."
                   </p>
@@ -1714,7 +1714,7 @@ export function OffGridSolarSystemPage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D]  text-xs uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f]  text-xs uppercase tracking-wider mb-4">
                 <HelpCircle className="w-3.5 h-3.5" />
                 NT Off-Grid FAQ
               </div>
@@ -1773,7 +1773,7 @@ export function OffGridSolarSystemPage() {
                       {faq.q}
                     </span>
                     <ChevronDown
-                      className={`w-5 h-5 text-[#5BC94D] shrink-0 transition-transform duration-300 ${
+                      className={`w-5 h-5 text-[#8cc63f] shrink-0 transition-transform duration-300 ${
                         openFaq === idx ? "rotate-180" : ""
                       }`}
                     />
@@ -1798,7 +1798,7 @@ export function OffGridSolarSystemPage() {
             {/* Left Column */}
             <div className="lg:col-span-5 space-y-8">
               <FadeIn>
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D]  text-xs uppercase tracking-wider mb-3">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f]  text-xs uppercase tracking-wider mb-3">
                   <FileText className="w-3.5 h-3.5" />
                   Free Remote Property Consultation
                 </div>
@@ -1822,7 +1822,7 @@ export function OffGridSolarSystemPage() {
                     "Licensed NT off-grid installers"
                   ].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                      <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0" />
                       <span className="text-slate-200 text-sm sm:text-base font-semibold">{item}</span>
                     </div>
                   ))}
@@ -1833,36 +1833,36 @@ export function OffGridSolarSystemPage() {
               <FadeIn delay={0.2}>
                 <div className="space-y-4 pt-6 border-t border-white/10">
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center shrink-0 mt-1">
+                    <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f] flex items-center justify-center shrink-0 mt-1">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="text-xs  text-slate-400 uppercase tracking-wider">Darwin Office</p>
-                      <a href={`tel:${PRIMARY_PHONE_RAW}`} className="text-lg font-bold text-white hover:text-[#5BC94D] transition-colors">
+                      <a href={`tel:${PRIMARY_PHONE_RAW}`} className="text-lg font-bold text-white hover:text-[#8cc63f] transition-colors">
                         0483 986 444
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center shrink-0 mt-1">
+                    <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f] flex items-center justify-center shrink-0 mt-1">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="text-xs  text-slate-400 uppercase tracking-wider">Alice Springs Office</p>
-                      <a href={`tel:${ALICE_PHONE_RAW}`} className="text-lg font-bold text-white hover:text-[#5BC94D] transition-colors">
+                      <a href={`tel:${ALICE_PHONE_RAW}`} className="text-lg font-bold text-white hover:text-[#8cc63f] transition-colors">
                         0483 937 004
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center shrink-0 mt-1">
+                    <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f] flex items-center justify-center shrink-0 mt-1">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>
                       <p className="text-xs  text-slate-400 uppercase tracking-wider">Direct Email</p>
-                      <a href="mailto:info@oneroofsolar.com.au" className="text-base font-bold text-white hover:text-[#5BC94D] transition-colors">
+                      <a href="mailto:info@oneroofsolar.com.au" className="text-base font-bold text-white hover:text-[#8cc63f] transition-colors">
                         info@oneroofsolar.com.au
                       </a>
                     </div>

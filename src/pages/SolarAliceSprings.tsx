@@ -84,7 +84,7 @@ export function SolarAliceSprings() {
           "name": "What solar rebates are available in Alice Springs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Alice Springs homeowners qualify for the federal STC rebate on eligible solar and battery installations, which is applied upfront with no separate claiming required."
+            "text": "Alice Springs homeowners qualify for the same federal STC rebate as Darwin, along with the NT Battery Scheme for eligible homeowners adding battery storage. Both are applied upfront, no separate claiming required."
           }
         },
         {
@@ -92,7 +92,7 @@ export function SolarAliceSprings() {
           "name": "Who is the best solar company in Alice Springs?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Oneroof Solar has a dedicated local installation team based in Alice Springs. Our team understands the desert climate, roof types and grid requirements specific to Central Australia, rather than applying a generic mainland approach."
+            "text": "Oneroof Solar is one of the only solar companies with a dedicated local installation team based in Alice Springs, not just Darwin. Our team understands the desert climate, roof types and grid requirements specific to Central Australia."
           }
         },
         {
@@ -202,11 +202,11 @@ export function SolarAliceSprings() {
     },
     {
       q: "What solar rebates are available in Alice Springs?",
-      a: "Alice Springs homeowners qualify for the federal STC rebate on eligible solar and battery installations, which is applied upfront with no separate claiming required."
+      a: "Alice Springs homeowners qualify for the same federal STC rebate as Darwin, along with the NT Battery Scheme for eligible homeowners adding battery storage. Both are applied upfront, no separate claiming required."
     },
     {
       q: "Who is the best solar company in Alice Springs?",
-      a: "Oneroof Solar has a dedicated local installation team based in Alice Springs. Our team understands the desert climate, roof types and grid requirements specific to Central Australia, rather than applying a generic mainland approach."
+      a: "Oneroof Solar is one of the only solar companies with a dedicated local installation team based in Alice Springs, not just Darwin. Our team understands the desert climate, roof types and grid requirements specific to Central Australia."
     },
     {
       q: "Does extreme heat affect solar panel performance in Alice Springs?",
@@ -217,7 +217,7 @@ export function SolarAliceSprings() {
       a: (
         <span>
           Yes. We offer ongoing maintenance and repairs for existing solar systems in Alice Springs, including dust related cleaning and inverter servicing. See our{" "}
-          <Link to="/solar-panels-darwin" className="text-[#5BC94D] hover:underline font-bold">
+          <Link to="/solar-panels-darwin" className="text-[#8cc63f] hover:underline font-bold">
             repairs and maintenance page
           </Link>{" "}
           for details.
@@ -251,10 +251,10 @@ export function SolarAliceSprings() {
       ))}
 
       {/* Hero Section */}
-      <section className="relative pt-36 pb-20 lg:pt-44 lg:pb-32 overflow-hidden bg-[#19281D]">
+      <section className="relative pt-36 pb-20 lg:pt-44 lg:pb-32 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[#121814]/40 mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-transparent to-[#19281D]/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-transparent to-[#0A1118]/30"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -264,23 +264,23 @@ export function SolarAliceSprings() {
             <FadeIn isHero>
               {/* Breadcrumb */}
               <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6">
-                <a href="https://oneroofsolar.com.au/" className="hover:text-[#5BC94D] transition-colors">Home</a>
+                <a href="https://oneroofsolar.com.au/" className="hover:text-[#8cc63f] transition-colors">Home</a>
                 <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                <span className="text-[#5BC94D]" aria-current="page">Alice Springs</span>
+                <span className="text-[#8cc63f]" aria-current="page">Alice Springs</span>
               </nav>
 
               <h1 id="hero-title" className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-6 uppercase">
-                Solar Panel Installation <span className="text-[#5BC94D]">Alice Springs</span>
+                Solar Panel Installation <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Alice Springs</span>
               </h1>
 
-              <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 font-medium border-l-2 border-[#5BC94D] pl-6">
+              <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 font-medium border-l-2 border-[#8cc63f] pl-6">
                 Power your Alice Springs home or business with reliable solar built for the desert climate
               </p>
 
               <div className="flex flex-wrap gap-4">
                 <Button
                   size="lg"
-                  className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-bold hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                  className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-bold hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
                   asChild
                 >
                   <a href="#quote-form">
@@ -290,7 +290,7 @@ export function SolarAliceSprings() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="rounded-xl px-8 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:border-white/30 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs"
+                  className="rounded-xl px-8 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:text-white hover:border-white/30 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs"
                   asChild
                 >
                   <a href={`tel:${PRIMARY_PHONE_RAW}`}>
@@ -312,8 +312,8 @@ export function SolarAliceSprings() {
                 />
                 
                 {/* Visual badge */}
-                <div className="absolute top-6 right-6 bg-[#19281D]/95 backdrop-blur-md border border-[#5BC94D]/30 px-5 py-3 rounded-2xl z-20 shadow-lg text-center">
-                  <div className="text-2xl font-black text-[#5BC94D] leading-none">100%</div>
+                <div className="absolute top-6 right-6 bg-[#0A1118]/95 backdrop-blur-md border border-[#8cc63f]/30 px-5 py-3 rounded-2xl z-20 shadow-lg text-center">
+                  <div className="text-2xl font-black text-[#8cc63f] leading-none">100%</div>
                   <div className="text-[9px] text-slate-300 uppercase tracking-widest  font-bold mt-1">
                     Heat Rated
                   </div>
@@ -355,7 +355,7 @@ export function SolarAliceSprings() {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
                 Solar Services in Alice Springs
               </h2>
-              <p className="text-slate-400 text-sm sm:text-base font-semibold uppercase tracking-widest text-[#5BC94D]">
+              <p className="text-slate-400 text-sm sm:text-base font-semibold uppercase tracking-widest text-[#8cc63f]">
                 Residential and commercial solar solutions built for Central Australian conditions
               </p>
             </FadeIn>
@@ -363,8 +363,8 @@ export function SolarAliceSprings() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <FadeIn delay={0.1} className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 hover:border-[#5BC94D]/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-lg">
-              <div className="w-12 h-12 rounded-xl bg-[#5BC94D]/10 flex items-center justify-center text-[#5BC94D] border border-[#5BC94D]/20 mb-6 shadow-inner">
+            <FadeIn delay={0.1} className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 hover:border-[#8cc63f]/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <Sun className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-black text-white mb-4 tracking-tight uppercase">
@@ -376,8 +376,8 @@ export function SolarAliceSprings() {
             </FadeIn>
 
             {/* Card 2 */}
-            <FadeIn delay={0.2} className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 hover:border-[#5BC94D]/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-lg">
-              <div className="w-12 h-12 rounded-xl bg-[#5BC94D]/10 flex items-center justify-center text-[#5BC94D] border border-[#5BC94D]/20 mb-6 shadow-inner">
+            <FadeIn delay={0.2} className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 hover:border-[#8cc63f]/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-black text-white mb-4 tracking-tight uppercase">
@@ -389,8 +389,8 @@ export function SolarAliceSprings() {
             </FadeIn>
 
             {/* Card 3 */}
-            <FadeIn delay={0.3} className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 hover:border-[#5BC94D]/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-lg">
-              <div className="w-12 h-12 rounded-xl bg-[#5BC94D]/10 flex items-center justify-center text-[#5BC94D] border border-[#5BC94D]/20 mb-6 shadow-inner">
+            <FadeIn delay={0.3} className="bg-slate-900/40 rounded-[2rem] p-8 border border-white/10 hover:border-[#8cc63f]/30 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <Shield className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-black text-white mb-4 tracking-tight uppercase">
@@ -405,7 +405,7 @@ export function SolarAliceSprings() {
       </section>
 
       {/* CTA SECTION 1 */}
-      <section className="py-16 bg-[#19281D] relative border-b border-white/5">
+      <section className="py-16 bg-[#0A1118] relative border-b border-white/5">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
@@ -416,7 +416,7 @@ export function SolarAliceSprings() {
             </p>
             <a 
               href="#quote-form" 
-              className="inline-block bg-[#5BC94D] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-emerald-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
+              className="inline-block bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
             >
               Claim your free custom pricing quote now
             </a>
@@ -442,7 +442,7 @@ export function SolarAliceSprings() {
             {/* Card 1 */}
             <FadeIn delay={0.1} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col justify-between h-full shadow-lg">
               <div>
-                <h3 className="text-xl font-black text-[#5BC94D] mb-4 tracking-tight uppercase">
+                <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">
                   Grid Connected Solar System
                 </h3>
                 <p className="text-slate-300 text-sm leading-relaxed mb-4">
@@ -459,11 +459,11 @@ export function SolarAliceSprings() {
             {/* Card 2 */}
             <FadeIn delay={0.2} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col justify-between h-full shadow-lg">
               <div>
-                <h3 className="text-xl font-black text-[#5BC94D] mb-4 tracking-tight uppercase">
+                <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">
                   Hybrid Solar and Battery System
                 </h3>
                 <p className="text-slate-300 text-sm leading-relaxed mb-4">
-                  A solar and battery system combines your PV panels with a home or commercial battery. Excess energy generated during the long desert days is stored for use in the evening, reducing your grid import rate to near zero on most days, maximizing your daytime solar generation.
+                  A solar and battery system combines your PV panels with a home or commercial battery. Excess energy generated during the long desert days is stored for use in the evening, reducing your grid import rate to near zero on most days. Battery scheme rebates may apply to eligible NT homeowners adding storage.
                 </p>
               </div>
               <div className="mt-4 pt-4 border-t border-white/5">
@@ -476,7 +476,7 @@ export function SolarAliceSprings() {
             {/* Card 3 */}
             <FadeIn delay={0.3} className="bg-slate-900/30 rounded-[2rem] p-8 border border-white/5 flex flex-col justify-between h-full shadow-lg">
               <div>
-                <h3 className="text-xl font-black text-[#5BC94D] mb-4 tracking-tight uppercase">
+                <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">
                   Off Grid Solar System
                 </h3>
                 <p className="text-slate-300 text-sm leading-relaxed mb-4">
@@ -504,7 +504,7 @@ export function SolarAliceSprings() {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
                 How We Deliver Your Solar System in Alice Springs
               </h2>
-              <p className="text-[#5BC94D] text-xs sm:text-sm font-bold uppercase tracking-widest">
+              <p className="text-[#8cc63f] text-xs sm:text-sm font-bold uppercase tracking-widest">
                 A fully managed 5 step process from your first call to switching on your new system. We handle every stage including permits, safety compliance and grid connection.
               </p>
             </FadeIn>
@@ -513,7 +513,7 @@ export function SolarAliceSprings() {
           <div className="space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-1/2 before:w-0.5 before:bg-white/5">
             {/* Step 1 */}
             <div className="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
-              <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-[#19281D] border-2 border-[#5BC94D] flex items-center justify-center font-bold text-xs text-[#5BC94D] z-10 shadow-lg">1</div>
+              <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-[#0A1118] border-2 border-[#8cc63f] flex items-center justify-center font-bold text-xs text-[#8cc63f] z-10 shadow-lg">1</div>
               <div className="w-full sm:w-[45%] pl-12 sm:pl-0 sm:text-right">
                 <FadeIn>
                   <h3 className="text-lg font-black text-white uppercase tracking-tight mb-2">1. Consultation and Energy Assessment</h3>
@@ -527,7 +527,7 @@ export function SolarAliceSprings() {
 
             {/* Step 2 */}
             <div className="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
-              <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-[#19281D] border-2 border-[#5BC94D] flex items-center justify-center font-bold text-xs text-[#5BC94D] z-10 shadow-lg">2</div>
+              <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-[#0A1118] border-2 border-[#8cc63f] flex items-center justify-center font-bold text-xs text-[#8cc63f] z-10 shadow-lg">2</div>
               <div className="hidden sm:block w-[45%]"></div>
               <div className="w-full sm:w-[45%] pl-12 sm:pl-0">
                 <FadeIn>
@@ -541,7 +541,7 @@ export function SolarAliceSprings() {
 
             {/* Step 3 */}
             <div className="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
-              <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-[#19281D] border-2 border-[#5BC94D] flex items-center justify-center font-bold text-xs text-[#5BC94D] z-10 shadow-lg">3</div>
+              <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-[#0A1118] border-2 border-[#8cc63f] flex items-center justify-center font-bold text-xs text-[#8cc63f] z-10 shadow-lg">3</div>
               <div className="w-full sm:w-[45%] pl-12 sm:pl-0 sm:text-right">
                 <FadeIn>
                   <h3 className="text-lg font-black text-white uppercase tracking-tight mb-2">3. Permits and Approvals</h3>
@@ -555,7 +555,7 @@ export function SolarAliceSprings() {
 
             {/* Step 4 */}
             <div className="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
-              <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-[#19281D] border-2 border-[#5BC94D] flex items-center justify-center font-bold text-xs text-[#5BC94D] z-10 shadow-lg">4</div>
+              <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-[#0A1118] border-2 border-[#8cc63f] flex items-center justify-center font-bold text-xs text-[#8cc63f] z-10 shadow-lg">4</div>
               <div className="hidden sm:block w-[45%]"></div>
               <div className="w-full sm:w-[45%] pl-12 sm:pl-0">
                 <FadeIn>
@@ -569,7 +569,7 @@ export function SolarAliceSprings() {
 
             {/* Step 5 */}
             <div className="relative flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
-              <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-[#19281D] border-2 border-[#5BC94D] flex items-center justify-center font-bold text-xs text-[#5BC94D] z-10 shadow-lg">5</div>
+              <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-[#0A1118] border-2 border-[#8cc63f] flex items-center justify-center font-bold text-xs text-[#8cc63f] z-10 shadow-lg">5</div>
               <div className="w-full sm:w-[45%] pl-12 sm:pl-0 sm:text-right">
                 <FadeIn>
                   <h3 className="text-lg font-black text-white uppercase tracking-tight mb-2">5. Commissioning and Handover</h3>
@@ -592,8 +592,8 @@ export function SolarAliceSprings() {
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4">
                 Solar Rebates Available to Alice Springs Home and Business Owners in 2026
               </h2>
-              <p className="text-slate-400 text-sm sm:text-base font-semibold uppercase tracking-widest text-[#5BC94D]">
-                Alice Springs homeowners and businesses qualify for federal incentives that significantly reduce the upfront cost of a solar system. All rebates are applied before you pay.
+              <p className="text-slate-400 text-sm sm:text-base font-semibold uppercase tracking-widest text-[#8cc63f]">
+                Alice Springs homeowners and businesses qualify for federal and territory level incentives that significantly reduce the upfront cost of a solar system. All rebates are applied before you pay.
               </p>
             </FadeIn>
           </div>
@@ -610,9 +610,9 @@ export function SolarAliceSprings() {
 
             <FadeIn delay={0.2} className="bg-slate-900/40 rounded-[2.5rem] p-8 border border-white/10 flex flex-col h-full justify-between shadow-lg">
               <div>
-                <h3 className="text-xl font-black text-white mb-4 uppercase tracking-tight">Feed-in Tariffs & Grid Incentives</h3>
+                <h3 className="text-xl font-black text-white mb-4 uppercase tracking-tight">NT Battery Scheme</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  Export your excess solar power back to the grid and receive feed-in credits on your Jacana Energy electricity bill. Our team ensures your system is properly metered and registered to maximize ongoing financial returns.
+                  The Northern Territory Government offers additional rebates for eligible NT homeowners adding battery storage to a new or existing solar system. Contact Oneroof Solar to confirm current eligibility for your Alice Springs property and system size.
                 </p>
               </div>
             </FadeIn>
@@ -623,8 +623,8 @@ export function SolarAliceSprings() {
       {/* CTA SECTION 2 */}
       <section className="py-16 bg-[#121814] relative border-b border-white/5">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <FadeIn className="border-2 border-[#5BC94D] rounded-3xl p-10 sm:p-12">
-            <h3 className="text-2xl sm:text-3xl font-black text-[#19281D] dark:text-[#5BC94D] mb-3 uppercase tracking-tight">
+          <FadeIn className="border-2 border-[#8cc63f] rounded-3xl p-10 sm:p-12">
+            <h3 className="text-2xl sm:text-3xl font-black text-[#19281D] dark:text-[#8cc63f] mb-3 uppercase tracking-tight">
               Secure your NT government solar savings before they change
             </h3>
             <p className="text-slate-400 dark:text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
@@ -632,7 +632,7 @@ export function SolarAliceSprings() {
             </p>
             <a 
               href="#quote-form" 
-              className="inline-block border-2 border-[#5BC94D] text-slate-900 dark:text-white dark:hover:text-[#19281D] hover:bg-[#5BC94D] px-8 py-4 rounded-xl font-bold transition-all hover:-translate-y-0.5 uppercase tracking-wider text-xs"
+              className="inline-block border-2 border-[#8cc63f] text-slate-900 dark:text-white dark:hover:text-[#19281D] hover:bg-[#8cc63f] px-8 py-4 rounded-xl font-bold transition-all hover:-translate-y-0.5 uppercase tracking-wider text-xs"
             >
               Check your rebate eligibility now
             </a>
@@ -657,7 +657,7 @@ export function SolarAliceSprings() {
           <FadeIn className="overflow-x-auto rounded-[1.5rem] border border-white/10 shadow-2xl">
             <table className="w-full text-left border-collapse min-w-[600px]">
               <thead>
-                <tr className="bg-[#19281D] text-white">
+                <tr className="bg-[#0A1118] text-white">
                   <th className="p-4 sm:p-5 border-b border-white/10 font-bold uppercase tracking-wider text-xs">Area</th>
                   <th className="p-4 sm:p-5 border-b border-white/10 font-bold uppercase tracking-wider text-xs">Postcode</th>
                   <th className="p-4 sm:p-5 border-b border-white/10 font-bold uppercase tracking-wider text-xs">Suburbs Covered</th>
@@ -666,17 +666,17 @@ export function SolarAliceSprings() {
               <tbody className="divide-y divide-white/5 text-sm">
                 <tr className="hover:bg-white/[0.02]">
                   <td className="p-4 sm:p-5 font-black text-white">Alice Springs City</td>
-                  <td className="p-4 sm:p-5  text-[#5BC94D]">0870</td>
+                  <td className="p-4 sm:p-5  text-[#8cc63f]">0870</td>
                   <td className="p-4 sm:p-5 text-slate-300">CBD, Todd Mall, Flynn, Ross, Sadadeen, Stuart, East Side, Araluen</td>
                 </tr>
                 <tr className="hover:bg-white/[0.02] bg-white/[0.01]">
                   <td className="p-4 sm:p-5 font-black text-white">Larapinta and Gillen</td>
-                  <td className="p-4 sm:p-5  text-[#5BC94D]">0870-0871</td>
+                  <td className="p-4 sm:p-5  text-[#8cc63f]">0870-0871</td>
                   <td className="p-4 sm:p-5 text-slate-300">Larapinta, Gillen, Baitling, Ciccone, Desert Springs, Ilparpa, Stirling</td>
                 </tr>
                 <tr className="hover:bg-white/[0.02]">
                   <td className="p-4 sm:p-5 font-black text-white">Yulara and the Uluru region</td>
-                  <td className="p-4 sm:p-5  text-[#5BC94D]">0872</td>
+                  <td className="p-4 sm:p-5  text-[#8cc63f]">0872</td>
                   <td className="p-4 sm:p-5 text-slate-300">Yulara, Mutitjulu, Kata Tjuta, Ti Tree, Yuendumu, Hermannsburg, Finke</td>
                 </tr>
               </tbody>
@@ -694,7 +694,7 @@ export function SolarAliceSprings() {
             <div className="lg:col-span-5 lg:sticky lg:top-32">
               <FadeIn>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 font-semibold text-xs mb-6 shadow-sm">
-                  <span className="h-2 w-2 rounded-full bg-[#5BC94D] animate-pulse"></span>
+                  <span className="h-2 w-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                   <span className="text-xs font-bold text-slate-300 uppercase tracking-widest">Support</span>
                 </div>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-white leading-[1.1] mb-6 uppercase">
@@ -705,7 +705,7 @@ export function SolarAliceSprings() {
                 </p>
                 <div className="mt-8">
                   <a href="#quote-form">
-                    <Button className="rounded-xl shadow-lg hover:-translate-y-1 transition-all h-14 px-8 font-bold bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 border-none uppercase tracking-wider text-xs">
+                    <Button className="rounded-xl shadow-lg hover:-translate-y-1 transition-all h-14 px-8 font-bold bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 border-none uppercase tracking-wider text-xs">
                       Get a Free Quote
                     </Button>
                   </a>
@@ -722,8 +722,8 @@ export function SolarAliceSprings() {
                     <div
                       className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                         isOpen
-                          ? "bg-slate-900/60 shadow-xl border-[#5BC94D]/30"
-                          : "bg-slate-900/20 border-white/5 hover:border-[#5BC94D]/20"
+                          ? "bg-slate-900/60 shadow-xl border-[#8cc63f]/30"
+                          : "bg-slate-900/20 border-white/5 hover:border-[#8cc63f]/20"
                       }`}
                     >
                       <button
@@ -731,13 +731,13 @@ export function SolarAliceSprings() {
                         aria-expanded={isOpen}
                         aria-controls={`faq-panel-${i}`}
                         id={`faq-button-${i}`}
-                        className="w-full text-left px-6 py-5 sm:p-6 flex items-start sm:items-center justify-between focus:outline-none gap-4 focus-visible:ring-2 focus-visible:ring-[#5BC94D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121814] transition-all"
+                        className="w-full text-left px-6 py-5 sm:p-6 flex items-start sm:items-center justify-between focus:outline-none gap-4 focus-visible:ring-2 focus-visible:ring-[#8cc63f] focus-visible:ring-offset-2 focus-visible:ring-offset-[#121814] transition-all"
                       >
                         <div className="flex items-start sm:items-center gap-4">
                           <div
                             className={`shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold text-xs sm:text-sm transition-colors ${
                               isOpen
-                                ? "bg-[#5BC94D] text-[#19281D] shadow-md shadow-[#5BC94D]/20"
+                                ? "bg-[#8cc63f] text-[#19281D] shadow-md shadow-[#8cc63f]/20"
                                 : "bg-white/5 text-slate-400 border border-white/10"
                             }`}
                           >
@@ -745,7 +745,7 @@ export function SolarAliceSprings() {
                           </div>
                           <h3
                             className={`text-sm sm:text-base font-bold leading-tight transition-colors ${
-                              isOpen ? "text-[#5BC94D]" : "text-white"
+                              isOpen ? "text-[#8cc63f]" : "text-white"
                             }`}
                           >
                             {faq.q}
@@ -754,7 +754,7 @@ export function SolarAliceSprings() {
                         <div
                           className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-300 ${
                             isOpen
-                              ? "border-[#5BC94D] bg-[#5BC94D]/10 text-[#5BC94D] rotate-180"
+                              ? "border-[#8cc63f] bg-[#8cc63f]/10 text-[#8cc63f] rotate-180"
                               : "border-white/10 text-slate-400 bg-white/5"
                           }`}
                         >
@@ -785,9 +785,9 @@ export function SolarAliceSprings() {
       </section>
 
       {/* Primary Conversion / Inquiry Section */}
-      <section id="quote-form" className="py-24 bg-[#19281D] relative overflow-hidden">
+      <section id="quote-form" className="py-24 bg-[#0A1118] relative overflow-hidden">
         <div className="absolute inset-0 bg-[#121814]/10 mix-blend-multiply"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#5BC94D]/5 rounded-full blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -804,9 +804,9 @@ export function SolarAliceSprings() {
               <div className="space-y-6">
                 <a 
                   href={`tel:${PRIMARY_PHONE_RAW}`} 
-                  className="flex items-center gap-4 text-white hover:text-[#5BC94D] transition-colors group"
+                  className="flex items-center gap-4 text-white hover:text-[#8cc63f] transition-colors group"
                 >
-                  <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#5BC94D] border border-white/10 group-hover:bg-[#5BC94D] group-hover:text-[#19281D] transition-all">
+                  <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#8cc63f] border border-white/10 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] transition-all">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
@@ -817,9 +817,9 @@ export function SolarAliceSprings() {
 
                 <a 
                   href="mailto:info@oneroofsolar.com.au" 
-                  className="flex items-center gap-4 text-white hover:text-[#5BC94D] transition-colors group"
+                  className="flex items-center gap-4 text-white hover:text-[#8cc63f] transition-colors group"
                 >
-                  <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#5BC94D] border border-white/10 group-hover:bg-[#5BC94D] group-hover:text-[#19281D] transition-all">
+                  <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#8cc63f] border border-white/10 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] transition-all">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
@@ -844,7 +844,7 @@ export function SolarAliceSprings() {
       </section>
 
       {/* FINAL CTA SECTION */}
-      <section className="py-24 bg-[#19281D] text-center relative border-t border-white/5">
+      <section className="py-24 bg-[#0A1118] text-center relative border-t border-white/5">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight">
@@ -855,7 +855,7 @@ export function SolarAliceSprings() {
             </p>
             <a 
               href="#quote-form" 
-              className="inline-block bg-[#5BC94D] text-[#19281D] px-10 py-5 rounded-xl font-bold transition-all hover:bg-emerald-400 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+              className="inline-block bg-[#8cc63f] text-[#19281D] px-10 py-5 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
             >
               Get your free solar assessment today
             </a>

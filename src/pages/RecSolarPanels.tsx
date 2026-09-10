@@ -10,7 +10,7 @@ import {
 import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
 import { SEO } from "../components/SEO";
-import recSolarPanelImg from "../assets/images/cyclone_solar_darwin_1784286769053.jpg";
+import recSolarPanelImg from "../assets/images/cyclone_solar_darwin_1784286769053.webp";
 
 export function RecSolarPanels() {
   // FAQ Accordion State
@@ -195,7 +195,7 @@ export function RecSolarPanels() {
       q: "Are REC panels worth the premium price?",
       a: (
         <>
-          For most NT homeowners who plan to stay in their property for 15 years or more, yes. The combination of low annual power loss (0.25% per year), strong heat performance and 25-year labour warranty makes REC the strongest long-term investment of the brands we install. If budget is the priority and you want a solid panel at a lower price, <Link to="/solar-panels-brands/jinko/" className="text-[#5BC94D] hover:underline font-bold">Jinko</Link> is a strong alternative.
+          For most NT homeowners who plan to stay in their property for 15 years or more, yes. The combination of low annual power loss (0.25% per year), strong heat performance and 25-year labour warranty makes REC the strongest long-term investment of the brands we install. If budget is the priority and you want a solid panel at a lower price, <Link to="/solar-panels-brands/jinko/" className="text-[#8cc63f] hover:underline font-bold">Jinko</Link> is a strong alternative.
         </>
       )
     },
@@ -219,7 +219,7 @@ export function RecSolarPanels() {
       q: "How do REC panels compare to Jinko or AIKO?",
       a: (
         <>
-          REC holds up better in heat than either <Link to="/solar-panels-brands/jinko/" className="text-[#5BC94D] hover:underline font-bold">Jinko</Link> or <Link to="/solar-panels-brands/aiko/" className="text-[#5BC94D] hover:underline font-bold">AIKO</Link> and has the lowest annual power loss and the strongest Year 25 output guarantee of the three brands we carry. AIKO delivers higher efficiency per panel, which suits rooftops with limited space. Jinko offers strong value at a lower price point. For a full side-by-side comparison of all three brands, see our <Link to="/solar-panels/" className="text-[#5BC94D] hover:underline font-bold">solar panels page</Link>.
+          REC holds up better in heat than either <Link to="/solar-panels-brands/jinko/" className="text-[#8cc63f] hover:underline font-bold">Jinko</Link> or <Link to="/solar-panels-brands/aiko/" className="text-[#8cc63f] hover:underline font-bold">AIKO</Link> and has the lowest annual power loss and the strongest Year 25 output guarantee of the three brands we carry. AIKO delivers higher efficiency per panel, which suits rooftops with limited space. Jinko offers strong value at a lower price point. For a full side-by-side comparison of all three brands, see our <Link to="/solar-panels/" className="text-[#8cc63f] hover:underline font-bold">solar panels page</Link>.
         </>
       )
     },

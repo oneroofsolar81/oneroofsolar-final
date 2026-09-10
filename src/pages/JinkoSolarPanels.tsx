@@ -15,7 +15,7 @@ import {
 import { FadeIn } from "../components/ui/FadeIn";
 import { SEO } from "../components/SEO";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
-import jinkoTopconImg from "../assets/images/jinko_topcon_cell_1785232213323.jpg";
+import jinkoTopconImg from "../assets/images/jinko_topcon_cell_1785232213323.webp";
 
 export function JinkoSolarPanels() {
   // FAQ Accordion State
@@ -591,7 +591,7 @@ export function JinkoSolarPanels() {
                   <tr className="bg-slate-900 border-b border-slate-800 text-white font-black text-sm uppercase tracking-wider">
                     <th className="p-4 sm:p-5">Specification</th>
                     <th className="p-4 sm:p-5 text-brand-400">Jinko N-Type</th>
-                    <th className="p-4 sm:p-5 text-emerald-400">AIKO ABC</th>
+                    <th className="p-4 sm:p-5 text-brand-400">AIKO ABC</th>
                     <th className="p-4 sm:p-5 text-blue-400">REC HJT</th>
                   </tr>
                 </thead>

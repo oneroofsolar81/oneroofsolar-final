@@ -75,11 +75,11 @@ export function Contact() {
               <Zap className="w-3.5 h-3.5" />
               {pageData?.title || 'Support Online'}
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-6 uppercase">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-6 uppercase">
               {pageData?.heroTitle ? (
                 <span dangerouslySetInnerHTML={{ __html: pageData.heroTitle }} />
               ) : (
-                <>Let's Get In <span className="text-brand-500">Touch.</span></>
+                <>Let's Get In <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Touch.</span></>
               )}
             </h1>
             <p className="max-w-2xl mx-auto text-base sm:text-lg text-slate-300 font-medium leading-relaxed mb-6 whitespace-pre-line">

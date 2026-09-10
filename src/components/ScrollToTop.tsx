@@ -6,7 +6,7 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     // A small timeout helps if Lenis or layout shifts try to override it
-    setTimeout(() => {
+    const id = setTimeout(() => {
       // @ts-ignore
       if (window.lenis) {
         // @ts-ignore
@@ -15,6 +15,7 @@ export default function ScrollToTop() {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
       }
     }, 0);
+    return () => clearTimeout(id);
   }, [pathname]);
 
   return null;

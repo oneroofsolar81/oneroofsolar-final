@@ -231,9 +231,9 @@ export function SolarPanelRepairDarwinPage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-brand-400 font-bold text-sm mb-6 uppercase tracking-wider">
                 <Wrench className="w-4 h-4 text-brand-400" /> Professional Repair Services
               </div>
-              <h1 id="hero-heading" className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-[0.9] mb-8 uppercase">
+              <h1 id="hero-heading" className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-8">
                 Solar Panel <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                   Repair in Darwin
                 </span>
               </h1>
@@ -255,7 +255,7 @@ export function SolarPanelRepairDarwinPage() {
                   id="hero-quote-cta"
                   variant="outline"
                   size="lg"
-                  className="rounded-full px-8 border-white/20 text-white font-bold hover:bg-white/10 transition-all h-14 hover:-translate-y-1 uppercase tracking-widest"
+                  className="rounded-full px-8 border-white/20 text-white font-bold hover:bg-white/10 hover:text-white transition-all h-14 hover:-translate-y-1 uppercase tracking-widest"
                   onClick={() => {
                     const formEl = document.getElementById("enquiry-form-section");
                     if (formEl) formEl.scrollIntoView({ behavior: "smooth" });
@@ -653,7 +653,7 @@ export function SolarPanelRepairDarwinPage() {
             ].map((loc, i) => (
               <div key={i} className="flex flex-col rounded-[2rem] overflow-hidden border border-slate-200/80 shadow-lg hover:shadow-2xl transition-all duration-300 group">
                 {/* Bright green card header */}
-                <div className="bg-[#5BC94D] px-6 py-5 flex items-center gap-3">
+                <div className="bg-[#8cc63f] px-6 py-5 flex items-center gap-3">
                   <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center shrink-0">
                     <MapPin className="w-5 h-5 text-white" />
                   </div>
@@ -665,7 +665,7 @@ export function SolarPanelRepairDarwinPage() {
                 </div>
                 
                 {/* Dark green card body */}
-                <div className="bg-[#19281D] px-6 py-8 flex flex-col flex-grow text-white">
+                <div className="bg-[#0A1118] px-6 py-8 flex flex-col flex-grow text-white">
                   <p className="text-brand-300 text-xs  uppercase tracking-wider mb-4">
                     Primary Suburbs Covered:
                   </p>

@@ -17,9 +17,9 @@ import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
 import { SEO } from "../components/SEO";
 
-import heroImage from "../assets/images/inverter_hero_install_1785339518164.jpg";
-import closeUpImage from "../assets/images/inverter_macro_close_up_1785339540642.jpg";
-import froniusImage from "../assets/images/fronius_nobg_1780552112004.png";
+import heroImage from "../assets/images/inverter_hero_install_1785339518164.webp";
+import closeUpImage from "../assets/images/inverter_macro_close_up_1785339540642.webp";
+import froniusImage from "../assets/images/fronius_nobg_1780552112004.webp";
 
 export function SolarInvertersProductPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -265,7 +265,7 @@ export function SolarInvertersProductPage() {
       <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-[#0A1118]/60"></div>
-          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#5BC94D]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#8cc63f]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
         </div>
 
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
@@ -276,12 +276,12 @@ export function SolarInvertersProductPage() {
               <FadeIn isHero>
                 {/* Breadcrumb */}
                 <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
-                  <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
+                  <Link to="/" className="hover:text-[#8cc63f] transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <span className="text-[#5BC94D]" aria-current="page">Solar Inverters</span>
+                  <span className="text-[#8cc63f]" aria-current="page">Solar Inverters</span>
                 </nav>
 
-                <div className="inline-block px-3.5 py-1 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] font-extrabold text-xs sm:text-sm uppercase tracking-wider mb-4">
+                <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f] font-extrabold text-xs sm:text-sm uppercase tracking-wider mb-4">
                   Solar Inverters
                 </div>
 
@@ -289,14 +289,14 @@ export function SolarInvertersProductPage() {
                   Solar Inverter Brands
                 </h1>
 
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-6 mb-8 max-w-2xl">
+                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#8cc63f] pl-6 mb-8 max-w-2xl">
                   Your solar inverter is the brain of your solar system. It converts the electricity your panels generate into power your home or business can actually use. Oneroof Solar supplies and installs Sungrow, Fronius, Sigenergy, GoodWe and Foxess inverters across Darwin and Alice Springs.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-4 mb-10">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -308,7 +308,7 @@ export function SolarInvertersProductPage() {
                     href="tel:0483986444"
                     className="inline-flex items-center justify-center h-14 px-8 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold transition-all border border-white/20 text-xs uppercase tracking-wider gap-2"
                   >
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>Call Darwin: 0483 986 444</span>
                   </a>
                 </div>
@@ -320,7 +320,7 @@ export function SolarInvertersProductPage() {
                       key={i}
                       className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/80 border border-slate-700/80 text-slate-200 text-xs font-semibold shadow-sm"
                     >
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#5BC94D]" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#8cc63f]" />
                       <span>{badge}</span>
                     </span>
                   ))}
@@ -393,7 +393,7 @@ export function SolarInvertersProductPage() {
               </span>
               <Button
                 size="lg"
-                className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all uppercase tracking-wider text-xs shrink-0"
+                className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all uppercase tracking-wider text-xs shrink-0"
                 asChild
               >
                 <Link to="/contact">
@@ -448,7 +448,7 @@ export function SolarInvertersProductPage() {
 
             {/* Links below table */}
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-medium bg-white border border-slate-200 p-6 rounded-2xl shadow-sm mb-10">
-              For off-grid system details see our <Link to="/services/off-grid-solar-system" className="text-[#5BC94D] font-bold underline hover:text-emerald-700">off-grid solar page</Link>. For battery storage options see our <Link to="/services/solar-battery-installation" className="text-[#5BC94D] font-bold underline hover:text-emerald-700">solar battery installation page</Link>.
+              For off-grid system details see our <Link to="/services/off-grid-solar-system" className="text-[#8cc63f] font-bold underline hover:text-brand-700">off-grid solar page</Link>. For battery storage options see our <Link to="/services/solar-battery-installation" className="text-[#8cc63f] font-bold underline hover:text-brand-700">solar battery installation page</Link>.
             </p>
 
             {/* CTA Bar */}
@@ -458,7 +458,7 @@ export function SolarInvertersProductPage() {
               </span>
               <Button
                 size="lg"
-                className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all uppercase tracking-wider text-xs shrink-0"
+                className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all uppercase tracking-wider text-xs shrink-0"
                 asChild
               >
                 <Link to="/contact">
@@ -486,7 +486,7 @@ export function SolarInvertersProductPage() {
               {brandCards.map((card, idx) => (
                 <div 
                   key={idx}
-                  className="bg-[#0D1520] border border-slate-800 rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col justify-between h-full hover:border-[#5BC94D]/50 transition-all duration-300 shadow-xl group"
+                  className="bg-[#0D1520] border border-slate-800 rounded-2xl sm:rounded-3xl p-6 sm:p-8 flex flex-col justify-between h-full hover:border-[#8cc63f]/50 transition-all duration-300 shadow-xl group"
                 >
                   <div>
                     {/* Brand Image Area */}
@@ -507,13 +507,13 @@ export function SolarInvertersProductPage() {
                       <span className="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-slate-300 text-xs  uppercase font-semibold">
                         INVERTER
                       </span>
-                      <span className="px-3 py-1 bg-[#5BC94D]/10 border border-[#5BC94D]/30 rounded-md text-[#5BC94D] text-xs  uppercase font-bold flex items-center gap-1">
+                      <span className="px-3 py-1 bg-[#8cc63f]/10 border border-[#8cc63f]/30 rounded-md text-[#8cc63f] text-xs  uppercase font-bold flex items-center gap-1">
                         <Zap className="w-3.5 h-3.5" /> SMART SYNC
                       </span>
                     </div>
 
                     {/* Heading */}
-                    <h3 className="text-xl sm:text-2xl font-extrabold text-white mb-3 group-hover:text-[#5BC94D] transition-colors">
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-white mb-3 group-hover:text-[#8cc63f] transition-colors">
                       {card.heading}
                     </h3>
 
@@ -524,7 +524,7 @@ export function SolarInvertersProductPage() {
 
                     {/* Best For */}
                     <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 mb-8">
-                      <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-wider block mb-1">Best For</span>
+                      <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider block mb-1">Best For</span>
                       <p className="text-slate-200 text-sm font-medium leading-relaxed">{card.bestFor}</p>
                     </div>
                   </div>
@@ -533,7 +533,7 @@ export function SolarInvertersProductPage() {
                   <div>
                     <Button
                       size="lg"
-                      className="w-full rounded-xl bg-[#5BC94D] text-[#19281D] border-none font-extrabold hover:bg-emerald-400 transition-all uppercase tracking-wider text-xs justify-between"
+                      className="w-full rounded-xl bg-[#8cc63f] text-[#19281D] border-none font-extrabold hover:bg-brand-400 transition-all uppercase tracking-wider text-xs justify-between"
                       asChild
                     >
                       <Link to={card.href || "/contact"}>
@@ -554,7 +554,7 @@ export function SolarInvertersProductPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-slate-50 border border-slate-200 rounded-2xl sm:rounded-3xl p-8 sm:p-12 shadow-sm">
-              <div className="flex items-center gap-3 text-[#5BC94D] font-bold text-sm uppercase tracking-wider mb-4">
+              <div className="flex items-center gap-3 text-[#8cc63f] font-bold text-sm uppercase tracking-wider mb-4">
                 <MapPin className="w-5 h-5" />
                 <span>Wide Coverage &amp; Service</span>
               </div>
@@ -566,7 +566,7 @@ export function SolarInvertersProductPage() {
                   Oneroof Solar installs all five inverter brands across Darwin, Palmerston, Alice Springs, Katherine and Tennant Creek. We also cover rural Darwin, Humpty Doo, Litchfield, Kakadu region and remote properties requiring off-grid inverter solutions.
                 </p>
                 <p>
-                  Contact our Darwin team on <a href="tel:0483986444" className="text-[#5BC94D] font-bold hover:underline">0483 986 444</a> or our Alice Springs team on <a href="tel:0483937004" className="text-[#5BC94D] font-bold hover:underline">0483 937 004</a> for a free site assessment.
+                  Contact our Darwin team on <a href="tel:0483986444" className="text-[#8cc63f] font-bold hover:underline">0483 986 444</a> or our Alice Springs team on <a href="tel:0483937004" className="text-[#8cc63f] font-bold hover:underline">0483 937 004</a> for a free site assessment.
                 </p>
               </div>
             </div>
@@ -590,8 +590,8 @@ export function SolarInvertersProductPage() {
                     key={i}
                     className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                       isOpen
-                        ? "bg-white shadow-md border-[#5BC94D]"
-                        : "bg-white border-slate-200 hover:border-[#5BC94D]/40 shadow-sm"
+                        ? "bg-white shadow-md border-[#8cc63f]"
+                        : "bg-white border-slate-200 hover:border-[#8cc63f]/40 shadow-sm"
                     }`}
                   >
                     <button
@@ -605,7 +605,7 @@ export function SolarInvertersProductPage() {
                         <div
                           className={`shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold text-xs sm:text-sm transition-colors ${
                             isOpen
-                              ? "bg-[#5BC94D] text-[#19281D] shadow-md shadow-[#5BC94D]/20"
+                              ? "bg-[#8cc63f] text-[#19281D] shadow-md shadow-[#8cc63f]/20"
                               : "bg-slate-100 text-slate-700 border border-slate-200"
                           }`}
                         >
@@ -613,7 +613,7 @@ export function SolarInvertersProductPage() {
                         </div>
                         <h3
                           className={`text-base sm:text-lg font-bold leading-tight transition-colors ${
-                            isOpen ? "text-emerald-700" : "text-slate-900"
+                            isOpen ? "text-brand-700" : "text-slate-900"
                           }`}
                         >
                           {faq.q}
@@ -622,7 +622,7 @@ export function SolarInvertersProductPage() {
                       <div
                         className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-300 ${
                           isOpen
-                            ? "border-[#5BC94D] bg-[#5BC94D]/10 text-emerald-700 rotate-180"
+                            ? "border-[#8cc63f] bg-[#8cc63f]/10 text-brand-700 rotate-180"
                             : "border-slate-200 text-slate-500 bg-slate-50"
                         }`}
                       >
@@ -654,25 +654,25 @@ export function SolarInvertersProductPage() {
       <section className="py-16 lg:py-20 bg-[#0A1118] relative overflow-hidden">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#5BC94D]/30 bg-slate-900/90 p-8 sm:p-14 text-center shadow-2xl">
+            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#8cc63f]/30 bg-slate-900/90 p-8 sm:p-14 text-center shadow-2xl">
               <div className="max-w-3xl mx-auto relative z-10">
                 <p className="text-base sm:text-xl text-slate-200 max-w-3xl mx-auto mb-10 font-medium leading-relaxed">
                   Not sure which solar inverter is right for your property? Get a free quote from Oneroof Solar. Our Darwin and Alice Springs teams will recommend the right inverter brand, type and model for your system.
                 </p>
 
                 <div className="pt-6 border-t border-slate-800 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-sm sm:text-base font-bold text-slate-300">
-                  <a href="tel:0483986444" className="hover:text-[#5BC94D] transition-colors flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                  <a href="tel:0483986444" className="hover:text-[#8cc63f] transition-colors flex items-center gap-2">
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>Darwin: 0483 986 444</span>
                   </a>
                   <span className="hidden sm:inline text-slate-600">|</span>
-                  <a href="tel:0483937004" className="hover:text-[#5BC94D] transition-colors flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                  <a href="tel:0483937004" className="hover:text-[#8cc63f] transition-colors flex items-center gap-2">
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>Alice Springs: 0483 937 004</span>
                   </a>
                   <span className="hidden sm:inline text-slate-600">|</span>
-                  <a href="mailto:info@oneroofsolar.com.au" className="hover:text-[#5BC94D] transition-colors flex items-center gap-2">
-                    <Mail className="w-4 h-4 text-[#5BC94D]" />
+                  <a href="mailto:info@oneroofsolar.com.au" className="hover:text-[#8cc63f] transition-colors flex items-center gap-2">
+                    <Mail className="w-4 h-4 text-[#8cc63f]" />
                     <span>info@oneroofsolar.com.au</span>
                   </a>
                 </div>

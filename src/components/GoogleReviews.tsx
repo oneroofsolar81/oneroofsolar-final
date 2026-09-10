@@ -137,8 +137,8 @@ export function GoogleReviews() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <FadeIn delay={0.1}>
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-1 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full text-xs font-semibold text-emerald-600 mb-4 shadow-sm">
-              <Star className="w-3.5 h-3.5 fill-emerald-500 text-emerald-500" />
+            <div className="inline-flex items-center gap-1 bg-brand-500/10 border border-brand-500/20 px-3 py-1 rounded-full text-xs font-semibold text-brand-600 mb-4 shadow-sm">
+              <Star className="w-3.5 h-3.5 fill-brand-500 text-brand-500" />
               <span>Verified 5-Star Reviews</span>
             </div>
             <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl mb-4">What Our Clients Say</h2>

@@ -222,11 +222,11 @@ export default function Projects() {
   return (
     <div className="pt-24 bg-slate-50 min-h-screen">
       <SEO seo={pageData?.seo} />
-      <div className="bg-slate-900 pt-28 pb-32 relative overflow-hidden border-b border-slate-800">
+      <div className="bg-[#0A1118] pt-28 pb-32 relative overflow-hidden border-b border-slate-800">
         {/* Background elements */}
         <div className="absolute inset-0 bg-grid-slate-100/[0.03] bg-[size:32px_32px]"></div>
         <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-brand-500/20 rounded-full blur-[120px] pointer-events-none opacity-50 mix-blend-screen"></div>
-        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none opacity-50 mix-blend-screen"></div>
+        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[120px] pointer-events-none opacity-50 mix-blend-screen"></div>
         
         {/* Grid pattern overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -241,9 +241,9 @@ export default function Projects() {
               <span className="text-xs font-black text-brand-300 uppercase tracking-[0.2em]">Our Portfolio</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-8 leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight mb-8 leading-[1.1]">
               Powering the Territory, <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 via-brand-400 to-emerald-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                 Roof by Roof.
               </span>
             </h1>

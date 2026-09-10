@@ -360,22 +360,22 @@ export function ResidentialSolarSystemPage() {
     <div id="residential-solar-root" className="relative overflow-hidden bg-white text-slate-900">
       
       {/* SECTION 1: HERO SECTION */}
-      <section id="hero-section" className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#19281D]">
+      <section id="hero-section" className="relative pt-36 pb-16 lg:pt-44 lg:pb-24 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-t from-[#19281D] via-[#19281D]/80 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#19281D] via-[#19281D]/80 to-transparent flex"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-[#0A1118]/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A1118] via-[#0A1118]/80 to-transparent flex"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <FadeIn isHero>
-              <h1 id="hero-heading" className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-[1.0] mb-8 uppercase">
+              <h1 id="hero-heading" className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-8">
                 Residential Solar <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5BC94D] to-emerald-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                   Systems NT
                 </span>
               </h1>
-              <p id="hero-subheadline" className="text-xl text-slate-300 max-w-lg mb-8 font-medium border-l-4 border-[#5BC94D] pl-6 leading-relaxed">
+              <p id="hero-subheadline" className="text-xl text-slate-300 max-w-lg mb-8 font-medium border-l-4 border-[#8cc63f] pl-6 leading-relaxed">
                 Power your home with high quality solar and cut your electricity bills from day one
               </p>
 
@@ -383,7 +383,7 @@ export function ResidentialSolarSystemPage() {
                 <Button
                   id="hero-primary-cta"
                   size="lg"
-                  className="rounded-full px-8 bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 border-none font-bold transition-all h-14 hover:-translate-y-1 shadow-[0_0_20px_rgba(91,201,77,0.3)] uppercase tracking-wider"
+                  className="rounded-full px-8 bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 border-none font-bold transition-all h-14 hover:-translate-y-1 shadow-[0_0_20px_rgba(91,201,77,0.3)] uppercase tracking-wider"
                   asChild
                 >
                   <Link to="/contact">
@@ -406,10 +406,10 @@ export function ResidentialSolarSystemPage() {
               {/* Social Proof Badge / Customer Rating */}
               <div className="mt-10 flex flex-wrap items-center gap-4 bg-slate-950/40 backdrop-blur-md border border-white/10 py-3 px-4 rounded-2xl w-fit">
                 <div className="flex -space-x-2.5">
-                  <img className="w-8 h-8 rounded-full border-2 border-[#19281D] object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop" alt="Darwin Homeowner 1" referrerPolicy="no-referrer" />
-                  <img className="w-8 h-8 rounded-full border-2 border-[#19281D] object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Darwin Homeowner 2" referrerPolicy="no-referrer" />
-                  <img className="w-8 h-8 rounded-full border-2 border-[#19281D] object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop" alt="Darwin Homeowner 3" referrerPolicy="no-referrer" />
-                  <div className="w-8 h-8 rounded-full border-2 border-[#19281D] bg-[#5BC94D] text-[#19281D] text-[10px] font-black flex items-center justify-center">
+                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop" alt="Darwin Homeowner 1" referrerPolicy="no-referrer" />
+                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Darwin Homeowner 2" referrerPolicy="no-referrer" />
+                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop" alt="Darwin Homeowner 3" referrerPolicy="no-referrer" />
+                  <div className="w-8 h-8 rounded-full border-2 border-[#0A1118] bg-[#8cc63f] text-[#19281D] text-[10px] font-black flex items-center justify-center">
                     +500
                   </div>
                 </div>
@@ -429,7 +429,7 @@ export function ResidentialSolarSystemPage() {
             </FadeIn>
 
             <FadeIn isHero delay={0.2} className="relative w-full max-w-xl mx-auto lg:ml-auto">
-              <div className="w-full aspect-square bg-gradient-to-br from-[#5BC94D]/10 to-emerald-600/10 rounded-full blur-3xl absolute inset-0 animate-pulse pointer-events-none"></div>
+              <div className="w-full aspect-square bg-gradient-to-br from-[#8cc63f]/10 to-brand-600/10 rounded-full blur-3xl absolute inset-0 animate-pulse pointer-events-none"></div>
               
               <QuoteForm 
                 title="Get Your Free Quote" 
@@ -442,36 +442,36 @@ export function ResidentialSolarSystemPage() {
           {/* Trust Benefits Bar (Spans full-width nicely under the two main grid columns) */}
           <FadeIn delay={0.4} className="mt-16 pt-8 border-t border-white/10">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-white">
-              <div className="bg-slate-950/50 backdrop-blur-md px-4 py-3.5 rounded-2xl border border-white/5 flex items-center gap-3 transition-all duration-300 hover:bg-slate-950/80 hover:border-[#5BC94D]/30 hover:scale-[1.02] hover:shadow-[0_4px_20px_rgba(91,201,77,0.1)] group">
-                <div className="w-6 h-6 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 flex items-center justify-center text-[#5BC94D] shrink-0 group-hover:bg-[#5BC94D]/20 transition-all">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#5BC94D]" />
+              <div className="bg-slate-950/50 backdrop-blur-md px-4 py-3.5 rounded-2xl border border-white/5 flex items-center gap-3 transition-all duration-300 hover:bg-slate-950/80 hover:border-[#8cc63f]/30 hover:scale-[1.02] hover:shadow-[0_4px_20px_rgba(91,201,77,0.1)] group">
+                <div className="w-6 h-6 rounded-full bg-[#8cc63f]/10 border border-[#8cc63f]/30 flex items-center justify-center text-[#8cc63f] shrink-0 group-hover:bg-[#8cc63f]/20 transition-all">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#8cc63f]" />
                 </div>
                 <span className="text-[10px] sm:text-xs font-bold text-slate-200 tracking-wide uppercase leading-tight">
                   $0 Deposit Available
                 </span>
               </div>
 
-              <div className="bg-slate-950/50 backdrop-blur-md px-4 py-3.5 rounded-2xl border border-white/5 flex items-center gap-3 transition-all duration-300 hover:bg-slate-950/80 hover:border-[#5BC94D]/30 hover:scale-[1.02] hover:shadow-[0_4px_20px_rgba(91,201,77,0.1)] group">
-                <div className="w-6 h-6 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 flex items-center justify-center text-[#5BC94D] shrink-0 group-hover:bg-[#5BC94D]/20 transition-all">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#5BC94D]" />
+              <div className="bg-slate-950/50 backdrop-blur-md px-4 py-3.5 rounded-2xl border border-white/5 flex items-center gap-3 transition-all duration-300 hover:bg-slate-950/80 hover:border-[#8cc63f]/30 hover:scale-[1.02] hover:shadow-[0_4px_20px_rgba(91,201,77,0.1)] group">
+                <div className="w-6 h-6 rounded-full bg-[#8cc63f]/10 border border-[#8cc63f]/30 flex items-center justify-center text-[#8cc63f] shrink-0 group-hover:bg-[#8cc63f]/20 transition-all">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#8cc63f]" />
                 </div>
                 <span className="text-[10px] sm:text-xs font-bold text-slate-200 tracking-wide uppercase leading-tight">
                   Battery Storage Specialists
                 </span>
               </div>
 
-              <div className="bg-slate-950/50 backdrop-blur-md px-4 py-3.5 rounded-2xl border border-white/5 flex items-center gap-3 transition-all duration-300 hover:bg-slate-950/80 hover:border-[#5BC94D]/30 hover:scale-[1.02] hover:shadow-[0_4px_20px_rgba(91,201,77,0.1)] group">
-                <div className="w-6 h-6 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 flex items-center justify-center text-[#5BC94D] shrink-0 group-hover:bg-[#5BC94D]/20 transition-all">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#5BC94D]" />
+              <div className="bg-slate-950/50 backdrop-blur-md px-4 py-3.5 rounded-2xl border border-white/5 flex items-center gap-3 transition-all duration-300 hover:bg-slate-950/80 hover:border-[#8cc63f]/30 hover:scale-[1.02] hover:shadow-[0_4px_20px_rgba(91,201,77,0.1)] group">
+                <div className="w-6 h-6 rounded-full bg-[#8cc63f]/10 border border-[#8cc63f]/30 flex items-center justify-center text-[#8cc63f] shrink-0 group-hover:bg-[#8cc63f]/20 transition-all">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#8cc63f]" />
                 </div>
                 <span className="text-[10px] sm:text-xs font-bold text-slate-200 tracking-wide uppercase leading-tight">
                   Cyclone-Rated Systems
                 </span>
               </div>
 
-              <div className="bg-slate-950/50 backdrop-blur-md px-4 py-3.5 rounded-2xl border border-white/5 flex items-center gap-3 transition-all duration-300 hover:bg-slate-950/80 hover:border-[#5BC94D]/30 hover:scale-[1.02] hover:shadow-[0_4px_20px_rgba(91,201,77,0.1)] group">
-                <div className="w-6 h-6 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 flex items-center justify-center text-[#5BC94D] shrink-0 group-hover:bg-[#5BC94D]/20 transition-all">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#5BC94D]" />
+              <div className="bg-slate-950/50 backdrop-blur-md px-4 py-3.5 rounded-2xl border border-white/5 flex items-center gap-3 transition-all duration-300 hover:bg-slate-950/80 hover:border-[#8cc63f]/30 hover:scale-[1.02] hover:shadow-[0_4px_20px_rgba(91,201,77,0.1)] group">
+                <div className="w-6 h-6 rounded-full bg-[#8cc63f]/10 border border-[#8cc63f]/30 flex items-center justify-center text-[#8cc63f] shrink-0 group-hover:bg-[#8cc63f]/20 transition-all">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#8cc63f]" />
                 </div>
                 <span className="text-[10px] sm:text-xs font-bold text-slate-200 tracking-wide uppercase leading-tight">
                   10yr Workmanship Warranty
@@ -515,8 +515,8 @@ export function ResidentialSolarSystemPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="bg-[#19281D] p-12 text-center rounded-[2.5rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#5BC94D]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
+            <div className="bg-[#0A1118] p-12 text-center rounded-[2.5rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#8cc63f]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
               <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 uppercase tracking-tight">
                 Start saving on your home electricity bills today
               </h3>
@@ -525,7 +525,7 @@ export function ResidentialSolarSystemPage() {
               </p>
               <Link 
                 to="/contact" 
-                className="inline-block bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_15px_rgba(91,201,77,0.25)] uppercase tracking-wider"
+                className="inline-block bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_15px_rgba(91,201,77,0.25)] uppercase tracking-wider"
               >
                 Claim your free custom pricing quote now
               </Link>
@@ -539,8 +539,8 @@ export function ResidentialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-[#19281D] font-bold text-xs mb-6 border border-emerald-100 uppercase tracking-widest shadow-sm">
-                <Zap className="w-4 h-4 text-[#5BC94D]" /> System Selector
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-[#19281D] font-bold text-xs mb-6 border border-brand-100 uppercase tracking-widest shadow-sm">
+                <Zap className="w-4 h-4 text-[#8cc63f]" /> System Selector
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-tight">
                 Which Residential Solar System Suits Your NT Home
@@ -554,9 +554,9 @@ export function ResidentialSolarSystemPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Grid-Connected */}
             <FadeIn delay={0.1}>
-              <div className="bg-white p-8 rounded-[2.5rem] border border-slate-200/80 hover:border-[#5BC94D]/30 transition-all duration-300 h-full flex flex-col hover:shadow-xl group">
-                <div className="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center text-[#19281D] mb-6 border border-emerald-100">
-                  <Grid className="w-6 h-6 text-[#5BC94D]" />
+              <div className="bg-white p-8 rounded-[2.5rem] border border-slate-200/80 hover:border-[#8cc63f]/30 transition-all duration-300 h-full flex flex-col hover:shadow-xl group">
+                <div className="w-14 h-14 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 border border-brand-100">
+                  <Grid className="w-6 h-6 text-[#8cc63f]" />
                 </div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight group-hover:text-[#19281D] transition-colors">
                   Grid-Connected Solar System
@@ -574,9 +574,9 @@ export function ResidentialSolarSystemPage() {
 
             {/* Hybrid */}
             <FadeIn delay={0.2}>
-              <div className="bg-white p-8 rounded-[2.5rem] border border-slate-200/80 hover:border-[#5BC94D]/30 transition-all duration-300 h-full flex flex-col hover:shadow-xl group">
-                <div className="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center text-[#19281D] mb-6 border border-emerald-100">
-                  <Battery className="w-6 h-6 text-[#5BC94D]" />
+              <div className="bg-white p-8 rounded-[2.5rem] border border-slate-200/80 hover:border-[#8cc63f]/30 transition-all duration-300 h-full flex flex-col hover:shadow-xl group">
+                <div className="w-14 h-14 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 border border-brand-100">
+                  <Battery className="w-6 h-6 text-[#8cc63f]" />
                 </div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight group-hover:text-[#19281D] transition-colors">
                   Hybrid Residential Solar and Battery System
@@ -594,9 +594,9 @@ export function ResidentialSolarSystemPage() {
 
             {/* Off-Grid */}
             <FadeIn delay={0.3}>
-              <div className="bg-white p-8 rounded-[2.5rem] border border-slate-200/80 hover:border-[#5BC94D]/30 transition-all duration-300 h-full flex flex-col hover:shadow-xl group">
-                <div className="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center text-[#19281D] mb-6 border border-emerald-100">
-                  <Power className="w-6 h-6 text-[#5BC94D]" />
+              <div className="bg-white p-8 rounded-[2.5rem] border border-slate-200/80 hover:border-[#8cc63f]/30 transition-all duration-300 h-full flex flex-col hover:shadow-xl group">
+                <div className="w-14 h-14 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 border border-brand-100">
+                  <Power className="w-6 h-6 text-[#8cc63f]" />
                 </div>
                 <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight group-hover:text-[#19281D] transition-colors">
                   Off-Grid Residential Solar System
@@ -658,8 +658,8 @@ export function ResidentialSolarSystemPage() {
               }
             ].map((step, idx) => (
               <FadeIn key={idx} delay={idx * 0.1}>
-                <div className="flex gap-6 sm:gap-8 bg-slate-50/50 p-8 rounded-3xl border border-slate-150 relative overflow-hidden group hover:bg-white hover:shadow-xl hover:border-[#5BC94D]/20 transition-all duration-300">
-                  <div className="text-5xl sm:text-6xl font-black text-slate-200 select-none w-16 text-center shrink-0 leading-none group-hover:text-[#5BC94D]/10 transition-colors">
+                <div className="flex gap-6 sm:gap-8 bg-slate-50/50 p-8 rounded-3xl border border-slate-150 relative overflow-hidden group hover:bg-white hover:shadow-xl hover:border-[#8cc63f]/20 transition-all duration-300">
+                  <div className="text-5xl sm:text-6xl font-black text-slate-200 select-none w-16 text-center shrink-0 leading-none group-hover:text-[#8cc63f]/10 transition-colors">
                     0{step.num}
                   </div>
                   <div>
@@ -678,8 +678,8 @@ export function ResidentialSolarSystemPage() {
       </section>
 
       {/* SECTION 6: NT REBATES AND INCENTIVES */}
-      <section className="py-24 bg-[#19281D] text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#5BC94D]/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
+      <section className="py-24 bg-[#0A1118] text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
@@ -695,8 +695,8 @@ export function ResidentialSolarSystemPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Federal STC */}
             <FadeIn delay={0.1}>
-              <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-[#5BC94D]/30 transition-all duration-300 h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6 border border-[#5BC94D]/20">
+              <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-[#8cc63f]/30 transition-all duration-300 h-full flex flex-col">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6 border border-[#8cc63f]/20">
                   <Sun className="w-6 h-6" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4 uppercase tracking-tight">
@@ -710,8 +710,8 @@ export function ResidentialSolarSystemPage() {
 
             {/* Feed-in Tariff Benefits */}
             <FadeIn delay={0.2}>
-              <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-[#5BC94D]/30 transition-all duration-300 h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6 border border-[#5BC94D]/20">
+              <div className="bg-white/5 border border-white/10 rounded-3xl p-8 hover:border-[#8cc63f]/30 transition-all duration-300 h-full flex flex-col">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6 border border-[#8cc63f]/20">
                   <Zap className="w-6 h-6" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4 uppercase tracking-tight">
@@ -730,7 +730,7 @@ export function ResidentialSolarSystemPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="border-4 border-[#5BC94D] p-12 text-center rounded-[2.5rem] bg-slate-50/50 shadow-lg relative overflow-hidden group">
+            <div className="border-4 border-[#8cc63f] p-12 text-center rounded-[2.5rem] bg-slate-50/50 shadow-lg relative overflow-hidden group">
               <h3 className="text-2xl sm:text-3xl font-black text-[#19281D] mb-4 uppercase tracking-tight">
                 Secure your NT government solar savings before they change
               </h3>
@@ -739,7 +739,7 @@ export function ResidentialSolarSystemPage() {
               </p>
               <Link 
                 to="/contact" 
-                className="inline-block bg-[#19281D] text-white hover:bg-[#19281D]/95 font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-lg uppercase tracking-wider"
+                className="inline-block bg-[#0A1118] text-white hover:bg-[#0A1118]/95 font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-lg uppercase tracking-wider"
               >
                 Check your rebate eligibility now
               </Link>
@@ -754,9 +754,9 @@ export function ResidentialSolarSystemPage() {
           
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <span className="text-xs font-bold tracking-widest text-[#5BC94D] uppercase mb-3 block">WHERE WE SERVE</span>
+              <span className="text-xs font-bold tracking-widest text-[#8cc63f] uppercase mb-3 block">WHERE WE SERVE</span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-tight leading-tight">
-                Solar Installations Across <span className="text-[#5BC94D]">Darwin & the NT</span>
+                Solar Installations Across <span className="text-[#8cc63f]">Darwin & the NT</span>
               </h2>
               <p className="text-lg text-slate-600 font-medium leading-relaxed">
                 Oneroof Solar installs residential solar systems across Greater Darwin, Palmerston, Alice Springs, Katherine, and surrounding Northern Territory communities. We are the only NT-based solar company with dedicated installation teams in both Darwin and Alice Springs.
@@ -768,21 +768,21 @@ export function ResidentialSolarSystemPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {serviceAreas.map((area, idx) => (
               <FadeIn key={idx} delay={idx * 0.05} className="h-full">
-                <div className="bg-gradient-to-b from-[#0F2317] to-[#0A120D] border border-emerald-950/40 p-8 rounded-[2rem] flex flex-col relative overflow-hidden h-full shadow-2xl group hover:border-[#5BC94D]/30 transition-all duration-300 min-h-[380px]">
-                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#5BC94D] to-emerald-500" />
+                <div className="bg-gradient-to-b from-[#0F2317] to-[#0A120D] border border-emerald-950/40 p-8 rounded-[2rem] flex flex-col relative overflow-hidden h-full shadow-2xl group hover:border-[#8cc63f]/30 transition-all duration-300 min-h-[380px]">
+                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-500 to-brand-300" />
                   
                   <div className="flex justify-between items-start mb-6">
-                    <div className="w-11 h-11 bg-[#5BC94D]/10 rounded-xl flex items-center justify-center border border-[#5BC94D]/20 text-[#5BC94D]">
+                    <div className="w-11 h-11 bg-[#8cc63f]/10 rounded-xl flex items-center justify-center border border-[#8cc63f]/20 text-[#8cc63f]">
                       <MapPin className="w-5 h-5" />
                     </div>
-                    <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/25 uppercase tracking-widest">
+                    <span className="text-[9px] font-bold text-brand-400 bg-brand-500/10 px-2.5 py-1 rounded-full border border-brand-500/25 uppercase tracking-widest">
                       {area.status}
                     </span>
                   </div>
 
                   <div className="flex-grow">
                     <h3 className="text-2xl font-black text-white mb-2 leading-tight">{area.hub}</h3>
-                    <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider block mb-4">
+                    <span className="text-[10px] font-bold text-[#8cc63f] uppercase tracking-wider block mb-4">
                       Postcode: {area.postcodes}
                     </span>
                     
@@ -797,7 +797,7 @@ export function ResidentialSolarSystemPage() {
 
                   <Link 
                     to={area.hub === "Alice Springs" ? "/solar-alice-springs/" : "/contact"}
-                    className="text-sm font-bold text-[#5BC94D] hover:text-white flex items-center gap-1 group-hover:translate-x-1 transition-all mt-auto"
+                    className="text-sm font-bold text-[#8cc63f] hover:text-white flex items-center gap-1 group-hover:translate-x-1 transition-all mt-auto"
                   >
                     {area.linkText} <ChevronRight className="w-4 h-4" />
                   </Link>
@@ -807,9 +807,9 @@ export function ResidentialSolarSystemPage() {
 
             {/* Card 10: Not Sure We Cover Your Area? */}
             <FadeIn delay={0.5} className="col-span-1 md:col-span-2 lg:col-span-3">
-              <div className="bg-gradient-to-r from-[#0F2317] to-[#0A120D] border border-emerald-950/40 p-10 rounded-[2.5rem] flex flex-col md:flex-row items-center justify-between relative overflow-hidden shadow-2xl group hover:border-[#5BC94D]/30 transition-all duration-300 min-h-[160px] w-full">
-                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#5BC94D] to-emerald-500" />
-                <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#5BC94D]/5 rounded-full blur-2xl pointer-events-none" />
+              <div className="bg-gradient-to-r from-[#0F2317] to-[#0A120D] border border-emerald-950/40 p-10 rounded-[2.5rem] flex flex-col md:flex-row items-center justify-between relative overflow-hidden shadow-2xl group hover:border-[#8cc63f]/30 transition-all duration-300 min-h-[160px] w-full">
+                <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-500 to-brand-300" />
+                <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#8cc63f]/5 rounded-full blur-2xl pointer-events-none" />
                 
                 <div className="flex-grow max-w-2xl mb-6 md:mb-0">
                   <h3 className="text-2xl font-black text-white mb-3">Not Sure We Cover Your Area?</h3>
@@ -818,7 +818,7 @@ export function ResidentialSolarSystemPage() {
                   </p>
                 </div>
                 <div className="shrink-0 w-full md:w-auto">
-                  <Button size="lg" className="rounded-xl w-full md:w-auto px-8 h-12 text-xs font-bold bg-[#5BC94D] hover:bg-emerald-400 text-slate-900 uppercase tracking-wider shadow-[0_0_15px_rgba(91,201,77,0.2)] group-hover:scale-[1.02] transition-transform duration-300" asChild>
+                  <Button size="lg" className="rounded-xl w-full md:w-auto px-8 h-12 text-xs font-bold bg-[#8cc63f] hover:bg-brand-400 text-slate-900 uppercase tracking-wider shadow-[0_0_15px_rgba(91,201,77,0.2)] group-hover:scale-[1.02] transition-transform duration-300" asChild>
                     <Link to="/contact">Check My Area</Link>
                   </Button>
                 </div>
@@ -830,12 +830,12 @@ export function ResidentialSolarSystemPage() {
           <FadeIn delay={0.6}>
             <div className="bg-slate-50/60 backdrop-blur-sm rounded-2xl sm:rounded-3xl py-5 px-6 sm:px-8 border border-slate-200/60 shadow-sm max-w-5xl mx-auto mt-16">
               <div className="flex flex-col gap-3.5 items-start text-left">
-                <span className="text-[10px] font-extrabold text-[#5BC94D] uppercase tracking-widest">
+                <span className="text-[10px] font-extrabold text-[#8cc63f] uppercase tracking-widest">
                   ALL NT POSTCODES:
                 </span>
                 <div className="flex flex-wrap items-center gap-2 text-slate-800 text-[11px] font-bold">
                   {allPostcodes.map((p, idx) => (
-                    <span key={idx} className="bg-white border border-[#5BC94D]/20 hover:border-[#5BC94D]/40 hover:shadow-sm transition-all duration-300 px-2.5 py-1 rounded-full text-slate-800 shadow-sm">
+                    <span key={idx} className="bg-white border border-[#8cc63f]/20 hover:border-[#8cc63f]/40 hover:shadow-sm transition-all duration-300 px-2.5 py-1 rounded-full text-slate-800 shadow-sm">
                       {p}
                     </span>
                   ))}
@@ -856,8 +856,8 @@ export function ResidentialSolarSystemPage() {
       <section className="py-24 bg-white">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <div className="bg-[#19281D] p-16 text-center rounded-[3rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#5BC94D]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
+            <div className="bg-[#0A1118] p-16 text-center rounded-[3rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
               <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight">
                 Lower your home electricity bills this season
               </h3>
@@ -866,7 +866,7 @@ export function ResidentialSolarSystemPage() {
               </p>
               <Link 
                 to="/contact" 
-                className="inline-block bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-bold px-10 py-5 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-sm"
+                className="inline-block bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 font-bold px-10 py-5 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-sm"
               >
                 Get your free solar assessment today
               </Link>

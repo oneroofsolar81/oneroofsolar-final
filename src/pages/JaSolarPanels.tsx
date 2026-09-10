@@ -12,8 +12,8 @@ import {
 import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
 import { SEO } from "../components/SEO";
-import cycloneSolarDarwinImg from "../assets/images/cyclone_solar_darwin_1784286769053.jpg";
-import jaSolarPanelImg from "../assets/images/ja_solar_panel_1785230414452.jpg";
+import cycloneSolarDarwinImg from "../assets/images/cyclone_solar_darwin_1784286769053.webp";
+import jaSolarPanelImg from "../assets/images/ja_solar_panel_1785230414452.webp";
 
 export function JaSolarPanels() {
   // FAQ Accordion State

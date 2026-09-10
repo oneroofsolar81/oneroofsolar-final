@@ -222,7 +222,7 @@ export function ImageUploadField({ value, onChange, label, helperText }: ImageUp
                   </div>
                   <div className="min-w-0">
                     <p className="text-xs font-bold text-slate-800 truncate">Embedded Base64 Image</p>
-                    <p className="text-[10px] text-emerald-600 font-semibold uppercase tracking-wider">Ready to Save & Sync</p>
+                    <p className="text-[10px] text-brand-600 font-semibold uppercase tracking-wider">Ready to Save & Sync</p>
                   </div>
                 </div>
                 <div className="flex gap-2">

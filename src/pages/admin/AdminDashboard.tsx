@@ -85,20 +85,20 @@ const DEFAULT_PAGES = [
     id: 'home',
     data: {
       title: "Home",
-      heroTitle: "Solar Systems Built for \n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-green-500 pb-2 inline-block\">Northern Territory Conditions</span>",
+      heroTitle: "Solar Systems Built for \n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300 pb-2 inline-block\">Northern Territory Conditions</span>",
       heroSubtitle: "Complete Solar Systems for Darwin & the NT. Get premium 6.6 kW Solar Systems from just <strong class=\"text-white font-medium bg-white/10 px-2 py-0.5 rounded-md\">$28 per week</strong> with $0 Deposit.",
       content: "",
       sections: {
         hero: {
           badge: "Federal Rebate: Save 30% on Solar Batteries",
-          title: "Solar Systems Built for <br />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-green-500 pb-2 inline-block\">Northern Territory Conditions</span>",
+          title: "Solar Systems Built for <br />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300 pb-2 inline-block\">Northern Territory Conditions</span>",
           subtitle: "Complete Solar Systems for Darwin & the NT. \nGet premium 6.6 kW Solar Systems from just <strong class=\"text-white font-medium bg-white/10 px-2 py-0.5 rounded-md\">$28 per week</strong> with $0 Deposit.",
           ctaText: "Get Free Quote",
           features: ["$0 Deposit Options", "25 Years Performance"]
         },
         expertise: {
           badge: "Our Expertise",
-          title: "Complete Energy <br class=\"hidden sm:block\" /><span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-500\">Solutions</span>",
+          title: "Complete Energy <br class=\"hidden sm:block\" /><span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Solutions</span>",
           items: [
             {
               title: "Residential & Commercial Solar",
@@ -140,7 +140,7 @@ const DEFAULT_PAGES = [
         },
         process: {
           badge: "How It Works",
-          title: "Your Seamless Journey to <br class=\"hidden sm:block\" />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400\">Solar Energy</span>",
+          title: "Your Seamless Journey to <br class=\"hidden sm:block\" />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Solar Energy</span>",
           subtitle: "We've completely streamlined our process to make switching to solar as easy, fast, and stress-free as possible.",
           steps: [
             {
@@ -167,7 +167,7 @@ const DEFAULT_PAGES = [
         },
         installer: {
           badge: "Top Quality Installers",
-          title: "Your Expert <br/> \n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-500\">Darwin Solar Installer</span>",
+          title: "Your Expert <br/> \n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Darwin Solar Installer</span>",
           image: "https://i.postimg.cc/05nhGvxW/Stuart-Park-0820.webp",
           paragraphs: [
             "As Darwin's premier solar panel installers, we are dedicated to providing the highest quality renewable energy solutions tailored specifically for the harsh Northern Territory climate.",
@@ -188,7 +188,7 @@ const DEFAULT_PAGES = [
         },
         ecosystem: {
           badge: "Complete Integration",
-          title: "The Smart Energy <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-green-500\">Ecosystem</span>",
+          title: "The Smart Energy <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Ecosystem</span>",
           subtitle: "All your energy needs seamlessly connected and controlled from the palm of your hand.",
           items: [
             {
@@ -259,7 +259,7 @@ const DEFAULT_PAGES = [
     id: 'about',
     data: {
       title: "About Us",
-      heroTitle: "Your Trusted Solar Partner in the <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400\">Northern Territory</span>",
+      heroTitle: "Your Trusted Solar Partner in the <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Northern Territory</span>",
       content: "At Oneroof Solar, we are dedicated to helping homes and businesses across Darwin, Alice Springs, and Palmerston transition to clean, renewable energy. We believe in providing top-tier equipment, flawless installation, and exceptional customer service.",
       heroSubtitle: ""
     }

@@ -188,6 +188,9 @@ export const mainNavConfig: NavItem[] = [
         href: "/services/solar-battery-installation",
         description: "Store excess solar energy for day & night.",
         iconName: "BatteryCharging",
+        children: [
+          { label: "Sigenergy Batteries", href: "/products/solar-battery-brands/sigenergy" },
+        ],
       },
     ],
   },
@@ -201,9 +204,27 @@ export const mainNavConfig: NavItem[] = [
     type: "compact-dropdown",
     children: [
       {
-        label: "Darwin & Palmerston",
-        href: "/solar-panels-darwin",
-        description: "Solar services across Darwin and Palmerston.",
+        label: "Darwin City",
+        href: "/locations/darwin-city",
+        description: "Solar across Darwin City and the inner suburbs.",
+        iconName: "MapPin",
+      },
+      {
+        label: "Northern Darwin",
+        href: "/locations/northern-darwin",
+        description: "Solar across Darwin's northern suburbs.",
+        iconName: "MapPin",
+      },
+      {
+        label: "Palmerston",
+        href: "/locations/palmerston",
+        description: "Solar across Palmerston and its estates.",
+        iconName: "MapPin",
+      },
+      {
+        label: "Darwin Rural",
+        href: "/locations/darwin-rural",
+        description: "Solar for rural and acreage properties.",
         iconName: "MapPin",
       },
       {

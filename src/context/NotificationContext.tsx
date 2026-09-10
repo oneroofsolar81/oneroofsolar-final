@@ -80,7 +80,7 @@ export function NotificationProvider({ children }: { children: React.ReactNode }
                 exit={{ opacity: 0, scale: 0.85, transition: { duration: 0.2 } }}
                 className={`pointer-events-auto flex items-start gap-3.5 p-4 rounded-xl border shadow-xl w-full select-none backdrop-blur-md ${
                   isSuccess
-                    ? 'bg-emerald-50/95 border-emerald-200/85 text-emerald-900 shadow-emerald-100/50'
+                    ? 'bg-brand-100/95 border-brand-200/85 text-brand-900 shadow-brand-100/50'
                     : isError
                     ? 'bg-rose-50/95 border-rose-200/85 text-rose-900 shadow-rose-100/50'
                     : isWarning
@@ -90,7 +90,7 @@ export function NotificationProvider({ children }: { children: React.ReactNode }
               >
                 {/* Icon Column */}
                 <div className="shrink-0 pt-0.5">
-                  {isSuccess && <CheckCircle className="w-5 h-5 text-emerald-600 animate-bounce" />}
+                  {isSuccess && <CheckCircle className="w-5 h-5 text-brand-600 animate-bounce" />}
                   {isError && <XCircle className="w-5 h-5 text-rose-600 animate-pulse" />}
                   {isWarning && <AlertTriangle className="w-5 h-5 text-amber-600 animate-pulse" />}
                   {isInfo && <Info className="w-5 h-5 text-slate-600" />}
@@ -113,7 +113,7 @@ export function NotificationProvider({ children }: { children: React.ReactNode }
                   onClick={() => removeNotification(notif.id)}
                   className={`shrink-0 p-1 rounded-lg transition-colors ${
                     isSuccess
-                      ? 'hover:bg-emerald-100 text-emerald-600'
+                      ? 'hover:bg-brand-100 text-brand-600'
                       : isError
                       ? 'hover:bg-rose-100 text-rose-600'
                       : isWarning

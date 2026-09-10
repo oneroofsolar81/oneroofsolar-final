@@ -87,9 +87,9 @@ function DarkHero({ service, slug }: { service: any; slug: string }) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <FadeIn isHero>
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8 uppercase">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase">
               {headingTop} <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                 {headingBottom}
               </span>
             </h1>
@@ -110,7 +110,7 @@ function DarkHero({ service, slug }: { service: any; slug: string }) {
           </FadeIn>
 
           <FadeIn isHero delay={0.2} className="relative hidden lg:block">
-            <div className="w-full aspect-square bg-gradient-to-br from-brand-500/20 to-emerald-600/20 rounded-full blur-3xl absolute inset-0 animate-pulse"></div>
+            <div className="w-full aspect-square bg-gradient-to-br from-brand-500/20 to-brand-600/20 rounded-full blur-3xl absolute inset-0 animate-pulse"></div>
             <img referrerPolicy="no-referrer" fetchPriority="high"
               src={service.image}
               alt={service.title}
@@ -572,8 +572,8 @@ import {
 import { Button } from "@/src/components/ui/Button";
 import { PartnersMarquee } from "@/src/components/PartnersMarquee";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
-import solarTechnicianDarwinImg from "../assets/images/solar_technician_darwin_1784286745235.jpg";
-import cycloneSolarDarwinImg from "../assets/images/cyclone_solar_darwin_1784286769053.jpg";
+import solarTechnicianDarwinImg from "../assets/images/solar_technician_darwin_1784286745235.webp";
+import cycloneSolarDarwinImg from "../assets/images/cyclone_solar_darwin_1784286769053.webp";
 
 type ServiceProduct = {
   title: string;
@@ -1180,9 +1180,9 @@ function EvChargerHero({ service }: { service: any }) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <FadeIn isHero>
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8 uppercase">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase">
               Drive <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                 Electric.
               </span>
             </h1>
@@ -1203,7 +1203,7 @@ function EvChargerHero({ service }: { service: any }) {
           </FadeIn>
 
           <FadeIn isHero delay={0.2} className="relative hidden lg:block">
-            <div className="w-full aspect-square bg-gradient-to-br from-brand-500/20 to-emerald-600/20 rounded-full blur-3xl absolute inset-0 animate-pulse"></div>
+            <div className="w-full aspect-square bg-gradient-to-br from-brand-500/20 to-brand-600/20 rounded-full blur-3xl absolute inset-0 animate-pulse"></div>
             <img referrerPolicy="no-referrer" fetchPriority="high"
               src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=60&w=1000&auto=format&fit=crop"
               alt="EV Charger"
@@ -1638,20 +1638,20 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           {JSON.stringify(schemas)}
         </script>
         {/* Hero Section */}
-        <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#19281D]">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#5BC94D]/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#5BC94D]/10 rounded-full blur-[150px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+        <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
+          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#8cc63f]/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#8cc63f]/10 rounded-full blur-[150px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
 
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
               <FadeIn>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mb-4 uppercase">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05] mb-4 uppercase">
                   Solar Panels <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5BC94D] to-emerald-400">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                     Darwin
                   </span>
                 </h1>
-                <p className="text-xl text-[#5BC94D] font-bold tracking-wide uppercase mb-6">
+                <p className="text-xl text-[#8cc63f] font-bold tracking-wide uppercase mb-6">
                   One team for installation, repair, and maintenance, all under one roof.
                 </p>
                 <p className="text-lg text-slate-300 leading-relaxed max-w-lg mb-10 font-medium">
@@ -1660,7 +1660,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="flex flex-wrap items-center gap-4">
                   <Button
                     size="lg"
-                    className="rounded-full px-8 bg-[#5BC94D] text-slate-900 border-none font-bold hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_0_20px_rgba(91,201,77,0.3)]"
+                    className="rounded-full px-8 bg-[#8cc63f] text-slate-900 border-none font-bold hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_0_20px_rgba(91,201,77,0.3)]"
                     asChild
                   >
                     <Link to="/contact">
@@ -1683,14 +1683,14 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 delay={0.2}
                 className="relative group cursor-pointer lg:h-[600px]"
               >
-                <div className="absolute inset-0 bg-[#5BC94D]/25 rounded-[3rem] transform rotate-3 scale-105 transition-transform duration-700 group-hover:rotate-6 blur-sm"></div>
+                <div className="absolute inset-0 bg-[#8cc63f]/25 rounded-[3rem] transform rotate-3 scale-105 transition-transform duration-700 group-hover:rotate-6 blur-sm"></div>
                 <div className="relative h-full rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl flex items-center justify-center bg-slate-900">
                   <img referrerPolicy="no-referrer" loading="lazy"
                     src="https://i.postimg.cc/ZqJnC3Sv/high-level-description-shot-on-iphone-a-Q9Cc-Iy-X7X-u10npe4Pfzlg-ngfs-MO-1Tw-CCPDb0e-Ibtc-A-cover-sd.jpg"
                     alt="solar panels Darwin, Oneroof Solar rooftop system"
                     className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000 opacity-80"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#19281D] via-transparent to-transparent opacity-90"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-transparent opacity-90"></div>
                 </div>
               </FadeIn>
             </div>
@@ -1719,8 +1719,8 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
               <FadeIn delay={0.1}>
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
-                  <span className="w-2 h-2 rounded-full bg-[#5BC94D] animate-pulse"></span>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 border border-brand-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                   Complete Solar Solutions
                 </div>
                 
@@ -1736,7 +1736,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               </FadeIn>
 
               <FadeIn delay={0.2} className="relative group cursor-pointer h-[400px] lg:h-[500px]">
-                <div className="absolute inset-0 bg-[#5BC94D]/10 rounded-[2.5rem] transform rotate-2 scale-105 transition-transform duration-700 group-hover:rotate-4 blur-sm"></div>
+                <div className="absolute inset-0 bg-[#8cc63f]/10 rounded-[2.5rem] transform rotate-2 scale-105 transition-transform duration-700 group-hover:rotate-4 blur-sm"></div>
                 <div className="relative h-full rounded-[2.5rem] overflow-hidden border border-slate-200 shadow-xl bg-slate-100">
                   <img referrerPolicy="no-referrer" loading="lazy"
                     src={solarTechnicianDarwinImg}
@@ -1751,20 +1751,20 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
         </section>
 
         {/* Hub Cards Section */}
-        <section className="py-24 lg:py-32 bg-[#19281D] relative">
+        <section className="py-24 lg:py-32 bg-[#0A1118] relative">
           <div className="absolute inset-0 bg-dot-white/[0.05] pointer-events-none"></div>
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#5BC94D]/5 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
+          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#8cc63f]/5 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
 
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-24">
               <FadeIn>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/5 bg-white/5 text-slate-300 font-semibold text-sm mb-6 shadow-sm backdrop-blur-md">
-                  <span className="w-2 h-2 rounded-full bg-[#5BC94D] animate-pulse shadow-[0_0_10px_rgba(91,201,77,0.8)]"></span>
+                  <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse shadow-[0_0_10px_rgba(91,201,77,0.8)]"></span>
                   Our Offerings
                 </div>
                 <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter mb-6 uppercase">
                   Our Solar Panel <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5BC94D] to-emerald-400">Services in Darwin</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Services in Darwin</span>
                 </h2>
                 <p className="text-slate-400 font-medium max-w-2xl mx-auto text-lg leading-relaxed">
                   We supply, install, inspect, and repair high-quality solar panel solutions. Select a specialized service below to learn more about how we can help.
@@ -1775,15 +1775,15 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 max-w-7xl mx-auto">
               {/* Card 1: Installation */}
               <FadeIn delay={0.1}>
-                <div className="bg-[#19281D]/40 rounded-[2rem] p-8 border border-white/10 shadow-2xl hover:border-[#5BC94D]/40 transition-all duration-500 h-full flex flex-col group relative overflow-hidden backdrop-blur-sm">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#5BC94D]/10 rounded-full blur-[80px] -mr-10 -mt-10 transition-transform duration-700 group-hover:scale-150 group-hover:bg-[#5BC94D]/20 z-0"></div>
+                <div className="bg-[#0A1118]/40 rounded-[2rem] p-8 border border-white/10 shadow-2xl hover:border-[#8cc63f]/40 transition-all duration-500 h-full flex flex-col group relative overflow-hidden backdrop-blur-sm">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#8cc63f]/10 rounded-full blur-[80px] -mr-10 -mt-10 transition-transform duration-700 group-hover:scale-150 group-hover:bg-[#8cc63f]/20 z-0"></div>
 
                   <div className="relative z-10 flex flex-col h-full">
-                    <div className="w-16 h-16 bg-[#5BC94D]/10 border border-[#5BC94D]/20 rounded-2xl flex items-center justify-center text-[#5BC94D] mb-8 group-hover:scale-110 transition-transform duration-500">
+                    <div className="w-16 h-16 bg-[#8cc63f]/10 border border-[#8cc63f]/20 rounded-2xl flex items-center justify-center text-[#8cc63f] mb-8 group-hover:scale-110 transition-transform duration-500">
                       <Zap className="w-8 h-8" />
                     </div>
 
-                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-[#5BC94D] transition-colors uppercase">
+                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-[#8cc63f] transition-colors uppercase">
                       Solar Panel Installation
                     </h3>
                     <div className="text-slate-400 text-base leading-relaxed font-medium mb-10">
@@ -1794,10 +1794,10 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                       to="/solar-panel-installation-darwin/"
                       className="mt-auto flex items-center justify-between pt-6 border-t border-white/10 group-hover:border-white/20 transition-colors group/link"
                     >
-                      <span className="text-xs font-bold text-white tracking-widest uppercase group-hover/link:text-[#5BC94D] transition-colors">
+                      <span className="text-xs font-bold text-white tracking-widest uppercase group-hover/link:text-[#8cc63f] transition-colors">
                         See Solar Panel Installation Darwin
                       </span>
-                      <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover/link:bg-[#5BC94D] group-hover/link:text-[#19281D] transition-all duration-300 text-white shadow-sm border border-white/10 group-hover/link:border-[#5BC94D]">
+                      <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover/link:bg-[#8cc63f] group-hover/link:text-[#19281D] transition-all duration-300 text-white shadow-sm border border-white/10 group-hover/link:border-[#8cc63f]">
                         <ArrowRight className="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-rotate-45 transition-transform duration-300" />
                       </div>
                     </Link>
@@ -1807,15 +1807,15 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
 
               {/* Card 2: Repairs */}
               <FadeIn delay={0.2}>
-                <div className="bg-[#19281D]/40 rounded-[2rem] p-8 border border-white/10 shadow-2xl hover:border-[#5BC94D]/40 transition-all duration-500 h-full flex flex-col group relative overflow-hidden backdrop-blur-sm">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] -mr-10 -mt-10 transition-transform duration-700 group-hover:scale-150 group-hover:bg-emerald-500/20 z-0"></div>
+                <div className="bg-[#0A1118]/40 rounded-[2rem] p-8 border border-white/10 shadow-2xl hover:border-[#8cc63f]/40 transition-all duration-500 h-full flex flex-col group relative overflow-hidden backdrop-blur-sm">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-brand-500/10 rounded-full blur-[80px] -mr-10 -mt-10 transition-transform duration-700 group-hover:scale-150 group-hover:bg-brand-500/20 z-0"></div>
 
                   <div className="relative z-10 flex flex-col h-full">
-                    <div className="w-16 h-16 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl flex items-center justify-center text-emerald-400 mb-8 group-hover:scale-110 transition-transform duration-500">
-                      <Wrench className="w-8 h-8 text-[#5BC94D]" />
+                    <div className="w-16 h-16 bg-brand-500/10 border border-brand-500/20 rounded-2xl flex items-center justify-center text-brand-400 mb-8 group-hover:scale-110 transition-transform duration-500">
+                      <Wrench className="w-8 h-8 text-[#8cc63f]" />
                     </div>
 
-                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-emerald-400 transition-colors uppercase">
+                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-brand-400 transition-colors uppercase">
                       Solar Panel Repair
                     </h3>
                     <div className="text-slate-400 text-base leading-relaxed font-medium mb-10">
@@ -1826,10 +1826,10 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                       to="/services/solar-panel-repair-darwin/"
                       className="mt-auto flex items-center justify-between pt-6 border-t border-white/10 group-hover:border-white/20 transition-colors group/link"
                     >
-                      <span className="text-xs font-bold text-white tracking-widest uppercase group-hover/link:text-[#5BC94D] transition-colors">
+                      <span className="text-xs font-bold text-white tracking-widest uppercase group-hover/link:text-[#8cc63f] transition-colors">
                         See Solar Panel Repair Darwin
                       </span>
-                      <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover/link:bg-[#5BC94D] group-hover/link:text-[#19281D] transition-all duration-300 text-white shadow-sm border border-white/10 group-hover/link:border-[#5BC94D]">
+                      <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover/link:bg-[#8cc63f] group-hover/link:text-[#19281D] transition-all duration-300 text-white shadow-sm border border-white/10 group-hover/link:border-[#8cc63f]">
                         <ArrowRight className="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-rotate-45 transition-transform duration-300" />
                       </div>
                     </Link>
@@ -1839,15 +1839,15 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
 
               {/* Card 3: Cleaning & Maintenance */}
               <FadeIn delay={0.3}>
-                <div className="bg-[#19281D]/40 rounded-[2rem] p-8 border border-white/10 shadow-2xl hover:border-[#5BC94D]/40 transition-all duration-500 h-full flex flex-col group relative overflow-hidden backdrop-blur-sm">
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#5BC94D]/10 rounded-full blur-[80px] -mr-10 -mt-10 transition-transform duration-700 group-hover:scale-150 group-hover:bg-[#5BC94D]/20 z-0"></div>
+                <div className="bg-[#0A1118]/40 rounded-[2rem] p-8 border border-white/10 shadow-2xl hover:border-[#8cc63f]/40 transition-all duration-500 h-full flex flex-col group relative overflow-hidden backdrop-blur-sm">
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#8cc63f]/10 rounded-full blur-[80px] -mr-10 -mt-10 transition-transform duration-700 group-hover:scale-150 group-hover:bg-[#8cc63f]/20 z-0"></div>
 
                   <div className="relative z-10 flex flex-col h-full">
-                    <div className="w-16 h-16 bg-[#5BC94D]/10 border border-[#5BC94D]/20 rounded-2xl flex items-center justify-center text-[#5BC94D] mb-8 group-hover:scale-110 transition-transform duration-500">
+                    <div className="w-16 h-16 bg-[#8cc63f]/10 border border-[#8cc63f]/20 rounded-2xl flex items-center justify-center text-[#8cc63f] mb-8 group-hover:scale-110 transition-transform duration-500">
                       <Shield className="w-8 h-8" />
                     </div>
 
-                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-[#5BC94D] transition-colors uppercase">
+                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-[#8cc63f] transition-colors uppercase">
                       Solar Panel Cleaning and Maintenance
                     </h3>
                     <div className="text-slate-400 text-base leading-relaxed font-medium mb-10">
@@ -1858,10 +1858,10 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                       to="/services/solar-panel-maintenance-darwin/"
                       className="mt-auto flex items-center justify-between pt-6 border-t border-white/10 group-hover:border-white/20 transition-colors group/link"
                     >
-                      <span className="text-xs font-bold text-white tracking-widest uppercase group-hover/link:text-[#5BC94D] transition-colors">
+                      <span className="text-xs font-bold text-white tracking-widest uppercase group-hover/link:text-[#8cc63f] transition-colors">
                         See Solar Panel Cleaning and Maintenance Darwin
                       </span>
-                      <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover/link:bg-[#5BC94D] group-hover/link:text-[#19281D] transition-all duration-300 text-white shadow-sm border border-white/10 group-hover/link:border-[#5BC94D]">
+                      <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover/link:bg-[#8cc63f] group-hover/link:text-[#19281D] transition-all duration-300 text-white shadow-sm border border-white/10 group-hover/link:border-[#8cc63f]">
                         <ArrowRight className="w-4 h-4 transform group-hover/link:translate-x-1 group-hover/link:-rotate-45 transition-transform duration-300" />
                       </div>
                     </Link>
@@ -1877,8 +1877,8 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <FadeIn>
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
-                  <span className="w-2 h-2 rounded-full bg-[#5BC94D] animate-pulse"></span>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 border border-brand-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                   Decision Guide
                 </div>
                 <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight uppercase">
@@ -1894,7 +1894,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               {/* Option 1 */}
               <FadeIn delay={0.1}>
                 <div className="bg-slate-50/50 hover:bg-white p-8 rounded-3xl border border-slate-150 transition-all duration-300 h-full flex flex-col hover:shadow-xl group">
-                  <div className="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center text-[#19281D] mb-6 font-black text-lg">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 font-black text-lg">
                     01
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 mb-3 uppercase tracking-tight">Installation</h3>
@@ -1907,7 +1907,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               {/* Option 2 */}
               <FadeIn delay={0.2}>
                 <div className="bg-slate-50/50 hover:bg-white p-8 rounded-3xl border border-slate-150 transition-all duration-300 h-full flex flex-col hover:shadow-xl group">
-                  <div className="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center text-[#19281D] mb-6 font-black text-lg">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 font-black text-lg">
                     02
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 mb-3 uppercase tracking-tight">Repair</h3>
@@ -1920,7 +1920,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               {/* Option 3 */}
               <FadeIn delay={0.3}>
                 <div className="bg-slate-50/50 hover:bg-white p-8 rounded-3xl border border-slate-150 transition-all duration-300 h-full flex flex-col hover:shadow-xl group">
-                  <div className="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center text-[#19281D] mb-6 font-black text-lg">
+                  <div className="w-12 h-12 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 font-black text-lg">
                     03
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 mb-3 uppercase tracking-tight">Maintenance</h3>
@@ -1932,9 +1932,9 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
 
               {/* Option 4 */}
               <FadeIn delay={0.4}>
-                <div className="bg-[#5BC94D] text-slate-950 p-8 rounded-3xl border border-brand-450 transition-all duration-300 h-full flex flex-col justify-between hover:shadow-xl hover:shadow-[#5BC94D]/10 group">
+                <div className="bg-[#8cc63f] text-slate-950 p-8 rounded-3xl border border-brand-450 transition-all duration-300 h-full flex flex-col justify-between hover:shadow-xl hover:shadow-[#8cc63f]/10 group">
                   <div>
-                    <div className="w-12 h-12 rounded-2xl bg-slate-950 flex items-center justify-center text-[#5BC94D] mb-6">
+                    <div className="w-12 h-12 rounded-2xl bg-slate-950 flex items-center justify-center text-[#8cc63f] mb-6">
                       <Phone className="w-5 h-5" />
                     </div>
                     <h3 className="text-lg font-extrabold text-slate-950 mb-3 uppercase tracking-tight">Get Expert Advice</h3>
@@ -1958,7 +1958,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
               <FadeIn className="order-2 lg:order-1 relative group cursor-pointer h-[400px] lg:h-[500px]">
-                <div className="absolute inset-0 bg-[#5BC94D]/10 rounded-[2.5rem] transform -rotate-2 scale-105 transition-transform duration-700 group-hover:rotate-4 blur-sm"></div>
+                <div className="absolute inset-0 bg-[#8cc63f]/10 rounded-[2.5rem] transform -rotate-2 scale-105 transition-transform duration-700 group-hover:rotate-4 blur-sm"></div>
                 <div className="relative h-full rounded-[2.5rem] overflow-hidden border border-slate-200 shadow-xl bg-slate-100">
                   <img referrerPolicy="no-referrer" loading="lazy"
                     src={cycloneSolarDarwinImg}
@@ -1970,8 +1970,8 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               </FadeIn>
 
               <FadeIn className="order-1 lg:order-2">
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
-                  <span className="w-2 h-2 rounded-full bg-[#5BC94D] animate-pulse"></span>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 border border-brand-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                   Cyclone Certified
                 </div>
                 <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight uppercase">
@@ -1989,8 +1989,8 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
         <section className="py-24 bg-white relative overflow-hidden border-b border-slate-100">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-[#5BC94D] animate-pulse"></span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 border border-brand-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                 NT Advantage
               </div>
               <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-8 tracking-tight uppercase">
@@ -2007,8 +2007,8 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
         <section className="py-12 bg-white">
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
             <FadeIn>
-              <div className="bg-[#19281D] p-12 text-center rounded-[2.5rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#5BC94D]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
+              <div className="bg-[#0A1118] p-12 text-center rounded-[2.5rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#8cc63f]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
                 <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 uppercase tracking-tight">
                   One Team, Every Stage of Your Solar Panel's Life
                 </h3>
@@ -2018,7 +2018,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="flex flex-wrap justify-center gap-4">
                   <Link 
                     to="/contact" 
-                    className="inline-block bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_15px_rgba(91,201,77,0.25)] uppercase tracking-wider text-xs"
+                    className="inline-block bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 font-bold px-8 py-4 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_15px_rgba(91,201,77,0.25)] uppercase tracking-wider text-xs"
                   >
                     Request Free Quote
                   </Link>
@@ -2039,8 +2039,8 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <FadeIn>
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 border border-emerald-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
-                  <span className="w-2 h-2 rounded-full bg-[#5BC94D] animate-pulse"></span>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 border border-brand-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                   Local Coverage
                 </div>
                 <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight uppercase">
@@ -2059,7 +2059,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
                     Darwin City and Inner Suburbs
                   </h3>
-                  <div className="text-xs font-bold text-[#5BC94D] uppercase tracking-wider mb-4">
+                  <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
                     NT 0800 / 0820
                   </div>
                   <p className="text-sm text-slate-600 leading-relaxed font-medium">
@@ -2074,7 +2074,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
                     Nightcliff, Rapid Creek and Northern Suburbs
                   </h3>
-                  <div className="text-xs font-bold text-[#5BC94D] uppercase tracking-wider mb-4">
+                  <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
                     NT 0810
                   </div>
                   <p className="text-sm text-slate-600 leading-relaxed font-medium">
@@ -2089,7 +2089,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
                     Casuarina and East
                   </h3>
-                  <div className="text-xs font-bold text-[#5BC94D] uppercase tracking-wider mb-4">
+                  <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
                     NT 0810 / 0812
                   </div>
                   <p className="text-sm text-slate-600 leading-relaxed font-medium">
@@ -2104,7 +2104,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
                     Fannie Bay, Stuart Park and Surrounds
                   </h3>
-                  <div className="text-xs font-bold text-[#5BC94D] uppercase tracking-wider mb-4">
+                  <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
                     NT 0820
                   </div>
                   <p className="text-sm text-slate-600 leading-relaxed font-medium">
@@ -2120,7 +2120,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               </p>
               <Button
                 size="lg"
-                className="rounded-full px-8 bg-[#5BC94D] hover:bg-[#4cb83f] text-slate-900 font-bold transition-all shadow-md uppercase tracking-wider text-xs"
+                className="rounded-full px-8 bg-[#8cc63f] hover:bg-[#4cb83f] text-slate-900 font-bold transition-all shadow-md uppercase tracking-wider text-xs"
                 asChild
               >
                 <Link to="/contact">
@@ -2140,8 +2140,8 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
         <section className="py-24 bg-white">
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
             <FadeIn>
-              <div className="bg-[#19281D] p-16 text-center rounded-[3rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#5BC94D]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
+              <div className="bg-[#0A1118] p-16 text-center rounded-[3rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
                 <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight">
                   Get Your Free Solar Panel Quote Today
                 </h3>
@@ -2154,7 +2154,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="flex flex-wrap justify-center gap-4">
                   <Link 
                     to="/contact" 
-                    className="inline-block bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-bold px-10 py-5 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-sm"
+                    className="inline-block bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 font-bold px-10 py-5 rounded-xl transition-all duration-300 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-sm"
                   >
                     Request Free Quote
                   </Link>
@@ -2181,7 +2181,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
     };
 
     return (
-      <div key={currentSlug} className="bg-[#19281D] text-slate-900 font-sans">
+      <div key={currentSlug} className="bg-[#0A1118] text-slate-900 font-sans">
         <SEO seo={seoData} />
         <ResidentialSolarSystemPage />
       </div>
@@ -2232,26 +2232,26 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
       {/* Hero Section */}
       <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[150px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05] mix-blend-overlay"></div>
 
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
               <FadeIn>
                 {isSolarInstall ? (
-                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mb-6">
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05] mb-6">
                     Darwin's Solar Panel <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                       Installation Experts
                     </span>
                   </h1>
                 ) : (
-                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mb-6">
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05] mb-6">
                     {service.title.split(" ").map((word, i, arr) =>
                       i === arr.length - 1 ? (
                         <span
                           key={i}
-                          className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400 whitespace-nowrap"
+                          className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300 whitespace-nowrap"
                         >
                           {word}
                         </span>
@@ -2721,7 +2721,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
       ) : (
         <section className="py-14 sm:py-16 md:py-20 bg-[#0a1118] relative overflow-hidden">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
 
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -2736,7 +2736,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   </div>
                   <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.1]">
                     Why Choose Our <br className="hidden sm:block" />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                       {service.title}?
                     </span>
                   </h2>
@@ -2771,7 +2771,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 delay={0.2}
                 className="group bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-[2rem] hover:bg-white/10 hover:border-brand-500/30 transition-all duration-500"
               >
-                <div className="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:scale-110 transition-transform duration-500">
+                <div className="w-16 h-16 bg-brand-500/20 text-brand-400 rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:scale-110 transition-transform duration-500">
                   <Zap className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">
@@ -2820,7 +2820,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
       {/* Process Section */}
       <section className="py-14 sm:py-16 md:py-20 bg-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-50/50 rounded-full blur-[100px] pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-emerald-50/50 rounded-full blur-[100px] pointer-events-none translate-y-1/2 -translate-x-1/3"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-100/50 rounded-full blur-[100px] pointer-events-none translate-y-1/2 -translate-x-1/3"></div>
         <div className="absolute inset-0 bg-grid-slate-100/[0.04] bg-[size:40px_40px]"></div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -2832,7 +2832,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               </div>
               <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">
                 How We Deliver{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-emerald-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                   Excellence
                 </span>
               </h2>

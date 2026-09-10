@@ -81,7 +81,7 @@ export function FaqSection({ faqs, heading }: { faqs: { q: string; a: ReactNode 
                 {heading || (
                   <>
                     Common <br className="hidden sm:block" />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-500">Inquiries</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Inquiries</span>
                   </>
                 )}
               </h2>

@@ -30,10 +30,10 @@ import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
 import { SEO } from "../components/SEO";
 
-import heroInverterImg from "../assets/images/inverter_hero_install_1785339518164.jpg";
-import inverterCloseUpImg from "../assets/images/inverter_close_up_1785310553663.jpg";
-import stormRoofImg from "../assets/images/darwin_storm_roof_1785343440441.jpg";
-import offgridImg from "../assets/images/offgrid_hero_1785224439961.jpg";
+import heroInverterImg from "../assets/images/inverter_hero_install_1785339518164.webp";
+import inverterCloseUpImg from "../assets/images/inverter_close_up_1785310553663.webp";
+import stormRoofImg from "../assets/images/darwin_storm_roof_1785343440441.webp";
+import offgridImg from "../assets/images/offgrid_hero_1785224439961.webp";
 
 export function SigenergyInvertersPage() {
   const [openFaqs, setOpenFaqs] = useState<number[]>([0]);
@@ -110,7 +110,7 @@ export function SigenergyInvertersPage() {
   ];
 
   return (
-    <div className="bg-slate-50 text-slate-900 font-sans min-h-screen selection:bg-[#5BC94D]/30 selection:text-slate-900">
+    <div className="bg-slate-50 text-slate-900 font-sans min-h-screen selection:bg-[#8cc63f]/30 selection:text-slate-900">
       <SEO seo={seoData} />
 
       {schemas.map((schema, index) => (
@@ -124,16 +124,16 @@ export function SigenergyInvertersPage() {
       {/* ========================================================= */}
       {/* SECTION 1: HERO SECTION (2-COLUMN 55/45, DARK NAVY)       */}
       {/* ========================================================= */}
-      <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-28 bg-[#070C12] text-white overflow-hidden border-b border-slate-800">
+      <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-28 bg-[#0A1118] text-white overflow-hidden border-b border-slate-800">
         {/* Ambient Glows */}
-        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#5BC94D]/10 rounded-full blur-[140px] pointer-events-none -mt-32"></div>
-        <div className="absolute bottom-0 left-10 w-[450px] h-[450px] bg-emerald-600/10 rounded-full blur-[120px] pointer-events-none -mb-20"></div>
+        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#8cc63f]/10 rounded-full blur-[140px] pointer-events-none -mt-32"></div>
+        <div className="absolute bottom-0 left-10 w-[450px] h-[450px] bg-brand-600/10 rounded-full blur-[120px] pointer-events-none -mb-20"></div>
 
         {/* Tech Grid Background Pattern */}
         <div 
           className="absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{
-            backgroundImage: `radial-gradient(#5BC94D 1px, transparent 0)`,
+            backgroundImage: `radial-gradient(#8cc63f 1px, transparent 0)`,
             backgroundSize: '32px 32px'
           }}
         ></div>
@@ -142,27 +142,27 @@ export function SigenergyInvertersPage() {
           <FadeIn isHero>
             {/* Breadcrumb Navigation */}
             <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
-              <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
+              <Link to="/" className="hover:text-[#8cc63f] transition-colors">Home</Link>
               <span className="text-slate-600" aria-hidden="true">&gt;</span>
-              <Link to="/products/solar-inverters" className="hover:text-[#5BC94D] transition-colors">Solar Inverters</Link>
+              <Link to="/products/solar-inverters" className="hover:text-[#8cc63f] transition-colors">Solar Inverters</Link>
               <span className="text-slate-600" aria-hidden="true">&gt;</span>
-              <span className="text-[#5BC94D]" aria-current="page">Sigenergy Inverters</span>
+              <span className="text-[#8cc63f]" aria-current="page">Sigenergy Inverters</span>
             </nav>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
               
               {/* Left Column (55-60% width) */}
               <div className="lg:col-span-7 text-left">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D]  text-xs font-bold uppercase tracking-wider mb-6">
-                  <ShieldCheck className="w-4 h-4 text-[#5BC94D]" />
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f]  text-xs font-bold uppercase tracking-wider mb-6">
+                  <ShieldCheck className="w-4 h-4 text-[#8cc63f]" />
                   <span>SAA Approved &amp; Battery Ready • Darwin NT</span>
                 </div>
 
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black text-white uppercase tracking-wide leading-[1.08] mb-6">
-                  Sigenergy Solar Inverters <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-[#5BC94D]">Darwin NT</span>
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide leading-[1.08] mb-6">
+                  Sigenergy Solar Inverters <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Darwin NT</span>
                 </h1>
 
-                <p className="text-base sm:text-lg lg:text-xl text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-5 mb-8 max-w-2xl">
+                <p className="text-base sm:text-lg lg:text-xl text-slate-300 leading-relaxed font-medium border-l-2 border-[#8cc63f] pl-5 mb-8 max-w-2xl">
                   Battery ready hybrid inverters built for Darwin's heat, humidity and wet season storms. Supplied and installed locally, with your STC discount already applied upfront.
                 </p>
 
@@ -170,7 +170,7 @@ export function SigenergyInvertersPage() {
                 <div className="flex flex-wrap items-center gap-4 mb-10">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-0.5 uppercase tracking-wider text-xs sm:text-sm shadow-lg shadow-[#5BC94D]/20"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-0.5 uppercase tracking-wider text-xs sm:text-sm shadow-lg shadow-[#8cc63f]/20"
                     asChild
                   >
                     <Link to="/contact">
@@ -182,7 +182,7 @@ export function SigenergyInvertersPage() {
                     href="tel:0483986444"
                     className="inline-flex items-center justify-center h-14 px-7 rounded-xl bg-slate-900/90 text-white font-bold transition-all hover:bg-slate-800 text-xs sm:text-sm uppercase tracking-wider gap-2.5 border border-slate-700 hover:border-slate-600"
                   >
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>0483 986 444</span>
                   </a>
                 </div>
@@ -191,7 +191,7 @@ export function SigenergyInvertersPage() {
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-slate-800/90">
                   <div className="bg-slate-900/90 border border-slate-800 p-3.5 rounded-xl">
                     <span className="text-[10px]  text-slate-400 uppercase font-semibold block mb-0.5">Efficiency</span>
-                    <span className="text-sm font-extrabold text-[#5BC94D]">Up to 98.4%</span>
+                    <span className="text-sm font-extrabold text-[#8cc63f]">Up to 98.4%</span>
                   </div>
                   <div className="bg-slate-900/90 border border-slate-800 p-3.5 rounded-xl">
                     <span className="text-[10px]  text-slate-400 uppercase font-semibold block mb-0.5">Ingress Rating</span>
@@ -199,7 +199,7 @@ export function SigenergyInvertersPage() {
                   </div>
                   <div className="bg-slate-900/90 border border-slate-800 p-3.5 rounded-xl">
                     <span className="text-[10px]  text-slate-400 uppercase font-semibold block mb-0.5">Storage Ready</span>
-                    <span className="text-sm font-extrabold text-[#5BC94D]">100% Plug &amp; Play</span>
+                    <span className="text-sm font-extrabold text-[#8cc63f]">100% Plug &amp; Play</span>
                   </div>
                   <div className="bg-slate-900/90 border border-slate-800 p-3.5 rounded-xl">
                     <span className="text-[10px]  text-slate-400 uppercase font-semibold block mb-0.5">Certification</span>
@@ -217,19 +217,19 @@ export function SigenergyInvertersPage() {
                     alt="Sigenergy Solar Inverter System Darwin NT"
                     className="w-full h-[360px] sm:h-[420px] object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#070C12] via-slate-950/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-slate-950/20 to-transparent"></div>
 
                   <div className="absolute top-4 right-4 bg-slate-900/90 border border-slate-700/80 backdrop-blur-md px-3.5 py-1.5 rounded-xl flex items-center gap-2 shadow-xl">
-                    <div className="w-2.5 h-2.5 rounded-full bg-[#5BC94D] animate-pulse"></div>
+                    <div className="w-2.5 h-2.5 rounded-full bg-[#8cc63f] animate-pulse"></div>
                     <span className="text-[11px]  font-bold text-white uppercase tracking-wider">Darwin Wet Season Shield</span>
                   </div>
 
                   <div className="absolute bottom-5 left-5 right-5 p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800/90 backdrop-blur-md shadow-2xl space-y-1.5">
                     <div className="flex items-center justify-between">
-                      <span className="text-[10px]  uppercase tracking-widest text-[#5BC94D] font-extrabold">
+                      <span className="text-[10px]  uppercase tracking-widest text-[#8cc63f] font-extrabold">
                         NT Climate Engineered
                       </span>
-                      <span className="px-2 py-0.5 rounded bg-[#5BC94D]/20 text-[#5BC94D] text-[10px]  font-bold">
+                      <span className="px-2 py-0.5 rounded bg-[#8cc63f]/20 text-[#8cc63f] text-[10px]  font-bold">
                         SAA Approved
                       </span>
                     </div>
@@ -258,7 +258,7 @@ export function SigenergyInvertersPage() {
               
               {/* Left Column (55-60% width): Copy */}
               <div className="lg:col-span-7 flex flex-col justify-center text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#5BC94D]/20 w-fit">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#8cc63f]/20 w-fit">
                   <Zap className="w-3.5 h-3.5" />
                   <span>System Overview</span>
                 </div>
@@ -279,7 +279,7 @@ export function SigenergyInvertersPage() {
                 {/* Key Benefits Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-8 border-t border-slate-100">
                   <div className="flex items-start gap-3.5 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-                    <div className="w-8 h-8 rounded-lg bg-[#5BC94D]/20 text-[#2f8323] flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-8 h-8 rounded-lg bg-[#8cc63f]/20 text-[#2f8323] flex items-center justify-center shrink-0 mt-0.5">
                       <Battery className="w-4 h-4 stroke-[2.5]" />
                     </div>
                     <div>
@@ -291,7 +291,7 @@ export function SigenergyInvertersPage() {
                   </div>
 
                   <div className="flex items-start gap-3.5 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-                    <div className="w-8 h-8 rounded-lg bg-[#5BC94D]/20 text-[#2f8323] flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-8 h-8 rounded-lg bg-[#8cc63f]/20 text-[#2f8323] flex items-center justify-center shrink-0 mt-0.5">
                       <ShieldCheck className="w-4 h-4 stroke-[2.5]" />
                     </div>
                     <div>
@@ -307,14 +307,14 @@ export function SigenergyInvertersPage() {
               {/* Right Column (40-45% width): Architecture Card */}
               <div className="lg:col-span-5 flex flex-col justify-center">
                 <div className="bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-800 text-white shadow-xl relative overflow-hidden space-y-6">
-                  <div className="absolute top-0 right-0 w-36 h-36 bg-[#5BC94D]/15 rounded-full blur-3xl pointer-events-none"></div>
+                  <div className="absolute top-0 right-0 w-36 h-36 bg-[#8cc63f]/15 rounded-full blur-3xl pointer-events-none"></div>
 
                   <div className="flex items-center gap-3.5 pb-5 border-b border-slate-800">
-                    <div className="w-11 h-11 rounded-xl bg-[#5BC94D]/15 border border-[#5BC94D]/30 flex items-center justify-center text-[#5BC94D] shrink-0">
+                    <div className="w-11 h-11 rounded-xl bg-[#8cc63f]/15 border border-[#8cc63f]/30 flex items-center justify-center text-[#8cc63f] shrink-0">
                       <Cpu className="w-5 h-5" />
                     </div>
                     <div>
-                      <span className="text-[10px]  uppercase text-[#5BC94D] font-extrabold block tracking-wider">
+                      <span className="text-[10px]  uppercase text-[#8cc63f] font-extrabold block tracking-wider">
                         Sigenergy Core Architecture
                       </span>
                       <h3 className="text-lg font-extrabold text-white">
@@ -325,7 +325,7 @@ export function SigenergyInvertersPage() {
 
                   <div className="space-y-3.5">
                     <div className="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <div>
                         <h4 className="text-xs sm:text-sm font-bold text-white">Modular Stacking System</h4>
                         <p className="text-xs text-slate-300 font-medium leading-relaxed mt-0.5">
@@ -335,7 +335,7 @@ export function SigenergyInvertersPage() {
                     </div>
 
                     <div className="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <div>
                         <h4 className="text-xs sm:text-sm font-bold text-white">Zero Extra Switchboard Rewiring</h4>
                         <p className="text-xs text-slate-300 font-medium leading-relaxed mt-0.5">
@@ -345,7 +345,7 @@ export function SigenergyInvertersPage() {
                     </div>
 
                     <div className="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <div>
                         <h4 className="text-xs sm:text-sm font-bold text-white">Territory Wide Supply &amp; Install</h4>
                         <p className="text-xs text-slate-300 font-medium leading-relaxed mt-0.5">
@@ -358,7 +358,7 @@ export function SigenergyInvertersPage() {
                   <div className="pt-2">
                     <Button
                       size="sm"
-                      className="w-full rounded-xl bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-extrabold uppercase tracking-wider text-xs h-11"
+                      className="w-full rounded-xl bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 font-extrabold uppercase tracking-wider text-xs h-11"
                       asChild
                     >
                       <Link to="/contact">
@@ -381,7 +381,7 @@ export function SigenergyInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
             <div className="max-w-3xl text-left mb-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] border border-[#5BC94D]/30  text-xs font-bold uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/30  text-xs font-bold uppercase tracking-wider mb-4">
                 <SlidersHorizontal className="w-3.5 h-3.5" />
                 <span>Product Options</span>
               </div>
@@ -402,7 +402,7 @@ export function SigenergyInvertersPage() {
                 onClick={() => setSelectedPhase("single")}
                 className={`flex-1 py-2.5 rounded-lg font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 ${
                   selectedPhase === "single"
-                    ? "bg-[#5BC94D] text-[#19281D] shadow-md"
+                    ? "bg-[#8cc63f] text-[#19281D] shadow-md"
                     : "text-slate-400 hover:text-white"
                 }`}
               >
@@ -415,7 +415,7 @@ export function SigenergyInvertersPage() {
                 onClick={() => setSelectedPhase("three")}
                 className={`flex-1 py-2.5 rounded-lg font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 ${
                   selectedPhase === "three"
-                    ? "bg-[#5BC94D] text-[#19281D] shadow-md"
+                    ? "bg-[#8cc63f] text-[#19281D] shadow-md"
                     : "text-slate-400 hover:text-white"
                 }`}
               >
@@ -430,12 +430,12 @@ export function SigenergyInvertersPage() {
               {/* CARD 1: SINGLE PHASE */}
               <div 
                 className={`bg-slate-950 border-2 rounded-2xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 ${
-                  selectedPhase === "single" ? "border-[#5BC94D] shadow-xl shadow-[#5BC94D]/10" : "border-slate-800 hover:border-slate-700 opacity-90"
+                  selectedPhase === "single" ? "border-[#8cc63f] shadow-xl shadow-[#8cc63f]/10" : "border-slate-800 hover:border-slate-700 opacity-90"
                 }`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
-                    <span className="px-3 py-1 rounded-md bg-[#5BC94D]/15 text-[#5BC94D] border border-[#5BC94D]/30  text-xs font-bold uppercase tracking-wider">
+                    <span className="px-3 py-1 rounded-md bg-[#8cc63f]/15 text-[#8cc63f] border border-[#8cc63f]/30  text-xs font-bold uppercase tracking-wider">
                       Single Phase
                     </span>
                     <span className="text-xs  text-slate-400">Residential NT Standard</span>
@@ -445,25 +445,25 @@ export function SigenergyInvertersPage() {
                     Single Phase, 3.0 to 12.0kW
                   </h3>
 
-                  <p className="text-slate-200 text-sm sm:text-base font-bold mb-6 italic border-l-3 border-[#5BC94D] pl-3.5 py-1">
+                  <p className="text-slate-200 text-sm sm:text-base font-bold mb-6 italic border-l-3 border-[#8cc63f] pl-3.5 py-1">
                     The right fit for a standard NT home on single phase power.
                   </p>
 
                   <ul className="space-y-3.5 mb-8 text-slate-300 text-sm font-medium">
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <span>Battery ready and future proof architecture</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <span>DC to AC ratio up to 2.0 (maximize panel array generation throughout the day)</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <span>Up to 4 MPP trackers for multi-roof orientation handling</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <span>IP66 waterproof rating against tropical Wet season humidity</span>
                     </li>
                   </ul>
@@ -472,7 +472,7 @@ export function SigenergyInvertersPage() {
                 <div className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row gap-3">
                   <Button
                     size="lg"
-                    className="flex-1 rounded-xl bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-extrabold transition-all uppercase tracking-wider text-xs justify-between h-12"
+                    className="flex-1 rounded-xl bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 font-extrabold transition-all uppercase tracking-wider text-xs justify-between h-12"
                     asChild
                   >
                     <Link to="/contact">
@@ -489,7 +489,7 @@ export function SigenergyInvertersPage() {
                     }}
                     className="px-4 rounded-xl bg-slate-800 text-slate-200 hover:bg-slate-700 font-bold transition-all uppercase tracking-wider text-xs flex items-center justify-center gap-2 border border-slate-700 h-12"
                   >
-                    <FileText className="w-4 h-4 text-[#5BC94D]" />
+                    <FileText className="w-4 h-4 text-[#8cc63f]" />
                     <span>Specs</span>
                   </button>
                 </div>
@@ -498,7 +498,7 @@ export function SigenergyInvertersPage() {
               {/* CARD 2: THREE PHASE */}
               <div 
                 className={`bg-slate-950 border-2 rounded-2xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 ${
-                  selectedPhase === "three" ? "border-[#5BC94D] shadow-xl shadow-[#5BC94D]/10" : "border-slate-800 hover:border-slate-700 opacity-90"
+                  selectedPhase === "three" ? "border-[#8cc63f] shadow-xl shadow-[#8cc63f]/10" : "border-slate-800 hover:border-slate-700 opacity-90"
                 }`}
               >
                 <div>
@@ -519,19 +519,19 @@ export function SigenergyInvertersPage() {
 
                   <ul className="space-y-3.5 mb-8 text-slate-300 text-sm font-medium">
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <span>Battery ready and future proof architecture</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <span>Up to 4 MPP trackers for maximum array flexibility</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <span>IP66 waterproof rating for high durability</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <span>Sizes from 5.0kW up to 25.0kW covering large estates to warehouses</span>
                     </li>
                   </ul>
@@ -540,7 +540,7 @@ export function SigenergyInvertersPage() {
                 <div className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row gap-3">
                   <Button
                     size="lg"
-                    className="flex-1 rounded-xl bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-extrabold transition-all uppercase tracking-wider text-xs justify-between h-12"
+                    className="flex-1 rounded-xl bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 font-extrabold transition-all uppercase tracking-wider text-xs justify-between h-12"
                     asChild
                   >
                     <Link to="/contact">
@@ -578,7 +578,7 @@ export function SigenergyInvertersPage() {
               
               {/* Left Column (55-60% width): Copy */}
               <div className="lg:col-span-7 flex flex-col justify-center text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#5BC94D]/20 w-fit">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#8cc63f]/20 w-fit">
                   <CloudRain className="w-3.5 h-3.5" />
                   <span>Top End Durability</span>
                 </div>
@@ -598,7 +598,7 @@ export function SigenergyInvertersPage() {
                     Pairing the right inverter with a correctly angled panel array matters just as much as the inverter itself. If you're still planning your panel layout, our{" "}
                     <Link 
                       to="/solar-panels-darwin" 
-                      className="text-[#19281D] font-extrabold underline decoration-[#5BC94D] decoration-2 underline-offset-4 hover:text-[#5BC94D] transition-colors"
+                      className="text-[#19281D] font-extrabold underline decoration-[#8cc63f] decoration-2 underline-offset-4 hover:text-[#8cc63f] transition-colors"
                     >
                       Darwin solar panel installation guide
                     </Link>
@@ -630,7 +630,7 @@ export function SigenergyInvertersPage() {
                         <span className="text-xs  font-bold text-[#2f8323] uppercase">
                           IP66 Waterproof &amp; Dustproof
                         </span>
-                        <span className="text-[10px]  bg-[#5BC94D]/15 text-[#2f8323] px-2 py-0.5 rounded font-bold">HERMETIC SEAL</span>
+                        <span className="text-[10px]  bg-[#8cc63f]/15 text-[#2f8323] px-2 py-0.5 rounded font-bold">HERMETIC SEAL</span>
                       </div>
                       <p className="text-xs text-slate-600 font-medium leading-relaxed">
                         Protects sensitive internal power electronics during months of 90%+ wet season humidity.
@@ -679,8 +679,8 @@ export function SigenergyInvertersPage() {
               
               {/* Left Column (55-60% width): Copy */}
               <div className="lg:col-span-7 flex flex-col justify-center text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] border border-[#5BC94D]/30  text-xs font-bold uppercase tracking-wider mb-4 w-fit">
-                  <Award className="w-4 h-4 text-[#5BC94D]" />
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/30  text-xs font-bold uppercase tracking-wider mb-4 w-fit">
+                  <Award className="w-4 h-4 text-[#8cc63f]" />
                   <span>Certified Quality</span>
                 </div>
 
@@ -702,7 +702,7 @@ export function SigenergyInvertersPage() {
               <div className="lg:col-span-5 flex flex-col justify-center">
                 <div className="bg-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl space-y-6">
                   <div className="text-left pb-5 border-b border-slate-800">
-                    <div className="w-12 h-12 rounded-xl bg-[#5BC94D]/15 text-[#5BC94D] border border-[#5BC94D]/30 flex items-center justify-center mb-3">
+                    <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/15 text-[#8cc63f] border border-[#8cc63f]/30 flex items-center justify-center mb-3">
                       <Award className="w-6 h-6" />
                     </div>
                     <span className="text-[10px]  font-bold text-slate-400 uppercase tracking-widest block mb-1">
@@ -715,15 +715,15 @@ export function SigenergyInvertersPage() {
 
                   <div className="space-y-3.5">
                     <div className="flex items-center gap-3 text-slate-200 text-xs sm:text-sm font-bold bg-slate-900 p-3.5 rounded-xl border border-slate-800">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0" />
                       <span>SAA Approved Product Certification</span>
                     </div>
                     <div className="flex items-center gap-3 text-slate-200 text-xs sm:text-sm font-bold bg-slate-900 p-3.5 rounded-xl border border-slate-800">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0" />
                       <span>SAA Accredited Local Installer</span>
                     </div>
                     <div className="flex items-center gap-3 text-slate-200 text-xs sm:text-sm font-bold bg-slate-900 p-3.5 rounded-xl border border-slate-800">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0" />
                       <span>Network Connection Approvals Handled</span>
                     </div>
                   </div>
@@ -742,7 +742,7 @@ export function SigenergyInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="text-left max-w-3xl mb-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#5BC94D]/20 w-fit">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#8cc63f]/20 w-fit">
                 <Gauge className="w-3.5 h-3.5" />
                 <span>Incentives &amp; Savings</span>
               </div>
@@ -758,10 +758,10 @@ export function SigenergyInvertersPage() {
 
             {/* Interactive STC Estimator Widget */}
             <div className="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl mb-10 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#5BC94D]/10 rounded-full blur-3xl pointer-events-none"></div>
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#8cc63f]/10 rounded-full blur-3xl pointer-events-none"></div>
 
               <div className="max-w-3xl text-left">
-                <span className="text-[11px]  font-bold uppercase text-[#5BC94D] tracking-wider block mb-2">
+                <span className="text-[11px]  font-bold uppercase text-[#8cc63f] tracking-wider block mb-2">
                   Upfront STC Discount Estimator (Darwin Zone)
                 </span>
                 <h3 className="text-xl sm:text-2xl font-black text-white mb-2">
@@ -779,7 +779,7 @@ export function SigenergyInvertersPage() {
                       onClick={() => setSelectedSystemKw(kw)}
                       className={`px-4 py-2 rounded-xl text-xs  font-bold tracking-wider transition-all ${
                         selectedSystemKw === kw
-                          ? "bg-[#5BC94D] text-[#19281D] font-extrabold shadow-md"
+                          ? "bg-[#8cc63f] text-[#19281D] font-extrabold shadow-md"
                           : "bg-slate-800 text-slate-300 hover:bg-slate-700"
                       }`}
                     >
@@ -793,14 +793,14 @@ export function SigenergyInvertersPage() {
                     <span className="text-xs  text-slate-400 block uppercase mb-1">
                       Estimated Upfront STC Discount ({selectedSystemKw} kW)
                     </span>
-                    <span className="text-2xl sm:text-3xl font-black text-[#5BC94D]">
+                    <span className="text-2xl sm:text-3xl font-black text-[#8cc63f]">
                       ~${calculateSTCEstimate(selectedSystemKw).toLocaleString()} AUD
                     </span>
                   </div>
 
                   <Button
                     size="sm"
-                    className="rounded-xl bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-extrabold uppercase tracking-wider text-xs h-11 px-6 shrink-0"
+                    className="rounded-xl bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 font-extrabold uppercase tracking-wider text-xs h-11 px-6 shrink-0"
                     asChild
                   >
                     <Link to="/contact">
@@ -856,8 +856,8 @@ export function SigenergyInvertersPage() {
           <FadeIn>
             <div className="bg-slate-900 border border-slate-800 p-8 sm:p-12 rounded-2xl shadow-2xl relative overflow-hidden text-left">
               <div className="max-w-3xl">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/15 text-[#5BC94D] border border-[#5BC94D]/30  text-xs font-bold uppercase tracking-wider mb-4">
-                  <ShieldAlert className="w-4 h-4 text-[#5BC94D]" />
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/15 text-[#8cc63f] border border-[#8cc63f]/30  text-xs font-bold uppercase tracking-wider mb-4">
+                  <ShieldAlert className="w-4 h-4 text-[#8cc63f]" />
                   <span>Free Diagnostic Callout</span>
                 </div>
 
@@ -872,7 +872,7 @@ export function SigenergyInvertersPage() {
                 <div className="flex flex-wrap items-center gap-4 mb-6">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 uppercase tracking-wider text-xs sm:text-sm shadow-lg shadow-[#5BC94D]/20"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 uppercase tracking-wider text-xs sm:text-sm shadow-lg shadow-[#8cc63f]/20"
                     asChild
                   >
                     <Link to="/contact">
@@ -884,7 +884,7 @@ export function SigenergyInvertersPage() {
                     href="tel:0483986444"
                     className="inline-flex items-center justify-center h-14 px-7 rounded-xl bg-slate-950 text-white font-bold transition-all hover:bg-slate-800 text-xs sm:text-sm uppercase tracking-wider gap-2.5 border border-slate-800"
                   >
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>0483 986 444</span>
                   </a>
                 </div>
@@ -893,7 +893,7 @@ export function SigenergyInvertersPage() {
                   Already know your current inverter needs attention? Our{" "}
                   <Link 
                     to="/services/solar-panel-repair-darwin" 
-                    className="text-[#5BC94D] font-extrabold underline decoration-[#5BC94D] decoration-2 underline-offset-4 hover:text-emerald-300 transition-colors"
+                    className="text-[#8cc63f] font-extrabold underline decoration-[#8cc63f] decoration-2 underline-offset-4 hover:text-brand-300 transition-colors"
                   >
                     solar panel repair team in Darwin
                   </Link>
@@ -912,7 +912,7 @@ export function SigenergyInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="text-left mb-8">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] border border-[#5BC94D]/30  text-xs font-bold uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/30  text-xs font-bold uppercase tracking-wider mb-4">
                 <Activity className="w-3.5 h-3.5" />
                 <span>Brand Comparison</span>
               </div>
@@ -932,7 +932,7 @@ export function SigenergyInvertersPage() {
                   <thead>
                     <tr className="border-b border-slate-800 text-slate-400 uppercase tracking-wider">
                       <th className="pb-3.5 font-bold">Feature</th>
-                      <th className="pb-3.5 font-extrabold text-[#5BC94D] bg-[#5BC94D]/10 px-3 py-1 rounded-t-lg">Sigenergy</th>
+                      <th className="pb-3.5 font-extrabold text-[#8cc63f] bg-[#8cc63f]/10 px-3 py-1 rounded-t-lg">Sigenergy</th>
                       <th className="pb-3.5 font-bold text-slate-300 px-3">Sungrow</th>
                       <th className="pb-3.5 font-bold text-slate-300 px-3">GoodWe</th>
                       <th className="pb-3.5 font-bold text-slate-300 px-3">Fox ESS</th>
@@ -941,28 +941,28 @@ export function SigenergyInvertersPage() {
                   <tbody className="divide-y divide-slate-800/80 font-sans text-xs sm:text-sm">
                     <tr>
                       <td className="py-3.5 font-bold text-slate-300">Battery Architecture</td>
-                      <td className="py-3.5 font-extrabold text-[#5BC94D] bg-[#5BC94D]/5 px-3">Native Plug &amp; Play</td>
+                      <td className="py-3.5 font-extrabold text-[#8cc63f] bg-[#8cc63f]/5 px-3">Native Plug &amp; Play</td>
                       <td className="py-3.5 text-slate-400 px-3">Hybrid / Modular</td>
                       <td className="py-3.5 text-slate-400 px-3">Hybrid Available</td>
                       <td className="py-3.5 text-slate-400 px-3">Hybrid Available</td>
                     </tr>
                     <tr>
                       <td className="py-3.5 font-bold text-slate-300">MPPT Trackers</td>
-                      <td className="py-3.5 font-extrabold text-[#5BC94D] bg-[#5BC94D]/5 px-3">Up to 4 MPPT</td>
+                      <td className="py-3.5 font-extrabold text-[#8cc63f] bg-[#8cc63f]/5 px-3">Up to 4 MPPT</td>
                       <td className="py-3.5 text-slate-400 px-3">2 – 3 MPPT</td>
                       <td className="py-3.5 text-slate-400 px-3">2 MPPT</td>
                       <td className="py-3.5 text-slate-400 px-3">2 MPPT</td>
                     </tr>
                     <tr>
                       <td className="py-3.5 font-bold text-slate-300">Ingress Rating</td>
-                      <td className="py-3.5 font-extrabold text-[#5BC94D] bg-[#5BC94D]/5 px-3">IP66 Sealed</td>
+                      <td className="py-3.5 font-extrabold text-[#8cc63f] bg-[#8cc63f]/5 px-3">IP66 Sealed</td>
                       <td className="py-3.5 text-slate-400 px-3">IP65 / IP66</td>
                       <td className="py-3.5 text-slate-400 px-3">IP65</td>
                       <td className="py-3.5 text-slate-400 px-3">IP65</td>
                     </tr>
                     <tr>
                       <td className="py-3.5 font-bold text-slate-300">DC/AC Oversizing Ratio</td>
-                      <td className="py-3.5 font-extrabold text-[#5BC94D] bg-[#5BC94D]/5 px-3">Up to 2.0 Ratio</td>
+                      <td className="py-3.5 font-extrabold text-[#8cc63f] bg-[#8cc63f]/5 px-3">Up to 2.0 Ratio</td>
                       <td className="py-3.5 text-slate-400 px-3">Up to 1.5 Ratio</td>
                       <td className="py-3.5 text-slate-400 px-3">Up to 1.3 Ratio</td>
                       <td className="py-3.5 text-slate-400 px-3">Up to 1.5 Ratio</td>
@@ -981,7 +981,7 @@ export function SigenergyInvertersPage() {
                     key={brand}
                     className={`px-3 py-1 rounded-full text-xs  font-bold tracking-wider ${
                       brand === "Sigenergy" 
-                        ? "bg-[#5BC94D] text-[#19281D]" 
+                        ? "bg-[#8cc63f] text-[#19281D]" 
                         : "bg-slate-800 text-slate-300 border border-slate-700"
                     }`}
                   >
@@ -1004,7 +1004,7 @@ export function SigenergyInvertersPage() {
               
               {/* Left Column (55-60% width): Copy */}
               <div className="lg:col-span-7 flex flex-col justify-center text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#5BC94D]/20 w-fit">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#8cc63f]/20 w-fit">
                   <Battery className="w-3.5 h-3.5" />
                   <span>Future Storage</span>
                 </div>
@@ -1029,7 +1029,7 @@ export function SigenergyInvertersPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
                   
                   <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-900/90 border border-slate-800 backdrop-blur-md">
-                    <span className="px-2.5 py-0.5 rounded bg-[#5BC94D] text-[#19281D]  text-[10px] font-extrabold uppercase tracking-widest inline-block mb-1">
+                    <span className="px-2.5 py-0.5 rounded bg-[#8cc63f] text-[#19281D]  text-[10px] font-extrabold uppercase tracking-widest inline-block mb-1">
                       Modular Expansion
                     </span>
                     <h3 className="text-white text-sm font-bold">
@@ -1054,7 +1054,7 @@ export function SigenergyInvertersPage() {
               
               {/* Left Column (55-60% width): Copy */}
               <div className="lg:col-span-7 flex flex-col justify-center text-left">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#2f8323] border border-[#5BC94D]/30  text-xs font-bold uppercase tracking-wider mb-4 w-fit">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#2f8323] border border-[#8cc63f]/30  text-xs font-bold uppercase tracking-wider mb-4 w-fit">
                   <MapPin className="w-3.5 h-3.5 text-[#2f8323]" />
                   <span>Remote &amp; Off-Grid</span>
                 </div>
@@ -1077,7 +1077,7 @@ export function SigenergyInvertersPage() {
               <div className="lg:col-span-5 flex flex-col justify-center">
                 <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 text-white shadow-xl space-y-4">
                   <div className="flex items-center gap-3 pb-4 border-b border-slate-800">
-                    <MapPin className="w-5 h-5 text-[#5BC94D]" />
+                    <MapPin className="w-5 h-5 text-[#8cc63f]" />
                     <h3 className="text-base font-extrabold text-white">
                       NT Rural &amp; Remote Coverage
                     </h3>
@@ -1113,7 +1113,7 @@ export function SigenergyInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="text-left mb-8">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#5BC94D]/20">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#8cc63f]/20">
                 <MapPin className="w-3.5 h-3.5" />
                 <span>Service Coverage</span>
               </div>
@@ -1137,8 +1137,8 @@ export function SigenergyInvertersPage() {
                 { name: "Alice Springs", region: "Red Centre Hub" },
                 { name: "Rural & Remote NT", region: "Litchfield & Beyond" },
               ].map((area) => (
-                <div key={area.name} className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-left shadow-2xs hover:border-[#5BC94D]/50 transition-all">
-                  <div className="w-8 h-8 rounded-lg bg-[#5BC94D]/15 text-[#2f8323] flex items-center justify-center shrink-0 mb-2.5">
+                <div key={area.name} className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-left shadow-2xs hover:border-[#8cc63f]/50 transition-all">
+                  <div className="w-8 h-8 rounded-lg bg-[#8cc63f]/15 text-[#2f8323] flex items-center justify-center shrink-0 mb-2.5">
                     <MapPin className="w-4 h-4" />
                   </div>
                   <h3 className="text-sm font-extrabold text-slate-900 mb-0.5">{area.name}</h3>
@@ -1157,7 +1157,7 @@ export function SigenergyInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-slate-950 border border-slate-800 rounded-2xl p-8 sm:p-12 shadow-2xl text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] border border-[#5BC94D]/30  text-xs font-bold uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/30  text-xs font-bold uppercase tracking-wider mb-4">
                 <ShieldCheck className="w-3.5 h-3.5" />
                 <span>Local Expertise</span>
               </div>
@@ -1170,7 +1170,7 @@ export function SigenergyInvertersPage() {
                 Oneroof Solar is a locally based, SAA Accredited team supplying and installing solar panels, inverters and battery storage across the Territory. Read more about{" "}
                 <Link 
                   to="/about" 
-                  className="text-[#5BC94D] font-extrabold underline decoration-[#5BC94D] decoration-2 underline-offset-4 hover:text-emerald-300 transition-colors"
+                  className="text-[#8cc63f] font-extrabold underline decoration-[#8cc63f] decoration-2 underline-offset-4 hover:text-brand-300 transition-colors"
                 >
                   who we are and how we work
                 </Link>
@@ -1188,7 +1188,7 @@ export function SigenergyInvertersPage() {
         <div className="mx-auto max-w-[880px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5BC94D]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#5BC94D]/20">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#8cc63f]/10 text-[#2f8323]  text-xs font-extrabold uppercase tracking-wider mb-4 border border-[#8cc63f]/20">
                 <HelpCircle className="w-3.5 h-3.5" />
                 <span>Got Questions?</span>
               </div>
@@ -1235,7 +1235,7 @@ export function SigenergyInvertersPage() {
                       <h3 className="text-base sm:text-lg font-extrabold text-slate-900 leading-snug">
                         {faq.question}
                       </h3>
-                      <div className={`shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center transition-transform duration-200 ${isOpen ? "rotate-180 bg-[#5BC94D]/10 border-[#5BC94D]/40 text-[#2f8323]" : "text-slate-500"}`}>
+                      <div className={`shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center transition-transform duration-200 ${isOpen ? "rotate-180 bg-[#8cc63f]/10 border-[#8cc63f]/40 text-[#2f8323]" : "text-slate-500"}`}>
                         <ChevronDown className="w-4 h-4" />
                       </div>
                     </button>
@@ -1259,14 +1259,14 @@ export function SigenergyInvertersPage() {
       {/* ========================================================= */}
       <section className="py-16 lg:py-24 bg-[#060A0E] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#080E14] via-[#060A0E] to-[#030508] pointer-events-none"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#5BC94D]/10 rounded-full blur-[160px] pointer-events-none"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#8cc63f]/10 rounded-full blur-[160px] pointer-events-none"></div>
 
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <div className="relative rounded-2xl overflow-hidden border border-[#5BC94D]/30 bg-slate-950 p-8 sm:p-12 lg:p-14 text-center shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden border border-[#8cc63f]/30 bg-slate-950 p-8 sm:p-12 lg:p-14 text-center shadow-2xl">
               <div className="max-w-3xl mx-auto relative z-10">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/15 text-[#5BC94D] border border-[#5BC94D]/30 text-xs  font-bold uppercase tracking-wider mb-6">
-                  <Award className="w-4 h-4 text-[#5BC94D]" />
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#8cc63f]/15 text-[#8cc63f] border border-[#8cc63f]/30 text-xs  font-bold uppercase tracking-wider mb-6">
+                  <Award className="w-4 h-4 text-[#8cc63f]" />
                   <span>SAA Accredited Supply &amp; Installation</span>
                 </div>
 
@@ -1293,7 +1293,7 @@ export function SigenergyInvertersPage() {
                 <div className="flex flex-wrap items-center justify-center gap-4 pt-6 border-t border-slate-800">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 uppercase tracking-wider text-xs sm:text-sm shadow-xl shadow-[#5BC94D]/20"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 uppercase tracking-wider text-xs sm:text-sm shadow-xl shadow-[#8cc63f]/20"
                     asChild
                   >
                     <Link to="/contact">
@@ -1305,7 +1305,7 @@ export function SigenergyInvertersPage() {
                     href="tel:0483986444"
                     className="inline-flex items-center justify-center h-14 px-8 rounded-xl bg-slate-900 text-white font-bold transition-all hover:bg-slate-800 text-xs sm:text-sm uppercase tracking-wider gap-2.5 border border-slate-800"
                   >
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>0483 986 444</span>
                   </a>
                 </div>
@@ -1330,7 +1330,7 @@ export function SigenergyInvertersPage() {
             </button>
 
             <div className="flex items-center gap-3 mb-4">
-              <FileText className="w-6 h-6 text-[#5BC94D]" />
+              <FileText className="w-6 h-6 text-[#8cc63f]" />
               <h3 className="text-xl font-extrabold text-white">
                 Sigenergy {selectedPhase === "single" ? "Single Phase" : "Three Phase"} Spec Overview
               </h3>
@@ -1347,7 +1347,7 @@ export function SigenergyInvertersPage() {
               </div>
               <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 flex justify-between">
                 <span className="text-slate-400">Max Efficiency:</span>
-                <span className="text-[#5BC94D] font-bold">98.4%</span>
+                <span className="text-[#8cc63f] font-bold">98.4%</span>
               </div>
               <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 flex justify-between">
                 <span className="text-slate-400">MPP Trackers:</span>
@@ -1359,7 +1359,7 @@ export function SigenergyInvertersPage() {
               </div>
               <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 flex justify-between">
                 <span className="text-slate-400">Ambient Operating Temp:</span>
-                <span className="text-[#5BC94D] font-bold">-30°C to +60°C (Derating &gt;45°C)</span>
+                <span className="text-[#8cc63f] font-bold">-30°C to +60°C (Derating &gt;45°C)</span>
               </div>
               <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 flex justify-between">
                 <span className="text-slate-400">Battery Interface:</span>
@@ -1374,7 +1374,7 @@ export function SigenergyInvertersPage() {
             <div className="mt-6 pt-4 border-t border-slate-800 flex justify-end">
               <Button
                 size="sm"
-                className="rounded-xl bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 font-extrabold uppercase text-xs h-10 px-6"
+                className="rounded-xl bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 font-extrabold uppercase text-xs h-10 px-6"
                 asChild
               >
                 <Link to="/contact">

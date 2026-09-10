@@ -85,22 +85,23 @@ export function LeadPopup() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
             onClick={closeModal}
-            className="fixed inset-0 bg-neutral-900/40 backdrop-blur-md transition-opacity"
+            className="fixed inset-0 bg-neutral-950/60 backdrop-blur-md"
           />
 
           <div className="flex min-h-screen items-center justify-center p-4 sm:p-6">
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              initial={{ opacity: 0, scale: 0.96, y: 24 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ type: "spring", damping: 30, stiffness: 300 }}
-              className="relative w-full max-w-5xl bg-white rounded-3xl shadow-2xl flex flex-col lg:flex-row overflow-hidden my-8 isolate"
+              exit={{ opacity: 0, scale: 0.96, y: 16 }}
+              transition={{ type: "spring", damping: 26, stiffness: 260, mass: 0.9 }}
+              className="relative w-full max-w-5xl bg-white rounded-3xl shadow-2xl ring-1 ring-black/5 flex flex-col lg:flex-row overflow-hidden my-8 isolate"
             >
               {/* Close Button */}
               <button
                 onClick={closeModal}
-                className="absolute top-3 right-3 lg:top-4 lg:right-4 z-50 w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors backdrop-blur-sm"
+                className="absolute top-3 right-3 lg:top-4 lg:right-4 z-50 w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center rounded-full bg-white/95 text-slate-900 hover:bg-white hover:rotate-90 transition-all duration-300 shadow-lg ring-1 ring-black/10"
                 aria-label="Close"
               >
                 <X size={18} className="lg:w-5 lg:h-5" />
@@ -121,7 +122,7 @@ export function LeadPopup() {
                 
                 {/* Glowing Orbs */}
                 <div className="absolute -top-[20%] -left-[10%] w-[70%] h-[70%] bg-yellow-500 rounded-full blur-[120px] opacity-20 pointer-events-none mix-blend-screen" />
-                <div className="absolute -bottom-[20%] -right-[10%] w-[60%] h-[60%] bg-green-500 rounded-full blur-[120px] opacity-20 pointer-events-none mix-blend-screen" />
+                <div className="absolute -bottom-[20%] -right-[10%] w-[60%] h-[60%] bg-brand-500 rounded-full blur-[120px] opacity-20 pointer-events-none mix-blend-screen" />
 
                 <div className="relative z-10 flex flex-col h-full justify-center">
                   {/* Logo */}

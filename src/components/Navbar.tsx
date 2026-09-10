@@ -276,7 +276,7 @@ export function Navbar() {
                               ? "is-active bg-white text-brand-600 shadow-sm"
                               : isSolidHeader
                               ? "text-slate-800 hover:bg-white/60 hover:text-brand-600"
-                              : "text-white hover:bg-white/10"
+                              : "text-white hover:bg-white/10 hover:text-brand-300"
                           }`}
                         >
                           <span>{item.label}</span>
@@ -303,7 +303,7 @@ export function Navbar() {
                             ? "bg-white text-brand-600 shadow-sm"
                             : isSolidHeader
                             ? "text-slate-800 hover:bg-white/60 hover:text-brand-600"
-                            : "text-white hover:bg-white/10"
+                            : "text-white hover:bg-white/10 hover:text-brand-300"
                         }`}
                       >
                         <span>{item.label}</span>

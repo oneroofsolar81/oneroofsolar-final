@@ -273,15 +273,15 @@ export function AikoSolarPanels() {
       a: (
         <span>
           AIKO delivers the highest efficiency at above 25 per cent. REC HJT has a marginally better temperature coefficient at -0.24%/°C. Jinko TOPCon offers proven value at a lower price point. See our{" "}
-          <Link to="/solar-panels/" className="text-[#5BC94D] hover:underline font-bold">
+          <Link to="/solar-panels/" className="text-[#8cc63f] hover:underline font-bold">
             solar panels page
           </Link>{" "}
           for a full brand comparison, or compare specifically with{" "}
-          <Link to="/solar-panels/rec/" className="text-[#5BC94D] hover:underline font-bold">
+          <Link to="/solar-panels/rec/" className="text-[#8cc63f] hover:underline font-bold">
             REC solar panels
           </Link>{" "}
           and{" "}
-          <Link to="/solar-panels/jinko/" className="text-[#5BC94D] hover:underline font-bold">
+          <Link to="/solar-panels/jinko/" className="text-[#8cc63f] hover:underline font-bold">
             Jinko solar panels
           </Link>
           .
@@ -360,7 +360,7 @@ export function AikoSolarPanels() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="rounded-xl px-8 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:border-white/30 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:text-white hover:border-white/30 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs"
                     asChild
                   >
                     <a href="tel:0483986444">
@@ -388,7 +388,7 @@ export function AikoSolarPanels() {
                   </div>
 
                   {/* Highlight Glow */}
-                  <div className="absolute -inset-10 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/15 transition-all duration-700 pointer-events-none"></div>
+                  <div className="absolute -inset-10 bg-brand-500/10 rounded-full blur-3xl group-hover:bg-brand-500/15 transition-all duration-700 pointer-events-none"></div>
 
                   {/* AIKO panel white display container & enlarged image */}
                   <div className="relative z-10 w-[72%] sm:w-[75%] h-[58%] sm:h-[65%] min-h-[220px] max-h-[290px] sm:max-h-[330px] bg-white rounded-[24px] p-4 sm:p-5 flex items-center justify-center overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-[1.02] my-10 sm:my-0 border border-slate-100">

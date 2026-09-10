@@ -4,44 +4,65 @@
  */
 
 import { BrowserRouter as Router, Routes, Route, Outlet, Link, Navigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import Lenis from "@studio-freight/lenis";
 import { Layout } from "./components/Layout";
-import { Home } from "./pages/Home";
-import { ServiceDetail } from "./pages/ServiceDetail";
-import { About } from "./pages/About";
-import { Contact } from "./pages/Contact";
-import Projects from "./pages/Projects";
-import { Terms } from "./pages/Terms";
-import { Privacy } from "./pages/Privacy";
-import { SolarPanelsBrands } from "./pages/SolarPanelsBrands";
-import { AikoSolarPanels } from "./pages/AikoSolarPanels";
-import { JaSolarPanels } from "./pages/JaSolarPanels";
-import { JinkoSolarPanels } from "./pages/JinkoSolarPanels";
-import { LongiSolarPanels } from "./pages/LongiSolarPanels";
-import { RecSolarPanels } from "./pages/RecSolarPanels";
-import { SolarAliceSprings } from "./pages/SolarAliceSprings";
-import { SolarInverters } from "./pages/SolarInverters";
-import { SolarInverterInstallation } from "./pages/SolarInverterInstallation";
-import { SolarInverterRepair } from "./pages/SolarInverterRepair";
-import { SolarInvertersProductPage } from "./pages/SolarInvertersProductPage";
-import { SolarBatteryInstallation } from "./pages/SolarBatteryInstallation";
-import { SungrowInvertersPage } from "./pages/SungrowInvertersPage";
-import { GoodWeInvertersPage } from "./pages/GoodWeInvertersPage";
-import { SigenergyInvertersPage } from "./pages/SigenergyInvertersPage";
-import { FoxEssInvertersPage } from "./pages/FoxEssInvertersPage";
-import { AlphaEssInvertersPage } from "./pages/AlphaEssInvertersPage";
 import { AuthProvider } from "./context/AuthContext";
 import { NotificationProvider } from "./context/NotificationContext";
 import ScrollToTop from "./components/ScrollToTop";
-import { AdminLayout } from "./pages/admin/AdminLayout";
-import { AdminLogin } from "./pages/admin/AdminLogin";
-import { AdminDashboard } from "./pages/admin/AdminDashboard";
-import { AdminPageEditor } from "./pages/admin/AdminPageEditor";
-import { AdminListEditor } from "./pages/admin/AdminListEditor";
-import { AdminItemEditor } from "./pages/admin/AdminItemEditor";
-
 import { ErrorBoundary } from "./components/ErrorBoundary";
+
+/**
+ * Route-level code splitting. Each page is lazy-loaded so the initial bundle
+ * only ships the app shell + the page the visitor actually landed on, instead
+ * of all ~35 pages at once. Named exports are mapped to a default for React.lazy.
+ * No routes or behaviour change — only how the code is delivered.
+ */
+const Home = lazy(() => import("./pages/Home").then(m => ({ default: m.Home })));
+const ServiceDetail = lazy(() => import("./pages/ServiceDetail").then(m => ({ default: m.ServiceDetail })));
+const About = lazy(() => import("./pages/About").then(m => ({ default: m.About })));
+const Contact = lazy(() => import("./pages/Contact").then(m => ({ default: m.Contact })));
+const Projects = lazy(() => import("./pages/Projects"));
+const Terms = lazy(() => import("./pages/Terms").then(m => ({ default: m.Terms })));
+const Privacy = lazy(() => import("./pages/Privacy").then(m => ({ default: m.Privacy })));
+const SolarPanelsBrands = lazy(() => import("./pages/SolarPanelsBrands").then(m => ({ default: m.SolarPanelsBrands })));
+const AikoSolarPanels = lazy(() => import("./pages/AikoSolarPanels").then(m => ({ default: m.AikoSolarPanels })));
+const JaSolarPanels = lazy(() => import("./pages/JaSolarPanels").then(m => ({ default: m.JaSolarPanels })));
+const JinkoSolarPanels = lazy(() => import("./pages/JinkoSolarPanels").then(m => ({ default: m.JinkoSolarPanels })));
+const LongiSolarPanels = lazy(() => import("./pages/LongiSolarPanels").then(m => ({ default: m.LongiSolarPanels })));
+const RecSolarPanels = lazy(() => import("./pages/RecSolarPanels").then(m => ({ default: m.RecSolarPanels })));
+const SolarAliceSprings = lazy(() => import("./pages/SolarAliceSprings").then(m => ({ default: m.SolarAliceSprings })));
+const DarwinCity = lazy(() => import("./pages/DarwinCity").then(m => ({ default: m.DarwinCity })));
+const NorthernDarwin = lazy(() => import("./pages/NorthernDarwin").then(m => ({ default: m.NorthernDarwin })));
+const Palmerston = lazy(() => import("./pages/Palmerston").then(m => ({ default: m.Palmerston })));
+const DarwinRural = lazy(() => import("./pages/DarwinRural").then(m => ({ default: m.DarwinRural })));
+const SigenergyBatteryPage = lazy(() => import("./pages/SigenergyBatteryPage").then(m => ({ default: m.SigenergyBatteryPage })));
+const SolarInverters = lazy(() => import("./pages/SolarInverters").then(m => ({ default: m.SolarInverters })));
+const SolarInverterInstallation = lazy(() => import("./pages/SolarInverterInstallation").then(m => ({ default: m.SolarInverterInstallation })));
+const SolarInverterRepair = lazy(() => import("./pages/SolarInverterRepair").then(m => ({ default: m.SolarInverterRepair })));
+const SolarInvertersProductPage = lazy(() => import("./pages/SolarInvertersProductPage").then(m => ({ default: m.SolarInvertersProductPage })));
+const SolarBatteryInstallation = lazy(() => import("./pages/SolarBatteryInstallation").then(m => ({ default: m.SolarBatteryInstallation })));
+const SungrowInvertersPage = lazy(() => import("./pages/SungrowInvertersPage").then(m => ({ default: m.SungrowInvertersPage })));
+const GoodWeInvertersPage = lazy(() => import("./pages/GoodWeInvertersPage").then(m => ({ default: m.GoodWeInvertersPage })));
+const SigenergyInvertersPage = lazy(() => import("./pages/SigenergyInvertersPage").then(m => ({ default: m.SigenergyInvertersPage })));
+const FoxEssInvertersPage = lazy(() => import("./pages/FoxEssInvertersPage").then(m => ({ default: m.FoxEssInvertersPage })));
+const AlphaEssInvertersPage = lazy(() => import("./pages/AlphaEssInvertersPage").then(m => ({ default: m.AlphaEssInvertersPage })));
+const AdminLayout = lazy(() => import("./pages/admin/AdminLayout").then(m => ({ default: m.AdminLayout })));
+const AdminLogin = lazy(() => import("./pages/admin/AdminLogin").then(m => ({ default: m.AdminLogin })));
+const AdminDashboard = lazy(() => import("./pages/admin/AdminDashboard").then(m => ({ default: m.AdminDashboard })));
+const AdminPageEditor = lazy(() => import("./pages/admin/AdminPageEditor").then(m => ({ default: m.AdminPageEditor })));
+const AdminListEditor = lazy(() => import("./pages/admin/AdminListEditor").then(m => ({ default: m.AdminListEditor })));
+const AdminItemEditor = lazy(() => import("./pages/admin/AdminItemEditor").then(m => ({ default: m.AdminItemEditor })));
+
+/** Lightweight route fallback — a minimal branded splash while a page chunk loads. */
+function RouteFallback() {
+  return (
+    <div className="min-h-[60vh] flex items-center justify-center" aria-busy="true" aria-live="polite">
+      <div className="h-10 w-10 rounded-full border-2 border-brand-500/30 border-t-brand-500 animate-spin" />
+      <span className="sr-only">Loading…</span>
+    </div>
+  );
+}
 
 function MainLayout() {
   return (
@@ -85,6 +106,7 @@ export default function App() {
         <AuthProvider>
           <Router>
             <ScrollToTop />
+            <Suspense fallback={<RouteFallback />}>
             <Routes>
               {/* Admin Routes */}
               <Route path="/admin/login" element={<AdminLogin />} />
@@ -232,7 +254,21 @@ export default function App() {
                 <Route path="/alice-springs/" element={<Navigate to="/solar-alice-springs/" replace />} />
                 <Route path="/solar-power-alice-springs-nt" element={<Navigate to="/solar-alice-springs/" replace />} />
                 <Route path="/solar-power-alice-springs-nt/" element={<Navigate to="/solar-alice-springs/" replace />} />
-                
+
+                {/* Location Hub Landing Pages */}
+                <Route path="/locations/darwin-city" element={<DarwinCity />} />
+                <Route path="/locations/darwin-city/" element={<DarwinCity />} />
+                <Route path="/locations/northern-darwin" element={<NorthernDarwin />} />
+                <Route path="/locations/northern-darwin/" element={<NorthernDarwin />} />
+                <Route path="/locations/palmerston" element={<Palmerston />} />
+                <Route path="/locations/palmerston/" element={<Palmerston />} />
+                <Route path="/locations/darwin-rural" element={<DarwinRural />} />
+                <Route path="/locations/darwin-rural/" element={<DarwinRural />} />
+
+                {/* Solar Battery Brand Pages */}
+                <Route path="/products/solar-battery-brands/sigenergy" element={<SigenergyBatteryPage />} />
+                <Route path="/products/solar-battery-brands/sigenergy/" element={<SigenergyBatteryPage />} />
+
                 {/* External SEO Redirects mapping */}
                 <Route path="/solar-panels/rec" element={<Navigate to="/solar-panels-brands/rec/" replace />} />
                 <Route path="/solar-panels/rec/" element={<Navigate to="/solar-panels-brands/rec/" replace />} />
@@ -251,6 +287,7 @@ export default function App() {
                 <Route path="*" element={<div className="min-h-screen flex items-center justify-center pt-24"><div className="text-center"><h1 className="text-6xl font-black text-slate-900 mb-4">404</h1><p className="text-xl text-slate-600 mb-8">The page you are looking for does not exist.</p><Link to="/" className="text-brand-600 font-bold hover:underline">Go back home</Link></div></div>} />
               </Route>
             </Routes>
+            </Suspense>
           </Router>
         </AuthProvider>
       </NotificationProvider>

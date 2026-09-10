@@ -8,7 +8,7 @@ import {
 import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
 import { SEO } from "../components/SEO";
-import longiSolarPanelImg from "../assets/images/longi_solar_panel_1784285655984.jpg";
+import longiSolarPanelImg from "../assets/images/longi_solar_panel_1784285655984.webp";
 
 export function LongiSolarPanels() {
   // FAQ Accordion State

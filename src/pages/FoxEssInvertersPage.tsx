@@ -183,7 +183,7 @@ export function FoxEssInvertersPage() {
       <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-[#0A1118]/60"></div>
-          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#5BC94D]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#8cc63f]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
         </div>
 
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
@@ -194,11 +194,11 @@ export function FoxEssInvertersPage() {
               <FadeIn isHero>
                 {/* Breadcrumbs */}
                 <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
-                  <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
+                  <Link to="/" className="hover:text-[#8cc63f] transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <Link to="/products/solar-inverters" className="hover:text-[#5BC94D] transition-colors">Solar Inverters</Link>
+                  <Link to="/products/solar-inverters" className="hover:text-[#8cc63f] transition-colors">Solar Inverters</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <span className="text-[#5BC94D]" aria-current="page">Fox ESS</span>
+                  <span className="text-[#8cc63f]" aria-current="page">Fox ESS</span>
                 </nav>
 
                 {/* H1 Title */}
@@ -207,7 +207,7 @@ export function FoxEssInvertersPage() {
                 </h1>
 
                 {/* Supporting text */}
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-6 mb-8 max-w-2xl">
+                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#8cc63f] pl-6 mb-8 max-w-2xl">
                   Choose an SAA approved, heat-proof solar inverter range explicitly engineered to survive the Top End climate without melting or dropping power output. Oneroof Solar provides complete local supply, accredited installation, and system upgrades across the Northern Territory.
                 </p>
 
@@ -215,7 +215,7 @@ export function FoxEssInvertersPage() {
                 <div className="flex flex-wrap items-center gap-4">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -227,7 +227,7 @@ export function FoxEssInvertersPage() {
                     href={`tel:${PRIMARY_PHONE_RAW}`}
                     className="inline-flex items-center justify-center h-14 px-8 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold transition-all border border-white/20 text-xs uppercase tracking-wider gap-2"
                   >
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>Call Now for Consultation</span>
                   </a>
                 </div>
@@ -277,7 +277,7 @@ export function FoxEssInvertersPage() {
                   Every single hardware option we showcase on our{" "}
                   <Link 
                     to="/products/solar-inverters" 
-                    className="text-[#5BC94D] font-bold underline hover:text-emerald-700 transition-colors"
+                    className="text-[#8cc63f] font-bold underline hover:text-brand-700 transition-colors"
                   >
                     solar inverter brands hub
                   </Link>{" "}
@@ -306,8 +306,8 @@ export function FoxEssInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="flex items-center gap-3 mb-3">
-              <span className="h-px w-10 bg-[#5BC94D]"></span>
-              <span className="text-xs font-black uppercase tracking-widest text-[#5BC94D]">
+              <span className="h-px w-10 bg-[#8cc63f]"></span>
+              <span className="text-xs font-black uppercase tracking-widest text-[#8cc63f]">
                 Official Engineering Datasheets &amp; Downloads
               </span>
             </div>
@@ -321,7 +321,7 @@ export function FoxEssInvertersPage() {
             {/* CATEGORY 1: HYBRID & SOLAR INVERTERS */}
             <div className="mb-16">
               <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-3">
-                <Zap className="w-6 h-6 text-[#5BC94D]" />
+                <Zap className="w-6 h-6 text-[#8cc63f]" />
                 <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide">
                   1. Hybrid &amp; Energy Storage Solar Inverters
                 </h3>
@@ -329,10 +329,10 @@ export function FoxEssInvertersPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
                 {/* CARD 1: H1(G2) SERIES */}
-                <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30">Single-Phase Hybrid</span>
+                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#8cc63f]/10 text-brand-800 border border-[#8cc63f]/30">Single-Phase Hybrid</span>
                       <span className="text-xs font-bold text-slate-500">3.0kW – 6.0kW</span>
                     </div>
                     <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
@@ -340,7 +340,7 @@ export function FoxEssInvertersPage() {
                     </h4>
 
                     <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
-                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1">Key Highlights</span>
+                      <span className="text-xs font-extrabold text-[#8cc63f] uppercase tracking-wider block mb-1">Key Highlights</span>
                       <p className="text-slate-700 text-sm leading-relaxed font-medium">
                         Next-generation single-phase hybrid inverter with dual MPPTs (16A/16A), 80–480V high-voltage battery connection, and EPS power switch time under 20ms.
                       </p>
@@ -370,17 +370,17 @@ export function FoxEssInvertersPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-extrabold transition-colors uppercase tracking-wider shadow-sm"
                     >
-                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <Download className="w-4 h-4 text-[#8cc63f]" />
                       <span>Download H1(G2) Spec Sheet</span>
                     </a>
                   </div>
                 </div>
 
                 {/* CARD 2: KH / KA SERIES */}
-                <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30">High-Power Single Phase</span>
+                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#8cc63f]/10 text-brand-800 border border-[#8cc63f]/30">High-Power Single Phase</span>
                       <span className="text-xs font-bold text-slate-500">7.0kW – 10.5kW</span>
                     </div>
                     <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
@@ -388,7 +388,7 @@ export function FoxEssInvertersPage() {
                     </h4>
 
                     <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
-                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1">Key Highlights</span>
+                      <span className="text-xs font-extrabold text-[#8cc63f] uppercase tracking-wider block mb-1">Key Highlights</span>
                       <p className="text-slate-700 text-sm leading-relaxed font-medium">
                         Heavy-duty single-phase hybrid inverter with 3 or 4 MPPT trackers, up to 21kW PV array support, 63A Australian breaker capacity, and ultra-fast EPS &lt;10ms switchover.
                       </p>
@@ -418,17 +418,17 @@ export function FoxEssInvertersPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-extrabold transition-colors uppercase tracking-wider shadow-sm"
                     >
-                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <Download className="w-4 h-4 text-[#8cc63f]" />
                       <span>Download KH/KA Spec Sheet</span>
                     </a>
                   </div>
                 </div>
 
                 {/* CARD 3: H3 SMART THREE PHASE */}
-                <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#5BC94D]/10 text-emerald-800 border border-[#5BC94D]/30">Three-Phase Hybrid</span>
+                      <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#8cc63f]/10 text-brand-800 border border-[#8cc63f]/30">Three-Phase Hybrid</span>
                       <span className="text-xs font-bold text-slate-500">5.0kW – 15.0kW</span>
                     </div>
                     <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
@@ -436,7 +436,7 @@ export function FoxEssInvertersPage() {
                     </h4>
 
                     <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
-                      <span className="text-xs font-extrabold text-[#5BC94D] uppercase tracking-wider block mb-1">Key Highlights</span>
+                      <span className="text-xs font-extrabold text-[#8cc63f] uppercase tracking-wider block mb-1">Key Highlights</span>
                       <p className="text-slate-700 text-sm leading-relaxed font-medium">
                         Three-phase commercial &amp; large residential hybrid inverter with 3 MPPT trackers, 1000V DC input, 100–800V HV battery interface, and up to 15kW charge/discharge power.
                       </p>
@@ -466,7 +466,7 @@ export function FoxEssInvertersPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-extrabold transition-colors uppercase tracking-wider shadow-sm"
                     >
-                      <Download className="w-4 h-4 text-[#5BC94D]" />
+                      <Download className="w-4 h-4 text-[#8cc63f]" />
                       <span>Download H3 Smart Spec Sheet</span>
                     </a>
                   </div>
@@ -477,7 +477,7 @@ export function FoxEssInvertersPage() {
             {/* CATEGORY 2: HIGH-VOLTAGE BATTERY STORAGE */}
             <div className="mb-16">
               <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-3">
-                <Battery className="w-6 h-6 text-[#5BC94D]" />
+                <Battery className="w-6 h-6 text-[#8cc63f]" />
                 <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide">
                   2. High Voltage Lithium Storage Batteries (LFP)
                 </h3>
@@ -485,7 +485,7 @@ export function FoxEssInvertersPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
                 {/* BATTERY CARD 1: EQ4800 */}
-                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800  block w-fit mb-3">Stackable Series</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
@@ -518,13 +518,13 @@ export function FoxEssInvertersPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
                   >
-                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <Download className="w-3.5 h-3.5 text-[#8cc63f]" />
                     <span>Download EQ4800 PDF</span>
                   </a>
                 </div>
 
                 {/* BATTERY CARD 2: EQ5500 */}
-                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800  block w-fit mb-3">High-Capacity Series</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
@@ -557,15 +557,15 @@ export function FoxEssInvertersPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
                   >
-                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <Download className="w-3.5 h-3.5 text-[#8cc63f]" />
                     <span>Download EQ5500 PDF</span>
                   </a>
                 </div>
 
                 {/* BATTERY CARD 3: EP11 */}
-                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800  block w-fit mb-3">Wall / Floor Mount</span>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-brand-100 text-brand-800  block w-fit mb-3">Wall / Floor Mount</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
                       Fox ESS EP11
                     </h4>
@@ -596,13 +596,13 @@ export function FoxEssInvertersPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
                   >
-                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <Download className="w-3.5 h-3.5 text-[#8cc63f]" />
                     <span>Download EP11 PDF</span>
                   </a>
                 </div>
 
                 {/* BATTERY CARD 4: EP12 PLUS */}
-                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-rose-100 text-rose-800  block w-fit mb-3">Fire-Protected LFP</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
@@ -635,7 +635,7 @@ export function FoxEssInvertersPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
                   >
-                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <Download className="w-3.5 h-3.5 text-[#8cc63f]" />
                     <span>Download EP12 Plus PDF</span>
                   </a>
                 </div>
@@ -645,7 +645,7 @@ export function FoxEssInvertersPage() {
             {/* CATEGORY 3: SMART EV CHARGERS */}
             <div>
               <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-3">
-                <ShieldCheck className="w-6 h-6 text-[#5BC94D]" />
+                <ShieldCheck className="w-6 h-6 text-[#8cc63f]" />
                 <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide">
                   3. Fox ESS Smart EV Chargers (Residential &amp; Commercial)
                 </h3>
@@ -653,7 +653,7 @@ export function FoxEssInvertersPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
                 {/* EV CARD 1: L SERIES */}
-                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800  block w-fit mb-3">Residential Smart</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
@@ -686,13 +686,13 @@ export function FoxEssInvertersPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
                   >
-                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <Download className="w-3.5 h-3.5 text-[#8cc63f]" />
                     <span>Download L Series PDF</span>
                   </a>
                 </div>
 
                 {/* EV CARD 2: L MAX SERIES */}
-                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800  block w-fit mb-3">RFID + OCPP</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
@@ -725,15 +725,15 @@ export function FoxEssInvertersPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
                   >
-                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <Download className="w-3.5 h-3.5 text-[#8cc63f]" />
                     <span>Download L MAX PDF</span>
                   </a>
                 </div>
 
                 {/* EV CARD 3: A SERIES */}
-                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
-                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800  block w-fit mb-3">Plug &amp; Socket | V2G</span>
+                    <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-brand-100 text-brand-800  block w-fit mb-3">Plug &amp; Socket | V2G</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
                       Fox ESS A Series
                     </h4>
@@ -764,13 +764,13 @@ export function FoxEssInvertersPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
                   >
-                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <Download className="w-3.5 h-3.5 text-[#8cc63f]" />
                     <span>Download A Series PDF</span>
                   </a>
                 </div>
 
                 {/* EV CARD 4: C SERIES DUAL COMMERCIAL */}
-                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+                <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-slate-900 text-white  block w-fit mb-3">Commercial Dual Port</span>
                     <h4 className="text-xl font-black text-slate-900 mb-2">
@@ -803,7 +803,7 @@ export function FoxEssInvertersPage() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-900 hover:text-white text-slate-800 text-xs font-extrabold transition-all border border-slate-200"
                   >
-                    <Download className="w-3.5 h-3.5 text-[#5BC94D]" />
+                    <Download className="w-3.5 h-3.5 text-[#8cc63f]" />
                     <span>Download C Series PDF</span>
                   </a>
                 </div>
@@ -866,7 +866,7 @@ export function FoxEssInvertersPage() {
                   Do not risk total system downtime during the peak of summer. Our team can run a complete health check on your existing setup and guide you through a reliable upgrade using our dedicated{" "}
                   <Link 
                     to="/services/solar-panel-repair-darwin" 
-                    className="text-[#5BC94D] font-bold underline hover:text-emerald-700 transition-colors"
+                    className="text-[#8cc63f] font-bold underline hover:text-brand-700 transition-colors"
                   >
                     solar inverter repair service
                   </Link>{" "}
@@ -876,7 +876,7 @@ export function FoxEssInvertersPage() {
                 <div className="flex flex-wrap items-center gap-4">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -888,7 +888,7 @@ export function FoxEssInvertersPage() {
                     href={`tel:${PRIMARY_PHONE_RAW}`}
                     className="inline-flex items-center justify-center h-14 px-8 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold transition-all text-xs uppercase tracking-wider gap-2"
                   >
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>Call ONEROOF</span>
                   </a>
                 </div>
@@ -921,7 +921,7 @@ export function FoxEssInvertersPage() {
               {/* CARD 1: Federal STC Grant */}
               <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 sm:p-10 shadow-sm flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f] flex items-center justify-center mb-6">
                     <Award className="w-6 h-6" />
                   </div>
 
@@ -938,7 +938,7 @@ export function FoxEssInvertersPage() {
               {/* CARD 2: Cheaper Home Batteries Program */}
               <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 sm:p-10 shadow-sm flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f] flex items-center justify-center mb-6">
                     <Battery className="w-6 h-6" />
                   </div>
 
@@ -979,14 +979,14 @@ export function FoxEssInvertersPage() {
                   Whether you need a brand-new setup from our professional{" "}
                   <Link 
                     to="/solar-panels-darwin/" 
-                    className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors"
+                    className="text-[#8cc63f] font-bold underline hover:text-brand-400 transition-colors"
                   >
                     solar inverter installation service
                   </Link>
                   , an immediate emergency replacement, or a long-term commercial upgrade, we manage the pipeline from start to finish. You can learn more about our team and our commitment to local property owners on our dedicated{" "}
                   <Link 
                     to="/about" 
-                    className="text-[#5BC94D] font-bold underline hover:text-emerald-400 transition-colors"
+                    className="text-[#8cc63f] font-bold underline hover:text-brand-400 transition-colors"
                   >
                     about page
                   </Link>
@@ -997,7 +997,7 @@ export function FoxEssInvertersPage() {
               {/* Right Column Visual Image */}
               <div className="lg:col-span-5 bg-[#0D1520] border border-slate-800 rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-2xl flex items-center justify-center">
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center p-4">
-                  <ShieldCheck className="w-16 h-16 text-[#5BC94D] opacity-80" />
+                  <ShieldCheck className="w-16 h-16 text-[#8cc63f] opacity-80" />
                 </div>
               </div>
 
@@ -1024,12 +1024,12 @@ export function FoxEssInvertersPage() {
                   >
                     <button
                       onClick={() => toggleFaq(index)}
-                      className="w-full flex items-center justify-between p-6 text-left font-extrabold text-slate-900 text-base sm:text-lg hover:text-emerald-700 transition-colors gap-4"
+                      className="w-full flex items-center justify-between p-6 text-left font-extrabold text-slate-900 text-base sm:text-lg hover:text-brand-700 transition-colors gap-4"
                       aria-expanded={isOpen}
                     >
                       <span>{faq.q}</span>
                       <ChevronDown
-                        className={`w-5 h-5 text-[#5BC94D] transition-transform duration-300 flex-shrink-0 ${
+                        className={`w-5 h-5 text-[#8cc63f] transition-transform duration-300 flex-shrink-0 ${
                           isOpen ? "rotate-180" : ""
                         }`}
                       />
@@ -1060,14 +1060,14 @@ export function FoxEssInvertersPage() {
               Do not leave your energy savings to chance with cheap, unapproved components that cannot handle the Territory environment. Pair your premium Fox ESS hardware with top-tier engineering by reviewing our{" "}
               <Link 
                 to="/solar-panels-darwin/" 
-                className="text-[#5BC94D] font-bold underline hover:text-emerald-700 transition-colors"
+                className="text-[#8cc63f] font-bold underline hover:text-brand-700 transition-colors"
               >
                 high-efficiency solar panels Darwin range
               </Link>
               . If you are dealing with an aging, hazardous system, you can also explore our fast local{" "}
               <Link 
                 to="/services/solar-panel-repair-darwin" 
-                className="text-[#5BC94D] font-bold underline hover:text-emerald-700 transition-colors"
+                className="text-[#8cc63f] font-bold underline hover:text-brand-700 transition-colors"
               >
                 solar panel repair Darwin services
               </Link>{" "}
@@ -1088,7 +1088,7 @@ export function FoxEssInvertersPage() {
                 <div className="flex flex-wrap items-center justify-center gap-4">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -1121,7 +1121,7 @@ export function FoxEssInvertersPage() {
               </button>
               <Button
                 size="sm"
-                className="rounded-xl bg-[#5BC94D] text-[#19281D] border-none font-extrabold hover:bg-emerald-400 text-xs uppercase"
+                className="rounded-xl bg-[#8cc63f] text-[#19281D] border-none font-extrabold hover:bg-brand-400 text-xs uppercase"
                 asChild
                 onClick={() => setPdfModalModel(null)}
               >
