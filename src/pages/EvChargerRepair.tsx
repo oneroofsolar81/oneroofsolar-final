@@ -500,7 +500,7 @@ export function EvChargerRepair() {
       <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            <div className="lg:col-span-5 lg:sticky lg:top-32">
+            <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
               <FadeIn>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 leading-[1.1] mb-6 uppercase">
                   FAQs
@@ -535,9 +535,10 @@ export function EvChargerRepair() {
         </div>
       </section>
 
-      <section id="quote-form" className="py-24 bg-[#0A1118] relative overflow-hidden">
+      <section id="quote-form" className="py-24 bg-[#0A1118] relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <div className="lg:sticky lg:top-28 lg:self-start">
             <FadeIn>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-6">
                 Book Your EV Charger Repair in Darwin
@@ -564,6 +565,7 @@ export function EvChargerRepair() {
                 </div>
               </a>
             </FadeIn>
+            </div>
             <FadeIn delay={0.2}>
               <QuoteForm title="Book a Diagnostic Callout" defaultInterest="EV Charger Repair" source="ev_charger_repair" />
             </FadeIn>

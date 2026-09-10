@@ -631,12 +631,12 @@ export function AikoSolarPanels() {
       </section>
 
       {/* Frequently Asked Questions with Visual element */}
-      <section className="py-12 lg:py-24 bg-slate-50 relative overflow-hidden border-b border-slate-100">
+      <section className="py-12 lg:py-24 bg-slate-50 relative border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             {/* Left Column heading & Support image */}
-            <div className="lg:col-span-5 lg:sticky lg:top-32">
+            <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
               <FadeIn>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-700 font-semibold text-xs mb-6 shadow-sm">
                   <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
@@ -744,10 +744,10 @@ export function AikoSolarPanels() {
       </section>
 
       {/* Primary Conversion Section Upgraded to Premium Hero Quote Form */}
-      <section id="quote-form" className="py-16 lg:py-28 relative overflow-hidden bg-[#0A1118]">
+      <section id="quote-form" className="py-16 lg:py-28 relative bg-[#0A1118]">
         
         {/* Full-bleed background image of modern Darwin home with dark premium overlay */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <img 
             referrerPolicy="no-referrer"
             src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1600&q=80" 
@@ -759,10 +759,10 @@ export function AikoSolarPanels() {
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             {/* Left Side Info */}
-            <div className="lg:col-span-6">
+            <div className="lg:col-span-6 lg:sticky lg:top-28 lg:self-start">
               <FadeIn>
                 <span className="text-xs font-bold text-brand-400 uppercase tracking-widest block mb-3">
                   Get Started Today

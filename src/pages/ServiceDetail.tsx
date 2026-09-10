@@ -2941,15 +2941,17 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
       <GoogleReviews />
 
       {/* CTA / Contact Section */}
-      <section className="py-14 sm:py-16 md:py-20 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-dot-slate-200 opacity-50 pointer-events-none"></div>
+      <section className="py-14 sm:py-16 md:py-20 bg-white relative">
+        <div className="absolute inset-0 bg-dot-slate-200 opacity-50 pointer-events-none overflow-hidden" aria-hidden="true"></div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="bg-slate-900 rounded-[3rem] overflow-hidden shadow-2xl relative border border-slate-800">
-            <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
+          <div className="bg-slate-900 rounded-[3rem] shadow-2xl relative border border-slate-800">
+            <div className="absolute inset-0 overflow-hidden rounded-[3rem] pointer-events-none" aria-hidden="true">
+              <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3"></div>
+            </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
               {/* Contact Info Side */}
-              <div className="p-6 sm:p-10 lg:p-16 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/10 relative z-10">
+              <div className="p-6 sm:p-10 lg:p-16 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/10 relative z-10 lg:sticky lg:top-28 lg:self-start">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/10 text-brand-400 font-semibold text-sm w-fit shadow-sm mb-8 backdrop-blur-sm">
                   <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
                   Ready to upgrade?

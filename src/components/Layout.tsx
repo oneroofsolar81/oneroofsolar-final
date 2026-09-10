@@ -12,7 +12,7 @@ export function Layout({ children }: { children: ReactNode }) {
   }, [pathname]);
 
   return (
-    <div className="flex min-h-[100dvh] flex-col font-sans overflow-x-hidden w-full relative">
+    <div className="flex min-h-[100dvh] flex-col font-sans overflow-x-clip w-full relative">
       <Navbar />
       <main className="flex-1 w-full">{children}</main>
       <Footer />

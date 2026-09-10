@@ -62,16 +62,18 @@ export function FaqSection({ faqs, heading }: { faqs: { q: string; a: ReactNode 
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-24 bg-slate-50 relative overflow-hidden">
-      {/* Background Decorative Elements */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-100/30 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-sky-100/30 rounded-full blur-[100px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+    <section className="py-24 bg-slate-50 relative">
+      {/* Background Decorative Elements — isolated so overflow does not break sticky columns */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-100/30 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-sky-100/30 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/3"></div>
+      </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
           
           {/* Left Column: Heading */}
-          <div className="lg:col-span-5 lg:sticky lg:top-32">
+          <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
             <FadeIn>
               <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm mb-6">
                 <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>

@@ -342,8 +342,8 @@ export function Home() {
   return (
     <div className="flex flex-col bg-white">
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-[#0A1118] px-4 pt-[110px] pb-16 md:pt-36 lg:pt-[160px] md:pb-24 sm:px-6 lg:px-8 border-b border-slate-900">
-        <div className="absolute inset-0 z-0 overflow-hidden">
+      <section className="relative bg-[#0A1118] px-4 pt-[110px] pb-16 md:pt-36 lg:pt-[160px] md:pb-24 sm:px-6 lg:px-8 border-b border-slate-900">
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <div className="absolute inset-0 bg-[#0A1118]" />
           <img referrerPolicy="no-referrer"
             src="/assets/images/home/home-hero-bayview.webp"
@@ -361,7 +361,7 @@ export function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 lg:items-start">
             
             {/* Left Content */}
-            <FadeIn isHero className="lg:col-span-7">
+            <FadeIn isHero className="lg:col-span-7 lg:sticky lg:top-28 lg:self-start">
               {/* Pill */}
               <div className="inline-flex items-center gap-2 rounded-full border border-brand-500/40 bg-brand-500/10 backdrop-blur-md px-5 py-2.5 text-[0.875rem] font-normal leading-[1.5] text-brand-400 mb-8 shadow-[0_0_20px_rgba(140,198,63,0.15)]">
                 <span className="relative flex h-2.5 w-2.5">

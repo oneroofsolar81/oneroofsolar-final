@@ -824,18 +824,18 @@ export function SolarPanelsBrands() {
       <GoogleReviews />
 
       {/* CTA section */}
-      <section className="relative py-24 sm:py-32 bg-[#0A1118] overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+      <section className="relative py-24 sm:py-32 bg-[#0A1118]">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] -translate-y-1/2 translate-x-1/3"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[150px] translate-y-1/3 -translate-x-1/3"></div>
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05] mix-blend-overlay"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="bg-slate-900/50 rounded-[3rem] border border-white/10 overflow-hidden shadow-2xl backdrop-blur-md">
-            <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="bg-slate-900/50 rounded-[3rem] border border-white/10 shadow-2xl backdrop-blur-md">
+            <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
               {/* Content Side */}
-              <div className="p-8 sm:p-12 lg:p-20 flex flex-col justify-center">
+              <div className="p-8 sm:p-12 lg:p-20 flex flex-col justify-center lg:sticky lg:top-28 lg:self-start">
                 <FadeIn>
                   <span className="text-brand-400  tracking-widest uppercase text-xs mb-4 block">
                     Contact Our Team

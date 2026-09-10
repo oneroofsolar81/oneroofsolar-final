@@ -61,7 +61,7 @@ export function Contact() {
   };
 
   return (
-    <div className="overflow-hidden bg-slate-50 min-h-screen">
+    <div className="overflow-x-clip bg-slate-50 min-h-screen">
       <SEO seo={pageData?.seo} />
       
       {/* Dark Hero Section */}
@@ -94,7 +94,7 @@ export function Contact() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Left side info */}
-            <FadeIn>
+            <FadeIn className="lg:sticky lg:top-28 lg:self-start">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-slate-700 font-semibold text-xs mb-6 shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-brand-500"></span>
                 Get In Touch

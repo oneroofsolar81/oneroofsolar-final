@@ -695,7 +695,7 @@ export function SolarAliceSprings() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
             
             {/* Left Column Heading */}
-            <div className="lg:col-span-5 lg:sticky lg:top-32">
+            <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
               <FadeIn>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 text-slate-600 font-semibold text-xs mb-6 shadow-sm">
                   <span className="h-2 w-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
@@ -789,14 +789,17 @@ export function SolarAliceSprings() {
       </section>
 
       {/* Primary Conversion / Inquiry Section */}
-      <section id="quote-form" className="py-24 bg-[#0A1118] relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#121814]/10 mix-blend-multiply"></div>
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+      <section id="quote-form" className="py-24 bg-[#0A1118] relative">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+          <div className="absolute inset-0 bg-[#121814]/10 mix-blend-multiply"></div>
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/3"></div>
+        </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             
             {/* Left Side Info */}
+            <div className="lg:sticky lg:top-28 lg:self-start">
             <FadeIn>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-6">
                 Beat the Alice Springs Heat with Solar
@@ -833,6 +836,7 @@ export function SolarAliceSprings() {
                 </a>
               </div>
             </FadeIn>
+            </div>
 
             {/* Right Side Form */}
             <FadeIn delay={0.2}>

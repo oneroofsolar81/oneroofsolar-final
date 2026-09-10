@@ -1478,7 +1478,7 @@ export function CommercialSolarSystemPage() {
       </section>
 
       {/* SECTION 12: FAQ SECTION ACCORDION & PAA SNIPPETS */}
-      <section className="py-12 lg:py-24 bg-[#121814] relative overflow-hidden border-b border-white/5">
+      <section className="py-12 lg:py-24 bg-[#121814] relative border-b border-white/5">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           
           {/* PAA Quick Answer Callout Box */}
@@ -1519,7 +1519,7 @@ export function CommercialSolarSystemPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
-            <div className="lg:col-span-5 lg:sticky lg:top-32">
+            <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
               <FadeIn>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 font-semibold text-xs mb-6">
                   <span className="h-2 w-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
@@ -1613,8 +1613,8 @@ export function CommercialSolarSystemPage() {
       </section>
 
       {/* SECTION 13: FIX 7 - FINAL CTA SECTION */}
-      <section id="quote-form" className="py-16 lg:py-28 relative overflow-hidden bg-slate-950">
-        <div className="absolute inset-0 z-0">
+      <section id="quote-form" className="py-16 lg:py-28 relative bg-slate-950">
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <img 
             referrerPolicy="no-referrer"
             loading="lazy"
@@ -1623,14 +1623,14 @@ export function CommercialSolarSystemPage() {
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/70"></div>
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/3"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             {/* Left Column Benefits, Phone Numbers & Email */}
-            <div className="lg:col-span-6">
+            <div className="lg:col-span-6 lg:sticky lg:top-28 lg:self-start">
               <FadeIn>
                 <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-widest block mb-3">
                   Get Started Today

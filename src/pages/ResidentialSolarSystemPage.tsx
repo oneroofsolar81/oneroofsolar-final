@@ -357,18 +357,18 @@ export function ResidentialSolarSystemPage() {
   };
 
   return (
-    <div id="residential-solar-root" className="relative overflow-hidden bg-white text-slate-900">
+    <div id="residential-solar-root" className="relative overflow-x-clip bg-white text-slate-900">
       
       {/* SECTION 1: HERO SECTION */}
-      <section id="hero-section" className="relative pt-36 pb-16 lg:pt-44 lg:pb-24 overflow-hidden bg-[#0A1118]">
-        <div className="absolute inset-0">
+      <section id="hero-section" className="relative pt-36 pb-16 lg:pt-44 lg:pb-24 bg-[#0A1118]">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-[#0A1118]/80 to-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A1118] via-[#0A1118]/80 to-transparent flex"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <FadeIn isHero>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            <FadeIn isHero className="lg:sticky lg:top-28 lg:self-start">
               <h1 id="hero-heading" className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-8">
                 Residential Solar <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
