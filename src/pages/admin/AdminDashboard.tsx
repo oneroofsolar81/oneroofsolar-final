@@ -121,7 +121,7 @@ const DEFAULT_PAGES = [
         whyChooseUs: {
           badge: "Why Choose Us",
           title: "Premium Solar Systems For The Northern Territory",
-          image: "https://i.postimg.cc/fWGBJR1G/dji-fly-20240620-115258-79-1718868305112-photo.webp",
+          image: "/assets/images/home/home-premium-aerial.webp",
           ctaText: "Get Your Free Quote",
           items: [
             {
@@ -168,7 +168,7 @@ const DEFAULT_PAGES = [
         installer: {
           badge: "Top Quality Installers",
           title: "Your Expert <br/> \n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Darwin Solar Installer</span>",
-          image: "https://i.postimg.cc/05nhGvxW/Stuart-Park-0820.webp",
+          image: "/assets/images/home/home-about-stuart-park.webp",
           paragraphs: [
             "As Darwin's premier solar panel installers, we are dedicated to providing the highest quality renewable energy solutions tailored specifically for the harsh Northern Territory climate.",
             "From the initial consultation to final commissioning, our expert installers handle every aspect of your solar journey, guaranteeing a seamless transition to clean, affordable, and sustainable power."
@@ -212,7 +212,7 @@ const DEFAULT_PAGES = [
         battery: {
           badge: "Energy Independence",
           title: "Uninterrupted Power for <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-slate-500\">Your Home</span>",
-          image: "https://i.postimg.cc/pLr9VPVS/Nightcliff-0810-(1)-(1).webp",
+          image: "/assets/images/home/home-battery-nightcliff.webp",
           items: [
             {
               title: "Blackout Protection",

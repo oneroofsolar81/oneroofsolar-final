@@ -113,7 +113,7 @@ export function PackagesSection({ title, subheadline, subtitle, packages, discla
                   
                   {/* Badge and Save Ribbon Container */}
                   <div className="relative h-[320px] mb-6 mt-4 w-full">
-                     <img referrerPolicy="no-referrer" src="https://i.postimg.cc/26GPFnnx/Chat-GPT-Image-Jun-7-2026-02-40-19-AM.webp" className="absolute inset-0 w-full h-full object-contain object-bottom transform group-hover:scale-[1.05] transition-transform duration-500 scale-[1.15]" alt="Solar Installation" loading="lazy" />
+                     <img referrerPolicy="no-referrer" src="/assets/images/home/home-packages-house.webp" className="absolute inset-0 w-full h-full object-contain object-bottom transform group-hover:scale-[1.05] transition-transform duration-500 scale-[1.15]" alt="Solar Installation" loading="lazy" />
                      
                      {/* Price Ribbon */}
                      <div className="absolute -top-6 -right-6 z-30">

@@ -346,7 +346,7 @@ export function Home() {
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute inset-0 bg-[#0A1118]" />
           <img referrerPolicy="no-referrer"
-            src="https://i.postimg.cc/1XWKZZkw/Bayview-0820-(2).webp"
+            src="/assets/images/home/home-hero-bayview.webp"
             alt="Solar Panel Installation Background"
             className="absolute inset-0 w-full h-full object-cover brightness-[0.5] max-w-none"
             fetchPriority="high"
@@ -712,7 +712,7 @@ export function Home() {
               <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-2xl border border-slate-100">
                 <img 
                   referrerPolicy="no-referrer" 
-                  src="https://i.postimg.cc/fWGBJR1G/dji-fly-20240620-115258-79-1718868305112-photo.webp" 
+                  src="/assets/images/home/home-premium-aerial.webp" 
                   alt="Premium NT Solar System" 
                   className="w-full h-full object-cover" 
                   loading="lazy" 
@@ -844,7 +844,7 @@ export function Home() {
               <div className="relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-2xl border border-slate-100">
                 <img 
                   referrerPolicy="no-referrer" 
-                  src="https://i.postimg.cc/05nhGvxW/Stuart-Park-0820.webp" 
+                  src="/assets/images/home/home-about-stuart-park.webp" 
                   alt="About Oneroof Solar" 
                   className="w-full h-full object-cover" 
                   loading="lazy" 
@@ -911,7 +911,7 @@ export function Home() {
               <div className="relative rounded-[2.5rem] overflow-hidden aspect-[4/5] shadow-2xl border border-slate-800">
                 <img 
                   referrerPolicy="no-referrer" 
-                  src="https://i.postimg.cc/pLr9VPVS/Nightcliff-0810-(1)-(1).webp" 
+                  src="/assets/images/home/home-battery-nightcliff.webp" 
                   alt="Solar Battery Storage Darwin" 
                   className="w-full h-full object-cover transition-transform duration-1000" 
                   loading="lazy" 
@@ -1250,9 +1250,9 @@ export function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { img: "https://i.postimg.cc/KYkV73fq/Bayview-0820.webp", title: "Bayview - 0820", loc: "Bayview, NT 0820", desc: "Residential solar installation", systemSize: "6.6kW", battery: "None" },
-              { img: "https://i.postimg.cc/ydTT0VqV/Berrimah-0828.webp", title: "Berrimah - 0828", loc: "Berrimah, NT 0828", desc: "Commercial setup", systemSize: "10kW", battery: "None" },
-              { img: "https://i.postimg.cc/xjRszPYm/Bellamack-0832-(2)-(1).webp", title: "Bellamack - 0832", loc: "Bellamack, NT 0832", desc: "Solar with battery backup", systemSize: "8kW", battery: "13.5kWh" }
+              { img: "/assets/images/home/home-project-bayview.webp", title: "Bayview - 0820", loc: "Bayview, NT 0820", desc: "Residential solar installation", systemSize: "6.6kW", battery: "None" },
+              { img: "/assets/images/home/home-project-berrimah.webp", title: "Berrimah - 0828", loc: "Berrimah, NT 0828", desc: "Commercial setup", systemSize: "10kW", battery: "None" },
+              { img: "/assets/images/home/home-project-bellamack.webp", title: "Bellamack - 0832", loc: "Bellamack, NT 0832", desc: "Solar with battery backup", systemSize: "8kW", battery: "13.5kWh" }
             ].map((p, i) => (
               <FadeIn key={i} delay={i * 0.15}>
                 <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl hover:border-brand-300 transition-all duration-500 group flex flex-col h-full">
