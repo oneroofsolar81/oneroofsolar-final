@@ -113,7 +113,7 @@ export function LeadPopup() {
                 <div 
                   className="absolute inset-0 opacity-50 mix-blend-overlay pointer-events-none"
                   style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1000&auto=format&fit=crop')",
+                    backgroundImage: "url('/assets/images/home/home-premium-aerial.webp')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
@@ -191,7 +191,7 @@ export function LeadPopup() {
                 <div 
                   className="absolute inset-0 opacity-60 pointer-events-none"
                   style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1000&auto=format&fit=crop')",
+                    backgroundImage: "url('/assets/images/home/home-project-bayview.webp')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

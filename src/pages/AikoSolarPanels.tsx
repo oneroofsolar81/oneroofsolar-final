@@ -90,10 +90,10 @@ export function AikoSolarPanels() {
     robots: "index, follow",
     openGraphTitle: "AIKO Solar Panels Darwin | Oneroof Solar NT",
     openGraphDescription: "Oneroof Solar installs AIKO ABC solar panels in Darwin and across the NT. Gen 3 technology, 25%+ efficiency, cyclone rated. Get a free quote today.",
-    openGraphImage: "https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png",
+    openGraphImage: "/assets/images/hosted/products/ja-solar.webp",
     twitterTitle: "AIKO Solar Panels Darwin | Oneroof Solar NT",
     twitterDescription: "Oneroof Solar installs AIKO ABC solar panels in Darwin and across the NT. Gen 3 technology, 25%+ efficiency, cyclone rated. Get a free quote today.",
-    twitterImage: "https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png",
+    twitterImage: "/assets/images/hosted/products/ja-solar.webp",
   };
 
   const schemas = [
@@ -108,7 +108,7 @@ export function AikoSolarPanels() {
       "description": "Oneroof Solar installs AIKO Gen 3 ABC N-type solar panels in Darwin and across the NT. Features All Back Contact technology with above 25% efficiency and structural cyclone rating.",
       "category": "Solar Panels",
       "url": "https://oneroofsolar.com.au/solar-panels-brands/aiko/",
-      "image": "https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png",
+      "image": "/assets/images/hosted/products/ja-solar.webp",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -312,7 +312,7 @@ export function AikoSolarPanels() {
         <div className="absolute inset-0">
           <img 
             referrerPolicy="no-referrer"
-            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/images/home/home-hero-bayview.webp" 
             alt="Sunny sky backdrop"
             className="w-full h-full object-cover opacity-10 mix-blend-overlay"
           />
@@ -380,7 +380,7 @@ export function AikoSolarPanels() {
                   <div className="absolute inset-0 z-0">
                     <img 
                       referrerPolicy="no-referrer"
-                      src="https://images.unsplash.com/photo-1620027133796-039cfa6b009f?auto=format&fit=crop&w=800&q=80" 
+                      src="/assets/images/hosted/products/ja-solar.webp" 
                       alt="Modern home roof solar panels" 
                       className="w-full h-full object-cover opacity-25 group-hover:scale-105 transition-transform duration-700"
                     />
@@ -395,7 +395,7 @@ export function AikoSolarPanels() {
                     <img
                       referrerPolicy="no-referrer"
                       fetchPriority="high"
-                      src="https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png"
+                      src="/assets/images/hosted/products/ja-solar.webp"
                       alt="AIKO solar panels close-up"
                       className="w-full h-full object-contain object-center transform scale-[1.48] transition-transform duration-500 group-hover:scale-[1.55] drop-shadow-[0_10px_20px_rgba(0,0,0,0.12)]"
                     />
@@ -655,7 +655,7 @@ export function AikoSolarPanels() {
                 <div className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-md my-6 lg:my-8 group">
                   <img 
                     referrerPolicy="no-referrer"
-                    src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" 
+                    src="/assets/images/home/home-hero-bayview.webp" 
                     alt="Rooftop solar panel close-up" 
                     className="w-full h-48 sm:h-64 lg:h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -750,7 +750,7 @@ export function AikoSolarPanels() {
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <img 
             referrerPolicy="no-referrer"
-            src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/images/home/home-premium-aerial.webp" 
             alt="Modern Australian home roof solar" 
             className="w-full h-full object-cover opacity-20"
           />

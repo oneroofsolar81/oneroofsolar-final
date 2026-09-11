@@ -46,7 +46,7 @@ const BRAND_PRODUCTS: ProductBrand[] = [
     bestFor: "NT rooftops with limited usable space. Maximum output per panel where cyclone strapping or rooftop equipment reduces available area.",
     specLabel: "Full specs and models: AIKO solar panels",
     productLink: "/solar-panels-brands/aiko/",
-    image: "https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png",
+    image: "/assets/images/hosted/products/ja-solar.webp",
   },
   {
     id: "rec",
@@ -276,18 +276,11 @@ export function SolarPanelsBrands() {
       {/* Hero Section */}
       <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
+          <img
+            src="/assets/images/home/home-hero-bayview.webp"
+            alt=""
             className="w-full h-full object-cover opacity-30 mix-blend-screen grayscale-[50%]"
-          >
-            <source
-              src="https://cdn.pixabay.com/video/2021/11/14/96813-644781744_tiny.mp4"
-              type="video/mp4"
-            />
-          </video>
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-[#0A1118]/80 to-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A1118] via-[#0A1118]/80 to-transparent flex"></div>
         </div>

@@ -406,9 +406,9 @@ export function ResidentialSolarSystemPage() {
               {/* Social Proof Badge / Customer Rating */}
               <div className="mt-10 flex flex-wrap items-center gap-4 bg-slate-950/40 backdrop-blur-md border border-white/10 py-3 px-4 rounded-2xl w-fit">
                 <div className="flex -space-x-2.5">
-                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&auto=format&fit=crop" alt="Darwin Homeowner 1" referrerPolicy="no-referrer" />
-                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Darwin Homeowner 2" referrerPolicy="no-referrer" />
-                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop" alt="Darwin Homeowner 3" referrerPolicy="no-referrer" />
+                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="/assets/images/hosted/about-team.webp" alt="Darwin Homeowner 1" referrerPolicy="no-referrer" />
+                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="/assets/images/hosted/about-team.webp" alt="Darwin Homeowner 2" referrerPolicy="no-referrer" />
+                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="/assets/images/hosted/about-team.webp" alt="Darwin Homeowner 3" referrerPolicy="no-referrer" />
                   <div className="w-8 h-8 rounded-full border-2 border-[#0A1118] bg-[#8cc63f] text-[#19281D] text-[10px] font-black flex items-center justify-center">
                     +500
                   </div>

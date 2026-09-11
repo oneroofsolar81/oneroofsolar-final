@@ -270,7 +270,7 @@ export function JinkoSolarPanels() {
         <div className="absolute inset-0">
           <img 
             referrerPolicy="no-referrer"
-            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/images/home/home-hero-bayview.webp" 
             alt="Sunny solar backdrop"
             className="w-full h-full object-cover opacity-10 mix-blend-overlay"
           />

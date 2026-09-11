@@ -268,7 +268,7 @@ export function CommercialSolarSystemPage() {
         <div className="absolute inset-0">
           <img 
             referrerPolicy="no-referrer"
-            src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/images/hosted/aerial.webp" 
             alt="Oneroof Solar commercial solar system installed on Darwin NT business rooftop"
             className="w-full h-full object-cover opacity-20 mix-blend-overlay"
           />
@@ -424,7 +424,7 @@ export function CommercialSolarSystemPage() {
                   <img 
                     referrerPolicy="no-referrer"
                     loading="lazy"
-                    src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" 
+                    src="/assets/images/home/home-hero-bayview.webp" 
                     alt="Commercial building solar PV system" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -1618,7 +1618,7 @@ export function CommercialSolarSystemPage() {
           <img 
             referrerPolicy="no-referrer"
             loading="lazy"
-            src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/images/home/home-premium-aerial.webp" 
             alt="Commercial solar background" 
             className="w-full h-full object-cover opacity-30"
           />

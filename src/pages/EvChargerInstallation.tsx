@@ -37,14 +37,14 @@ const evProducts = [
     title: "Sigenergy",
     description:
       "Innovative EV chargers that seamlessly integrate with your home's energy ecosystem for smart, efficient charging.",
-    image: "https://aussiesolartech.com.au/wp-content/uploads/2025/11/sigenergy-ev-charger.png",
+    image: "/assets/images/hosted/products/ev-charger.webp",
   },
   {
     title: "Myenergi",
     description:
       "Highly adaptable chargers allowing you to charge your vehicle using 100% free energy generated from your solar panels.",
     image:
-      "https://images.squarespace-cdn.com/content/v1/66f20e04857fd124e6454b08/6c7f45e9-1a80-45fe-844a-76f755cabe39/Myenergi+Zappi+smart+EV+charger+7kW+Single+phase+-+white+with+type+2%2C+6.5m+cable.png?format=1500w",
+      "/assets/images/hosted/products/ev-charger.webp",
   },
   {
     title: "Fronius",

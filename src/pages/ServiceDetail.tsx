@@ -68,18 +68,11 @@ function DarkHero({ service, slug }: { service: any; slug: string }) {
   return (
     <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
       <div className="absolute inset-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <img
+          src="/assets/images/home/home-hero-bayview.webp"
+          alt=""
           className="w-full h-full object-cover opacity-30 mix-blend-screen grayscale-[50%]"
-        >
-          <source
-            src="https://cdn.pixabay.com/video/2021/11/14/96813-644781744_tiny.mp4"
-            type="video/mp4"
-          />
-        </video>
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-[#0A1118]/80 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A1118] via-[#0A1118]/80 to-transparent flex"></div>
       </div>
@@ -253,7 +246,7 @@ function DarkIntro({ service, slug }: { service: any; slug: string }) {
           <FadeIn delay={0.2} className="relative">
             <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden relative shadow-2xl">
               <img referrerPolicy="no-referrer" fetchPriority="high"
-                src={slug === "battery-storage" ? "https://orangesolarsystems.co.uk/wp-content/uploads/2024/11/Tesla-Powerwall-2-installation-Haslemere-1-1024x768.jpg" : (service.products[0]?.image || service.image)}
+                src={slug === "battery-storage" ? "/assets/images/home/home-battery-nightcliff.webp" : (service.products[0]?.image || service.image)}
                 alt={service.title}
                 className="w-full h-full object-cover"
               />
@@ -607,14 +600,14 @@ const servicesData: Record<
         description:
           "Premium solar panels represent the pinnacle of energy management technology, offering high efficiency and low degradation rates over a 25-year lifespan.",
         image:
-          "https://5.imimg.com/data5/SELLER/Default/2025/10/554370004/FM/TJ/DL/23068426/grid-tied-solar-system.jpeg",
+          "/assets/images/home/home-hero-bayview.webp",
       },
       {
         title: "String Inverters",
         description:
           "Reliable and efficient energy source designed for durability and longevity, offering cost-effectiveness and built-in safety features for secure, worry-free energy consumption.",
         image:
-          "https://a-us.storyblok.com/f/1006159/810x471/2ddba951c6/string-inverters.jpg/m/1000x0/filters:quality(60):format(webp)",
+          "/assets/images/hosted/products/inverter-hero.webp",
       },
     ],
     image:
@@ -656,14 +649,14 @@ const servicesData: Record<
         description:
           "Central inverters are large metal cabinets that efficiently generate and distribute solar electricity, capable of circulating high demand for factories and solar farms.",
         image:
-          "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=60&w=1000&auto=format&fit=crop",
+          "/assets/images/hosted/aerial.webp",
       },
       {
         title: "Commercial Panel Arrays",
         description:
           "High-capacity panel layouts designed to withstand harsh industrial environments while delivering massive MW-scale power generation.",
         image:
-          "https://a-us.storyblok.com/f/1006159/810x471/62865d0b80/des-1116-csm.jpg/m/1000x0/filters:quality(60):format(webp)",
+          "/assets/images/hosted/aerial.webp",
       },
     ],
     image:
@@ -705,7 +698,7 @@ const servicesData: Record<
         description:
           "The ultimate home battery that stores solar energy for blackout protection and night-time use with a sleek, minimalist design.",
         image:
-          "https://solarjuice.com.au/wp-content/uploads/2026/05/Powerwall-and-Backup-Gateway-2-copy-1280x720-Edited-Edited-600x618.png",
+          "/assets/images/home/home-battery-nightcliff.webp",
       },
       {
         title: "Sungrow",
@@ -726,14 +719,14 @@ const servicesData: Record<
         description:
           "Intelligent and flexible battery solutions designed to maximize self-consumption and deliver superior backup performance.",
         image:
-          "https://www.goodwe.com.au/Public/Uploads/uploadfile4/images/20251014/ESA3-10KAll-in-oneSystem-1-495.png",
+          "/assets/images/hosted/products/alpha-ess.webp",
       },
       {
         title: "Fox ESS",
         description:
           "High-voltage and scalable battery options known for excellent efficiency, rapid charging, and long lifespan.",
         image:
-          "https://solarjuice.com.au/wp-content/uploads/2026/05/ECS.1-406.png",
+          "/assets/images/hosted/products/alpha-ess.webp",
       },
     ],
     image:
@@ -775,14 +768,14 @@ const servicesData: Record<
         description:
           "Innovative EV chargers that seamlessly integrate with your home's energy ecosystem for smart, efficient charging.",
         image:
-          "https://aussiesolartech.com.au/wp-content/uploads/2025/11/sigenergy-ev-charger.png",
+          "/assets/images/hosted/products/ev-charger.webp",
       },
       {
         title: "Myenergi",
         description:
           "Highly adaptable chargers allowing you to charge your vehicle using 100% free energy generated from your solar panels.",
         image:
-          "https://images.squarespace-cdn.com/content/v1/66f20e04857fd124e6454b08/6c7f45e9-1a80-45fe-844a-76f755cabe39/Myenergi+Zappi+smart+EV+charger+7kW+Single+phase+-+white+with+type+2%2C+6.5m+cable.png?format=1500w",
+          "/assets/images/hosted/products/ev-charger.webp",
       },
       {
         title: "Fronius",
@@ -792,7 +785,7 @@ const servicesData: Record<
       },
     ],
     image:
-      "https://www.digi.com/getattachment/ece175a2-6f34-43e4-8f54-1f9b07df9b06/gettyimages-1387159408-1280x720.jpg?lang=en-us&width=1280&height=720&ext=.jpg",
+      "/assets/images/hosted/products/ev-charger.webp",
     faqs: [
       {
         q: "Can I charge my EV using only solar power?",
@@ -830,7 +823,7 @@ const servicesData: Record<
         description:
           "Industry-leading solar inverters known for high efficiency, reliability, and excellent warranty support for residential and commercial systems.",
         image:
-          "https://official-oversears-file.sungrowpower.com/news-images/b8828e46-8516-42e9-be65-a0216ecb2d82.png",
+          "/assets/images/hosted/products/inverter-hero.webp",
       },
       {
         title: "Fronius",
@@ -851,7 +844,7 @@ const servicesData: Record<
         description:
           "Versatile and highly efficient solar inverters designed to maximize yield and provide reliable power generation for any roof.",
         image:
-          "https://solarshop.pk/wp-content/uploads/2021/01/goodwe-25KW-on-grid-smt.png",
+          "/assets/images/hosted/products/inverter-hero.webp",
       },
       {
         title: "Foxess",
@@ -900,18 +893,18 @@ const servicesData: Record<
         description:
           "Using specialized equipment to safely remove dust, bird droppings, and completely clean solar panels for restored output.",
         image:
-          "https://plus.unsplash.com/premium_photo-1682145358254-56e9ab8049ca?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "/assets/images/home/home-about-stuart-park.webp",
       },
       {
         title: "System Health Checks",
         description:
           "Comprehensive testing of inverters, cabling, and isolators to prevent faults and ensure your system meets current safety standards.",
         image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgRHafd0ihpxUFttIlyiGDhBI3sNiTixrMLg&s",
+          "/assets/images/home/home-packages-house.webp",
       },
     ],
     image:
-      "https://solarsme.com/wp-content/uploads/2022/04/4-1.webp",
+      "/assets/images/home/home-hero-bayview.webp",
     faqs: [
       {
         q: "How often should I have my solar panels cleaned?",
@@ -949,7 +942,7 @@ const servicesData: Record<
         description:
           "High-efficiency, premium N-type ABC solar panels delivering maximum power output and stunning all-black aesthetics.",
         image:
-          "https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png",
+          "/assets/images/hosted/products/ja-solar.webp",
       },
       {
         title: "REC",
@@ -1005,18 +998,18 @@ const servicesData: Record<
         description:
           "Aesthetic and secure flush mounting systems that keep panels snug to your roof line, mitigating wind strain.",
         image:
-          "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=60&w=1000&auto=format&fit=crop",
+          "/assets/images/home/home-premium-aerial.webp",
       },
       {
         title: "Tilt Frame Structures",
         description:
           "Custom-angled framing to perfectly position solar arrays towards the sun on flat roofs.",
         image:
-          "https://images.unsplash.com/photo-1559302504-64aae6ca6b6f?q=60&w=1000&auto=format&fit=crop",
+          "/assets/images/home/home-packages-house.webp",
       },
     ],
     image:
-      "https://www.hachettebookgroup.com/wp-content/uploads/2023/02/WEB-121_cHesh_InstallYourOwnSolarPanels.jpg",
+      "/assets/images/home/home-about-stuart-park.webp",
     faqs: [
       {
         q: "How much does solar panel installation cost in Darwin?",
@@ -1054,18 +1047,18 @@ const servicesData: Record<
         description:
           "Specialized installation pairing the inverter smoothly with battery storage, routing excess power flawlessly.",
         image:
-          "https://oneroofsolar.com.au/wp-content/uploads/2026/03/dji_fly_20230817_185322_707_1692349964125_photo-scaled.jpg",
+          "/assets/images/home/home-premium-aerial.webp",
       },
       {
         title: "Micro-Inverter Topology",
         description:
           "Roof-level installations fixing micro-inverters beneath each individual panel to overcome complex shading issues.",
         image:
-          "https://igrowattinverter.com/wp-content/uploads/2024/05/What-is-a-micro-inverter-and-how-does-it-work.webp",
+          "/assets/images/hosted/products/inverter-hero.webp",
       },
     ],
     image:
-      "https://www.sunrayspower.com.au/wp-content/uploads/2021/12/New-Blog-2.jpg",
+      "/assets/images/home/home-hero-bayview.webp",
     faqs: [
       {
         q: "Where does the inverter go?",
@@ -1103,7 +1096,7 @@ const servicesData: Record<
         description:
           "The ultimate home battery that stores solar energy for blackout protection and night-time use with a sleek, minimalist design.",
         image:
-          "https://solarjuice.com.au/wp-content/uploads/2026/05/Powerwall-and-Backup-Gateway-2-copy-1280x720-Edited-Edited-600x618.png",
+          "/assets/images/home/home-battery-nightcliff.webp",
       },
       {
         title: "Sigenergy",
@@ -1161,18 +1154,11 @@ function EvChargerHero({ service }: { service: any }) {
   return (
     <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
       <div className="absolute inset-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <img
+          src="/assets/images/home/home-hero-bayview.webp"
+          alt=""
           className="w-full h-full object-cover opacity-30 mix-blend-screen grayscale-[50%]"
-        >
-          <source
-            src="https://cdn.pixabay.com/video/2021/11/14/96813-644781744_tiny.mp4"
-            type="video/mp4"
-          />
-        </video>
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-[#0A1118]/80 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A1118] via-[#0A1118]/80 to-transparent flex"></div>
       </div>
@@ -1205,7 +1191,7 @@ function EvChargerHero({ service }: { service: any }) {
           <FadeIn isHero delay={0.2} className="relative hidden lg:block">
             <div className="w-full aspect-square bg-gradient-to-br from-brand-500/20 to-brand-600/20 rounded-full blur-3xl absolute inset-0 animate-pulse"></div>
             <img referrerPolicy="no-referrer" fetchPriority="high"
-              src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=60&w=1000&auto=format&fit=crop"
+              src="/assets/images/home/home-battery-nightcliff.webp"
               alt="EV Charger"
               className="relative z-10 w-full h-[600px] object-cover rounded-[3rem] border border-white/10 shadow-2xl opacity-90"
             />
@@ -1269,7 +1255,7 @@ function EvChargerIntro({ service }: { service: any }) {
           <FadeIn delay={0.2} className="relative">
             <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden relative shadow-2xl">
               <img referrerPolicy="no-referrer" loading="lazy"
-                src="https://images.unsplash.com/photo-1660601931649-14eb02330f8d?q=60&w=1000&auto=format&fit=crop"
+                src="/assets/images/hosted/products/sigen-battery.webp"
                 alt="EV charging"
                 className="w-full h-full object-cover"
               />
@@ -2382,7 +2368,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
 
               <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-100 shadow-xl h-[300px] sm:h-[400px]">
                 <img referrerPolicy="no-referrer" loading="lazy"
-                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop"
+                  src="/assets/images/home/home-project-bayview.webp"
                   alt="darwin solar power rooftop system, high output dry season NT"
                   className="w-full h-full object-cover"
                 />
@@ -2446,7 +2432,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 {/* Image (first in DOM so on top on mobile, order-last on desktop) */}
                 <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl h-[300px] sm:h-[400px] lg:order-last group">
                   <img referrerPolicy="no-referrer" loading="lazy"
-                    src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800&auto=format&fit=crop"
+                    src="/assets/images/home/home-hero-bayview.webp"
                     alt="residential solar panels Darwin, rooftop installation Oneroof Solar"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -2491,7 +2477,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 {/* Image (first in DOM so on top on mobile, left on desktop) */}
                 <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl h-[300px] sm:h-[400px] group">
                   <img referrerPolicy="no-referrer" loading="lazy"
-                    src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop"
+                    src="/assets/images/home/home-project-bayview.webp"
                     alt="commercial solar panel installation Darwin, Oneroof Solar commercial rooftop"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -2536,7 +2522,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 {/* Image (first in DOM so on top on mobile, order-last on desktop) */}
                 <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl h-[300px] sm:h-[400px] lg:order-last group">
                   <img referrerPolicy="no-referrer" loading="lazy"
-                    src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=800&auto=format&fit=crop"
+                    src="/assets/images/home/home-premium-aerial.webp"
                     alt="off-grid solar systems Darwin, remote standalone solar storage NT"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -2677,7 +2663,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               {/* Image (first in DOM so on top on mobile/tablet) */}
               <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-2xl h-[300px] sm:h-[400px] lg:h-[450px] group">
                 <img referrerPolicy="no-referrer" loading="lazy"
-                  src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop"
+                  src="/assets/images/home/home-hero-bayview.webp"
                   alt="cyclone rated solar panel mounting Darwin, Oneroof Solar"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

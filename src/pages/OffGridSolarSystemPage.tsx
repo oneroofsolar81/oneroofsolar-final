@@ -423,7 +423,7 @@ export function OffGridSolarSystemPage() {
               <FadeIn delay={0.2}>
                 <div className="relative rounded-3xl overflow-hidden border border-slate-200 shadow-xl group">
                   <img referrerPolicy="no-referrer" 
-                    src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=800&auto=format&fit=crop"
+                    src="/assets/images/home/home-premium-aerial.webp"
                     alt="Oneroof Solar off-grid battery storage and solar inverter installation on remote NT property"
                     className="w-full h-[400px] sm:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700"
                   />

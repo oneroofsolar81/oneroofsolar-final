@@ -46,7 +46,7 @@ const brands = [
     title: "GoodWe",
     description:
       "One of the best value batteries on the market, with dependable hardware and straightforward software. A smart pick if you want strong performance without paying premium prices.",
-    image: "https://www.goodwe.com.au/Public/Uploads/uploadfile4/images/20251014/ESA3-10KAll-in-oneSystem-1-495.png",
+    image: "/assets/images/hosted/products/alpha-ess.webp",
     specLabel: "Download GoodWe Spec Sheet (PDF)",
     specHref: "/products/solar-inverters/goodwe",
   },
@@ -54,7 +54,7 @@ const brands = [
     title: "Fox ESS",
     description:
       "The budget friendly option in our range. It won't have every premium feature, but for homeowners who want solid battery storage without the higher price tag, it does the job well.",
-    image: "https://solarjuice.com.au/wp-content/uploads/2026/05/ECS.1-406.png",
+    image: "/assets/images/hosted/products/alpha-ess.webp",
     specLabel: "Download Fox ESS Spec Sheet (PDF)",
     specHref: "/products/solar-inverters/fox-ess",
   },

@@ -166,7 +166,7 @@ export function About() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                <FadeIn className="order-2 lg:order-1 relative">
                  <div className="absolute -inset-4 bg-brand-50 rounded-[3rem] -z-10 transform -rotate-3 scale-105"></div>
-                 <img referrerPolicy="no-referrer" loading="lazy" src="https://esaenergy.com.pk/wp-content/uploads/2025/05/Why-Solar-Panels-Are-a-Smart-Investment-for-Small-Businesses-1024x683.jpg" alt="Solar installation process" className="w-full h-full object-cover rounded-[2rem] shadow-xl" />
+                 <img referrerPolicy="no-referrer" loading="lazy" src="/assets/images/hosted/about-team.webp" alt="Solar installation process" className="w-full h-full object-cover rounded-[2rem] shadow-xl" />
                </FadeIn>
                
                <FadeIn delay={0.2} className="order-1 lg:order-2 flex flex-col justify-center">

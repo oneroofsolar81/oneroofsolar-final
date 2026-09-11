@@ -268,7 +268,7 @@ export function SolarPanelRepairDarwinPage() {
 
             <FadeIn delay={0.2} className="relative w-full aspect-[4/3] lg:aspect-square rounded-[2rem] overflow-hidden shadow-2xl border border-white/10">
               <img
-                src="https://plus.unsplash.com/premium_photo-1682145358254-56e9ab8049ca?q=80&w=1000&auto=format&fit=crop"
+                src="/assets/images/home/home-about-stuart-park.webp"
                 alt="Solar panel repair Darwin technician"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
@@ -441,7 +441,7 @@ export function SolarPanelRepairDarwinPage() {
           {/* Large Premium Image */}
           <FadeIn className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-200 relative aspect-[21/9] max-w-6xl mx-auto">
             <img
-              src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop"
+              src="/assets/images/home/home-hero-bayview.webp"
               alt="Solar panel repair Darwin technician"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
@@ -467,7 +467,7 @@ export function SolarPanelRepairDarwinPage() {
             <div className="lg:col-span-5">
               <FadeIn className="rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 relative aspect-[4/3] sm:aspect-video lg:aspect-square">
                 <img
-                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop"
+                  src="/assets/images/home/home-project-bayview.webp"
                   alt="Damaged solar panels needing repair"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"

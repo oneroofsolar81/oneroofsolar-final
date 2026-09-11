@@ -26,10 +26,10 @@ export function JaSolarPanels() {
     robots: "index, follow",
     openGraphTitle: "JA Solar Panels NT | Tier 1 Value Without the Premium",
     openGraphDescription: "Get Tier 1 solar panels in Darwin and the NT. High efficiency, salt resistant dual glass technology at an affordable price. Free quote.",
-    openGraphImage: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=80",
+    openGraphImage: "/assets/images/home/home-hero-bayview.webp",
     twitterTitle: "JA Solar Panels NT | Tier 1 Value Without the Premium",
     twitterDescription: "Get Tier 1 solar panels in Darwin and the NT. High efficiency, salt resistant dual glass technology at an affordable price. Free quote.",
-    twitterImage: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=80",
+    twitterImage: "/assets/images/home/home-hero-bayview.webp",
   };
 
   const schemas = [
@@ -44,7 +44,7 @@ export function JaSolarPanels() {
       "description": "Get Tier 1 solar panels in Darwin and the NT. High efficiency, salt resistant dual glass technology at an affordable price. Free quote.",
       "category": "Solar Panels",
       "url": "https://oneroofsolar.com.au/product/solar-panels-brands/ja-solar-panels-nt",
-      "image": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1200&q=80"
+      "image": "/assets/images/home/home-hero-bayview.webp"
     },
     {
       "@context": "https://schema.org",
@@ -159,7 +159,7 @@ export function JaSolarPanels() {
         <div className="absolute inset-0">
           <img 
             referrerPolicy="no-referrer"
-            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/images/home/home-hero-bayview.webp" 
             alt="Sunny sky backdrop"
             className="w-full h-full object-cover opacity-10 mix-blend-overlay"
           />
@@ -253,7 +253,7 @@ export function JaSolarPanels() {
                 <div className="relative rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden border border-slate-200 shadow-md group aspect-[4/3]">
                   <img 
                     referrerPolicy="no-referrer"
-                    src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80" 
+                    src="/assets/images/home/home-project-bayview.webp" 
                     alt="Premium solar panel cell arrays" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -302,7 +302,7 @@ export function JaSolarPanels() {
                 <div className="relative rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden border border-slate-200 shadow-md group aspect-[4/3]">
                   <img 
                     referrerPolicy="no-referrer"
-                    src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=800&q=80" 
+                    src="/assets/images/hosted/aerial.webp" 
                     alt="JA Solar manufacturing excellence" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />

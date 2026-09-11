@@ -224,7 +224,7 @@ export function SolarBatteryInstallation() {
     {
       name: "Tesla",
       desc: "Industry-leading energy density with sleek wall-mounted Powerwall architectures.",
-      image: "https://solarjuice.com.au/wp-content/uploads/2026/05/Powerwall-and-Backup-Gateway-2-copy-1280x720-Edited-Edited-600x618.png"
+      image: "/assets/images/home/home-battery-nightcliff.webp"
     },
     {
       name: "Sigenergy",
@@ -239,12 +239,12 @@ export function SolarBatteryInstallation() {
     {
       name: "BYD",
       desc: "World-class battery chemistry renowned for high safety, deep discharge, and modular expansion.",
-      image: "https://www.solarquotes.com.au/wp-content/uploads/2023/10/byd-fronius-backboard.jpg"
+      image: "/assets/images/hosted/products/fronius.webp"
     },
     {
       name: "Alpha ESS",
       desc: "Reliable, cost-effective residential and commercial energy storage systems.",
-      image: "https://solarjuice.com.au/wp-content/uploads/2026/05/ECS.1-406.png"
+      image: "/assets/images/hosted/products/alpha-ess.webp"
     }
   ];
 

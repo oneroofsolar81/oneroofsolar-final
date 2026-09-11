@@ -88,19 +88,19 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({
           <div className="flex -space-x-2">
             <img
               className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-[#101726] object-cover"
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80"
+              src="/assets/images/hosted/about-team.webp"
               alt="Darwin Homeowner 1"
               referrerPolicy="no-referrer"
             />
             <img
               className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-[#101726] object-cover"
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80"
+              src="/assets/images/hosted/about-team.webp"
               alt="Darwin Homeowner 2"
               referrerPolicy="no-referrer"
             />
             <img
               className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-[#101726] object-cover"
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100&q=80"
+              src="/assets/images/hosted/about-team.webp"
               alt="Darwin Homeowner 3"
               referrerPolicy="no-referrer"
             />

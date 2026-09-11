@@ -9,7 +9,7 @@ export const DEFAULT_SERVICES = [
       "Full installation & grid connection",
       "25-year performance warranty"
     ],
-    image: "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=60&w=1000&auto=format&fit=crop"
+    image: "/assets/images/home/home-premium-aerial.webp"
   },
   {
     title: "Commercial Solar",
@@ -21,7 +21,7 @@ export const DEFAULT_SERVICES = [
       "Custom engineered for your roof space",
       "Ongoing maintenance & support"
     ],
-    image: "https://a-us.storyblok.com/f/1006159/810x471/62865d0b80/des-1116-csm.jpg/m/1000x0/filters:quality(60):format(webp)"
+    image: "/assets/images/hosted/aerial.webp"
   },
   {
     title: "Solar Batteries & Storage",
@@ -45,7 +45,7 @@ export const DEFAULT_SERVICES = [
       "Fast charging capabilities",
       "Residential & commercial options"
     ],
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAYjFUKNKyOMySm6lkKfTkODY4oKkYzGvdgw&s"
+    image: "/assets/images/hosted/products/ev-charger.webp"
   },
   {
     title: "Solar Panel Cleaning & Maintenance",
@@ -57,7 +57,7 @@ export const DEFAULT_SERVICES = [
       "Performance optimization",
       "Fault diagnosis & repairs"
     ],
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTExfMGgoZJ0SC5uObr6P1AIzCA5Qme1j8pLA&s"
+    image: "/assets/images/home/home-about-stuart-park.webp"
   },
   {
     title: "Solar Inverters",
@@ -69,7 +69,7 @@ export const DEFAULT_SERVICES = [
       "Smart monitoring capabilities",
       "Extended warranties"
     ],
-    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=60&w=1000&auto=format&fit=crop"
+    image: "/assets/images/home/home-hero-bayview.webp"
   }
 ];
 

@@ -2,7 +2,10 @@ import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
 import App from './App.tsx';
 import { ErrorBoundary } from './components/ErrorBoundary.tsx';
+import { installImageFallbacks } from './lib/localImage';
 import './index.css';
+
+installImageFallbacks();
 
 // Suppress ResizeObserver, Elfsight/eapps, Google Tag Manager, and non-fatal Firestore network retry warnings
 const originalError = console.error;
