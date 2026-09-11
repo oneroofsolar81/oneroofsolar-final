@@ -195,7 +195,7 @@ export function SolarBatteryBrands() {
                 <span className="text-[#8cc63f]" aria-current="page">Solar Battery Brands</span>
               </nav>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-6 uppercase">
+              <h1 className="hero-heading text-white mb-6 break-words normal-case">
                 Solar Battery Brands{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Darwin NT</span>
               </h1>
@@ -242,7 +242,7 @@ export function SolarBatteryBrands() {
       <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               Which Battery Actually Holds Up in Darwin's Heat?
             </h2>
             <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -264,7 +264,7 @@ export function SolarBatteryBrands() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
-              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 tracking-tight normal-case">
                 Stop Paying Jacana Energy to Cool Your Home at Night.
               </h3>
               <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
@@ -293,7 +293,7 @@ export function SolarBatteryBrands() {
                 <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse shadow-[0_0_10px_rgba(140,198,63,0.8)]"></span>
                 Hardware Portfolio
               </div>
-              <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white normal-case">
                 The Battery Brands <br />
                 <span className="text-brand-400">We Supply</span> and Install
               </h2>
@@ -331,7 +331,7 @@ export function SolarBatteryBrands() {
                       </span>
                     </div>
 
-                    <h3 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-tighter group-hover:text-brand-400 transition-colors">
+                    <h3 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-tighter group-hover:text-brand-400 transition-colors normal-case">
                       {product.title}
                     </h3>
                     <p className="text-slate-400 text-lg leading-relaxed font-medium mb-10">
@@ -368,7 +368,7 @@ export function SolarBatteryBrands() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Battery Storage Built for Homes, Businesses, and Off-Grid Properties
               </h2>
             </FadeIn>
@@ -379,7 +379,7 @@ export function SolarBatteryBrands() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Home className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Residential</h3>
+              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight normal-case">Residential</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 Perfect for Darwin families who want lower power bills and backup power when the grid goes down. We size your battery to match how your household actually uses electricity. Learn more about{" "}
                 <Link to="/solar-systems/residential-solar-system" className={linkClass}>residential solar systems</Link>.
@@ -390,7 +390,7 @@ export function SolarBatteryBrands() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Building2 className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Commercial</h3>
+              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight normal-case">Commercial</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 Running a business means power reliability matters even more. We help commercial properties across the NT cut running costs and keep operations going during outages. Learn more about{" "}
                 <Link to="/solar-systems/commercial-solar-system" className={linkClass}>commercial solar systems</Link>.
@@ -401,7 +401,7 @@ export function SolarBatteryBrands() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Compass className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Off-Grid</h3>
+              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight normal-case">Off-Grid</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 Living remotely doesn't mean going without reliable power. We design battery systems built to handle full off-grid living across the Territory. Learn more about{" "}
                 <Link to="/solar-systems/off-grid-solar-system" className={linkClass}>off-grid solar systems</Link>.
@@ -419,7 +419,7 @@ export function SolarBatteryBrands() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16 lg:mb-20">
             <FadeIn>
-              <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 Why Choose Our Solar Batteries?
               </h2>
               <p className="text-brand-900 text-lg font-bold max-w-2xl mx-auto">
@@ -433,7 +433,7 @@ export function SolarBatteryBrands() {
               <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-500 mb-6 shadow-lg">
                 <Sun className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-black text-white mb-4 tracking-tight">Energy Independence</h3>
+              <h3 className="text-xl font-black text-white mb-4 tracking-tight normal-case">Energy Independence</h3>
               <p className="text-white/90 font-medium leading-relaxed text-[15px]">
                 Store your daytime solar surplus and power your home through the night, minimizing grid reliance completely.
               </p>
@@ -443,7 +443,7 @@ export function SolarBatteryBrands() {
               <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-500 mb-6 shadow-lg">
                 <Smartphone className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-black text-white mb-4 tracking-tight">Blackout Protection</h3>
+              <h3 className="text-xl font-black text-white mb-4 tracking-tight normal-case">Blackout Protection</h3>
               <p className="text-white/90 font-medium leading-relaxed text-[15px]">
                 Automatically switch to battery backup power within milliseconds during a grid outage to keep essentials running.
               </p>
@@ -453,7 +453,7 @@ export function SolarBatteryBrands() {
               <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-500 mb-6 shadow-lg">
                 <Shield className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-black text-white mb-4 tracking-tight">Safe &amp; Certified</h3>
+              <h3 className="text-xl font-black text-white mb-4 tracking-tight normal-case">Safe &amp; Certified</h3>
               <p className="text-white/90 font-medium leading-relaxed text-[15px]">
                 Installed exclusively by our licensed solar electricians to meet strict Australian safety standards.
               </p>
@@ -465,7 +465,7 @@ export function SolarBatteryBrands() {
       <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               SAA Compliance You Can Trust
             </h2>
             <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -490,7 +490,7 @@ export function SolarBatteryBrands() {
       <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               Upfront Savings on Your Battery
             </h2>
             <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -513,7 +513,7 @@ export function SolarBatteryBrands() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
-              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 tracking-tight normal-case">
                 Keep your power on when wet season storms trip the grid.
               </h3>
               <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
@@ -535,7 +535,7 @@ export function SolarBatteryBrands() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
             <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
               <FadeIn>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 leading-[1.1] mb-6 uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Frequently Asked Questions
                 </h2>
                 <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-medium mb-8 max-w-md">
@@ -600,7 +600,7 @@ export function SolarBatteryBrands() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="lg:sticky lg:top-28 lg:self-start">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 Get a Fast Local Quote
               </h2>
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-8">

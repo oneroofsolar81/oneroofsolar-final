@@ -211,7 +211,7 @@ export function AlphaEssInvertersPage() {
                 </nav>
 
                 {/* H1 Title */}
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide leading-[1.1] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   Alpha ESS Solar Inverters Darwin NT: SAA Approved
                 </h1>
 
@@ -271,7 +271,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               What Is an Alpha ESS Hybrid Inverter?
             </h2>
 
@@ -314,7 +314,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-slate-50 border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
               Alpha ESS Range for Darwin &amp; NT Homes
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-12 max-w-4xl">
@@ -327,7 +327,7 @@ export function AlphaEssInvertersPage() {
               {/* CARD / PRODUCT 1 */}
               <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                 <div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-2 leading-tight">
+                  <h3 className="text-2xl font-black text-slate-900 mb-2 leading-tight normal-case">
                     SMILE-G3-S5, Single Phase, 5kW
                   </h3>
                   <p className="text-slate-600 text-sm font-semibold mb-6">
@@ -372,7 +372,7 @@ export function AlphaEssInvertersPage() {
               {/* CARD / PRODUCT 2 */}
               <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                 <div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-2 leading-tight">
+                  <h3 className="text-2xl font-black text-slate-900 mb-2 leading-tight normal-case">
                     SMILE-G3-T4/T5/T6/T8/T10, Three Phase, 4 to 10kW
                   </h3>
                   <p className="text-slate-600 text-sm font-semibold mb-6">
@@ -423,7 +423,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Built for Homes, Business and Off-Grid Properties
             </h2>
 
@@ -476,7 +476,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-slate-50 border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               How Alpha ESS Handles Darwin's Weather
             </h2>
 
@@ -520,7 +520,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-[#0A1118] border-b border-slate-800 text-left text-white">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-8 normal-case">
               SAA Approved and Installed by SAA Accredited Installers
             </h2>
 
@@ -554,7 +554,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Your STC Discount, Sorted Upfront
             </h2>
 
@@ -579,7 +579,7 @@ export function AlphaEssInvertersPage() {
           <FadeIn>
             <div className="bg-white border-2 border-slate-200 rounded-2xl sm:rounded-3xl p-8 sm:p-12 shadow-sm">
               <div className="max-w-4xl">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 mb-4 uppercase tracking-wide leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                   Inverter Playing Up? Get a Free Check Before It Dies Completely.
                 </h2>
 
@@ -626,7 +626,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Alpha ESS Next to the Other Brands We Install
             </h2>
 
@@ -643,7 +643,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-slate-50 border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Growing Your Battery Later
             </h2>
 
@@ -660,7 +660,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Areas We Serve
             </h2>
 
@@ -675,7 +675,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-slate-50 border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-12 uppercase tracking-wide">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-12 normal-case">
               FAQ
             </h2>
 
@@ -719,7 +719,7 @@ export function AlphaEssInvertersPage() {
           <FadeIn>
             <div className="bg-[#0D1520] border border-slate-800 rounded-2xl sm:rounded-3xl p-8 sm:p-12 text-center text-white shadow-2xl">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-6 uppercase tracking-wide leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Book Your Alpha ESS Installation or Upgrade
                 </h2>
 
@@ -756,7 +756,7 @@ export function AlphaEssInvertersPage() {
       {specModalModel && (
         <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
           <div className="bg-white rounded-2xl max-w-md w-full p-6 text-left shadow-2xl border border-slate-200">
-            <h3 className="text-xl font-extrabold text-slate-900 mb-2">
+            <h3 className="text-xl font-extrabold text-slate-900 mb-2 normal-case">
               {specModalModel} Spec Sheet
             </h3>
             <p className="text-slate-600 text-sm mb-6 leading-relaxed">

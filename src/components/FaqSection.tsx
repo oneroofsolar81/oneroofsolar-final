@@ -79,7 +79,7 @@ export function FaqSection({ faqs, heading }: { faqs: { q: string; a: ReactNode 
                 <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
                 <span className="text-sm font-bold text-slate-700 uppercase tracking-widest">Support</span>
               </div>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 leading-[1.1] mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 {heading || (
                   <>
                     Common <br className="hidden sm:block" />

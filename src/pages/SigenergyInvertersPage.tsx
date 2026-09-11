@@ -158,7 +158,7 @@ export function SigenergyInvertersPage() {
                   <span>SAA Approved &amp; Battery Ready • Darwin NT</span>
                 </div>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide leading-[1.08] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   Sigenergy Solar Inverters <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Darwin NT</span>
                 </h1>
 
@@ -233,7 +233,7 @@ export function SigenergyInvertersPage() {
                         SAA Approved
                       </span>
                     </div>
-                    <h3 className="text-white text-sm sm:text-base font-bold">
+                    <h3 className="text-white text-sm sm:text-base font-bold normal-case">
                       IP66 Protection &amp; Modular Stacking
                     </h3>
                     <p className="text-xs text-slate-300 font-medium leading-normal">
@@ -263,7 +263,7 @@ export function SigenergyInvertersPage() {
                   <span>System Overview</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   What Is a Sigenergy Hybrid Inverter?
                 </h2>
 
@@ -283,7 +283,7 @@ export function SigenergyInvertersPage() {
                       <Battery className="w-4 h-4 stroke-[2.5]" />
                     </div>
                     <div>
-                      <h4 className="text-sm font-extrabold text-slate-900 mb-0.5">Battery Ready Architecture</h4>
+                      <h4 className="text-sm font-extrabold text-slate-900 mb-0.5 normal-case">Battery Ready Architecture</h4>
                       <p className="text-xs text-slate-600 leading-relaxed font-medium">
                         Seamlessly expand into battery storage anytime without main switchboard alterations.
                       </p>
@@ -295,7 +295,7 @@ export function SigenergyInvertersPage() {
                       <ShieldCheck className="w-4 h-4 stroke-[2.5]" />
                     </div>
                     <div>
-                      <h4 className="text-sm font-extrabold text-slate-900 mb-0.5">Local NT Accreditation</h4>
+                      <h4 className="text-sm font-extrabold text-slate-900 mb-0.5 normal-case">Local NT Accreditation</h4>
                       <p className="text-xs text-slate-600 leading-relaxed font-medium">
                         Installed directly by SAA Accredited local technicians familiar with Top End rules.
                       </p>
@@ -317,7 +317,7 @@ export function SigenergyInvertersPage() {
                       <span className="text-[10px]  uppercase text-[#8cc63f] font-extrabold block tracking-wider">
                         Sigenergy Core Architecture
                       </span>
-                      <h3 className="text-lg font-extrabold text-white">
+                      <h3 className="text-lg font-extrabold text-white normal-case">
                         Hybrid Advantage
                       </h3>
                     </div>
@@ -327,7 +327,7 @@ export function SigenergyInvertersPage() {
                     <div className="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-start gap-3">
                       <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <div>
-                        <h4 className="text-xs sm:text-sm font-bold text-white">Modular Stacking System</h4>
+                        <h4 className="text-xs sm:text-sm font-bold text-white normal-case">Modular Stacking System</h4>
                         <p className="text-xs text-slate-300 font-medium leading-relaxed mt-0.5">
                           Inverter mounts directly on top of battery modules for a sleek, compact footprint.
                         </p>
@@ -337,7 +337,7 @@ export function SigenergyInvertersPage() {
                     <div className="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-start gap-3">
                       <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <div>
-                        <h4 className="text-xs sm:text-sm font-bold text-white">Zero Extra Switchboard Rewiring</h4>
+                        <h4 className="text-xs sm:text-sm font-bold text-white normal-case">Zero Extra Switchboard Rewiring</h4>
                         <p className="text-xs text-slate-300 font-medium leading-relaxed mt-0.5">
                           Save thousands on future electrical upgrades when you choose to add battery storage.
                         </p>
@@ -347,7 +347,7 @@ export function SigenergyInvertersPage() {
                     <div className="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 flex items-start gap-3">
                       <CheckCircle2 className="w-4 h-4 text-[#8cc63f] shrink-0 mt-0.5" />
                       <div>
-                        <h4 className="text-xs sm:text-sm font-bold text-white">Territory Wide Supply &amp; Install</h4>
+                        <h4 className="text-xs sm:text-sm font-bold text-white normal-case">Territory Wide Supply &amp; Install</h4>
                         <p className="text-xs text-slate-300 font-medium leading-relaxed mt-0.5">
                           Covering Greater Darwin, Palmerston, Berrimah, Katherine, Alice Springs &amp; remote NT.
                         </p>
@@ -386,7 +386,7 @@ export function SigenergyInvertersPage() {
                 <span>Product Options</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-wide leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-4 normal-case">
                 Sigenergy Inverter Range for Darwin and NT Homes
               </h2>
 
@@ -441,7 +441,7 @@ export function SigenergyInvertersPage() {
                     <span className="text-xs  text-slate-400">Residential NT Standard</span>
                   </div>
 
-                  <h3 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-wide mb-3">
+                  <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight mb-3 normal-case">
                     Single Phase, 3.0 to 12.0kW
                   </h3>
 
@@ -509,7 +509,7 @@ export function SigenergyInvertersPage() {
                     <span className="text-xs  text-slate-400">Large Estate &amp; Commercial</span>
                   </div>
 
-                  <h3 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-wide mb-3">
+                  <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight mb-3 normal-case">
                     Three Phase, 5.0 to 25.0kW
                   </h3>
 
@@ -583,7 +583,7 @@ export function SigenergyInvertersPage() {
                   <span>Top End Durability</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   How Sigenergy Handles Darwin's Climate
                 </h2>
 
@@ -618,7 +618,7 @@ export function SigenergyInvertersPage() {
                       <span className="text-[10px]  uppercase text-slate-500 font-bold block">
                         Climate Resilience Specs
                       </span>
-                      <h3 className="text-base font-black text-slate-900">
+                      <h3 className="text-base font-black text-slate-900 normal-case">
                         Top End Environment Rules
                       </h3>
                     </div>
@@ -684,7 +684,7 @@ export function SigenergyInvertersPage() {
                   <span>Certified Quality</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-wide leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   SAA Approved and Installed by SAA Accredited Installers
                 </h2>
 
@@ -708,7 +708,7 @@ export function SigenergyInvertersPage() {
                     <span className="text-[10px]  font-bold text-slate-400 uppercase tracking-widest block mb-1">
                       Full Compliance Guarantee
                     </span>
-                    <h3 className="text-lg font-black text-white">
+                    <h3 className="text-lg font-black text-white normal-case">
                       Product &amp; Installer Approved
                     </h3>
                   </div>
@@ -747,7 +747,7 @@ export function SigenergyInvertersPage() {
                 <span>Incentives &amp; Savings</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Upfront STC Discount and Cheaper Home Batteries Program
               </h2>
 
@@ -764,7 +764,7 @@ export function SigenergyInvertersPage() {
                 <span className="text-[11px]  font-bold uppercase text-[#8cc63f] tracking-wider block mb-2">
                   Upfront STC Discount Estimator (Darwin Zone)
                 </span>
-                <h3 className="text-xl sm:text-2xl font-black text-white mb-2">
+                <h3 className="text-xl sm:text-2xl font-black text-white mb-2 normal-case">
                   Estimate Your Upfront System Rebate
                 </h3>
                 <p className="text-slate-300 text-xs sm:text-sm font-medium mb-6">
@@ -861,7 +861,7 @@ export function SigenergyInvertersPage() {
                   <span>Free Diagnostic Callout</span>
                 </div>
 
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white uppercase tracking-wide leading-tight mb-4">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-4 normal-case">
                   Inverter Acting Up? Get a Free Health Check Before It Fails Completely.
                 </h2>
 
@@ -917,7 +917,7 @@ export function SigenergyInvertersPage() {
                 <span>Brand Comparison</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-wide leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-4 normal-case">
                 Sigenergy Compared to Other Brands We Install
               </h2>
 
@@ -1009,7 +1009,7 @@ export function SigenergyInvertersPage() {
                   <span>Future Storage</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Upgrading to a Sigenergy Battery System
                 </h2>
 
@@ -1032,7 +1032,7 @@ export function SigenergyInvertersPage() {
                     <span className="px-2.5 py-0.5 rounded bg-[#8cc63f] text-[#19281D]  text-[10px] font-extrabold uppercase tracking-widest inline-block mb-1">
                       Modular Expansion
                     </span>
-                    <h3 className="text-white text-sm font-bold">
+                    <h3 className="text-white text-sm font-bold normal-case">
                       Add Storage Seamlessly When Ready
                     </h3>
                   </div>
@@ -1059,7 +1059,7 @@ export function SigenergyInvertersPage() {
                   <span>Remote &amp; Off-Grid</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Sigenergy for Off-Grid and Remote NT Properties
                 </h2>
 
@@ -1078,7 +1078,7 @@ export function SigenergyInvertersPage() {
                 <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 text-white shadow-xl space-y-4">
                   <div className="flex items-center gap-3 pb-4 border-b border-slate-800">
                     <MapPin className="w-5 h-5 text-[#8cc63f]" />
-                    <h3 className="text-base font-extrabold text-white">
+                    <h3 className="text-base font-extrabold text-white normal-case">
                       NT Rural &amp; Remote Coverage
                     </h3>
                   </div>
@@ -1118,7 +1118,7 @@ export function SigenergyInvertersPage() {
                 <span>Service Coverage</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Areas We Serve
               </h2>
 
@@ -1141,7 +1141,7 @@ export function SigenergyInvertersPage() {
                   <div className="w-8 h-8 rounded-lg bg-[#8cc63f]/15 text-[#2f8323] flex items-center justify-center shrink-0 mb-2.5">
                     <MapPin className="w-4 h-4" />
                   </div>
-                  <h3 className="text-sm font-extrabold text-slate-900 mb-0.5">{area.name}</h3>
+                  <h3 className="text-sm font-extrabold text-slate-900 mb-0.5 normal-case">{area.name}</h3>
                   <span className="text-[11px]  text-slate-500 font-medium">{area.region}</span>
                 </div>
               ))}
@@ -1162,7 +1162,7 @@ export function SigenergyInvertersPage() {
                 <span>Local Expertise</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-black text-white uppercase tracking-wide leading-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 About Oneroof Solar
               </h2>
 
@@ -1192,7 +1192,7 @@ export function SigenergyInvertersPage() {
                 <HelpCircle className="w-3.5 h-3.5" />
                 <span>Got Questions?</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 normal-case">
                 Sigenergy Solar Inverters Darwin NT: Frequently Asked Questions
               </h2>
             </div>
@@ -1232,7 +1232,7 @@ export function SigenergyInvertersPage() {
                       className="w-full px-5 py-4 sm:px-6 sm:py-5 text-left flex items-center justify-between gap-4 hover:bg-slate-100/80 transition-colors focus:outline-hidden"
                       aria-expanded={isOpen}
                     >
-                      <h3 className="text-base sm:text-lg font-extrabold text-slate-900 leading-snug">
+                      <h3 className="text-base sm:text-lg font-extrabold text-slate-900 leading-snug normal-case">
                         {faq.question}
                       </h3>
                       <div className={`shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center transition-transform duration-200 ${isOpen ? "rotate-180 bg-[#8cc63f]/10 border-[#8cc63f]/40 text-[#2f8323]" : "text-slate-500"}`}>
@@ -1270,7 +1270,7 @@ export function SigenergyInvertersPage() {
                   <span>SAA Accredited Supply &amp; Installation</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Book Your Sigenergy Inverter Installation or Upgrade
                 </h2>
 
@@ -1331,7 +1331,7 @@ export function SigenergyInvertersPage() {
 
             <div className="flex items-center gap-3 mb-4">
               <FileText className="w-6 h-6 text-[#8cc63f]" />
-              <h3 className="text-xl font-extrabold text-white">
+              <h3 className="text-xl font-extrabold text-white normal-case">
                 Sigenergy {selectedPhase === "single" ? "Single Phase" : "Three Phase"} Spec Overview
               </h3>
             </div>

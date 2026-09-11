@@ -542,7 +542,7 @@ export function Navbar() {
                           <div className="flex items-center justify-between mb-3.5 gap-3">
                             <div className="flex items-center gap-2">
                               <Sun className="w-4 h-4 text-[#8cc63f]" />
-                              <h4 className="text-[15px] font-bold text-white">
+                              <h4 className="text-[15px] font-bold text-white normal-case">
                                 Solar Panel Brands
                               </h4>
                             </div>
@@ -730,7 +730,7 @@ export function Navbar() {
                           {currentMobileItem.label}
                         </Link>
                       ) : (
-                        <h2 className="text-[24px] font-extrabold text-white tracking-tight">
+                        <h2 className="text-[24px] font-extrabold text-white tracking-tight normal-case">
                           {currentMobileItem.label}
                         </h2>
                       )}

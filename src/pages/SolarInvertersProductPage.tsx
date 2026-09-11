@@ -285,7 +285,7 @@ export function SolarInvertersProductPage() {
                   Solar Inverters
                 </div>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   Solar Inverter Brands
                 </h1>
 
@@ -372,7 +372,7 @@ export function SolarInvertersProductPage() {
 
               {/* Right Text */}
               <div className="lg:col-span-6">
-                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   What Does a Solar Inverter Do?
                 </h2>
                 <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
@@ -409,7 +409,7 @@ export function SolarInvertersProductPage() {
       <section className="py-16 lg:py-20 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
               Which Type of Solar Inverter Do You Need
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-10 max-w-4xl">
@@ -474,7 +474,7 @@ export function SolarInvertersProductPage() {
       <section className="py-16 lg:py-24 bg-[#0A1118] border-b border-slate-800 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-4 normal-case">
               Solar Inverter Brands We Install
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-12 max-w-4xl">
@@ -513,7 +513,7 @@ export function SolarInvertersProductPage() {
                     </div>
 
                     {/* Heading */}
-                    <h3 className="text-xl sm:text-2xl font-extrabold text-white mb-3 group-hover:text-[#8cc63f] transition-colors">
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-white mb-3 group-hover:text-[#8cc63f] transition-colors normal-case">
                       {card.heading}
                     </h3>
 
@@ -558,7 +558,7 @@ export function SolarInvertersProductPage() {
                 <MapPin className="w-5 h-5" />
                 <span>Wide Coverage &amp; Service</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Serving Darwin to Alice Springs
               </h2>
               <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-[1.7] font-medium max-w-4xl">
@@ -578,7 +578,7 @@ export function SolarInvertersProductPage() {
       <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 text-center normal-case">
               Frequently Asked Questions
             </h2>
 

@@ -143,7 +143,7 @@ export function LeadPopup() {
                       <span className="text-yellow-50">Limited Time Offer</span>
                     </div>
                     
-                    <h2 className="font-['Inter',sans-serif] text-[32px] sm:text-[40px] lg:text-[48px] font-black tracking-tight mb-3 lg:mb-4 leading-[1.1] drop-shadow-2xl max-w-[520px] [overflow-wrap:normal] [word-break:normal]">
+                    <h2 className="font-['Inter',sans-serif] text-[32px] sm:text-[40px] lg:text-[48px] font-black tracking-tight mb-3 lg:mb-4 leading-[1.1] drop-shadow-2xl max-w-[520px] [overflow-wrap:normal] [word-break:normal] normal-case">
                       <span className="text-white">Claim Your</span>{" "}
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 drop-shadow-sm inline-block max-w-full py-0.5">
                         $13,000 Rebate
@@ -163,7 +163,7 @@ export function LeadPopup() {
                           <Banknote className="w-5 h-5 lg:w-6 lg:h-6 text-yellow-400" />
                         </div>
                         <div>
-                          <h4 className="font-['Inter',sans-serif] font-bold text-white text-base lg:text-lg tracking-wide">Free Savings Estimate</h4>
+                          <h4 className="font-['Inter',sans-serif] font-bold text-white text-base lg:text-lg tracking-tight normal-case">Free Savings Estimate</h4>
                           <p className="font-['Inter',sans-serif] text-xs lg:text-sm text-neutral-300 font-medium">See exactly how much you can save</p>
                         </div>
                       </div>
@@ -172,7 +172,7 @@ export function LeadPopup() {
                           <ShieldCheck className="w-5 h-5 lg:w-6 lg:h-6 text-yellow-400" />
                         </div>
                         <div>
-                          <h4 className="font-['Inter',sans-serif] font-bold text-white text-base lg:text-lg tracking-wide">Premium Tier-1 Tech</h4>
+                          <h4 className="font-['Inter',sans-serif] font-bold text-white text-base lg:text-lg tracking-tight normal-case">Premium Tier-1 Tech</h4>
                           <p className="font-['Inter',sans-serif] text-xs lg:text-sm text-neutral-300 font-medium">Industry-leading panels & batteries</p>
                         </div>
                       </div>
@@ -200,7 +200,7 @@ export function LeadPopup() {
                 <div className="absolute top-0 right-0 w-full h-[300px] bg-gradient-to-b from-yellow-500/10 to-transparent pointer-events-none" />
                 
                 <div className="text-center mb-6 lg:mb-8 relative z-10">
-                  <h3 className="text-3xl font-extrabold text-white tracking-tight">Check Eligibility</h3>
+                  <h3 className="text-3xl font-extrabold text-white tracking-tight normal-case">Check Eligibility</h3>
                   <p className="text-neutral-300 mt-2 font-medium">Takes less than 60 seconds</p>
                 </div>
                 

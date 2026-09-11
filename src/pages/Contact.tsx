@@ -75,7 +75,7 @@ export function Contact() {
               <Zap className="w-3.5 h-3.5" />
               {pageData?.title || 'Support Online'}
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-6 uppercase">
+            <h1 className="hero-heading text-white mb-6 break-words normal-case">
               {pageData?.heroTitle ? (
                 <span dangerouslySetInnerHTML={{ __html: pageData.heroTitle }} />
               ) : (
@@ -99,7 +99,7 @@ export function Contact() {
                 <span className="w-2 h-2 rounded-full bg-brand-500"></span>
                 Get In Touch
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight uppercase">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Send a <span className="text-brand-600">Message</span>.
               </h2>
               <p className="text-slate-600 text-base sm:text-lg mb-10 font-medium leading-relaxed">
@@ -112,7 +112,7 @@ export function Contact() {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-slate-900 font-bold text-lg mb-1">Expert Advice</h4>
+                    <h4 className="text-slate-900 font-bold text-lg mb-1 normal-case">Expert Advice</h4>
                     <p className="text-slate-600 text-sm font-medium leading-relaxed">Speak directly with licensed solar experts, not salespeople. We size systems that make sense for your roof and power bill.</p>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export function Contact() {
                     <Zap className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-slate-900 font-bold text-lg mb-1">Fast Response</h4>
+                    <h4 className="text-slate-900 font-bold text-lg mb-1 normal-case">Fast Response</h4>
                     <p className="text-slate-600 text-sm font-medium leading-relaxed">We aim to respond to all inquiries within 24 hours. Emergency callouts available for system breakdowns.</p>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export function Contact() {
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-600 mb-5 border border-slate-200 shadow-xs group-hover:bg-brand-500 group-hover:text-slate-900 transition-colors">
                   <Mail className="w-6 h-6" />
                 </div>
-                <h3 className="text-slate-500 text-xs font-bold uppercase tracking-widest mb-2">Email Us</h3>
+                <h3 className="text-slate-500 text-xs font-bold tracking-widest mb-2 normal-case">Email Us</h3>
                 <div className="text-base sm:text-lg font-bold text-slate-900">info@oneroofsolar.com.au</div>
               </div>
             </FadeIn>
@@ -156,7 +156,7 @@ export function Contact() {
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-600 mb-5 border border-slate-200 shadow-xs group-hover:bg-brand-500 group-hover:text-slate-900 transition-colors">
                   <Phone className="w-6 h-6" />
                 </div>
-                <h3 className="text-slate-500 text-xs font-bold uppercase tracking-widest mb-2">Call Us</h3>
+                <h3 className="text-slate-500 text-xs font-bold tracking-widest mb-2 normal-case">Call Us</h3>
                 <div className="text-base font-bold text-slate-900">Darwin: <a href={`tel:${PRIMARY_PHONE_RAW}`} className="hover:text-brand-600 transition-colors">{PRIMARY_PHONE}</a></div>
                 <div className="text-base font-bold text-slate-900 mt-1">Alice Springs: <a href={`tel:${PRIMARY_PHONE_RAW}`} className="hover:text-brand-600 transition-colors">{PRIMARY_PHONE}</a></div>
               </div>
@@ -167,7 +167,7 @@ export function Contact() {
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-brand-600 mb-5 border border-slate-200 shadow-xs group-hover:bg-brand-500 group-hover:text-slate-900 transition-colors">
                   <MapPin className="w-6 h-6" />
                 </div>
-                <h3 className="text-slate-500 text-xs font-bold uppercase tracking-widest mb-2">Visit Us</h3>
+                <h3 className="text-slate-500 text-xs font-bold tracking-widest mb-2 normal-case">Visit Us</h3>
                 <div className="text-sm font-bold text-slate-900">Darwin: 3/97 Pruen Rd, Berrimah NT 0828</div>
                 <div className="text-sm font-bold text-slate-900 mt-2 pt-2 border-t border-slate-200 w-full">Alice Springs: 44 Zeil St, Araluen NT 0870</div>
               </div>
@@ -181,7 +181,7 @@ export function Contact() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn delay={0.3}>
             <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight uppercase mb-2">Our <span className="text-brand-600">Locations</span>.</h2>
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-2 normal-case">Our <span className="text-brand-600">Locations</span>.</h2>
               <p className="text-slate-600 text-sm sm:text-base font-medium">Serving Darwin, Palmerston, Alice Springs and rural NT communities.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

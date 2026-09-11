@@ -99,7 +99,7 @@ export function NotificationProvider({ children }: { children: React.ReactNode }
                 {/* Content Column */}
                 <div className="flex-1 min-w-0">
                   {notif.title && (
-                    <h4 className="text-[13px] font-bold tracking-tight mb-0.5 leading-snug">
+                    <h4 className="text-[13px] font-bold tracking-tight mb-0.5 leading-snug normal-case">
                       {notif.title}
                     </h4>
                   )}

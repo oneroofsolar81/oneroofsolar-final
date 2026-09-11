@@ -42,7 +42,7 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({
       <div className="relative z-10">
         {/* Header with compact margins */}
         <div className="mb-3.5 sm:mb-4">
-          <h3 className="text-xl sm:text-[26px] font-black text-white tracking-tight leading-tight">
+          <h3 className="text-xl sm:text-[26px] font-black text-white tracking-tight leading-tight normal-case">
             {title}
           </h3>
           <div className="flex items-center gap-2 mt-1.5">

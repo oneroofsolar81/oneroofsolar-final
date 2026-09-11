@@ -215,7 +215,7 @@ export function EvChargerRepair() {
                 <span className="text-[#8cc63f]" aria-current="page">EV Charger Repair</span>
               </nav>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-6 uppercase">
+              <h1 className="hero-heading text-white mb-6 break-words normal-case">
                 EV Charger Repair Darwin NT |{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Fast Diagnosis, Honest Advice</span>
               </h1>
@@ -263,7 +263,7 @@ export function EvChargerRepair() {
       <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               What Does EV Charger Repair Involve in Darwin?
             </h2>
             <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -284,7 +284,7 @@ export function EvChargerRepair() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Signs Your EV Charger Needs Repair
               </h2>
               <div className="space-y-4 mb-8">
@@ -304,7 +304,7 @@ export function EvChargerRepair() {
                 <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                   <AlertTriangle className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">Do not wait on a dead charger</h3>
+                <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">Do not wait on a dead charger</h3>
                 <p className="text-slate-600 text-sm leading-relaxed mb-6">
                   A charger that trips, runs hot, or took on water can get worse quickly in Darwin heat. Diagnosis first means you only pay for the fix you actually need.
                 </p>
@@ -326,7 +326,7 @@ export function EvChargerRepair() {
               </div>
             </FadeIn>
             <FadeIn delay={0.15}>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 Why Darwin EV Chargers Fail More Often
               </h2>
               <div className="space-y-4">
@@ -346,7 +346,7 @@ export function EvChargerRepair() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Who Needs EV Charger Repair in Darwin
               </h2>
             </FadeIn>
@@ -357,7 +357,7 @@ export function EvChargerRepair() {
                 <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                   <card.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">{card.title}</h3>
+                <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">{card.title}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed flex-grow">{card.text}</p>
               </FadeIn>
             ))}
@@ -368,7 +368,7 @@ export function EvChargerRepair() {
       <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-10">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 normal-case">
               Repair or Replace? How We Decide
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -377,7 +377,7 @@ export function EvChargerRepair() {
                   <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                     <item.icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">{item.title}</h3>
+                  <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight normal-case">{item.title}</h3>
                   <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
                 </FadeIn>
               ))}
@@ -389,7 +389,7 @@ export function EvChargerRepair() {
       <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               EV Charger Repair Cost in Darwin
             </h2>
             <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -414,7 +414,7 @@ export function EvChargerRepair() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Why Choose Our EV Charger Repair Team
               </h2>
             </FadeIn>
@@ -424,7 +424,7 @@ export function EvChargerRepair() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <MapPin className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Locally Owned &amp; Operated</h3>
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight normal-case">Locally Owned &amp; Operated</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 Based in Berrimah, not a national call centre. We already know what Darwin heat, humidity, and Wet season storms do to outdoor chargers.
               </p>
@@ -433,7 +433,7 @@ export function EvChargerRepair() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <BadgeCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Licensed &amp; SAA Accredited</h3>
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight normal-case">Licensed &amp; SAA Accredited</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 Every electrician on our team is fully licensed and SAA Accredited, with real experience installing and diagnosing EV chargers across Darwin, NT.
               </p>
@@ -442,7 +442,7 @@ export function EvChargerRepair() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <ShieldCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Warranty-Safe Work</h3>
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight normal-case">Warranty-Safe Work</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 We check manufacturer cover before we start. If replacement is the honest option, we will say so instead of patching a unit that will not last.
               </p>
@@ -455,7 +455,7 @@ export function EvChargerRepair() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Our EV Charger Repair Process
               </h2>
             </FadeIn>
@@ -466,7 +466,7 @@ export function EvChargerRepair() {
                 <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                   <step.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">{step.title}</h3>
+                <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight normal-case">{step.title}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">{step.text}</p>
               </FadeIn>
             ))}
@@ -477,7 +477,7 @@ export function EvChargerRepair() {
       <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               Chargers We Diagnose &amp; Repair
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-8 max-w-4xl">
@@ -502,7 +502,7 @@ export function EvChargerRepair() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
               <FadeIn>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 leading-[1.1] mb-6 uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   FAQs
                 </h2>
               </FadeIn>
@@ -540,7 +540,7 @@ export function EvChargerRepair() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="lg:sticky lg:top-28 lg:self-start">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 Book Your EV Charger Repair in Darwin
               </h2>
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-8">

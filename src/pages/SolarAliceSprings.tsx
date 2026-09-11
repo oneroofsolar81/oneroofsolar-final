@@ -269,7 +269,7 @@ export function SolarAliceSprings() {
                 <span className="text-[#8cc63f]" aria-current="page">Alice Springs</span>
               </nav>
 
-              <h1 id="hero-title" className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-6 uppercase">
+              <h1 id="hero-title" className="hero-heading text-white mb-6 break-words normal-case">
                 Solar Panel Installation <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Alice Springs</span>
               </h1>
 
@@ -332,7 +332,7 @@ export function SolarAliceSprings() {
       <section className="py-20 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl font-black text-center text-slate-900 mb-8 uppercase tracking-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-center text-slate-900 mb-8 normal-case">
               Full Turnkey Solar Installation Across Alice Springs and Central Australia
             </h2>
             <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6 max-w-3xl mx-auto">
@@ -352,7 +352,7 @@ export function SolarAliceSprings() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Solar Services in Alice Springs
               </h2>
               <p className="text-slate-600 text-sm sm:text-base font-semibold uppercase tracking-widest text-[#8cc63f]">
@@ -367,7 +367,7 @@ export function SolarAliceSprings() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <Sun className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">
+              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">
                 Residential Solar Alice Springs
               </h3>
               <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
@@ -380,7 +380,7 @@ export function SolarAliceSprings() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <Zap className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">
+              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">
                 Commercial Solar Alice Springs
               </h3>
               <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
@@ -393,7 +393,7 @@ export function SolarAliceSprings() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <Shield className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">
+              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">
                 Solar Battery Storage Alice Springs
               </h3>
               <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
@@ -409,7 +409,7 @@ export function SolarAliceSprings() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
-              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 tracking-tight normal-case">
                 Start saving on your Alice Springs power bills today
               </h3>
               <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
@@ -431,7 +431,7 @@ export function SolarAliceSprings() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Which Solar System Suits Your Alice Springs Property
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -444,7 +444,7 @@ export function SolarAliceSprings() {
             {/* Card 1 */}
             <FadeIn delay={0.1} className="bg-white rounded-[2rem] p-8 border border-slate-200 flex flex-col justify-between h-full shadow-sm">
               <div>
-                <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">
+                <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight normal-case">
                   Grid Connected Solar System
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed mb-4">
@@ -461,7 +461,7 @@ export function SolarAliceSprings() {
             {/* Card 2 */}
             <FadeIn delay={0.2} className="bg-white rounded-[2rem] p-8 border border-slate-200 flex flex-col justify-between h-full shadow-sm">
               <div>
-                <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">
+                <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight normal-case">
                   Hybrid Solar and Battery System
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed mb-4">
@@ -478,7 +478,7 @@ export function SolarAliceSprings() {
             {/* Card 3 */}
             <FadeIn delay={0.3} className="bg-white rounded-[2rem] p-8 border border-slate-200 flex flex-col justify-between h-full shadow-sm">
               <div>
-                <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">
+                <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight normal-case">
                   Off Grid Solar System
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed mb-4">
@@ -503,7 +503,7 @@ export function SolarAliceSprings() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 How We Deliver Your Solar System in Alice Springs
               </h2>
               <p className="text-[#8cc63f] text-xs sm:text-sm font-bold uppercase tracking-widest">
@@ -518,7 +518,7 @@ export function SolarAliceSprings() {
               <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-white border-2 border-[#8cc63f] flex items-center justify-center font-bold text-xs text-[#8cc63f] z-10 shadow-lg">1</div>
               <div className="w-full sm:w-[45%] pl-12 sm:pl-0 sm:text-right">
                 <FadeIn>
-                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-tight mb-2">1. Consultation and Energy Assessment</h3>
+                  <h3 className="text-lg font-black text-slate-900 tracking-tight mb-2 normal-case">1. Consultation and Energy Assessment</h3>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     We review your last three power bills and your roof layout to understand your actual usage pattern, available roof space, and heat exposure. You receive a transparent, itemised quote with the STC rebate already deducted.
                   </p>
@@ -533,7 +533,7 @@ export function SolarAliceSprings() {
               <div className="hidden sm:block w-[45%]"></div>
               <div className="w-full sm:w-[45%] pl-12 sm:pl-0">
                 <FadeIn>
-                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-tight mb-2">2. Custom System Design</h3>
+                  <h3 className="text-lg font-black text-slate-900 tracking-tight mb-2 normal-case">2. Custom System Design</h3>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     Our team designs a system layout to maximise sunlight capture on your specific roof orientation. We select the right heat tolerant panel brand, inverter type (string, hybrid or off grid) and battery capacity for your Alice Springs location and household or business needs.
                   </p>
@@ -546,7 +546,7 @@ export function SolarAliceSprings() {
               <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-white border-2 border-[#8cc63f] flex items-center justify-center font-bold text-xs text-[#8cc63f] z-10 shadow-lg">3</div>
               <div className="w-full sm:w-[45%] pl-12 sm:pl-0 sm:text-right">
                 <FadeIn>
-                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-tight mb-2">3. Permits and Approvals</h3>
+                  <h3 className="text-lg font-black text-slate-900 tracking-tight mb-2 normal-case">3. Permits and Approvals</h3>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     We prepare all required documentation for NT building approvals and grid interconnection. No building permit is required for most residential solar installations in Alice Springs, provided the panels and components are certified to Australian standards and installed by licensed electricians. All systems must comply with AS 4777 grid connection standards.
                   </p>
@@ -561,7 +561,7 @@ export function SolarAliceSprings() {
               <div className="hidden sm:block w-[45%]"></div>
               <div className="w-full sm:w-[45%] pl-12 sm:pl-0">
                 <FadeIn>
-                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-tight mb-2">4. Expert Installation</h3>
+                  <h3 className="text-lg font-black text-slate-900 tracking-tight mb-2 normal-case">4. Expert Installation</h3>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     Our licensed electricians install your system to full NT building standards with heat rated mounting. Most residential solar system installations are completed in 1 to 2 days with minimal disruption to your household or business.
                   </p>
@@ -574,7 +574,7 @@ export function SolarAliceSprings() {
               <div className="absolute left-4 sm:left-1/2 -translate-x-[15px] sm:-translate-x-1/2 w-8 h-8 rounded-full bg-white border-2 border-[#8cc63f] flex items-center justify-center font-bold text-xs text-[#8cc63f] z-10 shadow-lg">5</div>
               <div className="w-full sm:w-[45%] pl-12 sm:pl-0 sm:text-right">
                 <FadeIn>
-                  <h3 className="text-lg font-black text-slate-900 uppercase tracking-tight mb-2">5. Commissioning and Handover</h3>
+                  <h3 className="text-lg font-black text-slate-900 tracking-tight mb-2 normal-case">5. Commissioning and Handover</h3>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     We test every component, complete the grid connection, register your system for the applicable feed in tariff and walk you through your solar monitoring app. You start generating from day one.
                   </p>
@@ -591,7 +591,7 @@ export function SolarAliceSprings() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Solar Rebates Available to Alice Springs Home and Business Owners in 2026
               </h2>
               <p className="text-slate-500 text-sm sm:text-base font-semibold uppercase tracking-widest text-[#8cc63f]">
@@ -603,7 +603,7 @@ export function SolarAliceSprings() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <FadeIn delay={0.1} className="bg-white rounded-[2.5rem] p-8 border border-slate-200 flex flex-col h-full justify-between shadow-sm">
               <div>
-                <h3 className="text-xl font-black text-slate-900 mb-4 uppercase tracking-tight">Federal STC Rebate</h3>
+                <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">Federal STC Rebate</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   The federal government's Small-scale Renewable Energy Scheme (SRES) provides Small-scale Technology Certificate (STC) rebates for every eligible solar installation. Alice Springs' high solar irradiance zone means NT homeowners receive one of the highest STC values of any Australian region. Oneroof Solar deducts this rebate before you pay, no separate claiming required.
                 </p>
@@ -612,7 +612,7 @@ export function SolarAliceSprings() {
 
             <FadeIn delay={0.2} className="bg-white rounded-[2.5rem] p-8 border border-slate-200 flex flex-col h-full justify-between shadow-sm">
               <div>
-                <h3 className="text-xl font-black text-slate-900 mb-4 uppercase tracking-tight">NT Battery Scheme</h3>
+                <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">NT Battery Scheme</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
                   The Northern Territory Government offers additional rebates for eligible NT homeowners adding battery storage to a new or existing solar system. Contact Oneroof Solar to confirm current eligibility for your Alice Springs property and system size.
                 </p>
@@ -627,7 +627,7 @@ export function SolarAliceSprings() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
-              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 tracking-tight normal-case">
                 Secure your NT government solar savings before they change
               </h3>
               <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
@@ -649,7 +649,7 @@ export function SolarAliceSprings() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Solar Installations Across Alice Springs and Every Suburb We Cover
               </h2>
               <p className="text-slate-600 text-sm leading-relaxed">
@@ -701,7 +701,7 @@ export function SolarAliceSprings() {
                   <span className="h-2 w-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                   <span className="text-xs font-bold text-slate-600 uppercase tracking-widest">Support</span>
                 </div>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 leading-[1.1] mb-6 uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Frequently Asked Questions
                 </h2>
                 <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-medium mb-8 max-w-md">
@@ -801,7 +801,7 @@ export function SolarAliceSprings() {
             {/* Left Side Info */}
             <div className="lg:sticky lg:top-28 lg:self-start">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 Beat the Alice Springs Heat with Solar
               </h2>
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-8">
@@ -855,7 +855,7 @@ export function SolarAliceSprings() {
       <section className="py-24 bg-[#0A1118] text-center relative border-t border-white/5">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight">
+            <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 tracking-tight normal-case">
               Lower your Alice Springs power bills this season
             </h3>
             <p className="text-slate-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto">

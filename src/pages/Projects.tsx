@@ -241,7 +241,7 @@ export default function Projects() {
               <span className="text-xs font-black text-brand-300 uppercase tracking-[0.2em]">Our Portfolio</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight mb-8 leading-[1.1]">
+            <h1 className="hero-heading text-white mb-8 break-words normal-case">
               Powering the Territory, <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                 Roof by Roof.
@@ -298,7 +298,7 @@ export default function Projects() {
                 </div>
                 
                 <div className="p-8 flex flex-col flex-grow">
-                  <h2 className="text-2xl font-black text-slate-900 mb-4 group-hover:text-brand-600 transition-colors line-clamp-2">
+                  <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 group-hover:text-brand-600 transition-colors line-clamp-2 normal-case">
                     {project.title}
                   </h2>
                   <p className="text-slate-600 mb-6 flex-grow">
@@ -331,7 +331,7 @@ export default function Projects() {
       <div className="bg-brand-50 py-20 mt-10">
         <div className="max-w-4xl mx-auto text-center px-4">
           <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">Ready to start your own solar journey?</h2>
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">Ready to start your own solar journey?</h2>
             <p className="text-lg text-slate-600 mb-10">Join hundreds of Territorians who have already made the switch to clean, reliable, and affordable energy with Oneroof Solar.</p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <Button size="lg" className="rounded-full h-16 px-10 text-lg font-bold shadow-xl hover:-translate-y-1 transition-all" asChild>

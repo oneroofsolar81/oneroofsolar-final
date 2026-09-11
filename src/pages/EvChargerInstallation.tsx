@@ -222,7 +222,7 @@ export function EvChargerInstallation() {
                 <span className="text-[#8cc63f]" aria-current="page">EV Charger Installation</span>
               </nav>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-6 uppercase">
+              <h1 className="hero-heading text-white mb-6 break-words normal-case">
                 EV Charger Installation Darwin NT |{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Trusted Local EV Charger Installers</span>
               </h1>
@@ -272,7 +272,7 @@ export function EvChargerInstallation() {
       <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               EV Charger Installation Experts
             </h2>
             <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -293,7 +293,7 @@ export function EvChargerInstallation() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Home &amp; Commercial EV Charger Installation in Darwin
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -308,7 +308,7 @@ export function EvChargerInstallation() {
                 <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                   <card.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">{card.title}</h3>
+                <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">{card.title}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed flex-grow">{card.text}</p>
               </FadeIn>
             ))}
@@ -328,7 +328,7 @@ export function EvChargerInstallation() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
             <FadeIn>
-              <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white normal-case">
                 View All EV Charger <span className="text-brand-400">Products</span>
               </h2>
             </FadeIn>
@@ -362,7 +362,7 @@ export function EvChargerInstallation() {
                         <Zap className="w-3 h-3" /> Smart Ready
                       </span>
                     </div>
-                    <h3 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-tighter group-hover:text-brand-400 transition-colors">
+                    <h3 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-tighter group-hover:text-brand-400 transition-colors normal-case">
                       {product.title}
                     </h3>
                     <p className="text-slate-400 text-lg leading-relaxed font-medium mb-10">{product.description}</p>
@@ -386,7 +386,7 @@ export function EvChargerInstallation() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 EV Chargers Built to Handle Darwin's Weather
               </h2>
               <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -418,7 +418,7 @@ export function EvChargerInstallation() {
       <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               EV Charger Installation Cost in Darwin
             </h2>
             <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -444,7 +444,7 @@ export function EvChargerInstallation() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Why Choose Our EV Charger Installers
               </h2>
             </FadeIn>
@@ -454,7 +454,7 @@ export function EvChargerInstallation() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <Calendar className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Fast Local Response</h3>
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight normal-case">Fast Local Response</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 We aim to complete your site assessment within 24 hours of booking, with a clear written quote so you know exactly what's involved before you commit.
               </p>
@@ -463,7 +463,7 @@ export function EvChargerInstallation() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <MapPin className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Locally Owned &amp; Operated</h3>
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight normal-case">Locally Owned &amp; Operated</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 We're part of the Darwin community, not a national call centre that dispatches a random contractor. Our reputation is built on honest work and treating every customer properly.
               </p>
@@ -472,7 +472,7 @@ export function EvChargerInstallation() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <BadgeCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Licensed &amp; SAA Accredited</h3>
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight normal-case">Licensed &amp; SAA Accredited</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 Every electrician on our team is fully licensed and SAA Accredited, with real experience installing EV chargers across Darwin, NT.
               </p>
@@ -481,7 +481,7 @@ export function EvChargerInstallation() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                 <Sparkles className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">Clean, Respectful Installation</h3>
+              <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight normal-case">Clean, Respectful Installation</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 We treat your home or business like our own. Tidy work, clear communication, and nothing left behind when the job's done.
               </p>
@@ -494,7 +494,7 @@ export function EvChargerInstallation() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Our Ev Charger Installation Process
               </h2>
             </FadeIn>
@@ -510,7 +510,7 @@ export function EvChargerInstallation() {
                 <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 mx-auto">
                   <step.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight uppercase">{step.title}</h3>
+                <h3 className="text-lg font-black text-slate-900 mb-3 tracking-tight normal-case">{step.title}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">{step.text}</p>
               </FadeIn>
             ))}
@@ -523,7 +523,7 @@ export function EvChargerInstallation() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
               <FadeIn>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 leading-[1.1] mb-6 uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   FAQs
                 </h2>
               </FadeIn>
@@ -561,7 +561,7 @@ export function EvChargerInstallation() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="lg:sticky lg:top-28 lg:self-start">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 Ready to Charge Your EV Fast at Home or Work in Darwin?
               </h2>
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-8">

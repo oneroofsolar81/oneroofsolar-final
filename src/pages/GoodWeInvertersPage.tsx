@@ -123,7 +123,7 @@ export function GoodWeInvertersPage() {
                   <span className="text-[#8cc63f]" aria-current="page">GoodWe Inverters</span>
                 </nav>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   GoodWe Solar Inverters Darwin &amp; NT
                 </h1>
 
@@ -234,7 +234,7 @@ export function GoodWeInvertersPage() {
                   Global Solar Manufacturer
                 </div>
                 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   What Is a GoodWe Solar Inverter?
                 </h2>
 
@@ -252,7 +252,7 @@ export function GoodWeInvertersPage() {
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="text-sm font-extrabold text-slate-900">Wood Mackenzie Top Supplier</h4>
+                      <h4 className="text-sm font-extrabold text-slate-900 normal-case">Wood Mackenzie Top Supplier</h4>
                       <p className="text-xs text-slate-600 font-medium mt-0.5">Global leader in inverter supply volume (H1 2025).</p>
                     </div>
                   </div>
@@ -260,7 +260,7 @@ export function GoodWeInvertersPage() {
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="text-sm font-extrabold text-slate-900">S&amp;P Tier 1 Supplier</h4>
+                      <h4 className="text-sm font-extrabold text-slate-900 normal-case">S&amp;P Tier 1 Supplier</h4>
                       <p className="text-xs text-slate-600 font-medium mt-0.5">Proven quality and financial stability.</p>
                     </div>
                   </div>
@@ -268,7 +268,7 @@ export function GoodWeInvertersPage() {
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="text-sm font-extrabold text-slate-900">Built for NT Climate</h4>
+                      <h4 className="text-sm font-extrabold text-slate-900 normal-case">Built for NT Climate</h4>
                       <p className="text-xs text-slate-600 font-medium mt-0.5">Reliable performance in Darwin heat &amp; humidity.</p>
                     </div>
                   </div>
@@ -276,7 +276,7 @@ export function GoodWeInvertersPage() {
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="text-sm font-extrabold text-slate-900">Multi-MPPT Tracking</h4>
+                      <h4 className="text-sm font-extrabold text-slate-900 normal-case">Multi-MPPT Tracking</h4>
                       <p className="text-xs text-slate-600 font-medium mt-0.5">Optimized yield across varied roof orientations.</p>
                     </div>
                   </div>
@@ -296,7 +296,7 @@ export function GoodWeInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 System Comparison
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Find the Right GoodWe System
               </h2>
               <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-medium">
@@ -317,7 +317,7 @@ export function GoodWeInvertersPage() {
                     <span className="text-xs font-extrabold text-slate-500">3–10kW Capacity</span>
                   </div>
 
-                  <h3 className="text-2xl font-black text-slate-900 mb-2 uppercase tracking-wide">
+                  <h3 className="text-2xl font-black text-slate-900 mb-2 tracking-tight normal-case">
                     GoodWe ESA Series
                   </h3>
                   <p className="text-slate-600 text-sm font-medium mb-6">
@@ -369,7 +369,7 @@ export function GoodWeInvertersPage() {
                     <span className="text-xs font-extrabold text-slate-500">6–15kW Capacity</span>
                   </div>
 
-                  <h3 className="text-2xl font-black text-slate-900 mb-2 uppercase tracking-wide">
+                  <h3 className="text-2xl font-black text-slate-900 mb-2 tracking-tight normal-case">
                     GoodWe ET G2 Series
                   </h3>
                   <p className="text-slate-600 text-sm font-medium mb-6">
@@ -442,7 +442,7 @@ export function GoodWeInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Product Lineup
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 normal-case">
                 GoodWe Systems We Install
               </h2>
             </div>
@@ -460,7 +460,7 @@ export function GoodWeInvertersPage() {
                     <Battery className="w-5 h-5 text-slate-400" />
                   </div>
 
-                  <h3 className="text-2xl sm:text-3xl font-black text-slate-900 mb-1 uppercase tracking-wide">
+                  <h3 className="text-2xl sm:text-3xl font-black text-slate-900 mb-1 tracking-tight normal-case">
                     GoodWe ESA Series
                   </h3>
                   <p className="text-sm font-bold text-slate-600 mb-6">
@@ -478,7 +478,7 @@ export function GoodWeInvertersPage() {
 
                   {/* Models Covered */}
                   <div className="mb-6 p-4 rounded-xl bg-white border border-slate-200/80">
-                    <h4 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-2.5">
+                    <h4 className="text-xs font-extrabold text-slate-900 tracking-wider mb-2.5 normal-case">
                       Supported Model Configurations:
                     </h4>
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2  text-xs text-slate-800 font-semibold mb-3">
@@ -534,7 +534,7 @@ export function GoodWeInvertersPage() {
                     <Zap className="w-5 h-5 text-slate-400" />
                   </div>
 
-                  <h3 className="text-2xl sm:text-3xl font-black text-slate-900 mb-1 uppercase tracking-wide">
+                  <h3 className="text-2xl sm:text-3xl font-black text-slate-900 mb-1 tracking-tight normal-case">
                     GoodWe ET G2 Series
                   </h3>
                   <p className="text-sm font-bold text-slate-600 mb-6">
@@ -555,7 +555,7 @@ export function GoodWeInvertersPage() {
                     <div className="flex items-start gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
                       <div>
-                        <h4 className="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-1">
+                        <h4 className="text-xs font-extrabold text-slate-900 tracking-wider mb-1 normal-case">
                           MPPT &amp; High-Voltage Battery Flexibility:
                         </h4>
                         <p className="text-xs text-slate-700 font-semibold leading-relaxed">
@@ -611,7 +611,7 @@ export function GoodWeInvertersPage() {
                   <span>Selection Guidance</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   ESA or ET G2?
                 </h2>
 
@@ -661,7 +661,7 @@ export function GoodWeInvertersPage() {
                   Standalone &amp; Remote Power
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   GoodWe Off-Grid Solar Systems
                 </h2>
 
@@ -676,7 +676,7 @@ export function GoodWeInvertersPage() {
 
                 {/* Complete List */}
                 <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-7 mb-8">
-                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wider mb-4">
+                  <h3 className="text-sm font-extrabold text-slate-900 tracking-wider mb-4 normal-case">
                     A Complete Off-Grid System Includes:
                   </h3>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-slate-800 text-base font-semibold">
@@ -733,7 +733,7 @@ export function GoodWeInvertersPage() {
                     <span className="text-[10px]  uppercase tracking-widest text-[#8cc63f] font-bold block mb-1">
                       Remote &amp; Rural NT
                     </span>
-                    <h4 className="text-white text-sm font-bold mb-1">
+                    <h4 className="text-white text-sm font-bold mb-1 normal-case">
                       Custom Off-Grid Engineering
                     </h4>
                     <p className="text-slate-300 text-xs font-medium leading-relaxed">
@@ -756,7 +756,7 @@ export function GoodWeInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 System Recommendation Process
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 How We Select the Right GoodWe System
               </h2>
               <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-semibold">
@@ -776,7 +776,7 @@ export function GoodWeInvertersPage() {
                     </span>
                     <Building2 className="w-5 h-5 text-[#8cc63f]" />
                   </div>
-                  <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
+                  <h3 className="text-xl font-black text-slate-900 mb-3 tracking-tight normal-case">
                     Confirm the Property Type
                   </h3>
                   <p className="text-slate-700 text-base font-medium leading-relaxed">
@@ -794,7 +794,7 @@ export function GoodWeInvertersPage() {
                     </span>
                     <Zap className="w-5 h-5 text-[#8cc63f]" />
                   </div>
-                  <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
+                  <h3 className="text-xl font-black text-slate-900 mb-3 tracking-tight normal-case">
                     Confirm the Power Phase and Grid Connection
                   </h3>
                   <p className="text-slate-700 text-base font-medium leading-relaxed">
@@ -812,7 +812,7 @@ export function GoodWeInvertersPage() {
                     </span>
                     <Sun className="w-5 h-5 text-[#8cc63f]" />
                   </div>
-                  <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
+                  <h3 className="text-xl font-black text-slate-900 mb-3 tracking-tight normal-case">
                     Review Electricity Use
                   </h3>
                   <p className="text-slate-700 text-base font-medium leading-relaxed">
@@ -830,7 +830,7 @@ export function GoodWeInvertersPage() {
                     </span>
                     <SlidersHorizontal className="w-5 h-5 text-[#8cc63f]" />
                   </div>
-                  <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
+                  <h3 className="text-xl font-black text-slate-900 mb-3 tracking-tight normal-case">
                     Check High-Demand Equipment
                   </h3>
                   <p className="text-slate-700 text-base font-medium leading-relaxed">
@@ -848,7 +848,7 @@ export function GoodWeInvertersPage() {
                     </span>
                     <Battery className="w-5 h-5 text-[#8cc63f]" />
                   </div>
-                  <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
+                  <h3 className="text-xl font-black text-slate-900 mb-3 tracking-tight normal-case">
                     Select the Battery Capacity
                   </h3>
                   <p className="text-slate-700 text-base font-medium leading-relaxed">
@@ -866,7 +866,7 @@ export function GoodWeInvertersPage() {
                     </span>
                     <ShieldCheck className="w-5 h-5 text-[#8cc63f]" />
                   </div>
-                  <h3 className="text-xl font-black text-slate-900 mb-3 uppercase tracking-wide">
+                  <h3 className="text-xl font-black text-slate-900 mb-3 tracking-tight normal-case">
                     Plan Backup or Off-Grid Operation
                   </h3>
                   <p className="text-slate-700 text-base font-medium leading-relaxed">
@@ -888,7 +888,7 @@ export function GoodWeInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Proven Local Performance
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 normal-case">
                 Why We Install GoodWe in Darwin &amp; NT
               </h2>
             </div>
@@ -902,7 +902,7 @@ export function GoodWeInvertersPage() {
                   <Sun className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-black text-slate-900 mb-2 uppercase tracking-wide">
+                  <h3 className="text-xl font-black text-slate-900 mb-2 tracking-tight normal-case">
                     Built for Top End Climate
                   </h3>
                   <p className="text-slate-700 text-base font-medium leading-relaxed">
@@ -917,7 +917,7 @@ export function GoodWeInvertersPage() {
                   <Award className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-black text-slate-900 mb-2 uppercase tracking-wide">
+                  <h3 className="text-xl font-black text-slate-900 mb-2 tracking-tight normal-case">
                     Global Track Record
                   </h3>
                   <p className="text-slate-700 text-base font-medium leading-relaxed">
@@ -932,7 +932,7 @@ export function GoodWeInvertersPage() {
                   <Zap className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-black text-slate-900 mb-2 uppercase tracking-wide">
+                  <h3 className="text-xl font-black text-slate-900 mb-2 tracking-tight normal-case">
                     User-Friendly App Monitoring
                   </h3>
                   <p className="text-slate-700 text-base font-medium leading-relaxed">
@@ -947,7 +947,7 @@ export function GoodWeInvertersPage() {
                   <ShieldCheck className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-black text-slate-900 mb-2 uppercase tracking-wide">
+                  <h3 className="text-xl font-black text-slate-900 mb-2 tracking-tight normal-case">
                     Straightforward Warranty Support
                   </h3>
                   <p className="text-slate-700 text-base font-medium leading-relaxed">
@@ -972,7 +972,7 @@ export function GoodWeInvertersPage() {
                   <span>Local Expertise</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Why Choose Oneroof Solar?
                 </h2>
 
@@ -982,7 +982,7 @@ export function GoodWeInvertersPage() {
                   </p>
 
                   <div className="bg-slate-50 border border-slate-200/90 rounded-2xl p-6 sm:p-7 my-6">
-                    <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wider mb-4">
+                    <h3 className="text-sm font-extrabold text-slate-900 tracking-wider mb-4 normal-case">
                       Our Complete Service Scope Includes:
                     </h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-800 text-base font-semibold">
@@ -1047,7 +1047,7 @@ export function GoodWeInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Got Questions?
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 normal-case">
                 FAQs
               </h2>
             </div>
@@ -1107,7 +1107,7 @@ export function GoodWeInvertersPage() {
                       className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-slate-100/80 transition-colors focus:outline-hidden"
                       aria-expanded={isOpen}
                     >
-                      <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug pr-2">
+                      <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug pr-2 normal-case">
                         {faq.question}
                       </h3>
                       <div className={`shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center transition-transform duration-200 ${isOpen ? "rotate-180 bg-[#8cc63f]/10 border-[#8cc63f]/40 text-[#8cc63f]" : "text-slate-500"}`}>
@@ -1139,7 +1139,7 @@ export function GoodWeInvertersPage() {
                   Licensed Supply &amp; Installation
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Book Your GoodWe Solar Consultation
                 </h2>
 

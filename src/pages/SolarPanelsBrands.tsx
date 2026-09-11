@@ -295,7 +295,7 @@ export function SolarPanelsBrands() {
                 <span className="text-slate-300">Solar Panels</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase">
+              <h1 className="hero-heading text-white mb-8 break-words normal-case">
                 Premium <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                   Solar Panel Brands NT
@@ -369,7 +369,7 @@ export function SolarPanelsBrands() {
                   <span className="w-2 h-2 rounded-full bg-brand-500"></span>
                   Selection Criteria
                 </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-6 uppercase leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   How We Choose Which <span className="text-brand-600">Brands to Install</span>
                 </h2>
                 <p className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
@@ -380,21 +380,21 @@ export function SolarPanelsBrands() {
 
             <div className="lg:col-span-7 space-y-6">
               <FadeIn delay={0.1} className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Temperature coefficient</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 normal-case">Temperature coefficient</h3>
                 <p className="text-slate-600 font-medium leading-relaxed">
                   This tells you how much power a panel loses for every degree above 25°C. Darwin rooftops regularly reach 65°C to 75°C in the dry season. A panel with a coefficient of -0.24%/°C retains noticeably more output on a 70°C roof than one rated at -0.34%/°C. Over a full dry season that difference is real money.
                 </p>
               </FadeIn>
 
               <FadeIn delay={0.2} className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Cyclone wind load certification</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 normal-case">Cyclone wind load certification</h3>
                 <p className="text-slate-600 font-medium leading-relaxed">
                   Every rooftop installation in Darwin requires panels to meet structural requirements set by the Northern Territory Government before Power and Water Corporation approves grid connection. All three brands we install meet these standards.
                 </p>
               </FadeIn>
 
               <FadeIn delay={0.3} className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Long-term output guarantee</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 normal-case">Long-term output guarantee</h3>
                 <p className="text-slate-600 font-medium leading-relaxed">
                   A panel that drops to 70 per cent output by Year 20 is not the same investment as one guaranteed to hold 90 per cent. We only carry brands with strong, verified performance warranties.
                 </p>
@@ -414,7 +414,7 @@ export function SolarPanelsBrands() {
                   <span className="w-2 h-2 rounded-full bg-brand-500"></span>
                   BRANDS WE INSTALL
                 </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-6 uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Solar Panel Brands <br />
                   <span className="text-brand-600">We Install Across the NT</span>
                 </h2>
@@ -465,7 +465,7 @@ export function SolarPanelsBrands() {
                         </span>
                       </div>
 
-                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-brand-600 transition-colors">
+                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-brand-600 transition-colors normal-case">
                         {product.title}
                       </h3>
 
@@ -524,7 +524,7 @@ export function SolarPanelsBrands() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-4 uppercase">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Compare Our <span className="text-brand-600">Solar Panel Brands</span>
               </h2>
               <p className="text-slate-600 font-medium text-base sm:text-lg leading-relaxed">
@@ -648,7 +648,7 @@ export function SolarPanelsBrands() {
                 <Sun className="w-8 h-8" />
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-black text-white leading-tight tracking-tight max-w-4xl mx-auto mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white max-w-4xl mx-auto mb-6 normal-case">
                 Save Up to <span className="text-brand-400">$3,000+</span> on Your Solar Installation in NT, Australia
               </h2>
 
@@ -702,7 +702,7 @@ export function SolarPanelsBrands() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12 lg:mb-16">
             <FadeIn>
-              <h2 className="text-3xl lg:text-5xl font-black text-slate-900 mb-4 tracking-tight uppercase">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Why Choose Our Solar Panels
               </h2>
               <p className="text-slate-600 text-base sm:text-lg font-medium max-w-2xl mx-auto">
@@ -719,7 +719,7 @@ export function SolarPanelsBrands() {
               <div className="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 mb-6 border border-brand-200">
                 <Sun className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">
+              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                 Maximum Yield
               </h3>
               <p className="text-slate-600 font-medium leading-relaxed text-sm sm:text-base">
@@ -734,7 +734,7 @@ export function SolarPanelsBrands() {
               <div className="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 mb-6 border border-brand-200">
                 <Smartphone className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">
+              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                 Extreme Durability
               </h3>
               <p className="text-slate-600 font-medium leading-relaxed text-sm sm:text-base">
@@ -749,7 +749,7 @@ export function SolarPanelsBrands() {
               <div className="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 mb-6 border border-brand-200">
                 <Shield className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">
+              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                 Safe and Certified
               </h3>
               <p className="text-slate-600 font-medium leading-relaxed text-sm sm:text-base">
@@ -765,7 +765,7 @@ export function SolarPanelsBrands() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
             <FadeIn>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-4 uppercase">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 How We Deliver <span className="text-brand-600">Your Solar System</span>
               </h2>
               <p className="text-slate-600 font-medium text-base sm:text-lg leading-relaxed">
@@ -777,7 +777,7 @@ export function SolarPanelsBrands() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             <FadeIn delay={0.1} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
               <span className="text-4xl font-black text-brand-500  block mb-4">01</span>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">1. Consultation and Quote</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-3 normal-case">1. Consultation and Quote</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 We review your last three Jacana Energy bills and survey your roof to understand your exact usage pattern and available space. You receive a transparent, custom quote with the STC rebate already applied.
               </p>
@@ -785,7 +785,7 @@ export function SolarPanelsBrands() {
 
             <FadeIn delay={0.2} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
               <span className="text-4xl font-black text-brand-500  block mb-4">02</span>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">2. System Design</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-3 normal-case">2. System Design</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 Our engineers design a custom layout to maximise sunlight capture across your specific roof orientation. We confirm which panel brand suits your space, select the right inverter and size the system to your actual daytime consumption.
               </p>
@@ -793,7 +793,7 @@ export function SolarPanelsBrands() {
 
             <FadeIn delay={0.3} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
               <span className="text-4xl font-black text-brand-500  block mb-4">03</span>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">3. Expert Installation</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-3 normal-case">3. Expert Installation</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 Our licensed installers fit your system safely and neatly to NT building standards. The installation is swift and causes minimal disruption to your household. All cyclone-rated mounting requirements are handled by our team.
               </p>
@@ -801,7 +801,7 @@ export function SolarPanelsBrands() {
 
             <FadeIn delay={0.4} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
               <span className="text-4xl font-black text-brand-500  block mb-4">04</span>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">4. Commissioning & Handover</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-3 normal-case">4. Commissioning & Handover</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 We test every component, complete the grid connection paperwork with Power and Water Corporation and walk you through your monitoring app so you can track savings from day one.
               </p>
@@ -833,7 +833,7 @@ export function SolarPanelsBrands() {
                   <span className="text-brand-400  tracking-widest uppercase text-xs mb-4 block">
                     Contact Our Team
                   </span>
-                  <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-6 uppercase">
+                  <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                     Ready to Switch <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                       To Premium Solar?

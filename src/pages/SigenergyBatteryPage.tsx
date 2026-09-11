@@ -166,7 +166,7 @@ export function SigenergyBatteryPage() {
                 <ShieldCheck className="w-3.5 h-3.5 text-[#8cc63f]" /> SAA Approved Battery Storage
               </span>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-6 uppercase">
+              <h1 className="hero-heading text-white mb-6 break-words normal-case">
                 Sigenergy Battery Systems,{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Darwin NT</span>
               </h1>
@@ -228,7 +228,7 @@ export function SigenergyBatteryPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 What Is a Sigenergy Battery?
               </h2>
               <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -266,7 +266,7 @@ export function SigenergyBatteryPage() {
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 mb-5">
                 <Phone className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 tracking-tight normal-case">
                 Get Your Sigenergy Quote, STC Discount Already Applied
               </h3>
               <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
@@ -296,7 +296,7 @@ export function SigenergyBatteryPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 The Sigenergy Battery Range We Supply
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -310,7 +310,7 @@ export function SigenergyBatteryPage() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <Battery className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">Sigen Battery 5.0 kWh</h3>
+              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">Sigen Battery 5.0 kWh</h3>
               <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
                 Usable capacity of 5.2 kWh. Runs on LiFePO4 cells, which are known for being safe and long lasting. Can sit on the floor or mount on a wall, whatever suits your space.
               </p>
@@ -320,7 +320,7 @@ export function SigenergyBatteryPage() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <BatteryCharging className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">Sigen Battery 8.0 kWh</h3>
+              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">Sigen Battery 8.0 kWh</h3>
               <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
                 Usable capacity of 7.8 kWh, same reliable platform, just more room to store power for bigger households or higher usage.
               </p>
@@ -330,7 +330,7 @@ export function SigenergyBatteryPage() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
                 <Cpu className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight uppercase">SigenStor, The Full System</h3>
+              <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">SigenStor, The Full System</h3>
               <p className="text-slate-600 text-sm sm:text-base font-medium leading-relaxed">
                 This pairs the Sigen Energy Controller with your battery, and you can add an EV DC Charging Module if you drive electric. It runs at 100% depth of discharge, meaning you actually get to use the full capacity you paid for, not just a slice of it.
               </p>
@@ -343,7 +343,7 @@ export function SigenergyBatteryPage() {
                 <Layers className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-lg font-black text-slate-900 uppercase tracking-tight mb-2">Modular Flexibility</h3>
+                <h3 className="text-lg font-black text-slate-900 tracking-tight mb-2 normal-case">Modular Flexibility</h3>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
                   The built-in battery optimiser allows mixing older and newer modules over time. You can scale up storage in the future without discarding your existing units.
                 </p>
@@ -370,7 +370,7 @@ export function SigenergyBatteryPage() {
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
               <ShieldCheck className="w-6 h-6" />
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               Sigenergy Battery Safety &amp; SAA Accreditation
             </h2>
             <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -394,7 +394,7 @@ export function SigenergyBatteryPage() {
       <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               Save More With the Cheaper Home Batteries Program
             </h2>
             <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -415,7 +415,7 @@ export function SigenergyBatteryPage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
-              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 tracking-tight normal-case">
                 Not Sure Which Battery Size Fits Your Home?
               </h3>
               <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
@@ -445,7 +445,7 @@ export function SigenergyBatteryPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Who This System Suits
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -459,7 +459,7 @@ export function SigenergyBatteryPage() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Home className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Homeowners and Families</h3>
+              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight normal-case">Homeowners and Families</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 If you want lower power bills and backup during outages, this is a straightforward, low maintenance option that just gets on with the job.
               </p>
@@ -469,7 +469,7 @@ export function SigenergyBatteryPage() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Building2 className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Commercial Property Managers</h3>
+              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight normal-case">Commercial Property Managers</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 Businesses across Darwin and Palmerston are turning to battery storage to manage rising energy costs and keep operations running during grid interruptions. Check out our{" "}
                 <Link to="/solar-systems/commercial-solar-system" className={linkClass}>commercial solar systems</Link>{" "}
@@ -481,7 +481,7 @@ export function SigenergyBatteryPage() {
               <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
                 <Zap className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight uppercase">Off Grid Properties</h3>
+              <h3 className="text-xl font-black text-[#8cc63f] mb-4 tracking-tight normal-case">Off Grid Properties</h3>
               <p className="text-slate-600 text-sm leading-relaxed">
                 For rural NT properties not connected to the main grid, Sigenergy's stackable battery design gives you room to scale up storage as your needs grow. Have a look at our{" "}
                 <Link to="/solar-systems/off-grid-solar-system" className={linkClass}>off grid solar systems</Link>{" "}
@@ -516,7 +516,7 @@ export function SigenergyBatteryPage() {
                   <span className="h-2 w-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                   <span className="text-xs font-bold text-slate-600 uppercase tracking-widest">Support</span>
                 </div>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tighter text-slate-900 leading-[1.1] mb-6 uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Common Questions About Sigenergy Batteries
                 </h2>
                 <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-medium mb-8 max-w-md">
@@ -612,7 +612,7 @@ export function SigenergyBatteryPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="lg:sticky lg:top-28 lg:self-start">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 Get Your Sigenergy Battery Quote
               </h2>
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-8">
@@ -658,7 +658,7 @@ export function SigenergyBatteryPage() {
       <section className="py-24 bg-[#0A1118] text-center relative border-t border-white/5">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight">
+            <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 tracking-tight normal-case">
               Ready for a Battery That Actually Handles NT Conditions?
             </h3>
             <p className="text-slate-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto">

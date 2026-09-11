@@ -267,7 +267,7 @@ export function RecSolarPanels() {
                   <span className="text-brand-400" aria-current="page">REC Solar Panels</span>
                 </nav>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   REC Solar<br />Panels NT
                 </h1>
 
@@ -301,7 +301,7 @@ export function RecSolarPanels() {
       <section className="py-16 lg:py-20 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 normal-case">
               About REC Solar
             </h2>
 
@@ -335,7 +335,7 @@ export function RecSolarPanels() {
       <section className="py-16 lg:py-20 bg-white border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
               REC Solar Panel Highlights
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-10 max-w-3xl">
@@ -349,7 +349,7 @@ export function RecSolarPanels() {
                   className="group bg-slate-50 border border-slate-100 hover:border-brand-500/40 p-7 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 shadow-sm flex flex-col h-full"
                 >
                   <div className="w-8 h-1 rounded-full bg-brand-500 mb-5"></div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
+                  <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                     {item.title}
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -392,14 +392,14 @@ export function RecSolarPanels() {
       <section className="py-16 lg:py-20 bg-white border-b border-slate-100 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 normal-case">
               How REC Panels Perform in the NT
             </h2>
 
             <div className="space-y-6">
               {/* Item 1 */}
               <div className="bg-slate-50 border border-slate-200 border-l-4 border-l-brand-500 p-7 sm:p-9 rounded-2xl sm:rounded-3xl shadow-sm">
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                   They stay strong in Darwin's heat
                 </h3>
                 <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
@@ -409,7 +409,7 @@ export function RecSolarPanels() {
 
               {/* Item 2 */}
               <div className="bg-slate-50 border border-slate-200 border-l-4 border-l-brand-500 p-7 sm:p-9 rounded-2xl sm:rounded-3xl shadow-sm">
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                   They keep working through the wet season
                 </h3>
                 <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
@@ -419,7 +419,7 @@ export function RecSolarPanels() {
 
               {/* Item 3 */}
               <div className="bg-slate-50 border border-slate-200 border-l-4 border-l-brand-500 p-7 sm:p-9 rounded-2xl sm:rounded-3xl shadow-sm">
-                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                   They are built to last
                 </h3>
                 <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
@@ -435,7 +435,7 @@ export function RecSolarPanels() {
       <section className="py-16 lg:py-20 bg-[#0A1118] relative overflow-hidden border-b border-white/5">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight max-w-[780px] mx-auto">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 max-w-[780px] mx-auto normal-case">
               Ready to Lock In Lower Power Bills?
             </h2>
             <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-4 font-medium">
@@ -474,7 +474,7 @@ export function RecSolarPanels() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-white border border-slate-200 p-8 sm:p-10 rounded-2xl sm:rounded-3xl shadow-sm">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 How Much Do REC Solar Panels Cost in the NT
               </h2>
               <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-[1.7] font-medium max-w-4xl">
@@ -498,7 +498,7 @@ export function RecSolarPanels() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-slate-50 border border-slate-200 p-8 sm:p-10 rounded-2xl sm:rounded-3xl shadow-sm">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Serving the NT - Darwin to Alice Springs
               </h2>
               <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-[1.7] font-medium max-w-4xl">
@@ -518,7 +518,7 @@ export function RecSolarPanels() {
       <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 text-center normal-case">
               Frequently Asked Questions
             </h2>
 
@@ -595,7 +595,7 @@ export function RecSolarPanels() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <FadeIn>
             <div className="bg-slate-900/90 border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl shadow-xl max-w-4xl mx-auto backdrop-blur-md">
-              <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-4 normal-case">
                 Stop Paying Too Much to Jacana Energy
               </h2>
               <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-8 font-medium">

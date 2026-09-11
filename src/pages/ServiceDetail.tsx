@@ -80,7 +80,7 @@ function DarkHero({ service, slug }: { service: any; slug: string }) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <FadeIn isHero>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase">
+            <h1 className="hero-heading text-white mb-8 break-words normal-case">
               {headingTop} <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                 {headingBottom}
@@ -215,7 +215,7 @@ function DarkIntro({ service, slug }: { service: any; slug: string }) {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 text-brand-600 font-bold text-sm mb-6 border border-brand-100 uppercase tracking-wider">
               <Zap className="w-4 h-4" /> {service.title}
             </div>
-            <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-8 tracking-tight leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               {introHeading}
             </h2>
             <div className="space-y-6 text-slate-600 text-lg font-medium leading-relaxed">
@@ -257,7 +257,7 @@ function DarkIntro({ service, slug }: { service: any; slug: string }) {
                   <Battery className="w-7 h-7 text-slate-900" />
                 </div>
                 <div>
-                  <h4 className="text-slate-900 font-bold text-lg mb-1">
+                  <h4 className="text-slate-900 font-bold text-lg mb-1 normal-case">
                     {featTitle}
                   </h4>
                   <p className="text-slate-500 text-sm font-medium">
@@ -332,7 +332,7 @@ function DarkProducts({ service, slug }: { service: any; slug: string }) {
               <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse shadow-[0_0_10px_rgba(140,198,63,0.8)]"></span>
               {portfolioLabel}
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white normal-case">
               Premium <br />
               <span className="text-brand-400">{highlightWord}</span> {isServiceOrSystem && !slug.includes("system") ? "Services" : "Solutions"}.
             </h2>
@@ -368,7 +368,7 @@ function DarkProducts({ service, slug }: { service: any; slug: string }) {
                     </span>
                   </div>
 
-                  <h3 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-tighter group-hover:text-brand-400 transition-colors">
+                  <h3 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-tighter group-hover:text-brand-400 transition-colors normal-case">
                     {product.title}
                   </h3>
                   <p className="text-slate-400 text-lg leading-relaxed font-medium mb-10">
@@ -469,7 +469,7 @@ function DarkBenefits({ service, slug }: { service: any; slug: string }) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 lg:mb-20">
           <FadeIn>
-            <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
               Why Choose Our {serviceNameName}?
             </h2>
             <p className="text-brand-900 text-lg font-bold max-w-2xl mx-auto">
@@ -487,7 +487,7 @@ function DarkBenefits({ service, slug }: { service: any; slug: string }) {
             <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-500 mb-6 shadow-lg">
               <Sun className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-black text-white mb-4 tracking-tight">
+            <h3 className="text-xl font-black text-white mb-4 tracking-tight normal-case">
               {b1Title}
             </h3>
             <p className="text-white/90 font-medium leading-relaxed text-[15px]">
@@ -502,7 +502,7 @@ function DarkBenefits({ service, slug }: { service: any; slug: string }) {
             <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-500 mb-6 shadow-lg">
               <Smartphone className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-black text-white mb-4 tracking-tight">
+            <h3 className="text-xl font-black text-white mb-4 tracking-tight normal-case">
               {b2Title}
             </h3>
             <p className="text-white/90 font-medium leading-relaxed text-[15px]">
@@ -517,7 +517,7 @@ function DarkBenefits({ service, slug }: { service: any; slug: string }) {
             <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-500 mb-6 shadow-lg">
               <Shield className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-black text-white mb-4 tracking-tight">
+            <h3 className="text-xl font-black text-white mb-4 tracking-tight normal-case">
               {b3Title}
             </h3>
             <p className="text-white/90 font-medium leading-relaxed text-[15px]">
@@ -1166,7 +1166,7 @@ function EvChargerHero({ service }: { service: any }) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <FadeIn isHero>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-8 uppercase">
+            <h1 className="hero-heading text-white mb-8 break-words normal-case">
               Drive <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                 Electric.
@@ -1223,7 +1223,7 @@ function EvChargerIntro({ service }: { service: any }) {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 text-brand-600 font-bold text-sm mb-6 border border-brand-100 uppercase tracking-wider">
               <Zap className="w-4 h-4" /> Smart Charging
             </div>
-            <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-8 tracking-tight leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Fuel your journey with{" "}
               <span className="text-brand-500">solar energy.</span>
             </h2>
@@ -1266,7 +1266,7 @@ function EvChargerIntro({ service }: { service: any }) {
                   <Battery className="w-7 h-7 text-slate-900" />
                 </div>
                 <div>
-                  <h4 className="text-slate-900 font-bold text-lg mb-1">
+                  <h4 className="text-slate-900 font-bold text-lg mb-1 normal-case">
                     Solar Integration
                   </h4>
                   <p className="text-slate-500 text-sm font-medium">
@@ -1295,7 +1295,7 @@ function EvChargerProducts({ service }: { service: any }) {
               <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse shadow-[0_0_10px_rgba(140,198,63,0.8)]"></span>
               Hardware Portfolio
             </div>
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white normal-case">
               Premium <br />
               <span className="text-brand-400">Charging</span> Solutions.
             </h2>
@@ -1332,7 +1332,7 @@ function EvChargerProducts({ service }: { service: any }) {
                     </span>
                   </div>
 
-                  <h3 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-tighter group-hover:text-brand-400 transition-colors">
+                  <h3 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-tighter group-hover:text-brand-400 transition-colors normal-case">
                     {product.title}
                   </h3>
                   <p className="text-slate-400 text-lg leading-relaxed font-medium mb-10">
@@ -1366,7 +1366,7 @@ function EvChargerBenefits({ service }: { service: any }) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 lg:mb-20">
           <FadeIn>
-            <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
               Why Choose Our EV Chargers?
             </h2>
             <p className="text-brand-900 text-lg font-bold max-w-2xl mx-auto">
@@ -1384,7 +1384,7 @@ function EvChargerBenefits({ service }: { service: any }) {
             <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-500 mb-6 shadow-lg">
               <Sun className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-black text-white mb-4 tracking-tight">
+            <h3 className="text-xl font-black text-white mb-4 tracking-tight normal-case">
               Solar Maximisation
             </h3>
             <p className="text-white/90 font-medium leading-relaxed text-[15px]">
@@ -1400,7 +1400,7 @@ function EvChargerBenefits({ service }: { service: any }) {
             <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-500 mb-6 shadow-lg">
               <Smartphone className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-black text-white mb-4 tracking-tight">
+            <h3 className="text-xl font-black text-white mb-4 tracking-tight normal-case">
               Smart App Control
             </h3>
             <p className="text-white/90 font-medium leading-relaxed text-[15px]">
@@ -1416,7 +1416,7 @@ function EvChargerBenefits({ service }: { service: any }) {
             <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center text-brand-500 mb-6 shadow-lg">
               <Shield className="w-7 h-7" />
             </div>
-            <h3 className="text-xl font-black text-white mb-4 tracking-tight">
+            <h3 className="text-xl font-black text-white mb-4 tracking-tight normal-case">
               Safe & Certified
             </h3>
             <p className="text-white/90 font-medium leading-relaxed text-[15px]">
@@ -1631,7 +1631,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
               <FadeIn>
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05] mb-4 uppercase">
+                <h1 className="hero-heading text-white mb-4 break-words normal-case">
                   Solar Panels <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                     Darwin
@@ -1710,7 +1710,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   Complete Solar Solutions
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Installation, Repair, or Maintenance, We Cover All Three
                 </h2>
                 
@@ -1748,7 +1748,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse shadow-[0_0_10px_rgba(91,201,77,0.8)]"></span>
                   Our Offerings
                 </div>
-                <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter mb-6 uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Our Solar Panel <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Services in Darwin</span>
                 </h2>
@@ -1769,7 +1769,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                       <Zap className="w-8 h-8" />
                     </div>
 
-                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-[#8cc63f] transition-colors uppercase">
+                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-[#8cc63f] transition-colors normal-case">
                       Solar Panel Installation
                     </h3>
                     <div className="text-slate-400 text-base leading-relaxed font-medium mb-10">
@@ -1801,7 +1801,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                       <Wrench className="w-8 h-8 text-[#8cc63f]" />
                     </div>
 
-                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-brand-400 transition-colors uppercase">
+                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-brand-400 transition-colors normal-case">
                       Solar Panel Repair
                     </h3>
                     <div className="text-slate-400 text-base leading-relaxed font-medium mb-10">
@@ -1833,7 +1833,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                       <Shield className="w-8 h-8" />
                     </div>
 
-                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-[#8cc63f] transition-colors uppercase">
+                    <h3 className="text-2xl font-black text-white mb-4 tracking-tight group-hover:text-[#8cc63f] transition-colors normal-case">
                       Solar Panel Cleaning and Maintenance
                     </h3>
                     <div className="text-slate-400 text-base leading-relaxed font-medium mb-10">
@@ -1867,7 +1867,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                   Decision Guide
                 </div>
-                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Not Sure Which Service You Need?
                 </h2>
                 <p className="text-lg text-slate-600 leading-relaxed font-medium mt-4 max-w-2xl mx-auto">
@@ -1883,7 +1883,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <div className="w-12 h-12 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 font-black text-lg">
                     01
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-3 uppercase tracking-tight">Installation</h3>
+                  <h3 className="text-lg font-bold text-slate-900 mb-3 tracking-tight normal-case">Installation</h3>
                   <p className="text-slate-600 text-sm leading-relaxed font-medium">
                     If your panels are new or you don't have solar yet, start with installation.
                   </p>
@@ -1896,7 +1896,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <div className="w-12 h-12 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 font-black text-lg">
                     02
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-3 uppercase tracking-tight">Repair</h3>
+                  <h3 className="text-lg font-bold text-slate-900 mb-3 tracking-tight normal-case">Repair</h3>
                   <p className="text-slate-600 text-sm leading-relaxed font-medium">
                     If your output has dropped, your bill has gone up, or a panel looks damaged, that's a repair job.
                   </p>
@@ -1909,7 +1909,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <div className="w-12 h-12 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 font-black text-lg">
                     03
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-3 uppercase tracking-tight">Maintenance</h3>
+                  <h3 className="text-lg font-bold text-slate-900 mb-3 tracking-tight normal-case">Maintenance</h3>
                   <p className="text-slate-600 text-sm leading-relaxed font-medium">
                     If your system works fine but hasn't been cleaned or checked in six months, book a maintenance visit.
                   </p>
@@ -1923,7 +1923,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     <div className="w-12 h-12 rounded-2xl bg-slate-950 flex items-center justify-center text-[#8cc63f] mb-6">
                       <Phone className="w-5 h-5" />
                     </div>
-                    <h3 className="text-lg font-extrabold text-slate-950 mb-3 uppercase tracking-tight">Get Expert Advice</h3>
+                    <h3 className="text-lg font-extrabold text-slate-950 mb-3 tracking-tight normal-case">Get Expert Advice</h3>
                     <p className="text-slate-800 text-sm leading-relaxed font-semibold">
                       If you're not sure, call 0483 986 444 and describe what you're seeing, we'll point you to the right service.
                     </p>
@@ -1960,7 +1960,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                   Cyclone Certified
                 </div>
-                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Built for Darwin's Conditions, Not Copied from Down South
                 </h2>
                 <p className="text-lg text-slate-600 leading-relaxed font-medium">
@@ -1979,7 +1979,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                 NT Advantage
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-8 tracking-tight uppercase">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
                 Why Solar Makes Sense in Darwin
               </h2>
               <p className="text-xl text-slate-600 leading-relaxed font-medium max-w-3xl mx-auto">
@@ -1995,7 +1995,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
             <FadeIn>
               <div className="bg-[#0A1118] p-12 text-center rounded-[2.5rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#8cc63f]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
-                <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 uppercase tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 tracking-tight normal-case">
                   One Team, Every Stage of Your Solar Panel's Life
                 </h3>
                 <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto font-medium">
@@ -2029,7 +2029,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                   Local Coverage
                 </div>
-                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Solar Panel Services Across Darwin, Areas We Serve
                 </h2>
                 <p className="text-lg text-slate-600 leading-relaxed font-medium">
@@ -2042,7 +2042,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               {/* Group 1 */}
               <FadeIn delay={0.1}>
                 <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
-                  <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
+                  <h3 className="text-lg font-black text-slate-900 mb-2 tracking-tight normal-case">
                     Darwin City and Inner Suburbs
                   </h3>
                   <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
@@ -2057,7 +2057,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               {/* Group 2 */}
               <FadeIn delay={0.2}>
                 <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
-                  <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
+                  <h3 className="text-lg font-black text-slate-900 mb-2 tracking-tight normal-case">
                     Nightcliff, Rapid Creek and Northern Suburbs
                   </h3>
                   <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
@@ -2072,7 +2072,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               {/* Group 3 */}
               <FadeIn delay={0.3}>
                 <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
-                  <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
+                  <h3 className="text-lg font-black text-slate-900 mb-2 tracking-tight normal-case">
                     Casuarina and East
                   </h3>
                   <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
@@ -2087,7 +2087,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
               {/* Group 4 */}
               <FadeIn delay={0.4}>
                 <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
-                  <h3 className="text-lg font-black text-slate-900 mb-2 uppercase tracking-tight">
+                  <h3 className="text-lg font-black text-slate-900 mb-2 tracking-tight normal-case">
                     Fannie Bay, Stuart Park and Surrounds
                   </h3>
                   <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
@@ -2128,7 +2128,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
             <FadeIn>
               <div className="bg-[#0A1118] p-16 text-center rounded-[3rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
-                <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight">
+                <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 tracking-tight normal-case">
                   Get Your Free Solar Panel Quote Today
                 </h3>
                 <p className="text-slate-300 text-lg mb-4 max-w-2xl mx-auto font-medium">
@@ -2225,14 +2225,14 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
               <FadeIn>
                 {isSolarInstall ? (
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05] mb-6">
+                  <h1 className="hero-heading text-white mb-6 break-words normal-case">
                     Darwin's Solar Panel <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                       Installation Experts
                     </span>
                   </h1>
                 ) : (
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.05] mb-6">
+                  <h1 className="hero-heading text-white mb-6 break-words normal-case">
                     {service.title.split(" ").map((word, i, arr) =>
                       i === arr.length - 1 ? (
                         <span
@@ -2250,7 +2250,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
 
                 {isSolarInstall ? (
                   <>
-                    <h2 className="text-xl md:text-2xl text-brand-400 font-bold mb-4">
+                    <h2 className="text-xl md:text-2xl text-brand-400 font-bold mb-4 normal-case">
                       Stop paying Jacana Energy more than you have to.
                     </h2>
                     <p className="text-lg text-slate-300 leading-relaxed max-w-lg mb-10 font-medium">
@@ -2357,7 +2357,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   Why Solar in Darwin
                 </div>
                 
-                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Darwin Gets More Sun Than Almost Anywhere in Australia
                 </h2>
                 
@@ -2387,7 +2387,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 About This Service
               </div>
               
-              <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-10 tracking-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 normal-case">
                 {service.title} Excellence
               </h2>
               
@@ -2421,7 +2421,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
                 Our Specialized Services
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Solar Installation Services in Darwin
               </h2>
             </div>
@@ -2439,7 +2439,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 </FadeIn>
                 {/* Text (order-first on desktop) */}
                 <FadeIn delay={0.1} className="lg:order-first">
-                  <h3 className="text-3xl font-black text-slate-900 mb-6 tracking-tight">
+                  <h3 className="text-3xl font-black text-slate-900 mb-6 tracking-tight normal-case">
                     Residential Solar
                   </h3>
                   <p className="text-lg text-slate-600 leading-relaxed font-medium mb-6">
@@ -2484,7 +2484,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 </FadeIn>
                 {/* Text (right on desktop) */}
                 <FadeIn delay={0.1}>
-                  <h3 className="text-3xl font-black text-slate-900 mb-6 tracking-tight">
+                  <h3 className="text-3xl font-black text-slate-900 mb-6 tracking-tight normal-case">
                     Commercial Solar
                   </h3>
                   <p className="text-lg text-slate-600 leading-relaxed font-medium mb-6">
@@ -2529,7 +2529,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 </FadeIn>
                 {/* Text (order-first on desktop) */}
                 <FadeIn delay={0.1} className="lg:order-first">
-                  <h3 className="text-3xl font-black text-slate-900 mb-6 tracking-tight">
+                  <h3 className="text-3xl font-black text-slate-900 mb-6 tracking-tight normal-case">
                     Off-Grid Solar Systems
                   </h3>
                   <p className="text-lg text-slate-600 leading-relaxed font-medium mb-6">
@@ -2574,7 +2574,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
                 Service Areas
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Solar Panel Installation Across Darwin, Areas We Serve
               </h2>
               <p className="text-lg font-medium text-slate-600 leading-relaxed">
@@ -2587,7 +2587,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors normal-case">
                   Darwin City & Inner Suburbs <br />
                   <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0800 / 0820</span>
                 </h3>
@@ -2600,7 +2600,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors normal-case">
                   Nightcliff & Northern Suburbs <br />
                   <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0810</span>
                 </h3>
@@ -2613,7 +2613,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors normal-case">
                   Casuarina and East <br />
                   <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0810 / 0812</span>
                 </h3>
@@ -2626,7 +2626,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors normal-case">
                   Fannie Bay & Surrounds <br />
                   <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0820</span>
                 </h3>
@@ -2678,7 +2678,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
                   Engineered for the NT
                 </div>
-                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-8 tracking-tight leading-[1.1]">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
                   Installed for Darwin, Not Copied from Down South
                 </h2>
                 <p className="text-lg text-slate-600 leading-relaxed font-medium mb-8">
@@ -2720,7 +2720,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                       Why Choose Us
                     </span>
                   </div>
-                  <h2 className="text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.1]">
+                  <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white normal-case">
                     Why Choose Our <br className="hidden sm:block" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                       {service.title}?
@@ -2745,7 +2745,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="w-16 h-16 bg-brand-500/20 text-brand-400 rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:scale-110 transition-transform duration-500">
                   <Shield className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4 normal-case">
                   Best Warranties
                 </h3>
                 <p className="text-slate-400 leading-relaxed font-medium">
@@ -2760,7 +2760,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="w-16 h-16 bg-brand-500/20 text-brand-400 rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:scale-110 transition-transform duration-500">
                   <Zap className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4 normal-case">
                   Max Efficiency
                 </h3>
                 <p className="text-slate-400 leading-relaxed font-medium">
@@ -2775,7 +2775,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="w-16 h-16 bg-blue-500/20 text-blue-400 rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:scale-110 transition-transform duration-500">
                   <Target className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4 normal-case">
                   Custom Built
                 </h3>
                 <p className="text-slate-400 leading-relaxed font-medium">
@@ -2790,7 +2790,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="w-16 h-16 bg-orange-500/20 text-orange-400 rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:scale-110 transition-transform duration-500">
                   <PiggyBank className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-2xl font-bold text-white mb-4 normal-case">
                   Fast Payback
                 </h3>
                 <p className="text-slate-400 leading-relaxed font-medium">
@@ -2816,7 +2816,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
                 Our Proven Process
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 How We Deliver{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                   Excellence
@@ -2837,7 +2837,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   01
                 </div>
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors normal-case">
                     Consultation & Quote
                   </h3>
                   <p className="text-slate-600 leading-relaxed font-medium">
@@ -2859,7 +2859,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   02
                 </div>
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors normal-case">
                     System Design
                   </h3>
                   <p className="text-slate-600 leading-relaxed font-medium">
@@ -2881,7 +2881,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   03
                 </div>
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors normal-case">
                     Expert Installation
                   </h3>
                   <p className="text-slate-600 leading-relaxed font-medium">
@@ -2903,7 +2903,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   04
                 </div>
                 <div className="flex-1 text-center md:text-left">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors normal-case">
                     Commissioning
                   </h3>
                   <p className="text-slate-600 leading-relaxed font-medium">
@@ -2942,7 +2942,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
                   Ready to upgrade?
                 </div>
-                <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight tracking-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Unleash The Power Of Solar With{" "}
                   <span className="text-brand-400">Oneroof</span>
                 </h2>

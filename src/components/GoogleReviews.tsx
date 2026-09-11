@@ -141,7 +141,7 @@ export function GoogleReviews() {
               <Star className="w-3.5 h-3.5 fill-brand-500 text-brand-500" />
               <span>Verified 5-Star Reviews</span>
             </div>
-            <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl mb-4">What Our Clients Say</h2>
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">What Our Clients Say</h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
               See what our community is saying about our premium solar solutions, professional installation, and lifelong energy support.
             </p>
@@ -169,7 +169,7 @@ export function GoogleReviews() {
                     {review.initials}
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-800 leading-snug">{review.name}</h4>
+                    <h4 className="text-sm font-bold text-slate-800 leading-snug normal-case">{review.name}</h4>
                     <p className="text-[11px] text-slate-400 font-medium">
                       {review.location} • <span className="text-slate-350">{review.date}</span>
                     </p>

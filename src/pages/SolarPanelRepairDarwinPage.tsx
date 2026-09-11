@@ -231,7 +231,7 @@ export function SolarPanelRepairDarwinPage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-brand-400 font-bold text-sm mb-6 uppercase tracking-wider">
                 <Wrench className="w-4 h-4 text-brand-400" /> Professional Repair Services
               </div>
-              <h1 id="hero-heading" className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-8">
+              <h1 id="hero-heading" className="hero-heading text-white mb-8 break-words normal-case">
                 Solar Panel <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                   Repair in Darwin
@@ -301,7 +301,7 @@ export function SolarPanelRepairDarwinPage() {
                 <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
                 NT Local Expertise
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Darwin's Local Solar Panel Repair Specialists
               </h2>
               <p className="text-lg font-medium text-slate-600 leading-relaxed max-w-2xl mx-auto">
@@ -345,7 +345,7 @@ export function SolarPanelRepairDarwinPage() {
                   <div className="w-12 h-12 bg-brand-50 rounded-2xl flex items-center justify-center text-brand-600 mb-6 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300">
                     <feature.icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-brand-600 transition-colors normal-case">
                     {feature.title}
                   </h3>
                   <p className="text-slate-600 text-[15px] leading-relaxed font-medium">
@@ -382,7 +382,7 @@ export function SolarPanelRepairDarwinPage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-white text-slate-700 font-semibold text-sm mb-6 shadow-sm">
                 <Wrench className="w-4 h-4 text-brand-600" /> Services Provided
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Solar Panel Repair Services We Provide
               </h2>
               <p className="text-lg font-medium text-slate-600">
@@ -426,7 +426,7 @@ export function SolarPanelRepairDarwinPage() {
                     <card.icon className="w-8 h-8 transform group-hover:scale-110 transition-transform" />
                   </div>
                   <div className="pr-16 mb-6">
-                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-brand-600 transition-colors leading-tight">
+                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-brand-600 transition-colors leading-tight normal-case">
                       {card.title}
                     </h3>
                   </div>
@@ -450,7 +450,7 @@ export function SolarPanelRepairDarwinPage() {
             <div className="absolute bottom-8 left-8 right-8 text-white flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div className="max-w-xl">
                 <span className="text-brand-400 font-black text-xs uppercase tracking-widest">// professional_excellence</span>
-                <h4 className="text-2xl sm:text-3xl font-black mt-2 leading-tight uppercase">Certified Quality Workmanship</h4>
+                <h4 className="text-2xl sm:text-3xl font-black mt-2 leading-tight normal-case">Certified Quality Workmanship</h4>
                 <p className="text-slate-200 font-medium text-sm sm:text-base mt-2">Every inspection, repair, and component installation is certified to comply with standard NT cyclonic wind loads and Australian electrical regulations.</p>
               </div>
             </div>
@@ -483,7 +483,7 @@ export function SolarPanelRepairDarwinPage() {
                   <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
                   Diagnostics Guide
                 </div>
-                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight leading-[1.1]">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Signs Your Solar Panels Need Repair
                 </h2>
                 <p className="text-lg font-medium text-slate-600 mb-8 leading-relaxed">
@@ -512,7 +512,7 @@ export function SolarPanelRepairDarwinPage() {
 
                 <div className="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-6">
                   <div>
-                    <h4 className="text-lg font-bold text-slate-900 mb-1">Notice any of these signs?</h4>
+                    <h4 className="text-lg font-bold text-slate-900 mb-1 normal-case">Notice any of these signs?</h4>
                     <p className="text-sm text-slate-500 font-semibold">Book an onsite diagnostics assessment with our Darwin crew.</p>
                   </div>
                   <a href={`tel:${PRIMARY_PHONE_RAW}`}>
@@ -538,7 +538,7 @@ export function SolarPanelRepairDarwinPage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-brand-400 font-bold text-sm mb-6 uppercase tracking-wider">
                 <Clock className="w-4 h-4" /> 5-Step Repair Workflow
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 Our Repair Process
               </h2>
               <p className="text-lg font-medium text-slate-300">
@@ -582,7 +582,7 @@ export function SolarPanelRepairDarwinPage() {
                     {item.step}
                   </div>
                   <div className="flex-1 text-center md:text-left">
-                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-brand-400 transition-colors uppercase">
+                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-brand-400 transition-colors normal-case">
                       {item.title}
                     </h3>
                     <p className="text-slate-300 leading-relaxed font-medium">
@@ -622,7 +622,7 @@ export function SolarPanelRepairDarwinPage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 text-brand-600 font-bold text-sm mb-6 border border-brand-100 uppercase tracking-wider">
                 <MapPin className="w-4 h-4 animate-ping" /> Coverage Hub
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black text-slate-900 mb-6 tracking-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Solar Panel Repair Across Darwin — Areas We Serve
               </h2>
               <p className="text-lg text-slate-600 font-medium">
@@ -658,7 +658,7 @@ export function SolarPanelRepairDarwinPage() {
                     <MapPin className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-black text-white leading-tight">
+                    <h3 className="text-lg font-black text-white leading-tight normal-case">
                       {loc.name}
                     </h3>
                   </div>
@@ -731,7 +731,7 @@ export function SolarPanelRepairDarwinPage() {
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/10 text-brand-400 font-bold text-sm w-fit shadow-sm mb-8 backdrop-blur-sm">
                   <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span> Expert Assistance
                 </div>
-                <h2 className="text-4xl lg:text-5xl font-black text-white mb-6 leading-tight tracking-tight uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Get Your Solar Panels <span className="text-brand-400">Repaired Today</span>
                 </h2>
                 <p className="text-slate-400 text-lg leading-relaxed mb-12 font-medium">

@@ -94,7 +94,7 @@ export function PackagesSection({ title, subheadline, subtitle, packages, discla
             <div className="inline-flex items-center gap-2 text-slate-800 font-black mb-3 text-[13px] uppercase tracking-widest">
               {subtitle || "Designed for Darwin Homes"}
             </div>
-            <h2 className="text-[40px] md:text-[48px] font-black tracking-tight text-[#223351] mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight mb-6 normal-case">
               {title || "Exclusive Solar & Battery Deals"}
             </h2>
             {subheadline && (
@@ -138,7 +138,7 @@ export function PackagesSection({ title, subheadline, subtitle, packages, discla
                     <div className="text-brand-500 shrink-0 mt-1">
                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
                     </div>
-                    <h3 className="text-[22px] md:text-[24px] font-black text-[#1a2b49] leading-[1.2] whitespace-pre-line tracking-tight">
+                    <h3 className="text-[22px] md:text-[24px] font-black text-[#1a2b49] leading-[1.2] whitespace-pre-line tracking-tight normal-case">
                       {pack.title}
                     </h3>
                   </div>

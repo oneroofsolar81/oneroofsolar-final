@@ -186,7 +186,7 @@ export function JaSolarPanels() {
                   <Sparkles className="w-3 h-3 text-brand-400" /> Tier 1 Solar Technology
                 </span>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-wide [word-spacing:0.12em] leading-[1.05] mb-6 uppercase">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   JA Solar Panels NT
                 </h1>
 
@@ -267,7 +267,7 @@ export function JaSolarPanels() {
                 <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                   Smart Value Solar
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Why Choose Tier 1 Solar Without the Premium Price Tag
                 </h2>
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -288,7 +288,7 @@ export function JaSolarPanels() {
                 <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                   Global Leader
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Who Is JA Solar
                 </h2>
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -337,7 +337,7 @@ export function JaSolarPanels() {
                 <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                   Advanced Technology
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   What Makes JA Solar Panels Different
                 </h2>
                 <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -359,7 +359,7 @@ export function JaSolarPanels() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="cta-card-outline bg-white border border-slate-200 p-8 sm:p-12 rounded-3xl text-center max-w-4xl mx-auto shadow-sm">
-              <h3 className="text-2xl sm:text-3xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] mb-4">
+              <h3 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4 normal-case">
                 Get high performance panels at an affordable price
               </h3>
               <p className="text-slate-600 text-base sm:text-lg font-medium mb-8 max-w-2xl mx-auto">
@@ -393,7 +393,7 @@ export function JaSolarPanels() {
               <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                 Key Advantages
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 normal-case">
                 Why NT Homes and Businesses Choose JA Solar
               </h2>
             </FadeIn>
@@ -405,7 +405,7 @@ export function JaSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 border border-brand-100 flex items-center justify-center mb-6">
                   <Thermometer className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.1em]">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight [word-spacing:0.1em] normal-case">
                   Performance in heat and humidity
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed font-medium">
@@ -419,7 +419,7 @@ export function JaSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 border border-brand-100 flex items-center justify-center mb-6">
                   <Shield className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.1em]">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight [word-spacing:0.1em] normal-case">
                   Durability that holds up
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed font-medium">
@@ -433,7 +433,7 @@ export function JaSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 border border-brand-100 flex items-center justify-center mb-6">
                   <DollarSign className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.1em]">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight [word-spacing:0.1em] normal-case">
                   Price range
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed font-medium">
@@ -447,7 +447,7 @@ export function JaSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 border border-brand-100 flex items-center justify-center mb-6">
                   <Check className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.1em]">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight [word-spacing:0.1em] normal-case">
                   Everyday benefits
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed font-medium">
@@ -468,7 +468,7 @@ export function JaSolarPanels() {
                 <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                   Territory Wide
                 </span>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   JA Solar Across the NT
                 </h2>
                 <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -506,7 +506,7 @@ export function JaSolarPanels() {
                   <span className="text-xs font-bold text-brand-700 uppercase tracking-widest">Questions & Answers</span>
                 </div>
                 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-wide [word-spacing:0.12em] text-slate-900 leading-[1.1] mb-6 uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Frequently Asked Questions
                 </h2>
               </FadeIn>

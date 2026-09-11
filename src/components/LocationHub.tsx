@@ -160,7 +160,7 @@ export function LocationHub({ data }: { data: LocationData }) {
                 <span className="text-[#8cc63f]" aria-current="page">{data.breadcrumbName}</span>
               </nav>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-[1.05] mb-6 uppercase">
+              <h1 className="hero-heading text-white mb-6 break-words normal-case">
                 {data.h1Lead}{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                   {data.h1Highlight}
@@ -231,7 +231,7 @@ export function LocationHub({ data }: { data: LocationData }) {
       <section className="py-20 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl font-black text-center text-slate-900 mb-8 uppercase tracking-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-center text-slate-900 mb-8 normal-case">
               {data.introHeading}
             </h2>
             <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
@@ -248,7 +248,7 @@ export function LocationHub({ data }: { data: LocationData }) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 {data.whyHeading}
               </h2>
               <div className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium space-y-5">
@@ -277,7 +277,7 @@ export function LocationHub({ data }: { data: LocationData }) {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
-              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 uppercase tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-3 tracking-tight normal-case">
                 {data.midCtaHeading}
               </h3>
               <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
@@ -299,7 +299,7 @@ export function LocationHub({ data }: { data: LocationData }) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 {data.suburbsHeading}
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
@@ -319,7 +319,7 @@ export function LocationHub({ data }: { data: LocationData }) {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-black text-slate-900 tracking-tight uppercase mb-1">
+                  <h3 className="text-base font-black text-slate-900 tracking-tight mb-1 normal-case">
                     {s.name}
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed">{s.descriptor}</p>
@@ -335,7 +335,7 @@ export function LocationHub({ data }: { data: LocationData }) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-tighter mb-8">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
                 {data.whyChooseHeading}
               </h2>
               <ul className="space-y-5">
@@ -354,7 +354,7 @@ export function LocationHub({ data }: { data: LocationData }) {
 
             <FadeIn delay={0.15}>
               <div className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 shadow-sm">
-                <h3 className="text-xl font-black text-slate-900 uppercase tracking-tight mb-2">
+                <h3 className="text-xl font-black text-slate-900 tracking-tight mb-2 normal-case">
                   Explore Our Solar Services
                 </h3>
                 <p className="text-slate-600 text-sm mb-6">
@@ -395,7 +395,7 @@ export function LocationHub({ data }: { data: LocationData }) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div className="lg:sticky lg:top-28 lg:self-start">
             <FadeIn>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 {data.quoteInfoHeading}
               </h2>
               <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-8">
@@ -447,7 +447,7 @@ export function LocationHub({ data }: { data: LocationData }) {
       <section className="py-24 bg-[#0A1118] text-center relative border-t border-white/5">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight">
+            <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 tracking-tight normal-case">
               {data.finalCtaHeading}
             </h3>
             <p className="text-slate-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto">

@@ -48,7 +48,7 @@ export function Footer() {
           
           {/* Quick Links */}
           <div className="lg:col-span-3 lg:pl-8">
-            <h3 className="text-sm font-semibold tracking-wider text-white uppercase mb-6 flex items-center gap-2">
+            <h3 className="text-sm font-semibold tracking-wider text-white mb-6 flex items-center gap-2 normal-case">
               <span className="w-4 h-0.5 bg-brand-500 rounded-full"></span>
               Services
             </h3>
@@ -68,7 +68,7 @@ export function Footer() {
           </div>
 
           <div className="lg:col-span-2">
-            <h3 className="text-sm font-semibold tracking-wider text-white uppercase mb-6 flex items-center gap-2">
+            <h3 className="text-sm font-semibold tracking-wider text-white mb-6 flex items-center gap-2 normal-case">
               <span className="w-4 h-0.5 bg-brand-500 rounded-full"></span>
               Company
             </h3>
@@ -83,7 +83,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div className="lg:col-span-3 relative">
-            <h3 className="text-sm font-semibold tracking-wider text-white uppercase mb-6 flex items-center gap-2">
+            <h3 className="text-sm font-semibold tracking-wider text-white mb-6 flex items-center gap-2 normal-case">
               <span className="w-4 h-0.5 bg-brand-500 rounded-full"></span>
               Contact
             </h3>

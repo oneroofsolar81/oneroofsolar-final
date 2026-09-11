@@ -124,7 +124,7 @@ export function SungrowInvertersPage() {
                   <span className="text-[#8cc63f]" aria-current="page">Sungrow Inverters</span>
                 </nav>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   Sungrow Solar Inverters
                 </h1>
 
@@ -181,7 +181,7 @@ export function SungrowInvertersPage() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
               {/* Main Content Column */}
               <div className="lg:col-span-7 flex flex-col justify-center">
-                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   What Are Sungrow Solar Inverters?
                 </h2>
                 <div className="space-y-5 text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -205,7 +205,7 @@ export function SungrowInvertersPage() {
                       <Zap className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-extrabold text-lg text-white mb-1">Global Manufacturing Scale</h3>
+                      <h3 className="font-extrabold text-lg text-white mb-1 normal-case">Global Manufacturing Scale</h3>
                       <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">Over 870GW installed globally with industry-leading R&D.</p>
                     </div>
                   </div>
@@ -215,7 +215,7 @@ export function SungrowInvertersPage() {
                       <CloudRain className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-extrabold text-lg text-white mb-1">Engineered for Tropical Weather</h3>
+                      <h3 className="font-extrabold text-lg text-white mb-1 normal-case">Engineered for Tropical Weather</h3>
                       <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">Offers IP65/IP66 protection and anti-corrosion features depending on the model.</p>
                     </div>
                   </div>
@@ -225,7 +225,7 @@ export function SungrowInvertersPage() {
                       <ShieldCheck className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-extrabold text-lg text-white mb-1">Local Darwin Installation</h3>
+                      <h3 className="font-extrabold text-lg text-white mb-1 normal-case">Local Darwin Installation</h3>
                       <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">Selected residential and commercial models supplied and commissioned locally.</p>
                     </div>
                   </div>
@@ -241,7 +241,7 @@ export function SungrowInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl mb-10">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Sungrow Solar Inverters for Your Darwin Home or Business
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-3">
@@ -259,7 +259,7 @@ export function SungrowInvertersPage() {
                   <Zap className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-slate-900 font-extrabold text-sm uppercase tracking-wider  mb-1 text-slate-500">Power Phase</h3>
+                  <h3 className="text-slate-900 font-extrabold text-sm tracking-wider mb-1 text-slate-500 normal-case">Power Phase</h3>
                   <p className="text-slate-800 text-base font-semibold leading-snug">Whether your property has single-phase or three-phase power</p>
                 </div>
               </div>
@@ -269,7 +269,7 @@ export function SungrowInvertersPage() {
                   <Battery className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-slate-900 font-extrabold text-sm uppercase tracking-wider  mb-1 text-slate-500">Battery Storage</h3>
+                  <h3 className="text-slate-900 font-extrabold text-sm tracking-wider mb-1 text-slate-500 normal-case">Battery Storage</h3>
                   <p className="text-slate-800 text-base font-semibold leading-snug">Whether you want battery storage now or later</p>
                 </div>
               </div>
@@ -279,7 +279,7 @@ export function SungrowInvertersPage() {
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-slate-900 font-extrabold text-sm uppercase tracking-wider  mb-1 text-slate-500">Blackout Backup</h3>
+                  <h3 className="text-slate-900 font-extrabold text-sm tracking-wider mb-1 text-slate-500 normal-case">Blackout Backup</h3>
                   <p className="text-slate-800 text-base font-semibold leading-snug">Whether blackout backup is important</p>
                 </div>
               </div>
@@ -289,7 +289,7 @@ export function SungrowInvertersPage() {
                   <Sun className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-slate-900 font-extrabold text-sm uppercase tracking-wider  mb-1 text-slate-500">Array Size &amp; Layout</h3>
+                  <h3 className="text-slate-900 font-extrabold text-sm tracking-wider mb-1 text-slate-500 normal-case">Array Size &amp; Layout</h3>
                   <p className="text-slate-800 text-base font-semibold leading-snug">The size and layout of your solar array</p>
                 </div>
               </div>
@@ -299,7 +299,7 @@ export function SungrowInvertersPage() {
                   <Activity className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-slate-900 font-extrabold text-sm uppercase tracking-wider  mb-1 text-slate-500">Daytime Consumption</h3>
+                  <h3 className="text-slate-900 font-extrabold text-sm tracking-wider mb-1 text-slate-500 normal-case">Daytime Consumption</h3>
                   <p className="text-slate-800 text-base font-semibold leading-snug">Your daytime electricity use</p>
                 </div>
               </div>
@@ -309,7 +309,7 @@ export function SungrowInvertersPage() {
                   <Building2 className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-slate-900 font-extrabold text-sm uppercase tracking-wider  mb-1 text-slate-500">Future Expansion</h3>
+                  <h3 className="text-slate-900 font-extrabold text-sm tracking-wider mb-1 text-slate-500 normal-case">Future Expansion</h3>
                   <p className="text-slate-800 text-base font-semibold leading-snug">Your future energy plans</p>
                 </div>
               </div>
@@ -342,7 +342,7 @@ export function SungrowInvertersPage() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-3xl mb-12">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Sungrow Hybrid vs On-Grid Inverters
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -357,7 +357,7 @@ export function SungrowInvertersPage() {
                   <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6 border border-[#8cc63f]/30">
                     <Battery className="w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-4">
+                  <h3 className="text-2xl font-black text-slate-900 mb-4 normal-case">
                     Choose a Sungrow SH Hybrid Inverter If:
                   </h3>
                   <ul className="space-y-3.5 text-slate-700 text-base font-semibold mb-6">
@@ -396,7 +396,7 @@ export function SungrowInvertersPage() {
                   <div className="w-12 h-12 rounded-xl bg-slate-200 text-slate-800 flex items-center justify-center mb-6 border border-slate-300">
                     <Cpu className="w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-4">
+                  <h3 className="text-2xl font-black text-slate-900 mb-4 normal-case">
                     Choose a Sungrow SG On-Grid Inverter If:
                   </h3>
                   <ul className="space-y-3.5 text-slate-700 text-base font-semibold mb-6">
@@ -443,7 +443,7 @@ export function SungrowInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Battery Ready
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Sungrow Hybrid Inverters (Battery Ready)
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium max-w-4xl">
@@ -453,7 +453,7 @@ export function SungrowInvertersPage() {
 
             {/* Subsection: Single-Phase Sungrow Hybrid Inverters */}
             <div className="mb-14">
-              <h3 className="text-2xl sm:text-3xl font-black text-slate-900 uppercase tracking-wide mb-6 border-b border-slate-200 pb-3 flex items-center gap-3">
+              <h3 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-6 border-b border-slate-200 pb-3 flex items-center gap-3 normal-case">
                 <Battery className="w-6 h-6 text-[#8cc63f]" />
                 Single-Phase Sungrow Hybrid Inverters
               </h3>
@@ -479,7 +479,7 @@ export function SungrowInvertersPage() {
                       <div className="text-xs font-bold text-[#8cc63f]  uppercase tracking-wider mb-1">
                         Single Phase, Residential Hybrid
                       </div>
-                      <h4 className="text-2xl font-black text-slate-900 mb-3">
+                      <h4 className="text-2xl font-black text-slate-900 mb-3 normal-case">
                         SH5.0RS / SH6.0RS
                       </h4>
                       <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium mb-6">
@@ -550,7 +550,7 @@ export function SungrowInvertersPage() {
                       <div className="text-xs font-bold text-[#8cc63f]  uppercase tracking-wider mb-1">
                         Single Phase, Residential Hybrid
                       </div>
-                      <h4 className="text-2xl font-black text-slate-900 mb-3">
+                      <h4 className="text-2xl font-black text-slate-900 mb-3 normal-case">
                         SH8.0-10RS
                       </h4>
 
@@ -606,7 +606,7 @@ export function SungrowInvertersPage() {
 
             {/* Subsection: Three-Phase Sungrow Hybrid Inverters */}
             <div className="mb-16">
-              <h3 className="text-2xl sm:text-3xl font-black text-slate-900 uppercase tracking-wide mb-6 border-b border-slate-200 pb-3 flex items-center gap-3">
+              <h3 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-6 border-b border-slate-200 pb-3 flex items-center gap-3 normal-case">
                 <Zap className="w-6 h-6 text-[#8cc63f]" />
                 Three-Phase Sungrow Hybrid Inverters
               </h3>
@@ -631,7 +631,7 @@ export function SungrowInvertersPage() {
                       <div className="text-xs font-bold text-[#8cc63f]  uppercase tracking-wider mb-1">
                         Three Phase, Hybrid
                       </div>
-                      <h4 className="text-2xl font-black text-slate-900 mb-3">
+                      <h4 className="text-2xl font-black text-slate-900 mb-3 normal-case">
                         SH15T / SH20T / SH25T
                       </h4>
                       <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium mb-6">
@@ -695,7 +695,7 @@ export function SungrowInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-slate-200 text-slate-800 font-extrabold text-xs uppercase tracking-wider mb-3">
                 Solar Only
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Sungrow On Grid Inverters
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium max-w-4xl">
@@ -705,7 +705,7 @@ export function SungrowInvertersPage() {
 
             {/* Subsection: Single-Phase String Inverters, No Battery */}
             <div className="mb-14">
-              <h3 className="text-2xl sm:text-3xl font-black text-slate-900 uppercase tracking-wide mb-6 border-b border-slate-200 pb-3 flex items-center gap-3">
+              <h3 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-6 border-b border-slate-200 pb-3 flex items-center gap-3 normal-case">
                 <Activity className="w-6 h-6 text-[#8cc63f]" />
                 Single-Phase String Inverters, No Battery
               </h3>
@@ -730,7 +730,7 @@ export function SungrowInvertersPage() {
                       <div className="text-xs font-bold text-[#8cc63f]  uppercase tracking-wider mb-1">
                         Single Phase, On Grid
                       </div>
-                      <h4 className="text-2xl font-black text-slate-900 mb-3">
+                      <h4 className="text-2xl font-black text-slate-900 mb-3 normal-case">
                         SG5.0RS-ADA / SG8.0RS / SG10RS
                       </h4>
                       <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium mb-6">
@@ -785,7 +785,7 @@ export function SungrowInvertersPage() {
 
             {/* Subsection: Three-Phase Sungrow String Inverters */}
             <div className="mb-16">
-              <h3 className="text-2xl sm:text-3xl font-black text-slate-900 uppercase tracking-wide mb-6 border-b border-slate-200 pb-3 flex items-center gap-3">
+              <h3 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-6 border-b border-slate-200 pb-3 flex items-center gap-3 normal-case">
                 <SlidersHorizontal className="w-6 h-6 text-[#8cc63f]" />
                 Three-Phase Sungrow String Inverters
               </h3>
@@ -810,7 +810,7 @@ export function SungrowInvertersPage() {
                       <div className="text-xs font-bold text-[#8cc63f]  uppercase tracking-wider mb-1">
                         Three Phase, On Grid, Residential/Small Commercial
                       </div>
-                      <h4 className="text-2xl font-black text-slate-900 mb-3">
+                      <h4 className="text-2xl font-black text-slate-900 mb-3 normal-case">
                         SG5.0RT / SG7.0RT / SG8.0RT / SG10RT
                       </h4>
 
@@ -881,7 +881,7 @@ export function SungrowInvertersPage() {
                       <div className="text-xs font-bold text-[#8cc63f]  uppercase tracking-wider mb-1">
                         Three Phase, On Grid, Residential/Small Commercial
                       </div>
-                      <h4 className="text-2xl font-black text-slate-900 mb-3">
+                      <h4 className="text-2xl font-black text-slate-900 mb-3 normal-case">
                         SG15RT / SG20RT
                       </h4>
 
@@ -942,7 +942,7 @@ export function SungrowInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Commercial Scale
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Large Commercial and Industrial Sungrow Inverters
               </h2>
             </div>
@@ -967,7 +967,7 @@ export function SungrowInvertersPage() {
                     <div className="text-xs font-bold text-[#8cc63f]  uppercase tracking-wider mb-1">
                       Three Phase, Commercial and Industrial
                     </div>
-                    <h4 className="text-2xl font-black text-slate-900 mb-3">
+                    <h4 className="text-2xl font-black text-slate-900 mb-3 normal-case">
                       SG30CX-P2 / SG50CX-P2
                     </h4>
 
@@ -1042,7 +1042,7 @@ export function SungrowInvertersPage() {
                     <div className="text-xs font-bold text-[#8cc63f]  uppercase tracking-wider mb-1">
                       Three Phase, Commercial/Utility Scale
                     </div>
-                    <h4 className="text-2xl font-black text-slate-900 mb-3">
+                    <h4 className="text-2xl font-black text-slate-900 mb-3 normal-case">
                       SG100CX-P2 / SG110CX-P2
                     </h4>
                     <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium mb-6">
@@ -1105,7 +1105,7 @@ export function SungrowInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Climate Protection Ratings &amp; Standards
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-4 normal-case">
                 Are Sungrow Inverters Suitable for Darwin’s Climate?
               </h2>
             </div>
@@ -1117,7 +1117,7 @@ export function SungrowInvertersPage() {
                   <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6 border border-[#8cc63f]/30">
                     <CloudRain className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-white mb-3">
+                  <h3 className="text-xl font-extrabold text-white mb-3 normal-case">
                     IP65 / IP66 Protection
                   </h3>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
@@ -1132,7 +1132,7 @@ export function SungrowInvertersPage() {
                   <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6 border border-[#8cc63f]/30">
                     <ShieldCheck className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-white mb-3">
+                  <h3 className="text-xl font-extrabold text-white mb-3 normal-case">
                     C5 Anti-Corrosion — Selected Models
                   </h3>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
@@ -1147,7 +1147,7 @@ export function SungrowInvertersPage() {
                   <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6 border border-[#8cc63f]/30">
                     <Zap className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-white mb-3">
+                  <h3 className="text-xl font-extrabold text-white mb-3 normal-case">
                     DC &amp; AC Surge Protection
                   </h3>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
@@ -1162,7 +1162,7 @@ export function SungrowInvertersPage() {
                   <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6 border border-[#8cc63f]/30">
                     <Flame className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-white mb-3">
+                  <h3 className="text-xl font-extrabold text-white mb-3 normal-case">
                     PID Recovery
                   </h3>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
@@ -1177,7 +1177,7 @@ export function SungrowInvertersPage() {
                   <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6 border border-[#8cc63f]/30">
                     <Activity className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-white mb-3">
+                  <h3 className="text-xl font-extrabold text-white mb-3 normal-case">
                     Smart IV Diagnosis &amp; Remote Monitoring
                   </h3>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
@@ -1198,7 +1198,7 @@ export function SungrowInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-slate-100 text-slate-800 font-extrabold text-xs uppercase tracking-wider mb-3">
                 Multi-Brand Installers
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Other Inverter Brands We Install
               </h2>
               <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-medium">
@@ -1212,28 +1212,28 @@ export function SungrowInvertersPage() {
                 <div className="w-12 h-12 rounded-xl bg-slate-900 text-[#8cc63f] flex items-center justify-center mx-auto mb-3 font-bold text-base  shadow-xs">
                   FE
                 </div>
-                <h3 className="text-base sm:text-lg font-extrabold text-slate-900">Fox ESS</h3>
+                <h3 className="text-base sm:text-lg font-extrabold text-slate-900 normal-case">Fox ESS</h3>
               </div>
 
               <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 text-center hover:border-[#8cc63f]/50 hover:shadow-sm transition-all">
                 <div className="w-12 h-12 rounded-xl bg-slate-900 text-[#8cc63f] flex items-center justify-center mx-auto mb-3 font-bold text-base  shadow-xs">
                   GW
                 </div>
-                <h3 className="text-base sm:text-lg font-extrabold text-slate-900">GoodWe</h3>
+                <h3 className="text-base sm:text-lg font-extrabold text-slate-900 normal-case">GoodWe</h3>
               </div>
 
               <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 text-center hover:border-[#8cc63f]/50 hover:shadow-sm transition-all">
                 <div className="w-12 h-12 rounded-xl bg-slate-900 text-[#8cc63f] flex items-center justify-center mx-auto mb-3 font-bold text-base  shadow-xs">
                   EE
                 </div>
-                <h3 className="text-base sm:text-lg font-extrabold text-slate-900">Elpha ESS</h3>
+                <h3 className="text-base sm:text-lg font-extrabold text-slate-900 normal-case">Elpha ESS</h3>
               </div>
 
               <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-6 text-center hover:border-[#8cc63f]/50 hover:shadow-sm transition-all">
                 <div className="w-12 h-12 rounded-xl bg-slate-900 text-[#8cc63f] flex items-center justify-center mx-auto mb-3 font-bold text-base  shadow-xs">
                   SE
                 </div>
-                <h3 className="text-base sm:text-lg font-extrabold text-slate-900">Sigenergy</h3>
+                <h3 className="text-base sm:text-lg font-extrabold text-slate-900 normal-case">Sigenergy</h3>
               </div>
             </div>
           </FadeIn>
@@ -1251,7 +1251,7 @@ export function SungrowInvertersPage() {
                   <span>On-Site Darwin &amp; NT Assessment</span>
                 </div>
 
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white uppercase tracking-wide leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   You Don't Need to Guess Which Sungrow Inverter Fits Your Roof. We'll Tell You.
                 </h2>
 
@@ -1292,7 +1292,7 @@ export function SungrowInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 End-To-End Installation Service
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 normal-case">
                 How We Help You Choose the Right Sungrow Inverter
               </h2>
             </div>
@@ -1307,7 +1307,7 @@ export function SungrowInvertersPage() {
                     </span>
                     <MapPin className="w-5 h-5 text-slate-400" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-slate-900 mb-2">
+                  <h3 className="text-xl font-extrabold text-slate-900 mb-2 normal-case">
                     Site assessment
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -1325,7 +1325,7 @@ export function SungrowInvertersPage() {
                     </span>
                     <SlidersHorizontal className="w-5 h-5 text-slate-400" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-slate-900 mb-2">
+                  <h3 className="text-xl font-extrabold text-slate-900 mb-2 normal-case">
                     Sizing and model match
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -1343,7 +1343,7 @@ export function SungrowInvertersPage() {
                     </span>
                     <Sun className="w-5 h-5 text-slate-400" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-slate-900 mb-2">
+                  <h3 className="text-xl font-extrabold text-slate-900 mb-2 normal-case">
                     Supply
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -1361,7 +1361,7 @@ export function SungrowInvertersPage() {
                     </span>
                     <Wrench className="w-5 h-5 text-slate-400" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-slate-900 mb-2">
+                  <h3 className="text-xl font-extrabold text-slate-900 mb-2 normal-case">
                     Installation and compliance
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -1379,7 +1379,7 @@ export function SungrowInvertersPage() {
                     </span>
                     <Activity className="w-5 h-5 text-slate-400" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-slate-900 mb-2">
+                  <h3 className="text-xl font-extrabold text-slate-900 mb-2 normal-case">
                     Commissioning and monitoring setup
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -1397,7 +1397,7 @@ export function SungrowInvertersPage() {
                     </span>
                     <ShieldCheck className="w-5 h-5 text-slate-400" />
                   </div>
-                  <h3 className="text-xl font-extrabold text-slate-900 mb-2">
+                  <h3 className="text-xl font-extrabold text-slate-900 mb-2 normal-case">
                     Warranty registration
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -1418,9 +1418,7 @@ export function SungrowInvertersPage() {
               <div className="inline-block px-3.5 py-1 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] font-extrabold text-xs uppercase tracking-wider mb-3">
                 Got Questions?
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
-                FAQS
-              </h2>
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 normal-case">FAQs</h2>
             </div>
 
             <div className="max-w-4xl mx-auto space-y-4">
@@ -1465,7 +1463,7 @@ export function SungrowInvertersPage() {
                       onClick={() => toggleFaq(idx)}
                       className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-slate-50/80 transition-colors focus:outline-hidden"
                     >
-                      <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug pr-2">
+                      <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug pr-2 normal-case">
                         {faq.question}
                       </h3>
                       <span className={`p-2 rounded-xl bg-slate-100 text-slate-700 transition-transform duration-300 shrink-0 ${isOpen ? 'rotate-180 bg-[#8cc63f]/20 text-brand-900' : ''}`}>
@@ -1496,7 +1494,7 @@ export function SungrowInvertersPage() {
                   Expert Supply &amp; Installation
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide leading-tight mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Book Your Sungrow Inverter Consultation
                 </h2>
 

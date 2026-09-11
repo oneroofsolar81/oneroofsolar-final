@@ -326,7 +326,7 @@ export function SolarBatteryInstallation() {
                 </div>
 
                 {/* H1 Heading */}
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   Solar Battery Installation Darwin NT
                 </h1>
 
@@ -401,7 +401,7 @@ export function SolarBatteryInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Solar Battery Installation Excellence in Darwin
               </h2>
               <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
@@ -416,7 +416,7 @@ export function SolarBatteryInstallation() {
                 </p>
 
                 <div className="mt-8 pt-8 border-t border-slate-100">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-wide">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                     Designed for Darwin Homes
                   </h3>
                   <p>
@@ -440,7 +440,7 @@ export function SolarBatteryInstallation() {
               className="rounded-2xl text-center shadow-xl p-8 sm:p-12"
               style={{ backgroundColor: "#19281D" }}
             >
-              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 tracking-wide">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 tracking-tight normal-case">
                 Protect your home before the next outage
               </h3>
               <p className="text-slate-300 text-base sm:text-lg mb-6 max-w-2xl mx-auto font-medium">
@@ -463,7 +463,7 @@ export function SolarBatteryInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Why Choose Our Solar Battery Installation in Darwin
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -483,7 +483,7 @@ export function SolarBatteryInstallation() {
                       <div className="w-12 h-12 rounded-xl bg-brand-100 border border-brand-100 flex items-center justify-center text-[#19281D] mb-5">
                         <IconComp className="w-6 h-6 text-brand-600" />
                       </div>
-                      <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-wide">
+                      <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                         {card.title}
                       </h3>
                       <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
@@ -503,7 +503,7 @@ export function SolarBatteryInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 How We Deliver Your Solar Battery Installation
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -521,7 +521,7 @@ export function SolarBatteryInstallation() {
                     <div className="w-12 h-12 rounded-full bg-[#8cc63f] text-[#19281D] font-black text-xl flex items-center justify-center mb-5 shadow-md shadow-[#8cc63f]/20">
                       {step.step}
                     </div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-3 tracking-wide">
+                    <h3 className="text-lg font-bold text-slate-900 mb-3 tracking-tight normal-case">
                       {step.title}
                     </h3>
                     <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
@@ -540,7 +540,7 @@ export function SolarBatteryInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl mb-10">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Battery Brands We Install in Darwin
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -562,7 +562,7 @@ export function SolarBatteryInstallation() {
                       className="max-h-24 max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-1.5">
+                  <h3 className="text-lg font-bold text-slate-900 mb-1.5 normal-case">
                     {brand.name}
                   </h3>
                   <p className="text-xs text-slate-500 font-medium line-clamp-3">
@@ -579,7 +579,7 @@ export function SolarBatteryInstallation() {
       <section className="py-16 lg:py-20 bg-white border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Residential and Commercial Battery Installation
             </h2>
 
@@ -589,7 +589,7 @@ export function SolarBatteryInstallation() {
                   <div className="w-12 h-12 rounded-xl bg-brand-100 border border-brand-100 flex items-center justify-center text-brand-600 mb-5">
                     <Home className="w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-wide">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                     Residential
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -603,7 +603,7 @@ export function SolarBatteryInstallation() {
                   <div className="w-12 h-12 rounded-xl bg-brand-100 border border-brand-100 flex items-center justify-center text-brand-600 mb-5">
                     <Building2 className="w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-wide">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                     Commercial
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -621,7 +621,7 @@ export function SolarBatteryInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 What Affects Your Battery Installation Cost
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
@@ -640,7 +640,7 @@ export function SolarBatteryInstallation() {
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100 text-brand-700 border border-brand-200 text-xs font-bold uppercase tracking-wider mb-4">
                 <Shield className="w-3.5 h-3.5" /> Australian Safety Standards
               </div>
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Licensed and Compliant Installation
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
@@ -655,7 +655,7 @@ export function SolarBatteryInstallation() {
       <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 text-center normal-case">
               Frequently Asked Questions
             </h2>
 
@@ -735,7 +735,7 @@ export function SolarBatteryInstallation() {
               className="rounded-2xl text-center shadow-2xl p-8 sm:p-14"
               style={{ backgroundColor: "#19281D" }}
             >
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 tracking-wide">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 tracking-tight normal-case">
                 Keep your power on when it matters most
               </h3>
               <p className="text-slate-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto font-medium">

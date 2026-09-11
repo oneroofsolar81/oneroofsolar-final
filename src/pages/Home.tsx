@@ -373,7 +373,7 @@ export function Home() {
               
               {/* Exact H1 markup & styles */}
               <h1 
-                className="hero-heading text-white mb-[22px] break-words"
+                className="hero-heading text-white mb-[22px] break-words normal-case"
               >
                 Solar Panels <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Darwin</span><br />
                 Trusted Installations Across the NT
@@ -558,7 +558,7 @@ export function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-16">
             <div className="lg:col-span-6">
               <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">Complete Energy Solutions</span>
-              <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6 normal-case">
                 Solar Panels Built for Darwin's Climate and Conditions
               </h2>
             </div>
@@ -591,7 +591,7 @@ export function Home() {
                     BACKUP POWER
                   </span>
                 </div>
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-4 relative z-10 group-hover:text-brand-400 transition-colors">Battery Storage Systems</h3>
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-4 relative z-10 group-hover:text-brand-400 transition-colors normal-case">Battery Storage Systems</h3>
                 <p className="text-slate-400 text-[1rem] font-normal leading-[1.6] mb-6 relative z-10 flex-grow">
                   Store your solar energy for nighttime use and protect against wet season grid outages. Maximise daytime solar self-consumption with premium battery storage.
                 </p>
@@ -605,7 +605,7 @@ export function Home() {
                 <div className="mb-8 inline-flex rounded-2xl bg-brand-50 p-4 text-brand-600 border border-brand-100 w-max">
                   <Grid className="h-7 w-7" />
                 </div>
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-4 group-hover:text-brand-600 transition-colors">Residential & Commercial Solar</h3>
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-4 group-hover:text-brand-600 transition-colors normal-case">Residential & Commercial Solar</h3>
                 <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-6 flex-grow">
                   Custom-designed systems for Darwin homes and NT businesses. Sized to your actual power bills, not a generic quote.
                 </p>
@@ -619,7 +619,7 @@ export function Home() {
                 <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
                   <Zap className="h-6 w-6" />
                 </div>
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">Smart Inverters</h3>
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors normal-case">Smart Inverters</h3>
                 <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] flex-grow">
                   Fronius and premium hybrid inverters with real-time monitoring apps for your Darwin system.
                 </p>
@@ -630,7 +630,7 @@ export function Home() {
                 <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
                   <Wrench className="h-6 w-6" />
                 </div>
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">Repairs & Maintenance</h3>
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors normal-case">Repairs & Maintenance</h3>
                 <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] flex-grow">
                   Keep your system running at peak performance. Fast response from our Darwin-based team.
                 </p>
@@ -641,7 +641,7 @@ export function Home() {
                 <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
                   <Activity className="h-6 w-6" />
                 </div>
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors">EV Charger Installation Darwin</h3>
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors normal-case">EV Charger Installation Darwin</h3>
                 <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] flex-grow">
                   Home and commercial EV charger installs. Pair with solar and charge your car for free.
                 </p>
@@ -660,7 +660,7 @@ export function Home() {
             {/* Left Points Content */}
             <FadeIn className="lg:col-span-7">
               <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">Premium Solar for Darwin Homes</span>
-              <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6 normal-case">
                 Premium Solar Systems For The Northern Territory
               </h2>
               <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-8">
@@ -690,7 +690,7 @@ export function Home() {
                       <pt.icon className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-1 group-hover:text-brand-600 transition-colors">{pt.title}</h3>
+                      <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-1 group-hover:text-brand-600 transition-colors normal-case">{pt.title}</h3>
                       <p className="text-slate-600 text-[1rem] font-normal leading-[1.6]">{pt.text}</p>
                     </div>
                   </div>
@@ -752,7 +752,7 @@ export function Home() {
               <div className="inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 backdrop-blur-md px-4 py-1.5 text-[0.875rem] font-normal leading-[1.5] text-brand-400 mb-8 uppercase tracking-widest">
                 HOW IT WORKS
               </div>
-              <h2 className="text-[2rem] font-bold leading-[1.25] text-white tracking-tight max-w-xl">
+              <h2 className="text-[2rem] font-bold leading-[1.25] text-white tracking-tight max-w-xl normal-case">
                 Your Seamless Journey to<br />
                 <span className="text-brand-400">Solar Energy</span>
               </h2>
@@ -818,7 +818,7 @@ export function Home() {
                   <step.icon className="h-6 w-6 text-white" />
                 </div>
                 
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-3 group-hover:text-brand-400 transition-colors duration-300">
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-3 group-hover:text-brand-400 transition-colors duration-300 normal-case">
                   {step.title}
                 </h3>
                 
@@ -856,7 +856,7 @@ export function Home() {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="text-[1.25rem] font-semibold leading-[1.4] text-slate-900 mb-1">Local Darwin Team</h4>
+                    <h4 className="text-[1.25rem] font-semibold leading-[1.4] text-slate-900 mb-1 normal-case">Local Darwin Team</h4>
                     <p className="text-[0.875rem] font-normal leading-[1.5] text-brand-600 uppercase tracking-widest">Proudly Territory Owned</p>
                   </div>
                 </div>
@@ -866,7 +866,7 @@ export function Home() {
             {/* Right Text */}
             <div className="lg:col-span-7">
               <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">About Oneroof Solar</span>
-              <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6 normal-case">
                 Your Expert Darwin Solar Installer
               </h2>
               <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-8">
@@ -886,7 +886,7 @@ export function Home() {
                       <item.icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-[1.25rem] font-semibold leading-[1.4] text-slate-900 mb-1">{item.title}</h4>
+                      <h4 className="text-[1.25rem] font-semibold leading-[1.4] text-slate-900 mb-1 normal-case">{item.title}</h4>
                       <p className="text-slate-500 text-[1rem] font-normal leading-[1.6]">{item.desc}</p>
                     </div>
                   </div>
@@ -948,7 +948,7 @@ export function Home() {
             {/* Right Points Content */}
             <div className="lg:col-span-7 order-1 lg:order-2">
               <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-400 uppercase mb-3 block">BATTERY STORAGE DARWIN</span>
-              <h2 className="text-[2rem] font-bold leading-[1.25] text-white tracking-tight mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] text-white tracking-tight mb-6 normal-case">
                 Uninterrupted Power for Your Home
               </h2>
               <p className="text-slate-300 text-[1rem] font-normal leading-[1.6] mb-8">
@@ -966,7 +966,7 @@ export function Home() {
                       <pt.icon className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-1">{pt.title}</h3>
+                      <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-1 normal-case">{pt.title}</h3>
                       <p className="text-slate-400 text-[1rem] font-normal leading-[1.6]">{pt.desc}</p>
                     </div>
                   </div>
@@ -991,7 +991,7 @@ export function Home() {
           
           <div className="mx-auto text-center max-w-3xl mb-20">
             <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">WHERE WE SERVE</span>
-            <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6 normal-case">
               Solar Installations Across <span className="text-brand-600">Darwin & the NT</span>
             </h2>
             <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] max-w-2xl mx-auto">
@@ -1016,7 +1016,7 @@ export function Home() {
               </div>
 
               <div className="flex-grow">
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2">Darwin City</h3>
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2 normal-case">Darwin City</h3>
                 <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 uppercase tracking-wider block mb-4">
                   Primary Hub — (0800, 0820) — Residential & Commercial
                 </span>
@@ -1049,7 +1049,7 @@ export function Home() {
               </div>
 
               <div className="flex-grow">
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2">Northern Darwin</h3>
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2 normal-case">Northern Darwin</h3>
                 <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 uppercase tracking-wider block mb-4">
                   (0810, 0812) — Residential & Commercial
                 </span>
@@ -1082,7 +1082,7 @@ export function Home() {
               </div>
 
               <div className="flex-grow">
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2">Alice Springs</h3>
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2 normal-case">Alice Springs</h3>
                 <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 uppercase tracking-wider block mb-4">
                   2nd Hub — (0870) — Residential & Commercial
                 </span>
@@ -1121,7 +1121,7 @@ export function Home() {
               </div>
 
               <div className="flex-grow">
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2">Palmerston</h3>
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2 normal-case">Palmerston</h3>
                 <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 uppercase tracking-wider block mb-4">
                   (0830, 0832) — Residential & Commercial
                 </span>
@@ -1154,7 +1154,7 @@ export function Home() {
               </div>
 
               <div className="flex-grow">
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2">Darwin Rural</h3>
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-2 normal-case">Darwin Rural</h3>
                 <span className="text-[0.875rem] font-normal leading-[1.5] text-brand-400 uppercase tracking-wider block mb-4">
                   (0822, 0836–0847) — Residential & Commercial
                 </span>
@@ -1189,7 +1189,7 @@ export function Home() {
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-500 to-brand-300" />
               
               <div className="flex-grow relative z-10 pt-6">
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-4">Not Sure We Cover Your Area?</h3>
+                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-4 normal-case">Not Sure We Cover Your Area?</h3>
                 <p className="text-slate-300 text-[1rem] font-normal leading-[1.6] mb-8">
                   If you are in the Northern Territory, we almost certainly do. Call us and we will confirm within one business day.
                 </p>
@@ -1236,7 +1236,7 @@ export function Home() {
                   <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
                   Our Portfolio
                 </div>
-                <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight normal-case">
                   Recent <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-500">Installations</span>
                 </h2>
               </FadeIn>
@@ -1267,7 +1267,7 @@ export function Home() {
                     </div>
                   </div>
                   <div className="p-8 flex flex-col flex-grow">
-                    <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-4 group-hover:text-brand-600 transition-colors line-clamp-2">
+                    <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-4 group-hover:text-brand-600 transition-colors line-clamp-2 normal-case">
                       {p.title}
                     </h3>
                     <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-6 flex-grow">
@@ -1306,7 +1306,7 @@ export function Home() {
               <div className="lg:w-1/3 z-10">
                 <FadeIn>
                   <Award className="w-16 h-16 text-brand-500 mb-6" />
-                  <h2 className="text-[2rem] font-bold leading-[1.25] text-white mb-4">The Oneroof Guarantee</h2>
+                  <h2 className="text-[2rem] font-bold leading-[1.25] text-white mb-4 normal-case">The Oneroof Guarantee</h2>
                   <p className="text-slate-400 text-[1rem] font-normal leading-[1.6]">
                     Peace of mind comes standard. We stand behind our work with industry-leading warranties and local NT support you can count on.
                   </p>
@@ -1360,7 +1360,7 @@ export function Home() {
                 <Star className="w-3.5 h-3.5 fill-brand-500 text-brand-500" />
                 <span>Verified 5-Star Reviews</span>
               </div>
-              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4">What Our Clients Say</h2>
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">What Our Clients Say</h2>
               <p className="text-[1rem] font-normal leading-[1.6] text-slate-600 max-w-2xl mx-auto">
                 Real feedback from NT customers across Darwin, Palmerston, Alice Springs, and surrounding NT communities.
               </p>
@@ -1424,7 +1424,7 @@ export function Home() {
                       {rev.name.substring(0, 2)}
                     </div>
                     <div>
-                      <h4 className="text-[1.25rem] font-semibold leading-[1.4] text-slate-800 mb-1">{rev.name}</h4>
+                      <h4 className="text-[1.25rem] font-semibold leading-[1.4] text-slate-800 mb-1 normal-case">{rev.name}</h4>
                       <p className="text-[0.875rem] font-normal leading-[1.5] text-slate-400">
                         {rev.location} • <span className="text-brand-600 font-bold">{rev.project}</span>
                       </p>
@@ -1449,7 +1449,7 @@ export function Home() {
           
           <div className="text-center mb-16">
             <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">Common Inquiries</span>
-            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 normal-case">
               Common Solar Questions from Darwin Homeowners
             </h2>
             <p className="text-slate-500 text-[1rem] font-normal leading-[1.6] mt-3">
@@ -1541,7 +1541,7 @@ export function Home() {
                     <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
                     <span className="text-[0.875rem] font-normal leading-[1.5] text-white uppercase tracking-widest">GET STARTED TODAY</span>
                   </div>
-                  <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6">
+                  <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                     Ready to slash your <br className="hidden lg:block" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">electricity bills?</span>
                   </h2>

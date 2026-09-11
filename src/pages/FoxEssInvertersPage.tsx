@@ -202,7 +202,7 @@ export function FoxEssInvertersPage() {
                 </nav>
 
                 {/* H1 Title */}
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   Fox ESS Inverters Darwin NT
                 </h1>
 
@@ -260,7 +260,7 @@ export function FoxEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               High-Performance Solar Inverters for the Northern Territory Climate
             </h2>
 
@@ -311,7 +311,7 @@ export function FoxEssInvertersPage() {
                 Official Engineering Datasheets &amp; Downloads
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
               Fox ESS Solar Inverter, Battery &amp; EV Charger Range
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-12 max-w-4xl">
@@ -322,7 +322,7 @@ export function FoxEssInvertersPage() {
             <div className="mb-16">
               <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-3">
                 <Zap className="w-6 h-6 text-[#8cc63f]" />
-                <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide">
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight normal-case">
                   1. Hybrid &amp; Energy Storage Solar Inverters
                 </h3>
               </div>
@@ -335,7 +335,7 @@ export function FoxEssInvertersPage() {
                       <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#8cc63f]/10 text-brand-800 border border-[#8cc63f]/30">Single-Phase Hybrid</span>
                       <span className="text-xs font-bold text-slate-500">3.0kW – 6.0kW</span>
                     </div>
-                    <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
+                    <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight normal-case">
                       Fox ESS H1(G2) / AC1(G2)
                     </h4>
 
@@ -383,7 +383,7 @@ export function FoxEssInvertersPage() {
                       <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#8cc63f]/10 text-brand-800 border border-[#8cc63f]/30">High-Power Single Phase</span>
                       <span className="text-xs font-bold text-slate-500">7.0kW – 10.5kW</span>
                     </div>
-                    <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
+                    <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight normal-case">
                       Fox ESS KH / KA Series
                     </h4>
 
@@ -431,7 +431,7 @@ export function FoxEssInvertersPage() {
                       <span className="text-[10px] font-extrabold uppercase px-2.5 py-1 rounded bg-[#8cc63f]/10 text-brand-800 border border-[#8cc63f]/30">Three-Phase Hybrid</span>
                       <span className="text-xs font-bold text-slate-500">5.0kW – 15.0kW</span>
                     </div>
-                    <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight">
+                    <h4 className="text-2xl font-black text-slate-900 mb-4 leading-tight normal-case">
                       Fox ESS H3 Smart Series
                     </h4>
 
@@ -478,7 +478,7 @@ export function FoxEssInvertersPage() {
             <div className="mb-16">
               <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-3">
                 <Battery className="w-6 h-6 text-[#8cc63f]" />
-                <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide">
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight normal-case">
                   2. High Voltage Lithium Storage Batteries (LFP)
                 </h3>
               </div>
@@ -488,7 +488,7 @@ export function FoxEssInvertersPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800  block w-fit mb-3">Stackable Series</span>
-                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                    <h4 className="text-xl font-black text-slate-900 mb-2 normal-case">
                       Fox ESS EQ4800
                     </h4>
                     <p className="text-xs text-slate-500 font-medium mb-4">
@@ -527,7 +527,7 @@ export function FoxEssInvertersPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800  block w-fit mb-3">High-Capacity Series</span>
-                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                    <h4 className="text-xl font-black text-slate-900 mb-2 normal-case">
                       Fox ESS EQ5500
                     </h4>
                     <p className="text-xs text-slate-500 font-medium mb-4">
@@ -566,7 +566,7 @@ export function FoxEssInvertersPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-brand-100 text-brand-800  block w-fit mb-3">Wall / Floor Mount</span>
-                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                    <h4 className="text-xl font-black text-slate-900 mb-2 normal-case">
                       Fox ESS EP11
                     </h4>
                     <p className="text-xs text-slate-500 font-medium mb-4">
@@ -605,7 +605,7 @@ export function FoxEssInvertersPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-rose-100 text-rose-800  block w-fit mb-3">Fire-Protected LFP</span>
-                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                    <h4 className="text-xl font-black text-slate-900 mb-2 normal-case">
                       Fox ESS EP12 Plus (w)
                     </h4>
                     <p className="text-xs text-slate-500 font-medium mb-4">
@@ -646,7 +646,7 @@ export function FoxEssInvertersPage() {
             <div>
               <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-3">
                 <ShieldCheck className="w-6 h-6 text-[#8cc63f]" />
-                <h3 className="text-xl sm:text-2xl font-black text-slate-900 uppercase tracking-wide">
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight normal-case">
                   3. Fox ESS Smart EV Chargers (Residential &amp; Commercial)
                 </h3>
               </div>
@@ -656,7 +656,7 @@ export function FoxEssInvertersPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800  block w-fit mb-3">Residential Smart</span>
-                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                    <h4 className="text-xl font-black text-slate-900 mb-2 normal-case">
                       Fox ESS L Series
                     </h4>
                     <p className="text-xs text-slate-500 font-medium mb-4">
@@ -695,7 +695,7 @@ export function FoxEssInvertersPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800  block w-fit mb-3">RFID + OCPP</span>
-                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                    <h4 className="text-xl font-black text-slate-900 mb-2 normal-case">
                       Fox ESS L MAX Series
                     </h4>
                     <p className="text-xs text-slate-500 font-medium mb-4">
@@ -734,7 +734,7 @@ export function FoxEssInvertersPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-brand-100 text-brand-800  block w-fit mb-3">Plug &amp; Socket | V2G</span>
-                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                    <h4 className="text-xl font-black text-slate-900 mb-2 normal-case">
                       Fox ESS A Series
                     </h4>
                     <p className="text-xs text-slate-500 font-medium mb-4">
@@ -773,7 +773,7 @@ export function FoxEssInvertersPage() {
                 <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                   <div>
                     <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-slate-900 text-white  block w-fit mb-3">Commercial Dual Port</span>
-                    <h4 className="text-xl font-black text-slate-900 mb-2">
+                    <h4 className="text-xl font-black text-slate-900 mb-2 normal-case">
                       Fox ESS C Series
                     </h4>
                     <p className="text-xs text-slate-500 font-medium mb-4">
@@ -821,7 +821,7 @@ export function FoxEssInvertersPage() {
               
               {/* Left Column Text */}
               <div className="lg:col-span-7">
-                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h3 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6 tracking-tight leading-tight normal-case">
                   Which Fox ESS Inverter is Best for Off-Grid Applications?
                 </h3>
 
@@ -858,7 +858,7 @@ export function FoxEssInvertersPage() {
           <FadeIn>
             <div className="bg-white border-2 border-slate-200 rounded-2xl sm:rounded-3xl p-8 sm:p-12 shadow-sm">
               <div className="max-w-4xl">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 mb-4 uppercase tracking-wide leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                   Is your current solar inverter failing, displaying error lights, or out of warranty?
                 </h2>
 
@@ -902,7 +902,7 @@ export function FoxEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               Upfront Federal STC Discounts &amp; Active Battery Program Incentives
             </h2>
 
@@ -925,7 +925,7 @@ export function FoxEssInvertersPage() {
                     <Award className="w-6 h-6" />
                   </div>
 
-                  <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-wide">
+                  <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight normal-case">
                     The Federal STC Grant
                   </h3>
 
@@ -942,7 +942,7 @@ export function FoxEssInvertersPage() {
                     <Battery className="w-6 h-6" />
                   </div>
 
-                  <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-wide">
+                  <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight normal-case">
                     Cheaper Home Batteries Program
                   </h3>
 
@@ -961,7 +961,7 @@ export function FoxEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-[#0A1118] border-b border-slate-800 text-left text-white">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-8 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-8 normal-case">
               Complete Power and Water Corporation Grid Compliance Management
             </h2>
 
@@ -1010,7 +1010,7 @@ export function FoxEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-12 uppercase tracking-wide [word-spacing:0.12em]">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-12 normal-case">
               FAQ
             </h2>
 
@@ -1052,7 +1052,7 @@ export function FoxEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-slate-50 border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               Get Your Custom Fox ESS Solar Quotation Today
             </h2>
 
@@ -1077,7 +1077,7 @@ export function FoxEssInvertersPage() {
             {/* FINAL CTA CARD */}
             <div className="bg-[#0A1118] border border-slate-800 rounded-2xl sm:rounded-3xl p-8 sm:p-12 text-center text-white shadow-2xl">
               <div className="max-w-3xl mx-auto">
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 uppercase tracking-wide leading-tight">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 tracking-tight leading-tight normal-case">
                   Ready to secure an affordable, heat-proof power supply for your property?
                 </h3>
 
@@ -1106,7 +1106,7 @@ export function FoxEssInvertersPage() {
       {pdfModalModel && (
         <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
           <div className="bg-white rounded-2xl max-w-md w-full p-6 text-left shadow-2xl border border-slate-200">
-            <h3 className="text-xl font-extrabold text-slate-900 mb-2">
+            <h3 className="text-xl font-extrabold text-slate-900 mb-2 normal-case">
               {pdfModalModel} Datasheet
             </h3>
             <p className="text-slate-600 text-sm mb-6 leading-relaxed">

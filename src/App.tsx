@@ -309,7 +309,7 @@ export default function App() {
                 <Route path="/projects/" element={<Projects />} />
                 <Route path="/terms" element={<Terms />} />
                 <Route path="/privacy" element={<Privacy />} />
-                <Route path="*" element={<div className="min-h-screen flex items-center justify-center pt-24"><div className="text-center"><h1 className="text-6xl font-black text-slate-900 mb-4">404</h1><p className="text-xl text-slate-600 mb-8">The page you are looking for does not exist.</p><Link to="/" className="text-brand-600 font-bold hover:underline">Go back home</Link></div></div>} />
+                <Route path="*" element={<div className="min-h-screen flex items-center justify-center pt-24"><div className="text-center"><h1 className="hero-heading text-slate-900 mb-4 break-words normal-case">404</h1><p className="text-xl text-slate-600 mb-8">The page you are looking for does not exist.</p><Link to="/" className="text-brand-600 font-bold hover:underline">Go back home</Link></div></div>} />
               </Route>
             </Routes>
             </Suspense>

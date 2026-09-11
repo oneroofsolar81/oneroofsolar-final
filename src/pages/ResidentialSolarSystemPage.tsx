@@ -369,7 +369,7 @@ export function ResidentialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <FadeIn isHero className="lg:sticky lg:top-28 lg:self-start">
-              <h1 id="hero-heading" className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-8">
+              <h1 id="hero-heading" className="hero-heading text-white mb-8 break-words normal-case">
                 Residential Solar <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                   Systems NT
@@ -489,7 +489,7 @@ export function ResidentialSolarSystemPage() {
       <section className="py-24 bg-white relative overflow-hidden border-b border-slate-100">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-8 uppercase tracking-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Full Turnkey Residential Solar System Installation Across the NT
             </h2>
             <div className="space-y-6 text-slate-700 text-lg leading-relaxed font-medium">
@@ -517,7 +517,7 @@ export function ResidentialSolarSystemPage() {
           <FadeIn>
             <div className="bg-[#0A1118] p-12 text-center rounded-[2.5rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#8cc63f]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
-              <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 uppercase tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-black text-white mb-4 tracking-tight normal-case">
                 Start saving on your home electricity bills today
               </h3>
               <p className="text-slate-300 text-lg mb-8 max-w-2xl mx-auto font-medium">
@@ -542,7 +542,7 @@ export function ResidentialSolarSystemPage() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-[#19281D] font-bold text-xs mb-6 border border-brand-100 uppercase tracking-widest shadow-sm">
                 <Zap className="w-4 h-4 text-[#8cc63f]" /> System Selector
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Which Residential Solar System Suits Your NT Home
               </h2>
               <p className="text-lg text-slate-600 font-medium leading-relaxed">
@@ -558,7 +558,7 @@ export function ResidentialSolarSystemPage() {
                 <div className="w-14 h-14 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 border border-brand-100">
                   <Grid className="w-6 h-6 text-[#8cc63f]" />
                 </div>
-                <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight group-hover:text-[#19281D] transition-colors">
+                <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight group-hover:text-[#19281D] transition-colors normal-case">
                   Grid-Connected Solar System
                 </h3>
                 <div className="text-slate-600 leading-relaxed font-medium space-y-4 flex-grow mb-8">
@@ -578,7 +578,7 @@ export function ResidentialSolarSystemPage() {
                 <div className="w-14 h-14 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 border border-brand-100">
                   <Battery className="w-6 h-6 text-[#8cc63f]" />
                 </div>
-                <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight group-hover:text-[#19281D] transition-colors">
+                <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight group-hover:text-[#19281D] transition-colors normal-case">
                   Hybrid Residential Solar and Battery System
                 </h3>
                 <div className="text-slate-600 leading-relaxed font-medium space-y-4 flex-grow mb-8">
@@ -598,7 +598,7 @@ export function ResidentialSolarSystemPage() {
                 <div className="w-14 h-14 rounded-2xl bg-brand-100 flex items-center justify-center text-[#19281D] mb-6 border border-brand-100">
                   <Power className="w-6 h-6 text-[#8cc63f]" />
                 </div>
-                <h3 className="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight group-hover:text-[#19281D] transition-colors">
+                <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight group-hover:text-[#19281D] transition-colors normal-case">
                   Off-Grid Residential Solar System
                 </h3>
                 <div className="text-slate-600 leading-relaxed font-medium space-y-4 flex-grow mb-8">
@@ -620,7 +620,7 @@ export function ResidentialSolarSystemPage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 How We Deliver Your Residential Solar System
               </h2>
               <p className="text-lg text-slate-600 font-medium leading-relaxed">
@@ -663,7 +663,7 @@ export function ResidentialSolarSystemPage() {
                     0{step.num}
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-extrabold text-[#19281D] mb-3 uppercase tracking-tight">
+                    <h3 className="text-xl sm:text-2xl font-extrabold text-[#19281D] mb-3 tracking-tight normal-case">
                       {step.title}
                     </h3>
                     <p className="text-slate-600 leading-relaxed font-medium">
@@ -683,7 +683,7 @@ export function ResidentialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 uppercase tracking-tight leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 Solar Rebates Available to NT Homeowners in 2026
               </h2>
               <p className="text-lg text-slate-300 font-medium">
@@ -699,7 +699,7 @@ export function ResidentialSolarSystemPage() {
                 <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6 border border-[#8cc63f]/20">
                   <Sun className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4 uppercase tracking-tight">
+                <h3 className="text-2xl font-bold text-white mb-4 tracking-tight normal-case">
                   Federal STC Rebate (Up to $2,563)
                 </h3>
                 <p className="text-slate-300 leading-relaxed font-medium">
@@ -714,7 +714,7 @@ export function ResidentialSolarSystemPage() {
                 <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6 border border-[#8cc63f]/20">
                   <Zap className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4 uppercase tracking-tight">
+                <h3 className="text-2xl font-bold text-white mb-4 tracking-tight normal-case">
                   Jacana Energy Feed-in Tariffs
                 </h3>
                 <p className="text-slate-300 leading-relaxed font-medium">
@@ -731,7 +731,7 @@ export function ResidentialSolarSystemPage() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="border-4 border-[#8cc63f] p-12 text-center rounded-[2.5rem] bg-slate-50/50 shadow-lg relative overflow-hidden group">
-              <h3 className="text-2xl sm:text-3xl font-black text-[#19281D] mb-4 uppercase tracking-tight">
+              <h3 className="text-2xl sm:text-3xl font-black text-[#19281D] mb-4 tracking-tight normal-case">
                 Secure your NT government solar savings before they change
               </h3>
               <p className="text-slate-600 text-lg mb-8 max-w-2xl mx-auto font-medium">
@@ -755,7 +755,7 @@ export function ResidentialSolarSystemPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
               <span className="text-xs font-bold tracking-widest text-[#8cc63f] uppercase mb-3 block">WHERE WE SERVE</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-tight leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Solar Installations Across <span className="text-[#8cc63f]">Darwin & the NT</span>
               </h2>
               <p className="text-lg text-slate-600 font-medium leading-relaxed">
@@ -781,7 +781,7 @@ export function ResidentialSolarSystemPage() {
                   </div>
 
                   <div className="flex-grow">
-                    <h3 className="text-2xl font-black text-white mb-2 leading-tight">{area.hub}</h3>
+                    <h3 className="text-2xl font-black text-white mb-2 leading-tight normal-case">{area.hub}</h3>
                     <span className="text-[10px] font-bold text-[#8cc63f] uppercase tracking-wider block mb-4">
                       Postcode: {area.postcodes}
                     </span>
@@ -812,7 +812,7 @@ export function ResidentialSolarSystemPage() {
                 <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#8cc63f]/5 rounded-full blur-2xl pointer-events-none" />
                 
                 <div className="flex-grow max-w-2xl mb-6 md:mb-0">
-                  <h3 className="text-2xl font-black text-white mb-3">Not Sure We Cover Your Area?</h3>
+                  <h3 className="text-2xl font-black text-white mb-3 normal-case">Not Sure We Cover Your Area?</h3>
                   <p className="text-slate-300 text-sm leading-relaxed">
                     If you are in the Northern Territory, we almost certainly do. Call us and we will confirm within one business day.
                   </p>
@@ -858,7 +858,7 @@ export function ResidentialSolarSystemPage() {
           <FadeIn>
             <div className="bg-[#0A1118] p-16 text-center rounded-[3rem] border border-emerald-950 shadow-2xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
-              <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight">
+              <h3 className="text-3xl sm:text-4xl font-black text-white mb-4 tracking-tight normal-case">
                 Lower your home electricity bills this season
               </h3>
               <p className="text-slate-300 text-lg mb-10 max-w-2xl mx-auto font-medium">
