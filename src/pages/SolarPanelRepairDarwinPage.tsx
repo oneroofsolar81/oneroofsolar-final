@@ -52,7 +52,7 @@ export function SolarPanelRepairDarwinPage() {
         "provider": {
           "@type": "LocalBusiness",
           "name": "Oneroof Solar",
-          "image": "https://oneroofsolar.com.au/assets/images/hosted/oneroof-logo-light.png",
+          "image": "https://oneroofsolar.com.au/assets/images/home/logo-oneroof.png",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "3/97 Pruen Rd",

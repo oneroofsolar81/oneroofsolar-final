@@ -238,10 +238,10 @@ export function Navbar() {
                     referrerPolicy="no-referrer"
                     src={
                       isDarkHeader
-                        ? "/assets/images/hosted/oneroof-logo-light.png"
+                        ? "/assets/images/home/logo-oneroof.png"
                         : isSolidHeader
-                        ? "/assets/images/hosted/oneroof-logo-classic.png"
-                        : "/assets/images/hosted/oneroof-logo-light.png"
+                        ? "/assets/images/home/logo-oneroof-classic.png"
+                        : "/assets/images/home/logo-oneroof.png"
                     }
                     alt="Oneroof Solar Logo"
                     className={`${
@@ -676,7 +676,7 @@ export function Navbar() {
               <Link to="/" onClick={handleMobileClose} className="flex items-center gap-2">
                 <img
                   referrerPolicy="no-referrer"
-                  src="/assets/images/hosted/oneroof-logo-light.png"
+                  src="/assets/images/home/logo-oneroof.png"
                   alt="Oneroof Solar Logo"
                   className="h-[46px] sm:h-[54px] w-auto max-w-none"
                   width={188}

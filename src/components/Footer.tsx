@@ -16,7 +16,7 @@ export function Footer() {
           <div className="lg:col-span-4">
             <Link to="/" className="inline-block mb-8">
               <img referrerPolicy="no-referrer" 
-                src="/assets/images/hosted/oneroof-logo-light.png" 
+                src="/assets/images/home/logo-oneroof.png" 
                 alt="Oneroof Solar Logo" 
                 className="h-[55px] w-auto max-w-none opacity-90 transition-opacity hover:opacity-100" 
                 width={190}

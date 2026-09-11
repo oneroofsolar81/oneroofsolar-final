@@ -43,7 +43,7 @@ export function SolarAliceSprings() {
       "provider": {
         "@type": "LocalBusiness",
         "name": "Oneroof Solar",
-        "image": "/assets/images/hosted/oneroof-logo-light.png",
+        "image": "/assets/images/home/logo-oneroof.png",
         "telephone": PRIMARY_PHONE,
         "email": "info@oneroofsolar.com.au",
         "address": {
@@ -165,7 +165,7 @@ export function SolarAliceSprings() {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Oneroof Solar Alice Springs",
-      "image": "/assets/images/hosted/oneroof-logo-light.png",
+      "image": "/assets/images/home/logo-oneroof.png",
       "telephone": PRIMARY_PHONE,
       "email": "info@oneroofsolar.com.au",
       "address": {

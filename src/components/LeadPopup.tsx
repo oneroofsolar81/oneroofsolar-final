@@ -129,7 +129,7 @@ export function LeadPopup() {
                   <div className="mb-4 lg:mb-6 relative">
                     <div className="absolute inset-0 bg-white/10 blur-xl rounded-full" />
                     <img referrerPolicy="no-referrer" 
-                      src="/assets/images/hosted/oneroof-logo-light.png" 
+                      src="/assets/images/home/logo-oneroof.png" 
                       alt="Oneroof Solar Logo" 
                       className="h-[50px] lg:h-[70px] w-auto max-w-none opacity-100 drop-shadow-lg relative z-10"
                       width={242}

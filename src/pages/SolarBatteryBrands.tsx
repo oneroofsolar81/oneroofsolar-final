@@ -151,7 +151,7 @@ export function SolarBatteryBrands() {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       name: "Oneroof Solar",
-      image: "/assets/images/hosted/oneroof-logo-light.png",
+      image: "/assets/images/home/logo-oneroof.png",
       telephone: PRIMARY_PHONE,
       email: "info@oneroofsolar.com.au",
       priceRange: "$$",
