@@ -34,10 +34,10 @@ export function SolarBatteryInstallation() {
     robots: "index, follow",
     openGraphTitle: "Solar Battery Installation Darwin, NT | Oneroof Solar",
     openGraphDescription: "Licensed solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
-    openGraphImage: "https://i.postimg.cc/Nf2ytHrg/Sigenergy-(1).webp",
+    openGraphImage: "/assets/images/hosted/products/sigen-battery.webp",
     twitterTitle: "Solar Battery Installation Darwin, NT | Oneroof Solar",
     twitterDescription: "Licensed solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
-    twitterImage: "https://i.postimg.cc/Nf2ytHrg/Sigenergy-(1).webp",
+    twitterImage: "/assets/images/hosted/products/sigen-battery.webp",
   };
 
   const serviceSchema = {
@@ -229,12 +229,12 @@ export function SolarBatteryInstallation() {
     {
       name: "Sigenergy",
       desc: "Next-generation integrated 5-in-one solar and high-voltage battery storage.",
-      image: "https://i.postimg.cc/qMznYkKw/Sigen-Battery-8-k-Wh-with-LED-removebg-preview.png"
+      image: "/assets/images/hosted/products/sigen-battery.webp"
     },
     {
       name: "Sungrow",
       desc: "High-yield modular lithium iron phosphate (LFP) storage with robust cycling longevity.",
-      image: "https://i.postimg.cc/6qnsnGMk/6383980259759580924379243-1-removebg-preview.png"
+      image: "/assets/images/hosted/products/sigen-battery-detail.webp"
     },
     {
       name: "BYD",
@@ -368,7 +368,7 @@ export function SolarBatteryInstallation() {
                   <div className="w-full h-full rounded-xl overflow-hidden bg-slate-950 flex items-center justify-center relative">
                     <img 
                       referrerPolicy="no-referrer"
-                      src="https://i.postimg.cc/Nf2ytHrg/Sigenergy-(1).webp" 
+                      src="/assets/images/hosted/products/sigen-battery.webp" 
                       alt="Solar battery installation in Darwin NT" 
                       className="w-full h-full object-cover"
                     />

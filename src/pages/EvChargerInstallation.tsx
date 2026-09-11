@@ -50,7 +50,7 @@ const evProducts = [
     title: "Fronius",
     description:
       "Intelligent charging solutions offering dynamic load balancing and optimal utilization of your surplus solar energy.",
-    image: "https://i.postimg.cc/2yrnqv99/Wattpilot-Go-22-J-2-0-AUS-bundle-removebg-preview.png",
+    image: "/assets/images/hosted/products/ev-charger.webp",
   },
 ];
 

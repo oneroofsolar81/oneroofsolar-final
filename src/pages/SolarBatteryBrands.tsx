@@ -30,7 +30,7 @@ const brands = [
     title: "Sigenergy",
     description:
       "A smart, whole-home battery system that's great if you want a battery that manages your power use intelligently, not just stores it. Suits homes wanting blackout backup, EV charging integration, and room to expand later.",
-    image: "https://i.postimg.cc/qMznYkKw/Sigen-Battery-8-k-Wh-with-LED-removebg-preview.png",
+    image: "/assets/images/hosted/products/sigen-battery.webp",
     specLabel: "Download Sigenergy Spec Sheet (PDF)",
     specHref: "/products/solar-battery-brands/sigenergy",
   },
@@ -38,7 +38,7 @@ const brands = [
     title: "Sungrow",
     description:
       "A reliable, well supported battery that's easy to stack and expand over time. A solid choice if you want a system backed by strong local technical support and the option to grow your storage down the track.",
-    image: "https://i.postimg.cc/6qnsnGMk/6383980259759580924379243-1-removebg-preview.png",
+    image: "/assets/images/hosted/products/sigen-battery-detail.webp",
     specLabel: "Download Sungrow Spec Sheet (PDF)",
     specHref: "/products/solar-inverters/sungrow-inverters",
   },
@@ -151,7 +151,7 @@ export function SolarBatteryBrands() {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       name: "Oneroof Solar",
-      image: "https://i.postimg.cc/vZdTgLm9/oneroof.png",
+      image: "/assets/images/hosted/oneroof-logo-light.png",
       telephone: PRIMARY_PHONE,
       email: "info@oneroofsolar.com.au",
       priceRange: "$$",

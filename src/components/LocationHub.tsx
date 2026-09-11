@@ -84,7 +84,7 @@ export function LocationHub({ data }: { data: LocationData }) {
       "provider": {
         "@type": "LocalBusiness",
         "name": "Oneroof Solar",
-        "image": "https://i.postimg.cc/vZdTgLm9/oneroof.png",
+        "image": "/assets/images/hosted/oneroof-logo-light.png",
         "telephone": PRIMARY_PHONE,
         "email": "info@oneroofsolar.com.au",
         "address": {
@@ -112,7 +112,7 @@ export function LocationHub({ data }: { data: LocationData }) {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": `Oneroof Solar ${data.breadcrumbName}`,
-      "image": "https://i.postimg.cc/vZdTgLm9/oneroof.png",
+      "image": "/assets/images/hosted/oneroof-logo-light.png",
       "telephone": PRIMARY_PHONE,
       "email": "info@oneroofsolar.com.au",
       "address": {

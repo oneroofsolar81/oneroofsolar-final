@@ -43,7 +43,7 @@ export function SolarAliceSprings() {
       "provider": {
         "@type": "LocalBusiness",
         "name": "Oneroof Solar",
-        "image": "https://i.postimg.cc/vZdTgLm9/oneroof.png",
+        "image": "/assets/images/hosted/oneroof-logo-light.png",
         "telephone": PRIMARY_PHONE,
         "email": "info@oneroofsolar.com.au",
         "address": {
@@ -165,7 +165,7 @@ export function SolarAliceSprings() {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Oneroof Solar Alice Springs",
-      "image": "https://i.postimg.cc/vZdTgLm9/oneroof.png",
+      "image": "/assets/images/hosted/oneroof-logo-light.png",
       "telephone": PRIMARY_PHONE,
       "email": "info@oneroofsolar.com.au",
       "address": {
@@ -306,7 +306,7 @@ export function SolarAliceSprings() {
                 <img
                   referrerPolicy="no-referrer"
                   fetchPriority="high"
-                  src="https://i.postimg.cc/htSc0sQH/Alice-Springs-0870-(1).webp"
+                  src="/assets/images/hosted/alice-springs-0870-1-.webp"
                   alt="Solar panels installation in Central Australia"
                   className="w-full h-full object-cover relative z-10 transition-transform duration-700 group-hover:scale-[1.02]"
                 />

@@ -1,3 +1,11 @@
+const PARTNER_LOGOS = [
+  { src: "/assets/images/hosted/partner-1.png", alt: "Partner brand 1" },
+  { src: "/assets/images/hosted/partner-2.png", alt: "Partner brand 2" },
+  { src: "/assets/images/hosted/partner-3.png", alt: "Partner brand 3" },
+  { src: "/assets/images/hosted/partner-4.png", alt: "Partner brand 4" },
+  { src: "/assets/images/hosted/partner-5.png", alt: "Partner brand 5" },
+];
+
 export function PartnersMarquee() {
   return (
     <section className="py-12 border-b border-slate-200 bg-white overflow-hidden relative">
@@ -10,11 +18,17 @@ export function PartnersMarquee() {
         {/* We render the original set and duplicate it immediately for seamless looping */}
         {[...Array(2)].map((_, i) => (
           <div key={i} className="flex gap-16 md:gap-24 items-center justify-around flex-shrink-0 px-8 w-max">
-            <img referrerPolicy="no-referrer" loading="lazy" src="https://i.postimg.cc/VsW-wzvGJ/Chat-GPT-Image-Jun-5-2026-11-54-38-PM.png" alt="Partner 1" className="h-20 md:h-24 w-auto object-contain mix-blend-multiply" />
-            <img referrerPolicy="no-referrer" loading="lazy" src="https://i.postimg.cc/tg4ZN8sH/Chat-GPT-Image-Jun-6-2026-01-38-27-AM.png" alt="Partner 2" className="h-20 md:h-24 w-auto object-contain mix-blend-multiply" />
-            <img referrerPolicy="no-referrer" loading="lazy" src="https://i.postimg.cc/wB84tcMF/Chat-GPT-Image-Jun-6-2026-01-45-19-AM.png" alt="Partner 3" className="h-20 md:h-24 w-auto object-contain mix-blend-multiply" />
-            <img referrerPolicy="no-referrer" loading="lazy" src="https://i.postimg.cc/SsVgtBrP/Chat-GPT-Image-Jun-6-2026-01-51-16-AM.png" alt="Partner 4" className="h-20 md:h-24 w-auto object-contain mix-blend-multiply" />
-            <img referrerPolicy="no-referrer" loading="lazy" src="https://i.postimg.cc/tJYNvY7C/Chat-GPT-Image-Jun-6-2026-02-08-13-AM.png" alt="Partner 5" className="h-20 md:h-24 w-auto object-contain mix-blend-multiply" />
+            {PARTNER_LOGOS.map((logo) => (
+              <img
+                key={`${i}-${logo.src}`}
+                referrerPolicy="no-referrer"
+                loading="lazy"
+                src={logo.src}
+                alt={logo.alt}
+                className="h-20 md:h-24 w-auto max-w-none object-contain mix-blend-multiply"
+                height={96}
+              />
+            ))}
           </div>
         ))}
       </div>

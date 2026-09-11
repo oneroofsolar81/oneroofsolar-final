@@ -219,9 +219,12 @@
     letter-spacing: 0.01em !important;
   }
 
-  /* Images: keep them fluid and prevent layout shift while loading */
+  /* Images: keep content images fluid without breaking fixed-height logos */
   img {
     max-width: 100%;
+  }
+
+  img:not([height]):not([class*="h-"]) {
     height: auto;
   }
 }

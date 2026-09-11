@@ -40,7 +40,7 @@ const DEFAULT_SERVICES = [
       "Reduce peak demand charges",
       "Seamless hybrid inverter integration"
     ],
-    image: "https://i.postimg.cc/VN7B2NkJ/DSC00505-Enhanced-NR-(1)-jpg-(2)-(1).webp"
+    image: "/assets/images/home/home-premium-aerial.webp"
   },
   {
     title: "EV Chargers",

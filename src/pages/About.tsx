@@ -94,7 +94,7 @@ export function About() {
             <FadeIn isHero delay={0.2} className="relative mt-12 lg:mt-0">
               <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-4 border-slate-800/80 min-h-[500px] lg:min-h-[700px] w-full group">
                 <div className="absolute inset-0 bg-gradient-to-tr from-brand-500/20 to-transparent mix-blend-overlay z-10 pointer-events-none transition-opacity duration-500 group-hover:opacity-40"></div>
-                <img referrerPolicy="no-referrer" fetchPriority="high" src="https://i.postimg.cc/rw0QWBNZ/6-2-(1).webp" alt="Solar installation team" className="absolute inset-0 w-full h-full object-cover transform hover:scale-110 transition-transform duration-[2000ms]" />
+                <img referrerPolicy="no-referrer" fetchPriority="high" src="/assets/images/hosted/about-team.webp" alt="Solar installation team" className="absolute inset-0 w-full h-full object-cover transform hover:scale-110 transition-transform duration-[2000ms]" />
               </div>
               <div className="absolute -bottom-8 -left-8 lg:-bottom-12 lg:-left-12 bg-white p-6 lg:p-8 rounded-[2rem] shadow-2xl z-20 flex items-center gap-6 max-w-sm">
                 <div className="w-20 h-20 rounded-full border-4 border-white bg-brand-100 flex items-center justify-center text-brand-600 shadow-inner flex-shrink-0">

@@ -295,7 +295,7 @@ export function Home() {
         "@type": "Organization",
         "name": "Oneroof Solar",
         "url": "https://oneroofsolar.com.au",
-        "logo": "https://oneroofsolar.com.au/logo.png",
+        "logo": "https://oneroofsolar.com.au/assets/images/hosted/oneroof-logo-light.png",
         "telephone": "0483986444",
         "email": "info@oneroofsolar.com.au",
         "address": {"@type": "PostalAddress", "addressLocality": "Darwin", "addressRegion": "NT", "postalCode": "0800", "addressCountry": "AU"}

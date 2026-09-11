@@ -166,7 +166,7 @@ export function SolarInvertersProductPage() {
       heading: "Sungrow - Industry-Leading Value",
       description: "The most installed solar inverter brand in Australia in 2026. Sungrow hybrid inverters handle solar panels, battery storage and grid connection in one unit, with strong local Australian support and competitive pricing.",
       bestFor: "Homes and businesses wanting reliable hybrid inverter performance at a competitive price",
-      image: "https://i.postimg.cc/tg4ZN8sH/Chat-GPT-Image-Jun-6-2026-01-38-27-AM.png",
+      image: "/assets/images/hosted/partner-2.png",
       alt: "Sungrow Solar Inverter",
       href: "/products/solar-inverters/sungrow-inverters",
       linkText: "EXPLORE SUNGROW"
@@ -184,7 +184,7 @@ export function SolarInvertersProductPage() {
       heading: "Sigenergy - Solar, Battery and EV in One",
       description: "Sigenergy integrates solar generation, battery storage and EV charging into a single intelligent platform. One system manages your property's full energy profile without the need for separate devices.",
       bestFor: "Homeowners adding EV charging or wanting full energy management in one platform",
-      image: "https://i.postimg.cc/wB84tcMF/Chat-GPT-Image-Jun-6-2026-01-45-19-AM.png",
+      image: "/assets/images/hosted/partner-3.png",
       alt: "Sigenergy Solar Inverter System",
       href: "/products/solar-inverters/sigenergy",
       linkText: "EXPLORE SIGENERGY"
@@ -193,7 +193,7 @@ export function SolarInvertersProductPage() {
       heading: "GoodWe - Flexible and Battery-Ready",
       description: "GoodWe offers one of the widest ranges of hybrid and battery-ready solar inverters available in Australia. Every GoodWe inverter is designed for easy battery addition now or in the future.",
       bestFor: "Homes and businesses planning to add battery storage now or later",
-      image: "https://i.postimg.cc/SsVgtBrP/Chat-GPT-Image-Jun-6-2026-01-51-16-AM.png",
+      image: "/assets/images/hosted/partner-4.png",
       alt: "GoodWe Solar Inverter",
       href: "/products/solar-inverters/goodwe",
       linkText: "EXPLORE GOODWE"
@@ -202,7 +202,7 @@ export function SolarInvertersProductPage() {
       heading: "Foxess - Smart Monitoring and Design",
       description: "Foxess inverters combine advanced solar conversion with cutting-edge monitoring and a smart, compact design. Strong grid stability features and detailed app-based monitoring make them a practical choice for installations.",
       bestFor: "Homeowners who want detailed real-time system monitoring and a compact unit design",
-      image: "https://i.postimg.cc/tJYNvY7C/Chat-GPT-Image-Jun-6-2026-02-08-13-AM.png",
+      image: "/assets/images/hosted/partner-5.png",
       alt: "Foxess Solar Inverter",
       href: "/products/solar-inverters/fox-ess",
       linkText: "EXPLORE FOX ESS"

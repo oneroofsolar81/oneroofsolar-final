@@ -238,15 +238,17 @@ export function Navbar() {
                     referrerPolicy="no-referrer"
                     src={
                       isDarkHeader
-                        ? "https://i.postimg.cc/vZdTgLm9/oneroof.png"
+                        ? "/assets/images/hosted/oneroof-logo-light.png"
                         : isSolidHeader
-                        ? "https://i.postimg.cc/44Dzn7Hk/oneroof-solar-classic.png"
-                        : "https://i.postimg.cc/vZdTgLm9/oneroof.png"
+                        ? "/assets/images/hosted/oneroof-logo-classic.png"
+                        : "/assets/images/hosted/oneroof-logo-light.png"
                     }
                     alt="Oneroof Solar Logo"
                     className={`${
                       scrolled ? "h-[42px] sm:h-[50px] md:h-[58px]" : "h-[50px] sm:h-[58px] md:h-[74px]"
-                    } w-auto transition-all duration-300`}
+                    } w-auto max-w-none transition-all duration-300`}
+                    width={256}
+                    height={74}
                     fetchPriority="high"
                     loading="eager"
                   />
@@ -674,9 +676,11 @@ export function Navbar() {
               <Link to="/" onClick={handleMobileClose} className="flex items-center gap-2">
                 <img
                   referrerPolicy="no-referrer"
-                  src="https://i.postimg.cc/vZdTgLm9/oneroof.png"
+                  src="/assets/images/hosted/oneroof-logo-light.png"
                   alt="Oneroof Solar Logo"
-                  className="h-[46px] sm:h-[54px] w-auto"
+                  className="h-[46px] sm:h-[54px] w-auto max-w-none"
+                  width={188}
+                  height={54}
                 />
               </Link>
               <button

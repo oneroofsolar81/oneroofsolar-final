@@ -21,7 +21,7 @@ const projects = [
     systemSize: "13.2kW",
     battery: "None",
     description: "Premium solar installation for maximizing renewable energy usage.",
-    image: "https://i.postimg.cc/htSc0sQH/Alice-Springs-0870-(1).webp",
+    image: "/assets/images/hosted/alice-springs-0870-1-.webp",
     tags: ["Residential", "Premium"]
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     systemSize: "6.6kW",
     battery: "None",
     description: "Efficient solar energy system reducing household electricity bills.",
-    image: "https://i.postimg.cc/KYkV73fq/Bayview-0820.webp",
+    image: "/assets/images/home/home-project-bayview.webp",
     tags: ["Residential"]
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     systemSize: "8kW",
     battery: "13.5kWh",
     description: "Solar with battery backup for energy independence.",
-    image: "https://i.postimg.cc/xjRszPYm/Bellamack-0832-(2)-(1).webp",
+    image: "/assets/images/home/home-project-bellamack.webp",
     tags: ["Residential", "Battery"]
   },
   {
@@ -54,7 +54,7 @@ const projects = [
     systemSize: "10kW",
     battery: "None",
     description: "Commercial setup. Large scale solar installation.",
-    image: "https://i.postimg.cc/ydTT0VqV/Berrimah-0828.webp",
+    image: "/assets/images/home/home-project-berrimah.webp",
     tags: ["Commercial"]
   },
   {
@@ -65,7 +65,7 @@ const projects = [
     systemSize: "13.2kW",
     battery: "12.8kWh FoxESS",
     description: "Complete home energy independence with blackout protection.",
-    image: "https://i.postimg.cc/8Cmv0tZR/Desert-Springs-0870.webp",
+    image: "/assets/images/hosted/aerial.webp",
     tags: ["Residential", "Battery", "Off-grid capable"]
   },
   {
@@ -76,7 +76,7 @@ const projects = [
     systemSize: "9.9kW",
     battery: "None",
     description: "Robust solar panel installation designed for maximum energy yield.",
-    image: "https://i.postimg.cc/HxPVqKXm/Herbert-0836-(2)-(1).jpg",
+    image: "/assets/images/home/home-project-bayview.webp",
     tags: ["Residential"]
   },
   {
@@ -87,7 +87,7 @@ const projects = [
     systemSize: "15kW",
     battery: "25.6kWh Bank",
     description: "Off-grid setup for remote property lacking reliable grid connection.",
-    image: "https://i.postimg.cc/KzVPyQMM/Humpty-Doo-0836-(1).jpg",
+    image: "/assets/images/home/home-project-berrimah.webp",
     tags: ["Rural", "Off-grid"]
   },
   {
@@ -98,7 +98,7 @@ const projects = [
     systemSize: "6.6kW",
     battery: "None",
     description: "Standard tier-1 solar system ensuring optimized daytime energy usage.",
-    image: "https://i.postimg.cc/W3DZSrH2/Karama-0812-(1)-(1).jpg",
+    image: "/assets/images/home/home-about-stuart-park.webp",
     tags: ["Residential"]
   },
   {
@@ -109,7 +109,7 @@ const projects = [
     systemSize: "8.5kW",
     battery: "None",
     description: "Clean energy upgrade for suburban household to slash energy costs.",
-    image: "https://i.postimg.cc/0jRzf4Sd/Leanyer-0812-(1).jpg",
+    image: "/assets/images/home/home-battery-nightcliff.webp",
     tags: ["Residential"]
   },
   {
@@ -120,7 +120,7 @@ const projects = [
     systemSize: "10.5kW",
     battery: "16kWh Sungrow",
     description: "Integrated smart home solar setup with EV charging capabilities.",
-    image: "https://i.postimg.cc/43jyf0BL/Ludmilla-0820.jpg",
+    image: "/assets/images/home/home-premium-aerial.webp",
     tags: ["Residential", "Battery", "EV Ready"]
   },
   {
@@ -131,7 +131,7 @@ const projects = [
     systemSize: "13.2kW",
     battery: "None",
     description: "Modern solar installation tailored to seamlessly fit the house design.",
-    image: "https://i.postimg.cc/SxvNd5FN/Lyons-0810-(1).jpg",
+    image: "/assets/images/hosted/aerial.webp",
     tags: ["Residential", "Premium"]
   },
   {
@@ -142,7 +142,7 @@ const projects = [
     systemSize: "6.6kW",
     battery: "None",
     description: "Cost-effective solar setup to minimize daytime power consumption.",
-    image: "https://i.postimg.cc/QxzRyrtw/Marrara-0812-(1)-(2).jpg",
+    image: "/assets/images/home/home-project-bayview.webp",
     tags: ["Residential"]
   },
   {
@@ -153,7 +153,7 @@ const projects = [
     systemSize: "10kW",
     battery: "None",
     description: "Sleek and efficient grid-tied system for a modern residential property.",
-    image: "https://i.postimg.cc/76BBJgTq/Humpty-Doo-0836-(2)-(1).jpg",
+    image: "/assets/images/home/home-project-bellamack.webp",
     tags: ["Residential"]
   },
   {
@@ -164,7 +164,7 @@ const projects = [
     systemSize: "6.6kW",
     battery: "None",
     description: "High performance system providing significant energy savings.",
-    image: "https://i.postimg.cc/8CNwyyhw/Muirhead-0810-(1).jpg",
+    image: "/assets/images/home/home-project-berrimah.webp",
     tags: ["Residential"]
   },
   {
@@ -175,7 +175,7 @@ const projects = [
     systemSize: "10kW",
     battery: "10kWh",
     description: "Beautiful clean install facing out towards the coast.",
-    image: "https://i.postimg.cc/sgc0RdDQ/Nightcliff-0810-(2)-(3).jpg",
+    image: "/assets/images/home/home-battery-nightcliff.webp",
     tags: ["Residential", "Battery"]
   },
   {
@@ -186,7 +186,7 @@ const projects = [
     systemSize: "8.5kW",
     battery: "None",
     description: "Maximizing the roof footprint to slash utility bills completely.",
-    image: "https://i.postimg.cc/8Pwhp1WL/Rosebery-0832-(1).jpg",
+    image: "/assets/images/home/home-project-bellamack.webp",
     tags: ["Residential"]
   },
   {
@@ -197,7 +197,7 @@ const projects = [
     systemSize: "6.6kW",
     battery: "None",
     description: "City living powered by the sun. Exceptional roof layout.",
-    image: "https://i.postimg.cc/9FX7NvSL/Stuart-Park-0820-(1).jpg",
+    image: "/assets/images/home/home-about-stuart-park.webp",
     tags: ["Residential"]
   }
 ];

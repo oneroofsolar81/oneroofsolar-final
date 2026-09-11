@@ -73,7 +73,7 @@ export function SigenergyBatteryPage() {
       "name": "Sigenergy Battery Systems",
       "brand": { "@type": "Brand", "name": "Sigenergy" },
       "manufacturer": { "@type": "Organization", "name": "Sigenergy" },
-      "image": "https://i.postimg.cc/vZdTgLm9/oneroof.png",
+      "image": "/assets/images/hosted/oneroof-logo-light.png",
       "category": "Home Battery Storage",
       "description":
         "SAA Approved Sigenergy home and commercial battery storage systems with LiFePO4 cells, IP66 rating, and 5.0 kWh or 8.0 kWh stackable capacity. Supplied and installed across Darwin, Palmerston and the wider Northern Territory.",
@@ -110,7 +110,7 @@ export function SigenergyBatteryPage() {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Oneroof Solar",
-      "image": "https://i.postimg.cc/vZdTgLm9/oneroof.png",
+      "image": "/assets/images/hosted/oneroof-logo-light.png",
       "telephone": PRIMARY_PHONE,
       "email": "info@oneroofsolar.com.au",
       "priceRange": "$$",

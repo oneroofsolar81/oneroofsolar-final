@@ -56,7 +56,7 @@ const BRAND_PRODUCTS: ProductBrand[] = [
     bestFor: "Darwin homes where heat performance is the top priority and the NT dry season runs your panels hard every day.",
     specLabel: "Full specs and models: REC solar panels",
     productLink: "/solar-panels-brands/rec/",
-    image: "https://i.postimg.cc/Th46LV0n/REC-Alpha-Series-removebg-preview.png",
+    image: "/assets/images/hosted/products/ja-solar.webp",
   },
   {
     id: "jinko",
@@ -66,7 +66,7 @@ const BRAND_PRODUCTS: ProductBrand[] = [
     bestFor: "NT homeowners who want a proven global brand with a competitive price point and reliable long-term support.",
     specLabel: "Full specs and models: Jinko solar panels",
     productLink: "/solar-panels/jinko/",
-    image: "https://i.postimg.cc/T58B094S/Jinko-Solar-Tiger-Neo-JKM585N-72HL4-BDV-585W-ver2-1-removebg-preview-(1).png",
+    image: "/assets/images/hosted/products/jinko.webp",
   },
   {
     id: "ja-solar",
@@ -345,7 +345,7 @@ export function SolarPanelsBrands() {
               <img
                 referrerPolicy="no-referrer"
                 fetchPriority="high"
-                src="https://i.postimg.cc/ZqJnC3Sv/high-level-description-shot-on-iphone-a-Q9Cc-Iy-X7X-u10npe4Pfzlg-ngfs-MO-1Tw-CCPDb0e-Ibtc-A-cover-sd.jpg"
+                src="/assets/images/hosted/aerial.webp"
                 alt="Premium Solar Panel Brands NT"
                 className="relative z-10 w-full h-[600px] object-cover rounded-[3rem] border border-white/10 shadow-2xl opacity-90"
               />
@@ -436,7 +436,7 @@ export function SolarPanelsBrands() {
                   <img
                     referrerPolicy="no-referrer"
                     loading="lazy"
-                    src="https://i.postimg.cc/ZqJnC3Sv/high-level-description-shot-on-iphone-a-Q9Cc-Iy-X7X-u10npe4Pfzlg-ngfs-MO-1Tw-CCPDb0e-Ibtc-A-cover-sd.jpg"
+                    src="/assets/images/hosted/aerial.webp"
                     alt="AIKO ABC, REC HJT and Jinko TOPCon solar panel brands installed by Oneroof Solar across Darwin and the Northern Territory"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
                   />

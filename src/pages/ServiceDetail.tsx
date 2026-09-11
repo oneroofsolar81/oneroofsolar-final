@@ -618,7 +618,7 @@ const servicesData: Record<
       },
     ],
     image:
-      "https://i.postimg.cc/htSc0sQH/Alice-Springs-0870-(1).webp",
+      "/assets/images/hosted/alice-springs-0870-1-.webp",
     faqs: [
       {
         q: "Do I need a solar system for my power system?",
@@ -667,7 +667,7 @@ const servicesData: Record<
       },
     ],
     image:
-      "https://i.postimg.cc/1zZz07Xx/Alice-Springs-0870-JPG-(2)-(1).webp",
+      "/assets/images/hosted/alice-springs-0870-1-.webp",
     faqs: [
       {
         q: "What are the financial benefits for my business?",
@@ -712,14 +712,14 @@ const servicesData: Record<
         description:
           "High-performance modular battery storage solutions offering scalable capacity, deep cycling capabilities, and robust longevity.",
         image:
-          "https://i.postimg.cc/6qnsnGMk/6383980259759580924379243-1-removebg-preview.png",
+          "/assets/images/hosted/products/sigen-battery-detail.webp",
       },
       {
         title: "Sigenergy",
         description:
           "Advanced energy storage systems that integrate seamlessly with your solar panel arrays to provide efficient and reliable backup power.",
         image:
-          "https://i.postimg.cc/qMznYkKw/Sigen-Battery-8-k-Wh-with-LED-removebg-preview.png",
+          "/assets/images/hosted/products/sigen-battery.webp",
       },
       {
         title: "GoodWe",
@@ -737,7 +737,7 @@ const servicesData: Record<
       },
     ],
     image:
-      "https://i.postimg.cc/Nf2ytHrg/Sigenergy-(1).webp",
+      "/assets/images/hosted/products/sigen-battery.webp",
     faqs: [
       {
         q: "Can a battery run my whole house during a blackout?",
@@ -788,7 +788,7 @@ const servicesData: Record<
         title: "Fronius",
         description:
           "Intelligent charging solutions offering dynamic load balancing and optimal utilization of your surplus solar energy.",
-        image: "https://i.postimg.cc/2yrnqv99/Wattpilot-Go-22-J-2-0-AUS-bundle-removebg-preview.png",
+        image: "/assets/images/hosted/products/ev-charger.webp",
       },
     ],
     image:
@@ -837,14 +837,14 @@ const servicesData: Record<
         description:
           "Premium Austrian-engineered inverters offering advanced monitoring, smart grid readiness, and exceptional long-term performance.",
         image:
-          "https://i.postimg.cc/xCDvpbfw/Primo-Gen24-bd96687e-0179-46bd-9f1c-6fef4ea2ca75-800x800-removebg-preview.png",
+          "/assets/images/hosted/products/fronius.webp",
       },
       {
         title: "Sigenergy",
         description:
           "Intelligent energy solutions that seamlessly integrate solar generation, storage, and EV charging within a single unified platform.",
         image:
-          "https://i.postimg.cc/JhXTZNKm/Sigenergy-M1PVInverter50-125k-WThree-Phase-Commercial-String-Solar-Inverter-removebg-preview-(3).png",
+          "/assets/images/hosted/products/inverter-hero.webp",
       },
       {
         title: "GoodWe",
@@ -858,11 +858,11 @@ const servicesData: Record<
         description:
           "Advanced solar inverters featuring cutting-edge design, delivering powerful performance and smart energy management capabilities.",
         image:
-          "https://i.postimg.cc/8zmdSZyT/Fox-K-Series-IP65-Protection-7kw-8kw-9kw-10kw-10-5kw-Single-Phase-Hybrid-Inverter-removebg-preview-(.png",
+          "/assets/images/hosted/products/inverter-hero.webp",
       },
     ],
     image:
-      "https://i.postimg.cc/WzCPSt2q/DSC00505-Enhanced-NR-jpg-(3)-(1).webp",
+      "/assets/images/home/home-premium-aerial.webp",
     faqs: [
       {
         q: "Do I need a solar inverter for my solar power system?",
@@ -956,18 +956,18 @@ const servicesData: Record<
         description:
           "Pioneering highly efficient, low-degradation solar panels backed by an industry-leading comprehensive 25-year ProTrust warranty.",
         image:
-          "https://i.postimg.cc/Th46LV0n/REC-Alpha-Series-removebg-preview.png",
+          "/assets/images/hosted/products/ja-solar.webp",
       },
       {
         title: "JINKO SOLAR",
         description:
           "Globally recognized Tier 1 solar panels offering superior reliability, excellent low-light performance, and tremendous value.",
         image:
-          "https://i.postimg.cc/T58B094S/Jinko-Solar-Tiger-Neo-JKM585N-72HL4-BDV-585W-ver2-1-removebg-preview-(1).png",
+          "/assets/images/hosted/products/jinko.webp",
       },
     ],
     image:
-      "https://i.postimg.cc/ZqJnC3Sv/high-level-description-shot-on-iphone-a-Q9Cc-Iy-X7X-u10npe4Pfzlg-ngfs-MO-1Tw-CCPDb0e-Ibtc-A-cover-sd.jpg",
+      "/assets/images/hosted/aerial.webp",
     faqs: [
       {
         q: "Which solar panel technology is best?",
@@ -1110,18 +1110,18 @@ const servicesData: Record<
         description:
           "Advanced energy storage systems that integrate seamlessly with your solar panel arrays to provide efficient and reliable backup power.",
         image:
-          "https://i.postimg.cc/qMznYkKw/Sigen-Battery-8-k-Wh-with-LED-removebg-preview.png",
+          "/assets/images/hosted/products/sigen-battery.webp",
       },
       {
         title: "Sungrow",
         description:
           "High-performance modular battery storage solutions offering scalable capacity, deep cycling capabilities, and robust longevity.",
         image:
-          "https://i.postimg.cc/6qnsnGMk/6383980259759580924379243-1-removebg-preview.png",
+          "/assets/images/hosted/products/sigen-battery-detail.webp",
       },
     ],
     image:
-      "https://i.postimg.cc/Nf2ytHrg/Sigenergy-(1).webp",
+      "/assets/images/hosted/products/sigen-battery.webp",
     faqs: [
       {
         q: "Is it safe to have a big battery inside?",
@@ -1519,7 +1519,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Oneroof Solar",
-        "image": "https://oneroofsolar.com.au/assets/logo.png",
+        "image": "https://oneroofsolar.com.au/assets/images/hosted/oneroof-logo-light.png",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "3/97 Pruen Rd",
@@ -1540,7 +1540,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
         "provider": {
           "@type": "LocalBusiness",
           "name": "Oneroof Solar",
-          "image": "https://oneroofsolar.com.au/assets/logo.png",
+          "image": "https://oneroofsolar.com.au/assets/images/hosted/oneroof-logo-light.png",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "3/97 Pruen Rd",
@@ -1686,7 +1686,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <div className="absolute inset-0 bg-[#8cc63f]/25 rounded-[3rem] transform rotate-3 scale-105 transition-transform duration-700 group-hover:rotate-6 blur-sm"></div>
                 <div className="relative h-full rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl flex items-center justify-center bg-slate-900">
                   <img referrerPolicy="no-referrer" loading="lazy"
-                    src="https://i.postimg.cc/ZqJnC3Sv/high-level-description-shot-on-iphone-a-Q9Cc-Iy-X7X-u10npe4Pfzlg-ngfs-MO-1Tw-CCPDb0e-Ibtc-A-cover-sd.jpg"
+                    src="/assets/images/hosted/aerial.webp"
                     alt="solar panels Darwin, Oneroof Solar rooftop system"
                     className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000 opacity-80"
                   />

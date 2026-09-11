@@ -95,10 +95,10 @@ export function CommercialSolarSystemPage() {
     robots: "index, follow",
     openGraphTitle: "Commercial Solar Systems Darwin and Alice Springs NT | Oneroof Solar",
     openGraphDescription: "Oneroof Solar installs commercial solar systems for NT businesses from 30kW to 100kW+. STC and LGC incentives, PPA options, 3 to 5-year payback. Get a free business quote.",
-    openGraphImage: "https://i.postimg.cc/1zZz07Xx/Alice-Springs-0870-JPG-(2)-(1).webp",
+    openGraphImage: "/assets/images/hosted/alice-springs-0870-1-.webp",
     twitterTitle: "Commercial Solar Systems Darwin and Alice Springs NT | Oneroof Solar",
     twitterDescription: "Oneroof Solar installs commercial solar systems for NT businesses from 30kW to 100kW+. STC and LGC incentives, PPA options, 3 to 5-year payback. Get a free business quote.",
-    twitterImage: "https://i.postimg.cc/1zZz07Xx/Alice-Springs-0870-JPG-(2)-(1).webp",
+    twitterImage: "/assets/images/hosted/alice-springs-0870-1-.webp",
   };
 
   const faqs = [
@@ -146,7 +146,7 @@ export function CommercialSolarSystemPage() {
       "name": "Oneroof Solar",
       "telephone": "0483986444",
       "url": "https://oneroofsolar.com.au",
-      "image": "https://i.postimg.cc/1zZz07Xx/Alice-Springs-0870-JPG-(2)-(1).webp"
+      "image": "/assets/images/hosted/alice-springs-0870-1-.webp"
     },
     "telephone": "0483986444",
     "areaServed": [
@@ -201,7 +201,7 @@ export function CommercialSolarSystemPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Oneroof Solar",
-    "image": "https://i.postimg.cc/1zZz07Xx/Alice-Springs-0870-JPG-(2)-(1).webp",
+    "image": "/assets/images/hosted/alice-springs-0870-1-.webp",
     "telephone": "0483986444",
     "priceRange": "$$",
     "address": {
@@ -371,7 +371,7 @@ export function CommercialSolarSystemPage() {
                     <img 
                       referrerPolicy="no-referrer"
                       loading="lazy"
-                      src="https://i.postimg.cc/1zZz07Xx/Alice-Springs-0870-JPG-(2)-(1).webp" 
+                      src="/assets/images/hosted/alice-springs-0870-1-.webp" 
                       alt="Alice Springs commercial solar installation" 
                       className="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700"
                     />
