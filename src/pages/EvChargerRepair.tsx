@@ -259,23 +259,53 @@ export function EvChargerRepair() {
         </div>
       </section>
 
-      <section className="py-24 bg-white relative border-b border-slate-200">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
-              What Does EV Charger Repair Involve in Darwin?
-            </h2>
-            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
-              <p>
-                A faulty EV charger usually shows as a car that will not charge overnight, a unit that trips the breaker, an error light, or a charger that died after rain or a storm. Left alone, a small wiring or seal fault can turn into a failed board, and what would have been a repair becomes a full replacement.
-              </p>
-              <p>
-                Oneroof Solar diagnoses and repairs EV chargers across Darwin, Palmerston, and rural NT. We check the charger, the circuit, and the isolator, then tell you whether a repair or a replacement is the better spend. If you need a new unit instead, we handle{" "}
-                <Link to="/services/ev-chargers/installation" className={linkClass}>EV charger installation</Link>{" "}
-                as well, so you are not bounced between two contractors.
-              </p>
-            </div>
-          </FadeIn>
+      <section className="py-20 lg:py-24 bg-white relative border-b border-slate-200 overflow-hidden">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            <FadeIn className="lg:col-span-6 order-2 lg:order-1">
+              <div className="relative rounded-[2rem] overflow-hidden shadow-[0_24px_60px_-20px_rgba(15,23,42,0.35)] aspect-[4/3] bg-slate-100">
+                <img
+                  src="/assets/images/hosted/ev-charger-repair-diagnosis.webp"
+                  alt="Licensed electrician diagnosing a wall-mounted EV charger and isolator in Darwin"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0A1118]/80 via-[#0A1118]/20 to-transparent p-5 sm:p-6">
+                  <p className="text-white text-sm sm:text-base font-semibold leading-snug">
+                    We check the charger, circuit, and isolator before any repair
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.12} className="lg:col-span-6 order-1 lg:order-2">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
+                What Does EV Charger Repair Involve in Darwin?
+              </h2>
+              <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-5">
+                <p>
+                  A faulty EV charger usually shows as a car that will not charge overnight, a unit that trips the breaker, an error light, or a charger that died after rain or a storm. Left alone, a small wiring or seal fault can turn into a failed board, and what would have been a repair becomes a full replacement.
+                </p>
+                <p>
+                  Oneroof Solar diagnoses and repairs EV chargers across Darwin, Palmerston, and rural NT. We check the charger, the circuit, and the isolator, then tell you whether a repair or a replacement is the better spend. If you need a new unit instead, we handle{" "}
+                  <Link to="/services/ev-chargers/installation" className={linkClass}>EV charger installation</Link>{" "}
+                  as well, so you are not bounced between two contractors.
+                </p>
+              </div>
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {[
+                  { icon: Search, label: "Fault diagnosis" },
+                  { icon: Wrench, label: "Repair or replace" },
+                  { icon: BadgeCheck, label: "Licensed work" },
+                ].map((item) => (
+                  <div key={item.label} className="flex items-center gap-2.5 rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-3">
+                    <item.icon className="w-4 h-4 text-[#8cc63f] shrink-0" />
+                    <span className="text-sm font-semibold text-slate-800 leading-tight">{item.label}</span>
+                  </div>
+                ))}
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
