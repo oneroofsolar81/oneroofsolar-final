@@ -13,6 +13,10 @@ import {
   ChevronDown,
   FileDown,
   Clock,
+  Sun,
+  Cpu,
+  CircleDollarSign,
+  BadgeCheck,
 } from "lucide-react";
 import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
@@ -369,85 +373,137 @@ export function GoodWeBatteryPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-white relative border-b border-slate-200">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
-              Pairing GoodWe With Your Solar Panels
-            </h2>
-            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
-              <p>A battery on its own does not do much. It is what it pairs with that makes the difference.</p>
-              <p>
-                If you already have solar panels installed, a GoodWe battery can usually be added to your existing setup without starting from scratch. We will check your current system as part of your quote to confirm compatibility.
-              </p>
-              <p>
-                Starting from zero? We can quote your{" "}
-                <Link to="/solar-systems/residential-solar-system" className={linkClass}>residential solar system</Link>{" "}
-                and GoodWe battery together, so everything is sized properly from day one rather than bolted on later.
-              </p>
-              <p>
-                Running a business? Check out our{" "}
-                <Link to="/solar-systems/commercial-solar-system" className={linkClass}>commercial solar systems</Link>{" "}
-                for setups built around higher daytime usage. For rural NT properties off the grid, our{" "}
-                <Link to="/solar-systems/off-grid-solar-system" className={linkClass}>off grid solar systems</Link>{" "}
-                page covers what a GoodWe battery can do when there is no mains power to fall back on.
-              </p>
-              <p>
-                Already have an inverter that is not playing nicely with a new battery? Have a look at our{" "}
-                <Link to="/products/solar-inverters" className={linkClass}>solar inverters</Link>{" "}
-                range or get in touch about{" "}
-                <Link to="/services/solar-inverters/installation" className={linkClass}>inverter installation</Link>.
-              </p>
-            </div>
-          </FadeIn>
+      <section className="py-20 lg:py-24 bg-white relative border-b border-slate-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-12">
+            <FadeIn className="lg:col-span-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
+                Pairing GoodWe With Your Solar Panels
+              </h2>
+              <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-5">
+                <p>A battery on its own does not do much. It is what it pairs with that makes the difference.</p>
+                <p>
+                  If you already have solar panels installed, a GoodWe battery can usually be added to your existing setup without starting from scratch. We will check your current system as part of your quote to confirm compatibility.
+                </p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.1} className="lg:col-span-6">
+              <div className="relative rounded-[2rem] overflow-hidden shadow-[0_24px_60px_-20px_rgba(15,23,42,0.35)] aspect-[4/3] bg-slate-100">
+                <img
+                  src="/assets/images/hosted/goodwe-solar-pairing.webp"
+                  alt="Darwin home with rooftop solar panels paired with a wall-mounted battery"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </FadeIn>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { icon: Home, title: "Starting fresh", text: <>Quote a <Link to="/solar-systems/residential-solar-system" className={linkClass}>residential solar system</Link> and GoodWe battery together, sized properly from day one.</> },
+              { icon: Building2, title: "Business use", text: <>See our <Link to="/solar-systems/commercial-solar-system" className={linkClass}>commercial solar systems</Link> for higher daytime usage.</> },
+              { icon: Sun, title: "Off-grid NT", text: <>Rural properties can pair GoodWe with our <Link to="/solar-systems/off-grid-solar-system" className={linkClass}>off grid solar systems</Link>.</> },
+              { icon: Cpu, title: "Existing inverter", text: <>Check our <Link to="/products/solar-inverters" className={linkClass}>solar inverters</Link> or <Link to="/services/solar-inverters/installation" className={linkClass}>inverter installation</Link>.</> },
+            ].map((card) => (
+              <FadeIn key={card.title} className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6 h-full">
+                <div className="w-11 h-11 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 flex items-center justify-center mb-4">
+                  <card.icon className="w-5 h-5" />
+                </div>
+                <h3 className="text-base font-black text-slate-900 mb-2 tracking-tight normal-case">{card.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-medium">{card.text}</p>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
-              <ShieldCheck className="w-6 h-6" />
-            </div>
-            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
-              Not Every GoodWe Installer Is Properly Approved. We Are.
-            </h2>
-            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
-              <p>
-                Every GoodWe product we supply is SAA Approved/Certified. We are also SAA Accredited Installers, which means your battery is fitted by people who meet the required Australian standards for safety and compliance.
-              </p>
-              <p>
-                This matters more than most people realise. If your battery is not fitted by an accredited installer, or the product itself is not properly approved, you can run into real problems later with insurance or warranty claims. We do not cut corners here.
-              </p>
-              <p>
-                Learn more about{" "}
-                <Link to="/about" className={linkClass}>who we are</Link>{" "}
-                and how we work.
-              </p>
-            </div>
-          </FadeIn>
+      <section className="py-20 lg:py-24 bg-[#0A1118] relative border-b border-slate-800">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            <FadeIn className="lg:col-span-6 order-2 lg:order-1">
+              <div className="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl aspect-[4/3]">
+                <img
+                  src="/assets/images/hosted/goodwe-saa-install.webp"
+                  alt="Licensed electrician installing a GoodWe battery to Australian standards"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.1} className="lg:col-span-6 order-1 lg:order-2">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
+                Not Every GoodWe Installer Is Properly Approved. We Are.
+              </h2>
+              <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-5 mb-8">
+                <p>
+                  Every GoodWe product we supply is SAA Approved/Certified. We are also SAA Accredited Installers, which means your battery is fitted by people who meet the required Australian standards for safety and compliance.
+                </p>
+                <p>
+                  This matters more than most people realise. If your battery is not fitted by an accredited installer, or the product itself is not properly approved, you can run into real problems later with insurance or warranty claims. We do not cut corners here.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                {[
+                  { icon: BadgeCheck, title: "SAA Approved products", text: "Every GoodWe unit we supply is certified." },
+                  { icon: ShieldCheck, title: "SAA Accredited team", text: "Fitted to Australian safety standards." },
+                ].map((item) => (
+                  <div key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-5">
+                    <item.icon className="w-5 h-5 text-[#8cc63f] mb-3" />
+                    <h3 className="text-sm font-black text-white mb-1 tracking-tight normal-case">{item.title}</h3>
+                    <p className="text-slate-400 text-sm leading-relaxed">{item.text}</p>
+                  </div>
+                ))}
+              </div>
+              <Link to="/about" className={linkClass}>
+                Learn more about who we are and how we work
+              </Link>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
-      <section className="py-24 bg-white relative border-b border-slate-200">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
-              Save on Your GoodWe Battery With the Cheaper Home Batteries Program
-            </h2>
-            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
-              <p>Let's talk money, because that is usually the first question anyway.</p>
-              <p>
-                If your GoodWe battery setup is eligible, you can access a discount through the Cheaper Home Batteries Program. We check your eligibility as part of your quote, so you know exactly what you are saving before you commit to anything.
-              </p>
-              <p>
-                One thing we want to be upfront about: the NT Government's local battery grants are currently closed. If you have seen mention of a state based rebate somewhere online, it is outdated. We only work with the Cheaper Home Batteries Program for batteries, and we apply it properly and honestly in every quote we send.
-              </p>
-              <p>
-                If you are also getting solar panels installed alongside your battery, the Federal STC Solar Grant applies separately to the panel system, and that discount is applied directly in your quote too, before you even see the final price.
-              </p>
-            </div>
-          </FadeIn>
+      <section className="py-20 lg:py-24 bg-white relative border-b border-slate-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-10">
+            <FadeIn className="lg:col-span-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
+                Save on Your GoodWe Battery With the Cheaper Home Batteries Program
+              </h2>
+              <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-5">
+                <p>Let's talk money, because that is usually the first question anyway.</p>
+                <p>
+                  If your GoodWe battery setup is eligible, you can access a discount through the Cheaper Home Batteries Program. We check your eligibility as part of your quote, so you know exactly what you are saving before you commit to anything.
+                </p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.1} className="lg:col-span-6">
+              <div className="relative rounded-[2rem] overflow-hidden shadow-[0_24px_60px_-20px_rgba(15,23,42,0.35)] aspect-[4/3] bg-slate-100">
+                <img
+                  src="/assets/images/hosted/goodwe-battery-rebate.webp"
+                  alt="Checking battery rebate savings as part of a Darwin home quote"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </FadeIn>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {[
+              { icon: CircleDollarSign, title: "Cheaper Home Batteries Program", text: "Eligible GoodWe installs get this discount checked in your quote, before you commit." },
+              { icon: ShieldCheck, title: "NT local grants are closed", text: "If you have seen a state rebate online, it is outdated. We only apply the current federal battery program." },
+              { icon: Sun, title: "STC solar grant separate", text: "New panels alongside your battery get the Federal STC discount applied in the same quote." },
+            ].map((card) => (
+              <FadeIn key={card.title} className="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6 h-full">
+                <div className="w-11 h-11 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 flex items-center justify-center mb-4">
+                  <card.icon className="w-5 h-5" />
+                </div>
+                <h3 className="text-base font-black text-slate-900 mb-2 tracking-tight normal-case">{card.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed font-medium">{card.text}</p>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
 
