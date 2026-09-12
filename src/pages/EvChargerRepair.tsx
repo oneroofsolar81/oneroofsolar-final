@@ -216,7 +216,7 @@ export function EvChargerRepair() {
               </nav>
 
               <h1 className="hero-heading text-white mb-6 break-words normal-case">
-                EV Charger Repair Darwin NT |{" "}
+                EV Charger Repair Darwin NT -{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Fast Diagnosis, Honest Advice</span>
               </h1>
 
