@@ -28,7 +28,6 @@ import { SEO } from "../components/SEO";
 import { QuoteForm } from "../components/QuoteForm";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 import heroImg from "../assets/images/ev_charger_install_hero.webp";
-import weatherImg from "../assets/images/darwin_storm_roof_1785343440441.webp";
 
 const linkClass = "text-[#8cc63f] hover:underline font-bold";
 
@@ -438,7 +437,7 @@ export function EvChargerInstallation() {
             </FadeIn>
             <FadeIn delay={0.15}>
               <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl aspect-[4/3]">
-                <img src={weatherImg} alt="Darwin weather conditions for outdoor EV charger installs" className="w-full h-full object-cover" loading="lazy" />
+                <img src="/assets/images/hosted/ev-charger-weatherproof.webp" alt="Sealed outdoor EV charger standing up to Darwin wet season rain" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </FadeIn>
           </div>
