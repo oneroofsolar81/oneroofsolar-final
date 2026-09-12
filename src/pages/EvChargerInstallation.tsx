@@ -547,39 +547,40 @@ export function EvChargerInstallation() {
       </section>
 
       <section className="py-24 bg-slate-50 relative border-b border-slate-200">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-            <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
-              <FadeIn>
-                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
-                  FAQs
-                </h2>
-              </FadeIn>
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <FadeIn>
+            <div className="text-center mb-12">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-3 normal-case">
+                Common EV charger installation questions
+              </h2>
+              <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
+                Straight answers on cost, Jacana approvals, wet season installs, and charging at home in Darwin.
+              </p>
             </div>
-            <div className="lg:col-span-7 space-y-4">
-              {faqs.map((faq, i) => {
-                const isOpen = openFaqIndex === i;
-                return (
-                  <FadeIn key={i} delay={i * 0.05}>
-                    <div className={`border rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? "bg-white shadow-md border-brand-500/50" : "bg-white border-slate-200 hover:border-brand-500/30 shadow-sm"}`}>
-                      <button
-                        onClick={() => setOpenFaqIndex(isOpen ? null : i)}
-                        aria-expanded={isOpen}
-                        className="w-full text-left px-6 py-5 flex items-start justify-between gap-4"
-                      >
-                        <h3 className={`text-sm sm:text-base font-bold leading-tight ${isOpen ? "text-[#8cc63f]" : "text-slate-900"}`}>{faq.q}</h3>
-                        <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border ${isOpen ? "border-[#8cc63f] bg-[#8cc63f]/10 text-[#8cc63f] rotate-180" : "border-slate-200 text-slate-500 bg-slate-50"}`}>
-                          <ChevronDown className="w-4 h-4" />
-                        </div>
-                      </button>
-                      <div className={`overflow-hidden transition-all duration-500 px-6 ${isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"}`}>
-                        <div className="text-slate-600 leading-relaxed font-medium text-xs sm:text-sm">{faq.a}</div>
+          </FadeIn>
+          <div className="space-y-3">
+            {faqs.map((faq, i) => {
+              const isOpen = openFaqIndex === i;
+              return (
+                <FadeIn key={faq.q} delay={i * 0.03}>
+                  <div className={`border rounded-2xl overflow-hidden transition-all duration-300 ${isOpen ? "bg-white shadow-md border-[#8cc63f]/40" : "bg-white border-slate-200 hover:border-brand-500/30 shadow-sm"}`}>
+                    <button
+                      onClick={() => setOpenFaqIndex(isOpen ? null : i)}
+                      aria-expanded={isOpen}
+                      className="w-full text-left px-5 sm:px-6 py-5 flex items-start justify-between gap-4"
+                    >
+                      <h3 className={`text-base sm:text-lg font-bold leading-snug ${isOpen ? "text-[#8cc63f]" : "text-slate-900"}`}>{faq.q}</h3>
+                      <div className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border ${isOpen ? "border-[#8cc63f] bg-[#8cc63f]/10 text-[#8cc63f] rotate-180" : "border-slate-200 text-slate-500 bg-slate-50"}`}>
+                        <ChevronDown className="w-4 h-4" />
                       </div>
+                    </button>
+                    <div className={`overflow-hidden transition-all duration-500 px-5 sm:px-6 ${isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"}`}>
+                      <p className="text-slate-600 leading-relaxed font-medium text-sm sm:text-base">{faq.a}</p>
                     </div>
-                  </FadeIn>
-                );
-              })}
-            </div>
+                  </div>
+                </FadeIn>
+              );
+            })}
           </div>
         </div>
       </section>
