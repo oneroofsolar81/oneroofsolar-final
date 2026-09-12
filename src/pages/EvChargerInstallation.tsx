@@ -269,23 +269,53 @@ export function EvChargerInstallation() {
 
       <PartnersMarquee />
 
-      <section className="py-24 bg-white relative border-b border-slate-200">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
-              EV Charger Installation Experts
-            </h2>
-            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
-              <p>
-                Oneroof Solar provides professional EV charger installation across Darwin and the wider NT, for homes, businesses, apartments, and off-grid properties. An EV charger is a dedicated unit installed at your property that lets you charge your electric vehicle faster and more safely than a standard power point, usually overnight for homes or throughout the day for businesses and fleets.
-              </p>
-              <p>
-                We handle the entire process, from checking your property's electrical capacity through to a fully compliant, SAA accredited installation, so you can charge with confidence. Already have a charger that will not start, trips the breaker, or died after a storm? See our{" "}
-                <Link to="/services/ev-chargers/repair" className={linkClass}>EV charger repair</Link>{" "}
-                service.
-              </p>
-            </div>
-          </FadeIn>
+      <section className="py-20 lg:py-24 bg-white relative border-b border-slate-200 overflow-hidden">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            <FadeIn className="lg:col-span-6 order-2 lg:order-1">
+              <div className="relative rounded-[2rem] overflow-hidden shadow-[0_24px_60px_-20px_rgba(15,23,42,0.35)] aspect-[4/3] bg-slate-100">
+                <img
+                  src="/assets/images/hosted/ev-charger-experts.webp"
+                  alt="Wall-mounted EV charger charging an electric car under a Darwin carport"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0A1118]/80 via-[#0A1118]/20 to-transparent p-5 sm:p-6">
+                  <p className="text-white text-sm sm:text-base font-semibold leading-snug">
+                    Dedicated home charging, faster and safer than a wall socket
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.12} className="lg:col-span-6 order-1 lg:order-2">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
+                EV Charger Installation Experts
+              </h2>
+              <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-5">
+                <p>
+                  Oneroof Solar provides professional EV charger installation across Darwin and the wider NT, for homes, businesses, apartments, and off-grid properties. An EV charger is a dedicated unit installed at your property that lets you charge your electric vehicle faster and more safely than a standard power point, usually overnight for homes or throughout the day for businesses and fleets.
+                </p>
+                <p>
+                  We handle the entire process, from checking your property's electrical capacity through to a fully compliant, SAA accredited installation, so you can charge with confidence. Already have a charger that will not start, trips the breaker, or died after a storm? See our{" "}
+                  <Link to="/services/ev-chargers/repair" className={linkClass}>EV charger repair</Link>{" "}
+                  service.
+                </p>
+              </div>
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {[
+                  { icon: Home, label: "Homes & apartments" },
+                  { icon: Building2, label: "Business & fleet" },
+                  { icon: BadgeCheck, label: "SAA accredited" },
+                ].map((item) => (
+                  <div key={item.label} className="flex items-center gap-2.5 rounded-2xl border border-slate-200 bg-slate-50 px-3.5 py-3">
+                    <item.icon className="w-4 h-4 text-[#8cc63f] shrink-0" />
+                    <span className="text-sm font-semibold text-slate-800 leading-tight">{item.label}</span>
+                  </div>
+                ))}
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
