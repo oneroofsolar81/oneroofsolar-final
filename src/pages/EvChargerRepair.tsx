@@ -304,12 +304,9 @@ export function EvChargerRepair() {
                   <AlertTriangle className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">Do not wait on a dead charger</h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6">
+                <p className="text-slate-600 text-sm leading-relaxed">
                   A charger that trips, runs hot, or took on water can get worse quickly in Darwin heat. Diagnosis first means you only pay for the fix you actually need.
                 </p>
-                <a href={`tel:${PRIMARY_PHONE_RAW}`} className="inline-flex items-center gap-2 text-[#8cc63f] font-bold uppercase tracking-wider text-xs hover:underline">
-                  Call {PRIMARY_PHONE} <ArrowRight className="w-4 h-4" />
-                </a>
               </div>
             </FadeIn>
           </div>
@@ -336,6 +333,13 @@ export function EvChargerRepair() {
                   </div>
                 ))}
               </div>
+              <a
+                href="#quote-form"
+                className="inline-flex items-center gap-2 mt-8 bg-[#8cc63f] text-[#19281D] px-7 py-3.5 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5"
+              >
+                Get it checked after a storm
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </FadeIn>
           </div>
         </div>
@@ -399,12 +403,6 @@ export function EvChargerRepair() {
                 Rural callouts to Litchfield, Humpty Doo, or Berry Springs may include a small travel component. We always confirm the exact price after diagnosis, before any work starts. No surprises on the invoice.
               </p>
             </div>
-            <a
-              href="#quote-form"
-              className="inline-block mt-8 bg-[#8cc63f] text-[#19281D] px-8 py-4 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5 uppercase tracking-wider text-xs"
-            >
-              Book a diagnostic callout
-            </a>
           </FadeIn>
         </div>
       </section>

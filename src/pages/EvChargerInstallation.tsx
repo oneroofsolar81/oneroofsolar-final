@@ -394,15 +394,7 @@ export function EvChargerInstallation() {
                     <h3 className="text-3xl lg:text-4xl font-black text-white mb-4 tracking-tighter group-hover:text-brand-400 transition-colors normal-case">
                       {product.title}
                     </h3>
-                    <p className="text-slate-400 text-lg leading-relaxed font-medium mb-10">{product.description}</p>
-                    <a href="#quote-form" className="mt-auto flex items-center justify-between pt-6 border-t border-white/10 group-hover:border-white/20 transition-colors group/link">
-                      <span className="text-sm font-bold text-white tracking-widest uppercase group-hover/link:text-brand-400 transition-colors">
-                        Explore Terminal
-                      </span>
-                      <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover/link:bg-brand-500 group-hover/link:text-slate-900 transition-all duration-300 text-white shadow-sm border border-white/10 group-hover/link:border-brand-400">
-                        <ArrowRight className="w-5 h-5 transform group-hover/link:translate-x-1 group-hover/link:-rotate-45 transition-transform duration-300" />
-                      </div>
-                    </a>
+                    <p className="text-slate-400 text-lg leading-relaxed font-medium">{product.description}</p>
                   </div>
                 </div>
               </FadeIn>
@@ -434,6 +426,13 @@ export function EvChargerInstallation() {
                   we do in Darwin. Build it for the climate it's actually going into, not the climate on a spec sheet from somewhere down south.
                 </p>
               </div>
+              <a
+                href="#quote-form"
+                className="inline-flex items-center gap-2 mt-8 bg-[#8cc63f] text-[#19281D] px-7 py-3.5 rounded-xl font-bold transition-all hover:bg-brand-400 hover:-translate-y-0.5"
+              >
+                Get a weather-rated charger quote
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </FadeIn>
             <FadeIn delay={0.15}>
               <div className="rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl aspect-[4/3]">
