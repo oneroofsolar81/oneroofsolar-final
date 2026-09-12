@@ -219,6 +219,7 @@ export const mainNavConfig: NavItem[] = [
         iconName: "BatteryCharging",
         children: [
           { label: "Sigenergy Batteries", href: "/products/solar-battery-brands/sigenergy" },
+          { label: "GoodWe Batteries", href: "/products/solar-battery-brands/goodwe" },
         ],
       },
     ],

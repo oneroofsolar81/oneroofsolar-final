@@ -48,7 +48,7 @@ const brands = [
       "One of the best value batteries on the market, with dependable hardware and straightforward software. A smart pick if you want strong performance without paying premium prices.",
     image: "/assets/images/hosted/products/alpha-ess.webp",
     specLabel: "Download GoodWe Spec Sheet (PDF)",
-    specHref: "/products/solar-inverters/goodwe",
+    specHref: "/products/solar-battery-brands/goodwe",
   },
   {
     title: "Fox ESS",

@@ -49,6 +49,17 @@
     <loc>https://www.oneroofsolar.com.au/solar-systems/off-grid-solar-system</loc>
   </url>
 
+  <!-- Battery Products -->
+  <url>
+    <loc>https://www.oneroofsolar.com.au/products/solar-battery-brands/</loc>
+  </url>
+  <url>
+    <loc>https://www.oneroofsolar.com.au/products/solar-battery-brands/sigenergy</loc>
+  </url>
+  <url>
+    <loc>https://www.oneroofsolar.com.au/products/solar-battery-brands/goodwe</loc>
+  </url>
+
   <!-- Inverter Products -->
   <url>
     <loc>https://www.oneroofsolar.com.au/products/solar-inverters</loc>

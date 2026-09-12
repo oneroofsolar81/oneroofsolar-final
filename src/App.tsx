@@ -37,6 +37,7 @@ const NorthernDarwin = lazy(() => import("./pages/NorthernDarwin").then(m => ({ 
 const Palmerston = lazy(() => import("./pages/Palmerston").then(m => ({ default: m.Palmerston })));
 const DarwinRural = lazy(() => import("./pages/DarwinRural").then(m => ({ default: m.DarwinRural })));
 const SigenergyBatteryPage = lazy(() => import("./pages/SigenergyBatteryPage").then(m => ({ default: m.SigenergyBatteryPage })));
+const GoodWeBatteryPage = lazy(() => import("./pages/GoodWeBatteryPage").then(m => ({ default: m.GoodWeBatteryPage })));
 const SolarBatteryBrands = lazy(() => import("./pages/SolarBatteryBrands").then(m => ({ default: m.SolarBatteryBrands })));
 const EvChargerInstallation = lazy(() => import("./pages/EvChargerInstallation").then(m => ({ default: m.EvChargerInstallation })));
 const EvChargerRepair = lazy(() => import("./pages/EvChargerRepair").then(m => ({ default: m.EvChargerRepair })));
@@ -293,6 +294,8 @@ export default function App() {
                 <Route path="/products/solar-battery-brands/" element={<SolarBatteryBrands />} />
                 <Route path="/products/solar-battery-brands/sigenergy" element={<SigenergyBatteryPage />} />
                 <Route path="/products/solar-battery-brands/sigenergy/" element={<SigenergyBatteryPage />} />
+                <Route path="/products/solar-battery-brands/goodwe" element={<GoodWeBatteryPage />} />
+                <Route path="/products/solar-battery-brands/goodwe/" element={<GoodWeBatteryPage />} />
 
                 {/* External SEO Redirects mapping */}
                 <Route path="/solar-panels/rec" element={<Navigate to="/solar-panels-brands/rec/" replace />} />
