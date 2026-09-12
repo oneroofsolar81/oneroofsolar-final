@@ -223,7 +223,7 @@ export function EvChargerInstallation() {
               </nav>
 
               <h1 className="hero-heading text-white mb-6 break-words normal-case">
-                EV Charger Installation Darwin NT |{" "}
+                EV Charger Installation Darwin NT -{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Trusted Local EV Charger Installers</span>
               </h1>
 
