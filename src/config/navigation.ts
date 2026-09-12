@@ -213,12 +213,11 @@ export const mainNavConfig: NavItem[] = [
         ],
       },
       {
-        label: "Battery Storage Solutions",
-        href: "/services/solar-battery-installation",
+        label: "Battery Storage",
+        href: "/products/solar-battery-brands/",
         description: "Store excess solar energy for day & night.",
         iconName: "BatteryCharging",
         children: [
-          { label: "All Battery Brands", href: "/products/solar-battery-brands/" },
           { label: "Sigenergy Batteries", href: "/products/solar-battery-brands/sigenergy" },
         ],
       },
