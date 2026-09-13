@@ -1,9 +1,8 @@
 const PARTNER_LOGOS = [
-  { src: "/assets/images/hosted/partner-1.png", alt: "Partner brand 1" },
-  { src: "/assets/images/hosted/partner-2.png", alt: "Partner brand 2" },
-  { src: "/assets/images/hosted/partner-3.png", alt: "Partner brand 3" },
-  { src: "/assets/images/hosted/partner-4.png", alt: "Partner brand 4" },
-  { src: "/assets/images/hosted/partner-5.png", alt: "Partner brand 5" },
+  { src: "/assets/images/hosted/partner-2.png", alt: "Hyundai Solar Australia authorised dealer" },
+  { src: "/assets/images/hosted/partner-3.png", alt: "Tesla Energy certified installer" },
+  { src: "/assets/images/hosted/partner-4.png", alt: "Tesla Powerwall certified installer" },
+  { src: "/assets/images/hosted/partner-5.png", alt: "Sigenergy certified installer" },
 ];
 
 export function PartnersMarquee() {
