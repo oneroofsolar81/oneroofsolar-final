@@ -19,7 +19,6 @@ import { SEO } from "../components/SEO";
 
 import heroImage from "../assets/images/inverter_hero_install_1785339518164.webp";
 import closeUpImage from "../assets/images/inverter_macro_close_up_1785339540642.webp";
-import froniusImage from "../assets/images/fronius_nobg_1780552112004.webp";
 
 export function SolarInvertersProductPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -166,8 +165,8 @@ export function SolarInvertersProductPage() {
       heading: "Sungrow - Industry-Leading Value",
       description: "The most installed solar inverter brand in Australia in 2026. Sungrow hybrid inverters handle solar panels, battery storage and grid connection in one unit, with strong local Australian support and competitive pricing.",
       bestFor: "Homes and businesses wanting reliable hybrid inverter performance at a competitive price",
-      image: "/assets/images/hosted/partner-2.png",
-      alt: "Sungrow Solar Inverter",
+      image: "/assets/images/sungrow-sh5-6rs.webp",
+      alt: "Sungrow SH5 hybrid solar inverter",
       href: "/products/solar-inverters/sungrow-inverters",
       linkText: "EXPLORE SUNGROW"
     },
@@ -175,8 +174,8 @@ export function SolarInvertersProductPage() {
       heading: "Fronius - Premium Austrian Engineering",
       description: "Fronius has won the SolarQuotes Installers Choice Award for best solar inverter five times. Their GEN24 series is built in Austria with advanced active cooling, smart grid management and exceptional long-term reliability.",
       bestFor: "Homeowners who want the highest-rated inverter brand in Australia",
-      image: froniusImage,
-      alt: "Fronius Solar Inverter",
+      image: "/assets/images/hosted/products/fronius-inverter.webp",
+      alt: "Fronius hybrid solar inverter",
       href: "/contact",
       linkText: "GET A FREE QUOTE"
     },
@@ -184,8 +183,8 @@ export function SolarInvertersProductPage() {
       heading: "Sigenergy - Solar, Battery and EV in One",
       description: "Sigenergy integrates solar generation, battery storage and EV charging into a single intelligent platform. One system manages your property's full energy profile without the need for separate devices.",
       bestFor: "Homeowners adding EV charging or wanting full energy management in one platform",
-      image: "/assets/images/hosted/partner-3.png",
-      alt: "Sigenergy Solar Inverter System",
+      image: "/assets/images/hosted/products/sigen-battery.webp",
+      alt: "Sigenergy all-in-one solar inverter and battery",
       href: "/products/solar-inverters/sigenergy",
       linkText: "EXPLORE SIGENERGY"
     },
@@ -193,8 +192,8 @@ export function SolarInvertersProductPage() {
       heading: "GoodWe - Flexible and Battery-Ready",
       description: "GoodWe offers one of the widest ranges of hybrid and battery-ready solar inverters available in Australia. Every GoodWe inverter is designed for easy battery addition now or in the future.",
       bestFor: "Homes and businesses planning to add battery storage now or later",
-      image: "/assets/images/hosted/partner-4.png",
-      alt: "GoodWe Solar Inverter",
+      image: "/assets/images/hosted/goodwe-battery-hero.webp",
+      alt: "GoodWe battery-ready solar inverter system",
       href: "/products/solar-inverters/goodwe",
       linkText: "EXPLORE GOODWE"
     },
@@ -202,8 +201,8 @@ export function SolarInvertersProductPage() {
       heading: "Foxess - Smart Monitoring and Design",
       description: "Foxess inverters combine advanced solar conversion with cutting-edge monitoring and a smart, compact design. Strong grid stability features and detailed app-based monitoring make them a practical choice for installations.",
       bestFor: "Homeowners who want detailed real-time system monitoring and a compact unit design",
-      image: "/assets/images/hosted/partner-5.png",
-      alt: "Foxess Solar Inverter",
+      image: "/assets/images/hosted/products/foxess-inverter.webp",
+      alt: "Fox ESS hybrid solar inverter",
       href: "/products/solar-inverters/fox-ess",
       linkText: "EXPLORE FOX ESS"
     },
@@ -211,8 +210,8 @@ export function SolarInvertersProductPage() {
       heading: "Alpha ESS - Modular Battery & Hybrid Systems",
       description: "Alpha ESS hybrid inverters offer modular battery storage that grows as your power needs grow. Start with one battery module and add more later on your own terms.",
       bestFor: "Homeowners wanting modular battery storage and flexible expansion options",
-      image: heroImage,
-      alt: "Alpha ESS Solar Inverter System",
+      image: "/assets/images/hosted/products/alpha-ess.webp",
+      alt: "Alpha ESS modular hybrid inverter and battery",
       href: "/products/solar-inverters/alpha-ess",
       linkText: "EXPLORE ALPHA ESS"
     }
@@ -490,12 +489,12 @@ export function SolarInvertersProductPage() {
                 >
                   <div>
                     {/* Brand Image Area */}
-                    <div className="h-52 mb-6 rounded-xl overflow-hidden bg-slate-950 border border-slate-800 relative flex items-center justify-center p-4">
+                    <div className="h-52 mb-6 rounded-xl overflow-hidden bg-slate-950 border border-slate-800 relative flex items-center justify-center p-3">
                       <img 
                         referrerPolicy="no-referrer"
                         src={card.image} 
                         alt={card.alt} 
-                        className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500"
+                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                         width={400}
                         height={300}
