@@ -221,19 +221,15 @@ export function Navbar() {
             ? "bg-[#0A1118]/95 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
             : isSolidHeader
             ? "bg-white/95 backdrop-blur-xl border-b border-slate-200/60 shadow-sm"
-            : "bg-transparent py-4 lg:py-6"
+            : "bg-transparent"
         }`}
       >
         <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
-          <div
-            className={`relative flex items-center justify-between transition-all duration-300 ${
-              isSolidHeader ? "py-3" : "px-2 py-2"
-            }`}
-          >
+          <div className="relative flex items-center justify-between gap-5 xl:gap-6 py-2.5">
             {/* Left Section: Logo & Desktop Navigation with consistent gap across all desktop sizes */}
-            <div className="flex items-center gap-6 xl:gap-8 2xl:gap-10">
+            <div className="flex min-w-0 flex-1 items-center gap-3 xl:gap-5 2xl:gap-8">
               {/* Logo */}
-              <div className="flex items-center gap-2 flex-shrink-0">
+              <div className="flex items-center gap-2 shrink-0">
                 <Link to="/" className="flex items-center gap-2 relative z-50">
                   <img
                     referrerPolicy="no-referrer"
@@ -245,11 +241,9 @@ export function Navbar() {
                         : "/assets/images/home/logo-oneroof.png"
                     }
                     alt="Oneroof Solar Logo"
-                    className={`${
-                      scrolled ? "h-[42px] sm:h-[50px] md:h-[58px]" : "h-[50px] sm:h-[58px] md:h-[74px]"
-                    } w-auto max-w-none transition-all duration-300`}
-                    width={256}
-                    height={74}
+                    className="h-[42px] sm:h-[46px] w-auto max-w-[155px] sm:max-w-[165px] object-contain object-left"
+                    width={165}
+                    height={46}
                     fetchPriority="high"
                     loading="eager"
                   />
@@ -257,7 +251,7 @@ export function Navbar() {
               </div>
 
               {/* Desktop Navigation Menu */}
-              <div className="hidden lg:flex items-center">
+              <div className="hidden xl:flex items-center">
                 <div
                   className={`flex items-center gap-1 rounded-full p-1 transition-colors ${
                     isDarkHeader
@@ -281,7 +275,7 @@ export function Navbar() {
                           aria-expanded={isItemActive}
                           aria-haspopup="true"
                           aria-controls={`desktop-menu-${item.label}`}
-                          className={`desktop-nav-link nav-link-item text-[15px] font-semibold leading-[1.2] tracking-normal px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
+                          className={`desktop-nav-link nav-link-item text-[13px] 2xl:text-[15px] font-semibold leading-[1.2] tracking-normal px-2.5 2xl:px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
                             isItemActive
                               ? "is-active bg-[#8cc63f] text-[#19281D] shadow-[0_0_18px_rgba(140,198,63,0.35)]"
                               : isDarkHeader
@@ -316,7 +310,7 @@ export function Navbar() {
                         key={item.label}
                         to={itemHref}
                         onMouseEnter={() => handleMouseEnter(item)}
-                        className={`desktop-nav-link nav-link-item text-[15px] font-semibold leading-[1.2] tracking-normal px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
+                        className={`desktop-nav-link nav-link-item text-[13px] 2xl:text-[15px] font-semibold leading-[1.2] tracking-normal px-2.5 2xl:px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
                           isActiveLink
                             ? isDarkHeader
                               ? "bg-[#8cc63f] text-[#19281D] shadow-[0_0_18px_rgba(140,198,63,0.35)]"
@@ -337,23 +331,23 @@ export function Navbar() {
             </div>
 
             {/* Right Section: Call Action for Desktop */}
-            <div className="hidden lg:flex items-center">
-              <a href={`tel:${PRIMARY_PHONE_RAW}`} className="flex items-center gap-2.5 group">
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform ${isDarkHeader ? "bg-[#8cc63f]/15" : "bg-brand-100"}`}>
+            <div className="hidden xl:flex items-center shrink-0">
+              <a href={`tel:${PRIMARY_PHONE_RAW}`} className="flex items-center gap-2.5 group shrink-0">
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform ${isDarkHeader ? "bg-[#8cc63f]/15" : "bg-brand-100"}`}>
                   <div className="w-7 h-7 rounded-full bg-[#8cc63f] flex items-center justify-center">
                     <Phone className={`w-3.5 h-3.5 fill-current ${isDarkHeader ? "text-[#19281D]" : "text-white"}`} />
                   </div>
                 </div>
-                <div className="flex flex-col -space-y-1">
+                <div className="flex min-w-max shrink-0 flex-col -space-y-0.5 whitespace-nowrap">
                   <span
-                    className={`text-[13px] font-medium transition-colors ${
+                    className={`text-[13px] font-medium leading-none transition-colors ${
                       isDarkHeader ? "text-slate-300" : isSolidHeader ? "text-slate-600" : "text-white/90"
                     }`}
                   >
                     Give Us a Call
                   </span>
                   <span
-                    className={`text-[18px] font-extrabold tracking-tight transition-colors ${
+                    className={`text-[16px] 2xl:text-[17px] font-extrabold tracking-tight leading-tight whitespace-nowrap transition-colors ${
                       isDarkHeader ? "text-white" : isSolidHeader ? "text-slate-900" : "text-white"
                     }`}
                   >
@@ -364,7 +358,7 @@ export function Navbar() {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="lg:hidden relative z-50">
+            <div className="xl:hidden relative z-50">
               <button
                 onClick={() => {
                   if (isOpen) {
@@ -402,7 +396,7 @@ export function Navbar() {
               transition={{ duration: 0.18, ease: "easeOut" }}
               onMouseEnter={() => handleMouseEnter(activeDesktopItem)}
               onMouseLeave={handleMouseLeave}
-              className="hidden lg:block absolute left-0 right-0 top-full pt-2 z-50 pointer-events-auto"
+              className="hidden xl:block absolute left-0 right-0 top-full pt-2 z-50 pointer-events-auto"
             >
               <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
                 {/* 1. SOLAR SYSTEM - COMPACT DROPDOWN (460px) */}
@@ -658,7 +652,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="hidden lg:block fixed inset-0 top-[76px] bg-[#0A1118]/50 backdrop-blur-[3px] z-40 pointer-events-auto"
+            className="hidden xl:block fixed inset-0 top-[76px] bg-[#0A1118]/50 backdrop-blur-[3px] z-40 pointer-events-auto"
             onClick={() => setActiveMegaMenu(null)}
           />
         )}
@@ -674,7 +668,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-[100] bg-[#0A1118] flex flex-col lg:hidden overflow-hidden"
+            className="fixed inset-0 z-[100] bg-[#0A1118] flex flex-col xl:hidden overflow-hidden"
           >
             {/* Mobile Header Bar */}
             <div className="flex-shrink-0 flex items-center justify-between px-5 py-4 border-b border-white/10 bg-[#0A1118] z-10">

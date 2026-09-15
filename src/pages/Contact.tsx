@@ -62,7 +62,22 @@ export function Contact() {
 
   return (
     <div className="overflow-x-clip bg-slate-50 min-h-screen">
-      <SEO seo={pageData?.seo} />
+      <SEO
+        seo={{
+          ...pageData?.seo,
+          title: "Contact Oneroof Solar | Get a Free Solar Quote in Darwin & NT.",
+          metaDescription:
+            "Speak with local NT solar experts at Oneroof Solar. Call 0483 986 444 or submit an online request for solar & battery quotes across Darwin & NT",
+          canonicalUrl: pageData?.seo?.canonicalUrl || "https://oneroofsolar.com.au/contact",
+          robots: pageData?.seo?.robots || "index, follow",
+          openGraphTitle: "Contact Oneroof Solar | Get a Free Solar Quote in Darwin & NT.",
+          openGraphDescription:
+            "Speak with local NT solar experts at Oneroof Solar. Call 0483 986 444 or submit an online request for solar & battery quotes across Darwin & NT",
+          twitterTitle: "Contact Oneroof Solar | Get a Free Solar Quote in Darwin & NT.",
+          twitterDescription:
+            "Speak with local NT solar experts at Oneroof Solar. Call 0483 986 444 or submit an online request for solar & battery quotes across Darwin & NT",
+        }}
+      />
       
       {/* Dark Hero Section */}
       <section className="relative pt-36 pb-20 lg:pt-48 lg:pb-28 bg-[#0A1118] border-b border-white/5 overflow-hidden">

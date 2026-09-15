@@ -263,7 +263,20 @@ export const DEFAULT_PAGES = [
       title: "Support Online",
       heroTitle: "Let's Get In <span class=\"text-brand-500\">Touch.</span>",
       content: "Ready to start saving on your energy bills? Our Darwin-based solar experts are here to answer your questions and provide a free, no-obligation quote.\n\nReady to harness the power of the sun? Our team of experts is here to help you design the perfect solar ecosystem for your home.",
-      heroSubtitle: ""
+      heroSubtitle: "",
+      seo: {
+        title: "Contact Oneroof Solar | Get a Free Solar Quote in Darwin & NT.",
+        metaDescription:
+          "Speak with local NT solar experts at Oneroof Solar. Call 0483 986 444 or submit an online request for solar & battery quotes across Darwin & NT",
+        canonicalUrl: "https://oneroofsolar.com.au/contact",
+        robots: "index, follow",
+        openGraphTitle: "Contact Oneroof Solar | Get a Free Solar Quote in Darwin & NT.",
+        openGraphDescription:
+          "Speak with local NT solar experts at Oneroof Solar. Call 0483 986 444 or submit an online request for solar & battery quotes across Darwin & NT",
+        twitterTitle: "Contact Oneroof Solar | Get a Free Solar Quote in Darwin & NT.",
+        twitterDescription:
+          "Speak with local NT solar experts at Oneroof Solar. Call 0483 986 444 or submit an online request for solar & battery quotes across Darwin & NT",
+      }
     }
   }
 ];

@@ -1,3 +1,5 @@
+import { slugifyHeading } from "@/src/lib/blog";
+
 export type BlogCta = {
   heading: string;
   body: string;
@@ -12,10 +14,48 @@ export type BlogFaq = {
   a: string;
 };
 
+export type BlogStatIcon = "cloud" | "sun" | "wind" | "shield" | "battery" | "zap";
+
 export type BlogSection =
   | { type: "markdown"; markdown: string }
   | { type: "cta"; cta: BlogCta }
-  | { type: "faqs"; heading: string; items: BlogFaq[] };
+  | { type: "faqs"; heading: string; items: BlogFaq[] }
+  | { type: "figure"; src: string; alt: string; caption: string }
+  | { type: "stats"; items: { value: string; label: string; icon: BlogStatIcon }[] }
+  | { type: "takeaways"; heading?: string; items: string[] }
+  | { type: "quote"; text: string; cite?: string }
+  | {
+      type: "compare";
+      left: { title: string; subtitle: string; items: string[] };
+      right: { title: string; subtitle: string; items: string[] };
+    };
+
+export const relatedReads = [
+  {
+    title: "Residential Solar Systems",
+    href: "/solar-systems/residential-solar-system",
+    image: "/assets/images/hosted/bayview-0820.webp",
+    label: "Solar systems",
+  },
+  {
+    title: "Solar Battery Installation",
+    href: "/services/solar-battery-installation",
+    image: "/assets/images/hosted/products/sigen-battery.webp",
+    label: "Batteries",
+  },
+  {
+    title: "Solar Panel Maintenance",
+    href: "/services/solar-panel-maintenance-darwin",
+    image: "/assets/images/hosted/about-team.webp",
+    label: "Care",
+  },
+  {
+    title: "Our Darwin Projects",
+    href: "/projects",
+    image: "/assets/images/hosted/bellamack-0832-2-1-.webp",
+    label: "Projects",
+  },
+];
 
 export type BlogPost = {
   slug: string;
@@ -72,17 +112,73 @@ On a heavy rain or thick cloud day, expect your system to produce somewhere betw
 
 ### Rain Doesn't Stop the System, It Just Slows It Down
 
-Think of it like a tap. On a sunny day the tap runs full. On a rainy day it's more of a trickle. But it's never turned off completely, and the moment the clouds break, even for twenty minutes, that trickle turns back into a proper flow.
-
-## Darwin's Wet Season vs Dry Season Solar Output
+Your system is still feeding the house. The wet season just changes the rate, not whether the panels are working.`,
+      },
+      {
+        type: "quote",
+        text: "Think of it like a tap. On a sunny day the tap runs full. On a rainy day it's more of a trickle. But it's never turned off completely, and the moment the clouds break, even for twenty minutes, that trickle turns back into a proper flow.",
+      },
+      {
+        type: "takeaways",
+        heading: "What to remember",
+        items: [
+          "Panels keep generating through rain and cloud — they run on light, not a clear sky.",
+          "On a heavy rain day, expect about 10 to 25% of clear-sky output, not zero.",
+          "Size the array for February in Darwin, not a sunny-day brochure number.",
+          "Wind region C/D racking and sealed connectors matter more than the rain itself.",
+          "A battery is what keeps the lights on when the grid drops in a storm.",
+        ],
+      },
+      {
+        type: "stats",
+        items: [
+          { value: "10–25%", label: "Typical output on a heavy rain or thick cloud day versus a clear day.", icon: "cloud" },
+          { value: "3,000+", label: "Hours of sunshine a year in Darwin, Zone 1 on the federal STC scale.", icon: "sun" },
+          { value: "C / D", label: "Cyclone wind region rating your racking has to be built for.", icon: "wind" },
+        ],
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/bayview-0820.webp",
+        alt: "Residential solar panels installed on a Darwin rooftop",
+        caption: "Darwin rooftops still generate through grey, overcast days — output drops, it does not stop.",
+      },
+      {
+        type: "markdown",
+        markdown: `## Darwin's Wet Season vs Dry Season Solar Output
 
 The gap between your best and worst months in Darwin is bigger than most of Australia, and that's worth planning around properly rather than glossing over.
 
 Darwin's wet season runs November through April, with January and February the wettest and cloudiest stretch. Cloud cover sits around 45 to 47% through January to March, compared to a much clearer sky through the dry season months. On a genuinely heavy, dark wet season day, you might see your system running well below half its usual output. Compare that to a bright dry season day in June, July or August, where you're looking at a real chance of sunshine above 60%, climbing to around 70% in peak dry months. That contrast is exactly why your system needs to be sized for the whole year, not just the good months.
 
-Your dry season months don't just make up for the wet season dip, they're strong enough to carry your annual average well into worthwhile territory. Darwin gets over 3,000 hours of sunshine a year and sits in Zone 1 for solar irradiance, the strongest rating on the federal STC scale. A few soft weeks in February don't undo six months of strong, reliable dry season generation.
-
-## Sizing a Solar System That Handles Darwin's Climate
+Your dry season months don't just make up for the wet season dip, they're strong enough to carry your annual average well into worthwhile territory. Darwin gets over 3,000 hours of sunshine a year and sits in Zone 1 for solar irradiance, the strongest rating on the federal STC scale. A few soft weeks in February don't undo six months of strong, reliable dry season generation.`,
+      },
+      {
+        type: "compare",
+        left: {
+          title: "Wet season",
+          subtitle: "November through April",
+          items: [
+            "January and February are the wettest, cloudiest stretch.",
+            "Cloud cover sits around 45 to 47% through January to March.",
+            "A heavy dark day can put the system well below half its usual output.",
+            "Expect 10 to 25% of clear-sky production on thick rain days.",
+          ],
+        },
+        right: {
+          title: "Dry season",
+          subtitle: "May through October",
+          items: [
+            "June, July and August often sit above 60% sunshine likelihood.",
+            "Peak dry months climb to around 70%.",
+            "A well-sized 6.6kW system can make roughly 25 to 35kWh on a strong day.",
+            "Those months carry the annual average well into worthwhile territory.",
+          ],
+        },
+      },
+      {
+        type: "markdown",
+        markdown: `## Sizing a Solar System That Handles Darwin's Climate
 
 Get the size right and the wet season stops being something to worry about. Get it wrong and you'll notice every cloudy day.
 
@@ -93,6 +189,12 @@ This is where working with a local team actually matters. One Roof Solar sizes e
 One trick most installers won't explain unless you ask: your panel array doesn't have to match your inverter's rating one for one. It's common, and fully within Australian standards, to oversize your panels relative to the inverter, sometimes up to around 133% of its AC rating. On a clear day the extra capacity barely matters because the inverter caps out anyway. But on a heavy wet season morning or a thick overcast afternoon, that extra panel capacity is exactly what keeps your output closer to normal instead of falling off a cliff. It's a cheap, practical way to claw back some of what the wet season takes.
 
 To put real numbers on it, a well-sized 6.6kW system in Darwin can produce roughly 25 to 35kWh on a strong dry season day, and considerably less, sometimes under half that, through a heavy wet season stretch. That's exactly why sizing for your worst month matters more than sizing for your best one.`,
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/berrimah-0828.webp",
+        alt: "Larger Darwin solar installation sized for year-round output",
+        caption: "Oversizing the array against the inverter is a practical way to hold output up on overcast wet-season mornings.",
       },
       {
         type: "cta",
@@ -120,9 +222,25 @@ Darwin's humidity sits high for most of the year, and it's tough on unsealed ele
 
 Dust, pollen and grime build up on panels through the dry season and can quietly cut your output by 5 to 10%. A proper wet season downpour washes that straight off, so your panels often come out of the wet season cleaner than they went in. If you want a professional check up as well, our [solar panel maintenance team](/services/solar-panel-maintenance-darwin) covers Darwin, Palmerston and Alice Springs.
 
-Getting the mounting and sealing right from the start is exactly why One Roof Solar builds every install around Darwin's actual conditions. If you're weighing up your options, you can [get a solar quote in Darwin, Palmerston or Alice Springs](/) and we'll walk you through what wind rating and sealing your roof specifically needs.
-
-## Keeping the Power On When the Wet Season Hits Hardest
+Getting the mounting and sealing right from the start is exactly why One Roof Solar builds every install around Darwin's actual conditions. If you're weighing up your options, you can [get a solar quote in Darwin, Palmerston or Alice Springs](/) and we'll walk you through what wind rating and sealing your roof specifically needs.`,
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/bellamack-0832-2-1-.webp",
+        alt: "Cyclone-rated solar mounting on a Darwin rooftop",
+        caption: "Wind region C/D racking and sealed IP67/IP68 connectors are what actually ride out monsoon humidity and storm warnings.",
+      },
+      {
+        type: "stats",
+        items: [
+          { value: "IP67+", label: "Sealed connectors and junction boxes to keep moisture out of the electrics.", icon: "shield" },
+          { value: "5–10%", label: "Output you can quietly lose to dry-season dust before a downpour washes it off.", icon: "zap" },
+          { value: "Battery", label: "The piece that keeps lights on when grid-tied solar switches off in a blackout.", icon: "battery" },
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `## Keeping the Power On When the Wet Season Hits Hardest
 
 A cloudy day is one thing. A blackout during a storm is a different problem, and it's one solar alone doesn't solve.
 
@@ -132,9 +250,17 @@ If you've got a standard grid-tied system with no battery, it switches off durin
 
 A couple of things worth clearing up while we're talking batteries. First, your battery won't overcharge itself. Every battery system runs a battery management system (BMS) that automatically stops charging once it's full, so there's no risk of your Sigenergy or GoodWe unit cooking itself on a big sunny day after the rain clears. Second, your battery doesn't quietly drain itself overnight just because it's sitting there. It only discharges when your home actually draws power from it, so a fully charged battery at sunset is there for you in the morning, not mysteriously flat.
 
-If the thought of sitting through a wet season blackout without power is what's holding you back from going all in on solar, a [solar battery installation](/services/solar-battery-installation) is the piece that actually fixes it.
-
-## Is Solar Still Worth It in Darwin's Wet Season?
+If the thought of sitting through a wet season blackout without power is what's holding you back from going all in on solar, a [solar battery installation](/services/solar-battery-installation) is the piece that actually fixes it.`,
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/products/sigen-battery.webp",
+        alt: "Home battery storage for wet season blackout backup in Darwin",
+        caption: "A battery stores daytime generation for overnight use, blackouts, and stretches of heavy cloud.",
+      },
+      {
+        type: "markdown",
+        markdown: `## Is Solar Still Worth It in Darwin's Wet Season?
 
 Yes, and the maths holds up when you look at the full year rather than just the rainy months.
 
@@ -145,6 +271,12 @@ Some people hold off installing until the wet season passes, thinking they'll ge
 ## Is That Wet Season Dip Normal, or Is Something Actually Wrong?
 
 A drop in output through January and February is expected. What's not normal is one section of your roof underperforming compared to the rest, a sudden output cliff that doesn't recover once the sun's back, or a system producing well under 10% even on a bright day between storms. If you're seeing any of that, it's not the weather, it's worth getting it checked. Our [solar panel maintenance team](/services/solar-panel-maintenance-darwin) can pull the per-string data off your inverter and tell you in minutes whether it's a normal seasonal dip or an actual fault.`,
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/alice-springs-0870-1-.webp",
+        alt: "Solar installation across the Northern Territory climate",
+        caption: "Waiting for the wet season to pass just delays dry-season generation you could already be banking.",
       },
       {
         type: "faqs",
@@ -217,4 +349,29 @@ export function isBlogPath(pathname: string): boolean {
   if (clean === "/blogs" || clean === "/blog") return true;
   if (clean.startsWith("/blogs/")) return true;
   return blogPosts.some((post) => clean === `/${post.slug}`);
+}
+
+export function getPostToc(post: BlogPost): { id: string; label: string }[] {
+  const items: { id: string; label: string }[] = [];
+  const seen = new Set<string>();
+
+  const push = (label: string) => {
+    const id = slugifyHeading(label);
+    if (seen.has(id)) return;
+    seen.add(id);
+    items.push({ id, label });
+  };
+
+  for (const section of post.sections) {
+    if (section.type === "markdown") {
+      for (const match of section.markdown.matchAll(/^## (.+)$/gm)) {
+        push(match[1]);
+      }
+    }
+    if (section.type === "faqs") {
+      push(section.heading);
+    }
+  }
+
+  return items;
 }
