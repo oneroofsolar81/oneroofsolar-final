@@ -260,6 +260,11 @@ export const mainNavConfig: NavItem[] = [
     type: "direct",
   },
   {
+    label: "Blogs",
+    href: "/blogs",
+    type: "direct",
+  },
+  {
     label: "Contact Us",
     href: "/contact",
     type: "direct",

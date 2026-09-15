@@ -47,7 +47,7 @@ export const FaqItem = ({ q, a, index, isOpen, onClick }: { q: string; a: ReactN
       </button>
       <div
         className={`overflow-hidden transition-all duration-500 px-6 sm:px-6 ${
-          isOpen ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"
+          isOpen ? "max-h-[480px] pb-6 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="text-slate-600 leading-relaxed font-medium pl-12 sm:pl-14 text-base sm:text-lg">

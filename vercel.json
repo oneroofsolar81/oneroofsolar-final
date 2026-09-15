@@ -164,6 +164,16 @@
       "source": "/ev-chargers/",
       "destination": "/services/ev-chargers/installation",
       "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/blogs",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blogs",
+      "permanent": true
     }
   ],
   "rewrites": [

@@ -21,6 +21,7 @@ import { useState, useEffect, useMemo, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 import { mainNavConfig, filterNavItems, NavItem } from "../config/navigation";
+import { isBlogPath } from "../data/blogPosts";
 
 function formatHref(href?: string): string {
   if (!href) return "";
@@ -306,13 +307,17 @@ export function Navbar() {
                       );
                     }
 
+                    const isActiveLink =
+                      location.pathname === itemHref ||
+                      (itemHref === "/blogs" && isBlogPath(location.pathname));
+
                     return (
                       <Link
                         key={item.label}
                         to={itemHref}
                         onMouseEnter={() => handleMouseEnter(item)}
                         className={`desktop-nav-link nav-link-item text-[15px] font-semibold leading-[1.2] tracking-normal px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1.5 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
-                          location.pathname === itemHref
+                          isActiveLink
                             ? isDarkHeader
                               ? "bg-[#8cc63f] text-[#19281D] shadow-[0_0_18px_rgba(140,198,63,0.35)]"
                               : "bg-white text-brand-600 shadow-sm"
@@ -762,7 +767,8 @@ export function Navbar() {
                           to={itemHref}
                           onClick={handleMobileClose}
                           className={`mobile-nav-link nav-link-item flex items-center justify-between min-h-[56px] py-3.5 text-[15px] font-semibold leading-[1.2] tracking-normal transition-colors ${
-                            location.pathname === itemHref
+                            location.pathname === itemHref ||
+                            (itemHref === "/blogs" && isBlogPath(location.pathname))
                               ? "text-[#8cc63f]"
                               : "text-slate-200 hover:text-[#8cc63f]"
                           }`}

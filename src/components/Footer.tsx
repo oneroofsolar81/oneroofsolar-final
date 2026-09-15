@@ -75,6 +75,8 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-slate-400">
               <li><Link to="/about" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">About Us</Link></li>
               <li><Link to="/about" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Why Choose Us</Link></li>
+              <li><Link to="/projects" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Projects</Link></li>
+              <li><Link to="/blogs" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Blogs</Link></li>
               <li><Link to="/contact" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Contact</Link></li>
               <li><Link to="/terms" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Terms & Conditions</Link></li>
               <li><Link to="/privacy" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Privacy Policy</Link></li>

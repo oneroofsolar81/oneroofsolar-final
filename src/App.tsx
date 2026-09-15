@@ -57,6 +57,8 @@ const AdminDashboard = lazy(() => import("./pages/admin/AdminDashboard").then(m 
 const AdminPageEditor = lazy(() => import("./pages/admin/AdminPageEditor").then(m => ({ default: m.AdminPageEditor })));
 const AdminListEditor = lazy(() => import("./pages/admin/AdminListEditor").then(m => ({ default: m.AdminListEditor })));
 const AdminItemEditor = lazy(() => import("./pages/admin/AdminItemEditor").then(m => ({ default: m.AdminItemEditor })));
+const Blogs = lazy(() => import("./pages/Blogs").then(m => ({ default: m.Blogs })));
+const BlogPost = lazy(() => import("./pages/BlogPost").then(m => ({ default: m.BlogPost })));
 
 /** Lightweight route fallback — a minimal branded splash while a page chunk loads. */
 function RouteFallback() {
@@ -310,6 +312,14 @@ export default function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/projects/" element={<Projects />} />
+                <Route path="/blogs" element={<Blogs />} />
+                <Route path="/blogs/" element={<Blogs />} />
+                <Route path="/blog" element={<Navigate to="/blogs" replace />} />
+                <Route path="/blog/" element={<Navigate to="/blogs" replace />} />
+                <Route path="/blogs/:slug" element={<BlogPost />} />
+                <Route path="/blogs/:slug/" element={<BlogPost />} />
+                <Route path="/do-solar-panels-work-during-darwins-wet-season" element={<BlogPost />} />
+                <Route path="/do-solar-panels-work-during-darwins-wet-season/" element={<BlogPost />} />
                 <Route path="/terms" element={<Terms />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="*" element={<div className="min-h-screen flex items-center justify-center pt-24"><div className="text-center"><h1 className="hero-heading text-slate-900 mb-4 break-words normal-case">404</h1><p className="text-xl text-slate-600 mb-8">The page you are looking for does not exist.</p><Link to="/" className="text-brand-600 font-bold hover:underline">Go back home</Link></div></div>} />
