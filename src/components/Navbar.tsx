@@ -85,8 +85,9 @@ export function Navbar() {
   const [slideDirection, setSlideDirection] = useState<"forward" | "backward">("forward");
 
   const location = useLocation();
-  const navRef = useRef<HTMLElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [headerHeight, setHeaderHeight] = useState(108);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -96,8 +97,26 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const el = headerRef.current;
+    if (!el) return;
+    const update = () => setHeaderHeight(Math.round(el.getBoundingClientRect().height));
+    update();
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   // Filter navigation items to ensure only valid URLs/children are rendered
   const navItems = useMemo(() => filterNavItems(mainNavConfig), []);
+  const categoryItems = useMemo(
+    () => navItems.filter((item) => ["Solar System", "Products", "Services", "Locations"].includes(item.label)),
+    [navItems]
+  );
+  const utilityItems = useMemo(
+    () => navItems.filter((item) => !["Solar System", "Products", "Services", "Locations"].includes(item.label)),
+    [navItems]
+  );
 
   // Close menus on route change
   useEffect(() => {
@@ -121,7 +140,7 @@ export function Navbar() {
   // Handle Click Outside desktop navigation
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+      if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
         setActiveMegaMenu(null);
       }
     };
@@ -202,184 +221,169 @@ export function Navbar() {
 
   const isDesktopMenuOpen = Boolean(activeDesktopItem);
   const isBackdropActive = isDesktopMenuOpen;
-  const isSolidHeader =
-    scrolled ||
-    isOpen ||
-    isDesktopMenuOpen ||
-    (location.pathname !== "/" && !location.pathname.startsWith("/services"));
-  const isDarkHeader = isDesktopMenuOpen || isOpen;
+
+  const renderCategoryItem = (item: NavItem) => {
+    const isDirect = item.type === "direct" || !item.children || item.children.length === 0;
+    const itemHref = formatHref(item.href);
+    const isItemActive = activeMegaMenu === item.label;
+    const isActiveLink =
+      location.pathname === itemHref ||
+      (itemHref === "/blogs" && isBlogPath(location.pathname));
+
+    if (!isDirect) {
+      return (
+        <button
+          key={item.label}
+          onMouseEnter={() => handleMouseEnter(item)}
+          onClick={() => setActiveMegaMenu(isItemActive ? null : item.label)}
+          aria-expanded={isItemActive}
+          aria-haspopup="true"
+          aria-controls={`desktop-menu-${item.label}`}
+          className={`desktop-nav-link nav-link-item inline-flex items-center gap-1.5 py-3 text-[13px] xl:text-[14px] font-semibold tracking-wide whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-[#8cc63f] ${
+            isItemActive ? "text-[#8cc63f]" : "text-[#eef4e6] hover:text-[#8cc63f]"
+          }`}
+        >
+          <span>{item.label}</span>
+          <ChevronDown className={`h-3.5 w-3.5 shrink-0 transition-transform ${isItemActive ? "rotate-180" : ""}`} />
+        </button>
+      );
+    }
+
+    return (
+      <Link
+        key={item.label}
+        to={itemHref}
+        onMouseEnter={() => handleMouseEnter(item)}
+        className={`desktop-nav-link nav-link-item inline-flex items-center py-3 text-[13px] xl:text-[14px] font-semibold tracking-wide whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-[#8cc63f] ${
+          isActiveLink ? "text-[#8cc63f]" : "text-[#eef4e6] hover:text-[#8cc63f]"
+        }`}
+      >
+        {item.label}
+      </Link>
+    );
+  };
 
   return (
     <>
-      <nav
-        ref={navRef}
+      <header
+        ref={headerRef}
         onMouseLeave={handleMouseLeave}
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isDesktopMenuOpen ? "is-menu-open" : ""
-        } ${
-          isDarkHeader
-            ? "bg-[#0A1118]/95 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]"
-            : isSolidHeader
-            ? "bg-white/95 backdrop-blur-xl border-b border-slate-200/60 shadow-sm"
-            : "bg-transparent"
+        className={`fixed top-0 w-full z-50 ${isDesktopMenuOpen ? "is-menu-open" : ""} ${
+          scrolled ? "shadow-[0_10px_30px_rgba(0,0,0,0.28)]" : ""
         }`}
       >
-        <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
-          <div className="relative flex items-center justify-between gap-5 xl:gap-6 py-2.5">
-            {/* Left Section: Logo & Desktop Navigation with consistent gap across all desktop sizes */}
-            <div className="flex min-w-0 flex-1 items-center gap-3 xl:gap-5 2xl:gap-8">
-              {/* Logo */}
-              <div className="flex items-center gap-2 shrink-0">
-                <Link to="/" className="flex items-center gap-2 relative z-50">
-                  <img
-                    referrerPolicy="no-referrer"
-                    src={
-                      isDarkHeader
-                        ? "/assets/images/home/logo-oneroof.png"
-                        : isSolidHeader
-                        ? "/assets/images/home/logo-oneroof-classic.png"
-                        : "/assets/images/home/logo-oneroof.png"
-                    }
-                    alt="Oneroof Solar Logo"
-                    className="h-[42px] sm:h-[46px] w-auto max-w-[155px] sm:max-w-[165px] object-contain object-left"
-                    width={165}
-                    height={46}
-                    fetchPriority="high"
-                    loading="eager"
-                  />
-                </Link>
-              </div>
-
-              {/* Desktop Navigation Menu */}
-              <div className="hidden xl:flex items-center">
-                <div
-                  className={`flex items-center gap-1 rounded-full p-1 transition-colors ${
-                    isDarkHeader
-                      ? "bg-white/5 border border-white/10"
-                      : isSolidHeader
-                      ? "bg-slate-100/80 border border-slate-200/60"
-                      : "bg-black/5 backdrop-blur-sm border border-black/5"
-                  }`}
-                >
-                  {navItems.map((item) => {
-                    const isDirect = item.type === "direct" || !item.children || item.children.length === 0;
-                    const itemHref = formatHref(item.href);
-                    const isItemActive = activeMegaMenu === item.label;
-
-                    if (!isDirect) {
-                      return (
-                        <button
-                          key={item.label}
-                          onMouseEnter={() => handleMouseEnter(item)}
-                          onClick={() => setActiveMegaMenu(isItemActive ? null : item.label)}
-                          aria-expanded={isItemActive}
-                          aria-haspopup="true"
-                          aria-controls={`desktop-menu-${item.label}`}
-                          className={`desktop-nav-link nav-link-item text-[13px] 2xl:text-[15px] font-semibold leading-[1.2] tracking-normal px-2.5 2xl:px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
-                            isItemActive
-                              ? "is-active bg-[#8cc63f] text-[#19281D] shadow-[0_0_18px_rgba(140,198,63,0.35)]"
-                              : isDarkHeader
-                              ? "text-white hover:bg-white/10 hover:text-[#8cc63f]"
-                              : isSolidHeader
-                              ? "text-slate-800 hover:bg-white/60 hover:text-brand-600"
-                              : "text-white hover:bg-white/10 hover:text-brand-300"
-                          }`}
-                        >
-                          <span>{item.label}</span>
-                          <ChevronDown
-                            className={`h-3.5 w-3.5 shrink-0 transition-transform duration-200 ${
-                              isItemActive
-                                ? "rotate-180 text-[#19281D]"
-                                : isDarkHeader
-                                ? "text-white/80"
-                                : isSolidHeader
-                                ? "text-slate-800"
-                                : "text-white/80"
-                            }`}
-                          />
-                        </button>
-                      );
-                    }
-
-                    const isActiveLink =
-                      location.pathname === itemHref ||
-                      (itemHref === "/blogs" && isBlogPath(location.pathname));
-
-                    return (
-                      <Link
-                        key={item.label}
-                        to={itemHref}
-                        onMouseEnter={() => handleMouseEnter(item)}
-                        className={`desktop-nav-link nav-link-item text-[13px] 2xl:text-[15px] font-semibold leading-[1.2] tracking-normal px-2.5 2xl:px-4 py-2 rounded-full transition-all duration-200 flex items-center gap-1 whitespace-nowrap outline-none focus-visible:ring-2 focus-visible:ring-brand-500 ${
-                          isActiveLink
-                            ? isDarkHeader
-                              ? "bg-[#8cc63f] text-[#19281D] shadow-[0_0_18px_rgba(140,198,63,0.35)]"
-                              : "bg-white text-brand-600 shadow-sm"
-                            : isDarkHeader
-                            ? "text-white hover:bg-white/10 hover:text-[#8cc63f]"
-                            : isSolidHeader
-                            ? "text-slate-800 hover:bg-white/60 hover:text-brand-600"
-                            : "text-white hover:bg-white/10 hover:text-brand-300"
-                        }`}
-                      >
-                        <span>{item.label}</span>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-
-            {/* Right Section: Call Action for Desktop */}
-            <div className="hidden xl:flex items-center shrink-0">
-              <a href={`tel:${PRIMARY_PHONE_RAW}`} className="flex items-center gap-2.5 group shrink-0">
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform ${isDarkHeader ? "bg-[#8cc63f]/15" : "bg-brand-100"}`}>
-                  <div className="w-7 h-7 rounded-full bg-[#8cc63f] flex items-center justify-center">
-                    <Phone className={`w-3.5 h-3.5 fill-current ${isDarkHeader ? "text-[#19281D]" : "text-white"}`} />
-                  </div>
-                </div>
-                <div className="flex min-w-max shrink-0 flex-col -space-y-0.5 whitespace-nowrap">
-                  <span
-                    className={`text-[13px] font-medium leading-none transition-colors ${
-                      isDarkHeader ? "text-slate-300" : isSolidHeader ? "text-slate-600" : "text-white/90"
-                    }`}
-                  >
-                    Give Us a Call
-                  </span>
-                  <span
-                    className={`text-[16px] 2xl:text-[17px] font-extrabold tracking-tight leading-tight whitespace-nowrap transition-colors ${
-                      isDarkHeader ? "text-white" : isSolidHeader ? "text-slate-900" : "text-white"
-                    }`}
-                  >
-                    {PRIMARY_PHONE}
-                  </span>
-                </div>
-              </a>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <div className="xl:hidden relative z-50">
-              <button
-                onClick={() => {
-                  if (isOpen) {
-                    handleMobileClose();
-                  } else {
-                    setIsOpen(true);
-                  }
-                }}
-                aria-expanded={isOpen}
-                aria-label={isOpen ? "Close menu" : "Open main menu"}
-                className={`focus:outline-none p-2.5 rounded-full transition-colors ${
-                  isDarkHeader || (!scrolled && !isOpen && (location.pathname === "/" || location.pathname.startsWith("/services")))
-                    ? "text-white bg-white/10 hover:bg-white/20"
-                    : "text-slate-800 bg-slate-100 hover:bg-slate-200"
-                }`}
+        <div className="bg-[#8cc63f] text-[#19281D]">
+          <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
+            <div className="flex items-center justify-between lg:justify-center min-h-9 sm:min-h-10 gap-3">
+              <p className="min-w-0 truncate text-[12px] sm:text-[13px] font-semibold tracking-wide">
+                <span className="lg:hidden">NT Licensed Electricians</span>
+                <span className="hidden lg:inline">
+                  NT Licensed Electricians <span className="mx-2 text-[#19281D]/35">|</span>
+                  Darwin owned and operated <span className="mx-2 text-[#19281D]/35">|</span>
+                  $0 deposit solar <span className="mx-2 text-[#19281D]/35">|</span>
+                  Cyclone-rated installs
+                </span>
+              </p>
+              <a
+                href={`tel:${PRIMARY_PHONE_RAW}`}
+                className="lg:hidden shrink-0 inline-flex items-center gap-1.5 font-extrabold text-[13px] whitespace-nowrap"
               >
-                {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-              </button>
+                <Phone className="h-3.5 w-3.5" />
+                {PRIMARY_PHONE}
+              </a>
             </div>
           </div>
         </div>
+
+        <div className="bg-[#0A1118] border-b border-white/10">
+          <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
+            <div className="flex items-center justify-between gap-4 py-3">
+              <Link to="/" className="shrink-0">
+                <img
+                  referrerPolicy="no-referrer"
+                  src="/assets/images/home/logo-oneroof.png"
+                  alt="Oneroof Solar Logo"
+                  className="h-[52px] sm:h-[58px] xl:h-[64px] w-auto max-w-[200px] sm:max-w-[230px] xl:max-w-[250px] object-contain object-left"
+                  width={250}
+                  height={64}
+                  fetchPriority="high"
+                  loading="eager"
+                />
+              </Link>
+
+              <nav className="hidden xl:flex items-center justify-center flex-1 min-w-0" aria-label="Company">
+                {utilityItems.map((item, index) => {
+                  const itemHref = formatHref(item.href);
+                  const isActiveLink =
+                    location.pathname === itemHref ||
+                    (itemHref === "/blogs" && isBlogPath(location.pathname));
+                  return (
+                    <span key={item.label} className="flex items-center">
+                      {index > 0 ? <span className="mx-3 h-3.5 w-px bg-white/20" aria-hidden="true" /> : null}
+                      <Link
+                        to={itemHref}
+                        onMouseEnter={() => handleMouseEnter(item)}
+                        className={`text-[13px] font-medium whitespace-nowrap transition-colors ${
+                          isActiveLink ? "text-[#8cc63f]" : "text-white/75 hover:text-white"
+                        }`}
+                      >
+                        {item.label}
+                      </Link>
+                    </span>
+                  );
+                })}
+              </nav>
+
+              <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+                <a
+                  href={`tel:${PRIMARY_PHONE_RAW}`}
+                  className="hidden lg:inline-flex items-center gap-2 text-white hover:text-[#8cc63f] transition-colors"
+                >
+                  <span className="h-9 w-9 rounded-full bg-[#8cc63f]/15 border border-[#8cc63f]/30 flex items-center justify-center">
+                    <Phone className="h-4 w-4 text-[#8cc63f]" />
+                  </span>
+                  <span className="text-[15px] font-extrabold tracking-tight whitespace-nowrap">{PRIMARY_PHONE}</span>
+                </a>
+                <Link
+                  to="/contact"
+                  className="hidden md:inline-flex items-center justify-center rounded-md bg-[#8cc63f] hover:bg-[#9ad24d] text-[#19281D] text-[13px] font-extrabold px-4 xl:px-5 py-2.5 whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8cc63f]"
+                >
+                  Get a Quote
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (isOpen) {
+                      handleMobileClose();
+                    } else {
+                      setIsOpen(true);
+                    }
+                  }}
+                  aria-expanded={isOpen}
+                  aria-label={isOpen ? "Close menu" : "Open main menu"}
+                  className="lg:hidden p-2.5 rounded-md text-white bg-white/10 hover:bg-white/20 transition-colors focus:outline-none"
+                >
+                  {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav className="hidden lg:block bg-[#152218] border-y border-[#8cc63f]/25" aria-label="Products and services">
+          <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
+            <div className="flex items-center justify-center gap-x-5 xl:gap-x-8">
+              {categoryItems.map((item, index) => (
+                <span key={item.label} className="flex items-center">
+                  {index > 0 ? (
+                    <span className="mr-5 xl:mr-8 h-4 w-px bg-[#8cc63f]/35" aria-hidden="true" />
+                  ) : null}
+                  {renderCategoryItem(item)}
+                </span>
+              ))}
+            </div>
+          </div>
+        </nav>
 
         {/* ================================================== */}
         {/* DESKTOP CONTENT-BASED DROPDOWN & MEGA MENU PANELS  */}
@@ -396,12 +400,12 @@ export function Navbar() {
               transition={{ duration: 0.18, ease: "easeOut" }}
               onMouseEnter={() => handleMouseEnter(activeDesktopItem)}
               onMouseLeave={handleMouseLeave}
-              className="hidden xl:block absolute left-0 right-0 top-full pt-2 z-50 pointer-events-auto"
+              className="hidden lg:block absolute left-0 right-0 top-full pt-1 z-50 pointer-events-auto"
             >
               <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
                 {/* 1. SOLAR SYSTEM - COMPACT DROPDOWN (460px) */}
                 {activeDesktopItem.label === "Solar System" && (
-                  <div className="flex justify-start pl-[280px]">
+                  <div className="flex justify-center">
                     <div className="w-[460px] bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.7),0_0_32px_rgba(140,198,63,0.08)] p-3 backdrop-blur-xl relative overflow-hidden">
                       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
                       <div className="flex flex-col space-y-1">
@@ -437,7 +441,7 @@ export function Navbar() {
 
                 {/* 2. LOCATIONS - COMPACT DROPDOWN (380px) */}
                 {activeDesktopItem.label === "Locations" && (
-                  <div className="flex justify-start pl-[620px]">
+                  <div className="flex justify-center">
                     <div className="w-[380px] bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.7),0_0_32px_rgba(140,198,63,0.08)] p-3 backdrop-blur-xl relative overflow-hidden">
                       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
                       <div className="flex flex-col space-y-1">
@@ -642,7 +646,7 @@ export function Navbar() {
             </motion.div>
           )}
         </AnimatePresence>
-      </nav>
+      </header>
 
       {/* DESKTOP BACKDROP OVERLAY WHEN VALID DROPDOWN/MEGA MENU IS ACTIVE */}
       <AnimatePresence>
@@ -652,7 +656,8 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="hidden xl:block fixed inset-0 top-[76px] bg-[#0A1118]/50 backdrop-blur-[3px] z-40 pointer-events-auto"
+            className="hidden lg:block fixed inset-0 bg-[#0A1118]/50 backdrop-blur-[3px] z-40 pointer-events-auto"
+            style={{ top: headerHeight }}
             onClick={() => setActiveMegaMenu(null)}
           />
         )}
@@ -668,7 +673,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-[100] bg-[#0A1118] flex flex-col xl:hidden overflow-hidden"
+            className="fixed inset-0 z-[100] bg-[#0A1118] flex flex-col lg:hidden overflow-hidden"
           >
             {/* Mobile Header Bar */}
             <div className="flex-shrink-0 flex items-center justify-between px-5 py-4 border-b border-white/10 bg-[#0A1118] z-10">
@@ -774,7 +779,14 @@ export function Navbar() {
                   </div>
 
                   {/* Mobile Call CTA at bottom */}
-                  <div className="mt-auto pt-8 pb-4">
+                  <div className="mt-auto pt-8 pb-4 space-y-3">
+                    <Link
+                      to="/contact"
+                      onClick={handleMobileClose}
+                      className="flex items-center justify-center gap-2 w-full py-4 px-6 rounded-2xl bg-white/10 hover:bg-white/15 text-white font-extrabold text-[16px] transition-all active:scale-[0.98]"
+                    >
+                      Get a Quote
+                    </Link>
                     <a
                       href={`tel:${PRIMARY_PHONE_RAW}`}
                       className="flex items-center justify-center gap-3 w-full py-4 px-6 rounded-2xl bg-[#8cc63f] hover:bg-brand-400 text-[#19281D] font-extrabold text-[16px] transition-all active:scale-[0.98] shadow-lg shadow-[#8cc63f]/20"

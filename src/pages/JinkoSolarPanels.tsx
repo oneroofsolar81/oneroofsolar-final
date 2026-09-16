@@ -266,7 +266,7 @@ export function JinkoSolarPanels() {
       ))}
 
       {/* 1. Hero Section */}
-      <section className="relative pt-24 pb-12 sm:pt-36 sm:pb-24 lg:pt-44 lg:pb-36 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-32 pb-12 sm:pt-36 sm:pb-24 lg:pt-44 lg:pb-36 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <img 
             referrerPolicy="no-referrer"

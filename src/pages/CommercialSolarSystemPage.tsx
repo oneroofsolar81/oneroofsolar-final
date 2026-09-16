@@ -264,7 +264,7 @@ export function CommercialSolarSystemPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
       {/* SECTION 1: HERO SECTION */}
-      <section className="relative pt-24 pb-12 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-32 pb-12 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <img 
             referrerPolicy="no-referrer"

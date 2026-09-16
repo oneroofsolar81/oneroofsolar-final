@@ -28,7 +28,7 @@ export function Blogs() {
         }}
       />
 
-      <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-20 bg-[#0A1118] overflow-hidden">
+      <section className="relative pt-40 pb-16 lg:pt-52 lg:pb-20 bg-[#0A1118] overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="/assets/images/hosted/aerial.webp"

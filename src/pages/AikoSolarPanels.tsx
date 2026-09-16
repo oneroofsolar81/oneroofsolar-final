@@ -307,7 +307,7 @@ export function AikoSolarPanels() {
       ))}
 
       {/* Hero Section Upgrade */}
-      <section className="relative pt-24 pb-12 sm:pt-36 sm:pb-24 lg:pt-44 lg:pb-36 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-32 pb-12 sm:pt-36 sm:pb-24 lg:pt-44 lg:pb-36 overflow-hidden bg-[#0A1118]">
         {/* Background image overlay for depth */}
         <div className="absolute inset-0">
           <img 

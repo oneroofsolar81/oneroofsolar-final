@@ -124,7 +124,7 @@ export function SigenergyInvertersPage() {
       {/* ========================================================= */}
       {/* SECTION 1: HERO SECTION (2-COLUMN 55/45, DARK NAVY)       */}
       {/* ========================================================= */}
-      <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-28 bg-[#0A1118] text-white overflow-hidden border-b border-slate-800">
+      <section className="relative pt-32 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-28 bg-[#0A1118] text-white overflow-hidden border-b border-slate-800">
         {/* Ambient Glows */}
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#8cc63f]/10 rounded-full blur-[140px] pointer-events-none -mt-32"></div>
         <div className="absolute bottom-0 left-10 w-[450px] h-[450px] bg-brand-600/10 rounded-full blur-[120px] pointer-events-none -mb-20"></div>

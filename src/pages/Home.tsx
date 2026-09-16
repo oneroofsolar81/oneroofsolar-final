@@ -342,7 +342,7 @@ export function Home() {
   return (
     <div className="flex flex-col bg-white">
       {/* HERO SECTION */}
-      <section className="relative bg-[#0A1118] px-4 pt-[110px] pb-16 md:pt-36 lg:pt-[160px] md:pb-24 sm:px-6 lg:px-8 border-b border-slate-900">
+      <section className="relative bg-[#0A1118] px-4 pt-[148px] pb-16 md:pt-44 lg:pt-[188px] md:pb-24 sm:px-6 lg:px-8 border-b border-slate-900">
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <div className="absolute inset-0 bg-[#0A1118]" />
           <img referrerPolicy="no-referrer"

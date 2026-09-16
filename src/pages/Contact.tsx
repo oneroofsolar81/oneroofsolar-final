@@ -80,7 +80,7 @@ export function Contact() {
       />
       
       {/* Dark Hero Section */}
-      <section className="relative pt-36 pb-20 lg:pt-48 lg:pb-28 bg-[#0A1118] border-b border-white/5 overflow-hidden">
+      <section className="relative pt-40 pb-20 lg:pt-52 lg:pb-28 bg-[#0A1118] border-b border-white/5 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-brand-500/10 blur-[120px] pointer-events-none"></div>
         <div className="absolute -bottom-1/2 -left-1/4 w-full h-full bg-slate-900/50 block"></div>
         
