@@ -99,10 +99,6 @@ export const servicesMenu: NavItem[] = [
         label: "Solar Battery Installation",
         href: "/services/solar-battery-installation",
       },
-      {
-        label: "Solar Battery Brands",
-        href: "/products/solar-battery-brands/",
-      },
     ],
   },
   {

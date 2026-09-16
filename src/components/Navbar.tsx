@@ -425,7 +425,8 @@ export function Navbar() {
               transition={{ duration: 0.18, ease: "easeOut" }}
               onMouseEnter={() => handleMouseEnter(activeDesktopItem)}
               onMouseLeave={handleMouseLeave}
-              className="hidden lg:block absolute left-0 right-0 top-full pt-1 z-50 pointer-events-auto"
+              className="hidden lg:block absolute left-0 right-0 top-full z-50 pointer-events-auto overflow-y-auto overscroll-contain"
+              style={{ maxHeight: `calc(100dvh - ${headerHeight}px)` }}
             >
               <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
                 {/* 1. SOLAR SYSTEM - COMPACT DROPDOWN (460px) */}
@@ -502,100 +503,104 @@ export function Navbar() {
 
                 {/* 3. PRODUCTS - BALANCED MEGA MENU */}
                 {activeDesktopItem.label === "Products" && (
-                  <div className="mx-auto max-w-[1140px]">
-                    <div className="bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),0_0_40px_rgba(140,198,63,0.1)] p-7 sm:p-8 backdrop-blur-xl relative overflow-hidden">
+                  <div className="mx-auto max-w-[1140px] py-2 pb-4">
+                    <div className="bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),0_0_40px_rgba(140,198,63,0.1)] p-4 sm:p-5 backdrop-blur-xl relative">
                       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
-                      <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[520px] h-[180px] bg-[#8cc63f]/10 blur-[90px] rounded-full" />
-                      {/* Top Product Cards Grid */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-7 relative z-10">
+                      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 relative z-10">
                         {productCategoryItems.map((prod) => (
                           <div
                             key={prod.label}
-                            className="group flex flex-col justify-between p-5 rounded-xl border border-white/10 bg-slate-900/50 hover:bg-slate-900/80 hover:border-[#8cc63f]/40 hover:shadow-[0_0_24px_rgba(140,198,63,0.14)] transition-all duration-200 h-full"
+                            className="group flex flex-col p-4 rounded-xl border border-white/10 bg-slate-900/50 hover:bg-slate-900/80 hover:border-[#8cc63f]/40 hover:shadow-[0_0_24px_rgba(140,198,63,0.14)] transition-all duration-200"
                           >
-                            <div>
-                              <div className="w-11 h-11 rounded-xl bg-[#8cc63f]/10 border border-[#8cc63f]/20 text-[#8cc63f] flex items-center justify-center mb-4 group-hover:scale-105 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] group-hover:shadow-[0_0_16px_rgba(140,198,63,0.45)] transition-all">
-                                {renderMenuIcon(prod.iconName, "w-5 h-5")}
-                              </div>
-                              <Link
-                                to={formatHref(prod.href)}
-                                onClick={() => setActiveMegaMenu(null)}
-                                className="text-[17px] font-bold text-white hover:text-[#8cc63f] transition-colors block"
-                              >
-                                {prod.label}
-                              </Link>
-                              {prod.description && (
-                                <p className="text-[13px] text-slate-400 mt-1.5 leading-relaxed">
-                                  {prod.description}
-                                </p>
-                              )}
+                            <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 border border-[#8cc63f]/20 text-[#8cc63f] flex items-center justify-center mb-3 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] transition-all">
+                              {renderMenuIcon(prod.iconName, "w-5 h-5")}
+                            </div>
+                            <Link
+                              to={formatHref(prod.href)}
+                              onClick={() => setActiveMegaMenu(null)}
+                              className="text-[16px] font-bold text-white hover:text-[#8cc63f] transition-colors block"
+                            >
+                              {prod.label}
+                            </Link>
+                            {prod.description && (
+                              <p className="text-[13px] text-slate-400 mt-1 leading-relaxed">
+                                {prod.description}
+                              </p>
+                            )}
 
-                              {prod.children && prod.children.length > 0 && (
-                                <div className="mt-3 pt-2.5 border-t border-white/10 flex flex-col space-y-1">
-                                  {prod.children.map((sub) => (
-                                    <Link
-                                      key={sub.label}
-                                      to={formatHref(sub.href)}
-                                      onClick={() => setActiveMegaMenu(null)}
-                                      className={`group/sub flex items-center justify-between text-[13px] font-semibold py-1 px-1.5 rounded transition-all ${
-                                        location.pathname === formatHref(sub.href)
-                                          ? "text-[#8cc63f] bg-[#8cc63f]/10"
-                                          : "text-slate-300 hover:text-[#8cc63f] hover:bg-white/5"
-                                      }`}
-                                    >
-                                      <span>{sub.label}</span>
-                                      <ArrowRight className="w-3.5 h-3.5 text-[#8cc63f] opacity-60 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5 transition-all" />
-                                    </Link>
-                                  ))}
-                                </div>
-                              )}
-                            </div>
-                            <div className="flex items-center gap-1.5 text-[13px] font-bold text-[#8cc63f] mt-4 pt-3 border-t border-white/10">
-                              <Link
-                                to={formatHref(prod.href)}
-                                onClick={() => setActiveMegaMenu(null)}
-                                className="flex items-center gap-1.5 hover:text-brand-300 transition-colors"
-                              >
-                                <span>Explore Solution</span>
-                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                              </Link>
-                            </div>
+                            {prod.children && prod.children.length > 0 && (
+                              <div className="mt-3 pt-2.5 border-t border-white/10 flex flex-col space-y-0.5">
+                                {prod.children.map((sub) => (
+                                  <Link
+                                    key={sub.label}
+                                    to={formatHref(sub.href)}
+                                    onClick={() => setActiveMegaMenu(null)}
+                                    className={`group/sub flex items-center justify-between text-[13px] font-semibold py-1 px-1.5 rounded transition-all ${
+                                      location.pathname === formatHref(sub.href)
+                                        ? "text-[#8cc63f] bg-[#8cc63f]/10"
+                                        : "text-slate-300 hover:text-[#8cc63f] hover:bg-white/5"
+                                    }`}
+                                  >
+                                    <span>{sub.label}</span>
+                                    <ArrowRight className="w-3.5 h-3.5 text-[#8cc63f] opacity-60 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5 transition-all" />
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
+                            <Link
+                              to={formatHref(prod.href)}
+                              onClick={() => setActiveMegaMenu(null)}
+                              className="flex items-center gap-1.5 text-[13px] font-bold text-[#8cc63f] mt-auto pt-3 hover:text-brand-300 transition-colors"
+                            >
+                              <span>Explore Solution</span>
+                              <ArrowRight className="w-4 h-4" />
+                            </Link>
                           </div>
                         ))}
-                      </div>
 
-                      {/* Solar Panel Brands Grid */}
-                      {productBrandsItem && (
-                        <div className="bg-slate-900/40 rounded-xl p-5 border border-white/10 relative z-10">
-                          <div className="flex items-center justify-between mb-3.5 gap-3">
-                            <div className="flex items-center gap-2">
-                              <Sun className="w-4 h-4 text-[#8cc63f]" />
-                              <h4 className="text-[15px] font-bold text-white normal-case">
-                                Solar Panel Brands
-                              </h4>
+                        {productBrandsItem && (
+                          <div className="group flex flex-col p-4 rounded-xl border border-white/10 bg-slate-900/50 hover:bg-slate-900/80 hover:border-[#8cc63f]/40 transition-all duration-200">
+                            <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 border border-[#8cc63f]/20 text-[#8cc63f] flex items-center justify-center mb-3">
+                              <Sun className="w-5 h-5" />
                             </div>
                             <Link
                               to={formatHref(productBrandsItem.href)}
                               onClick={() => setActiveMegaMenu(null)}
-                              className="text-[13px] font-semibold text-[#8cc63f] hover:text-brand-300 hover:underline whitespace-nowrap"
+                              className="text-[16px] font-bold text-white hover:text-[#8cc63f] transition-colors block"
                             >
-                              View All Brands →
+                              Solar Panel Brands
+                            </Link>
+                            <p className="text-[13px] text-slate-400 mt-1 leading-relaxed">
+                              Panels we install across Darwin and the NT.
+                            </p>
+                            <div className="mt-3 pt-2.5 border-t border-white/10 flex flex-col space-y-0.5">
+                              {productBrandsItem.children?.map((brand) => (
+                                <Link
+                                  key={brand.label}
+                                  to={formatHref(brand.href)}
+                                  onClick={() => setActiveMegaMenu(null)}
+                                  className={`group/sub flex items-center justify-between text-[13px] font-semibold py-1 px-1.5 rounded transition-all ${
+                                    location.pathname === formatHref(brand.href)
+                                      ? "text-[#8cc63f] bg-[#8cc63f]/10"
+                                      : "text-slate-300 hover:text-[#8cc63f] hover:bg-white/5"
+                                  }`}
+                                >
+                                  <span>{brand.label}</span>
+                                  <ArrowRight className="w-3.5 h-3.5 text-[#8cc63f] opacity-60 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5 transition-all" />
+                                </Link>
+                              ))}
+                            </div>
+                            <Link
+                              to={formatHref(productBrandsItem.href)}
+                              onClick={() => setActiveMegaMenu(null)}
+                              className="flex items-center gap-1.5 text-[13px] font-bold text-[#8cc63f] mt-auto pt-3 hover:text-brand-300 transition-colors"
+                            >
+                              <span>View All Brands</span>
+                              <ArrowRight className="w-4 h-4" />
                             </Link>
                           </div>
-                          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
-                            {productBrandsItem.children?.map((brand) => (
-                              <Link
-                                key={brand.label}
-                                to={formatHref(brand.href)}
-                                onClick={() => setActiveMegaMenu(null)}
-                                className="flex items-center justify-center py-2.5 px-3 rounded-lg bg-[#0A1118] border border-white/10 text-[14px] font-bold text-slate-200 hover:text-[#19281D] hover:bg-[#8cc63f] hover:border-[#8cc63f] hover:shadow-[0_0_16px_rgba(140,198,63,0.35)] transition-all text-center"
-                              >
-                                {brand.label}
-                              </Link>
-                            ))}
-                          </div>
-                        </div>
-                      )}
+                        )}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -603,7 +608,7 @@ export function Navbar() {
                 {/* 4. SERVICES - THREE-COLUMN MEGA MENU */}
                 {activeDesktopItem.label === "Services" && (
                   <div className="mx-auto max-w-[1280px]">
-                    <div className="bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),0_0_40px_rgba(140,198,63,0.1)] p-7 sm:p-8 backdrop-blur-xl relative overflow-hidden">
+                    <div className="bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),0_0_40px_rgba(140,198,63,0.1)] p-5 sm:p-6 backdrop-blur-xl relative">
                       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
                       <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[520px] h-[180px] bg-[#8cc63f]/10 blur-[90px] rounded-full" />
                       <div className="grid grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-6 relative z-10">
