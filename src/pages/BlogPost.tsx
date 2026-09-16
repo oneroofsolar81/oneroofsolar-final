@@ -275,7 +275,7 @@ export function BlogPost() {
               </div>
               <div className="grid grid-cols-3 gap-3 mt-4">
                 {[
-                  { icon: CloudRain, value: "10–25%", label: "Wet-day output" },
+                  { icon: CloudRain, value: "10 to 25%", label: "Wet-day output" },
                   { icon: Sun, value: "3,000+", label: "Sun hours / year" },
                   { icon: Wind, value: "C / D", label: "Wind region" },
                 ].map((item) => (
@@ -335,12 +335,7 @@ export function BlogPost() {
               }
               if (section.type === "figure") {
                 return (
-                  <ArticleFigure
-                    key={index}
-                    src={section.src}
-                    alt={section.alt}
-                    caption={section.caption}
-                  />
+                  <ArticleFigure key={index} src={section.src} alt={section.alt} />
                 );
               }
               if (section.type === "stats") {

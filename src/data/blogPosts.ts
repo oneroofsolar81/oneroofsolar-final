@@ -20,7 +20,7 @@ export type BlogSection =
   | { type: "markdown"; markdown: string }
   | { type: "cta"; cta: BlogCta }
   | { type: "faqs"; heading: string; items: BlogFaq[] }
-  | { type: "figure"; src: string; alt: string; caption: string }
+  | { type: "figure"; src: string; alt: string }
   | { type: "stats"; items: { value: string; label: string; icon: BlogStatIcon }[] }
   | { type: "takeaways"; heading?: string; items: string[] }
   | { type: "quote"; text: string; cite?: string }
@@ -122,7 +122,7 @@ Your system is still feeding the house. The wet season just changes the rate, no
         type: "takeaways",
         heading: "What to remember",
         items: [
-          "Panels keep generating through rain and cloud — they run on light, not a clear sky.",
+          "Panels keep generating through rain and cloud. They run on light, not a clear sky.",
           "On a heavy rain day, expect about 10 to 25% of clear-sky output, not zero.",
           "Size the array for February in Darwin, not a sunny-day brochure number.",
           "Wind region C/D racking and sealed connectors matter more than the rain itself.",
@@ -132,7 +132,7 @@ Your system is still feeding the house. The wet season just changes the rate, no
       {
         type: "stats",
         items: [
-          { value: "10–25%", label: "Typical output on a heavy rain or thick cloud day versus a clear day.", icon: "cloud" },
+          { value: "10 to 25%", label: "Typical output on a heavy rain or thick cloud day versus a clear day.", icon: "cloud" },
           { value: "3,000+", label: "Hours of sunshine a year in Darwin, Zone 1 on the federal STC scale.", icon: "sun" },
           { value: "C / D", label: "Cyclone wind region rating your racking has to be built for.", icon: "wind" },
         ],
@@ -141,7 +141,6 @@ Your system is still feeding the house. The wet season just changes the rate, no
         type: "figure",
         src: "/assets/images/hosted/bayview-0820.webp",
         alt: "Residential solar panels installed on a Darwin rooftop",
-        caption: "Darwin rooftops still generate through grey, overcast days — output drops, it does not stop.",
       },
       {
         type: "markdown",
@@ -194,7 +193,6 @@ To put real numbers on it, a well-sized 6.6kW system in Darwin can produce rough
         type: "figure",
         src: "/assets/images/hosted/berrimah-0828.webp",
         alt: "Larger Darwin solar installation sized for year-round output",
-        caption: "Oversizing the array against the inverter is a practical way to hold output up on overcast wet-season mornings.",
       },
       {
         type: "cta",
@@ -228,13 +226,12 @@ Getting the mounting and sealing right from the start is exactly why One Roof So
         type: "figure",
         src: "/assets/images/hosted/bellamack-0832-2-1-.webp",
         alt: "Cyclone-rated solar mounting on a Darwin rooftop",
-        caption: "Wind region C/D racking and sealed IP67/IP68 connectors are what actually ride out monsoon humidity and storm warnings.",
       },
       {
         type: "stats",
         items: [
           { value: "IP67+", label: "Sealed connectors and junction boxes to keep moisture out of the electrics.", icon: "shield" },
-          { value: "5–10%", label: "Output you can quietly lose to dry-season dust before a downpour washes it off.", icon: "zap" },
+          { value: "5 to 10%", label: "Output you can quietly lose to dry-season dust before a downpour washes it off.", icon: "zap" },
           { value: "Battery", label: "The piece that keeps lights on when grid-tied solar switches off in a blackout.", icon: "battery" },
         ],
       },
@@ -256,7 +253,6 @@ If the thought of sitting through a wet season blackout without power is what's 
         type: "figure",
         src: "/assets/images/hosted/products/sigen-battery.webp",
         alt: "Home battery storage for wet season blackout backup in Darwin",
-        caption: "A battery stores daytime generation for overnight use, blackouts, and stretches of heavy cloud.",
       },
       {
         type: "markdown",
@@ -276,7 +272,6 @@ A drop in output through January and February is expected. What's not normal is 
         type: "figure",
         src: "/assets/images/hosted/alice-springs-0870-1-.webp",
         alt: "Solar installation across the Northern Territory climate",
-        caption: "Waiting for the wet season to pass just delays dry-season generation you could already be banking.",
       },
       {
         type: "faqs",

@@ -50,7 +50,7 @@ export function Blogs() {
                 Solar guides for Darwin weather.
               </h1>
               <p className="text-lg sm:text-xl text-slate-300 font-medium max-w-2xl leading-relaxed">
-                Straight answers on solar, batteries and NT conditions — written for homes across Darwin, Palmerston and Alice Springs.
+                Straight answers on solar, batteries and NT conditions, written for homes across Darwin, Palmerston and Alice Springs.
               </p>
             </FadeIn>
             <FadeIn isHero delay={0.1} className="lg:col-span-4">
