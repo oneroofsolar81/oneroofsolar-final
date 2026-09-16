@@ -164,9 +164,9 @@ export function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Lock body scroll when mobile menu is open
+  // Lock page scroll when mobile nav or a desktop mega menu is open
   useEffect(() => {
-    if (isOpen) {
+    if (isOpen || Boolean(activeMegaMenu)) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
@@ -174,7 +174,7 @@ export function Navbar() {
     return () => {
       document.body.style.overflow = "";
     };
-  }, [isOpen]);
+  }, [isOpen, activeMegaMenu]);
 
   // Hover handlers for Desktop
   const handleMouseEnter = (item: NavItem) => {
@@ -425,8 +425,9 @@ export function Navbar() {
               transition={{ duration: 0.18, ease: "easeOut" }}
               onMouseEnter={() => handleMouseEnter(activeDesktopItem)}
               onMouseLeave={handleMouseLeave}
-              className="hidden lg:block absolute left-0 right-0 top-full z-50 pointer-events-auto overflow-y-auto overscroll-contain"
+              className="hidden lg:block absolute left-0 right-0 top-full z-50 pointer-events-auto"
               style={{ maxHeight: `calc(100dvh - ${headerHeight}px)` }}
+              onWheel={(event) => event.stopPropagation()}
             >
               <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
                 {/* 1. SOLAR SYSTEM - COMPACT DROPDOWN (460px) */}
@@ -503,8 +504,11 @@ export function Navbar() {
 
                 {/* 3. PRODUCTS - BALANCED MEGA MENU */}
                 {activeDesktopItem.label === "Products" && (
-                  <div className="mx-auto max-w-[1140px] py-2 pb-4">
-                    <div className="bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),0_0_40px_rgba(140,198,63,0.1)] p-4 sm:p-5 backdrop-blur-xl relative">
+                  <div className="mx-auto max-w-[1140px] py-2">
+                    <div
+                      className="mega-menu-scroll bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),0_0_40px_rgba(140,198,63,0.1)] p-4 sm:p-5 backdrop-blur-xl relative"
+                      style={{ maxHeight: `calc(100dvh - ${headerHeight}px - 12px)` }}
+                    >
                       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 relative z-10">
                         {productCategoryItems.map((prod) => (
