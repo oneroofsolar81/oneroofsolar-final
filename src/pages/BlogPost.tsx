@@ -12,9 +12,13 @@ import {
   Mail,
   MapPin,
   Phone,
+  Shield,
   Sun,
   User,
   Wind,
+  Battery,
+  Zap,
+  type LucideIcon,
 } from "lucide-react";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "@/src/lib/constants";
 import { FadeIn } from "@/src/components/ui/FadeIn";
@@ -30,8 +34,17 @@ import { ArticleCompare } from "@/src/components/blog/ArticleCompare";
 import { ArticleSidebar } from "@/src/components/blog/ArticleSidebar";
 import { ArticleTakeaways } from "@/src/components/blog/ArticleTakeaways";
 import { ArticleQuote } from "@/src/components/blog/ArticleQuote";
-import { getPostBySlug, getPostPath, getPostToc, relatedReads } from "@/src/data/blogPosts";
+import { getPostBySlug, getPostPath, getPostToc, relatedReads, type BlogStatIcon } from "@/src/data/blogPosts";
 import { slugifyHeading } from "@/src/lib/blog";
+
+const HERO_STAT_ICONS: Record<BlogStatIcon, LucideIcon> = {
+  cloud: CloudRain,
+  sun: Sun,
+  wind: Wind,
+  shield: Shield,
+  battery: Battery,
+  zap: Zap,
+};
 
 export function BlogPost() {
   const { slug: paramSlug } = useParams();
@@ -42,7 +55,7 @@ export function BlogPost() {
   const [progress, setProgress] = useState(0);
 
   const slugFromPath = location.pathname.replace(/^\/+|\/+$/g, "");
-  const slug = paramSlug || slugFromPath;
+  const slug = paramSlug || slugFromPath.split("/").filter(Boolean).pop();
   const post = getPostBySlug(slug);
   const toc = useMemo(() => (post ? getPostToc(post) : []), [post]);
 
@@ -274,20 +287,19 @@ export function BlogPost() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118]/70 via-transparent to-transparent" />
               </div>
               <div className="grid grid-cols-3 gap-3 mt-4">
-                {[
-                  { icon: CloudRain, value: "10 to 25%", label: "Wet-day output" },
-                  { icon: Sun, value: "3,000+", label: "Sun hours / year" },
-                  { icon: Wind, value: "C / D", label: "Wind region" },
-                ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-3 py-3.5 text-center"
-                  >
-                    <item.icon className="w-4 h-4 text-brand-400 mx-auto mb-1.5" />
-                    <p className="text-white font-extrabold leading-none">{item.value}</p>
-                    <p className="text-[11px] text-slate-300 mt-1.5 leading-tight">{item.label}</p>
-                  </div>
-                ))}
+                {(post.heroStats ?? []).map((item) => {
+                  const Icon = HERO_STAT_ICONS[item.icon];
+                  return (
+                    <div
+                      key={item.label}
+                      className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-3 py-3.5 text-center"
+                    >
+                      <Icon className="w-4 h-4 text-brand-400 mx-auto mb-1.5" />
+                      <p className="text-white font-extrabold leading-none">{item.value}</p>
+                      <p className="text-[11px] text-slate-300 mt-1.5 leading-tight">{item.label}</p>
+                    </div>
+                  );
+                })}
               </div>
             </FadeIn>
           </div>

@@ -316,6 +316,8 @@ export default function App() {
                 <Route path="/blogs/" element={<Blogs />} />
                 <Route path="/blog" element={<Navigate to="/blogs" replace />} />
                 <Route path="/blog/" element={<Navigate to="/blogs" replace />} />
+                <Route path="/blog/:slug" element={<BlogPost />} />
+                <Route path="/blog/:slug/" element={<BlogPost />} />
                 <Route path="/blogs/:slug" element={<BlogPost />} />
                 <Route path="/blogs/:slug/" element={<BlogPost />} />
                 <Route path="/do-solar-panels-work-during-darwins-wet-season" element={<BlogPost />} />

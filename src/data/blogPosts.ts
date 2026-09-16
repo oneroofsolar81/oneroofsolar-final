@@ -71,10 +71,233 @@ export type BlogPost = {
   seoTitle: string;
   seoDescription: string;
   canonicalPath: string;
+  heroStats?: { value: string; label: string; icon: BlogStatIcon }[];
   sections: BlogSection[];
 };
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "solar-panel-cyclone-protection",
+    title: "How to Protect Your Solar Panels From Cyclones and Storms in Darwin, NT",
+    excerpt:
+      "What actually protects solar panels in Darwin, Palmerston and Alice Springs, what to do before, during and after a storm, and why the install matters more than the panel brand on the box.",
+    date: "16 September 2026",
+    dateIso: "2026-09-16",
+    category: "Guides",
+    readTime: "8 min read",
+    image: "/assets/images/hosted/bellamack-0832-2-1-.webp",
+    imageAlt: "Cyclone-rated solar panels installed on a Darwin rooftop",
+    author: "Oneroof Solar",
+    seoTitle: "How to Protect Your Solar Panels From Cyclones in Darwin, NT",
+    seoDescription:
+      "How to protect solar panels from cyclones and storms in Darwin, Palmerston and Alice Springs. Wind ratings, humidity protection, prep checklist and post-storm steps.",
+    canonicalPath: "/blog/solar-panel-cyclone-protection/",
+    heroStats: [
+      { value: "Region C", label: "Darwin & Palmerston", icon: "wind" },
+      { value: "Region A", label: "Alice Springs", icon: "sun" },
+      { value: "IP67+", label: "Sealed connectors", icon: "shield" },
+    ],
+    sections: [
+      {
+        type: "markdown",
+        markdown: `Every November, the same feeling creeps back in. The clouds build up over the harbour, the humidity climbs, and somewhere on the news there's a cyclone watch for the Top End. If you've got solar panels on your roof, there's a second thought that follows close behind: will they hold?
+
+You're not being paranoid. You spent real money on that system. A cyclone warning while you're staring up at a roof full of glass and aluminium is a fair thing to worry about. This guide walks you through what actually protects solar panels in Darwin, Palmerston and Alice Springs, what to do before, during and after a storm, and why the install itself matters more than the panel brand on the box.
+
+## Are Solar Panels Built to Survive a Cyclone?
+
+Yes, a properly rated system is built to take a serious beating. Solar panels sold in Australia go through wind load and hail impact testing before they're allowed on the market. The glass is tempered, not standard glass, and the frames are aluminium for strength without adding weight to your roof.
+
+That said, "solar panels are tough" isn't the whole story. A panel rated to survive 200km/h winds in a lab test still fails on your roof if the racking underneath it isn't rated for your wind zone, or if it wasn't bolted down properly in the first place. The panel is only as strong as what it's screwed into.`,
+      },
+      {
+        type: "quote",
+        text: "The panel is only as strong as what it's screwed into.",
+      },
+      {
+        type: "takeaways",
+        heading: "What to remember",
+        items: [
+          "A panel can pass a lab wind test and still fail if the racking is not rated for your wind zone.",
+          "Darwin and Palmerston sit in Wind Region C. Alice Springs sits in Wind Region A.",
+          "Debris, wind uplift, flooding and lightning are the usual failure points, not just wind on the glass.",
+          "Prep before the warning: secure loose items, know isolation, charge the battery, confirm cyclone-rated racking.",
+          "After the storm, inspect from the ground and call a licensed electrician. Do not reconnect it yourself.",
+        ],
+      },
+      {
+        type: "stats",
+        items: [
+          { value: "Region C", label: "Darwin and Palmerston under AS/NZS 1170.2, the cyclonic northern coastline zone.", icon: "wind" },
+          { value: "Region A", label: "Alice Springs is non-cyclonic. Heat, UV and dust are the bigger threats there.", icon: "sun" },
+          { value: "IP67 / IP68", label: "Sealed connectors and junction boxes that keep wet-season moisture out of the wiring.", icon: "shield" },
+        ],
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/bayview-0820.webp",
+        alt: "Residential solar panels installed on a Darwin rooftop",
+      },
+      {
+        type: "markdown",
+        markdown: `## Wind Regions: Why Darwin and Palmerston Aren't the Same as Alice Springs
+
+This is the bit most solar guides skip, and it matters a lot if you live in the NT.
+
+Darwin and Palmerston sit in Wind Region C under AS/NZS 1170.2, the cyclonic zone that covers Australia's northern coastline. Racking, brackets and fixings here need to be engineered to handle sustained cyclonic loads, not just everyday coastal gusts. If your installer quoted you a standard mounting system without mentioning wind region compliance, that's worth asking about.
+
+Alice Springs is a different story. It sits in Wind Region A, which is non-cyclonic. Your panels there aren't fighting cyclones, they're fighting extreme heat, UV degradation and the odd dust storm. A system built for Alice Springs conditions doesn't need cyclone-grade racking, but it does need components that can handle months of 40 plus degree days without the mounting hardware warping or the wiring perishing.
+
+If you're comparing quotes, make sure whoever you're talking to actually understands this difference. A generic "solar package" pitched the same way for Darwin and Alice Springs is a red flag.`,
+      },
+      {
+        type: "compare",
+        left: {
+          title: "Darwin and Palmerston",
+          subtitle: "Wind Region C",
+          items: [
+            "Cyclonic zone under AS/NZS 1170.2 covering Australia's northern coastline.",
+            "Racking, brackets and fixings need to handle sustained cyclonic loads.",
+            "A standard mounting system with no wind region mention is worth questioning.",
+            "Humidity and wet-season moisture sit on top of the wind load.",
+          ],
+        },
+        right: {
+          title: "Alice Springs",
+          subtitle: "Wind Region A",
+          items: [
+            "Non-cyclonic. Panels are not fighting cyclones.",
+            "The real fight is extreme heat, UV degradation and the odd dust storm.",
+            "Cyclone-grade racking is not the requirement here.",
+            "Hardware still has to handle months of 40 plus degree days without warping or wiring perishing.",
+          ],
+        },
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Want a system built for your exact location and roof type?",
+          body: "Our residential solar systems are designed and installed to match Darwin, Palmerston and Alice Springs conditions, not a one-size-fits-all national spec.",
+          buttonLabel: "View Residential Solar Systems",
+          buttonHref: "/solar-systems/residential-solar-system",
+        },
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/alice-springs-0870-1-.webp",
+        alt: "Solar installation in Alice Springs NT",
+      },
+      {
+        type: "markdown",
+        markdown: `## What Actually Damages Panels in a Storm
+
+It's rarely the wind alone that cracks a panel. It's usually one of these:
+
+- **Flying debris.** Loose furniture, tree branches, tools left on the roof or in the yard become projectiles in a cyclone.
+- **Wind uplift.** Panels installed too close to the roof edge, or on racking that wasn't torqued down properly, can lift and tear away.
+- **Hail.** Large hailstones above 25mm can crack tempered glass, though this is a bigger risk further south than in the Top End.
+- **Flooding.** Your panels might survive fine while your inverter or switchboard cops water damage instead.
+- **Lightning surges.** A nearby strike can fry an inverter or monitoring system even without touching the panels directly.
+
+Splitting these out matters because "protecting your solar system" isn't just about the panels on the roof. Half the real risk sits in the electrical components underneath them.
+
+## Before the Cyclone: Your Prep Checklist
+
+Do this well before the storm hits, not the night before.
+
+1. Secure loose items around the property. Outdoor furniture, garden tools, trampolines, anything that could become airborne and hit your panels.
+2. Trim overhanging branches that could snap and land on the array.
+3. Know your isolation procedure. Every inverter has a shutdown process, usually printed on a label at the inverter or main switchboard. Read it now, not during a cyclone warning.
+4. Charge your battery fully and test the blackout function, so it's ready to carry your essentials if the grid goes down.
+5. Get your mounting checked if you've never had it inspected, especially on an older system that predates recent wind region updates.
+6. Confirm you've got cyclone-rated racking. Not all racking sold in Australia is built for Wind Region C. Ask your installer for the racking's actual wind rating, not just a general "it's strong" answer.`,
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/bellamack-0832-2-1-.webp",
+        alt: "Cyclone-rated solar mounting on a Darwin rooftop",
+      },
+      {
+        type: "markdown",
+        markdown: `## Humidity and Corrosion: The Slower Threat Nobody Warns You About
+
+A cyclone isn't the only thing coming for your solar system. Humidity is slower, but it's working on your system every single day of the wet season, not just during a named storm.
+
+### Sealed Connectors and Junction Boxes
+
+Look for IP67 or IP68 rated connectors and junction boxes on any system you're buying. That IP rating just tells you how well sealed a component is against dust and water. IP67 means it can handle being dunked in shallow water briefly, IP68 goes further. In Darwin's wet season, that seal is what stops moisture creeping into your wiring and slowly corroding the connections long before a cyclone ever shows up.
+
+### Cable Conduit and Termite Protection
+
+This one's specific to the NT and it rarely gets a mention. Cable runs from your roof down to the switchboard need proper conduit, and in the Top End that conduit needs to hold up against termites as much as moisture. Termites will chew through unprotected cable sheathing if it's run through or near timber, and a damaged cable is a fire and safety risk long before it's a performance one. Ask your installer what conduit they're using and whether it's rated for termite-prone areas, not just weatherproof.`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Got a battery, or thinking about adding one before storm season?",
+          body: "Don't sit in the dark waiting for the grid to come back on.",
+          buttonLabel: "Explore Solar Battery Installation",
+          buttonHref: "/services/solar-battery-installation",
+          phoneLine: "or call our local Darwin team today at 0483 986 444.",
+        },
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/products/sigen-battery.webp",
+        alt: "Home battery storage for storm season backup in Darwin",
+      },
+      {
+        type: "markdown",
+        markdown: `## During the Cyclone: What to Do (and Not Do)
+
+Stay away from the roof, full stop. Don't climb up to check on anything, no matter how tempting it is to see if a panel has shifted.
+
+Don't assume your system is safe just because the power company has cut your connection. Solar panels keep generating electricity in daylight even when the grid is down, so treat the wiring as live at all times.
+
+If you're forced onto the roof for an unrelated emergency, stay well clear of the panels and any exposed wiring. Monitor your battery level and cut back on non-essential power use to stretch what you've got.
+
+## After the Cyclone: Inspecting and Recommissioning Safely
+
+Check your system from the ground first. Look for panels that have shifted, cracked glass, loose or hanging wiring, and any flooding around the inverter or switchboard.
+
+Don't touch switches or try to reconnect anything yourself, even if everything looks dry. Storms leave moisture in places you can't see, and a system that looks fine from the ground can still have internal damage. This is a job for a licensed electrical contractor, ideally one who installed your system or knows NT wind-region requirements.
+
+Take photos of anything that looks off before you call anyone. Insurers ask for this, and it speeds up any claim considerably.`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Not sure if your current setup is cyclone ready, or storm season caught you without cover?",
+          body: "We'll walk you through what a properly wind-rated system looks like for your roof.",
+          buttonLabel: "Get a Solar Quote in Darwin, Palmerston or Alice Springs",
+          buttonHref: "/contact",
+        },
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/about-team.webp",
+        alt: "Oneroof Solar Darwin installation team",
+      },
+      {
+        type: "markdown",
+        markdown: `## Choosing an Installer Who Actually Understands Top End Weather
+
+This is where a lot of NT homeowners get burned. A cheap quote from a fly-in installer might look tempting, but if they're not local and not across wind region requirements, you're the one left holding a warranty that's worth nothing when the company's gone.
+
+Look for an installer who is SAA accredited (Solar Accreditation Australia now handles this, not the old Clean Energy Council accreditation many sites still reference), who can explain your wind region rating without googling it in front of you, and who's still going to be around next cyclone season if you need a repair or inspection.
+
+Also check what you're eligible for. Most NT solar buyers currently qualify for the STC (Small-scale Technology Certificate) rebate, and eligible battery installs may also get a discount through the Cheaper Home Batteries Program. Ask your installer to walk you through what applies to your system rather than assuming a flat rebate figure.
+
+## Bringing It Back to Your Roof
+
+Protecting your solar panels from a Darwin cyclone or a Top End storm season isn't really about the panels themselves, it's about everything holding them up and feeding power away from them.
+
+A tempered glass panel bolted to Wind Region C racking by an SAA accredited local installer will ride out a cyclone that would tear apart the same panel on a bargain mounting kit. That's the whole equation: the right panel, on the right rating, for the right part of the NT, installed by someone who'll still take your call after the storm passes.
+
+If you're in Darwin, Palmerston or Alice Springs and you want to know exactly where your current system, or your next one, stands against that standard, that's a conversation worth having before the next cyclone watch goes up, not during it.`,
+      },
+    ],
+  },
   {
     slug: "do-solar-panels-work-during-darwins-wet-season",
     title: "Do Solar Panels Work During Darwin's Wet Season? (2026 Guide)",
@@ -91,6 +314,11 @@ export const blogPosts: BlogPost[] = [
     seoDescription:
       "Yes, solar panels still work during Darwin's wet season. See how much power you'll lose, how to size your system right, and what actually protects it from storms.",
     canonicalPath: "/do-solar-panels-work-during-darwins-wet-season/",
+    heroStats: [
+      { value: "10 to 25%", label: "Wet-day output", icon: "cloud" },
+      { value: "3,000+", label: "Sun hours / year", icon: "sun" },
+      { value: "C / D", label: "Wind region", icon: "wind" },
+    ],
     sections: [
       {
         type: "markdown",
@@ -327,7 +555,7 @@ The real question was never whether solar works during Darwin's monsoon season. 
 
 export function getPostBySlug(slug?: string): BlogPost | undefined {
   if (!slug) return undefined;
-  const clean = slug.replace(/^\/+|\/+$/g, "");
+  const clean = slug.replace(/^\/+|\/+$/g, "").split("/").filter(Boolean).pop() || "";
   return blogPosts.find((post) => post.slug === clean);
 }
 
@@ -336,14 +564,17 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export function getPostPath(post: BlogPost): string {
-  return `/${post.slug}`;
+  return post.canonicalPath.replace(/\/+$/, "") || `/${post.slug}`;
 }
 
 export function isBlogPath(pathname: string): boolean {
   const clean = pathname.replace(/\/+$/, "") || "/";
   if (clean === "/blogs" || clean === "/blog") return true;
-  if (clean.startsWith("/blogs/")) return true;
-  return blogPosts.some((post) => clean === `/${post.slug}`);
+  if (clean.startsWith("/blogs/") || clean.startsWith("/blog/")) return true;
+  return blogPosts.some((post) => {
+    const canonical = post.canonicalPath.replace(/\/+$/, "");
+    return clean === canonical || clean === `/${post.slug}`;
+  });
 }
 
 export function getPostToc(post: BlogPost): { id: string; label: string }[] {

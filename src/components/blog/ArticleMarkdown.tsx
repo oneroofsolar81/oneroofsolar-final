@@ -7,6 +7,7 @@ import {
   Wind,
   Droplets,
   BatteryCharging,
+  Shield,
   type LucideIcon,
 } from "lucide-react";
 import { getNodeText, slugifyHeading } from "@/src/lib/blog";
@@ -18,6 +19,8 @@ const H3_ICONS: Record<string, LucideIcon> = {
   "wind region c/d racking": Wind,
   "humidity, sealed connectors and preventing corrosion": Droplets,
   "why grid-tied solar alone cant back you up in a blackout": BatteryCharging,
+  "sealed connectors and junction boxes": Droplets,
+  "cable conduit and termite protection": Shield,
 };
 
 function headingKey(label: string) {
