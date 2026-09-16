@@ -16,6 +16,9 @@ import {
   Sun,
   MapPin,
   Sparkles,
+  ShieldCheck,
+  BadgeCheck,
+  Wind,
 } from "lucide-react";
 import { useState, useEffect, useMemo, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -74,6 +77,19 @@ const slideVariants = {
     opacity: 0,
   }),
 };
+
+const ANNOUNCEMENT_ITEMS = [
+  { icon: ShieldCheck, text: "NT Licensed Electricians" },
+  { icon: Home, text: "Darwin owned and operated" },
+  { icon: Sparkles, text: "$0 deposit solar plans" },
+  { icon: Wind, text: "Cyclone-rated racking" },
+  { icon: BadgeCheck, text: "STC rebates applied upfront" },
+  { icon: BatteryCharging, text: "Battery backup for wet season blackouts" },
+  { icon: MapPin, text: "Darwin, Palmerston and Alice Springs" },
+  { icon: Sun, text: "Zone 1 federal solar rebate" },
+  { icon: Phone, text: `Free quotes. Call ${PRIMARY_PHONE}` },
+  { icon: BadgeCheck, text: "10 year workmanship warranty" },
+];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -272,26 +288,35 @@ export function Navbar() {
           scrolled ? "shadow-[0_10px_30px_rgba(0,0,0,0.28)]" : ""
         }`}
       >
-        <div className="bg-[#8cc63f] text-[#19281D]">
-          <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
-            <div className="flex items-center justify-between lg:justify-center min-h-9 sm:min-h-10 gap-3">
-              <p className="min-w-0 truncate text-[12px] sm:text-[13px] font-semibold tracking-wide">
-                <span className="lg:hidden">NT Licensed Electricians</span>
-                <span className="hidden lg:inline">
-                  NT Licensed Electricians <span className="mx-2 text-[#19281D]/35">|</span>
-                  Darwin owned and operated <span className="mx-2 text-[#19281D]/35">|</span>
-                  $0 deposit solar <span className="mx-2 text-[#19281D]/35">|</span>
-                  Cyclone-rated installs
-                </span>
-              </p>
-              <a
-                href={`tel:${PRIMARY_PHONE_RAW}`}
-                className="lg:hidden shrink-0 inline-flex items-center gap-1.5 font-extrabold text-[13px] whitespace-nowrap"
-              >
-                <Phone className="h-3.5 w-3.5" />
-                {PRIMARY_PHONE}
-              </a>
+        <div className="header-announcement relative bg-[#8cc63f] text-[#19281D] overflow-hidden">
+          <div className="flex items-center min-h-9 sm:min-h-10">
+            <div className="relative min-w-0 flex-1 overflow-hidden">
+              <div className="pointer-events-none absolute inset-y-0 left-0 w-8 sm:w-12 bg-gradient-to-r from-[#8cc63f] to-transparent z-10" />
+              <div className="pointer-events-none absolute inset-y-0 right-0 w-8 sm:w-12 bg-gradient-to-l from-[#8cc63f] to-transparent z-10" />
+              <div className="header-announcement-track">
+                {[0, 1].map((copy) => (
+                  <div key={copy} className="flex flex-nowrap items-center shrink-0" aria-hidden={copy === 1}>
+                    {ANNOUNCEMENT_ITEMS.map((item) => (
+                      <span
+                        key={`${copy}-${item.text}`}
+                        className="inline-flex items-center gap-2 px-5 sm:px-7 text-[12px] sm:text-[13px] font-semibold tracking-wide whitespace-nowrap"
+                      >
+                        <item.icon className="h-3.5 w-3.5 shrink-0" />
+                        {item.text}
+                        <span className="ml-5 sm:ml-7 h-1 w-1 rounded-full bg-[#19281D]/35" aria-hidden="true" />
+                      </span>
+                    ))}
+                  </div>
+                ))}
+              </div>
             </div>
+            <a
+              href={`tel:${PRIMARY_PHONE_RAW}`}
+              className="lg:hidden shrink-0 inline-flex items-center gap-1.5 font-extrabold text-[13px] whitespace-nowrap px-3 sm:px-4 border-l border-[#19281D]/20 bg-[#8cc63f] relative z-10"
+            >
+              <Phone className="h-3.5 w-3.5" />
+              {PRIMARY_PHONE}
+            </a>
           </div>
         </div>
 

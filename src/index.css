@@ -240,6 +240,28 @@
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+
+  .header-announcement-track {
+    animation-duration: 42s !important;
+    animation-iteration-count: infinite !important;
+  }
+}
+
+@keyframes headerAnnouncementMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.header-announcement-track {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: headerAnnouncementMarquee 42s linear infinite;
+  will-change: transform;
+}
+
+.header-announcement:hover .header-announcement-track {
+  animation-play-state: paused;
 }
 
 .hero-heading, .display-heading {
