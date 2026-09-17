@@ -269,7 +269,7 @@ Take photos of anything that looks off before you call anyone. Insurers ask for 
         cta: {
           heading: "Not sure if your current setup is cyclone ready, or storm season caught you without cover?",
           body: "We'll walk you through what a properly wind-rated system looks like for your roof.",
-          buttonLabel: "Get a Solar Quote in Darwin, Palmerston or Alice Springs",
+          buttonLabel: "Get a Solar Quote",
           buttonHref: "/contact",
         },
       },

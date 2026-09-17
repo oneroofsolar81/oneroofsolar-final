@@ -24,8 +24,13 @@ export function ArticleCta({ cta }: { cta: BlogCta }) {
             className="w-full sm:w-auto max-w-full h-auto min-h-14 py-3 px-5 sm:px-8 text-[15px] sm:text-base font-bold leading-snug whitespace-normal text-center shadow-xl shadow-brand-500/20"
             asChild
           >
-            <Link to={cta.buttonHref} className="inline-flex items-center justify-center gap-2">
-              <span className="min-w-0 text-balance">{cta.buttonLabel}</span>
+            <Link
+              to={cta.buttonHref}
+              className="inline-flex w-full min-w-0 items-center justify-center gap-2 whitespace-normal"
+            >
+              <span className="min-w-0 text-balance break-words whitespace-normal">
+                {cta.buttonLabel}
+              </span>
               <ArrowRight className="w-5 h-5 shrink-0" />
             </Link>
           </Button>
