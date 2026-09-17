@@ -266,11 +266,11 @@ export function BlogPost() {
               </div>
               <Button
                 size="lg"
-                className="rounded-full h-14 px-8 text-base font-bold shadow-xl shadow-brand-500/20"
+                className="w-full sm:w-auto max-w-full h-auto min-h-14 py-3 px-6 sm:px-8 text-base font-bold whitespace-normal shadow-xl shadow-brand-500/20"
                 asChild
               >
-                <Link to="/contact">
-                  Get a Darwin quote <ArrowRight className="ml-2 w-5 h-5" />
+                <Link to="/contact" className="inline-flex items-center justify-center gap-2">
+                  Get a Darwin quote <ArrowRight className="w-5 h-5 shrink-0" />
                 </Link>
               </Button>
             </FadeIn>
