@@ -1796,7 +1796,7 @@ export function OffGridSolarSystemPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
             {/* Left Column */}
-            <div className="lg:col-span-5 space-y-8 lg:sticky lg:top-28 lg:self-start">
+            <div className="lg:col-span-5 space-y-8 lg:sticky-below-header">
               <FadeIn>
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f]  text-xs uppercase tracking-wider mb-3">
                   <FileText className="w-3.5 h-3.5" />

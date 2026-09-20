@@ -264,7 +264,7 @@ export function CommercialSolarSystemPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
       {/* SECTION 1: HERO SECTION */}
-      <section className="relative pt-32 pb-12 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-12 pb-12 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <img 
             referrerPolicy="no-referrer"
@@ -1519,7 +1519,7 @@ export function CommercialSolarSystemPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
-            <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
+            <div className="lg:col-span-5 lg:sticky-below-header">
               <FadeIn>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 font-semibold text-xs mb-6">
                   <span className="h-2 w-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
@@ -1630,7 +1630,7 @@ export function CommercialSolarSystemPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             {/* Left Column Benefits, Phone Numbers & Email */}
-            <div className="lg:col-span-6 lg:sticky lg:top-28 lg:self-start">
+            <div className="lg:col-span-6 lg:sticky-below-header">
               <FadeIn>
                 <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-widest block mb-3">
                   Get Started Today

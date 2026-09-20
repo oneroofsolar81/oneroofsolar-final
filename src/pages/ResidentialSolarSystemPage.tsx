@@ -23,6 +23,7 @@ import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { PartnersMarquee } from "@/src/components/PartnersMarquee";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 import { QuoteForm } from "@/src/components/QuoteForm";
+import { TrustAvatars } from "@/src/components/TrustAvatars";
 
 const serviceAreas = [
   {
@@ -360,7 +361,7 @@ export function ResidentialSolarSystemPage() {
     <div id="residential-solar-root" className="relative overflow-x-clip bg-white text-slate-900">
       
       {/* SECTION 1: HERO SECTION */}
-      <section id="hero-section" className="relative pt-36 pb-16 lg:pt-44 lg:pb-24 bg-[#0A1118]">
+      <section id="hero-section" className="relative pt-14 pb-16 lg:pt-20 lg:pb-24 bg-[#0A1118]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-[#0A1118]/80 to-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A1118] via-[#0A1118]/80 to-transparent flex"></div>
@@ -368,7 +369,7 @@ export function ResidentialSolarSystemPage() {
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <FadeIn isHero className="lg:sticky lg:top-28 lg:self-start">
+            <FadeIn isHero className="lg:sticky-below-header">
               <h1 id="hero-heading" className="hero-heading text-white mb-8 break-words normal-case">
                 Residential Solar <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
@@ -405,14 +406,10 @@ export function ResidentialSolarSystemPage() {
 
               {/* Social Proof Badge / Customer Rating */}
               <div className="mt-10 flex flex-wrap items-center gap-4 bg-slate-950/40 backdrop-blur-md border border-white/10 py-3 px-4 rounded-2xl w-fit">
-                <div className="flex -space-x-2.5">
-                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="/assets/images/hosted/about-team.webp" alt="Darwin Homeowner 1" referrerPolicy="no-referrer" />
-                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="/assets/images/hosted/about-team.webp" alt="Darwin Homeowner 2" referrerPolicy="no-referrer" />
-                  <img className="w-8 h-8 rounded-full border-2 border-[#0A1118] object-cover" src="/assets/images/hosted/about-team.webp" alt="Darwin Homeowner 3" referrerPolicy="no-referrer" />
-                  <div className="w-8 h-8 rounded-full border-2 border-[#0A1118] bg-[#8cc63f] text-[#19281D] text-[10px] font-black flex items-center justify-center">
-                    +500
-                  </div>
-                </div>
+                <TrustAvatars
+                  imageClassName="w-8 h-8 border-[#0A1118]"
+                  badgeClassName="w-8 h-8 border-[#0A1118] bg-[#8cc63f] text-[#19281D]"
+                />
                 <div className="flex flex-col">
                   <div className="flex items-center gap-1">
                     {[...Array(5)].map((_, i) => (

@@ -39,10 +39,10 @@ export function About() {
   }, []);
 
   return (
-    <div className="pt-[160px] lg:pt-[200px] pb-32 overflow-hidden">
+    <div className="pb-32 overflow-hidden">
       <SEO seo={pageData?.seo} />
       {/* Hero */}
-      <section className="relative -mt-[160px] lg:-mt-[200px] pt-[180px] lg:pt-[240px] pb-32 lg:pb-40 bg-[#0A1118]">
+      <section className="relative pt-16 lg:pt-24 pb-32 lg:pb-40 bg-[#0A1118]">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-brand-500/10 blur-[120px] pointer-events-none"></div>
         <div className="absolute -bottom-1/2 -left-1/4 w-full h-full bg-slate-900/50 block"></div>
         

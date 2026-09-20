@@ -9,6 +9,7 @@ import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { SEO } from "@/src/components/SEO";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 import { QuoteForm } from "@/src/components/QuoteForm";
+import { LocationMaps } from "@/src/components/LocationMap";
 
 export function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
@@ -80,7 +81,7 @@ export function Contact() {
       />
       
       {/* Dark Hero Section */}
-      <section className="relative pt-40 pb-20 lg:pt-52 lg:pb-28 bg-[#0A1118] border-b border-white/5 overflow-hidden">
+      <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-28 bg-[#0A1118] border-b border-white/5 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-brand-500/10 blur-[120px] pointer-events-none"></div>
         <div className="absolute -bottom-1/2 -left-1/4 w-full h-full bg-slate-900/50 block"></div>
         
@@ -109,7 +110,7 @@ export function Contact() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Left side info */}
-            <FadeIn className="lg:sticky lg:top-28 lg:self-start">
+            <FadeIn className="lg:sticky-below-header">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-slate-200 bg-white text-slate-700 font-semibold text-xs mb-6 shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-brand-500"></span>
                 Get In Touch
@@ -199,44 +200,8 @@ export function Contact() {
               <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-2 normal-case">Our <span className="text-brand-600">Locations</span>.</h2>
               <p className="text-slate-600 text-sm sm:text-base font-medium">Serving Darwin, Palmerston, Alice Springs and rural NT communities.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Darwin Map */}
-              <div className="h-[400px] sm:h-[450px] w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200 shadow-sm relative group flex flex-col bg-white">
-                <div className="p-4 sm:p-5 flex justify-center items-center gap-2 border-b border-slate-100 font-bold text-sm sm:text-base text-slate-900 shrink-0 text-center">
-                  <MapPin className="text-brand-600 w-4 h-4 sm:w-5 sm:h-5" />
-                  Darwin: 3/97 Pruen Rd, Berrimah NT 0828
-                </div>
-                <div className="flex-grow w-full h-full relative">
-                  <iframe 
-                    src="https://maps.google.com/maps?q=3/97%20Pruen%20Rd,%20Berrimah%20NT%200828&t=&z=14&ie=UTF8&iwloc=&output=embed"
-                    style={{ border: 0 }} 
-                    allowFullScreen={true} 
-                    loading="lazy"
-                    title="Darwin Office Map"
-                    className="absolute inset-0 w-full h-full grayscale-[30%] contrast-[1.05] opacity-95 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 bg-slate-100"
-                  ></iframe>
-                </div>
-              </div>
-
-              {/* Alice Springs Map */}
-              <div className="h-[400px] sm:h-[450px] w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200 shadow-sm relative group flex flex-col bg-white">
-                <div className="p-4 sm:p-5 flex justify-center items-center gap-2 border-b border-slate-100 font-bold text-sm sm:text-base text-slate-900 shrink-0 text-center">
-                  <MapPin className="text-brand-600 w-4 h-4 sm:w-5 sm:h-5" />
-                  Alice Springs: 44 Zeil St, Araluen NT 0870
-                </div>
-                <div className="flex-grow w-full h-full relative">
-                  <iframe 
-                    src="https://maps.google.com/maps?q=44%20Zeil%20St,%20Araluen%20NT%200870&t=&z=14&ie=UTF8&iwloc=&output=embed"
-                    style={{ border: 0 }} 
-                    allowFullScreen={true} 
-                    loading="lazy"
-                    title="Alice Springs Office Map"
-                    className="absolute inset-0 w-full h-full grayscale-[30%] contrast-[1.05] opacity-95 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 bg-slate-100"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
           </FadeIn>
+          <LocationMaps />
         </div>
       </section>
 

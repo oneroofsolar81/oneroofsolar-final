@@ -73,7 +73,7 @@ export function FaqSection({ faqs, heading }: { faqs: { q: string; a: ReactNode 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
           
           {/* Left Column: Heading */}
-          <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
+          <div className="lg:col-span-5 lg:sticky-below-header">
             <FadeIn>
               <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm mb-6">
                 <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>

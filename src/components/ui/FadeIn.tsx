@@ -17,13 +17,15 @@ export function FadeIn({
   isHero = false,
 }: React.PropsWithChildren<{ delay?: number; className?: string; isHero?: boolean }>) {
   const prefersReduced = useReducedMotion();
+  const [settled, setSettled] = React.useState(false);
+
+  const ease = [0.22, 1, 0.36, 1] as const; // smooth "easeOutExpo"-style curve
+  const settledStyle = settled ? { transform: "none" } : undefined;
 
   // Accessibility: honour reduced-motion by skipping the animation entirely.
   if (prefersReduced) {
     return <div className={className}>{children}</div>;
   }
-
-  const ease = [0.22, 1, 0.36, 1] as const; // smooth "easeOutExpo"-style curve
 
   if (isHero) {
     return (
@@ -31,6 +33,8 @@ export function FadeIn({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay, ease }}
+        onAnimationComplete={() => setSettled(true)}
+        style={settledStyle}
         className={className}
       >
         {children}
@@ -46,6 +50,8 @@ export function FadeIn({
       // scrolls into view, so content is already visible (no perceived blank gap).
       viewport={{ once: true, margin: "0px 0px 220px 0px" }}
       transition={{ duration: 0.5, delay, ease }}
+      onAnimationComplete={() => setSettled(true)}
+      style={settledStyle}
       className={className}
     >
       {children}

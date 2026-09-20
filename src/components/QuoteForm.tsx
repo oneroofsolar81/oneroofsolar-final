@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { Star } from "lucide-react";
 
 interface QuoteFormProps {
   title?: string;
@@ -79,46 +78,6 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({
         <p className="text-center text-xs sm:text-[13px] text-[#64748b] font-medium pt-2 pb-0.5">
           Your details are private and never shared
         </p>
-
-        {/* Subtle Dark Divider */}
-        <div className="border-t border-[#1e293b] my-3" />
-
-        {/* Social Proof Footer */}
-        <div className="flex items-center gap-3">
-          <div className="flex -space-x-2">
-            <img
-              className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-[#101726] object-cover"
-              src="/assets/images/hosted/about-team.webp"
-              alt="Darwin Homeowner 1"
-              referrerPolicy="no-referrer"
-            />
-            <img
-              className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-[#101726] object-cover"
-              src="/assets/images/hosted/about-team.webp"
-              alt="Darwin Homeowner 2"
-              referrerPolicy="no-referrer"
-            />
-            <img
-              className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-[#101726] object-cover"
-              src="/assets/images/hosted/about-team.webp"
-              alt="Darwin Homeowner 3"
-              referrerPolicy="no-referrer"
-            />
-            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border-2 border-[#101726] bg-[#1c3525] text-[#8dc63f] text-[10px] font-black flex items-center justify-center">
-              +500
-            </div>
-          </div>
-          <div>
-            <div className="flex items-center gap-0.5 text-[#fbbf24] mb-0.5">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-3.5 h-3.5 fill-[#fbbf24] text-[#fbbf24]" />
-              ))}
-            </div>
-            <p className="text-[11px] sm:text-xs font-bold text-white tracking-tight">
-              Loved by Darwin homeowners
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

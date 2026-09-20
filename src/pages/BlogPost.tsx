@@ -209,7 +209,7 @@ export function BlogPost() {
         />
       </div>
 
-      <section className="relative pt-40 pb-12 lg:pt-52 lg:pb-16 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-16 pb-12 lg:pt-24 lg:pb-16 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <img src={post.image} alt="" className="w-full h-full object-cover opacity-25" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A1118] via-[#0A1118]/90 to-[#0A1118]/55" />

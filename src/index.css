@@ -66,6 +66,9 @@
   --primary-button-background: #8cc63f;
   --primary-button-hover: #7ab32f;
   --primary-button-text: #101623;
+
+  --site-header-height: 168px;
+  --site-header-spacer: 168px;
 }
 
 @theme {
@@ -245,6 +248,16 @@
     animation-duration: 42s !important;
     animation-iteration-count: infinite !important;
   }
+
+  .partners-marquee-track {
+    animation-duration: 22s !important;
+    animation-iteration-count: infinite !important;
+  }
+
+  .trust-marquee-track {
+    animation-duration: 30s !important;
+    animation-iteration-count: infinite !important;
+  }
 }
 
 @keyframes headerAnnouncementMarquee {
@@ -262,6 +275,60 @@
 
 .header-announcement:hover .header-announcement-track {
   animation-play-state: paused;
+}
+
+@keyframes partnersMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.partners-marquee-track {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: partnersMarquee 22s linear infinite;
+  will-change: transform;
+}
+
+.partners-marquee:hover .partners-marquee-track {
+  animation-play-state: paused;
+}
+
+html {
+  scroll-padding-top: calc(var(--site-header-height, 168px) + 12px);
+}
+
+.header-collapse {
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.28s ease, opacity 0.28s ease;
+}
+
+.header-collapse > * {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.header-compact .header-collapse {
+  grid-template-rows: 0fr;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header-compact .header-logo {
+  height: 44px !important;
+}
+
+.header-compact .header-brand-row {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .lg\:sticky-below-header {
+    position: sticky;
+    top: calc(var(--site-header-height, 168px) + 12px);
+    align-self: flex-start;
+  }
 }
 
 .hero-heading, .display-heading {

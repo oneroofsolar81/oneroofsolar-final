@@ -180,7 +180,7 @@ export function SolarBatteryBrands() {
         />
       ))}
 
-      <section className="relative pt-36 pb-20 lg:pt-44 lg:pb-32 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-14 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[#121814]/40 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-transparent to-[#0A1118]/30"></div>
@@ -533,7 +533,7 @@ export function SolarBatteryBrands() {
       <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
-            <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
+            <div className="lg:col-span-5 lg:sticky-below-header">
               <FadeIn>
                 <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Frequently Asked Questions
@@ -598,7 +598,7 @@ export function SolarBatteryBrands() {
       <section id="quote-form" className="py-24 bg-[#0A1118] relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div className="lg:sticky lg:top-28 lg:self-start">
+            <div className="lg:sticky-below-header">
             <FadeIn>
               <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 Get a Fast Local Quote

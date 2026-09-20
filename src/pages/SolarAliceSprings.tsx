@@ -251,7 +251,7 @@ export function SolarAliceSprings() {
       ))}
 
       {/* Hero Section */}
-      <section className="relative pt-36 pb-20 lg:pt-44 lg:pb-32 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-14 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[#121814]/40 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-transparent to-[#0A1118]/30"></div>
@@ -695,7 +695,7 @@ export function SolarAliceSprings() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
             
             {/* Left Column Heading */}
-            <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
+            <div className="lg:col-span-5 lg:sticky-below-header">
               <FadeIn>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-200 text-slate-600 font-semibold text-xs mb-6 shadow-sm">
                   <span className="h-2 w-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
@@ -799,7 +799,7 @@ export function SolarAliceSprings() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             
             {/* Left Side Info */}
-            <div className="lg:sticky lg:top-28 lg:self-start">
+            <div className="lg:sticky-below-header">
             <FadeIn>
               <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                 Beat the Alice Springs Heat with Solar

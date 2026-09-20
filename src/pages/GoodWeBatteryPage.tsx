@@ -146,7 +146,7 @@ export function GoodWeBatteryPage() {
         />
       ))}
 
-      <section className="relative pt-36 pb-20 lg:pt-44 lg:pb-32 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-14 pb-20 lg:pt-20 lg:pb-32 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[#121814]/40 mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-transparent to-[#0A1118]/30"></div>
@@ -622,7 +622,7 @@ export function GoodWeBatteryPage() {
       <section id="quote-form" className="py-24 bg-[#0A1118] relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div className="lg:sticky lg:top-28 lg:self-start">
+            <div className="lg:sticky-below-header">
               <FadeIn>
                 <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Ready for a Battery Built for NT Conditions?

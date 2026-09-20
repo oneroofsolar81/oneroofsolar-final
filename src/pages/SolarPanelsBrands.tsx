@@ -274,7 +274,7 @@ export function SolarPanelsBrands() {
       ))}
 
       {/* Hero Section */}
-      <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <img
             src="/assets/images/home/home-hero-bayview.webp"
@@ -828,7 +828,7 @@ export function SolarPanelsBrands() {
           <div className="bg-slate-900/50 rounded-[3rem] border border-white/10 shadow-2xl backdrop-blur-md">
             <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
               {/* Content Side */}
-              <div className="p-8 sm:p-12 lg:p-20 flex flex-col justify-center lg:sticky lg:top-28 lg:self-start">
+              <div className="p-8 sm:p-12 lg:p-20 flex flex-col justify-center lg:sticky-below-header">
                 <FadeIn>
                   <span className="text-brand-400  tracking-widest uppercase text-xs mb-4 block">
                     Contact Our Team

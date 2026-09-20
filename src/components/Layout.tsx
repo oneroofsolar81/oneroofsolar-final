@@ -14,7 +14,7 @@ export function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-[100dvh] flex-col font-sans overflow-x-clip w-full relative">
       <Navbar />
-      <main className="flex-1 w-full">{children}</main>
+      <main className="flex-1 w-full pt-[var(--site-header-spacer)]">{children}</main>
       <Footer />
       <LeadPopup />
     </div>

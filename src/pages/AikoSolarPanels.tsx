@@ -307,7 +307,7 @@ export function AikoSolarPanels() {
       ))}
 
       {/* Hero Section Upgrade */}
-      <section className="relative pt-32 pb-12 sm:pt-36 sm:pb-24 lg:pt-44 lg:pb-36 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-12 pb-12 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-36 overflow-hidden bg-[#0A1118]">
         {/* Background image overlay for depth */}
         <div className="absolute inset-0">
           <img 
@@ -636,7 +636,7 @@ export function AikoSolarPanels() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             {/* Left Column heading & Support image */}
-            <div className="lg:col-span-5 lg:sticky lg:top-28 lg:self-start">
+            <div className="lg:col-span-5 lg:sticky-below-header">
               <FadeIn>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-700 font-semibold text-xs mb-6 shadow-sm">
                   <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
@@ -762,7 +762,7 @@ export function AikoSolarPanels() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             {/* Left Side Info */}
-            <div className="lg:col-span-6 lg:sticky lg:top-28 lg:self-start">
+            <div className="lg:col-span-6 lg:sticky-below-header">
               <FadeIn>
                 <span className="text-xs font-bold text-brand-400 uppercase tracking-widest block mb-3">
                   Get Started Today

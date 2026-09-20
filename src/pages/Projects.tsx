@@ -220,9 +220,9 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="pt-24 bg-slate-50 min-h-screen">
+    <div className="bg-slate-50 min-h-screen">
       <SEO seo={pageData?.seo} />
-      <div className="bg-[#0A1118] pt-28 pb-32 relative overflow-hidden border-b border-slate-800">
+      <div className="bg-[#0A1118] pt-16 lg:pt-24 pb-32 relative overflow-hidden border-b border-slate-800">
         {/* Background elements */}
         <div className="absolute inset-0 bg-grid-slate-100/[0.03] bg-[size:32px_32px]"></div>
         <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-brand-500/20 rounded-full blur-[120px] pointer-events-none opacity-50 mix-blend-screen"></div>

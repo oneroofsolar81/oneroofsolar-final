@@ -219,7 +219,7 @@ export function SolarPanelRepairDarwinPage() {
     <div id="solar-repair-root" className="bg-white text-slate-900 font-sans">
       
       {/* SECTION 1: HERO SECTION */}
-      <section id="repair-hero" className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
+      <section id="repair-hero" className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-[#0A1118]/80 to-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A1118] via-[#0A1118]/80 to-transparent flex"></div>
@@ -727,7 +727,7 @@ export function SolarPanelRepairDarwinPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
               {/* Left Side Content */}
-              <div className="p-8 sm:p-12 lg:p-16 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/10 relative z-10 lg:sticky lg:top-28 lg:self-start">
+              <div className="p-8 sm:p-12 lg:p-16 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/10 relative z-10 lg:sticky-below-header">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/10 text-brand-400 font-bold text-sm w-fit shadow-sm mb-8 backdrop-blur-sm">
                   <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span> Expert Assistance
                 </div>

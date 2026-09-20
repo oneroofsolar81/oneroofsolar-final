@@ -261,7 +261,7 @@ export function SolarInvertersProductPage() {
       ))}
 
       {/* SECTION 1: HERO */}
-      <section className="relative pt-32 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-[#0A1118]/60"></div>
           <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#8cc63f]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>

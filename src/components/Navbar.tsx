@@ -94,6 +94,7 @@ const ANNOUNCEMENT_ITEMS = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [compact, setCompact] = useState(false);
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
 
   // Mobile Drill-Down Navigation Stack
@@ -103,25 +104,55 @@ export function Navbar() {
   const location = useLocation();
   const headerRef = useRef<HTMLElement>(null);
   const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const [headerHeight, setHeaderHeight] = useState(108);
+  const lastScrollY = useRef(0);
+  const fullHeaderHeight = useRef(168);
+  const [headerHeight, setHeaderHeight] = useState(168);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      const y = window.scrollY;
+      const delta = y - lastScrollY.current;
+      lastScrollY.current = y;
+
+      setScrolled(y > 20);
+
+      if (isOpen || Boolean(activeMegaMenu)) {
+        setCompact(false);
+        return;
+      }
+
+      if (y < 24) {
+        setCompact(false);
+        return;
+      }
+
+      if (delta > 8 && y > 90) {
+        setCompact(true);
+      } else if (delta < -8) {
+        setCompact(false);
+      }
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isOpen, activeMegaMenu]);
 
   useEffect(() => {
     const el = headerRef.current;
     if (!el) return;
-    const update = () => setHeaderHeight(Math.round(el.getBoundingClientRect().height));
+    const update = () => {
+      const height = Math.round(el.getBoundingClientRect().height);
+      setHeaderHeight(height);
+      document.documentElement.style.setProperty("--site-header-height", `${height}px`);
+      if (!compact) {
+        fullHeaderHeight.current = Math.max(height, 120);
+        document.documentElement.style.setProperty("--site-header-spacer", `${fullHeaderHeight.current}px`);
+      }
+    };
     update();
     const observer = new ResizeObserver(update);
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [compact]);
 
   // Filter navigation items to ensure only valid URLs/children are rendered
   const navItems = useMemo(() => filterNavItems(mainNavConfig), []);
@@ -139,6 +170,7 @@ export function Navbar() {
     setActiveMegaMenu(null);
     setIsOpen(false);
     setMobileStack([]);
+    setCompact(false);
   }, [location.pathname]);
 
   // Handle Escape key to close navigation menus
@@ -285,9 +317,10 @@ export function Navbar() {
         ref={headerRef}
         onMouseLeave={handleMouseLeave}
         className={`fixed top-0 w-full z-50 ${isDesktopMenuOpen ? "is-menu-open" : ""} ${
-          scrolled ? "shadow-[0_10px_30px_rgba(0,0,0,0.28)]" : ""
-        }`}
+          compact ? "header-compact" : ""
+        } ${scrolled || compact ? "shadow-[0_10px_30px_rgba(0,0,0,0.28)]" : ""}`}
       >
+        <div className="header-collapse grid">
         <div className="header-announcement relative bg-[#8cc63f] text-[#19281D] overflow-hidden">
           <div className="flex items-center min-h-9 sm:min-h-10">
             <div className="relative min-w-0 flex-1 overflow-hidden">
@@ -319,16 +352,17 @@ export function Navbar() {
             </a>
           </div>
         </div>
+        </div>
 
         <div className="bg-[#0A1118] border-b border-white/10">
           <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
-            <div className="flex items-center justify-between gap-4 py-3">
+            <div className="header-brand-row flex items-center justify-between gap-4 py-3 transition-[padding] duration-300">
               <Link to="/" className="shrink-0">
                 <img
                   referrerPolicy="no-referrer"
                   src="/assets/images/home/logo-oneroof.png"
                   alt="Oneroof Solar Logo"
-                  className="h-[52px] sm:h-[58px] xl:h-[64px] w-auto max-w-[200px] sm:max-w-[230px] xl:max-w-[250px] object-contain object-left"
+                  className="header-logo h-[52px] sm:h-[58px] xl:h-[64px] w-auto max-w-[200px] sm:max-w-[230px] xl:max-w-[250px] object-contain object-left transition-[height] duration-300"
                   width={250}
                   height={64}
                   fetchPriority="high"
@@ -395,7 +429,8 @@ export function Navbar() {
           </div>
         </div>
 
-        <nav className="hidden lg:block bg-[#152218] border-y border-[#8cc63f]/25" aria-label="Products and services">
+        <div className="header-collapse hidden lg:grid">
+        <nav className="bg-[#152218] border-y border-[#8cc63f]/25" aria-label="Products and services">
           <div className="mx-auto max-w-[1536px] px-4 sm:px-6 xl:px-8">
             <div className="flex items-center justify-center gap-x-5 xl:gap-x-8">
               {categoryItems.map((item, index) => (
@@ -409,6 +444,7 @@ export function Navbar() {
             </div>
           </div>
         </nav>
+        </div>
 
         {/* ================================================== */}
         {/* DESKTOP CONTENT-BASED DROPDOWN & MEGA MENU PANELS  */}

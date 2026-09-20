@@ -66,7 +66,7 @@ function DarkHero({ service, slug }: { service: any; slug: string }) {
             : "Warranty";
 
   return (
-    <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
+    <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#0A1118]">
       <div className="absolute inset-0">
         <img
           src="/assets/images/home/home-hero-bayview.webp"
@@ -534,6 +534,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { FadeIn } from "@/src/components/ui/FadeIn";
 import { QuoteForm } from "@/src/components/QuoteForm";
+import { TrustAvatars } from "@/src/components/TrustAvatars";
 import { PackagesSection } from "@/src/components/PackagesSection";
 import { FaqSection } from "@/src/components/FaqSection";
 import { ResidentialSolarSystemPage } from "@/src/pages/ResidentialSolarSystemPage";
@@ -1152,7 +1153,7 @@ const defaultService = servicesData["solar-inverters"];
 
 function EvChargerHero({ service }: { service: any }) {
   return (
-    <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
+    <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#0A1118]">
       <div className="absolute inset-0">
         <img
           src="/assets/images/home/home-hero-bayview.webp"
@@ -1624,7 +1625,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           {JSON.stringify(schemas)}
         </script>
         {/* Hero Section */}
-        <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
+        <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#0A1118]">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#8cc63f]/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
           <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#8cc63f]/10 rounded-full blur-[150px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
 
@@ -2216,7 +2217,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
     <div key={currentSlug} className="bg-white text-slate-900 font-sans">
       <SEO seo={seoData} />
       {/* Hero Section */}
-      <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#0A1118]">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
           <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05] mix-blend-overlay"></div>
@@ -2284,20 +2285,10 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     </a>
                   </Button>
                   <div className="flex items-center gap-4 text-white text-sm font-semibold px-4">
-                    <div className="flex -space-x-3">
-                      {[1, 2, 3].map((i) => (
-                        <div
-                          key={i}
-                          className="w-10 h-10 rounded-full border-2 border-[#0A1118] bg-slate-800 flex items-center justify-center overflow-hidden"
-                        >
-                          <img referrerPolicy="no-referrer" loading="lazy"
-                            src={`https://i.pravatar.cc/100?img=${i + 10}`}
-                            alt="avatar"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                      ))}
-                    </div>
+                    <TrustAvatars
+                      imageClassName="w-10 h-10 border-[#0A1118]"
+                      badgeClassName="w-10 h-10 border-[#0A1118] bg-[#8cc63f] text-[#19281D]"
+                    />
                     <div className="flex flex-col">
                       <span className="flex items-center text-brand-400 gap-1">
                         <Zap className="w-3 h-3 fill-brand-400" /> 5.0 Rating
@@ -2937,7 +2928,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
 
             <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
               {/* Contact Info Side */}
-              <div className="p-6 sm:p-10 lg:p-16 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/10 relative z-10 lg:sticky lg:top-28 lg:self-start">
+              <div className="p-6 sm:p-10 lg:p-16 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/10 relative z-10 lg:sticky-below-header">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/10 text-brand-400 font-semibold text-sm w-fit shadow-sm mb-8 backdrop-blur-sm">
                   <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
                   Ready to upgrade?
