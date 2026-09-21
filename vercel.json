@@ -96,6 +96,16 @@
       "permanent": true
     },
     {
+      "source": "/solar-inverters",
+      "destination": "/products/solar-inverters",
+      "permanent": true
+    },
+    {
+      "source": "/solar-inverters/",
+      "destination": "/products/solar-inverters",
+      "permanent": true
+    },
+    {
       "source": "/services/battery-storage",
       "destination": "/products/solar-battery-brands/",
       "permanent": true
