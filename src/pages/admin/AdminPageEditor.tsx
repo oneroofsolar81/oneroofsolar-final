@@ -64,7 +64,7 @@ const DEFAULT_HOME_DATA = {
     },
     expertise: {
       badge: "Our Expertise",
-      title: "Complete Energy <br class=\"hidden sm:block\" /><span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-500\">Solutions</span>",
+      title: "Complete Energy <br class=\"hidden sm:block\" /><span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Solutions</span>",
       items: [
         {
           title: "Residential & Commercial Solar",
@@ -87,7 +87,7 @@ const DEFAULT_HOME_DATA = {
     whyChooseUs: {
       badge: "Why Choose Us",
       title: "Premium Solar Systems For The Northern Territory",
-      image: "https://i.postimg.cc/fWGBJR1G/dji-fly-20240620-115258-79-1718868305112-photo.webp",
+      image: "/assets/images/home/home-premium-aerial.webp",
       ctaText: "Get Your Free Quote",
       phone: "0483986444",
       items: [
@@ -110,7 +110,7 @@ const DEFAULT_HOME_DATA = {
     },
     process: {
       badge: "How It Works",
-      title: "Your Seamless Journey to <br class=\"hidden sm:block\" />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400\">Solar Energy</span>",
+      title: "Your Seamless Journey to <br class=\"hidden sm:block\" />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Solar Energy</span>",
       subtitle: "We've completely streamlined our process to make switching to solar as easy, fast, and stress-free as possible.",
       steps: [
         {
@@ -137,8 +137,8 @@ const DEFAULT_HOME_DATA = {
     },
     installer: {
       badge: "Top Quality Installers",
-      title: "Your Expert <br/> \n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-500\">Darwin Solar Installer</span>",
-      image: "https://i.postimg.cc/05nhGvxW/Stuart-Park-0820.webp",
+      title: "Your Expert <br/> \n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Darwin Solar Installer</span>",
+      image: "/assets/images/home/home-about-stuart-park.webp",
       paragraphs: [
         "As Darwin's premier solar panel installers, we are dedicated to providing the highest quality renewable energy solutions tailored specifically for the harsh Northern Territory climate.",
         "From the initial consultation to final commissioning, our expert installers handle every aspect of your solar journey, guaranteeing a seamless transition to clean, affordable, and sustainable power."
@@ -159,7 +159,7 @@ const DEFAULT_HOME_DATA = {
     battery: {
       badge: "Energy Independence",
       title: "Uninterrupted Power for <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-slate-500\">Your Home</span>",
-      image: "https://i.postimg.cc/pLr9VPVS/Nightcliff-0810-(1)-(1).webp",
+      image: "/assets/images/home/home-battery-nightcliff.webp",
       items: [
         {
           title: "Blackout Protection",
@@ -599,8 +599,8 @@ export function AdminPageEditor() {
       </div>
 
       {user && (
-        <div className="mb-8 p-4 bg-emerald-50 border border-emerald-100 rounded-xl text-emerald-800 text-xs flex items-center gap-2.5">
-          <span className="w-2 h-2 bg-emerald-500 rounded-full animate-ping shrink-0" />
+        <div className="mb-8 p-4 bg-brand-100 border border-brand-100 rounded-xl text-brand-800 text-xs flex items-center gap-2.5">
+          <span className="w-2 h-2 bg-brand-500 rounded-full animate-ping shrink-0" />
           <span>Active Session Authorized: Signed in as <strong>{user.email}</strong> • Role: <strong>{user.role}</strong>. Any changes you make will be saved securely.</span>
         </div>
       )}

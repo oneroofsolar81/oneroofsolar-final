@@ -101,6 +101,21 @@ export const servicesMenu: NavItem[] = [
       },
     ],
   },
+  {
+    label: "EV Chargers",
+    href: "/services/ev-chargers/installation",
+    iconName: "Zap",
+    children: [
+      {
+        label: "EV Charger Installation",
+        href: "/services/ev-chargers/installation",
+      },
+      {
+        label: "EV Charger Repair",
+        href: "/services/ev-chargers/repair",
+      },
+    ],
+  },
 ];
 
 export const mainNavConfig: NavItem[] = [
@@ -178,16 +193,14 @@ export const mainNavConfig: NavItem[] = [
         ],
       },
       {
-        label: "EV Chargers",
-        href: "/services/ev-chargers",
-        description: "Smart EV charging solutions for home & business.",
-        iconName: "Zap",
-      },
-      {
-        label: "Battery Storage Solutions",
-        href: "/services/solar-battery-installation",
+        label: "Battery Storage",
+        href: "/products/solar-battery-brands/",
         description: "Store excess solar energy for day & night.",
         iconName: "BatteryCharging",
+        children: [
+          { label: "Sigenergy Batteries", href: "/products/solar-battery-brands/sigenergy" },
+          { label: "GoodWe Batteries", href: "/products/solar-battery-brands/goodwe" },
+        ],
       },
     ],
   },
@@ -201,9 +214,27 @@ export const mainNavConfig: NavItem[] = [
     type: "compact-dropdown",
     children: [
       {
-        label: "Darwin & Palmerston",
-        href: "/solar-panels-darwin",
-        description: "Solar services across Darwin and Palmerston.",
+        label: "Darwin City",
+        href: "/locations/darwin-city",
+        description: "Solar across Darwin City and the inner suburbs.",
+        iconName: "MapPin",
+      },
+      {
+        label: "Northern Darwin",
+        href: "/locations/northern-darwin",
+        description: "Solar across Darwin's northern suburbs.",
+        iconName: "MapPin",
+      },
+      {
+        label: "Palmerston",
+        href: "/locations/palmerston",
+        description: "Solar across Palmerston and its estates.",
+        iconName: "MapPin",
+      },
+      {
+        label: "Darwin Rural",
+        href: "/locations/darwin-rural",
+        description: "Solar for rural and acreage properties.",
         iconName: "MapPin",
       },
       {
@@ -222,6 +253,11 @@ export const mainNavConfig: NavItem[] = [
   {
     label: "Projects",
     href: "/projects",
+    type: "direct",
+  },
+  {
+    label: "Blogs",
+    href: "/blogs",
     type: "direct",
   },
   {

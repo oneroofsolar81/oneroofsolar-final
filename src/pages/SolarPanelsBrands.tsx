@@ -23,8 +23,8 @@ import {
   X,
 } from "lucide-react";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
-import jaSolarImg from "../assets/images/ja_solar_panel_1784285635251.jpg";
-import longiSolarImg from "../assets/images/longi_solar_panel_1784285655984.jpg";
+import jaSolarImg from "../assets/images/ja_solar_panel_1784285635251.webp";
+import longiSolarImg from "../assets/images/longi_solar_panel_1784285655984.webp";
 
 type ProductBrand = {
   id: string;
@@ -46,7 +46,7 @@ const BRAND_PRODUCTS: ProductBrand[] = [
     bestFor: "NT rooftops with limited usable space. Maximum output per panel where cyclone strapping or rooftop equipment reduces available area.",
     specLabel: "Full specs and models: AIKO solar panels",
     productLink: "/solar-panels-brands/aiko/",
-    image: "https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png",
+    image: "/assets/images/hosted/products/ja-solar.webp",
   },
   {
     id: "rec",
@@ -56,7 +56,7 @@ const BRAND_PRODUCTS: ProductBrand[] = [
     bestFor: "Darwin homes where heat performance is the top priority and the NT dry season runs your panels hard every day.",
     specLabel: "Full specs and models: REC solar panels",
     productLink: "/solar-panels-brands/rec/",
-    image: "https://i.postimg.cc/Th46LV0n/REC-Alpha-Series-removebg-preview.png",
+    image: "/assets/images/hosted/products/ja-solar.webp",
   },
   {
     id: "jinko",
@@ -66,7 +66,7 @@ const BRAND_PRODUCTS: ProductBrand[] = [
     bestFor: "NT homeowners who want a proven global brand with a competitive price point and reliable long-term support.",
     specLabel: "Full specs and models: Jinko solar panels",
     productLink: "/solar-panels/jinko/",
-    image: "https://i.postimg.cc/T58B094S/Jinko-Solar-Tiger-Neo-JKM585N-72HL4-BDV-585W-ver2-1-removebg-preview-(1).png",
+    image: "/assets/images/hosted/products/jinko.webp",
   },
   {
     id: "ja-solar",
@@ -274,20 +274,13 @@ export function SolarPanelsBrands() {
       ))}
 
       {/* Hero Section */}
-      <section className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
+          <img
+            src="/assets/images/home/home-hero-bayview.webp"
+            alt=""
             className="w-full h-full object-cover opacity-30 mix-blend-screen grayscale-[50%]"
-          >
-            <source
-              src="https://cdn.pixabay.com/video/2021/11/14/96813-644781744_tiny.mp4"
-              type="video/mp4"
-            />
-          </video>
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-[#0A1118]/80 to-transparent"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A1118] via-[#0A1118]/80 to-transparent flex"></div>
         </div>
@@ -302,9 +295,9 @@ export function SolarPanelsBrands() {
                 <span className="text-slate-300">Solar Panels</span>
               </div>
 
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white tracking-tighter leading-[0.95] mb-8 uppercase">
+              <h1 className="hero-heading text-white mb-8 break-words normal-case">
                 Premium <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                   Solar Panel Brands NT
                 </span>
               </h1>
@@ -341,11 +334,11 @@ export function SolarPanelsBrands() {
             </FadeIn>
 
             <FadeIn isHero delay={0.2} className="relative hidden lg:block">
-              <div className="w-full aspect-square bg-gradient-to-br from-brand-500/20 to-emerald-600/20 rounded-full blur-3xl absolute inset-0 animate-pulse"></div>
+              <div className="w-full aspect-square bg-gradient-to-br from-brand-500/20 to-brand-600/20 rounded-full blur-3xl absolute inset-0 animate-pulse"></div>
               <img
                 referrerPolicy="no-referrer"
                 fetchPriority="high"
-                src="https://i.postimg.cc/ZqJnC3Sv/high-level-description-shot-on-iphone-a-Q9Cc-Iy-X7X-u10npe4Pfzlg-ngfs-MO-1Tw-CCPDb0e-Ibtc-A-cover-sd.jpg"
+                src="/assets/images/hosted/aerial.webp"
                 alt="Premium Solar Panel Brands NT"
                 className="relative z-10 w-full h-[600px] object-cover rounded-[3rem] border border-white/10 shadow-2xl opacity-90"
               />
@@ -376,7 +369,7 @@ export function SolarPanelsBrands() {
                   <span className="w-2 h-2 rounded-full bg-brand-500"></span>
                   Selection Criteria
                 </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-6 uppercase leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   How We Choose Which <span className="text-brand-600">Brands to Install</span>
                 </h2>
                 <p className="text-slate-600 text-base sm:text-lg font-medium leading-relaxed">
@@ -387,21 +380,21 @@ export function SolarPanelsBrands() {
 
             <div className="lg:col-span-7 space-y-6">
               <FadeIn delay={0.1} className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Temperature coefficient</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 normal-case">Temperature coefficient</h3>
                 <p className="text-slate-600 font-medium leading-relaxed">
                   This tells you how much power a panel loses for every degree above 25°C. Darwin rooftops regularly reach 65°C to 75°C in the dry season. A panel with a coefficient of -0.24%/°C retains noticeably more output on a 70°C roof than one rated at -0.34%/°C. Over a full dry season that difference is real money.
                 </p>
               </FadeIn>
 
               <FadeIn delay={0.2} className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Cyclone wind load certification</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 normal-case">Cyclone wind load certification</h3>
                 <p className="text-slate-600 font-medium leading-relaxed">
                   Every rooftop installation in Darwin requires panels to meet structural requirements set by the Northern Territory Government before Power and Water Corporation approves grid connection. All three brands we install meet these standards.
                 </p>
               </FadeIn>
 
               <FadeIn delay={0.3} className="bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Long-term output guarantee</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 normal-case">Long-term output guarantee</h3>
                 <p className="text-slate-600 font-medium leading-relaxed">
                   A panel that drops to 70 per cent output by Year 20 is not the same investment as one guaranteed to hold 90 per cent. We only carry brands with strong, verified performance warranties.
                 </p>
@@ -421,7 +414,7 @@ export function SolarPanelsBrands() {
                   <span className="w-2 h-2 rounded-full bg-brand-500"></span>
                   BRANDS WE INSTALL
                 </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-6 uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Solar Panel Brands <br />
                   <span className="text-brand-600">We Install Across the NT</span>
                 </h2>
@@ -436,7 +429,7 @@ export function SolarPanelsBrands() {
                   <img
                     referrerPolicy="no-referrer"
                     loading="lazy"
-                    src="https://i.postimg.cc/ZqJnC3Sv/high-level-description-shot-on-iphone-a-Q9Cc-Iy-X7X-u10npe4Pfzlg-ngfs-MO-1Tw-CCPDb0e-Ibtc-A-cover-sd.jpg"
+                    src="/assets/images/hosted/aerial.webp"
                     alt="AIKO ABC, REC HJT and Jinko TOPCon solar panel brands installed by Oneroof Solar across Darwin and the Northern Territory"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
                   />
@@ -472,7 +465,7 @@ export function SolarPanelsBrands() {
                         </span>
                       </div>
 
-                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-brand-600 transition-colors">
+                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3 tracking-tight group-hover:text-brand-600 transition-colors normal-case">
                         {product.title}
                       </h3>
 
@@ -531,7 +524,7 @@ export function SolarPanelsBrands() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-4 uppercase">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Compare Our <span className="text-brand-600">Solar Panel Brands</span>
               </h2>
               <p className="text-slate-600 font-medium text-base sm:text-lg leading-relaxed">
@@ -549,8 +542,8 @@ export function SolarPanelsBrands() {
                     <th className="p-5 text-lg font-black text-slate-900 text-center border-l border-slate-200 bg-brand-50/50">
                       <span className="text-brand-700">AIKO ABC</span>
                     </th>
-                    <th className="p-5 text-lg font-black text-slate-900 text-center border-l border-slate-200 bg-emerald-50/50">
-                      <span className="text-emerald-700">REC HJT</span>
+                    <th className="p-5 text-lg font-black text-slate-900 text-center border-l border-slate-200 bg-brand-100/50">
+                      <span className="text-brand-700">REC HJT</span>
                     </th>
                     <th className="p-5 text-lg font-black text-slate-900 text-center border-l border-slate-200">
                       <span>Jinko TOPCon</span>
@@ -567,7 +560,7 @@ export function SolarPanelsBrands() {
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Cell technology</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-50/30">All Back Contact N-type</td>
-                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-emerald-50/30">Heterojunction N-type</td>
+                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-100/30">Heterojunction N-type</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium">TOPCon N-type</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium">TOPCon N-type</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium">HPBC N-type</td>
@@ -575,7 +568,7 @@ export function SolarPanelsBrands() {
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Module efficiency</td>
                     <td className="p-5 text-center border-l border-slate-200 font-bold bg-brand-50/30 text-brand-700">Above 25%</td>
-                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-emerald-50/30 text-slate-700">22.3%</td>
+                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-100/30 text-slate-700">22.3%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">Above 22%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">Up to 22.7%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">Up to 23.3%</td>
@@ -583,7 +576,7 @@ export function SolarPanelsBrands() {
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Temperature coefficient</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-50/30 text-slate-700">-0.26%/°C</td>
-                    <td className="p-5 text-center border-l border-slate-200 font-bold bg-emerald-50/30 text-brand-700">-0.24%/°C</td>
+                    <td className="p-5 text-center border-l border-slate-200 font-bold bg-brand-100/30 text-brand-700">-0.24%/°C</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">-0.26%/°C</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">-0.35%/°C</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">-0.29%/°C</td>
@@ -591,7 +584,7 @@ export function SolarPanelsBrands() {
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Performance warranty</td>
                     <td className="p-5 text-center border-l border-slate-200 font-bold bg-brand-50/30 text-brand-700">30 years</td>
-                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-emerald-50/30 text-slate-700">25 years</td>
+                    <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-100/30 text-slate-700">25 years</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">25 years</td>
                     <td className="p-5 text-center border-l border-slate-200 font-bold text-brand-700">30 years</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">25 years</td>
@@ -599,26 +592,26 @@ export function SolarPanelsBrands() {
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Year 25 output guarantee</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium bg-brand-50/30 text-slate-700">90.6%</td>
-                    <td className="p-5 text-center border-l border-slate-200 font-bold bg-emerald-50/30 text-brand-700">92%</td>
+                    <td className="p-5 text-center border-l border-slate-200 font-bold bg-brand-100/30 text-brand-700">92%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">84.8%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">87.4%</td>
                     <td className="p-5 text-center border-l border-slate-200 font-medium text-slate-700">89.4%</td>
                   </tr>
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">Cyclone rated</td>
-                    <td className="p-5 text-center border-l border-slate-200 bg-brand-50/30 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 bg-emerald-50/30 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 bg-brand-50/30 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 bg-brand-100/30 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
                   </tr>
                   <tr className="hover:bg-slate-50 transition-colors">
                     <td className="sticky left-0 bg-white z-10 p-5 font-bold text-slate-900 border-r border-slate-200">STC eligible NT</td>
-                    <td className="p-5 text-center border-l border-slate-200 bg-brand-50/30 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 bg-emerald-50/30 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
-                    <td className="p-5 text-center border-l border-slate-200 text-emerald-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 bg-brand-50/30 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 bg-brand-100/30 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
+                    <td className="p-5 text-center border-l border-slate-200 text-brand-700 font-bold">Yes</td>
                   </tr>
                 </tbody>
               </table>
@@ -630,7 +623,7 @@ export function SolarPanelsBrands() {
                 <span className="text-brand-600 font-extrabold">AIKO</span> — Limited Roof, Max Output
               </span>
               <span className="px-3.5 py-1.5 bg-white border border-slate-200 rounded-full text-xs font-semibold text-slate-700 shadow-xs">
-                <span className="text-emerald-700 font-extrabold">REC</span> — Lowest Heat Loss
+                <span className="text-brand-700 font-extrabold">REC</span> — Lowest Heat Loss
               </span>
               <span className="px-3.5 py-1.5 bg-white border border-slate-200 rounded-full text-xs font-semibold text-slate-700 shadow-xs">
                 <span className="text-slate-800 font-extrabold">Jinko</span> — Proven Value
@@ -655,7 +648,7 @@ export function SolarPanelsBrands() {
                 <Sun className="w-8 h-8" />
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-black text-white leading-tight tracking-tight max-w-4xl mx-auto mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white max-w-4xl mx-auto mb-6 normal-case">
                 Save Up to <span className="text-brand-400">$3,000+</span> on Your Solar Installation in NT, Australia
               </h2>
 
@@ -677,7 +670,7 @@ export function SolarPanelsBrands() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto rounded-xl px-8 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 transition-all h-14 uppercase tracking-wider text-xs"
+                  className="w-full sm:w-auto rounded-xl px-8 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:text-white transition-all h-14 uppercase tracking-wider text-xs"
                   asChild
                 >
                   <a href="tel:0483986444">
@@ -709,7 +702,7 @@ export function SolarPanelsBrands() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-12 lg:mb-16">
             <FadeIn>
-              <h2 className="text-3xl lg:text-5xl font-black text-slate-900 mb-4 tracking-tight uppercase">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Why Choose Our Solar Panels
               </h2>
               <p className="text-slate-600 text-base sm:text-lg font-medium max-w-2xl mx-auto">
@@ -726,7 +719,7 @@ export function SolarPanelsBrands() {
               <div className="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 mb-6 border border-brand-200">
                 <Sun className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">
+              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                 Maximum Yield
               </h3>
               <p className="text-slate-600 font-medium leading-relaxed text-sm sm:text-base">
@@ -741,7 +734,7 @@ export function SolarPanelsBrands() {
               <div className="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 mb-6 border border-brand-200">
                 <Smartphone className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">
+              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                 Extreme Durability
               </h3>
               <p className="text-slate-600 font-medium leading-relaxed text-sm sm:text-base">
@@ -756,7 +749,7 @@ export function SolarPanelsBrands() {
               <div className="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 mb-6 border border-brand-200">
                 <Shield className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight">
+              <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                 Safe and Certified
               </h3>
               <p className="text-slate-600 font-medium leading-relaxed text-sm sm:text-base">
@@ -772,7 +765,7 @@ export function SolarPanelsBrands() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
             <FadeIn>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-4 uppercase">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 How We Deliver <span className="text-brand-600">Your Solar System</span>
               </h2>
               <p className="text-slate-600 font-medium text-base sm:text-lg leading-relaxed">
@@ -784,7 +777,7 @@ export function SolarPanelsBrands() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             <FadeIn delay={0.1} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
               <span className="text-4xl font-black text-brand-500  block mb-4">01</span>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">1. Consultation and Quote</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-3 normal-case">1. Consultation and Quote</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 We review your last three Jacana Energy bills and survey your roof to understand your exact usage pattern and available space. You receive a transparent, custom quote with the STC rebate already applied.
               </p>
@@ -792,7 +785,7 @@ export function SolarPanelsBrands() {
 
             <FadeIn delay={0.2} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
               <span className="text-4xl font-black text-brand-500  block mb-4">02</span>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">2. System Design</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-3 normal-case">2. System Design</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 Our engineers design a custom layout to maximise sunlight capture across your specific roof orientation. We confirm which panel brand suits your space, select the right inverter and size the system to your actual daytime consumption.
               </p>
@@ -800,7 +793,7 @@ export function SolarPanelsBrands() {
 
             <FadeIn delay={0.3} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
               <span className="text-4xl font-black text-brand-500  block mb-4">03</span>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">3. Expert Installation</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-3 normal-case">3. Expert Installation</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 Our licensed installers fit your system safely and neatly to NT building standards. The installation is swift and causes minimal disruption to your household. All cyclone-rated mounting requirements are handled by our team.
               </p>
@@ -808,7 +801,7 @@ export function SolarPanelsBrands() {
 
             <FadeIn delay={0.4} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col h-full">
               <span className="text-4xl font-black text-brand-500  block mb-4">04</span>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">4. Commissioning & Handover</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-3 normal-case">4. Commissioning & Handover</h3>
               <p className="text-slate-600 font-medium text-sm leading-relaxed">
                 We test every component, complete the grid connection paperwork with Power and Water Corporation and walk you through your monitoring app so you can track savings from day one.
               </p>
@@ -824,25 +817,25 @@ export function SolarPanelsBrands() {
       <GoogleReviews />
 
       {/* CTA section */}
-      <section className="relative py-24 sm:py-32 bg-[#0A1118] overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[150px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+      <section className="relative py-24 sm:py-32 bg-[#0A1118]">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] -translate-y-1/2 translate-x-1/3"></div>
+          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[150px] translate-y-1/3 -translate-x-1/3"></div>
           <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05] mix-blend-overlay"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="bg-slate-900/50 rounded-[3rem] border border-white/10 overflow-hidden shadow-2xl backdrop-blur-md">
-            <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="bg-slate-900/50 rounded-[3rem] border border-white/10 shadow-2xl backdrop-blur-md">
+            <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
               {/* Content Side */}
-              <div className="p-8 sm:p-12 lg:p-20 flex flex-col justify-center">
+              <div className="p-8 sm:p-12 lg:p-20 flex flex-col justify-center lg:sticky-below-header">
                 <FadeIn>
                   <span className="text-brand-400  tracking-widest uppercase text-xs mb-4 block">
                     Contact Our Team
                   </span>
-                  <h2 className="text-4xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-6 uppercase">
+                  <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                     Ready to Switch <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                       To Premium Solar?
                     </span>
                   </h2>

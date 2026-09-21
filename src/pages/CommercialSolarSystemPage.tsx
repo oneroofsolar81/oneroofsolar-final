@@ -95,10 +95,10 @@ export function CommercialSolarSystemPage() {
     robots: "index, follow",
     openGraphTitle: "Commercial Solar Systems Darwin and Alice Springs NT | Oneroof Solar",
     openGraphDescription: "Oneroof Solar installs commercial solar systems for NT businesses from 30kW to 100kW+. STC and LGC incentives, PPA options, 3 to 5-year payback. Get a free business quote.",
-    openGraphImage: "https://i.postimg.cc/1zZz07Xx/Alice-Springs-0870-JPG-(2)-(1).webp",
+    openGraphImage: "/assets/images/hosted/alice-springs-0870-1-.webp",
     twitterTitle: "Commercial Solar Systems Darwin and Alice Springs NT | Oneroof Solar",
     twitterDescription: "Oneroof Solar installs commercial solar systems for NT businesses from 30kW to 100kW+. STC and LGC incentives, PPA options, 3 to 5-year payback. Get a free business quote.",
-    twitterImage: "https://i.postimg.cc/1zZz07Xx/Alice-Springs-0870-JPG-(2)-(1).webp",
+    twitterImage: "/assets/images/hosted/alice-springs-0870-1-.webp",
   };
 
   const faqs = [
@@ -146,7 +146,7 @@ export function CommercialSolarSystemPage() {
       "name": "Oneroof Solar",
       "telephone": "0483986444",
       "url": "https://oneroofsolar.com.au",
-      "image": "https://i.postimg.cc/1zZz07Xx/Alice-Springs-0870-JPG-(2)-(1).webp"
+      "image": "/assets/images/hosted/alice-springs-0870-1-.webp"
     },
     "telephone": "0483986444",
     "areaServed": [
@@ -201,7 +201,7 @@ export function CommercialSolarSystemPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Oneroof Solar",
-    "image": "https://i.postimg.cc/1zZz07Xx/Alice-Springs-0870-JPG-(2)-(1).webp",
+    "image": "/assets/images/hosted/alice-springs-0870-1-.webp",
     "telephone": "0483986444",
     "priceRange": "$$",
     "address": {
@@ -264,16 +264,16 @@ export function CommercialSolarSystemPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
       {/* SECTION 1: HERO SECTION */}
-      <section className="relative pt-24 pb-12 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-12 pb-12 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <img 
             referrerPolicy="no-referrer"
-            src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/images/hosted/aerial.webp" 
             alt="Oneroof Solar commercial solar system installed on Darwin NT business rooftop"
             className="w-full h-full object-cover opacity-20 mix-blend-overlay"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#121814] via-[#0A1118]/80 to-[#0A1118]"></div>
-          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#5BC94D]/5 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
@@ -284,23 +284,23 @@ export function CommercialSolarSystemPage() {
               <FadeIn isHero>
                 {/* Breadcrumb */}
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">
-                  <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
+                  <Link to="/" className="hover:text-[#8cc63f] transition-colors">Home</Link>
                   <span>/</span>
                   <span className="text-slate-400">Solar Systems</span>
                   <span>/</span>
-                  <span className="text-[#5BC94D]">Commercial Solar</span>
+                  <span className="text-[#8cc63f]">Commercial Solar</span>
                 </div>
 
-                <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5BC94D]/10 text-[#5BC94D] border border-[#5BC94D]/20 text-xs font-bold uppercase tracking-widest mb-4">
-                  <Building2 className="w-3.5 h-3.5 text-[#5BC94D]" /> Turnkey Commercial Energy Solutions
+                <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 text-xs font-bold uppercase tracking-widest mb-4">
+                  <Building2 className="w-3.5 h-3.5 text-[#8cc63f]" /> Turnkey Commercial Energy Solutions
                 </span>
 
                 {/* FIX 2: HERO H1 & NT TARGETING */}
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-wide [word-spacing:0.12em] leading-[1.05] mb-6 uppercase">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   Commercial Solar Systems NT
                 </h1>
 
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 font-medium border-l-2 border-[#5BC94D] pl-6">
+                <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 font-medium border-l-2 border-[#8cc63f] pl-6">
                   Cut your NT business electricity costs with a commercial solar system designed for the Top End. Oneroof Solar installs commercial solar for businesses across Darwin, Alice Springs and the Northern Territory, from 30kW retail systems to 100kW+ industrial installations.
                 </p>
 
@@ -308,7 +308,7 @@ export function CommercialSolarSystemPage() {
                 <div className="flex flex-wrap gap-3 sm:gap-4 items-center mb-8">
                   <Button
                     size="lg"
-                    className="rounded-xl px-6 sm:px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                    className="rounded-xl px-6 sm:px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -319,22 +319,22 @@ export function CommercialSolarSystemPage() {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="rounded-xl px-4 sm:px-5 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:border-white/30 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs flex items-center gap-2"
+                      className="rounded-xl px-4 sm:px-5 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:text-white hover:border-white/30 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs flex items-center gap-2"
                       asChild
                     >
                       <a href="tel:0483986444">
-                        <Phone className="w-4 h-4 text-[#5BC94D]" />
+                        <Phone className="w-4 h-4 text-[#8cc63f]" />
                         <span>Call Darwin: 0483 986 444</span>
                       </a>
                     </Button>
                     <Button
                       size="lg"
                       variant="outline"
-                      className="rounded-xl px-4 sm:px-5 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:border-white/30 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs flex items-center gap-2"
+                      className="rounded-xl px-4 sm:px-5 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:text-white hover:border-white/30 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs flex items-center gap-2"
                       asChild
                     >
                       <a href="tel:0483937004">
-                        <Phone className="w-4 h-4 text-[#5BC94D]" />
+                        <Phone className="w-4 h-4 text-[#8cc63f]" />
                         <span>Alice Springs: 0483 937 004</span>
                       </a>
                     </Button>
@@ -347,16 +347,16 @@ export function CommercialSolarSystemPage() {
                     <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400" /> 4.9 Stars
                   </span>
                   <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
-                    <Award className="w-3.5 h-3.5 text-[#5BC94D]" /> Licensed Installers
+                    <Award className="w-3.5 h-3.5 text-[#8cc63f]" /> Licensed Installers
                   </span>
                   <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
-                    <Building2 className="w-3.5 h-3.5 text-[#5BC94D]" /> NT Based Team
+                    <Building2 className="w-3.5 h-3.5 text-[#8cc63f]" /> NT Based Team
                   </span>
                   <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
-                    <Shield className="w-3.5 h-3.5 text-[#5BC94D]" /> STC and LGC Approved
+                    <Shield className="w-3.5 h-3.5 text-[#8cc63f]" /> STC and LGC Approved
                   </span>
                   <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
-                    <Sun className="w-3.5 h-3.5 text-[#5BC94D]" /> Commercial and Residential
+                    <Sun className="w-3.5 h-3.5 text-[#8cc63f]" /> Commercial and Residential
                   </span>
                 </div>
               </FadeIn>
@@ -371,7 +371,7 @@ export function CommercialSolarSystemPage() {
                     <img 
                       referrerPolicy="no-referrer"
                       loading="lazy"
-                      src="https://i.postimg.cc/1zZz07Xx/Alice-Springs-0870-JPG-(2)-(1).webp" 
+                      src="/assets/images/hosted/alice-springs-0870-1-.webp" 
                       alt="Alice Springs commercial solar installation" 
                       className="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700"
                     />
@@ -379,24 +379,24 @@ export function CommercialSolarSystemPage() {
                   </div>
 
                   <div className="relative z-10 w-full flex flex-col items-center justify-center p-4">
-                    <Building2 className="w-16 h-16 text-[#5BC94D] mb-4 filter drop-shadow-[0_0_15px_rgba(91,201,77,0.4)]" />
-                    <span className="text-2xl font-black tracking-wider text-white uppercase text-center block mb-2">
-                      COMMERCIAL SOLAR NT
+                    <Building2 className="w-16 h-16 text-[#8cc63f] mb-4 filter drop-shadow-[0_0_15px_rgba(91,201,77,0.4)]" />
+                    <span className="text-2xl font-black tracking-tight text-white text-center block mb-2">
+                      Commercial Solar NT
                     </span>
                     <span className="text-xs font-bold text-slate-300 uppercase tracking-widest border border-white/15 px-3 py-1 rounded-full bg-black/50">
                       3-5 Year Payback Period
                     </span>
                   </div>
                   
-                  <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-[#121814]/90 backdrop-blur-md border border-[#5BC94D]/30 px-4 py-2 rounded-2xl z-20 shadow-lg text-center">
-                    <div className="text-xl sm:text-2xl font-black text-[#5BC94D] leading-none">25 YRS</div>
+                  <div className="absolute top-4 right-4 sm:top-6 sm:right-6 bg-[#121814]/90 backdrop-blur-md border border-[#8cc63f]/30 px-4 py-2 rounded-2xl z-20 shadow-lg text-center">
+                    <div className="text-xl sm:text-2xl font-black text-[#8cc63f] leading-none">25 YRS</div>
                     <div className="text-[9px] text-slate-300 uppercase tracking-widest  font-bold mt-1">
                       Performance
                     </div>
                   </div>
 
-                  <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-[#121814]/90 backdrop-blur-md border border-[#5BC94D]/30 px-4 py-2 rounded-2xl z-20 shadow-lg text-center">
-                    <div className="text-xl sm:text-2xl font-black text-[#5BC94D] leading-none">100kW+</div>
+                  <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-[#121814]/90 backdrop-blur-md border border-[#8cc63f]/30 px-4 py-2 rounded-2xl z-20 shadow-lg text-center">
+                    <div className="text-xl sm:text-2xl font-black text-[#8cc63f] leading-none">100kW+</div>
                     <div className="text-[9px] text-slate-300 uppercase tracking-widest  font-bold mt-1">
                       Turnkey Arrays
                     </div>
@@ -424,7 +424,7 @@ export function CommercialSolarSystemPage() {
                   <img 
                     referrerPolicy="no-referrer"
                     loading="lazy"
-                    src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" 
+                    src="/assets/images/home/home-hero-bayview.webp" 
                     alt="Commercial building solar PV system" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
@@ -435,10 +435,10 @@ export function CommercialSolarSystemPage() {
 
             <div className="lg:col-span-6 flex flex-col justify-center">
               <FadeIn delay={0.2}>
-                <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
+                <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-widest block mb-3">
                   Commercial Energy Expertise
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   What Is a Commercial Solar System in Darwin & NT?
                 </h2>
                 <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-4">
@@ -448,7 +448,7 @@ export function CommercialSolarSystemPage() {
                   Photovoltaic panels generate DC electricity while a commercial-grade inverter converts this into AC power for business operations.
                 </p>
                 <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium">
-                  Surplus energy can be stored in commercial batteries (see our <Link to="/services/solar-battery-installation" className="text-[#5BC94D] font-bold hover:underline">solar battery installation page</Link>) or exported back to the grid.
+                  Surplus energy can be stored in commercial batteries (see our <Link to="/services/solar-battery-installation" className="text-[#8cc63f] font-bold hover:underline">solar battery installation page</Link>) or exported back to the grid.
                 </p>
               </FadeIn>
             </div>
@@ -459,10 +459,10 @@ export function CommercialSolarSystemPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <FadeIn delay={0.1}>
               <div className="bg-slate-900/50 border border-white/10 p-6 rounded-3xl h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-4">
                   <Zap className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 uppercase tracking-wide">
+                <h3 className="text-lg font-bold text-white mb-2 tracking-tight normal-case">
                   Designed for Business Energy Consumption
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -473,10 +473,10 @@ export function CommercialSolarSystemPage() {
 
             <FadeIn delay={0.2}>
               <div className="bg-slate-900/50 border border-white/10 p-6 rounded-3xl h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-4">
                   <BarChart3 className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 uppercase tracking-wide">
+                <h3 className="text-lg font-bold text-white mb-2 tracking-tight normal-case">
                   Reduces Daytime Electricity Costs
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -487,10 +487,10 @@ export function CommercialSolarSystemPage() {
 
             <FadeIn delay={0.3}>
               <div className="bg-slate-900/50 border border-white/10 p-6 rounded-3xl h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-4">
                   <Shield className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 uppercase tracking-wide">
+                <h3 className="text-lg font-bold text-white mb-2 tracking-tight normal-case">
                   Supports Future Battery Upgrades
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -502,8 +502,8 @@ export function CommercialSolarSystemPage() {
 
           {/* CTA Bar */}
           <FadeIn delay={0.4}>
-            <div className="bg-slate-900/60 border border-[#5BC94D]/30 p-6 sm:p-8 rounded-3xl text-center max-w-4xl mx-auto backdrop-blur-md">
-              <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] mb-2">
+            <div className="bg-slate-900/60 border border-[#8cc63f]/30 p-6 sm:p-8 rounded-3xl text-center max-w-4xl mx-auto backdrop-blur-md">
+              <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight mb-2 normal-case">
                 Get a tailored commercial solar feasibility report for your property
               </h3>
               <p className="text-slate-300 text-sm font-medium mb-6">
@@ -511,7 +511,7 @@ export function CommercialSolarSystemPage() {
               </p>
               <Button
                 size="lg"
-                className="rounded-xl px-8 py-3.5 bg-[#5BC94D] text-[#19281D] font-black hover:bg-emerald-400 transition-all uppercase tracking-wider text-xs border-none shadow-[0_4px_20px_rgba(91,201,77,0.3)]"
+                className="rounded-xl px-8 py-3.5 bg-[#8cc63f] text-[#19281D] font-black hover:bg-brand-400 transition-all uppercase tracking-wider text-xs border-none shadow-[0_4px_20px_rgba(91,201,77,0.3)]"
                 asChild
               >
                 <a href="#quote-form">
@@ -593,10 +593,10 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
+              <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-widest block mb-3">
                 Commercial Benefits
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white normal-case">
                 Benefits of Commercial Solar for NT Businesses
               </h2>
             </FadeIn>
@@ -604,11 +604,11 @@ export function CommercialSolarSystemPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <FadeIn delay={0.1}>
-              <div className="bg-slate-900/50 border border-white/10 hover:border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+              <div className="bg-slate-900/50 border border-white/10 hover:border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <TrendingUp className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-4 tracking-tight normal-case">
                   Lower Operating Costs
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -618,11 +618,11 @@ export function CommercialSolarSystemPage() {
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <div className="bg-slate-900/50 border border-white/10 hover:border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+              <div className="bg-slate-900/50 border border-white/10 hover:border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <BarChart3 className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-4 tracking-tight normal-case">
                   Peak Demand Shaving
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -632,11 +632,11 @@ export function CommercialSolarSystemPage() {
             </FadeIn>
 
             <FadeIn delay={0.3}>
-              <div className="bg-slate-900/50 border border-white/10 hover:border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+              <div className="bg-slate-900/50 border border-white/10 hover:border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <Clock className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-4 tracking-tight normal-case">
                   3 To 5 Year Payback
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -646,11 +646,11 @@ export function CommercialSolarSystemPage() {
             </FadeIn>
 
             <FadeIn delay={0.4}>
-              <div className="bg-slate-900/50 border border-white/10 hover:border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+              <div className="bg-slate-900/50 border border-white/10 hover:border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <Award className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-4 tracking-tight normal-case">
                   ESG And Sustainability
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -660,11 +660,11 @@ export function CommercialSolarSystemPage() {
             </FadeIn>
 
             <FadeIn delay={0.5}>
-              <div className="bg-slate-900/50 border border-white/10 hover:border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+              <div className="bg-slate-900/50 border border-white/10 hover:border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <DollarSign className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-4 tracking-tight normal-case">
                   Government Incentives
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -674,11 +674,11 @@ export function CommercialSolarSystemPage() {
             </FadeIn>
 
             <FadeIn delay={0.6}>
-              <div className="bg-slate-900/50 border border-white/10 hover:border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+              <div className="bg-slate-900/50 border border-white/10 hover:border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl transition-all h-full flex flex-col">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <Building2 className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-4 tracking-tight normal-case">
                   Increased Property Value
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -695,10 +695,10 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
+              <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-widest block mb-3">
                 System Size Comparison
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-4 normal-case">
                 Commercial Solar System Sizes for NT Businesses
               </h2>
               <p className="text-slate-300 text-sm sm:text-base font-medium">
@@ -710,8 +710,8 @@ export function CommercialSolarSystemPage() {
           {/* Table 1: Capacity, Best For, Incentive, Cost */}
           <FadeIn delay={0.2} className="mb-12">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-bold text-white uppercase tracking-wide flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#5BC94D]"></span>
+              <h3 className="text-lg font-bold text-white tracking-tight flex items-center gap-2 normal-case">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#8cc63f]"></span>
                 Table 1: System Sizing & Financial Overview
               </h3>
               <span className="text-xs text-slate-400">STC & LGC Eligible</span>
@@ -721,7 +721,7 @@ export function CommercialSolarSystemPage() {
                 <table className="w-full text-left border-collapse">
                   <thead>
                     <tr className="border-b border-white/10 bg-white/5">
-                      <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-[#5BC94D] uppercase tracking-wider">System Size</th>
+                      <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-[#8cc63f] uppercase tracking-wider">System Size</th>
                       <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-white uppercase tracking-wider">Suitable Business</th>
                       <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-white uppercase tracking-wider">Government Incentive</th>
                       <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-white uppercase tracking-wider">Estimated System Cost</th>
@@ -730,35 +730,35 @@ export function CommercialSolarSystemPage() {
                   <tbody className="divide-y divide-white/5 text-xs sm:text-sm font-medium text-slate-300">
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4 sm:p-6 font-bold text-white flex items-center gap-2">
-                        <Zap className="w-4 h-4 text-[#5BC94D] shrink-0" /> 30kW To 75kW
+                        <Zap className="w-4 h-4 text-[#8cc63f] shrink-0" /> 30kW To 75kW
                       </td>
                       <td className="p-4 sm:p-6">Retail stores, cafes, small offices</td>
                       <td className="p-4 sm:p-6">STC rebate</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">$30,000 to $75,000</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">$30,000 to $75,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors bg-white/[0.02]">
                       <td className="p-4 sm:p-6 font-bold text-white flex items-center gap-2">
-                        <Zap className="w-4 h-4 text-[#5BC94D] shrink-0" /> 100kW
+                        <Zap className="w-4 h-4 text-[#8cc63f] shrink-0" /> 100kW
                       </td>
                       <td className="p-4 sm:p-6">Large businesses, restaurants, manufacturing</td>
                       <td className="p-4 sm:p-6">STC threshold</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">$70,000 to $100,000</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">$70,000 to $100,000</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4 sm:p-6 font-bold text-white flex items-center gap-2">
-                        <Zap className="w-4 h-4 text-[#5BC94D] shrink-0" /> 100kW To 250kW
+                        <Zap className="w-4 h-4 text-[#8cc63f] shrink-0" /> 100kW To 250kW
                       </td>
                       <td className="p-4 sm:p-6">Large commercial buildings</td>
                       <td className="p-4 sm:p-6">LGC credits</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">$100,000 to $250,000+</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">$100,000 to $250,000+</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors bg-white/[0.02]">
                       <td className="p-4 sm:p-6 font-bold text-white flex items-center gap-2">
-                        <Zap className="w-4 h-4 text-[#5BC94D] shrink-0" /> 250kW To 1MW+
+                        <Zap className="w-4 h-4 text-[#8cc63f] shrink-0" /> 250kW To 1MW+
                       </td>
                       <td className="p-4 sm:p-6">Industrial facilities, mining operations</td>
                       <td className="p-4 sm:p-6">LGC credits</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">Custom quote</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">Custom quote</td>
                     </tr>
                   </tbody>
                 </table>
@@ -769,8 +769,8 @@ export function CommercialSolarSystemPage() {
           {/* Table 2: Business Types & Recommended Commercial System Sizes */}
           <FadeIn delay={0.3}>
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-bold text-white uppercase tracking-wide flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#5BC94D]"></span>
+              <h3 className="text-lg font-bold text-white tracking-tight flex items-center gap-2 normal-case">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#8cc63f]"></span>
                 NT Business Types & Recommended Commercial System Sizes
               </h3>
               <span className="text-xs text-slate-400">Territory Wide Deployments</span>
@@ -780,7 +780,7 @@ export function CommercialSolarSystemPage() {
                 <table className="w-full text-left border-collapse">
                   <thead>
                     <tr className="border-b border-white/10 bg-white/5">
-                      <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-[#5BC94D] uppercase tracking-wider">Business Type</th>
+                      <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-[#8cc63f] uppercase tracking-wider">Business Type</th>
                       <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-white uppercase tracking-wider">Typical System Size</th>
                       <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-white uppercase tracking-wider">NT Location Examples</th>
                     </tr>
@@ -788,37 +788,37 @@ export function CommercialSolarSystemPage() {
                   <tbody className="divide-y divide-white/5 text-xs sm:text-sm font-medium text-slate-300">
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4 sm:p-6 font-bold text-white">Retail & Hospitality</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">30kW to 75kW</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">30kW to 75kW</td>
                       <td className="p-4 sm:p-6">Darwin CBD shops, Alice Springs restaurants, Palmerston cafes, Darwin hotels</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors bg-white/[0.02]">
                       <td className="p-4 sm:p-6 font-bold text-white">Offices & Professional Services</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">30kW to 100kW</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">30kW to 100kW</td>
                       <td className="p-4 sm:p-6">Darwin City offices, government buildings, medical centres</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4 sm:p-6 font-bold text-white">Warehouses & Logistics</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">75kW to 250kW</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">75kW to 250kW</td>
                       <td className="p-4 sm:p-6">Berrimah and Winnellie industrial precinct, Alice Springs freight depots</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors bg-white/[0.02]">
                       <td className="p-4 sm:p-6 font-bold text-white">Manufacturing & Food Production</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">100kW to 500kW</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">100kW to 500kW</td>
                       <td className="p-4 sm:p-6">Darwin port precincts, Katherine agricultural operations, food processing</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4 sm:p-6 font-bold text-white">Mining & Resources</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">250kW to 1MW+</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">250kW to 1MW+</td>
                       <td className="p-4 sm:p-6">Remote NT mining operations, off-grid exploration site power</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors bg-white/[0.02]">
                       <td className="p-4 sm:p-6 font-bold text-white">Schools & Community Facilities</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">30kW to 100kW</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">30kW to 100kW</td>
                       <td className="p-4 sm:p-6">NT Government schools, Darwin community centres, Alice Springs sporting clubs</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4 sm:p-6 font-bold text-white">Remote Stations</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">Off-grid 20kW to 200kW+</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">Off-grid 20kW to 200kW+</td>
                       <td className="p-4 sm:p-6">Katherine cattle stations, Barkly region, Kakadu tourism operations</td>
                     </tr>
                   </tbody>
@@ -834,10 +834,10 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
+              <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-widest block mb-3">
                 Government Rebates & Tax Offsets
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white normal-case">
                 Commercial Solar System Cost & Government Incentives 2026
               </h2>
             </FadeIn>
@@ -846,10 +846,10 @@ export function CommercialSolarSystemPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <FadeIn delay={0.1}>
               <div className="bg-slate-900/50 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <FileText className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-4 tracking-tight normal-case">
                   STCs
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -860,10 +860,10 @@ export function CommercialSolarSystemPage() {
 
             <FadeIn delay={0.2}>
               <div className="bg-slate-900/50 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <Award className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-4 tracking-tight normal-case">
                   LGCs
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -876,7 +876,7 @@ export function CommercialSolarSystemPage() {
           {/* Table: Commercial Solar System Price in the NT */}
           <FadeIn delay={0.3} className="mb-12">
             <div className="mb-6 text-center max-w-3xl mx-auto">
-              <h3 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] mb-3">
+              <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight mb-3 normal-case">
                 Commercial Solar System Price in the NT
               </h3>
               <p className="text-slate-300 text-sm sm:text-base font-medium leading-relaxed">
@@ -889,7 +889,7 @@ export function CommercialSolarSystemPage() {
                 <table className="w-full text-left border-collapse">
                   <thead>
                     <tr className="border-b border-white/10 bg-white/5">
-                      <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-[#5BC94D] uppercase tracking-wider">System Size</th>
+                      <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-[#8cc63f] uppercase tracking-wider">System Size</th>
                       <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-white uppercase tracking-wider">Cost Per kW</th>
                       <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-white uppercase tracking-wider">Total Before Incentives</th>
                       <th className="p-4 sm:p-6 text-xs sm:text-sm font-black text-white uppercase tracking-wider">Estimated STC Rebate Value</th>
@@ -898,35 +898,35 @@ export function CommercialSolarSystemPage() {
                   <tbody className="divide-y divide-white/5 text-xs sm:text-sm font-medium text-slate-300">
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4 sm:p-6 font-bold text-white flex items-center gap-2">
-                        <Zap className="w-4 h-4 text-[#5BC94D] shrink-0" /> 30kW System
+                        <Zap className="w-4 h-4 text-[#8cc63f] shrink-0" /> 30kW System
                       </td>
                       <td className="p-4 sm:p-6">$1,100 to $1,300/kW</td>
                       <td className="p-4 sm:p-6 font-bold text-white">$33,000 to $39,000</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">$7,000 to $10,000 off</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">$7,000 to $10,000 off</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors bg-white/[0.02]">
                       <td className="p-4 sm:p-6 font-bold text-white flex items-center gap-2">
-                        <Zap className="w-4 h-4 text-[#5BC94D] shrink-0" /> 50kW System
+                        <Zap className="w-4 h-4 text-[#8cc63f] shrink-0" /> 50kW System
                       </td>
                       <td className="p-4 sm:p-6">$1,000 to $1,200/kW</td>
                       <td className="p-4 sm:p-6 font-bold text-white">$50,000 to $60,000</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">$12,000 to $16,000 off</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">$12,000 to $16,000 off</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors">
                       <td className="p-4 sm:p-6 font-bold text-white flex items-center gap-2">
-                        <Zap className="w-4 h-4 text-[#5BC94D] shrink-0" /> 100kW System
+                        <Zap className="w-4 h-4 text-[#8cc63f] shrink-0" /> 100kW System
                       </td>
                       <td className="p-4 sm:p-6">$900 to $1,100/kW</td>
                       <td className="p-4 sm:p-6 font-bold text-white">$90,000 to $110,000</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">$18,000 to $25,000 off</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">$18,000 to $25,000 off</td>
                     </tr>
                     <tr className="hover:bg-white/5 transition-colors bg-white/[0.02]">
                       <td className="p-4 sm:p-6 font-bold text-white flex items-center gap-2">
-                        <Zap className="w-4 h-4 text-[#5BC94D] shrink-0" /> 100kW+ System
+                        <Zap className="w-4 h-4 text-[#8cc63f] shrink-0" /> 100kW+ System
                       </td>
                       <td className="p-4 sm:p-6">Custom per site</td>
                       <td className="p-4 sm:p-6 font-bold text-white">Custom quote</td>
-                      <td className="p-4 sm:p-6 text-[#5BC94D] font-bold">LGC ongoing annual credits</td>
+                      <td className="p-4 sm:p-6 text-[#8cc63f] font-bold">LGC ongoing annual credits</td>
                     </tr>
                   </tbody>
                 </table>
@@ -937,7 +937,7 @@ export function CommercialSolarSystemPage() {
           {/* Commercial Pricing Info Card */}
           <FadeIn delay={0.3}>
             <div className="cta-card-outline bg-slate-900/40 border border-white/20 p-8 sm:p-10 rounded-3xl text-center max-w-4xl mx-auto backdrop-blur-md">
-              <h3 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] mb-4">
+              <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight mb-4 normal-case">
                 Commercial Solar System Pricing
               </h3>
               <p className="text-slate-300 text-base sm:text-lg font-medium mb-8 max-w-2xl mx-auto">
@@ -945,7 +945,7 @@ export function CommercialSolarSystemPage() {
               </p>
               <Button
                 size="lg"
-                className="rounded-xl px-8 py-4 bg-[#5BC94D] text-[#19281D] font-black hover:bg-emerald-400 transition-all uppercase tracking-wider text-xs border-none"
+                className="rounded-xl px-8 py-4 bg-[#8cc63f] text-[#19281D] font-black hover:bg-brand-400 transition-all uppercase tracking-wider text-xs border-none"
                 asChild
               >
                 <a href="#quote-form">
@@ -963,10 +963,10 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
+              <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-widest block mb-3">
                 Flexible Funding Options
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white normal-case">
                 Commercial Solar Finance Options for NT Businesses
               </h2>
             </FadeIn>
@@ -974,55 +974,55 @@ export function CommercialSolarSystemPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FadeIn delay={0.1}>
-              <div className="bg-slate-900/60 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+              <div className="bg-slate-900/60 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#8cc63f]/40 transition-all">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <DollarSign className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-4">
+                <h3 className="text-2xl font-black text-white tracking-tight mb-4 normal-case">
                   Outright Purchase
                 </h3>
                 <p className="text-slate-300 text-sm leading-relaxed font-medium mb-6">
                   Maximum long-term savings by purchasing your system upfront.
                 </p>
                 <ul className="space-y-2 text-xs text-slate-400 font-medium mt-auto">
-                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#5BC94D]" /> Maximum ROI yield</li>
-                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#5BC94D]" /> Immediate asset ownership</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#8cc63f]" /> Maximum ROI yield</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#8cc63f]" /> Immediate asset ownership</li>
                 </ul>
               </div>
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <div className="bg-slate-900/60 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+              <div className="bg-slate-900/60 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#8cc63f]/40 transition-all">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <TrendingUp className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-4">
+                <h3 className="text-2xl font-black text-white tracking-tight mb-4 normal-case">
                   Equipment Finance
                 </h3>
                 <p className="text-slate-300 text-sm leading-relaxed font-medium mb-6">
                   Preserve working capital while repayments are offset by energy savings.
                 </p>
                 <ul className="space-y-2 text-xs text-slate-400 font-medium mt-auto">
-                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#5BC94D]" /> $0 Upfront capital needed</li>
-                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#5BC94D]" /> Tax deductible interest</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#8cc63f]" /> $0 Upfront capital needed</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#8cc63f]" /> Tax deductible interest</li>
                 </ul>
               </div>
             </FadeIn>
 
             <FadeIn delay={0.3}>
-              <div className="bg-slate-900/60 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#5BC94D]/40 transition-all">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+              <div className="bg-slate-900/60 border border-white/10 p-8 rounded-3xl h-full flex flex-col hover:border-[#8cc63f]/40 transition-all">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <Building2 className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-4">
+                <h3 className="text-2xl font-black text-white tracking-tight mb-4 normal-case">
                   Power Purchase Agreement
                 </h3>
                 <p className="text-slate-300 text-sm leading-relaxed font-medium mb-6">
                   Access cheaper solar electricity without upfront purchase costs.
                 </p>
                 <ul className="space-y-2 text-xs text-slate-400 font-medium mt-auto">
-                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#5BC94D]" /> Off balance sheet solution</li>
-                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#5BC94D]" /> Zero maintenance costs</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#8cc63f]" /> Off balance sheet solution</li>
+                  <li className="flex items-center gap-2"><Check className="w-4 h-4 text-[#8cc63f]" /> Zero maintenance costs</li>
                 </ul>
               </div>
             </FadeIn>
@@ -1035,10 +1035,10 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
+              <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-widest block mb-3">
                 The Oneroof Solar Advantage
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white normal-case">
                 Why NT Businesses Choose Oneroof Solar
               </h2>
             </FadeIn>
@@ -1047,10 +1047,10 @@ export function CommercialSolarSystemPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <FadeIn delay={0.1}>
               <div className="bg-slate-900/60 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <Building2 className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-3 tracking-tight normal-case">
                   Local NT Commercial Team
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -1061,10 +1061,10 @@ export function CommercialSolarSystemPage() {
 
             <FadeIn delay={0.2}>
               <div className="bg-slate-900/60 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <Shield className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-3 tracking-tight normal-case">
                   Cyclone Rated Installations
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -1075,10 +1075,10 @@ export function CommercialSolarSystemPage() {
 
             <FadeIn delay={0.3}>
               <div className="bg-slate-900/60 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <Sun className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-3 tracking-tight normal-case">
                   N Type Panels Only
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -1089,10 +1089,10 @@ export function CommercialSolarSystemPage() {
 
             <FadeIn delay={0.4}>
               <div className="bg-slate-900/60 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <FileText className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-3 tracking-tight normal-case">
                   STC And LGC Maximised
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -1103,10 +1103,10 @@ export function CommercialSolarSystemPage() {
 
             <FadeIn delay={0.5}>
               <div className="bg-slate-900/60 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <Zap className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-3 tracking-tight normal-case">
                   Battery Ready Systems
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -1117,14 +1117,14 @@ export function CommercialSolarSystemPage() {
 
             <FadeIn delay={0.6}>
               <div className="bg-slate-900/60 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col">
-                <div className="w-12 h-12 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center mb-6">
                   <Clock className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-white mb-3 tracking-tight normal-case">
                   Ongoing Commercial Support
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed font-medium">
-                  Maintenance and warranty support across NT. Visit our <Link to="/repairs-and-maintenance/" className="text-[#5BC94D] font-bold hover:underline">repairs and maintenance page</Link> for details.
+                  Maintenance and warranty support across NT. Visit our <Link to="/repairs-and-maintenance/" className="text-[#8cc63f] font-bold hover:underline">repairs and maintenance page</Link> for details.
                 </p>
               </div>
             </FadeIn>
@@ -1137,10 +1137,10 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
+              <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-widest block mb-3">
                 Streamlined Deployment
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white normal-case">
                 Our Commercial Solar Installation Process
               </h2>
             </FadeIn>
@@ -1175,12 +1175,12 @@ export function CommercialSolarSystemPage() {
               }
             ].map((step, index) => (
               <FadeIn key={step.num} delay={index * 0.1}>
-                <div className="bg-slate-900/60 border border-white/10 p-6 sm:p-8 rounded-3xl flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:border-[#5BC94D]/40 transition-all">
-                  <div className="w-16 h-16 rounded-2xl bg-[#5BC94D] text-[#19281D] font-black text-xl flex items-center justify-center shrink-0 shadow-lg">
+                <div className="bg-slate-900/60 border border-white/10 p-6 sm:p-8 rounded-3xl flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:border-[#8cc63f]/40 transition-all">
+                  <div className="w-16 h-16 rounded-2xl bg-[#8cc63f] text-[#19281D] font-black text-xl flex items-center justify-center shrink-0 shadow-lg">
                     {step.num}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white uppercase tracking-wide mb-2">
+                    <h3 className="text-xl font-bold text-white tracking-tight mb-2 normal-case">
                       {step.title}
                     </h3>
                     <p className="text-sm text-slate-300 leading-relaxed font-medium">
@@ -1212,11 +1212,11 @@ export function CommercialSolarSystemPage() {
                 <span className="text-xs font-black text-white uppercase tracking-widest">4.9 / 5 Stars</span>
               </div>
               
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight mb-4">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-4 normal-case">
                 Commercial Client Reviews in the NT
               </h2>
               <p className="text-slate-300 text-base font-medium">
-                Based on 124+ Google reviews from Darwin, Palmerston and Alice Springs. <Link to="/projects/" className="text-[#5BC94D] font-bold hover:underline ml-2">See Our Projects &rarr;</Link>
+                Based on 124+ Google reviews from Darwin, Palmerston and Alice Springs. <Link to="/projects/" className="text-[#8cc63f] font-bold hover:underline ml-2">See Our Projects &rarr;</Link>
               </p>
             </FadeIn>
           </div>
@@ -1225,7 +1225,7 @@ export function CommercialSolarSystemPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {commercialReviews.map((rev, idx) => (
               <FadeIn key={rev.name} delay={idx * 0.1}>
-                <div className="bg-slate-900/60 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col relative group hover:border-[#5BC94D]/40 transition-all">
+                <div className="bg-slate-900/60 border border-white/10 p-6 sm:p-8 rounded-3xl h-full flex flex-col relative group hover:border-[#8cc63f]/40 transition-all">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-1 text-amber-400">
                       {[...Array(rev.rating)].map((_, i) => (
@@ -1238,7 +1238,7 @@ export function CommercialSolarSystemPage() {
                   </div>
 
                   <div className="mb-4">
-                    <span className="text-[11px] font-bold text-[#5BC94D] uppercase tracking-wider  block">
+                    <span className="text-[11px] font-bold text-[#8cc63f] uppercase tracking-wider  block">
                       ⚡ {rev.system}
                     </span>
                   </div>
@@ -1249,12 +1249,12 @@ export function CommercialSolarSystemPage() {
 
                   <div className="mt-auto pt-4 border-t border-white/5 flex items-center justify-between">
                     <div>
-                      <h4 className="text-sm font-bold text-white uppercase tracking-wider">{rev.name}</h4>
+                      <h4 className="text-sm font-bold text-white tracking-wider normal-case">{rev.name}</h4>
                       <p className="text-[11px] text-slate-400 font-medium">{rev.company}</p>
-                      <p className="text-[10px] text-[#5BC94D]  mt-0.5">📍 {rev.location}</p>
+                      <p className="text-[10px] text-[#8cc63f]  mt-0.5">📍 {rev.location}</p>
                     </div>
                     <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                      <Quote className="w-4 h-4 text-[#5BC94D]" />
+                      <Quote className="w-4 h-4 text-[#8cc63f]" />
                     </div>
                   </div>
                 </div>
@@ -1270,10 +1270,10 @@ export function CommercialSolarSystemPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <FadeIn>
-              <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
+              <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-widest block mb-3">
                 Territory Wide Coverage
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white normal-case">
                 Commercial Solar Coverage Across the NT
               </h2>
             </FadeIn>
@@ -1283,16 +1283,16 @@ export function CommercialSolarSystemPage() {
             
             {/* Card 1: Darwin City */}
             <FadeIn delay={0.1}>
-              <div className="bg-[#141F17] border border-white/10 hover:border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group">
+              <div className="bg-[#141F17] border border-white/10 hover:border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center">
                     <Building2 className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
+                  <span className="text-[10px] font-bold text-[#8cc63f] uppercase tracking-wider  border border-[#8cc63f]/30 px-2.5 py-1 rounded-full bg-[#8cc63f]/5">
                     Primary Hub
                   </span>
                 </div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-2">
+                <h3 className="text-2xl font-black text-white tracking-tight mb-2 normal-case">
                   Darwin City
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed font-medium mb-6">
@@ -1305,7 +1305,7 @@ export function CommercialSolarSystemPage() {
                     </span>
                   ))}
                 </div>
-                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-[#5BC94D] hover:text-[#19281D] hover:border-none transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden" asChild>
+                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-[#8cc63f] hover:text-[#19281D] hover:border-none transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden" asChild>
                   <a href="#quote-form">
                     View Darwin City Coverage
                   </a>
@@ -1315,16 +1315,16 @@ export function CommercialSolarSystemPage() {
 
             {/* Card 2: Northern Darwin */}
             <FadeIn delay={0.2}>
-              <div className="bg-[#141F17] border border-white/10 hover:border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group">
+              <div className="bg-[#141F17] border border-white/10 hover:border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center">
                     <Building2 className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
+                  <span className="text-[10px] font-bold text-[#8cc63f] uppercase tracking-wider  border border-[#8cc63f]/30 px-2.5 py-1 rounded-full bg-[#8cc63f]/5">
                     Industrial Hub
                   </span>
                 </div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-2">
+                <h3 className="text-2xl font-black text-white tracking-tight mb-2 normal-case">
                   Northern Darwin
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed font-medium mb-6">
@@ -1337,7 +1337,7 @@ export function CommercialSolarSystemPage() {
                     </span>
                   ))}
                 </div>
-                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-[#5BC94D] hover:text-[#19281D] hover:border-none transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden" asChild>
+                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-[#8cc63f] hover:text-[#19281D] hover:border-none transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden" asChild>
                   <a href="#quote-form">
                     View Northern Darwin Coverage
                   </a>
@@ -1347,20 +1347,20 @@ export function CommercialSolarSystemPage() {
 
             {/* Card 3: Alice Springs */}
             <FadeIn delay={0.3}>
-              <div className="bg-[#141F17] border border-white/10 hover:border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group">
+              <div className="bg-[#141F17] border border-white/10 hover:border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center">
                     <Building2 className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
+                  <span className="text-[10px] font-bold text-[#8cc63f] uppercase tracking-wider  border border-[#8cc63f]/30 px-2.5 py-1 rounded-full bg-[#8cc63f]/5">
                     Central Hub
                   </span>
                 </div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-2">
+                <h3 className="text-2xl font-black text-white tracking-tight mb-2 normal-case">
                   Alice Springs
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed font-medium mb-6">
-                  Solar solutions for Alice Springs commercial properties. Visit our <Link to="/alice-springs/" className="text-[#5BC94D] font-bold hover:underline">Alice Springs solar page</Link>.
+                  Solar solutions for Alice Springs commercial properties. Visit our <Link to="/alice-springs/" className="text-[#8cc63f] font-bold hover:underline">Alice Springs solar page</Link>.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6 mt-auto">
                   {["Alice Springs CBD", "Sadadeen", "Araluen"].map(tag => (
@@ -1369,7 +1369,7 @@ export function CommercialSolarSystemPage() {
                     </span>
                   ))}
                 </div>
-                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-[#5BC94D] hover:text-[#19281D] hover:border-none transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden" asChild>
+                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-[#8cc63f] hover:text-[#19281D] hover:border-none transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden" asChild>
                   <a href="#quote-form">
                     View Alice Springs Coverage
                   </a>
@@ -1379,16 +1379,16 @@ export function CommercialSolarSystemPage() {
 
             {/* Card 4: Palmerston */}
             <FadeIn delay={0.4}>
-              <div className="bg-[#141F17] border border-white/10 hover:border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group">
+              <div className="bg-[#141F17] border border-white/10 hover:border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center">
                     <Building2 className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
+                  <span className="text-[10px] font-bold text-[#8cc63f] uppercase tracking-wider  border border-[#8cc63f]/30 px-2.5 py-1 rounded-full bg-[#8cc63f]/5">
                     Growth Corridor
                   </span>
                 </div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-2">
+                <h3 className="text-2xl font-black text-white tracking-tight mb-2 normal-case">
                   Palmerston
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed font-medium mb-6">
@@ -1401,7 +1401,7 @@ export function CommercialSolarSystemPage() {
                     </span>
                   ))}
                 </div>
-                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-[#5BC94D] hover:text-[#19281D] hover:border-none transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden" asChild>
+                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-[#8cc63f] hover:text-[#19281D] hover:border-none transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden" asChild>
                   <a href="#quote-form">
                     View Palmerston Coverage
                   </a>
@@ -1411,16 +1411,16 @@ export function CommercialSolarSystemPage() {
 
             {/* Card 5: Darwin Rural */}
             <FadeIn delay={0.5}>
-              <div className="bg-[#141F17] border border-white/10 hover:border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group">
+              <div className="bg-[#141F17] border border-white/10 hover:border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center">
                     <Building2 className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/5">
+                  <span className="text-[10px] font-bold text-[#8cc63f] uppercase tracking-wider  border border-[#8cc63f]/30 px-2.5 py-1 rounded-full bg-[#8cc63f]/5">
                     Rural & Agriculture
                   </span>
                 </div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-2">
+                <h3 className="text-2xl font-black text-white tracking-tight mb-2 normal-case">
                   Darwin Rural
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed font-medium mb-6">
@@ -1433,7 +1433,7 @@ export function CommercialSolarSystemPage() {
                     </span>
                   ))}
                 </div>
-                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-[#5BC94D] hover:text-[#19281D] hover:border-none transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden" asChild>
+                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-white/5 border border-white/10 text-white font-bold hover:bg-[#8cc63f] hover:text-[#19281D] hover:border-none transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden" asChild>
                   <a href="#quote-form">
                     View Darwin Rural Coverage
                   </a>
@@ -1443,16 +1443,16 @@ export function CommercialSolarSystemPage() {
 
             {/* Card 6: Coverage Check Card */}
             <FadeIn delay={0.6}>
-              <div className="bg-gradient-to-b from-[#141F17] to-slate-900 border border-[#5BC94D]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group shadow-xl">
+              <div className="bg-gradient-to-b from-[#141F17] to-slate-900 border border-[#8cc63f]/40 p-6 sm:p-8 rounded-3xl flex flex-col h-full transition-all group shadow-xl">
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#5BC94D] text-[#19281D] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#8cc63f] text-[#19281D] flex items-center justify-center">
                     <MapPin className="w-5 h-5" />
                   </div>
-                  <span className="text-[10px] font-bold text-[#5BC94D] uppercase tracking-wider  border border-[#5BC94D]/30 px-2.5 py-1 rounded-full bg-[#5BC94D]/10">
+                  <span className="text-[10px] font-bold text-[#8cc63f] uppercase tracking-wider  border border-[#8cc63f]/30 px-2.5 py-1 rounded-full bg-[#8cc63f]/10">
                     All NT Regions
                   </span>
                 </div>
-                <h3 className="text-2xl font-black text-white uppercase tracking-wide mb-2">
+                <h3 className="text-2xl font-black text-white tracking-tight mb-2 normal-case">
                   Coverage Check Card
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed font-medium mb-6">
@@ -1465,7 +1465,7 @@ export function CommercialSolarSystemPage() {
                     </span>
                   ))}
                 </div>
-                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-[#5BC94D] text-[#19281D] font-black hover:bg-emerald-400 transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden border-none shadow-[0_4px_15px_rgba(91,201,77,0.3)]" asChild>
+                <Button className="w-full h-auto py-2.5 px-4 rounded-xl bg-[#8cc63f] text-[#19281D] font-black hover:bg-brand-400 transition-all normal-case text-xs sm:text-sm flex items-center justify-center text-center whitespace-normal break-words overflow-hidden border-none shadow-[0_4px_15px_rgba(91,201,77,0.3)]" asChild>
                   <a href="#quote-form">
                     Check Property Eligibility
                   </a>
@@ -1478,25 +1478,25 @@ export function CommercialSolarSystemPage() {
       </section>
 
       {/* SECTION 12: FAQ SECTION ACCORDION & PAA SNIPPETS */}
-      <section className="py-12 lg:py-24 bg-[#121814] relative overflow-hidden border-b border-white/5">
+      <section className="py-12 lg:py-24 bg-[#121814] relative border-b border-white/5">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           
           {/* PAA Quick Answer Callout Box */}
           <FadeIn className="mb-12">
-            <div className="bg-slate-900/80 border border-[#5BC94D]/30 p-6 sm:p-8 rounded-3xl backdrop-blur-md shadow-2xl">
+            <div className="bg-slate-900/80 border border-[#8cc63f]/30 p-6 sm:p-8 rounded-3xl backdrop-blur-md shadow-2xl">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-2xl bg-[#5BC94D]/10 text-[#5BC94D] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-2xl bg-[#8cc63f]/10 text-[#8cc63f] flex items-center justify-center shrink-0">
                   <HelpCircle className="w-5 h-5" />
                 </div>
-                <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-wide">
+                <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight normal-case">
                   Frequently Asked Commercial Solar Sizing Questions
                 </h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white/5 border border-white/5 p-5 sm:p-6 rounded-2xl">
-                  <h4 className="text-sm font-bold text-[#5BC94D] uppercase tracking-wider mb-2 flex items-start gap-2">
-                    <span className="shrink-0  text-[#5BC94D]">Q:</span>
+                  <h4 className="text-sm font-bold text-[#8cc63f] tracking-wider mb-2 flex items-start gap-2 normal-case">
+                    <span className="shrink-0  text-[#8cc63f]">Q:</span>
                     Is 10kW Solar Enough for a Commercial Business?
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
@@ -1505,8 +1505,8 @@ export function CommercialSolarSystemPage() {
                 </div>
 
                 <div className="bg-white/5 border border-white/5 p-5 sm:p-6 rounded-2xl">
-                  <h4 className="text-sm font-bold text-[#5BC94D] uppercase tracking-wider mb-2 flex items-start gap-2">
-                    <span className="shrink-0  text-[#5BC94D]">Q:</span>
+                  <h4 className="text-sm font-bold text-[#8cc63f] tracking-wider mb-2 flex items-start gap-2 normal-case">
+                    <span className="shrink-0  text-[#8cc63f]">Q:</span>
                     What is the 33% Rule in Solar Panel Inverters?
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
@@ -1519,14 +1519,14 @@ export function CommercialSolarSystemPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
-            <div className="lg:col-span-5 lg:sticky lg:top-32">
+            <div className="lg:col-span-5 lg:sticky-below-header">
               <FadeIn>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 font-semibold text-xs mb-6">
-                  <span className="h-2 w-2 rounded-full bg-[#5BC94D] animate-pulse"></span>
+                  <span className="h-2 w-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
                   <span className="text-xs font-bold text-slate-300 uppercase tracking-widest">Commercial Questions</span>
                 </div>
                 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-wide [word-spacing:0.12em] text-white leading-[1.1] mb-6 uppercase">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Frequently Asked Questions
                 </h2>
                 
@@ -1534,7 +1534,7 @@ export function CommercialSolarSystemPage() {
                   Have questions about installing commercial solar in the Northern Territory? Here are expert answers to common business inquiries.
                 </p>
 
-                <Button className="rounded-xl shadow-lg hover:-translate-y-1 transition-all h-14 px-8 font-bold bg-[#5BC94D] text-[#19281D] hover:bg-emerald-400 border-none uppercase tracking-wider text-xs" asChild>
+                <Button className="rounded-xl shadow-lg hover:-translate-y-1 transition-all h-14 px-8 font-bold bg-[#8cc63f] text-[#19281D] hover:bg-brand-400 border-none uppercase tracking-wider text-xs" asChild>
                   <a href="#quote-form">
                     Book your free NT commercial energy assessment today
                   </a>
@@ -1550,8 +1550,8 @@ export function CommercialSolarSystemPage() {
                     <div
                       className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                         isOpen
-                          ? "bg-slate-900/60 shadow-xl border-[#5BC94D]/30"
-                          : "bg-slate-900/20 border-white/5 hover:border-[#5BC94D]/20"
+                          ? "bg-slate-900/60 shadow-xl border-[#8cc63f]/30"
+                          : "bg-slate-900/20 border-white/5 hover:border-[#8cc63f]/20"
                       }`}
                     >
                       <button
@@ -1565,7 +1565,7 @@ export function CommercialSolarSystemPage() {
                           <div
                             className={`shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold text-xs sm:text-sm transition-colors ${
                               isOpen
-                                ? "bg-[#5BC94D] text-[#19281D] shadow-md shadow-[#5BC94D]/20"
+                                ? "bg-[#8cc63f] text-[#19281D] shadow-md shadow-[#8cc63f]/20"
                                 : "bg-white/5 text-slate-400 border border-white/10"
                             }`}
                           >
@@ -1573,7 +1573,7 @@ export function CommercialSolarSystemPage() {
                           </div>
                           <h3
                             className={`text-sm sm:text-base font-bold leading-tight transition-colors tracking-wide ${
-                              isOpen ? "text-[#5BC94D]" : "text-white"
+                              isOpen ? "text-[#8cc63f]" : "text-white"
                             }`}
                           >
                             {faq.q}
@@ -1582,7 +1582,7 @@ export function CommercialSolarSystemPage() {
                         <div
                           className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-300 ${
                             isOpen
-                              ? "border-[#5BC94D] bg-[#5BC94D]/10 text-[#5BC94D] rotate-180"
+                              ? "border-[#8cc63f] bg-[#8cc63f]/10 text-[#8cc63f] rotate-180"
                               : "border-white/10 text-slate-400 bg-white/5"
                           }`}
                         >
@@ -1613,30 +1613,30 @@ export function CommercialSolarSystemPage() {
       </section>
 
       {/* SECTION 13: FIX 7 - FINAL CTA SECTION */}
-      <section id="quote-form" className="py-16 lg:py-28 relative overflow-hidden bg-slate-950">
-        <div className="absolute inset-0 z-0">
+      <section id="quote-form" className="py-16 lg:py-28 relative bg-slate-950">
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <img 
             referrerPolicy="no-referrer"
             loading="lazy"
-            src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/images/home/home-premium-aerial.webp" 
             alt="Commercial solar background" 
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/70"></div>
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#5BC94D]/5 rounded-full blur-[120px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#8cc63f]/5 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/3"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             {/* Left Column Benefits, Phone Numbers & Email */}
-            <div className="lg:col-span-6">
+            <div className="lg:col-span-6 lg:sticky-below-header">
               <FadeIn>
-                <span className="text-xs font-bold text-[#5BC94D] uppercase tracking-widest block mb-3">
+                <span className="text-xs font-bold text-[#8cc63f] uppercase tracking-widest block mb-3">
                   Get Started Today
                 </span>
                 
-                <h2 className="text-4xl sm:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] mb-6 leading-[1.1]">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Get a Free Commercial Solar Quote For Your NT Business
                 </h2>
                 
@@ -1654,7 +1654,7 @@ export function CommercialSolarSystemPage() {
                     "NT based team"
                   ].map((item) => (
                     <div key={item} className="flex items-center gap-3 text-slate-300 font-medium text-sm">
-                      <CheckCircle className="w-5 h-5 text-[#5BC94D] shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-[#8cc63f] shrink-0" />
                       <span>{item}</span>
                     </div>
                   ))}
@@ -1664,9 +1664,9 @@ export function CommercialSolarSystemPage() {
                   {/* Darwin Phone */}
                   <a 
                     href={`tel:${PRIMARY_PHONE_RAW}`} 
-                    className="flex items-center gap-4 text-white hover:text-[#5BC94D] transition-colors group max-w-sm"
+                    className="flex items-center gap-4 text-white hover:text-[#8cc63f] transition-colors group max-w-sm"
                   >
-                    <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#5BC94D] border border-white/10 group-hover:bg-[#5BC94D] group-hover:text-[#19281D] transition-all">
+                    <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#8cc63f] border border-white/10 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] transition-all">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
@@ -1678,9 +1678,9 @@ export function CommercialSolarSystemPage() {
                   {/* Alice Springs Phone */}
                   <a 
                     href={`tel:${PRIMARY_PHONE_RAW}`} 
-                    className="flex items-center gap-4 text-white hover:text-[#5BC94D] transition-colors group max-w-sm"
+                    className="flex items-center gap-4 text-white hover:text-[#8cc63f] transition-colors group max-w-sm"
                   >
-                    <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#5BC94D] border border-white/10 group-hover:bg-[#5BC94D] group-hover:text-[#19281D] transition-all">
+                    <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#8cc63f] border border-white/10 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] transition-all">
                       <Phone className="w-5 h-5" />
                     </div>
                     <div>
@@ -1692,9 +1692,9 @@ export function CommercialSolarSystemPage() {
                   {/* Email */}
                   <a 
                     href="mailto:info@oneroofsolar.com.au" 
-                    className="flex items-center gap-4 text-white hover:text-[#5BC94D] transition-colors group max-w-sm"
+                    className="flex items-center gap-4 text-white hover:text-[#8cc63f] transition-colors group max-w-sm"
                   >
-                    <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#5BC94D] border border-white/10 group-hover:bg-[#5BC94D] group-hover:text-[#19281D] transition-all">
+                    <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#8cc63f] border border-white/10 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] transition-all">
                       <Mail className="w-5 h-5" />
                     </div>
                     <div>

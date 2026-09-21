@@ -159,8 +159,8 @@ export function AdminLogin() {
           )}
 
           {success && (
-            <div className="mb-6 p-4 bg-emerald-500/10 text-emerald-300 text-xs rounded-xl border border-emerald-500/20 flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-emerald-400 animate-ping mr-1 shrink-0" />
+            <div className="mb-6 p-4 bg-brand-500/10 text-brand-300 text-xs rounded-xl border border-brand-500/20 flex items-center gap-3">
+              <div className="w-2 h-2 rounded-full bg-brand-400 animate-ping mr-1 shrink-0" />
               <span>{success}</span>
             </div>
           )}

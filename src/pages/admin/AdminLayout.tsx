@@ -48,7 +48,7 @@ export function AdminLayout() {
               {user?.email}
             </div>
             <div className="flex items-center gap-1.5 mt-0.5">
-              <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full shrink-0"></span>
+              <span className="w-1.5 h-1.5 bg-brand-500 rounded-full shrink-0"></span>
               <span className="text-[10px] text-slate-400">
                 {user?.role || 'Administrator'}
               </span>

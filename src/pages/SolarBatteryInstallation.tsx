@@ -34,10 +34,10 @@ export function SolarBatteryInstallation() {
     robots: "index, follow",
     openGraphTitle: "Solar Battery Installation Darwin, NT | Oneroof Solar",
     openGraphDescription: "Licensed solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
-    openGraphImage: "https://i.postimg.cc/Nf2ytHrg/Sigenergy-(1).webp",
+    openGraphImage: "/assets/images/hosted/products/sigen-battery.webp",
     twitterTitle: "Solar Battery Installation Darwin, NT | Oneroof Solar",
     twitterDescription: "Licensed solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
-    twitterImage: "https://i.postimg.cc/Nf2ytHrg/Sigenergy-(1).webp",
+    twitterImage: "/assets/images/hosted/products/sigen-battery.webp",
   };
 
   const serviceSchema = {
@@ -224,27 +224,27 @@ export function SolarBatteryInstallation() {
     {
       name: "Tesla",
       desc: "Industry-leading energy density with sleek wall-mounted Powerwall architectures.",
-      image: "https://solarjuice.com.au/wp-content/uploads/2026/05/Powerwall-and-Backup-Gateway-2-copy-1280x720-Edited-Edited-600x618.png"
+      image: "/assets/images/home/home-battery-nightcliff.webp"
     },
     {
       name: "Sigenergy",
       desc: "Next-generation integrated 5-in-one solar and high-voltage battery storage.",
-      image: "https://i.postimg.cc/qMznYkKw/Sigen-Battery-8-k-Wh-with-LED-removebg-preview.png"
+      image: "/assets/images/hosted/products/sigen-battery.webp"
     },
     {
       name: "Sungrow",
       desc: "High-yield modular lithium iron phosphate (LFP) storage with robust cycling longevity.",
-      image: "https://i.postimg.cc/6qnsnGMk/6383980259759580924379243-1-removebg-preview.png"
+      image: "/assets/images/hosted/products/sigen-battery-detail.webp"
     },
     {
       name: "BYD",
       desc: "World-class battery chemistry renowned for high safety, deep discharge, and modular expansion.",
-      image: "https://www.solarquotes.com.au/wp-content/uploads/2023/10/byd-fronius-backboard.jpg"
+      image: "/assets/images/hosted/products/fronius.webp"
     },
     {
       name: "Alpha ESS",
       desc: "Reliable, cost-effective residential and commercial energy storage systems.",
-      image: "https://solarjuice.com.au/wp-content/uploads/2026/05/ECS.1-406.png"
+      image: "/assets/images/hosted/products/alpha-ess.webp"
     }
   ];
 
@@ -273,7 +273,7 @@ export function SolarBatteryInstallation() {
       q: "Can I add a battery to my existing solar system?",
       a: (
         <>
-          Yes. Most existing solar systems can be retrofitted with a battery either AC coupled for a simpler retrofit or DC coupled through a <Link to="/services/solar-inverters" className="text-[#5BC94D] font-semibold hover:underline">hybrid inverter</Link> for higher efficiency. We will confirm which suits your current setup during your quote.
+          Yes. Most existing solar systems can be retrofitted with a battery either AC coupled for a simpler retrofit or DC coupled through a <Link to="/services/solar-inverters" className="text-[#8cc63f] font-semibold hover:underline">hybrid inverter</Link> for higher efficiency. We will confirm which suits your current setup during your quote.
         </>
       )
     },
@@ -292,10 +292,10 @@ export function SolarBatteryInstallation() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
       {/* 1. HERO SECTION */}
-      <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-[#0A1118]/80 to-[#0A1118]/60"></div>
-          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#5BC94D]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#8cc63f]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
         </div>
 
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
@@ -306,11 +306,11 @@ export function SolarBatteryInstallation() {
               <FadeIn isHero>
                 {/* Breadcrumbs */}
                 <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
-                  <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
+                  <Link to="/" className="hover:text-[#8cc63f] transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <span className="text-slate-400">Services</span>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <span className="text-[#5BC94D]" aria-current="page">Solar Battery Installation</span>
+                  <span className="text-[#8cc63f]" aria-current="page">Solar Battery Installation</span>
                 </nav>
 
                 {/* Rating Badge */}
@@ -326,12 +326,12 @@ export function SolarBatteryInstallation() {
                 </div>
 
                 {/* H1 Heading */}
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   Solar Battery Installation Darwin NT
                 </h1>
 
                 {/* Subheadline */}
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-6 mb-8 max-w-2xl">
+                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#8cc63f] pl-6 mb-8 max-w-2xl">
                   Protect your home or business from blackouts with expert battery installation
                 </p>
 
@@ -339,7 +339,7 @@ export function SolarBatteryInstallation() {
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -353,7 +353,7 @@ export function SolarBatteryInstallation() {
                     asChild
                   >
                     <a href="tel:0483986444">
-                      <Phone className="w-4 h-4 mr-2 text-[#5BC94D]" />
+                      <Phone className="w-4 h-4 mr-2 text-[#8cc63f]" />
                       <span>Call 0483 986 444</span>
                     </a>
                   </Button>
@@ -368,13 +368,13 @@ export function SolarBatteryInstallation() {
                   <div className="w-full h-full rounded-xl overflow-hidden bg-slate-950 flex items-center justify-center relative">
                     <img 
                       referrerPolicy="no-referrer"
-                      src="https://i.postimg.cc/Nf2ytHrg/Sigenergy-(1).webp" 
+                      src="/assets/images/hosted/products/sigen-battery.webp" 
                       alt="Solar battery installation in Darwin NT" 
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     <div className="absolute bottom-4 left-4 right-4 bg-slate-900/90 backdrop-blur-md p-4 rounded-xl border border-white/10 flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-lg bg-[#5BC94D] text-[#19281D] flex items-center justify-center shrink-0">
+                      <div className="w-10 h-10 rounded-lg bg-[#8cc63f] text-[#19281D] flex items-center justify-center shrink-0">
                         <BatteryCharging className="w-6 h-6" />
                       </div>
                       <div>
@@ -401,7 +401,7 @@ export function SolarBatteryInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Solar Battery Installation Excellence in Darwin
               </h2>
               <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
@@ -412,11 +412,11 @@ export function SolarBatteryInstallation() {
                   Installing a large lithium ion battery requires strict electrical safety standards. We handle the heavy lifting, secure mounting, and software syncing to your home network, so the system is ready to run from day one.
                 </p>
                 <p>
-                  We install for both residential and commercial solar battery installation projects, whether you are adding storage to an existing <Link to="/solar-panels-darwin" className="text-[#5BC94D] font-bold underline hover:text-emerald-700">solar system</Link> or starting fresh.
+                  We install for both residential and commercial solar battery installation projects, whether you are adding storage to an existing <Link to="/solar-panels-darwin" className="text-[#8cc63f] font-bold underline hover:text-brand-700">solar system</Link> or starting fresh.
                 </p>
 
                 <div className="mt-8 pt-8 border-t border-slate-100">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-wide">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                     Designed for Darwin Homes
                   </h3>
                   <p>
@@ -440,7 +440,7 @@ export function SolarBatteryInstallation() {
               className="rounded-2xl text-center shadow-xl p-8 sm:p-12"
               style={{ backgroundColor: "#19281D" }}
             >
-              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 tracking-wide">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 tracking-tight normal-case">
                 Protect your home before the next outage
               </h3>
               <p className="text-slate-300 text-base sm:text-lg mb-6 max-w-2xl mx-auto font-medium">
@@ -449,7 +449,7 @@ export function SolarBatteryInstallation() {
               <Link 
                 to="/contact" 
                 className="inline-block px-8 py-3.5 rounded font-bold text-sm tracking-wider uppercase transition-all shadow-lg hover:-translate-y-0.5"
-                style={{ backgroundColor: "#5BC94D", color: "#19281D" }}
+                style={{ backgroundColor: "#8cc63f", color: "#19281D" }}
               >
                 Claim your free battery quote now
               </Link>
@@ -463,7 +463,7 @@ export function SolarBatteryInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Why Choose Our Solar Battery Installation in Darwin
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -477,13 +477,13 @@ export function SolarBatteryInstallation() {
                 return (
                   <div 
                     key={idx}
-                    className="bg-white border border-slate-200 p-6 sm:p-7 rounded-2xl shadow-sm hover:border-[#5BC94D]/50 transition-all flex flex-col justify-between h-full"
+                    className="bg-white border border-slate-200 p-6 sm:p-7 rounded-2xl shadow-sm hover:border-[#8cc63f]/50 transition-all flex flex-col justify-between h-full"
                   >
                     <div>
-                      <div className="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-[#19281D] mb-5">
-                        <IconComp className="w-6 h-6 text-emerald-600" />
+                      <div className="w-12 h-12 rounded-xl bg-brand-100 border border-brand-100 flex items-center justify-center text-[#19281D] mb-5">
+                        <IconComp className="w-6 h-6 text-brand-600" />
                       </div>
-                      <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-wide">
+                      <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                         {card.title}
                       </h3>
                       <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
@@ -503,7 +503,7 @@ export function SolarBatteryInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl mb-12">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 How We Deliver Your Solar Battery Installation
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -518,10 +518,10 @@ export function SolarBatteryInstallation() {
                   className="bg-slate-50 border border-slate-200 p-6 sm:p-7 rounded-2xl shadow-sm flex flex-col justify-between h-full relative"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-full bg-[#5BC94D] text-[#19281D] font-black text-xl flex items-center justify-center mb-5 shadow-md shadow-[#5BC94D]/20">
+                    <div className="w-12 h-12 rounded-full bg-[#8cc63f] text-[#19281D] font-black text-xl flex items-center justify-center mb-5 shadow-md shadow-[#8cc63f]/20">
                       {step.step}
                     </div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-3 tracking-wide">
+                    <h3 className="text-lg font-bold text-slate-900 mb-3 tracking-tight normal-case">
                       {step.title}
                     </h3>
                     <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
@@ -540,7 +540,7 @@ export function SolarBatteryInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl mb-10">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                 Battery Brands We Install in Darwin
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
@@ -552,7 +552,7 @@ export function SolarBatteryInstallation() {
               {batteryBrands.map((brand, idx) => (
                 <div 
                   key={idx}
-                  className="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm flex flex-col justify-between items-center text-center hover:border-[#5BC94D]/50 transition-all group"
+                  className="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm flex flex-col justify-between items-center text-center hover:border-[#8cc63f]/50 transition-all group"
                 >
                   <div className="w-full h-32 mb-4 flex items-center justify-center p-2 rounded-xl bg-slate-50 border border-slate-100 group-hover:bg-slate-100/60 transition-colors overflow-hidden">
                     <img 
@@ -562,7 +562,7 @@ export function SolarBatteryInstallation() {
                       className="max-h-24 max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-1.5">
+                  <h3 className="text-lg font-bold text-slate-900 mb-1.5 normal-case">
                     {brand.name}
                   </h3>
                   <p className="text-xs text-slate-500 font-medium line-clamp-3">
@@ -579,17 +579,17 @@ export function SolarBatteryInstallation() {
       <section className="py-16 lg:py-20 bg-white border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Residential and Commercial Battery Installation
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               <div className="bg-slate-50 border border-slate-200 p-7 sm:p-8 rounded-2xl shadow-sm flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-brand-100 border border-brand-100 flex items-center justify-center text-brand-600 mb-5">
                     <Home className="w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-wide">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                     Residential
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -600,10 +600,10 @@ export function SolarBatteryInstallation() {
 
               <div className="bg-slate-50 border border-slate-200 p-7 sm:p-8 rounded-2xl shadow-sm flex flex-col justify-between">
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 mb-5">
+                  <div className="w-12 h-12 rounded-xl bg-brand-100 border border-brand-100 flex items-center justify-center text-brand-600 mb-5">
                     <Building2 className="w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-wide">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
                     Commercial
                   </h3>
                   <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -621,7 +621,7 @@ export function SolarBatteryInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 What Affects Your Battery Installation Cost
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
@@ -637,10 +637,10 @@ export function SolarBatteryInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="max-w-4xl">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-bold uppercase tracking-wider mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100 text-brand-700 border border-brand-200 text-xs font-bold uppercase tracking-wider mb-4">
                 <Shield className="w-3.5 h-3.5" /> Australian Safety Standards
               </div>
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Licensed and Compliant Installation
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
@@ -655,7 +655,7 @@ export function SolarBatteryInstallation() {
       <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 text-center normal-case">
               Frequently Asked Questions
             </h2>
 
@@ -667,8 +667,8 @@ export function SolarBatteryInstallation() {
                     key={i}
                     className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
                       isOpen
-                        ? "bg-white shadow-md border-[#5BC94D]/60"
-                        : "bg-white border-slate-200 hover:border-[#5BC94D]/40 shadow-sm"
+                        ? "bg-white shadow-md border-[#8cc63f]/60"
+                        : "bg-white border-slate-200 hover:border-[#8cc63f]/40 shadow-sm"
                     }`}
                   >
                     <button
@@ -682,7 +682,7 @@ export function SolarBatteryInstallation() {
                         <div
                           className={`shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center font-bold text-xs sm:text-sm transition-colors ${
                             isOpen
-                              ? "bg-[#5BC94D] text-[#19281D] shadow-md shadow-[#5BC94D]/20"
+                              ? "bg-[#8cc63f] text-[#19281D] shadow-md shadow-[#8cc63f]/20"
                               : "bg-slate-100 text-slate-700 border border-slate-200"
                           }`}
                         >
@@ -690,7 +690,7 @@ export function SolarBatteryInstallation() {
                         </div>
                         <h3
                           className={`text-base sm:text-lg font-bold leading-tight transition-colors ${
-                            isOpen ? "text-emerald-700" : "text-slate-900"
+                            isOpen ? "text-brand-700" : "text-slate-900"
                           }`}
                         >
                           {faq.q}
@@ -699,7 +699,7 @@ export function SolarBatteryInstallation() {
                       <div
                         className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center border transition-all duration-300 ${
                           isOpen
-                            ? "border-[#5BC94D] bg-emerald-50 text-emerald-700 rotate-180"
+                            ? "border-[#8cc63f] bg-brand-100 text-brand-700 rotate-180"
                             : "border-slate-200 text-slate-500 bg-slate-50"
                         }`}
                       >
@@ -735,7 +735,7 @@ export function SolarBatteryInstallation() {
               className="rounded-2xl text-center shadow-2xl p-8 sm:p-14"
               style={{ backgroundColor: "#19281D" }}
             >
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 tracking-wide">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 tracking-tight normal-case">
                 Keep your power on when it matters most
               </h3>
               <p className="text-slate-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto font-medium">
@@ -744,7 +744,7 @@ export function SolarBatteryInstallation() {
               <Link 
                 to="/contact" 
                 className="inline-block px-9 py-4 rounded font-bold text-sm tracking-wider uppercase transition-all shadow-lg hover:-translate-y-0.5"
-                style={{ backgroundColor: "#5BC94D", color: "#19281D" }}
+                style={{ backgroundColor: "#8cc63f", color: "#19281D" }}
               >
                 Get your free battery assessment today
               </Link>

@@ -39,10 +39,10 @@ export function About() {
   }, []);
 
   return (
-    <div className="pt-[160px] lg:pt-[200px] pb-32 overflow-hidden">
+    <div className="pb-32 overflow-hidden">
       <SEO seo={pageData?.seo} />
       {/* Hero */}
-      <section className="relative -mt-[160px] lg:-mt-[200px] pt-[180px] lg:pt-[240px] pb-32 lg:pb-40 bg-[#0A1118]">
+      <section className="relative pt-16 lg:pt-24 pb-32 lg:pb-40 bg-[#0A1118]">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-brand-500/10 blur-[120px] pointer-events-none"></div>
         <div className="absolute -bottom-1/2 -left-1/4 w-full h-full bg-slate-900/50 block"></div>
         
@@ -55,12 +55,12 @@ export function About() {
               </div>
               {pageData?.heroTitle ? (
                 <h1 
-                  className="text-[40px] md:text-[48px] lg:text-[57px] font-black tracking-tight text-white mb-8 leading-[1.1]"
+                  className="hero-heading text-white mb-8 break-words normal-case"
                   dangerouslySetInnerHTML={{ __html: pageData.heroTitle }}
                 />
               ) : (
-                <h1 className="text-[40px] md:text-[48px] lg:text-[57px] font-black tracking-tight text-white mb-8 leading-[1.1]">
-                  Your Trusted Solar Partner in the <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400">Northern Territory</span>
+                <h1 className="hero-heading text-white mb-8 break-words normal-case">
+                  Your Trusted Solar Partner in the <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Northern Territory</span>
                 </h1>
               )}
               <div className="text-[18px] lg:text-[20px] text-slate-300 font-light mb-12 leading-relaxed border-l-4 border-brand-500/50 pl-6 lg:pl-10 relative">
@@ -94,7 +94,7 @@ export function About() {
             <FadeIn isHero delay={0.2} className="relative mt-12 lg:mt-0">
               <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-4 border-slate-800/80 min-h-[500px] lg:min-h-[700px] w-full group">
                 <div className="absolute inset-0 bg-gradient-to-tr from-brand-500/20 to-transparent mix-blend-overlay z-10 pointer-events-none transition-opacity duration-500 group-hover:opacity-40"></div>
-                <img referrerPolicy="no-referrer" fetchPriority="high" src="https://i.postimg.cc/rw0QWBNZ/6-2-(1).webp" alt="Solar installation team" className="absolute inset-0 w-full h-full object-cover transform hover:scale-110 transition-transform duration-[2000ms]" />
+                <img referrerPolicy="no-referrer" fetchPriority="high" src="/assets/images/hosted/about-team.webp" alt="Solar installation team" className="absolute inset-0 w-full h-full object-cover transform hover:scale-110 transition-transform duration-[2000ms]" />
               </div>
               <div className="absolute -bottom-8 -left-8 lg:-bottom-12 lg:-left-12 bg-white p-6 lg:p-8 rounded-[2rem] shadow-2xl z-20 flex items-center gap-6 max-w-sm">
                 <div className="w-20 h-20 rounded-full border-4 border-white bg-brand-100 flex items-center justify-center text-brand-600 shadow-inner flex-shrink-0">
@@ -115,8 +115,8 @@ export function About() {
         <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-50/50 -skew-x-12 transform origin-top-right"></div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-brand-600 font-bold tracking-widest uppercase text-sm mb-3">The Oneroof Difference</h2>
-            <h3 className="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl mb-6">
+            <h2 className="text-brand-600 font-bold tracking-widest text-sm mb-3 normal-case">The Oneroof Difference</h2>
+            <h3 className="text-3xl font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl mb-6 normal-case">
               Why Choose Oneroof Solar?
             </h3>
             <div className="w-20 h-1 bg-brand-500 mx-auto rounded-full mb-6"></div>
@@ -152,7 +152,7 @@ export function About() {
                 <div className="mb-8 inline-flex items-center justify-center rounded-2xl bg-slate-50 border border-slate-100 w-16 h-16 text-slate-400 group-hover:bg-brand-500 group-hover:text-white group-hover:border-brand-500 transition-colors duration-500 shadow-sm">
                   <feature.icon className="h-8 w-8" />
                 </div>
-                <h4 className="mb-4 text-xl font-bold text-slate-900 group-hover:text-brand-600 transition-colors">{feature.title}</h4>
+                <h4 className="mb-4 text-xl font-bold text-slate-900 group-hover:text-brand-600 transition-colors normal-case">{feature.title}</h4>
                 <p className="text-slate-600 leading-relaxed text-sm lg:text-base">{feature.desc}</p>
               </FadeIn>
             ))}
@@ -166,12 +166,12 @@ export function About() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
                <FadeIn className="order-2 lg:order-1 relative">
                  <div className="absolute -inset-4 bg-brand-50 rounded-[3rem] -z-10 transform -rotate-3 scale-105"></div>
-                 <img referrerPolicy="no-referrer" loading="lazy" src="https://esaenergy.com.pk/wp-content/uploads/2025/05/Why-Solar-Panels-Are-a-Smart-Investment-for-Small-Businesses-1024x683.jpg" alt="Solar installation process" className="w-full h-full object-cover rounded-[2rem] shadow-xl" />
+                 <img referrerPolicy="no-referrer" loading="lazy" src="/assets/images/hosted/about-team.webp" alt="Solar installation process" className="w-full h-full object-cover rounded-[2rem] shadow-xl" />
                </FadeIn>
                
                <FadeIn delay={0.2} className="order-1 lg:order-2 flex flex-col justify-center">
-                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6">
-                   Our Core <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-green-500">Values</span>
+                 <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
+                   Our Core <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">Values</span>
                  </h2>
                  <p className="text-slate-600 text-lg leading-relaxed mb-8">
                     We believe in delivering excellence at every stage of your solar journey. Our commitment goes beyond installation; it's about providing long-term value.
@@ -188,7 +188,7 @@ export function About() {
                             <CheckCircle2 className="h-5 w-5 text-brand-600" />
                          </div>
                          <div>
-                            <h4 className="text-lg font-bold text-slate-900">{item.title}</h4>
+                            <h4 className="text-lg font-bold text-slate-900 normal-case">{item.title}</h4>
                             <p className="text-slate-600 text-sm mt-1 leading-relaxed">{item.desc}</p>
                          </div>
                       </div>
@@ -207,7 +207,7 @@ export function About() {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-500/20 via-slate-900 to-[#0A1118] -z-0 pointer-events-none"></div>
           
           <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl font-black text-white mb-6">Ready to make the switch?</h2>
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">Ready to make the switch?</h2>
             <p className="text-lg text-slate-300 mb-10">
               Contact us today for a free, no-obligation quote and find out exactly how much you can save on your energy bills.
             </p>

@@ -9,6 +9,7 @@ export interface SeoData {
   robots?: string;
   openGraphTitle?: string;
   openGraphDescription?: string;
+  openGraphType?: string;
   openGraphImage?: string;
   twitterTitle?: string;
   twitterDescription?: string;
@@ -66,7 +67,7 @@ export function SEO({ seo }: { seo?: SeoData }) {
     }
 
     // Apply Open Graph (Facebook)
-    updateMeta('og:type', true, 'website');
+    updateMeta('og:type', true, seo.openGraphType || 'website');
     updateMeta('og:locale', true, 'en_AU');
     updateMeta('og:title', true, seo.openGraphTitle || titleVal);
     updateMeta('og:description', true, seo.openGraphDescription || descriptionVal);

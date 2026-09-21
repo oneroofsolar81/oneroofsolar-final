@@ -21,7 +21,7 @@ const projects = [
     systemSize: "13.2kW",
     battery: "None",
     description: "Premium solar installation for maximizing renewable energy usage.",
-    image: "https://i.postimg.cc/htSc0sQH/Alice-Springs-0870-(1).webp",
+    image: "/assets/images/hosted/alice-springs-0870-1-.webp",
     tags: ["Residential", "Premium"]
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     systemSize: "6.6kW",
     battery: "None",
     description: "Efficient solar energy system reducing household electricity bills.",
-    image: "https://i.postimg.cc/KYkV73fq/Bayview-0820.webp",
+    image: "/assets/images/home/home-project-bayview.webp",
     tags: ["Residential"]
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     systemSize: "8kW",
     battery: "13.5kWh",
     description: "Solar with battery backup for energy independence.",
-    image: "https://i.postimg.cc/xjRszPYm/Bellamack-0832-(2)-(1).webp",
+    image: "/assets/images/home/home-project-bellamack.webp",
     tags: ["Residential", "Battery"]
   },
   {
@@ -54,7 +54,7 @@ const projects = [
     systemSize: "10kW",
     battery: "None",
     description: "Commercial setup. Large scale solar installation.",
-    image: "https://i.postimg.cc/ydTT0VqV/Berrimah-0828.webp",
+    image: "/assets/images/home/home-project-berrimah.webp",
     tags: ["Commercial"]
   },
   {
@@ -65,7 +65,7 @@ const projects = [
     systemSize: "13.2kW",
     battery: "12.8kWh FoxESS",
     description: "Complete home energy independence with blackout protection.",
-    image: "https://i.postimg.cc/8Cmv0tZR/Desert-Springs-0870.webp",
+    image: "/assets/images/hosted/aerial.webp",
     tags: ["Residential", "Battery", "Off-grid capable"]
   },
   {
@@ -76,7 +76,7 @@ const projects = [
     systemSize: "9.9kW",
     battery: "None",
     description: "Robust solar panel installation designed for maximum energy yield.",
-    image: "https://i.postimg.cc/HxPVqKXm/Herbert-0836-(2)-(1).jpg",
+    image: "/assets/images/home/home-project-bayview.webp",
     tags: ["Residential"]
   },
   {
@@ -87,7 +87,7 @@ const projects = [
     systemSize: "15kW",
     battery: "25.6kWh Bank",
     description: "Off-grid setup for remote property lacking reliable grid connection.",
-    image: "https://i.postimg.cc/KzVPyQMM/Humpty-Doo-0836-(1).jpg",
+    image: "/assets/images/home/home-project-berrimah.webp",
     tags: ["Rural", "Off-grid"]
   },
   {
@@ -98,7 +98,7 @@ const projects = [
     systemSize: "6.6kW",
     battery: "None",
     description: "Standard tier-1 solar system ensuring optimized daytime energy usage.",
-    image: "https://i.postimg.cc/W3DZSrH2/Karama-0812-(1)-(1).jpg",
+    image: "/assets/images/home/home-about-stuart-park.webp",
     tags: ["Residential"]
   },
   {
@@ -109,7 +109,7 @@ const projects = [
     systemSize: "8.5kW",
     battery: "None",
     description: "Clean energy upgrade for suburban household to slash energy costs.",
-    image: "https://i.postimg.cc/0jRzf4Sd/Leanyer-0812-(1).jpg",
+    image: "/assets/images/home/home-battery-nightcliff.webp",
     tags: ["Residential"]
   },
   {
@@ -120,7 +120,7 @@ const projects = [
     systemSize: "10.5kW",
     battery: "16kWh Sungrow",
     description: "Integrated smart home solar setup with EV charging capabilities.",
-    image: "https://i.postimg.cc/43jyf0BL/Ludmilla-0820.jpg",
+    image: "/assets/images/home/home-premium-aerial.webp",
     tags: ["Residential", "Battery", "EV Ready"]
   },
   {
@@ -131,7 +131,7 @@ const projects = [
     systemSize: "13.2kW",
     battery: "None",
     description: "Modern solar installation tailored to seamlessly fit the house design.",
-    image: "https://i.postimg.cc/SxvNd5FN/Lyons-0810-(1).jpg",
+    image: "/assets/images/hosted/aerial.webp",
     tags: ["Residential", "Premium"]
   },
   {
@@ -142,7 +142,7 @@ const projects = [
     systemSize: "6.6kW",
     battery: "None",
     description: "Cost-effective solar setup to minimize daytime power consumption.",
-    image: "https://i.postimg.cc/QxzRyrtw/Marrara-0812-(1)-(2).jpg",
+    image: "/assets/images/home/home-project-bayview.webp",
     tags: ["Residential"]
   },
   {
@@ -153,7 +153,7 @@ const projects = [
     systemSize: "10kW",
     battery: "None",
     description: "Sleek and efficient grid-tied system for a modern residential property.",
-    image: "https://i.postimg.cc/76BBJgTq/Humpty-Doo-0836-(2)-(1).jpg",
+    image: "/assets/images/home/home-project-bellamack.webp",
     tags: ["Residential"]
   },
   {
@@ -164,7 +164,7 @@ const projects = [
     systemSize: "6.6kW",
     battery: "None",
     description: "High performance system providing significant energy savings.",
-    image: "https://i.postimg.cc/8CNwyyhw/Muirhead-0810-(1).jpg",
+    image: "/assets/images/home/home-project-berrimah.webp",
     tags: ["Residential"]
   },
   {
@@ -175,7 +175,7 @@ const projects = [
     systemSize: "10kW",
     battery: "10kWh",
     description: "Beautiful clean install facing out towards the coast.",
-    image: "https://i.postimg.cc/sgc0RdDQ/Nightcliff-0810-(2)-(3).jpg",
+    image: "/assets/images/home/home-battery-nightcliff.webp",
     tags: ["Residential", "Battery"]
   },
   {
@@ -186,7 +186,7 @@ const projects = [
     systemSize: "8.5kW",
     battery: "None",
     description: "Maximizing the roof footprint to slash utility bills completely.",
-    image: "https://i.postimg.cc/8Pwhp1WL/Rosebery-0832-(1).jpg",
+    image: "/assets/images/home/home-project-bellamack.webp",
     tags: ["Residential"]
   },
   {
@@ -197,7 +197,7 @@ const projects = [
     systemSize: "6.6kW",
     battery: "None",
     description: "City living powered by the sun. Exceptional roof layout.",
-    image: "https://i.postimg.cc/9FX7NvSL/Stuart-Park-0820-(1).jpg",
+    image: "/assets/images/home/home-about-stuart-park.webp",
     tags: ["Residential"]
   }
 ];
@@ -220,13 +220,13 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="pt-24 bg-slate-50 min-h-screen">
+    <div className="bg-slate-50 min-h-screen">
       <SEO seo={pageData?.seo} />
-      <div className="bg-slate-900 pt-28 pb-32 relative overflow-hidden border-b border-slate-800">
+      <div className="bg-[#0A1118] pt-16 lg:pt-24 pb-32 relative overflow-hidden border-b border-slate-800">
         {/* Background elements */}
         <div className="absolute inset-0 bg-grid-slate-100/[0.03] bg-[size:32px_32px]"></div>
         <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-brand-500/20 rounded-full blur-[120px] pointer-events-none opacity-50 mix-blend-screen"></div>
-        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none opacity-50 mix-blend-screen"></div>
+        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-brand-500/10 rounded-full blur-[120px] pointer-events-none opacity-50 mix-blend-screen"></div>
         
         {/* Grid pattern overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -241,9 +241,9 @@ export default function Projects() {
               <span className="text-xs font-black text-brand-300 uppercase tracking-[0.2em]">Our Portfolio</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-8 leading-[1.1]">
+            <h1 className="hero-heading text-white mb-8 break-words normal-case">
               Powering the Territory, <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-300 via-brand-400 to-emerald-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300">
                 Roof by Roof.
               </span>
             </h1>
@@ -298,7 +298,7 @@ export default function Projects() {
                 </div>
                 
                 <div className="p-8 flex flex-col flex-grow">
-                  <h2 className="text-2xl font-black text-slate-900 mb-4 group-hover:text-brand-600 transition-colors line-clamp-2">
+                  <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 group-hover:text-brand-600 transition-colors line-clamp-2 normal-case">
                     {project.title}
                   </h2>
                   <p className="text-slate-600 mb-6 flex-grow">
@@ -331,7 +331,7 @@ export default function Projects() {
       <div className="bg-brand-50 py-20 mt-10">
         <div className="max-w-4xl mx-auto text-center px-4">
           <FadeIn>
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">Ready to start your own solar journey?</h2>
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">Ready to start your own solar journey?</h2>
             <p className="text-lg text-slate-600 mb-10">Join hundreds of Territorians who have already made the switch to clean, reliable, and affordable energy with Oneroof Solar.</p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <Button size="lg" className="rounded-full h-16 px-10 text-lg font-bold shadow-xl hover:-translate-y-1 transition-all" asChild>

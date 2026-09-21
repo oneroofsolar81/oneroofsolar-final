@@ -104,6 +104,86 @@
       "source": "/solar-inverters/",
       "destination": "/products/solar-inverters",
       "permanent": true
+    },
+    {
+      "source": "/services/battery-storage",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/services/battery-storage/",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/battery-storage",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/battery-storage/",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-battery",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-battery/",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-battery-storage",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-battery-storage/",
+      "destination": "/products/solar-battery-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/services/ev-chargers",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
+    },
+    {
+      "source": "/services/ev-chargers/",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
+    },
+    {
+      "source": "/ev-charger",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
+    },
+    {
+      "source": "/ev-charger/",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
+    },
+    {
+      "source": "/ev-chargers",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
+    },
+    {
+      "source": "/ev-chargers/",
+      "destination": "/services/ev-chargers/installation",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/blogs",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blogs",
+      "permanent": true
     }
   ],
   "rewrites": [

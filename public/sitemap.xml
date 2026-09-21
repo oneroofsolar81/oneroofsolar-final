@@ -32,7 +32,10 @@
     <loc>https://www.oneroofsolar.com.au/services/solar-battery-installation</loc>
   </url>
   <url>
-    <loc>https://www.oneroofsolar.com.au/services/ev-chargers</loc>
+    <loc>https://www.oneroofsolar.com.au/services/ev-chargers/installation</loc>
+  </url>
+  <url>
+    <loc>https://www.oneroofsolar.com.au/services/ev-chargers/repair</loc>
   </url>
 
   <!-- Solar Systems -->
@@ -44,6 +47,17 @@
   </url>
   <url>
     <loc>https://www.oneroofsolar.com.au/solar-systems/off-grid-solar-system</loc>
+  </url>
+
+  <!-- Battery Products -->
+  <url>
+    <loc>https://www.oneroofsolar.com.au/products/solar-battery-brands/</loc>
+  </url>
+  <url>
+    <loc>https://www.oneroofsolar.com.au/products/solar-battery-brands/sigenergy</loc>
+  </url>
+  <url>
+    <loc>https://www.oneroofsolar.com.au/products/solar-battery-brands/goodwe</loc>
   </url>
 
   <!-- Inverter Products -->
@@ -94,6 +108,17 @@
   <!-- Projects -->
   <url>
     <loc>https://www.oneroofsolar.com.au/projects</loc>
+  </url>
+
+  <!-- Blogs -->
+  <url>
+    <loc>https://www.oneroofsolar.com.au/blogs</loc>
+  </url>
+  <url>
+    <loc>https://www.oneroofsolar.com.au/do-solar-panels-work-during-darwins-wet-season/</loc>
+  </url>
+  <url>
+    <loc>https://www.oneroofsolar.com.au/blog/solar-panel-cyclone-protection/</loc>
   </url>
 
   <!-- Contact -->

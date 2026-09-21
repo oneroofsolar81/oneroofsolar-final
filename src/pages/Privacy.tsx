@@ -24,7 +24,7 @@ export const Privacy = () => {
   }, []);
 
   return (
-    <div className="pt-32 pb-24 min-h-screen bg-slate-50">
+    <div className="pt-16 lg:pt-24 pb-24 min-h-screen bg-slate-50">
       <SEO seo={pageData?.seo || { title: 'Privacy Policy | Oneroof Solar', metaDescription: 'How we collect, use, and protect your personal information at Oneroof Solar.' }} />
       <div className="container mx-auto px-6 max-w-4xl">
         <motion.div
@@ -35,7 +35,7 @@ export const Privacy = () => {
           <div className="inline-flex items-center justify-center p-3 bg-brand-100 text-brand-600 rounded-2xl mb-6">
             <Lock className="w-8 h-8" />
           </div>
-          <h1 className="text-4xl md:text-5xl  font-bold text-slate-900 mb-6 tracking-tight">
+          <h1 className="hero-heading text-slate-900 mb-6 break-words normal-case">
             Privacy Policy
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">

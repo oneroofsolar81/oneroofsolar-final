@@ -200,8 +200,8 @@ export function AdminItemEditor() {
         </div>
 
         {user && (
-          <div className="mb-6 p-4 bg-emerald-50 border border-emerald-100 rounded-xl text-emerald-800 text-xs flex items-center gap-2.5">
-            <span className="w-2 h-2 bg-emerald-500 rounded-full animate-ping shrink-0" />
+          <div className="mb-6 p-4 bg-brand-100 border border-brand-100 rounded-xl text-brand-800 text-xs flex items-center gap-2.5">
+            <span className="w-2 h-2 bg-brand-500 rounded-full animate-ping shrink-0" />
             <span>Active Session Authorized: Signed in as <strong>{user.email}</strong> • Role: <strong>{user.role}</strong>. Any changes you make will be saved securely.</span>
           </div>
         )}
@@ -300,7 +300,7 @@ export function AdminItemEditor() {
           {/* Card 2: Open Graph Metadata */}
           <div className="bg-white p-8 border border-slate-200 rounded-xl shadow-sm space-y-6">
             <h2 className="text-lg font-bold text-slate-900 border-b border-slate-100 pb-3 flex items-center gap-2">
-              <span className="w-2 h-4 bg-emerald-500 rounded-full"></span>
+              <span className="w-2 h-4 bg-brand-500 rounded-full"></span>
               Open Graph (Facebook, LinkedIn sharing)
             </h2>
 
@@ -412,8 +412,8 @@ export function AdminItemEditor() {
       </div>
 
       {user && (
-        <div className="mb-6 p-4 bg-emerald-50 border border-emerald-100 rounded-xl text-emerald-800 text-xs flex items-center gap-2.5">
-          <span className="w-2 h-2 bg-emerald-500 rounded-full animate-ping shrink-0" />
+        <div className="mb-6 p-4 bg-brand-100 border border-brand-100 rounded-xl text-brand-800 text-xs flex items-center gap-2.5">
+          <span className="w-2 h-2 bg-brand-500 rounded-full animate-ping shrink-0" />
           <span>Active Session Authorized: Signed in as <strong>{user.email}</strong> • Role: <strong>{user.role}</strong>. Any changes you make will be saved securely.</span>
         </div>
       )}

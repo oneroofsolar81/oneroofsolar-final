@@ -90,10 +90,10 @@ export function AikoSolarPanels() {
     robots: "index, follow",
     openGraphTitle: "AIKO Solar Panels Darwin | Oneroof Solar NT",
     openGraphDescription: "Oneroof Solar installs AIKO ABC solar panels in Darwin and across the NT. Gen 3 technology, 25%+ efficiency, cyclone rated. Get a free quote today.",
-    openGraphImage: "https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png",
+    openGraphImage: "/assets/images/hosted/products/ja-solar.webp",
     twitterTitle: "AIKO Solar Panels Darwin | Oneroof Solar NT",
     twitterDescription: "Oneroof Solar installs AIKO ABC solar panels in Darwin and across the NT. Gen 3 technology, 25%+ efficiency, cyclone rated. Get a free quote today.",
-    twitterImage: "https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png",
+    twitterImage: "/assets/images/hosted/products/ja-solar.webp",
   };
 
   const schemas = [
@@ -108,7 +108,7 @@ export function AikoSolarPanels() {
       "description": "Oneroof Solar installs AIKO Gen 3 ABC N-type solar panels in Darwin and across the NT. Features All Back Contact technology with above 25% efficiency and structural cyclone rating.",
       "category": "Solar Panels",
       "url": "https://oneroofsolar.com.au/solar-panels-brands/aiko/",
-      "image": "https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png",
+      "image": "/assets/images/hosted/products/ja-solar.webp",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -273,15 +273,15 @@ export function AikoSolarPanels() {
       a: (
         <span>
           AIKO delivers the highest efficiency at above 25 per cent. REC HJT has a marginally better temperature coefficient at -0.24%/°C. Jinko TOPCon offers proven value at a lower price point. See our{" "}
-          <Link to="/solar-panels/" className="text-[#5BC94D] hover:underline font-bold">
+          <Link to="/solar-panels/" className="text-[#8cc63f] hover:underline font-bold">
             solar panels page
           </Link>{" "}
           for a full brand comparison, or compare specifically with{" "}
-          <Link to="/solar-panels/rec/" className="text-[#5BC94D] hover:underline font-bold">
+          <Link to="/solar-panels/rec/" className="text-[#8cc63f] hover:underline font-bold">
             REC solar panels
           </Link>{" "}
           and{" "}
-          <Link to="/solar-panels/jinko/" className="text-[#5BC94D] hover:underline font-bold">
+          <Link to="/solar-panels/jinko/" className="text-[#8cc63f] hover:underline font-bold">
             Jinko solar panels
           </Link>
           .
@@ -307,12 +307,12 @@ export function AikoSolarPanels() {
       ))}
 
       {/* Hero Section Upgrade */}
-      <section className="relative pt-24 pb-12 sm:pt-36 sm:pb-24 lg:pt-44 lg:pb-36 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-12 pb-12 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-36 overflow-hidden bg-[#0A1118]">
         {/* Background image overlay for depth */}
         <div className="absolute inset-0">
           <img 
             referrerPolicy="no-referrer"
-            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/images/home/home-hero-bayview.webp" 
             alt="Sunny sky backdrop"
             className="w-full h-full object-cover opacity-10 mix-blend-overlay"
           />
@@ -339,7 +339,7 @@ export function AikoSolarPanels() {
                   <Sparkles className="w-3 h-3 text-brand-400" /> PREMIUM GEN 3 ABC TECHNOLOGY
                 </span>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   AIKO Solar Panels Darwin
                 </h1>
 
@@ -360,7 +360,7 @@ export function AikoSolarPanels() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="rounded-xl px-8 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:border-white/30 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 text-white border-white/20 bg-white/5 font-bold hover:bg-white/10 hover:text-white hover:border-white/30 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs"
                     asChild
                   >
                     <a href="tel:0483986444">
@@ -380,7 +380,7 @@ export function AikoSolarPanels() {
                   <div className="absolute inset-0 z-0">
                     <img 
                       referrerPolicy="no-referrer"
-                      src="https://images.unsplash.com/photo-1620027133796-039cfa6b009f?auto=format&fit=crop&w=800&q=80" 
+                      src="/assets/images/hosted/products/ja-solar.webp" 
                       alt="Modern home roof solar panels" 
                       className="w-full h-full object-cover opacity-25 group-hover:scale-105 transition-transform duration-700"
                     />
@@ -388,14 +388,14 @@ export function AikoSolarPanels() {
                   </div>
 
                   {/* Highlight Glow */}
-                  <div className="absolute -inset-10 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/15 transition-all duration-700 pointer-events-none"></div>
+                  <div className="absolute -inset-10 bg-brand-500/10 rounded-full blur-3xl group-hover:bg-brand-500/15 transition-all duration-700 pointer-events-none"></div>
 
                   {/* AIKO panel white display container & enlarged image */}
                   <div className="relative z-10 w-[72%] sm:w-[75%] h-[58%] sm:h-[65%] min-h-[220px] max-h-[290px] sm:max-h-[330px] bg-white rounded-[24px] p-4 sm:p-5 flex items-center justify-center overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-[1.02] my-10 sm:my-0 border border-slate-100">
                     <img
                       referrerPolicy="no-referrer"
                       fetchPriority="high"
-                      src="https://solarjuice.com.au/wp-content/uploads/2026/05/20873-600x529.png"
+                      src="/assets/images/hosted/products/ja-solar.webp"
                       alt="AIKO solar panels close-up"
                       className="w-full h-full object-contain object-center transform scale-[1.48] transition-transform duration-500 group-hover:scale-[1.55] drop-shadow-[0_10px_20px_rgba(0,0,0,0.12)]"
                     />
@@ -444,7 +444,7 @@ export function AikoSolarPanels() {
             <div className="lg:col-span-5 flex flex-col justify-center">
               <FadeIn>
                 <div>
-                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
+                  <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                     AIKO Models We Supply
                   </h2>
                   <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-6">
@@ -464,7 +464,7 @@ export function AikoSolarPanels() {
                     <div className="p-2.5 rounded-xl bg-brand-50 text-brand-600 border border-brand-100">
                       <Award className="w-5 h-5" />
                     </div>
-                    <h3 className="font-bold text-sm text-slate-900 uppercase tracking-wider">Above 25% Module Efficiency</h3>
+                    <h3 className="font-bold text-sm text-slate-900 tracking-wider normal-case">Above 25% Module Efficiency</h3>
                   </div>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
                     N-type ABC monocrystalline cells. Highest-output residential panel Oneroof Solar supplies. More kilowatts from the same roof space.
@@ -477,7 +477,7 @@ export function AikoSolarPanels() {
                     <div className="p-2.5 rounded-xl bg-brand-50 text-brand-600 border border-brand-100">
                       <Thermometer className="w-5 h-5" />
                     </div>
-                    <h3 className="font-bold text-sm text-slate-900 uppercase tracking-wider">Temperature Coefficient: -0.26%/°C</h3>
+                    <h3 className="font-bold text-sm text-slate-900 tracking-wider normal-case">Temperature Coefficient: -0.26%/°C</h3>
                   </div>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
                     Less power loss on Darwin rooftops reaching 65°C to 75°C. Outperforms standard TOPCon panels at -0.29%/°C in the dry season.
@@ -490,7 +490,7 @@ export function AikoSolarPanels() {
                     <div className="p-2.5 rounded-xl bg-brand-50 text-brand-600 border border-brand-100">
                       <Shield className="w-5 h-5" />
                     </div>
-                    <h3 className="font-bold text-sm text-slate-900 uppercase tracking-wider">30-Year Performance Warranty</h3>
+                    <h3 className="font-bold text-sm text-slate-900 tracking-wider normal-case">30-Year Performance Warranty</h3>
                   </div>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
                     90.6% output guaranteed at Year 25. 88.85% at Year 30. One of the strongest long-term guarantees available in Australia in 2026.
@@ -503,7 +503,7 @@ export function AikoSolarPanels() {
                     <div className="p-2.5 rounded-xl bg-brand-50 text-brand-600 border border-brand-100">
                       <TrendingUp className="w-5 h-5" />
                     </div>
-                    <h3 className="font-bold text-sm text-slate-900 uppercase tracking-wider">Annual Degradation: 0.35% per year</h3>
+                    <h3 className="font-bold text-sm text-slate-900 tracking-wider normal-case">Annual Degradation: 0.35% per year</h3>
                   </div>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
                     Lower degradation than standard N-type TOPCon at 0.4% per year. More electricity produced in Year 20 compared to other brands.
@@ -516,7 +516,7 @@ export function AikoSolarPanels() {
                     <div className="p-2.5 rounded-xl bg-brand-50 text-brand-600 border border-brand-100">
                       <Check className="w-5 h-5" />
                     </div>
-                    <h3 className="font-bold text-sm text-slate-900 uppercase tracking-wider">Australian Standards Certified</h3>
+                    <h3 className="font-bold text-sm text-slate-900 tracking-wider normal-case">Australian Standards Certified</h3>
                   </div>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
                     STC rebate eligible for all NT residential and commercial installations.
@@ -529,7 +529,7 @@ export function AikoSolarPanels() {
                     <div className="p-2.5 rounded-xl bg-brand-50 text-brand-600 border border-brand-100">
                       <Sparkles className="w-5 h-5" />
                     </div>
-                    <h3 className="font-bold text-sm text-slate-900 uppercase tracking-wider">Cyclone Rated</h3>
+                    <h3 className="font-bold text-sm text-slate-900 tracking-wider normal-case">Cyclone Rated</h3>
                   </div>
                   <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
                     Structural wind-load certified for Darwin NT building standards. Every installation by licensed electricians.
@@ -575,7 +575,7 @@ export function AikoSolarPanels() {
               <span className="text-xs font-bold text-brand-600 uppercase tracking-widest block mb-3">
                 Engineered for the Northern Territory climate
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                 Why AIKO Suits Darwin Conditions
               </h2>
             </FadeIn>
@@ -588,7 +588,7 @@ export function AikoSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-100 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Sun className="w-6 h-6 group-hover:rotate-45 transition-transform duration-500" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                   Maximum Output From Limited Roof Space
                 </h3>
                 <p className="text-base text-slate-600 leading-relaxed font-medium">
@@ -603,7 +603,7 @@ export function AikoSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-100 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Flame className="w-6 h-6 group-hover:translate-y-[-2px] transition-transform duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                   Strong Heat Performance
                 </h3>
                 <p className="text-base text-slate-600 leading-relaxed font-medium">
@@ -618,7 +618,7 @@ export function AikoSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-100 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Shield className="w-6 h-6 group-hover:translate-y-[-2px] transition-transform duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                   30-Year Performance Warranty
                 </h3>
                 <p className="text-base text-slate-600 leading-relaxed font-medium">
@@ -631,19 +631,19 @@ export function AikoSolarPanels() {
       </section>
 
       {/* Frequently Asked Questions with Visual element */}
-      <section className="py-12 lg:py-24 bg-slate-50 relative overflow-hidden border-b border-slate-100">
+      <section className="py-12 lg:py-24 bg-slate-50 relative border-b border-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             {/* Left Column heading & Support image */}
-            <div className="lg:col-span-5 lg:sticky lg:top-32">
+            <div className="lg:col-span-5 lg:sticky-below-header">
               <FadeIn>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-700 font-semibold text-xs mb-6 shadow-sm">
                   <span className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></span>
                   <span className="text-xs font-bold text-brand-700 uppercase tracking-widest">Support</span>
                 </div>
                 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   Frequently Asked Questions
                 </h2>
                 
@@ -655,7 +655,7 @@ export function AikoSolarPanels() {
                 <div className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-md my-6 lg:my-8 group">
                   <img 
                     referrerPolicy="no-referrer"
-                    src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" 
+                    src="/assets/images/home/home-hero-bayview.webp" 
                     alt="Rooftop solar panel close-up" 
                     className="w-full h-48 sm:h-64 lg:h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -744,13 +744,13 @@ export function AikoSolarPanels() {
       </section>
 
       {/* Primary Conversion Section Upgraded to Premium Hero Quote Form */}
-      <section id="quote-form" className="py-16 lg:py-28 relative overflow-hidden bg-[#0A1118]">
+      <section id="quote-form" className="py-16 lg:py-28 relative bg-[#0A1118]">
         
         {/* Full-bleed background image of modern Darwin home with dark premium overlay */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <img 
             referrerPolicy="no-referrer"
-            src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/images/home/home-premium-aerial.webp" 
             alt="Modern Australian home roof solar" 
             className="w-full h-full object-cover opacity-20"
           />
@@ -759,16 +759,16 @@ export function AikoSolarPanels() {
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             {/* Left Side Info */}
-            <div className="lg:col-span-6">
+            <div className="lg:col-span-6 lg:sticky-below-header">
               <FadeIn>
                 <span className="text-xs font-bold text-brand-400 uppercase tracking-widest block mb-3">
                   Get Started Today
                 </span>
                 
-                <h2 className="text-4xl sm:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Start Saving With <br/>
                   <span className="text-brand-400">AIKO Solar Panels</span>
                 </h2>

@@ -13,10 +13,10 @@ import { Button } from "../components/ui/Button";
 import { SEO } from "../components/SEO";
 import { PRIMARY_PHONE_RAW } from "../lib/constants";
 
-import heroInverterImg from "../assets/images/inverter_hero_install_1785339518164.jpg";
-import inverterCloseUpImg from "../assets/images/inverter_close_up_1785310553663.jpg";
-import stormRoofImg from "../assets/images/darwin_storm_roof_1785343440441.jpg";
-import offgridImg from "../assets/images/offgrid_hero_1785224439961.jpg";
+import heroInverterImg from "../assets/images/inverter_hero_install_1785339518164.webp";
+import inverterCloseUpImg from "../assets/images/inverter_close_up_1785310553663.webp";
+import stormRoofImg from "../assets/images/darwin_storm_roof_1785343440441.webp";
+import offgridImg from "../assets/images/offgrid_hero_1785224439961.webp";
 
 export function AlphaEssInvertersPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -189,10 +189,10 @@ export function AlphaEssInvertersPage() {
       ))}
 
       {/* SECTION 1 — HERO SECTION */}
-      <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-[#0A1118]/60"></div>
-          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#5BC94D]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#8cc63f]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
         </div>
 
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
@@ -203,20 +203,20 @@ export function AlphaEssInvertersPage() {
               <FadeIn isHero>
                 {/* Breadcrumbs */}
                 <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
-                  <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
+                  <Link to="/" className="hover:text-[#8cc63f] transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <Link to="/products/solar-inverters" className="hover:text-[#5BC94D] transition-colors">Solar Inverters</Link>
+                  <Link to="/products/solar-inverters" className="hover:text-[#8cc63f] transition-colors">Solar Inverters</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <span className="text-[#5BC94D]" aria-current="page">Alpha ESS</span>
+                  <span className="text-[#8cc63f]" aria-current="page">Alpha ESS</span>
                 </nav>
 
                 {/* H1 Title */}
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide leading-[1.1] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   Alpha ESS Solar Inverters Darwin NT: SAA Approved
                 </h1>
 
                 {/* Hero Body Paragraphs */}
-                <div className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-6 mb-8 max-w-2xl space-y-3">
+                <div className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#8cc63f] pl-6 mb-8 max-w-2xl space-y-3">
                   <p>Start with one battery and add more later, on your terms, not the manufacturer's.</p>
                   <p>Alpha ESS gives you a hybrid system that grows as your power needs grow.</p>
                   <p>Supplied and installed locally, with your STC discount already worked into the price.</p>
@@ -226,7 +226,7 @@ export function AlphaEssInvertersPage() {
                 <div className="flex flex-wrap items-center gap-4">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -238,7 +238,7 @@ export function AlphaEssInvertersPage() {
                     href={`tel:${PRIMARY_PHONE_RAW}`}
                     className="inline-flex items-center justify-center h-14 px-8 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold transition-all border border-white/20 text-xs uppercase tracking-wider gap-2"
                   >
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>Call Now →</span>
                   </a>
                 </div>
@@ -271,7 +271,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               What Is an Alpha ESS Hybrid Inverter?
             </h2>
 
@@ -287,7 +287,7 @@ export function AlphaEssInvertersPage() {
                   You can see Alpha ESS alongside every other brand we install on our{" "}
                   <Link 
                     to="/products/solar-inverters" 
-                    className="text-[#5BC94D] font-bold underline hover:text-emerald-700 transition-colors"
+                    className="text-[#8cc63f] font-bold underline hover:text-brand-700 transition-colors"
                   >
                     solar inverters page
                   </Link>.
@@ -314,7 +314,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-slate-50 border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
               Alpha ESS Range for Darwin &amp; NT Homes
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-12 max-w-4xl">
@@ -325,9 +325,9 @@ export function AlphaEssInvertersPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
               
               {/* CARD / PRODUCT 1 */}
-              <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                 <div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-2 leading-tight">
+                  <h3 className="text-2xl font-black text-slate-900 mb-2 leading-tight normal-case">
                     SMILE-G3-S5, Single Phase, 5kW
                   </h3>
                   <p className="text-slate-600 text-sm font-semibold mb-6">
@@ -336,23 +336,23 @@ export function AlphaEssInvertersPage() {
 
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-start gap-2.5 text-sm text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] flex-shrink-0 mt-0.5" />
                       <span>5kW inverter</span>
                     </li>
                     <li className="flex items-start gap-2.5 text-sm text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] flex-shrink-0 mt-0.5" />
                       <span>Battery starts at 10.1kWh, expandable up to 60.5kWh</span>
                     </li>
                     <li className="flex items-start gap-2.5 text-sm text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] flex-shrink-0 mt-0.5" />
                       <span>Cobalt free battery chemistry</span>
                     </li>
                     <li className="flex items-start gap-2.5 text-sm text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] flex-shrink-0 mt-0.5" />
                       <span>Keeps your fridge, lights and essentials running if the power drops out</span>
                     </li>
                     <li className="flex items-start gap-2.5 text-sm text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] flex-shrink-0 mt-0.5" />
                       <span>Lets you use stored solar power at night instead of paying peak grid rates</span>
                     </li>
                   </ul>
@@ -363,16 +363,16 @@ export function AlphaEssInvertersPage() {
                     onClick={() => handleSpecSheetClick("SMILE-G3-S5")}
                     className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-extrabold transition-colors uppercase tracking-wider border border-slate-200"
                   >
-                    <Download className="w-4 h-4 text-[#5BC94D]" />
+                    <Download className="w-4 h-4 text-[#8cc63f]" />
                     <span>View SMILE-G3-S5 Spec Sheet →</span>
                   </button>
                 </div>
               </div>
 
               {/* CARD / PRODUCT 2 */}
-              <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#5BC94D]/60 transition-all duration-300">
+              <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-[#8cc63f]/60 transition-all duration-300">
                 <div>
-                  <h3 className="text-2xl font-black text-slate-900 mb-2 leading-tight">
+                  <h3 className="text-2xl font-black text-slate-900 mb-2 leading-tight normal-case">
                     SMILE-G3-T4/T5/T6/T8/T10, Three Phase, 4 to 10kW
                   </h3>
                   <p className="text-slate-600 text-sm font-semibold mb-6">
@@ -381,23 +381,23 @@ export function AlphaEssInvertersPage() {
 
                   <ul className="space-y-3 mb-8">
                     <li className="flex items-start gap-2.5 text-sm text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] flex-shrink-0 mt-0.5" />
                       <span>4, 5, 6, 8 or 10kW inverter options</span>
                     </li>
                     <li className="flex items-start gap-2.5 text-sm text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] flex-shrink-0 mt-0.5" />
                       <span>Battery from 3.65kWh up to 43.8kWh, depending on which module you choose</span>
                     </li>
                     <li className="flex items-start gap-2.5 text-sm text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] flex-shrink-0 mt-0.5" />
                       <span>Cobalt free battery chemistry</span>
                     </li>
                     <li className="flex items-start gap-2.5 text-sm text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] flex-shrink-0 mt-0.5" />
                       <span>Handles bigger daytime power use without straining the system</span>
                     </li>
                     <li className="flex items-start gap-2.5 text-sm text-slate-700 font-medium">
-                      <CheckCircle2 className="w-4 h-4 text-[#5BC94D] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#8cc63f] flex-shrink-0 mt-0.5" />
                       <span>Backup power ready if you want protection through a wet season outage</span>
                     </li>
                   </ul>
@@ -408,7 +408,7 @@ export function AlphaEssInvertersPage() {
                     onClick={() => handleSpecSheetClick("SMILE-G3 Three Phase Series")}
                     className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-extrabold transition-colors uppercase tracking-wider border border-slate-200"
                   >
-                    <Download className="w-4 h-4 text-[#5BC94D]" />
+                    <Download className="w-4 h-4 text-[#8cc63f]" />
                     <span>View SMILE-G3-T4/T5/T6/T8/T10 Spec Sheet →</span>
                   </button>
                 </div>
@@ -423,7 +423,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Built for Homes, Business and Off-Grid Properties
             </h2>
 
@@ -436,19 +436,19 @@ export function AlphaEssInvertersPage() {
                   If you want to see what we recommend for your situation, have a look at our{" "}
                   <Link 
                     to="/solar-systems/residential-solar-system" 
-                    className="text-[#5BC94D] font-bold underline hover:text-emerald-700 transition-colors"
+                    className="text-[#8cc63f] font-bold underline hover:text-brand-700 transition-colors"
                   >
                     residential solar systems
                   </Link>,{" "}
                   <Link 
                     to="/solar-systems/commercial-solar-system" 
-                    className="text-[#5BC94D] font-bold underline hover:text-emerald-700 transition-colors"
+                    className="text-[#8cc63f] font-bold underline hover:text-brand-700 transition-colors"
                   >
                     commercial solar systems
                   </Link>, or{" "}
                   <Link 
                     to="/solar-systems/off-grid-solar-system" 
-                    className="text-[#5BC94D] font-bold underline hover:text-emerald-700 transition-colors"
+                    className="text-[#8cc63f] font-bold underline hover:text-brand-700 transition-colors"
                   >
                     off-grid solar systems
                   </Link>{" "}
@@ -476,7 +476,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-slate-50 border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               How Alpha ESS Handles Darwin's Weather
             </h2>
 
@@ -492,7 +492,7 @@ export function AlphaEssInvertersPage() {
                   Pairing the right inverter with a well angled panel array matters just as much. Our{" "}
                   <Link 
                     to="/solar-panels-darwin" 
-                    className="text-[#5BC94D] font-bold underline hover:text-emerald-700 transition-colors"
+                    className="text-[#8cc63f] font-bold underline hover:text-brand-700 transition-colors"
                   >
                     Darwin solar panel installation page
                   </Link>{" "}
@@ -520,7 +520,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-[#0A1118] border-b border-slate-800 text-left text-white">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-8 normal-case">
               SAA Approved and Installed by SAA Accredited Installers
             </h2>
 
@@ -537,7 +537,7 @@ export function AlphaEssInvertersPage() {
               {/* Visual Graphic Card */}
               <div className="lg:col-span-5 bg-[#0D1520] border border-slate-800 rounded-2xl sm:rounded-3xl p-8 shadow-2xl flex items-center justify-center text-center">
                 <div className="space-y-4">
-                  <div className="w-16 h-16 rounded-2xl bg-[#5BC94D]/10 border border-[#5BC94D]/30 text-[#5BC94D] flex items-center justify-center mx-auto">
+                  <div className="w-16 h-16 rounded-2xl bg-[#8cc63f]/10 border border-[#8cc63f]/30 text-[#8cc63f] flex items-center justify-center mx-auto">
                     <ShieldCheck className="w-8 h-8" />
                   </div>
                   <p className="text-sm font-extrabold text-white uppercase tracking-wider">
@@ -554,7 +554,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Your STC Discount, Sorted Upfront
             </h2>
 
@@ -579,7 +579,7 @@ export function AlphaEssInvertersPage() {
           <FadeIn>
             <div className="bg-white border-2 border-slate-200 rounded-2xl sm:rounded-3xl p-8 sm:p-12 shadow-sm">
               <div className="max-w-4xl">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 mb-4 uppercase tracking-wide leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
                   Inverter Playing Up? Get a Free Check Before It Dies Completely.
                 </h2>
 
@@ -590,7 +590,7 @@ export function AlphaEssInvertersPage() {
                 <div className="mb-8">
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -603,14 +603,14 @@ export function AlphaEssInvertersPage() {
                   Already know your inverter's the problem? Our{" "}
                   <Link 
                     to="/services/solar-panel-repair-darwin" 
-                    className="text-[#5BC94D] font-bold underline hover:text-emerald-700 transition-colors"
+                    className="text-[#8cc63f] font-bold underline hover:text-brand-700 transition-colors"
                   >
                     solar inverter repair team
                   </Link>{" "}
                   can take a look this week. If it's the panels playing up instead, our{" "}
                   <Link 
                     to="/services/solar-panel-repair-darwin" 
-                    className="text-[#5BC94D] font-bold underline hover:text-emerald-700 transition-colors"
+                    className="text-[#8cc63f] font-bold underline hover:text-brand-700 transition-colors"
                   >
                     solar panel repair team in Darwin
                   </Link>{" "}
@@ -626,7 +626,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Alpha ESS Next to the Other Brands We Install
             </h2>
 
@@ -643,7 +643,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-slate-50 border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Growing Your Battery Later
             </h2>
 
@@ -660,7 +660,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-white border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-wide leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Areas We Serve
             </h2>
 
@@ -675,7 +675,7 @@ export function AlphaEssInvertersPage() {
       <section className="py-20 lg:py-24 bg-slate-50 border-b border-slate-200 text-left">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-12 uppercase tracking-wide">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-12 normal-case">
               FAQ
             </h2>
 
@@ -689,12 +689,12 @@ export function AlphaEssInvertersPage() {
                   >
                     <button
                       onClick={() => toggleFaq(index)}
-                      className="w-full flex items-center justify-between p-6 text-left font-extrabold text-slate-900 text-base sm:text-lg hover:text-emerald-700 transition-colors gap-4"
+                      className="w-full flex items-center justify-between p-6 text-left font-extrabold text-slate-900 text-base sm:text-lg hover:text-brand-700 transition-colors gap-4"
                       aria-expanded={isOpen}
                     >
                       <span>{faq.q}</span>
                       <ChevronDown
-                        className={`w-5 h-5 text-[#5BC94D] transition-transform duration-300 flex-shrink-0 ${
+                        className={`w-5 h-5 text-[#8cc63f] transition-transform duration-300 flex-shrink-0 ${
                           isOpen ? "rotate-180" : ""
                         }`}
                       />
@@ -719,7 +719,7 @@ export function AlphaEssInvertersPage() {
           <FadeIn>
             <div className="bg-[#0D1520] border border-slate-800 rounded-2xl sm:rounded-3xl p-8 sm:p-12 text-center text-white shadow-2xl">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-6 uppercase tracking-wide leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Book Your Alpha ESS Installation or Upgrade
                 </h2>
 
@@ -732,13 +732,13 @@ export function AlphaEssInvertersPage() {
                     href={`tel:${PRIMARY_PHONE_RAW}`}
                     className="inline-flex items-center justify-center h-14 px-8 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold transition-all border border-white/20 text-xs uppercase tracking-wider gap-2"
                   >
-                    <Phone className="w-4 h-4 text-[#5BC94D]" />
+                    <Phone className="w-4 h-4 text-[#8cc63f]" />
                     <span>Call Us Today</span>
                   </a>
 
                   <Button
                     size="lg"
-                    className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                    className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
                     asChild
                   >
                     <Link to="/contact">
@@ -756,7 +756,7 @@ export function AlphaEssInvertersPage() {
       {specModalModel && (
         <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
           <div className="bg-white rounded-2xl max-w-md w-full p-6 text-left shadow-2xl border border-slate-200">
-            <h3 className="text-xl font-extrabold text-slate-900 mb-2">
+            <h3 className="text-xl font-extrabold text-slate-900 mb-2 normal-case">
               {specModalModel} Spec Sheet
             </h3>
             <p className="text-slate-600 text-sm mb-6 leading-relaxed">
@@ -771,7 +771,7 @@ export function AlphaEssInvertersPage() {
               </button>
               <Button
                 size="sm"
-                className="rounded-xl bg-[#5BC94D] text-[#19281D] border-none font-extrabold hover:bg-emerald-400 text-xs uppercase"
+                className="rounded-xl bg-[#8cc63f] text-[#19281D] border-none font-extrabold hover:bg-brand-400 text-xs uppercase"
                 asChild
                 onClick={() => setSpecModalModel(null)}
               >

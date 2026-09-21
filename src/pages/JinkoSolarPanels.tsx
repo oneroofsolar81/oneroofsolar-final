@@ -15,7 +15,7 @@ import {
 import { FadeIn } from "../components/ui/FadeIn";
 import { SEO } from "../components/SEO";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
-import jinkoTopconImg from "../assets/images/jinko_topcon_cell_1785232213323.jpg";
+import jinkoTopconImg from "../assets/images/jinko_topcon_cell_1785232213323.webp";
 
 export function JinkoSolarPanels() {
   // FAQ Accordion State
@@ -236,7 +236,7 @@ export function JinkoSolarPanels() {
       a: (
         <span>
           The most common reason is that most energy consumption happens at night or early morning when panels are not generating. Solar savings come primarily from self-consumption during daylight hours. If your household uses most electricity in the evening, pairing your panels with a{" "}
-          <RouterLink to="/services/battery-storage" className="text-brand-600 hover:underline font-bold">
+          <RouterLink to="/products/solar-battery-brands/" className="text-brand-600 hover:underline font-bold">
             battery storage system
           </RouterLink>{" "}
           allows you to use your own solar after dark. Oneroof Solar can assess whether battery storage is cost-effective for your NT usage pattern.
@@ -266,11 +266,11 @@ export function JinkoSolarPanels() {
       ))}
 
       {/* 1. Hero Section */}
-      <section className="relative pt-24 pb-12 sm:pt-36 sm:pb-24 lg:pt-44 lg:pb-36 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-12 pb-12 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-36 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <img 
             referrerPolicy="no-referrer"
-            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1600&q=80" 
+            src="/assets/images/home/home-hero-bayview.webp" 
             alt="Sunny solar backdrop"
             className="w-full h-full object-cover opacity-10 mix-blend-overlay"
           />
@@ -293,7 +293,7 @@ export function JinkoSolarPanels() {
                   <span className="text-brand-400" aria-current="page">Jinko Solar Panels</span>
                 </nav>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   Jinko Solar Panels NT
                 </h1>
 
@@ -339,7 +339,7 @@ export function JinkoSolarPanels() {
       <section className="py-12 lg:py-20 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-8">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               About Jinko Solar
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
@@ -372,7 +372,7 @@ export function JinkoSolarPanels() {
             {/* Text Column (~47% on desktop) */}
             <div className="w-full lg:w-[47%] shrink-0">
               <FadeIn>
-                <h2 className="text-[28px] sm:text-[36px] lg:text-[44px] font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6 max-w-[560px]">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 max-w-[560px] normal-case">
                   Jinko N-Type TOPCon Technology
                 </h2>
                 <p className="text-slate-600 text-base lg:text-[17px] leading-[1.68] mb-6 max-w-[560px] font-medium">
@@ -407,7 +407,7 @@ export function JinkoSolarPanels() {
       <section className="py-12 lg:py-24 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               Jinko Solar Panel Models We Install
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-8 font-medium">
@@ -499,7 +499,7 @@ export function JinkoSolarPanels() {
       <section className="py-12 lg:py-24 bg-white border-b border-slate-100 relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 normal-case">
               Why Jinko Performs Well Across the NT
             </h2>
 
@@ -509,7 +509,7 @@ export function JinkoSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Flame className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                   Heat performance in Darwin's dry season
                 </h3>
                 <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -522,7 +522,7 @@ export function JinkoSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <SunDim className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                   Low-light performance during the wet season
                 </h3>
                 <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -535,7 +535,7 @@ export function JinkoSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Wind className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                   Cyclone rating for NT installations
                 </h3>
                 <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -548,7 +548,7 @@ export function JinkoSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <Wrench className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                   Labour cost warranty coverage
                 </h3>
                 <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -561,7 +561,7 @@ export function JinkoSolarPanels() {
                 <div className="w-12 h-12 rounded-2xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <ShieldCheck className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 uppercase tracking-wide">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                   Salt mist and humidity resistance
                 </h3>
                 <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -577,7 +577,7 @@ export function JinkoSolarPanels() {
       <section className="py-12 lg:py-24 bg-slate-50 border-b border-slate-100 relative">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-6">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
               Jinko vs AIKO vs REC — Which Is Right for Your NT Roof
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed mb-8 font-medium">
@@ -591,7 +591,7 @@ export function JinkoSolarPanels() {
                   <tr className="bg-slate-900 border-b border-slate-800 text-white font-black text-sm uppercase tracking-wider">
                     <th className="p-4 sm:p-5">Specification</th>
                     <th className="p-4 sm:p-5 text-brand-400">Jinko N-Type</th>
-                    <th className="p-4 sm:p-5 text-emerald-400">AIKO ABC</th>
+                    <th className="p-4 sm:p-5 text-brand-400">AIKO ABC</th>
                     <th className="p-4 sm:p-5 text-blue-400">REC HJT</th>
                   </tr>
                 </thead>
@@ -673,7 +673,7 @@ export function JinkoSolarPanels() {
       <section className="py-12 lg:py-24 bg-white border-b border-slate-100 relative">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 text-center normal-case">
               Frequently Asked Questions
             </h2>
 
@@ -750,7 +750,7 @@ export function JinkoSolarPanels() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <FadeIn>
             <div className="bg-slate-900/90 border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl shadow-xl max-w-4xl mx-auto backdrop-blur-md">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-8">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-8 normal-case">
                 Ready to install Jinko solar panels on your NT property? Get a free quote from Oneroof Solar today.
               </h2>
 

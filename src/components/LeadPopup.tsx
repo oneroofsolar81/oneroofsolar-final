@@ -85,22 +85,23 @@ export function LeadPopup() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
             onClick={closeModal}
-            className="fixed inset-0 bg-neutral-900/40 backdrop-blur-md transition-opacity"
+            className="fixed inset-0 bg-neutral-950/60 backdrop-blur-md"
           />
 
           <div className="flex min-h-screen items-center justify-center p-4 sm:p-6">
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              initial={{ opacity: 0, scale: 0.96, y: 24 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ type: "spring", damping: 30, stiffness: 300 }}
-              className="relative w-full max-w-5xl bg-white rounded-3xl shadow-2xl flex flex-col lg:flex-row overflow-hidden my-8 isolate"
+              exit={{ opacity: 0, scale: 0.96, y: 16 }}
+              transition={{ type: "spring", damping: 26, stiffness: 260, mass: 0.9 }}
+              className="relative w-full max-w-5xl bg-white rounded-3xl shadow-2xl ring-1 ring-black/5 flex flex-col lg:flex-row overflow-hidden my-8 isolate"
             >
               {/* Close Button */}
               <button
                 onClick={closeModal}
-                className="absolute top-3 right-3 lg:top-4 lg:right-4 z-50 w-8 h-8 lg:w-10 lg:h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors backdrop-blur-sm"
+                className="absolute top-3 right-3 lg:top-4 lg:right-4 z-50 w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center rounded-full bg-white/95 text-slate-900 hover:bg-white hover:rotate-90 transition-all duration-300 shadow-lg ring-1 ring-black/10"
                 aria-label="Close"
               >
                 <X size={18} className="lg:w-5 lg:h-5" />
@@ -112,7 +113,7 @@ export function LeadPopup() {
                 <div 
                   className="absolute inset-0 opacity-50 mix-blend-overlay pointer-events-none"
                   style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=1000&auto=format&fit=crop')",
+                    backgroundImage: "url('/assets/images/home/home-premium-aerial.webp')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
@@ -121,16 +122,18 @@ export function LeadPopup() {
                 
                 {/* Glowing Orbs */}
                 <div className="absolute -top-[20%] -left-[10%] w-[70%] h-[70%] bg-yellow-500 rounded-full blur-[120px] opacity-20 pointer-events-none mix-blend-screen" />
-                <div className="absolute -bottom-[20%] -right-[10%] w-[60%] h-[60%] bg-green-500 rounded-full blur-[120px] opacity-20 pointer-events-none mix-blend-screen" />
+                <div className="absolute -bottom-[20%] -right-[10%] w-[60%] h-[60%] bg-brand-500 rounded-full blur-[120px] opacity-20 pointer-events-none mix-blend-screen" />
 
                 <div className="relative z-10 flex flex-col h-full justify-center">
                   {/* Logo */}
                   <div className="mb-4 lg:mb-6 relative">
                     <div className="absolute inset-0 bg-white/10 blur-xl rounded-full" />
                     <img referrerPolicy="no-referrer" 
-                      src="https://i.postimg.cc/vZdTgLm9/oneroof.png" 
+                      src="/assets/images/home/logo-oneroof.png" 
                       alt="Oneroof Solar Logo" 
-                      className="h-[50px] lg:h-[70px] w-auto opacity-100 drop-shadow-lg relative z-10"
+                      className="h-[50px] lg:h-[70px] w-auto max-w-none opacity-100 drop-shadow-lg relative z-10"
+                      width={242}
+                      height={70}
                     />
                   </div>
 
@@ -140,7 +143,7 @@ export function LeadPopup() {
                       <span className="text-yellow-50">Limited Time Offer</span>
                     </div>
                     
-                    <h2 className="font-['Inter',sans-serif] text-[32px] sm:text-[40px] lg:text-[48px] font-black tracking-tight mb-3 lg:mb-4 leading-[1.1] drop-shadow-2xl max-w-[520px] [overflow-wrap:normal] [word-break:normal]">
+                    <h2 className="font-['Inter',sans-serif] text-[32px] sm:text-[40px] lg:text-[48px] font-black tracking-tight mb-3 lg:mb-4 leading-[1.1] drop-shadow-2xl max-w-[520px] [overflow-wrap:normal] [word-break:normal] normal-case">
                       <span className="text-white">Claim Your</span>{" "}
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 drop-shadow-sm inline-block max-w-full py-0.5">
                         $13,000 Rebate
@@ -160,7 +163,7 @@ export function LeadPopup() {
                           <Banknote className="w-5 h-5 lg:w-6 lg:h-6 text-yellow-400" />
                         </div>
                         <div>
-                          <h4 className="font-['Inter',sans-serif] font-bold text-white text-base lg:text-lg tracking-wide">Free Savings Estimate</h4>
+                          <h4 className="font-['Inter',sans-serif] font-bold text-white text-base lg:text-lg tracking-tight normal-case">Free Savings Estimate</h4>
                           <p className="font-['Inter',sans-serif] text-xs lg:text-sm text-neutral-300 font-medium">See exactly how much you can save</p>
                         </div>
                       </div>
@@ -169,7 +172,7 @@ export function LeadPopup() {
                           <ShieldCheck className="w-5 h-5 lg:w-6 lg:h-6 text-yellow-400" />
                         </div>
                         <div>
-                          <h4 className="font-['Inter',sans-serif] font-bold text-white text-base lg:text-lg tracking-wide">Premium Tier-1 Tech</h4>
+                          <h4 className="font-['Inter',sans-serif] font-bold text-white text-base lg:text-lg tracking-tight normal-case">Premium Tier-1 Tech</h4>
                           <p className="font-['Inter',sans-serif] text-xs lg:text-sm text-neutral-300 font-medium">Industry-leading panels & batteries</p>
                         </div>
                       </div>
@@ -188,7 +191,7 @@ export function LeadPopup() {
                 <div 
                   className="absolute inset-0 opacity-60 pointer-events-none"
                   style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1000&auto=format&fit=crop')",
+                    backgroundImage: "url('/assets/images/home/home-project-bayview.webp')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
@@ -197,7 +200,7 @@ export function LeadPopup() {
                 <div className="absolute top-0 right-0 w-full h-[300px] bg-gradient-to-b from-yellow-500/10 to-transparent pointer-events-none" />
                 
                 <div className="text-center mb-6 lg:mb-8 relative z-10">
-                  <h3 className="text-3xl font-extrabold text-white tracking-tight">Check Eligibility</h3>
+                  <h3 className="text-3xl font-extrabold text-white tracking-tight normal-case">Check Eligibility</h3>
                   <p className="text-neutral-300 mt-2 font-medium">Takes less than 60 seconds</p>
                 </div>
                 

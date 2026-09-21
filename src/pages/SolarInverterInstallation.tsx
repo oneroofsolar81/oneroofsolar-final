@@ -14,9 +14,9 @@ import { FadeIn } from "../components/ui/FadeIn";
 import { Button } from "../components/ui/Button";
 import { SEO } from "../components/SEO";
 
-import heroImage from "../assets/images/inverter_install_hero_1785312441730.jpg";
-import switchboardImage from "../assets/images/inverter_switchboard_measure_1785312461587.jpg";
-import rooftopsImage from "../assets/images/darwin_rooftops_aerial_1785312477139.jpg";
+import heroImage from "../assets/images/inverter_install_hero_1785312441730.webp";
+import switchboardImage from "../assets/images/inverter_switchboard_measure_1785312461587.webp";
+import rooftopsImage from "../assets/images/darwin_rooftops_aerial_1785312477139.webp";
 
 export function SolarInverterInstallation() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -138,7 +138,7 @@ export function SolarInverterInstallation() {
   const whoNeedsInstallation = [
     {
       title: "Homeowners",
-      desc: <>Many Darwin homeowners have panels on the roof but a power bill that never dropped the way it should have. Usually the inverter is the reason, either undersized for the array or old enough to be losing efficiency. Others want a hybrid inverter fitted now so a <Link to="/services/solar-battery-installation" className="text-[#5BC94D] underline hover:text-emerald-400">battery</Link> can be added later without rewiring, or a quiet, compact unit mounted away from bedroom windows to suit Darwin's open-plan, elevated home designs.</>,
+      desc: <>Many Darwin homeowners have panels on the roof but a power bill that never dropped the way it should have. Usually the inverter is the reason, either undersized for the array or old enough to be losing efficiency. Others want a hybrid inverter fitted now so a <Link to="/services/solar-battery-installation" className="text-[#8cc63f] underline hover:text-brand-400">battery</Link> can be added later without rewiring, or a quiet, compact unit mounted away from bedroom windows to suit Darwin's open-plan, elevated home designs.</>,
       icon: Home
     },
     {
@@ -148,7 +148,7 @@ export function SolarInverterInstallation() {
     },
     {
       title: "Off-grid and rural properties",
-      desc: <>Properties out along the Stuart Highway corridor, in Litchfield, Humpty Doo and Berry Springs, often sit on acreage with no reliable grid connection. The pain point here is simple: power that stays on through the Wet season. That means a hybrid or fully <Link to="/solar-systems/off-grid-solar-system" className="text-[#5BC94D] underline hover:text-emerald-400">off-grid</Link> inverter paired with <Link to="/services/solar-battery-installation" className="text-[#5BC94D] underline hover:text-emerald-400">battery storage</Link>, sized to carry the property through cloudy days and storm-season outages.</>,
+      desc: <>Properties out along the Stuart Highway corridor, in Litchfield, Humpty Doo and Berry Springs, often sit on acreage with no reliable grid connection. The pain point here is simple: power that stays on through the Wet season. That means a hybrid or fully <Link to="/solar-systems/off-grid-solar-system" className="text-[#8cc63f] underline hover:text-brand-400">off-grid</Link> inverter paired with <Link to="/services/solar-battery-installation" className="text-[#8cc63f] underline hover:text-brand-400">battery storage</Link>, sized to carry the property through cloudy days and storm-season outages.</>,
       icon: Compass
     }
   ];
@@ -156,7 +156,7 @@ export function SolarInverterInstallation() {
   const demandDrivers = [
     "New-build suburbs such as Zuccoli, Johnston, Muirhead and Berrimah are growing fast, and every new solar system going up needs a first-time inverter installation.",
     "Established suburbs including Nightcliff, Rapid Creek, Malak, Karama and Wagaman had a wave of solar installed during the STC rebate boom of the early 2010s. Those original inverters are now 10 to 15 years old, right at the point where Darwin's heat and humidity push ageing units toward failure.",
-    <>Rural and semi-rural properties in Litchfield, Humpty Doo, Berry Springs and along the Adelaide River corridor sit further from the grid, driving steady demand for hybrid and off-grid inverter installations paired with <Link to="/services/solar-battery-installation" className="text-[#5BC94D] underline hover:text-emerald-400">battery storage</Link>.</>
+    <>Rural and semi-rural properties in Litchfield, Humpty Doo, Berry Springs and along the Adelaide River corridor sit further from the grid, driving steady demand for hybrid and off-grid inverter installations paired with <Link to="/services/solar-battery-installation" className="text-[#8cc63f] underline hover:text-brand-400">battery storage</Link>.</>
   ];
 
   const installSteps = [
@@ -240,10 +240,10 @@ export function SolarInverterInstallation() {
       ))}
 
       {/* 1. HERO SECTION */}
-      <section className="relative pt-24 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28 overflow-hidden bg-[#0A1118]">
+      <section className="relative pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-[#0A1118]/60"></div>
-          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#5BC94D]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#8cc63f]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
         </div>
 
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 relative z-10">
@@ -254,26 +254,26 @@ export function SolarInverterInstallation() {
               <FadeIn isHero>
                 {/* Breadcrumb */}
                 <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-slate-400 text-xs font-semibold uppercase tracking-wider mb-6  flex-wrap">
-                  <Link to="/" className="hover:text-[#5BC94D] transition-colors">Home</Link>
+                  <Link to="/" className="hover:text-[#8cc63f] transition-colors">Home</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
                   <span className="text-slate-400">Services</span>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <Link to="/services/solar-inverters" className="hover:text-[#5BC94D] transition-colors">Solar Inverters</Link>
+                  <Link to="/services/solar-inverters" className="hover:text-[#8cc63f] transition-colors">Solar Inverters</Link>
                   <span className="text-slate-500" aria-hidden="true">&gt;</span>
-                  <span className="text-[#5BC94D]" aria-current="page">Installation</span>
+                  <span className="text-[#8cc63f]" aria-current="page">Installation</span>
                 </nav>
 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white uppercase tracking-wide [word-spacing:0.12em] leading-[1.08] mb-6">
+                <h1 className="hero-heading text-white mb-6 break-words normal-case">
                   Solar Inverter Installation Darwin
                 </h1>
 
-                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#5BC94D] pl-6 mb-8 max-w-2xl">
+                <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-medium border-l-2 border-[#8cc63f] pl-6 mb-8 max-w-2xl">
                   Licensed NT installers fitting cyclone-rated inverters built for Darwin's heat, humidity and Wet season storms. From new homes to ageing systems and off-grid properties, we size every inverter to match your roof and your power bill.
                 </p>
 
                 <Button
                   size="lg"
-                  className="rounded-xl px-8 bg-[#5BC94D] text-[#19281D] border-none font-black hover:bg-emerald-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
+                  className="rounded-xl px-8 bg-[#8cc63f] text-[#19281D] border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_4px_20px_rgba(91,201,77,0.3)] uppercase tracking-wider text-xs"
                   asChild
                 >
                   <Link to="/contact">
@@ -323,7 +323,7 @@ export function SolarInverterInstallation() {
 
               {/* Right Text */}
               <div className="lg:col-span-6">
-                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
                   What Does Solar Inverter Installation Involve in Darwin?
                 </h2>
                 <div className="space-y-4 text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
@@ -344,7 +344,7 @@ export function SolarInverterInstallation() {
       <section className="py-16 lg:py-20 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-10 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 normal-case">
               Who Needs Solar Inverter Installation in Darwin
             </h2>
 
@@ -360,7 +360,7 @@ export function SolarInverterInstallation() {
                       <div className="w-12 h-12 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-600 mb-6">
                         <IconComponent className="w-6 h-6" />
                       </div>
-                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-wide">
+                      <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 tracking-tight normal-case">
                         {item.title}
                       </h3>
                       <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -382,7 +382,7 @@ export function SolarInverterInstallation() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
               {/* Left Text */}
               <div className="lg:col-span-6">
-                <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
                   Where the Inverter Demand Is Coming From Across Darwin
                 </h2>
 
@@ -390,7 +390,7 @@ export function SolarInverterInstallation() {
                   {demandDrivers.map((item, idx) => (
                     <div key={idx} className="flex items-start gap-3">
                       <div className="shrink-0 mt-1">
-                        <CheckCircle2 className="w-5 h-5 text-[#5BC94D]" />
+                        <CheckCircle2 className="w-5 h-5 text-[#8cc63f]" />
                       </div>
                       <div className="text-slate-200 text-base leading-snug font-medium">
                         {item}
@@ -425,7 +425,7 @@ export function SolarInverterInstallation() {
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-4 uppercase tracking-wide">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-4 normal-case">
                 Your Inverter Is Either Making You Money or Costing You Money. There Is No In Between.
               </h2>
               <p className="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto mb-8 font-medium leading-relaxed">
@@ -450,7 +450,7 @@ export function SolarInverterInstallation() {
       <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-12 uppercase tracking-wide [word-spacing:0.12em] leading-tight text-center">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-12 text-center normal-case">
               How We Install Your Solar Inverter
             </h2>
 
@@ -464,7 +464,7 @@ export function SolarInverterInstallation() {
                     <div className="w-12 h-12 rounded-full bg-brand-500 text-slate-900 font-black text-xl flex items-center justify-center mb-6 shadow-md shadow-brand-500/20">
                       {step.number}
                     </div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-wide capitalize">
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight capitalize normal-case">
                       {step.title}
                     </h3>
                     <p className="text-slate-600 text-base leading-relaxed font-medium">
@@ -482,7 +482,7 @@ export function SolarInverterInstallation() {
       <section className="py-16 lg:py-20 bg-white border-b border-slate-200 relative">
         <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
               Inverter Brands We Install
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-10 max-w-4xl">
@@ -498,7 +498,7 @@ export function SolarInverterInstallation() {
                   <div className="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-600 mb-4">
                     <Zap className="w-5 h-5" />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900">
+                  <h3 className="text-lg font-bold text-slate-900 normal-case">
                     {brand.name}
                   </h3>
                 </div>
@@ -512,7 +512,7 @@ export function SolarInverterInstallation() {
       <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 relative">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeIn>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 uppercase tracking-wide [word-spacing:0.12em] leading-[1.2] mb-10 text-center">
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-10 text-center normal-case">
               Solar Inverter Installation Darwin: Frequently Asked Questions
             </h2>
 
@@ -590,7 +590,7 @@ export function SolarInverterInstallation() {
           <FadeIn>
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-500/30 bg-slate-900/90 p-8 sm:p-14 text-center shadow-2xl">
               <div className="max-w-3xl mx-auto relative z-10">
-                <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 uppercase tracking-wide [word-spacing:0.12em] leading-tight">
+                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-4 normal-case">
                   Book Your Solar Inverter Installation
                 </h2>
                 <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-8 font-medium">
@@ -613,7 +613,7 @@ export function SolarInverterInstallation() {
                     asChild
                   >
                     <a href="tel:0483986444">
-                      <Phone className="w-4 h-4 mr-2 text-[#5BC94D]" />
+                      <Phone className="w-4 h-4 mr-2 text-[#8cc63f]" />
                       <span>Call 0483 986 444</span>
                     </a>
                   </Button>

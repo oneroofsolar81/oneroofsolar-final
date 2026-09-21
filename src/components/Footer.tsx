@@ -16,9 +16,11 @@ export function Footer() {
           <div className="lg:col-span-4">
             <Link to="/" className="inline-block mb-8">
               <img referrerPolicy="no-referrer" 
-                src="https://i.postimg.cc/vZdTgLm9/oneroof.png" 
+                src="/assets/images/home/logo-oneroof.png" 
                 alt="Oneroof Solar Logo" 
-                className="h-[55px] w-auto opacity-90 transition-opacity hover:opacity-100" 
+                className="h-[55px] w-auto max-w-none opacity-90 transition-opacity hover:opacity-100" 
+                width={190}
+                height={55}
                 loading="lazy"
               />
             </Link>
@@ -46,7 +48,7 @@ export function Footer() {
           
           {/* Quick Links */}
           <div className="lg:col-span-3 lg:pl-8">
-            <h3 className="text-sm font-semibold tracking-wider text-white uppercase mb-6 flex items-center gap-2">
+            <h3 className="text-sm font-semibold tracking-wider text-white mb-6 flex items-center gap-2 normal-case">
               <span className="w-4 h-0.5 bg-brand-500 rounded-full"></span>
               Services
             </h3>
@@ -55,7 +57,8 @@ export function Footer() {
               <li><Link to="/solar-systems/commercial-solar-system" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Commercial Solar Systems</Link></li>
               <li><Link to="/solar-systems/off-grid-solar-system" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Off-Grid Solar Systems</Link></li>
               <li><Link to="/services/solar-battery-installation" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Battery Storage Solutions</Link></li>
-              <li><Link to="/services/ev-chargers" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> EV Chargers</Link></li>
+              <li><Link to="/services/ev-chargers/installation" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> EV Charger Installation</Link></li>
+              <li><Link to="/services/ev-chargers/repair" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> EV Charger Repair</Link></li>
               <li><Link to="/services/solar-inverters" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Solar Inverters</Link></li>
               <li><Link to="/solar-panels-darwin" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Solar Panel</Link></li>
               <li><Link to="/product/solar-panels-brands" className="hover:text-brand-400 transition-colors flex items-center gap-2 group"><Zap className="h-3 w-3 text-slate-600 group-hover:text-brand-500 transition-colors" /> Solar Panel Brands</Link></li>
@@ -65,13 +68,15 @@ export function Footer() {
           </div>
 
           <div className="lg:col-span-2">
-            <h3 className="text-sm font-semibold tracking-wider text-white uppercase mb-6 flex items-center gap-2">
+            <h3 className="text-sm font-semibold tracking-wider text-white mb-6 flex items-center gap-2 normal-case">
               <span className="w-4 h-0.5 bg-brand-500 rounded-full"></span>
               Company
             </h3>
             <ul className="space-y-4 text-sm text-slate-400">
               <li><Link to="/about" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">About Us</Link></li>
               <li><Link to="/about" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Why Choose Us</Link></li>
+              <li><Link to="/projects" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Projects</Link></li>
+              <li><Link to="/blogs" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Blogs</Link></li>
               <li><Link to="/contact" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Contact</Link></li>
               <li><Link to="/terms" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Terms & Conditions</Link></li>
               <li><Link to="/privacy" className="hover:text-brand-400 transition-colors inline-block transform hover:translate-x-1 duration-200">Privacy Policy</Link></li>
@@ -80,7 +85,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div className="lg:col-span-3 relative">
-            <h3 className="text-sm font-semibold tracking-wider text-white uppercase mb-6 flex items-center gap-2">
+            <h3 className="text-sm font-semibold tracking-wider text-white mb-6 flex items-center gap-2 normal-case">
               <span className="w-4 h-0.5 bg-brand-500 rounded-full"></span>
               Contact
             </h3>
@@ -90,7 +95,7 @@ export function Footer() {
                   <MapPin className="h-4 w-4 text-brand-400" />
                 </div>
                 <div>
-                  <Link to="/solar-panels-darwin" className="text-white hover:text-[#5BC94D] transition-colors font-semibold block mb-1">
+                  <Link to="/solar-panels-darwin" className="text-white hover:text-[#8cc63f] transition-colors font-semibold block mb-1">
                     Darwin
                   </Link>
                   <span className="text-slate-400 block leading-tight">3/97 Pruen Rd, Berrimah<br/>NT 0828</span>
@@ -104,7 +109,7 @@ export function Footer() {
                   <MapPin className="h-4 w-4 text-brand-400" />
                 </div>
                 <div>
-                  <Link to="/solar-alice-springs/" className="text-white hover:text-[#5BC94D] transition-colors font-semibold block mb-1">
+                  <Link to="/solar-alice-springs/" className="text-white hover:text-[#8cc63f] transition-colors font-semibold block mb-1">
                     Alice Springs
                   </Link>
                   <span className="text-slate-400 block leading-tight">44 Zeil St, Araluen<br/>NT 0870</span>

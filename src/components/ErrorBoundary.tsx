@@ -50,7 +50,7 @@ export class ErrorBoundary extends Component<Props, State> {
               </svg>
             </div>
             
-            <h1 className="text-2xl font-extrabold mb-3">Something went wrong</h1>
+            <h1 className="text-2xl font-extrabold mb-3 normal-case">Something went wrong</h1>
             <p className="text-slate-400 text-sm mb-8 leading-relaxed">
               We encountered an unexpected presentation error. Don't worry, your connection is secure. You can safely return to the home screen.
             </p>

@@ -16,7 +16,7 @@ const DEFAULT_SERVICES = [
       "Full installation & grid connection",
       "25-year performance warranty"
     ],
-    image: "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=60&w=1000&auto=format&fit=crop"
+    image: "/assets/images/home/home-premium-aerial.webp"
   },
   {
     title: "Commercial Solar",
@@ -28,7 +28,7 @@ const DEFAULT_SERVICES = [
       "Custom engineered for your roof space",
       "Ongoing maintenance & support"
     ],
-    image: "https://a-us.storyblok.com/f/1006159/810x471/62865d0b80/des-1116-csm.jpg/m/1000x0/filters:quality(60):format(webp)"
+    image: "/assets/images/hosted/aerial.webp"
   },
   {
     title: "Solar Batteries & Storage",
@@ -40,7 +40,7 @@ const DEFAULT_SERVICES = [
       "Reduce peak demand charges",
       "Seamless hybrid inverter integration"
     ],
-    image: "https://i.postimg.cc/VN7B2NkJ/DSC00505-Enhanced-NR-(1)-jpg-(2)-(1).webp"
+    image: "/assets/images/home/home-premium-aerial.webp"
   },
   {
     title: "EV Chargers",
@@ -52,7 +52,7 @@ const DEFAULT_SERVICES = [
       "Fast charging capabilities",
       "Residential & commercial options"
     ],
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAYjFUKNKyOMySm6lkKfTkODY4oKkYzGvdgw&s"
+    image: "/assets/images/hosted/products/ev-charger.webp"
   },
   {
     title: "Solar Panel Cleaning & Maintenance",
@@ -64,7 +64,7 @@ const DEFAULT_SERVICES = [
       "Performance optimization",
       "Fault diagnosis & repairs"
     ],
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTExfMGgoZJ0SC5uObr6P1AIzCA5Qme1j8pLA&s"
+    image: "/assets/images/home/home-about-stuart-park.webp"
   },
   {
     title: "Solar Inverters",
@@ -76,7 +76,7 @@ const DEFAULT_SERVICES = [
       "Smart monitoring capabilities",
       "Extended warranties"
     ],
-    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=60&w=1000&auto=format&fit=crop"
+    image: "/assets/images/home/home-hero-bayview.webp"
   }
 ];
 
@@ -85,20 +85,20 @@ const DEFAULT_PAGES = [
     id: 'home',
     data: {
       title: "Home",
-      heroTitle: "Solar Systems Built for \n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-green-500 pb-2 inline-block\">Northern Territory Conditions</span>",
+      heroTitle: "Solar Systems Built for \n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300 pb-2 inline-block\">Northern Territory Conditions</span>",
       heroSubtitle: "Complete Solar Systems for Darwin & the NT. Get premium 6.6 kW Solar Systems from just <strong class=\"text-white font-medium bg-white/10 px-2 py-0.5 rounded-md\">$28 per week</strong> with $0 Deposit.",
       content: "",
       sections: {
         hero: {
           badge: "Federal Rebate: Save 30% on Solar Batteries",
-          title: "Solar Systems Built for <br />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-green-500 pb-2 inline-block\">Northern Territory Conditions</span>",
+          title: "Solar Systems Built for <br />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300 pb-2 inline-block\">Northern Territory Conditions</span>",
           subtitle: "Complete Solar Systems for Darwin & the NT. \nGet premium 6.6 kW Solar Systems from just <strong class=\"text-white font-medium bg-white/10 px-2 py-0.5 rounded-md\">$28 per week</strong> with $0 Deposit.",
           ctaText: "Get Free Quote",
           features: ["$0 Deposit Options", "25 Years Performance"]
         },
         expertise: {
           badge: "Our Expertise",
-          title: "Complete Energy <br class=\"hidden sm:block\" /><span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-500\">Solutions</span>",
+          title: "Complete Energy <br class=\"hidden sm:block\" /><span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Solutions</span>",
           items: [
             {
               title: "Residential & Commercial Solar",
@@ -121,7 +121,7 @@ const DEFAULT_PAGES = [
         whyChooseUs: {
           badge: "Why Choose Us",
           title: "Premium Solar Systems For The Northern Territory",
-          image: "https://i.postimg.cc/fWGBJR1G/dji-fly-20240620-115258-79-1718868305112-photo.webp",
+          image: "/assets/images/home/home-premium-aerial.webp",
           ctaText: "Get Your Free Quote",
           items: [
             {
@@ -140,7 +140,7 @@ const DEFAULT_PAGES = [
         },
         process: {
           badge: "How It Works",
-          title: "Your Seamless Journey to <br class=\"hidden sm:block\" />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400\">Solar Energy</span>",
+          title: "Your Seamless Journey to <br class=\"hidden sm:block\" />\n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Solar Energy</span>",
           subtitle: "We've completely streamlined our process to make switching to solar as easy, fast, and stress-free as possible.",
           steps: [
             {
@@ -167,8 +167,8 @@ const DEFAULT_PAGES = [
         },
         installer: {
           badge: "Top Quality Installers",
-          title: "Your Expert <br/> \n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-500\">Darwin Solar Installer</span>",
-          image: "https://i.postimg.cc/05nhGvxW/Stuart-Park-0820.webp",
+          title: "Your Expert <br/> \n<span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Darwin Solar Installer</span>",
+          image: "/assets/images/home/home-about-stuart-park.webp",
           paragraphs: [
             "As Darwin's premier solar panel installers, we are dedicated to providing the highest quality renewable energy solutions tailored specifically for the harsh Northern Territory climate.",
             "From the initial consultation to final commissioning, our expert installers handle every aspect of your solar journey, guaranteeing a seamless transition to clean, affordable, and sustainable power."
@@ -188,7 +188,7 @@ const DEFAULT_PAGES = [
         },
         ecosystem: {
           badge: "Complete Integration",
-          title: "The Smart Energy <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-green-500\">Ecosystem</span>",
+          title: "The Smart Energy <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Ecosystem</span>",
           subtitle: "All your energy needs seamlessly connected and controlled from the palm of your hand.",
           items: [
             {
@@ -212,7 +212,7 @@ const DEFAULT_PAGES = [
         battery: {
           badge: "Energy Independence",
           title: "Uninterrupted Power for <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-slate-500\">Your Home</span>",
-          image: "https://i.postimg.cc/pLr9VPVS/Nightcliff-0810-(1)-(1).webp",
+          image: "/assets/images/home/home-battery-nightcliff.webp",
           items: [
             {
               title: "Blackout Protection",
@@ -259,7 +259,7 @@ const DEFAULT_PAGES = [
     id: 'about',
     data: {
       title: "About Us",
-      heroTitle: "Your Trusted Solar Partner in the <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-400\">Northern Territory</span>",
+      heroTitle: "Your Trusted Solar Partner in the <span class=\"text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-300\">Northern Territory</span>",
       content: "At Oneroof Solar, we are dedicated to helping homes and businesses across Darwin, Alice Springs, and Palmerston transition to clean, renewable energy. We believe in providing top-tier equipment, flawless installation, and exceptional customer service.",
       heroSubtitle: ""
     }
@@ -270,7 +270,20 @@ const DEFAULT_PAGES = [
       title: "Support Online",
       heroTitle: "Let's Get In <span class=\"text-brand-500\">Touch.</span>",
       content: "Ready to start saving on your energy bills? Our Darwin-based solar experts are here to answer your questions and provide a free, no-obligation quote.\n\nReady to harness the power of the sun? Our team of experts is here to help you design the perfect solar ecosystem for your home.",
-      heroSubtitle: ""
+      heroSubtitle: "",
+      seo: {
+        title: "Contact Oneroof Solar | Get a Free Solar Quote in Darwin & NT.",
+        metaDescription:
+          "Speak with local NT solar experts at Oneroof Solar. Call 0483 986 444 or submit an online request for solar & battery quotes across Darwin & NT",
+        canonicalUrl: "https://oneroofsolar.com.au/contact",
+        robots: "index, follow",
+        openGraphTitle: "Contact Oneroof Solar | Get a Free Solar Quote in Darwin & NT.",
+        openGraphDescription:
+          "Speak with local NT solar experts at Oneroof Solar. Call 0483 986 444 or submit an online request for solar & battery quotes across Darwin & NT",
+        twitterTitle: "Contact Oneroof Solar | Get a Free Solar Quote in Darwin & NT.",
+        twitterDescription:
+          "Speak with local NT solar experts at Oneroof Solar. Call 0483 986 444 or submit an online request for solar & battery quotes across Darwin & NT",
+      }
     }
   }
 ];
