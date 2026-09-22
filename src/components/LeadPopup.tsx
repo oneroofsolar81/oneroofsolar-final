@@ -1,49 +1,25 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { X, Zap, ShieldCheck, Banknote } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { useLocation } from "react-router-dom";
 import { safeStorage } from "../lib/storage";
+
+const LEAD_POPUP_SEEN_KEY = "hasSeenLeadPopup";
 
 export function LeadPopup() {
   const [isOpen, setIsOpen] = useState(false);
-  const { pathname } = useLocation();
-  const exitIntentFiredRef = useRef(false);
-  const isOpenRef = useRef(isOpen);
-  
-  isOpenRef.current = isOpen;
 
   useEffect(() => {
-    // Reset exit intent for each new page visit
-    exitIntentFiredRef.current = false;
-    
-    const isHomePage = pathname === "/";
-    let timer: NodeJS.Timeout | null = null;
+    // Show once site-wide after 20s — no exit intent, not per page
+    if (safeStorage.getLocal(LEAD_POPUP_SEEN_KEY)) return;
 
-    // Home page 10s timer logic
-    if (isHomePage && !safeStorage.getSession("hasSeenLeadPopup10s")) {
-      timer = setTimeout(() => {
-        if (!safeStorage.getSession("hasSeenLeadPopup10s")) {
-          setIsOpen(true);
-          safeStorage.setSession("hasSeenLeadPopup10s", "true");
-        }
-      }, 10000);
-    }
+    const timer = setTimeout(() => {
+      if (safeStorage.getLocal(LEAD_POPUP_SEEN_KEY)) return;
+      setIsOpen(true);
+      safeStorage.setLocal(LEAD_POPUP_SEEN_KEY, "true");
+    }, 20000);
 
-    // Exit intent logic (for all pages)
-    const handleMouseLeave = (e: MouseEvent) => {
-      if (e.clientY <= 0 && !exitIntentFiredRef.current && !isOpenRef.current) {
-        setIsOpen(true);
-        exitIntentFiredRef.current = true;
-      }
-    };
-
-    document.addEventListener("mouseleave", handleMouseLeave);
-
-    return () => {
-      if (timer) clearTimeout(timer);
-      document.removeEventListener("mouseleave", handleMouseLeave);
-    };
-  }, [pathname]);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     if (isOpen) {
