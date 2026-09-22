@@ -4,13 +4,14 @@ import { Button } from "@/src/components/ui/Button";
 import { PartnersMarquee } from "@/src/components/PartnersMarquee";
 import { PackagesSection } from "@/src/components/PackagesSection";
 import { SEO } from "@/src/components/SEO";
+import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { Link } from "react-router-dom";
 import { QuoteForm } from "@/src/components/QuoteForm";
 import { 
   ArrowRight, CheckCircle2, Zap, Battery, HomeIcon, Building2, 
   CircleDollarSign, Lightbulb, Grid, Activity, Wrench, 
   BatteryMedium, Layers, MapPin, ShieldCheck, Sun, Award, 
-  HeadphonesIcon, Star, MessageSquare, ChevronRight, Phone 
+  HeadphonesIcon, MessageSquare, ChevronRight, Phone 
 } from "lucide-react";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
@@ -1350,98 +1351,8 @@ export function Home() {
         </div>
       </section>
 
-      {/* CUSTOMER REVIEWS GRID */}
-      <section className="py-24 bg-slate-50 border-y border-slate-100 relative overflow-hidden">
-        <div className="absolute inset-0 bg-dot-slate-200 opacity-50 pointer-events-none" />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <FadeIn>
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-1 bg-brand-500/10 border border-brand-500/20 px-3 py-1 rounded-full text-[0.875rem] font-normal leading-[1.5] text-brand-600 mb-4 shadow-sm">
-                <Star className="w-3.5 h-3.5 fill-brand-500 text-brand-500" />
-                <span>Verified 5-Star Reviews</span>
-              </div>
-              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">What Our Clients Say</h2>
-              <p className="text-[1rem] font-normal leading-[1.6] text-slate-600 max-w-2xl mx-auto">
-                Real feedback from NT customers across Darwin, Palmerston, Alice Springs, and surrounding NT communities.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  name: "Mark T.",
-                  location: "Palmerston, NT",
-                  project: "6.6kW Residential Solar",
-                  text: "We got three quotes before going with Oneroof Solar. They were the only company that came out, looked at the roof properly, and explained why our Palmerston home needed a different system size. Done in a day, working perfectly since."
-                },
-                {
-                  name: "Sarah K.",
-                  location: "Nightcliff, Darwin",
-                  project: "Solar + Battery Package",
-                  text: "I specifically asked about wet season performance before signing. They gave me realistic savings figures rather than best-case numbers. The battery has already paid off during two wet season outages."
-                },
-                {
-                  name: "David L.",
-                  location: "Bakewell, Palmerston",
-                  project: "Battery Storage",
-                  text: "We were looking for reliable battery storage for our Palmerston home. Oneroof handled the entire installation and system setup smoothly. The battery has been flawless through storm season."
-                },
-                {
-                  name: "Jane R.",
-                  location: "Alice Springs, NT",
-                  project: "10kW Residential Solar",
-                  text: "Based in Alice Springs so we don't get many solar companies willing to come out. Oneroof were straightforward about travel costs, quoted fairly, and did the job properly first time. Monitoring shows above projected performance."
-                },
-                {
-                  name: "Rachel M.",
-                  location: "Casuarina, Darwin",
-                  project: "Battery Retrofit",
-                  text: "I had an existing solar system and wanted a battery added. Oneroof assessed the inverter compatibility, explained what would work, and installed without replacing the whole system. Very honest advice."
-                },
-                {
-                  name: "Tom B.",
-                  location: "Darwin City, NT",
-                  project: "Commercial Solar",
-                  text: "Used Oneroof for our commercial warehouse solar in Darwin City. The system was designed around our peak usage hours rather than just maximum panel count. The payback calculation has proven accurate six months in."
-                }
-              ].map((rev, idx) => (
-                <div 
-                  key={idx} 
-                  className="bg-white p-8 rounded-2xl border border-slate-200/60 shadow-sm flex flex-col justify-between hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
-                >
-                  <div>
-                    <div className="flex items-center gap-1 mb-4">
-                      {[1, 2, 3, 4, 5].map(star => (
-                        <Star key={star} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                      ))}
-                    </div>
-                    <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] italic">
-                      "{rev.text}"
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-3.5 mt-6 pt-5 border-t border-slate-100">
-                    <div className="w-10 h-10 bg-slate-100/80 text-slate-700 text-[0.875rem] font-normal leading-[1.5] flex items-center justify-center rounded-full border border-slate-200/50">
-                      {rev.name.substring(0, 2)}
-                    </div>
-                    <div>
-                      <h4 className="text-[1.25rem] font-semibold leading-[1.4] text-slate-800 mb-1 normal-case">{rev.name}</h4>
-                      <p className="text-[0.875rem] font-normal leading-[1.5] text-slate-400">
-                        {rev.location} • <span className="text-brand-600 font-bold">{rev.project}</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-center mt-12">
-              <Link to="/contact" className="inline-flex items-center gap-2 text-[1rem] font-medium leading-[1] text-brand-600 hover:text-brand-700">
-                See All Customer Reviews →
-              </Link>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
+      {/* Google Reviews (Elfsight — live Google reviews) */}
+      <GoogleReviews />
 
       {/* COMMON INQUIRIES (FAQ) */}
       <section className="py-24 bg-white relative overflow-hidden border-b border-slate-100">
