@@ -74,19 +74,6 @@ export function SungrowInvertersPage() {
           "item": "https://oneroofsolar.com.au/products/solar-inverters/sungrow"
         }
       ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Sungrow Solar Inverters",
-      "brand": {
-        "@type": "Brand",
-        "name": "Sungrow"
-      },
-      "description": "Compare Sungrow hybrid and on-grid inverters for Darwin homes and businesses. Get the right model selected, supplied and installed by Oneroof Solar.",
-      "category": "Solar Inverters",
-      "url": "https://oneroofsolar.com.au/products/solar-inverters/sungrow",
-      "image": "https://oneroofsolar.com.au/assets/images/inverter_hero_install_1785339518164.jpg"
     }
   ];
 
