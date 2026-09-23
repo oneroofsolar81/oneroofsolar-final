@@ -539,6 +539,7 @@ import { PackagesSection } from "@/src/components/PackagesSection";
 import { FaqSection } from "@/src/components/FaqSection";
 import { ResidentialSolarSystemPage } from "@/src/pages/ResidentialSolarSystemPage";
 import { SolarPanelRepairDarwinPage } from "@/src/pages/SolarPanelRepairDarwinPage";
+import { SolarPanelMaintenanceDarwinPage } from "@/src/pages/SolarPanelMaintenanceDarwinPage";
 import { CommercialSolarSystemPage } from "@/src/pages/CommercialSolarSystemPage";
 import { OffGridSolarSystemPage } from "@/src/pages/OffGridSolarSystemPage";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
@@ -2202,6 +2203,21 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
       <div key={currentSlug} className="bg-white text-slate-900 font-sans">
         <SEO seo={seoData} />
         <SolarPanelRepairDarwinPage />
+      </div>
+    );
+  }
+
+  if (currentSlug === "solar-panel-maintenance-darwin") {
+    const seoData = {
+      title: "Solar Panel Cleaning and Maintenance Darwin | Oneroof Solar",
+      metaDescription: "Professional solar panel cleaning and maintenance in Darwin. Purified water cleans, system checks, post-storm clean-up. Call 0483 986 444 for a free quote.",
+      canonicalUrl: "https://oneroofsolar.com.au/services/solar-panel-maintenance-darwin",
+    };
+
+    return (
+      <div key={currentSlug} className="bg-white text-slate-900 font-sans">
+        <SEO seo={seoData} />
+        <SolarPanelMaintenanceDarwinPage />
       </div>
     );
   }
