@@ -18,8 +18,6 @@
   Redirect 301 /services/solar-panel /solar-panels-darwin/
   Redirect 301 /services/repairs-and-maintenance/ /solar-panels-darwin/
   Redirect 301 /services/repairs-and-maintenance /solar-panels-darwin/
-  Redirect 301 /services/solar-panel-maintenance-darwin/ /solar-panels-darwin/
-  Redirect 301 /services/solar-panel-maintenance-darwin /solar-panels-darwin/
   Redirect 301 /solar-inverters /products/solar-inverters
   Redirect 301 /solar-inverters/ /products/solar-inverters
 
