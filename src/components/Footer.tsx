@@ -132,7 +132,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-sm text-slate-500 text-center md:text-left">
-            © {new Date().getFullYear()} Oneroof Solar. All rights reserved. <span className="hidden md:inline mx-1">|</span> <span className="block md:inline mt-1 md:mt-0">Designed and developed by <a href="https://adsthatconverts.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition-colors hover:underline">adsthatconverts.com</a></span>
+            © {new Date().getFullYear()} Oneroof Solar. All rights reserved. <span className="hidden md:inline mx-1">|</span> <span className="block md:inline mt-1 md:mt-0">Designed and developed by <a href="https://shahzadfarooqi.com" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition-colors hover:underline">Shahzad Farooqi</a></span>
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-medium text-slate-400">
             <span className="px-3 py-1 pb-1.5 rounded-full bg-slate-800/50 border border-slate-700/50">Electrical Licence: NT12345</span>
