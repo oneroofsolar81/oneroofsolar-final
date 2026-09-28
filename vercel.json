@@ -6,7 +6,17 @@
       "permanent": true
     },
     {
+      "source": "/residential-solar-system/",
+      "destination": "/solar-systems/residential-solar-system",
+      "permanent": true
+    },
+    {
       "source": "/services/residential-solar-system",
+      "destination": "/solar-systems/residential-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/services/residential-solar-system/",
       "destination": "/solar-systems/residential-solar-system",
       "permanent": true
     },
@@ -26,7 +36,17 @@
       "permanent": true
     },
     {
+      "source": "/services/commercial-solar-system/",
+      "destination": "/solar-systems/commercial-solar-system",
+      "permanent": true
+    },
+    {
       "source": "/commercial-solar-system",
+      "destination": "/solar-systems/commercial-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-solar-system/",
       "destination": "/solar-systems/commercial-solar-system",
       "permanent": true
     },
@@ -36,7 +56,17 @@
       "permanent": true
     },
     {
+      "source": "/commercial-solar/",
+      "destination": "/solar-systems/commercial-solar-system",
+      "permanent": true
+    },
+    {
       "source": "/services/commercial-solar",
+      "destination": "/solar-systems/commercial-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/services/commercial-solar/",
       "destination": "/solar-systems/commercial-solar-system",
       "permanent": true
     },
@@ -46,7 +76,17 @@
       "permanent": true
     },
     {
+      "source": "/services/off-grid-solar-system/",
+      "destination": "/solar-systems/off-grid-solar-system",
+      "permanent": true
+    },
+    {
       "source": "/off-grid-solar-system",
+      "destination": "/solar-systems/off-grid-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/off-grid-solar-system/",
       "destination": "/solar-systems/off-grid-solar-system",
       "permanent": true
     },
@@ -56,13 +96,68 @@
       "permanent": true
     },
     {
+      "source": "/off-grid-solar/",
+      "destination": "/solar-systems/off-grid-solar-system",
+      "permanent": true
+    },
+    {
       "source": "/services/off-grid-solar",
+      "destination": "/solar-systems/off-grid-solar-system",
+      "permanent": true
+    },
+    {
+      "source": "/services/off-grid-solar/",
       "destination": "/solar-systems/off-grid-solar-system",
       "permanent": true
     },
     {
       "source": "/services/solar-panel",
       "destination": "/solar-panels-darwin",
+      "permanent": true
+    },
+    {
+      "source": "/services/solar-panel/",
+      "destination": "/solar-panels-darwin",
+      "permanent": true
+    },
+    {
+      "source": "/services/repairs-and-maintenance",
+      "destination": "/solar-panels-darwin",
+      "permanent": true
+    },
+    {
+      "source": "/services/repairs-and-maintenance/",
+      "destination": "/solar-panels-darwin",
+      "permanent": true
+    },
+    {
+      "source": "/repairs-and-maintenance",
+      "destination": "/solar-panels-darwin",
+      "permanent": true
+    },
+    {
+      "source": "/repairs-and-maintenance/",
+      "destination": "/solar-panels-darwin",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panel-installation-darwin",
+      "destination": "/services/solar-panel-installation",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panel-installation-darwin/",
+      "destination": "/services/solar-panel-installation",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panel-installation",
+      "destination": "/services/solar-panel-installation",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panel-installation/",
+      "destination": "/services/solar-panel-installation",
       "permanent": true
     },
     {
@@ -174,12 +269,178 @@
       "source": "/blog/",
       "destination": "/blogs",
       "permanent": true
+    },
+    {
+      "source": "/solar-inverters",
+      "destination": "/products/solar-inverters",
+      "permanent": true
+    },
+    {
+      "source": "/solar-inverters/",
+      "destination": "/products/solar-inverters",
+      "permanent": true
+    },
+    {
+      "source": "/products/solar-inverters/foxess",
+      "destination": "/products/solar-inverters/fox-ess",
+      "permanent": true
+    },
+    {
+      "source": "/products/solar-inverters/foxess/",
+      "destination": "/products/solar-inverters/fox-ess",
+      "permanent": true
+    },
+    {
+      "source": "/products/solar-inverters/alphaess",
+      "destination": "/products/solar-inverters/alpha-ess",
+      "permanent": true
+    },
+    {
+      "source": "/products/solar-inverters/alphaess/",
+      "destination": "/products/solar-inverters/alpha-ess",
+      "permanent": true
+    },
+    {
+      "source": "/services/solar-inverter-installation",
+      "destination": "/services/solar-inverters/installation",
+      "permanent": true
+    },
+    {
+      "source": "/services/solar-inverter-installation/",
+      "destination": "/services/solar-inverters/installation",
+      "permanent": true
+    },
+    {
+      "source": "/solar-inverter-installation",
+      "destination": "/services/solar-inverters/installation",
+      "permanent": true
+    },
+    {
+      "source": "/solar-inverter-installation/",
+      "destination": "/services/solar-inverters/installation",
+      "permanent": true
+    },
+    {
+      "source": "/category/solar-inverter-installation",
+      "destination": "/services/solar-inverters/installation",
+      "permanent": true
+    },
+    {
+      "source": "/category/solar-inverter-installation/",
+      "destination": "/services/solar-inverters/installation",
+      "permanent": true
+    },
+    {
+      "source": "/category/solar-inverter-repair",
+      "destination": "/services/solar-inverters/repair",
+      "permanent": true
+    },
+    {
+      "source": "/category/solar-inverter-repair/",
+      "destination": "/services/solar-inverters/repair",
+      "permanent": true
+    },
+    {
+      "source": "/services/solar-inverter-repair",
+      "destination": "/services/solar-inverters/repair",
+      "permanent": true
+    },
+    {
+      "source": "/services/solar-inverter-repair/",
+      "destination": "/services/solar-inverters/repair",
+      "permanent": true
+    },
+    {
+      "source": "/product/ja-solar",
+      "destination": "/product/solar-panels-brands/ja-solar-panels-nt",
+      "permanent": true
+    },
+    {
+      "source": "/product/ja-solar/",
+      "destination": "/product/solar-panels-brands/ja-solar-panels-nt",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panels-brands/ja-solar",
+      "destination": "/product/solar-panels-brands/ja-solar-panels-nt",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panels-brands/ja-solar/",
+      "destination": "/product/solar-panels-brands/ja-solar-panels-nt",
+      "permanent": true
+    },
+    {
+      "source": "/product/longi-solar",
+      "destination": "/solar-panels-brands/longi/",
+      "permanent": true
+    },
+    {
+      "source": "/product/longi-solar/",
+      "destination": "/solar-panels-brands/longi/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panels/longi",
+      "destination": "/solar-panels-brands/longi/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panels/longi/",
+      "destination": "/solar-panels-brands/longi/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panels/rec",
+      "destination": "/solar-panels-brands/rec/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panels/rec/",
+      "destination": "/solar-panels-brands/rec/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panels",
+      "destination": "/product/solar-panels-brands",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panels/",
+      "destination": "/product/solar-panels-brands",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panels/jinko",
+      "destination": "/solar-panels-brands/jinko/",
+      "permanent": true
+    },
+    {
+      "source": "/solar-panels/jinko/",
+      "destination": "/solar-panels-brands/jinko/",
+      "permanent": true
     }
   ],
   "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/robots.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
     }
   ]
 }

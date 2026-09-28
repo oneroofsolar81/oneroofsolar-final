@@ -485,7 +485,7 @@ export function RecSolarPanels() {
                   Because every NT roof is different in size, orientation, shading and access, we provide personalised quotes rather than fixed package pricing for REC systems. Contact Oneroof Solar for a free quote that reflects your actual energy bills and roof layout.
                 </p>
                 <p>
-                  For a general sense of system pricing with and without battery storage, see our <Link to="/solar-panel-installation/" className="text-brand-600 hover:underline font-bold">solar panel installation page</Link>.
+                  For a general sense of system pricing with and without battery storage, see our <Link to="/services/solar-panel-installation" className="text-brand-600 hover:underline font-bold">solar panel installation page</Link>.
                 </p>
               </div>
             </div>

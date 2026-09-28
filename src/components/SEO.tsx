@@ -64,11 +64,13 @@ export function SEO({ seo }: { seo?: SeoData }) {
     }
     if (seo.canonicalUrl) {
       updateLink('canonical', seo.canonicalUrl);
+      updateMeta('og:url', true, seo.canonicalUrl);
     }
 
     // Apply Open Graph (Facebook)
     updateMeta('og:type', true, seo.openGraphType || 'website');
     updateMeta('og:locale', true, 'en_AU');
+    updateMeta('og:site_name', true, 'Oneroof Solar');
     updateMeta('og:title', true, seo.openGraphTitle || titleVal);
     updateMeta('og:description', true, seo.openGraphDescription || descriptionVal);
     if (seo.openGraphImage) {

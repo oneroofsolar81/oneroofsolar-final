@@ -1433,7 +1433,6 @@ function EvChargerBenefits({ service }: { service: any }) {
 
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../lib/firebase";
-import { ensureDatabaseSeeded } from "../lib/autoSeed";
 import { SEO } from "../components/SEO";
 
 export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) {
@@ -1446,7 +1445,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
     async function fetchDbService() {
       if (!slug) return;
       try {
-        await ensureDatabaseSeeded();
+        // Read SEO only — do not seed Firestore on every public page view
         const docRef = doc(db, 'services', slug);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
@@ -1476,7 +1475,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
     const seoData = {
       title: "Solar Panels Darwin | Installation, Repair & Maintenance | Oneroof Solar",
       metaDescription: "Call 0483 986 444 for solar panel installation, repair, and maintenance across Darwin and the NT. Licensed & qualified. 25 years experience. Free quote.",
-      canonicalUrl: "https://oneroofsolar.com.au/solar-panels-darwin/",
+      canonicalUrl: "https://www.oneroofsolar.com.au/solar-panels-darwin/",
     };
 
     const solarPanelFaqs = [
@@ -1779,7 +1778,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     </div>
 
                     <Link
-                      to="/solar-panel-installation-darwin/"
+                      to="/services/solar-panel-installation/"
                       className="mt-auto flex items-center justify-between pt-6 border-t border-white/10 group-hover:border-white/20 transition-colors group/link"
                     >
                       <span className="text-xs font-bold text-white tracking-widest uppercase group-hover/link:text-[#8cc63f] transition-colors">
@@ -2165,7 +2164,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
     const seoData = {
       title: "Residential Solar Systems NT | Darwin, Alice Springs & Palmerston",
       metaDescription: "Get high efficiency home solar systems in Darwin and the NT. Cut your energy bills with reliable cyclone rated solar setups. Request a free quote.",
-      canonicalUrl: "https://oneroofsolar.com.au/solar-systems/residential-solar-system",
+      canonicalUrl: "https://www.oneroofsolar.com.au/solar-systems/residential-solar-system",
     };
 
     return (
@@ -2196,7 +2195,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
     const seoData = {
       title: "Solar Panel Repair Darwin | Oneroof Solar",
       metaDescription: "Professional solar panel repair in Darwin. We repair cracked panels, hot spots, storm damage, output loss and all major solar brands. Call Oneroof Solar today.",
-      canonicalUrl: "https://oneroofsolar.com.au/services/solar-panel-repair-darwin",
+      canonicalUrl: "https://www.oneroofsolar.com.au/services/solar-panel-repair-darwin",
     };
 
     return (
@@ -2211,7 +2210,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
     const seoData = {
       title: "Solar Panel Cleaning and Maintenance Darwin | Oneroof Solar",
       metaDescription: "Professional solar panel cleaning and maintenance in Darwin. Purified water cleans, system checks, post-storm clean-up. Call 0483 986 444 for a free quote.",
-      canonicalUrl: "https://oneroofsolar.com.au/services/solar-panel-maintenance-darwin",
+      canonicalUrl: "https://www.oneroofsolar.com.au/services/solar-panel-maintenance-darwin",
     };
 
     return (
@@ -2225,7 +2224,8 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
   const seoData = isSolarInstall
     ? {
         title: "Solar Panel Installation Darwin | Oneroof Solar",
-        metaDescription: `Call ${PRIMARY_PHONE} for licensed solar panel installation in Darwin, homes, businesses and remote NT properties. 25 years experience. Free quote.`
+        metaDescription: `Call ${PRIMARY_PHONE} for licensed solar panel installation in Darwin, homes, businesses and remote NT properties. 25 years experience. Free quote.`,
+        canonicalUrl: "https://www.oneroofsolar.com.au/services/solar-panel-installation",
       }
     : (dbSeo || { title: service.title, metaDescription: service.description });
 
