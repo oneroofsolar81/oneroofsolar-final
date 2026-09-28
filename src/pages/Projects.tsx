@@ -221,7 +221,11 @@ export default function Projects() {
 
   return (
     <div className="bg-slate-50 min-h-screen">
-      <SEO seo={pageData?.seo} />
+      <SEO seo={pageData?.seo || {
+        title: "Solar Projects Darwin & NT | Oneroof Solar Installations",
+        metaDescription: "See completed solar panel and battery projects across Darwin, Palmerston, Alice Springs and the Northern Territory by Oneroof Solar.",
+        canonicalUrl: "https://www.oneroofsolar.com.au/projects",
+      }} />
       <div className="bg-[#0A1118] pt-16 lg:pt-24 pb-32 relative overflow-hidden border-b border-slate-800">
         {/* Background elements */}
         <div className="absolute inset-0 bg-grid-slate-100/[0.03] bg-[size:32px_32px]"></div>

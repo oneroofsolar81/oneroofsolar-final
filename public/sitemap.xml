@@ -1,129 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage -->
-  <url>
-    <loc>https://www.oneroofsolar.com.au/</loc>
-  </url>
+  <url><loc>https://www.oneroofsolar.com.au/</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/about</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/contact</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/projects</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/blogs</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/terms</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/privacy</loc></url>
 
-  <!-- Services -->
-  <url>
-    <loc>https://www.oneroofsolar.com.au/services/solar-inverters</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/services/solar-inverters/installation</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/services/solar-inverters/repair</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/solar-panels-darwin/</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/services/solar-panel-installation</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/services/solar-panel-repair-darwin</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/services/solar-panel-maintenance-darwin</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/services/solar-battery-installation</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/services/ev-chargers/installation</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/services/ev-chargers/repair</loc>
-  </url>
+  <url><loc>https://www.oneroofsolar.com.au/solar-panels-darwin</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/services/solar-panel-installation</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/services/solar-panel-repair-darwin</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/services/solar-panel-maintenance-darwin</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/services/solar-battery-installation</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/services/solar-inverters</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/services/solar-inverters/installation</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/services/solar-inverters/repair</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/services/ev-chargers/installation</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/services/ev-chargers/repair</loc></url>
 
-  <!-- Solar Systems -->
-  <url>
-    <loc>https://www.oneroofsolar.com.au/solar-systems/residential-solar-system</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/solar-systems/commercial-solar-system</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/solar-systems/off-grid-solar-system</loc>
-  </url>
+  <url><loc>https://www.oneroofsolar.com.au/solar-systems/residential-solar-system</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/solar-systems/commercial-solar-system</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/solar-systems/off-grid-solar-system</loc></url>
 
-  <!-- Battery Products -->
-  <url>
-    <loc>https://www.oneroofsolar.com.au/products/solar-battery-brands/</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/products/solar-battery-brands/sigenergy</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/products/solar-battery-brands/goodwe</loc>
-  </url>
+  <url><loc>https://www.oneroofsolar.com.au/products/solar-battery-brands</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/products/solar-battery-brands/sigenergy</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/products/solar-battery-brands/goodwe</loc></url>
 
-  <!-- Inverter Products -->
-  <url>
-    <loc>https://www.oneroofsolar.com.au/products/solar-inverters</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/products/solar-inverters/sungrow-inverters</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/products/solar-inverters/goodwe</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/products/solar-inverters/sigenergy</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/products/solar-inverters/fox-ess</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/products/solar-inverters/alpha-ess</loc>
-  </url>
+  <url><loc>https://www.oneroofsolar.com.au/products/solar-inverters</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/products/solar-inverters/sungrow-inverters</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/products/solar-inverters/goodwe</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/products/solar-inverters/sigenergy</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/products/solar-inverters/fox-ess</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/products/solar-inverters/alpha-ess</loc></url>
 
-  <!-- Solar Panel Products -->
-  <url>
-    <loc>https://www.oneroofsolar.com.au/product/solar-panels-brands</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/solar-panels-brands/aiko/</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/solar-panels/jinko/</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/solar-panels-brands/longi/</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/solar-panels-brands/rec/</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/product/solar-panels-brands/ja-solar-panels-nt</loc>
-  </url>
+  <url><loc>https://www.oneroofsolar.com.au/product/solar-panels-brands</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/solar-panels-brands/aiko</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/solar-panels-brands/jinko</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/solar-panels-brands/longi</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/solar-panels-brands/rec</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/product/solar-panels-brands/ja-solar-panels-nt</loc></url>
 
-  <!-- Locations -->
-  <url>
-    <loc>https://www.oneroofsolar.com.au/solar-alice-springs/</loc>
-  </url>
+  <url><loc>https://www.oneroofsolar.com.au/solar-alice-springs</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/locations/darwin-city</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/locations/northern-darwin</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/locations/palmerston</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/locations/darwin-rural</loc></url>
 
-  <!-- Projects -->
-  <url>
-    <loc>https://www.oneroofsolar.com.au/projects</loc>
-  </url>
-
-  <!-- Blogs -->
-  <url>
-    <loc>https://www.oneroofsolar.com.au/blogs</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/do-solar-panels-work-during-darwins-wet-season/</loc>
-  </url>
-  <url>
-    <loc>https://www.oneroofsolar.com.au/blog/solar-panel-cyclone-protection/</loc>
-  </url>
-
-  <!-- Contact -->
-  <url>
-    <loc>https://www.oneroofsolar.com.au/contact</loc>
-  </url>
+  <url><loc>https://www.oneroofsolar.com.au/do-solar-panels-work-during-darwins-wet-season</loc></url>
+  <url><loc>https://www.oneroofsolar.com.au/blog/solar-panel-cyclone-protection</loc></url>
 
 </urlset>
