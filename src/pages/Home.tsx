@@ -11,7 +11,7 @@ import {
   ArrowRight, CheckCircle2, Zap, Battery, HomeIcon, Building2, 
   CircleDollarSign, Lightbulb, Grid, Activity, Wrench, 
   BatteryMedium, Layers, MapPin, ShieldCheck, Sun, Award, 
-  HeadphonesIcon, MessageSquare, ChevronRight, Phone 
+  HeadphonesIcon, MessageSquare, ChevronRight, Phone, Plug, TreePine
 } from "lucide-react";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
@@ -550,106 +550,247 @@ export function Home() {
       {/* PARTNERS LOGO STRIP */}
       <PartnersMarquee />
 
-      {/* COMPLETE ENERGY SOLUTIONS SECTION */}
+      {/* SOLUTIONS + SERVICES SECTION */}
       <section className="py-24 bg-slate-50 relative overflow-hidden border-b border-slate-100">
         <div className="absolute inset-0 bg-dot-slate-200 opacity-40 pointer-events-none" />
         <div className="absolute -left-40 top-40 w-96 h-96 bg-brand-200/20 rounded-full blur-[120px] pointer-events-none" />
 
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-16">
-            <div className="lg:col-span-6">
-              <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">Complete Energy Solutions</span>
-              <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6 normal-case">
-                Solar Panels Built for Darwin's Climate and Conditions
-              </h2>
-            </div>
-            <div className="lg:col-span-6 lg:pt-8">
-              <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-4">
-                Darwin gets more sunshine per year than almost any other Australian city. That means solar panels here work harder, produce more, and pay back faster than anywhere else in the country. Oneroof Solar was founded in Darwin to install solar systems specifically suited to the Top End - high UV, heavy wet seasons, cyclone-rated equipment, and territory humidity.
-              </p>
-              <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-6">
-                We handle everything from your initial consultation and system design through to installation, grid connection, and ongoing support. Our team are NT-based, locally licensed, and familiar with Darwin's unique grid setup, power bills, and weather patterns.
-              </p>
-              <Link to="/contact" className="inline-flex items-center gap-2 text-brand-600 text-[1rem] font-medium leading-[1] hover:text-brand-700 uppercase tracking-wider transition-colors">
-                LEARN MORE <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
+        <div className="mx-auto max-w-[1100px] px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Part 1: Property-type hub */}
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">
+              Solutions by Property Type
+            </span>
+            <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-4 normal-case">
+              Tailored Solar Solutions for Every Property
+            </h2>
+            <p className="text-[#5B6478] text-[1rem] font-normal leading-[1.6]">
+              Whether it's a family home, a working business or a remote site with no grid, we design the system around how you actually use power.
+            </p>
           </div>
 
-          {/* Bento Grid with 5 Cards */}
-          <div className="space-y-6">
-            {/* Row 1 - Two Prominent Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Card 1: Battery Storage Systems */}
-              <div className="rounded-[2.5rem] bg-slate-900 p-8 sm:p-10 shadow-xl border border-slate-800 hover:border-brand-500/30 transition-all duration-300 relative overflow-hidden flex flex-col group h-full">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-brand-500/10 rounded-full blur-[60px] pointer-events-none" />
-                <div className="flex justify-between items-start mb-8 relative z-10">
-                  <div className="inline-flex rounded-2xl bg-white/10 backdrop-blur-md p-4 text-white border border-white/10">
-                    <Battery className="h-7 w-7" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20">
+            {[
+              {
+                label: "Homes",
+                title: "Residential Solar Solutions",
+                icon: HomeIcon,
+                body: (
+                  <>
+                    Complete home energy setups, from the first site assessment to seamless{" "}
+                    <Link to="/services/solar-panel-installation" className="text-brand-600 font-bold underline hover:text-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">
+                      solar panel installation
+                    </Link>{" "}
+                    and power storage. Protect your household against rising grid rates.
+                  </>
+                ),
+              },
+              {
+                label: "Business",
+                title: "Commercial Solar Systems",
+                icon: Building2,
+                body: (
+                  <>
+                    Cut operating costs with scalable commercial setups. We handle high-capacity installs and routine{" "}
+                    <Link to="/services/solar-panel-maintenance-darwin" className="text-brand-600 font-bold underline hover:text-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">
+                      solar panel maintenance
+                    </Link>{" "}
+                    for Darwin businesses and industrial sites.
+                  </>
+                ),
+              },
+              {
+                label: "Remote Sites",
+                title: "Off-Grid Solar Solutions",
+                icon: TreePine,
+                body: (
+                  <>
+                    Reliable standalone power for rural, remote and off-grid properties across the NT, with high-capacity{" "}
+                    <Link to="/services/solar-battery-installation" className="text-brand-600 font-bold underline hover:text-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">
+                      battery storage installation
+                    </Link>{" "}
+                    and generator backup options.
+                  </>
+                ),
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="rounded-[26px] bg-white p-[30px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:border-brand-500/20 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
+              >
+                <div className="mb-5 inline-flex h-[50px] w-[50px] items-center justify-center rounded-[14px] bg-[#F0F7E2] text-[#4F9A12]">
+                  <card.icon className="h-6 w-6" />
+                </div>
+                <span className="text-[0.75rem] font-semibold tracking-widest uppercase text-brand-600 mb-2">
+                  {card.label}
+                </span>
+                <h3 className="text-[1.3125rem] font-bold leading-[1.3] text-slate-900 mb-3 normal-case">
+                  {card.title}
+                </h3>
+                <p className="text-[#5B6478] text-[0.9375rem] font-normal leading-[1.6]">
+                  {card.body}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Part 2: Services grid */}
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <span className="text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3 block">
+              Our Services
+            </span>
+            <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-4 normal-case">
+              Our Solar System Services
+            </h2>
+            <p className="text-[#5B6478] text-[1rem] font-normal leading-[1.6]">
+              From installation to repairs and upkeep, one Darwin-based team looks after your panels, inverter, battery and EV charger, built for Northern Territory heat, storms and wet-season conditions.
+            </p>
+          </div>
+
+          <div className="rounded-[26px] bg-white border border-slate-100 shadow-sm px-6 py-5 sm:px-8 sm:py-6 mb-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <p className="text-[1.125rem] font-bold text-slate-900 mb-1">Not sure which service you need?</p>
+              <p className="text-[#5B6478] text-[0.9375rem] leading-[1.6]">
+                Tell us what's happening and a Darwin solar expert will call you back within one business day.
+              </p>
+            </div>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center gap-2 rounded-full h-12 px-7 text-[0.9375rem] font-bold bg-[#7CC32B] hover:bg-[#6bb024] text-slate-900 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 shrink-0"
+            >
+              Get a Free Quote <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-5">
+            {[
+              {
+                num: "01",
+                title: "Solar Panel Installation",
+                desc: "Tier 1 solar panels designed for Darwin heat and cyclone conditions, installed by accredited experts for homes, businesses and off-grid roofs.",
+                href: "/services/solar-panel-installation",
+                anchor: "Explore solar panel installation",
+                icon: Sun,
+                featured: true,
+                badge: "$0 Deposit Plans",
+              },
+              {
+                num: "02",
+                title: "Solar Panel Repair",
+                desc: "Fast diagnosis and repair of storm damage, hot spots, cracked panels and unexplained drops in energy production.",
+                href: "/services/solar-panel-repair-darwin",
+                anchor: "Explore solar panel repair",
+                icon: Wrench,
+                featured: true,
+              },
+              {
+                num: "03",
+                title: "Solar Panel Maintenance",
+                desc: "Regular cleaning and system checks to stop dirt and wear cutting your output by up to 30%.",
+                href: "/services/solar-panel-maintenance-darwin",
+                anchor: "Explore solar panel maintenance",
+                icon: ShieldCheck,
+              },
+              {
+                num: "04",
+                title: "Solar Inverter Installation",
+                desc: "Fronius and premium hybrid inverters with real-time monitoring apps, sized correctly for your system.",
+                href: "/services/solar-inverters/installation",
+                anchor: "Explore solar inverter installation",
+                icon: Zap,
+              },
+              {
+                num: "05",
+                title: "Solar Inverter Repair",
+                desc: "Error codes, red fault lights or no power? We diagnose quickly and replace failed parts to cut your downtime.",
+                href: "/services/solar-inverters/repair",
+                anchor: "Explore solar inverter repair",
+                icon: Activity,
+              },
+              {
+                num: "06",
+                title: "Battery Storage Installation",
+                desc: "Store daytime solar for night use and stay powered through wet-season grid outages.",
+                href: "/services/solar-battery-installation",
+                anchor: "Explore battery storage installation",
+                icon: Battery,
+              },
+              {
+                num: "07",
+                title: "EV Charger Installation",
+                desc: "Home and commercial EV charger installs. Pair with solar and charge your car on your own sunshine.",
+                href: "/services/ev-chargers/installation",
+                anchor: "Explore EV charger installation",
+                icon: Plug,
+              },
+              {
+                num: "08",
+                title: "EV Charger Repair",
+                desc: "Charger offline or not charging? Quick fault-finding and repairs for home and commercial EV chargers.",
+                href: "/services/ev-chargers/repair",
+                anchor: "Explore EV charger repair",
+                icon: Wrench,
+              },
+            ].map((service) => (
+              <Link
+                key={service.num}
+                to={service.href}
+                className={`group rounded-[26px] p-[30px] border transition-all duration-300 flex flex-col h-full hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 ${
+                  service.featured
+                    ? "lg:col-span-3 bg-[#0B1220] border-slate-800 hover:border-brand-500/40 hover:shadow-xl shadow-xl"
+                    : "lg:col-span-2 bg-white border-slate-100 hover:border-brand-500/20 hover:shadow-xl shadow-[0_8px_30px_rgb(0,0,0,0.03)]"
+                }`}
+              >
+                <div className="flex justify-between items-start mb-5">
+                  <div
+                    className={`inline-flex h-[50px] w-[50px] items-center justify-center rounded-[14px] ${
+                      service.featured
+                        ? "bg-white/10 text-white border border-white/10"
+                        : "bg-[#F0F7E2] text-[#4F9A12]"
+                    }`}
+                  >
+                    <service.icon className="h-6 w-6" />
                   </div>
-                  <span className="px-4 py-1.5 rounded-full bg-brand-500/20 text-brand-400 text-[0.875rem] font-normal leading-[1.5] uppercase tracking-wider border border-brand-500/30 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse"></span>
-                    BACKUP POWER
-                  </span>
+                  {service.badge ? (
+                    <span className="px-3 py-1.5 rounded-full bg-brand-500/20 text-brand-400 text-[0.75rem] font-semibold uppercase tracking-wider border border-brand-500/30">
+                      {service.badge}
+                    </span>
+                  ) : (
+                    <span
+                      className={`text-[0.75rem] font-semibold tracking-widest ${
+                        service.featured ? "text-slate-500" : "text-slate-300"
+                      }`}
+                    >
+                      {service.num}
+                    </span>
+                  )}
                 </div>
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-white mb-4 relative z-10 group-hover:text-brand-400 transition-colors normal-case">Battery Storage Systems</h3>
-                <p className="text-slate-400 text-[1rem] font-normal leading-[1.6] mb-6 relative z-10 flex-grow">
-                  Store your solar energy for nighttime use and protect against wet season grid outages. Maximise daytime solar self-consumption with premium battery storage.
+                <h3
+                  className={`mb-3 normal-case transition-colors ${
+                    service.featured
+                      ? "text-[1.5rem] font-bold leading-[1.3] text-white group-hover:text-brand-400"
+                      : "text-[1.3125rem] font-bold leading-[1.3] text-slate-900 group-hover:text-brand-600"
+                  }`}
+                >
+                  {service.title}
+                </h3>
+                <p
+                  className={`text-[0.9375rem] font-normal leading-[1.6] mb-6 flex-grow ${
+                    service.featured ? "text-slate-400" : "text-[#5B6478]"
+                  }`}
+                >
+                  {service.desc}
                 </p>
-              </div>
-
-              {/* Card 2: Residential & Commercial Solar */}
-              <div className="rounded-[2.5rem] bg-white p-8 sm:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 relative overflow-hidden flex flex-col group h-full">
-                <div className="absolute -right-12 -bottom-12 text-brand-500/5 group-hover:text-brand-500/10 transition-colors duration-500 pointer-events-none transform group-hover:rotate-6">
-                  <Grid className="w-48 h-48" />
-                </div>
-                <div className="mb-8 inline-flex rounded-2xl bg-brand-50 p-4 text-brand-600 border border-brand-100 w-max">
-                  <Grid className="h-7 w-7" />
-                </div>
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-4 group-hover:text-brand-600 transition-colors normal-case">Residential & Commercial Solar</h3>
-                <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] mb-6 flex-grow">
-                  Custom-designed systems for Darwin homes and NT businesses. Sized to your actual power bills, not a generic quote.
-                </p>
-              </div>
-            </div>
-
-            {/* Row 2 - Three Standard Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Card 3: Smart Inverters */}
-              <div className="rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.03)] border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 flex flex-col group h-full">
-                <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
-                  <Zap className="h-6 w-6" />
-                </div>
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors normal-case">Smart Inverters</h3>
-                <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] flex-grow">
-                  Fronius and premium hybrid inverters with real-time monitoring apps for your Darwin system.
-                </p>
-              </div>
-
-              {/* Card 4: Repairs & Maintenance */}
-              <div className="rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.03)] border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 flex flex-col group h-full">
-                <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
-                  <Wrench className="h-6 w-6" />
-                </div>
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors normal-case">Repairs & Maintenance</h3>
-                <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] flex-grow">
-                  Keep your system running at peak performance. Fast response from our Darwin-based team.
-                </p>
-              </div>
-
-              {/* Card 5: EV Charger Installation Darwin */}
-              <div className="rounded-[2rem] bg-white p-8 shadow-[0_8px_30px_rgb(0,0,0,0.03)] border border-slate-100 hover:border-brand-500/20 hover:shadow-xl transition-all duration-300 flex flex-col group h-full">
-                <div className="mb-6 inline-flex rounded-xl bg-brand-50 p-3 text-brand-600 w-max border border-brand-100">
-                  <Activity className="h-6 w-6" />
-                </div>
-                <h3 className="text-[1.5rem] font-semibold leading-[1.3] text-slate-900 mb-3 group-hover:text-brand-600 transition-colors normal-case">EV Charger Installation Darwin</h3>
-                <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] flex-grow">
-                  Home and commercial EV charger installs. Pair with solar and charge your car for free.
-                </p>
-              </div>
-            </div>
+                <span
+                  className={`inline-flex items-center gap-1.5 text-[0.875rem] font-bold transition-transform group-hover:translate-x-1 ${
+                    service.featured ? "text-brand-400" : "text-brand-600"
+                  }`}
+                >
+                  {service.anchor} <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+            ))}
           </div>
-
         </div>
       </section>
 
