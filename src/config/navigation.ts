@@ -238,6 +238,18 @@ export const mainNavConfig: NavItem[] = [
         iconName: "MapPin",
       },
       {
+        label: "Berrimah",
+        href: "/locations/berrimah",
+        description: "Solar for Berrimah homes and industrial sites near Pruen Rd.",
+        iconName: "MapPin",
+      },
+      {
+        label: "Bayview",
+        href: "/locations/bayview",
+        description: "Solar for Bayview's waterfront homes and businesses.",
+        iconName: "MapPin",
+      },
+      {
         label: "Winnellie",
         href: "/locations/winnellie",
         description: "Solar install and repair for Winnellie homes and industry.",

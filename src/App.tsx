@@ -40,6 +40,8 @@ const WinnelliePage = lazy(() => import("./pages/WinnelliePage").then(m => ({ de
 const StuartParkPage = lazy(() => import("./pages/StuartParkPage").then(m => ({ default: m.StuartParkPage })));
 const FannieBayPage = lazy(() => import("./pages/FannieBayPage").then(m => ({ default: m.FannieBayPage })));
 const EastPointPage = lazy(() => import("./pages/EastPointPage").then(m => ({ default: m.EastPointPage })));
+const BerrimahPage = lazy(() => import("./pages/BerrimahPage").then(m => ({ default: m.BerrimahPage })));
+const BayviewPage = lazy(() => import("./pages/BayviewPage").then(m => ({ default: m.BayviewPage })));
 const SigenergyBatteryPage = lazy(() => import("./pages/SigenergyBatteryPage").then(m => ({ default: m.SigenergyBatteryPage })));
 const GoodWeBatteryPage = lazy(() => import("./pages/GoodWeBatteryPage").then(m => ({ default: m.GoodWeBatteryPage })));
 const SolarBatteryBrands = lazy(() => import("./pages/SolarBatteryBrands").then(m => ({ default: m.SolarBatteryBrands })));
@@ -302,6 +304,10 @@ export default function App() {
                 <Route path="/locations/fannie-bay/" element={<FannieBayPage />} />
                 <Route path="/locations/east-point" element={<EastPointPage />} />
                 <Route path="/locations/east-point/" element={<EastPointPage />} />
+                <Route path="/locations/berrimah" element={<BerrimahPage />} />
+                <Route path="/locations/berrimah/" element={<BerrimahPage />} />
+                <Route path="/locations/bayview" element={<BayviewPage />} />
+                <Route path="/locations/bayview/" element={<BayviewPage />} />
 
                 {/* Solar Battery Brand Pages */}
                 <Route path="/products/solar-battery-brands" element={<SolarBatteryBrands />} />
