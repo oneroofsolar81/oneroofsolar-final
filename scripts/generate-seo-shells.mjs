@@ -39,6 +39,7 @@ const routes = [
   { path: '/locations/darwin-rural', title: 'Solar Darwin Rural | Oneroof Solar', description: 'Solar services for Darwin rural and surrounding NT areas.' },
   { path: '/locations/stuart-park', title: 'Local Stuart Park Solar Installers & Repair Experts | OneRoof', description: "Built for Darwin's wet season & extreme heat. SAA accredited team for solar, battery & inverter services. 4.9★ rated local experts." },
   { path: '/locations/fannie-bay', title: 'Solar Panels & Installers in Fannie Bay NT | OneRoof Solar', description: 'Looking for solar in Fannie Bay? OneRoof Solar provides solar panel installation, inverter, battery and EV charger solutions for homes and businesses. Get a free quote.' },
+  { path: '/locations/east-point', title: 'Solar Installation and Repair in East Point NT | Oneroof Solar', description: "Reliable solar for East Point homes and businesses. Solar panel installation, battery storage, inverter solutions and repairs designed for Darwin's tropical coastal climate. Get a free quote." },
   { path: '/services/ev-chargers/installation', title: 'EV Charger Installation Darwin | Oneroof Solar', description: 'EV charger installation across Darwin and the Northern Territory.' },
   { path: '/services/ev-chargers/repair', title: 'EV Charger Repair Darwin | Oneroof Solar', description: 'EV charger repair and diagnostics in Darwin NT.' },
 ];

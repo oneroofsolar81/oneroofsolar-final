@@ -232,6 +232,12 @@ export const mainNavConfig: NavItem[] = [
         iconName: "MapPin",
       },
       {
+        label: "East Point",
+        href: "/locations/east-point",
+        description: "Solar for East Point's coastal homes and businesses.",
+        iconName: "MapPin",
+      },
+      {
         label: "Winnellie",
         href: "/locations/winnellie",
         description: "Solar install and repair for Winnellie homes and industry.",
