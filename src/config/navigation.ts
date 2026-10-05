@@ -220,6 +220,12 @@ export const mainNavConfig: NavItem[] = [
         iconName: "MapPin",
       },
       {
+        label: "Winnellie",
+        href: "/locations/winnellie",
+        description: "Solar install and repair for Winnellie homes and industry.",
+        iconName: "MapPin",
+      },
+      {
         label: "Northern Darwin",
         href: "/locations/northern-darwin",
         description: "Solar across Darwin's northern suburbs.",
