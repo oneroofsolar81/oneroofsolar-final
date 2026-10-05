@@ -38,6 +38,7 @@ const Palmerston = lazy(() => import("./pages/Palmerston").then(m => ({ default:
 const DarwinRural = lazy(() => import("./pages/DarwinRural").then(m => ({ default: m.DarwinRural })));
 const WinnelliePage = lazy(() => import("./pages/WinnelliePage").then(m => ({ default: m.WinnelliePage })));
 const StuartParkPage = lazy(() => import("./pages/StuartParkPage").then(m => ({ default: m.StuartParkPage })));
+const FannieBayPage = lazy(() => import("./pages/FannieBayPage").then(m => ({ default: m.FannieBayPage })));
 const SigenergyBatteryPage = lazy(() => import("./pages/SigenergyBatteryPage").then(m => ({ default: m.SigenergyBatteryPage })));
 const GoodWeBatteryPage = lazy(() => import("./pages/GoodWeBatteryPage").then(m => ({ default: m.GoodWeBatteryPage })));
 const SolarBatteryBrands = lazy(() => import("./pages/SolarBatteryBrands").then(m => ({ default: m.SolarBatteryBrands })));
@@ -296,6 +297,8 @@ export default function App() {
                 <Route path="/locations/winnellie/" element={<WinnelliePage />} />
                 <Route path="/locations/stuart-park" element={<StuartParkPage />} />
                 <Route path="/locations/stuart-park/" element={<StuartParkPage />} />
+                <Route path="/locations/fannie-bay" element={<FannieBayPage />} />
+                <Route path="/locations/fannie-bay/" element={<FannieBayPage />} />
 
                 {/* Solar Battery Brand Pages */}
                 <Route path="/products/solar-battery-brands" element={<SolarBatteryBrands />} />

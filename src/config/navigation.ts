@@ -226,6 +226,12 @@ export const mainNavConfig: NavItem[] = [
         iconName: "MapPin",
       },
       {
+        label: "Fannie Bay",
+        href: "/locations/fannie-bay",
+        description: "Solar for Fannie Bay homes and businesses near East Point.",
+        iconName: "MapPin",
+      },
+      {
         label: "Winnellie",
         href: "/locations/winnellie",
         description: "Solar install and repair for Winnellie homes and industry.",
