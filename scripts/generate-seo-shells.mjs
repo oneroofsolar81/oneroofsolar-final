@@ -37,6 +37,7 @@ const routes = [
   { path: '/locations/northern-darwin', title: 'Solar Northern Darwin | Oneroof Solar', description: 'Solar services across Nightcliff, Rapid Creek and northern Darwin suburbs.' },
   { path: '/locations/palmerston', title: 'Solar Palmerston | Oneroof Solar', description: 'Solar installation and service across Palmerston NT.' },
   { path: '/locations/darwin-rural', title: 'Solar Darwin Rural | Oneroof Solar', description: 'Solar services for Darwin rural and surrounding NT areas.' },
+  { path: '/locations/stuart-park', title: 'Local Stuart Park Solar Installers & Repair Experts | OneRoof', description: "Built for Darwin's wet season & extreme heat. SAA accredited team for solar, battery & inverter services. 4.9★ rated local experts." },
   { path: '/services/ev-chargers/installation', title: 'EV Charger Installation Darwin | Oneroof Solar', description: 'EV charger installation across Darwin and the Northern Territory.' },
   { path: '/services/ev-chargers/repair', title: 'EV Charger Repair Darwin | Oneroof Solar', description: 'EV charger repair and diagnostics in Darwin NT.' },
 ];
