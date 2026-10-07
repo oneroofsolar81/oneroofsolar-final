@@ -138,7 +138,7 @@ export function FoxEssBatteryPage() {
       name: "Fox ESS Battery Systems",
       brand: { "@type": "Brand", name: "Fox ESS" },
       manufacturer: { "@type": "Organization", name: "Fox ESS" },
-      image: "/assets/images/hosted/products/foxess-inverter.webp",
+      image: "/assets/images/hosted/products/fox-ess-battery-hero.webp",
       category: "Home Battery Storage",
       description:
         "SAA Approved Fox ESS modular LFP battery systems (EQ4800, EQ5500, EP11, EP12 Plus) with IP65 weatherproofing, blackout backup and 100% Depth of Discharge. Supplied and installed across Darwin, Palmerston and the wider Northern Territory.",
@@ -272,12 +272,12 @@ export function FoxEssBatteryPage() {
             </FadeIn>
 
             <FadeIn isHero delay={0.2} className="relative">
-              <div className="relative group rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl bg-slate-900/40 aspect-[4/3] flex items-center justify-center p-6">
+              <div className="relative group rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl bg-slate-900/40 aspect-[4/3]">
                 <img
                   fetchPriority="high"
-                  src="/assets/images/hosted/products/foxess-inverter.webp"
-                  alt="Fox ESS energy storage hardware supplied and installed in Darwin, NT"
-                  className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.02] drop-shadow-2xl"
+                  src="/assets/images/hosted/products/fox-ess-battery-hero.webp"
+                  alt="Modular Fox ESS LFP battery system installed on a Darwin home"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
                 />
                 <div className="absolute top-6 right-6 bg-[#0A1118]/95 backdrop-blur-md border border-[#8cc63f]/30 px-5 py-3 rounded-2xl z-20 shadow-lg text-center">
                   <div className="text-2xl font-black text-[#8cc63f] leading-none">LFP</div>
@@ -293,23 +293,35 @@ export function FoxEssBatteryPage() {
 
       {/* OVERVIEW */}
       <section className="py-20 lg:py-24 bg-white relative border-b border-slate-200">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
-              What Is a Fox ESS Battery?
-            </h2>
-            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-5">
-              <p>
-                A Fox ESS Battery holds onto the extra power your{" "}
-                <Link to="/solar-panels-darwin" className={linkClass}>solar panels</Link> generate during the day. Instead of sending that power back to the grid for pennies, you save it to run your home at night, keep your AC on, or power through sudden tropical storm blackouts.
-              </p>
-              <p>
-                Fox ESS makes high-voltage, modular Lithium Iron Phosphate (LFP) batteries. That means you can start with a small setup today and add extra storage modules whenever your family needs more power. One Roof Solar supplies, installs, and services Fox ESS systems right here in Darwin,{" "}
-                <Link to="/locations/palmerston" className={linkClass}>Palmerston</Link>, Howard Springs, and across the Northern Territory. See our full{" "}
-                <Link to="/services/solar-battery-installation" className={linkClass}>solar battery installation</Link> service.
-              </p>
-            </div>
-          </FadeIn>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            <FadeIn className="lg:col-span-6 order-2 lg:order-1">
+              <div className="relative rounded-[2rem] overflow-hidden shadow-[0_24px_60px_-20px_rgba(15,23,42,0.35)] aspect-[4/3] bg-slate-100">
+                <img
+                  src="/assets/images/hosted/products/fox-ess-battery-detail.webp"
+                  alt="Fox ESS LFP home battery mounted on the wall of a Darwin property"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.12} className="lg:col-span-6 order-1 lg:order-2">
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
+                What Is a Fox ESS Battery?
+              </h2>
+              <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-5">
+                <p>
+                  A Fox ESS Battery holds onto the extra power your{" "}
+                  <Link to="/solar-panels-darwin" className={linkClass}>solar panels</Link> generate during the day. Instead of sending that power back to the grid for pennies, you save it to run your home at night, keep your AC on, or power through sudden tropical storm blackouts.
+                </p>
+                <p>
+                  Fox ESS makes high-voltage, modular Lithium Iron Phosphate (LFP) batteries. That means you can start with a small setup today and add extra storage modules whenever your family needs more power. One Roof Solar supplies, installs, and services Fox ESS systems right here in Darwin,{" "}
+                  <Link to="/locations/palmerston" className={linkClass}>Palmerston</Link>, Howard Springs, and across the Northern Territory. See our full{" "}
+                  <Link to="/services/solar-battery-installation" className={linkClass}>solar battery installation</Link> service.
+                </p>
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 

@@ -46,7 +46,7 @@ const brands = [
     title: "GoodWe",
     description:
       "One of the best value batteries on the market, with dependable hardware and straightforward software. A smart pick if you want strong performance without paying premium prices.",
-    image: "/assets/images/hosted/products/alpha-ess.webp",
+    image: "/assets/images/hosted/goodwe-battery-hero.webp",
     specLabel: "Download GoodWe Spec Sheet (PDF)",
     specHref: "/products/solar-battery-brands/goodwe",
   },
@@ -54,7 +54,7 @@ const brands = [
     title: "Fox ESS",
     description:
       "The budget friendly option in our range. It won't have every premium feature, but for homeowners who want solid battery storage without the higher price tag, it does the job well.",
-    image: "/assets/images/hosted/products/alpha-ess.webp",
+    image: "/assets/images/hosted/products/fox-ess-battery-hero.webp",
     specLabel: "Download Fox ESS Spec Sheet (PDF)",
     specHref: "/products/solar-battery-brands/foxess",
   },
