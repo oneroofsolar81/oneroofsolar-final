@@ -2441,6 +2441,86 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
         </script>
       )}
 
+      {isSolarInstall && (
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://www.oneroofsolar.com.au/assets/images/home/home-about-stuart-park.webp",
+                "name": "Solar panel installation on a Stuart Park rooftop in Darwin",
+                "description": "Oneroof Solar team completing a solar panel installation on a residential rooftop in Stuart Park, Darwin, Northern Territory.",
+                "caption": "Solar panel installation in Darwin, NT",
+                "contentLocation": {
+                  "@type": "Place",
+                  "name": "Darwin, Northern Territory, Australia",
+                  "geo": {"@type": "GeoCoordinates", "latitude": -12.4634, "longitude": 130.8456}
+                },
+                "creator": {"@type": "Organization", "name": "OneRoof Solar", "url": "https://www.oneroofsolar.com.au"},
+                "copyrightHolder": {"@type": "Organization", "name": "OneRoof Solar", "url": "https://www.oneroofsolar.com.au"}
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://www.oneroofsolar.com.au/assets/images/home/home-project-bayview.webp",
+                "name": "Solar power system on a Darwin rooftop during dry season",
+                "description": "High-output solar panel system installed on a rooftop in Darwin, generating peak energy during the Northern Territory dry season.",
+                "caption": "Darwin solar panels generating power in the dry season",
+                "contentLocation": {
+                  "@type": "Place",
+                  "name": "Darwin, Northern Territory, Australia",
+                  "geo": {"@type": "GeoCoordinates", "latitude": -12.4634, "longitude": 130.8456}
+                },
+                "creator": {"@type": "Organization", "name": "OneRoof Solar", "url": "https://www.oneroofsolar.com.au"},
+                "copyrightHolder": {"@type": "Organization", "name": "OneRoof Solar", "url": "https://www.oneroofsolar.com.au"}
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://www.oneroofsolar.com.au/assets/images/home/home-hero-bayview.webp",
+                "name": "Residential solar panels installed on a Darwin home",
+                "description": "Rooftop solar panel system installed by Oneroof Solar on a residential property in Darwin, Northern Territory.",
+                "caption": "Residential solar installation in Darwin, NT",
+                "contentLocation": {
+                  "@type": "Place",
+                  "name": "Darwin, Northern Territory, Australia",
+                  "geo": {"@type": "GeoCoordinates", "latitude": -12.4634, "longitude": 130.8456}
+                },
+                "creator": {"@type": "Organization", "name": "OneRoof Solar", "url": "https://www.oneroofsolar.com.au"},
+                "copyrightHolder": {"@type": "Organization", "name": "OneRoof Solar", "url": "https://www.oneroofsolar.com.au"}
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://www.oneroofsolar.com.au/assets/images/home/home-premium-aerial.webp",
+                "name": "Aerial view of solar array on a property in the Northern Territory",
+                "description": "Aerial photograph showing a large solar panel array installed on a property in the Northern Territory by Oneroof Solar.",
+                "caption": "Solar system aerial view, Northern Territory",
+                "contentLocation": {
+                  "@type": "Place",
+                  "name": "Darwin, Northern Territory, Australia",
+                  "geo": {"@type": "GeoCoordinates", "latitude": -12.4634, "longitude": 130.8456}
+                },
+                "creator": {"@type": "Organization", "name": "OneRoof Solar", "url": "https://www.oneroofsolar.com.au"},
+                "copyrightHolder": {"@type": "Organization", "name": "OneRoof Solar", "url": "https://www.oneroofsolar.com.au"}
+              },
+              {
+                "@type": "ImageObject",
+                "contentUrl": "https://www.oneroofsolar.com.au/assets/images/home/home-packages-house.webp",
+                "name": "Solar and battery package house illustration for Darwin homes",
+                "description": "Illustration of a home with solar panels and battery storage representing Oneroof Solar's residential packages available in Darwin, NT.",
+                "caption": "Solar and battery package for Darwin homes",
+                "contentLocation": {
+                  "@type": "Place",
+                  "name": "Darwin, Northern Territory, Australia",
+                  "geo": {"@type": "GeoCoordinates", "latitude": -12.4634, "longitude": 130.8456}
+                },
+                "creator": {"@type": "Organization", "name": "OneRoof Solar", "url": "https://www.oneroofsolar.com.au"},
+                "copyrightHolder": {"@type": "Organization", "name": "OneRoof Solar", "url": "https://www.oneroofsolar.com.au"}
+              }
+            ]
+          })}
+        </script>
+      )}
+
       {/* Hero Section */}
       <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#0A1118]">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
@@ -2532,6 +2612,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <img referrerPolicy="no-referrer" loading="lazy"
                     src={service.image}
                     alt={isSolarInstall ? "solar panel installation Darwin, Oneroof Solar team on rooftop" : service.title}
+                    title={isSolarInstall ? "Solar panel installation by Oneroof Solar in Darwin, NT" : service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000 opacity-80"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-transparent to-transparent opacity-90"></div>
@@ -2589,6 +2670,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <img referrerPolicy="no-referrer" loading="lazy"
                   src="/assets/images/home/home-project-bayview.webp"
                   alt="darwin solar power rooftop system, high output dry season NT"
+                  title="Solar power system generating energy on a Darwin rooftop"
                   className="w-full h-full object-cover"
                 />
               </FadeIn>
@@ -2653,6 +2735,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <img referrerPolicy="no-referrer" loading="lazy"
                     src="/assets/images/home/home-hero-bayview.webp"
                     alt="residential solar panels Darwin, rooftop installation Oneroof Solar"
+                    title="Residential solar panels installed on a Darwin home"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </FadeIn>
@@ -2698,6 +2781,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <img referrerPolicy="no-referrer" loading="lazy"
                     src="/assets/images/home/home-project-bayview.webp"
                     alt="commercial solar panel installation Darwin, Oneroof Solar commercial rooftop"
+                    title="Commercial solar installation on a Darwin business rooftop"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </FadeIn>
@@ -2743,6 +2827,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   <img referrerPolicy="no-referrer" loading="lazy"
                     src="/assets/images/home/home-premium-aerial.webp"
                     alt="off-grid solar systems Darwin, remote standalone solar storage NT"
+                    title="Off-grid solar array and storage system in the Northern Territory"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </FadeIn>
@@ -2884,6 +2969,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <img referrerPolicy="no-referrer" loading="lazy"
                   src="/assets/images/home/home-hero-bayview.webp"
                   alt="cyclone rated solar panel mounting Darwin, Oneroof Solar"
+                  title="Cyclone-rated solar panel mounting by Oneroof Solar in Darwin"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
