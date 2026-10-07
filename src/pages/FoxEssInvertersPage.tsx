@@ -52,10 +52,10 @@ export function FoxEssInvertersPage() {
     robots: "index, follow",
     openGraphTitle: "Fox ESS Solar Inverters Darwin NT | SAA Approved",
     openGraphDescription: "Compare SAA approved Fox ESS single-phase, three-phase, and hybrid solar inverters built for extreme Darwin heat. Upfront STC discounts applied directly to your local Oneroof Solar quote.",
-    openGraphImage: "/assets/images/hosted/partner-5.png",
+    openGraphImage: "/assets/images/hosted/products/foxess-inverter.webp",
     twitterTitle: "Fox ESS Solar Inverters Darwin NT | SAA Approved",
     twitterDescription: "Compare SAA approved Fox ESS single-phase, three-phase, and hybrid solar inverters built for extreme Darwin heat. Upfront STC discounts applied directly to your local Oneroof Solar quote.",
-    twitterImage: "/assets/images/hosted/partner-5.png",
+    twitterImage: "/assets/images/hosted/products/foxess-inverter.webp",
   };
 
   const schemas = [
@@ -94,7 +94,7 @@ export function FoxEssInvertersPage() {
       "description": "Compare SAA approved Fox ESS single-phase, three-phase, and hybrid solar inverters built for extreme Darwin heat. Upfront STC discounts applied directly to your local Oneroof Solar quote.",
       "category": "Solar Inverters",
       "url": "https://oneroofsolar.com.au/products/solar-inverters/fox-ess",
-      "image": "/assets/images/hosted/partner-5.png"
+      "image": "/assets/images/hosted/products/foxess-inverter.webp"
     },
     {
       "@context": "https://schema.org",
@@ -241,8 +241,8 @@ export function FoxEssInvertersPage() {
                   <div className="relative rounded-xl overflow-hidden bg-slate-950 border border-slate-800 aspect-[4/3] flex items-center justify-center p-4">
                     <img 
                       referrerPolicy="no-referrer"
-                      src="/assets/images/hosted/partner-5.png" 
-                      alt="Fox ESS Solar Inverter Range installed by Oneroof Solar in Darwin" 
+                      src="/assets/images/hosted/products/foxess-inverter.webp"
+                      alt="Fox ESS Solar Inverter Range installed by Oneroof Solar in Darwin"
                       className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
                       width={600}
                       height={450}
@@ -290,8 +290,8 @@ export function FoxEssInvertersPage() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center p-4">
                   <img 
                     referrerPolicy="no-referrer"
-                    src="/assets/images/hosted/partner-5.png" 
-                    alt="Fox ESS Solar Inverter Heat Protection" 
+                    src="/assets/images/hosted/products/inverter-hero.webp"
+                    alt="Fox ESS Solar Inverter Heat Protection"
                     className="w-full h-full object-contain"
                   />
                 </div>
@@ -840,8 +840,8 @@ export function FoxEssInvertersPage() {
                 <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-slate-950 border border-slate-800 flex items-center justify-center p-4">
                   <img 
                     referrerPolicy="no-referrer"
-                    src="/assets/images/hosted/partner-5.png" 
-                    alt="Fox ESS Off-Grid Solar Battery System" 
+                    src="/assets/images/hosted/offgrid.webp"
+                    alt="Fox ESS Off-Grid Solar Battery System"
                     className="w-full h-full object-contain"
                   />
                 </div>

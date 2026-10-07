@@ -61,10 +61,10 @@ export function SigenergyInvertersPage() {
     robots: "index, follow",
     openGraphTitle: "Sigenergy Solar Inverters Darwin NT | SAA Approved | Oneroof Solar",
     openGraphDescription: "Sigenergy hybrid inverters supplied and installed across Darwin, Palmerston and NT. SAA Approved, IP66 rated, battery ready. STC discount applied upfront in your quote.",
-    openGraphImage: "/assets/images/hosted/partner-3.png",
+    openGraphImage: "/assets/images/hosted/products/inverter-hero.webp",
     twitterTitle: "Sigenergy Solar Inverters Darwin NT | SAA Approved | Oneroof Solar",
     twitterDescription: "Sigenergy hybrid inverters supplied and installed across Darwin, Palmerston and NT. SAA Approved, IP66 rated, battery ready. STC discount applied upfront in your quote.",
-    twitterImage: "/assets/images/hosted/partner-3.png",
+    twitterImage: "/assets/images/hosted/products/inverter-hero.webp",
   };
 
   const schemas = [
@@ -213,7 +213,7 @@ export function SigenergyInvertersPage() {
               <div className="lg:col-span-5 relative mt-6 lg:mt-0">
                 <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-900 group">
                   <img
-                    src="/assets/images/hosted/partner-3.png"
+                    src="/assets/images/hosted/products/inverter-hero.webp"
                     alt="Sigenergy Solar Inverter System Darwin NT"
                     className="w-full h-[360px] sm:h-[420px] object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
