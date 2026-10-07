@@ -202,6 +202,7 @@ export const mainNavConfig: NavItem[] = [
           { label: "GoodWe Batteries", href: "/products/solar-battery-brands/goodwe" },
           { label: "Fox ESS Batteries", href: "/products/solar-battery-brands/foxess" },
           { label: "Alpha ESS Batteries", href: "/products/solar-battery-brands/alpha-ess" },
+          { label: "Sungrow Batteries", href: "/products/solar-battery-brands/sungrow" },
         ],
       },
     ],

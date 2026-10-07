@@ -38,9 +38,9 @@ const brands = [
     title: "Sungrow",
     description:
       "A reliable, well supported battery that's easy to stack and expand over time. A solid choice if you want a system backed by strong local technical support and the option to grow your storage down the track.",
-    image: "/assets/images/hosted/products/sigen-battery-detail.webp",
+    image: "/assets/images/hosted/products/sungrow-battery-hero.webp",
     specLabel: "Download Sungrow Spec Sheet (PDF)",
-    specHref: "/products/solar-inverters/sungrow-inverters",
+    specHref: "/products/solar-battery-brands/sungrow",
   },
   {
     title: "GoodWe",
