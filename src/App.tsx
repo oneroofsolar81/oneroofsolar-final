@@ -45,6 +45,7 @@ const BayviewPage = lazy(() => import("./pages/BayviewPage").then(m => ({ defaul
 const SigenergyBatteryPage = lazy(() => import("./pages/SigenergyBatteryPage").then(m => ({ default: m.SigenergyBatteryPage })));
 const GoodWeBatteryPage = lazy(() => import("./pages/GoodWeBatteryPage").then(m => ({ default: m.GoodWeBatteryPage })));
 const FoxEssBatteryPage = lazy(() => import("./pages/FoxEssBatteryPage").then(m => ({ default: m.FoxEssBatteryPage })));
+const AlphaEssBatteryPage = lazy(() => import("./pages/AlphaEssBatteryPage").then(m => ({ default: m.AlphaEssBatteryPage })));
 const SolarBatteryBrands = lazy(() => import("./pages/SolarBatteryBrands").then(m => ({ default: m.SolarBatteryBrands })));
 const EvChargerInstallation = lazy(() => import("./pages/EvChargerInstallation").then(m => ({ default: m.EvChargerInstallation })));
 const EvChargerRepair = lazy(() => import("./pages/EvChargerRepair").then(m => ({ default: m.EvChargerRepair })));
@@ -321,6 +322,10 @@ export default function App() {
                 <Route path="/products/solar-battery-brands/foxess/" element={<FoxEssBatteryPage />} />
                 <Route path="/products/solar-battery-brands/fox-ess" element={<Navigate to="/products/solar-battery-brands/foxess" replace />} />
                 <Route path="/products/solar-battery-brands/fox-ess/" element={<Navigate to="/products/solar-battery-brands/foxess" replace />} />
+                <Route path="/products/solar-battery-brands/alpha-ess" element={<AlphaEssBatteryPage />} />
+                <Route path="/products/solar-battery-brands/alpha-ess/" element={<AlphaEssBatteryPage />} />
+                <Route path="/products/solar-battery-brands/alphaess" element={<Navigate to="/products/solar-battery-brands/alpha-ess" replace />} />
+                <Route path="/products/solar-battery-brands/alphaess/" element={<Navigate to="/products/solar-battery-brands/alpha-ess" replace />} />
 
                 {/* External SEO Redirects mapping */}
                 <Route path="/solar-panels/rec" element={<Navigate to="/solar-panels-brands/rec/" replace />} />

@@ -64,7 +64,7 @@ const brands = [
       "An affordable entry point into battery storage, particularly well suited to smaller systems. A good fit if you're after basic backup and self-use without a big upfront spend.",
     image: alphaEssImg,
     specLabel: "Download Alpha ESS Spec Sheet (PDF)",
-    specHref: "/products/solar-inverters/alpha-ess",
+    specHref: "/products/solar-battery-brands/alpha-ess",
   },
 ];
 
