@@ -1033,6 +1033,22 @@ const servicesData: Record<
         q: "Do you service remote NT properties?",
         a: "Yes. We install and maintain solar systems across Darwin, Palmerston, Humpty Doo, Berry Springs, and remote Northern Territory locations.",
       },
+      {
+        q: "What makes Oneroof Solar the best solar company Darwin has to offer?",
+        a: "Also known as One Roof Solar, we have over 25 years of hands-on experience delivering solar power Darwin households and businesses depend on. We manage every step from system design to grid connection, using only tier-1 solar panels NT conditions demand. Our local knowledge of Darwin's climate sets us apart from interstate competitors.",
+      },
+      {
+        q: "How much do solar panels in Darwin cost?",
+        a: "Solar panels Darwin cost depends on system size, panel brand, and whether you include battery storage. The federal STC rebate reduces the upfront price significantly. We provide a detailed, no-obligation quote based on your roof layout and energy usage so you know exactly what to expect before committing.",
+      },
+      {
+        q: "Can you install solar panels on a flat roof?",
+        a: "Yes. Flat roof solar installation is common across Darwin, especially on commercial buildings and modern homes. We use custom tilt frame structures to angle panels for maximum sun exposure. Every PV panel installation we complete includes cyclone-rated mounting hardware engineered for Territory wind conditions.",
+      },
+      {
+        q: "Is solar in Darwin NT a good investment for homeowners?",
+        a: "With close to 6 peak sun hours per day, a solar system Darwin homeowners invest in pays for itself faster than nearly anywhere else in Australia. The federal STC rebate makes it even more affordable. We handle everything so the switch to solar Darwin NT families want is straightforward and stress-free.",
+      },
     ],
   },
   "solar-inverter-installation": {
@@ -2371,6 +2387,9 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <p className="text-lg text-slate-600 leading-relaxed font-medium">
                   5.9 peak sun hours per day on average, 8.7 hours in peak dry season. That means your solar system works harder here than it would anywhere in the south, and your payback comes faster. Add the federal STC rebate (up to 35% off your install cost), and going solar in Darwin makes more financial sense than ever.
                 </p>
+                <p className="text-lg text-slate-600 leading-relaxed font-medium mt-6">
+                  For reliable solar installation Darwin property owners trust, Oneroof Solar Darwin has been delivering solar panel installation NT-wide for over two decades. Our deep understanding of Northern Territory solar conditions means every system is built to perform, not just survive. Explore our full range of <Link to="/solar-panels-darwin" className="text-brand-600 font-bold hover:underline">solar panel services in Darwin</Link>, read about <Link to="/do-solar-panels-work-during-darwins-wet-season" className="text-brand-600 font-bold hover:underline">how solar performs during Darwin's wet season</Link>, or <Link to="/about" className="text-brand-600 font-bold hover:underline">learn more about our local team</Link>.
+                </p>
               </FadeIn>
 
               <FadeIn delay={0.2} className="relative rounded-[2rem] overflow-hidden border border-slate-100 shadow-xl h-[300px] sm:h-[400px]">
@@ -2450,7 +2469,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     Residential Solar
                   </h3>
                   <p className="text-lg text-slate-600 leading-relaxed font-medium mb-6">
-                    Cut your power bill, not your lifestyle. We design rooftop solar systems around how your household actually uses power. High aircon load during the day? Evening-heavy consumption? We size your system for your reality, not a generic template.
+                    Cut your power bill, not your lifestyle. We design rooftop solar systems around how your household actually uses power. High aircon load during the day? Evening-heavy consumption? We size your system for your reality, not a generic template. Whether you need us to install solar panels on a roof with complex angles or a straightforward solar panel installation for your house, our team handles it all. See our <Link to="/solar-systems/residential-solar-system" className="text-brand-600 font-bold hover:underline">residential solar system options</Link> in detail.
                   </p>
                   <ul className="space-y-4 mb-8">
                     {[
@@ -2495,7 +2514,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     Commercial Solar
                   </h3>
                   <p className="text-lg text-slate-600 leading-relaxed font-medium mb-6">
-                    Your business runs during the day. So does your solar system. Commercial properties with high daytime loads, retail, hospitality, warehousing, see the strongest return from solar. We design systems matched to your consumption profile and NT grid connection requirements.
+                    Your business runs during the day. So does your solar system. Commercial properties with high daytime loads, retail, hospitality, warehousing, see the strongest return from solar. We design systems matched to your consumption profile and NT grid connection requirements. Every commercial solar power installation includes correctly rated <Link to="/products/solar-inverters" className="text-brand-600 font-bold hover:underline">inverter solutions</Link> paired to your load profile. Learn more about our <Link to="/solar-systems/commercial-solar-system" className="text-brand-600 font-bold hover:underline">commercial solar system options in Darwin</Link>.
                   </p>
                   <ul className="space-y-4 mb-8">
                     {[
@@ -2540,7 +2559,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                     Off-Grid Solar Systems
                   </h3>
                   <p className="text-lg text-slate-600 leading-relaxed font-medium mb-6">
-                    No grid connection? No problem. Remote stations, rural homesteads, and off-grid commercial sites across the NT rely on Oneroof Solar for standalone power systems. We combine solar panels, inverters, and battery storage to deliver reliable renewable electricity, even through wet season cloud cover.
+                    No grid connection? No problem. Remote stations, rural homesteads, and off-grid commercial sites across the NT rely on Oneroof Solar for standalone power systems. We combine solar panels, inverters, and <Link to="/services/solar-battery-installation" className="text-brand-600 font-bold hover:underline">battery storage solutions</Link> to deliver reliable renewable electricity, even through wet season cloud cover. View our full <Link to="/solar-systems/off-grid-solar-system" className="text-brand-600 font-bold hover:underline">off-grid solar system designs</Link>.
                   </p>
                   <ul className="space-y-4 mb-8">
                     {[
@@ -2585,7 +2604,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 Solar Panel Installation Across Darwin, Areas We Serve
               </h2>
               <p className="text-lg font-medium text-slate-600 leading-relaxed">
-                Oneroof Solar installs residential and commercial solar systems across greater Darwin and the Northern Territory. If you're in any of the suburbs or postcodes below, we're your local team.
+                Oneroof Solar installs residential and commercial solar systems across greater Darwin and the Northern Territory. If you're in any of the suburbs or postcodes below, we're your local team. As experienced solar installers Darwin has trusted since 2001, we've completed solar installations Darwin-wide, from <Link to="/locations/darwin-city" className="text-brand-600 font-bold hover:underline">Darwin City</Link> and <Link to="/locations/stuart-park" className="text-brand-600 font-bold hover:underline">Stuart Park</Link> to <Link to="/locations/palmerston" className="text-brand-600 font-bold hover:underline">Palmerston</Link> and <Link to="/locations/berrimah" className="text-brand-600 font-bold hover:underline">Berrimah</Link>.
               </p>
             </div>
 
@@ -2689,7 +2708,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                   Installed for Darwin, Not Copied from Down South
                 </h2>
                 <p className="text-lg text-slate-600 leading-relaxed font-medium mb-8">
-                  Darwin is a Category D cyclone wind region. Coastal salt air. Tropical humidity. Wet season thermal cycling. Not every solar product survives those conditions. We only install panels, inverters, and racking systems proven to hold up here, and every installation meets AS/NZS 1170.2 wind load requirements. 25 years of NT installations means we know what lasts and what doesn't.
+                  Darwin is a Category D cyclone wind region. Coastal salt air. Tropical humidity. Wet season thermal cycling. Not every solar product survives those conditions. We only install panels, inverters, and racking systems proven to hold up here, and every installation meets AS/NZS 1170.2 wind load requirements. 25 years of NT installations means we know what lasts and what doesn't. We fit solar panels NT conditions demand from brands like <Link to="/solar-panels-brands/jinko" className="text-brand-600 font-bold hover:underline">Jinko</Link> and <Link to="/solar-panels-brands/longi" className="text-brand-600 font-bold hover:underline">LONGi</Link>, chosen for their proven performance in tropical climates. Read more about <Link to="/blog/solar-panel-cyclone-protection" className="text-brand-600 font-bold hover:underline">cyclone protection for solar panels</Link> or explore our full <Link to="/product/solar-panels-brands" className="text-brand-600 font-bold hover:underline">solar panel brand range</Link>.
                 </p>
                 <Button
                   className="bg-slate-900 text-white font-bold hover:bg-slate-800 rounded-full px-8 h-12 inline-flex items-center justify-center transition-all shadow-[0_4px_20px_rgba(0,0,0,0.15)]"
@@ -2739,7 +2758,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
                 <p className="text-lg text-slate-300 max-w-md lg:mb-4">
                   We don't just supply equipment; we deliver comprehensive
                   energy solutions designed for longevity, performance, and
-                  maximum return on investment.
+                  maximum return on investment. See what darwin solar panels look like on real NT rooftops in our <Link to="/projects" className="text-brand-400 font-bold hover:underline">completed projects gallery</Link>.
                 </p>
               </FadeIn>
             </div>
