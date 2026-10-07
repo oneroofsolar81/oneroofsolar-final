@@ -2134,6 +2134,55 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           </div>
         </section>
 
+        {/* Our Solar Services Section */}
+        <section className="py-20 bg-white">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <FadeIn>
+              <div className="text-center mb-12">
+                <span className="inline-block text-xs font-bold text-[#8cc63f] uppercase tracking-[0.2em] mb-3">
+                  Everything Under One Roof
+                </span>
+                <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight normal-case">
+                  Our Solar Services in Darwin
+                </h2>
+                <p className="mt-4 text-base text-slate-600 max-w-2xl mx-auto font-medium">
+                  From installation to maintenance, we handle every part of your solar journey across Darwin and the NT.
+                </p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <div className="flex flex-wrap justify-center gap-3">
+                {[
+                  { label: "Solar Panel Installation", href: "/services/solar-panel-installation" },
+                  { label: "Solar Panel Repair", href: "/services/solar-panel-repair-darwin" },
+                  { label: "Solar Panel Cleaning & Maintenance", href: "/services/solar-panel-maintenance-darwin" },
+                  { label: "Solar Battery Installation", href: "/services/solar-battery-installation" },
+                  { label: "Solar Inverter Installation", href: "/services/solar-inverters/installation" },
+                  { label: "Solar Inverter Repair", href: "/services/solar-inverters/repair" },
+                  { label: "EV Charger Installation", href: "/services/ev-chargers/installation" },
+                  { label: "EV Charger Repair", href: "/services/ev-chargers/repair" },
+                  { label: "Residential Solar Systems", href: "/solar-systems/residential-solar-system" },
+                  { label: "Commercial Solar Systems", href: "/solar-systems/commercial-solar-system" },
+                  { label: "Off-Grid Solar Systems", href: "/solar-systems/off-grid-solar-system" },
+                  { label: "Solar Panels Darwin", href: "/solar-panels-darwin" },
+                  { label: "Solar Panel Brands", href: "/product/solar-panels-brands" },
+                  { label: "Solar Inverters", href: "/products/solar-inverters" },
+                  { label: "Solar Battery Brands", href: "/products/solar-battery-brands" },
+                ].map((svc) => (
+                  <Link
+                    key={svc.href}
+                    to={svc.href}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-200 bg-slate-50 text-sm font-semibold text-slate-700 hover:bg-[#8cc63f]/10 hover:border-[#8cc63f] hover:text-slate-900 transition-all duration-200 shadow-sm"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#8cc63f] flex-shrink-0"></span>
+                    {svc.label}
+                  </Link>
+                ))}
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <FaqSection faqs={solarPanelFaqs} heading="Frequently Asked Questions" />
 
