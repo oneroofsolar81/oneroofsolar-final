@@ -2297,6 +2297,150 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
   return (
     <div key={currentSlug} className="bg-white text-slate-900 font-sans">
       <SEO seo={seoData} />
+
+      {isSolarInstall && (
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Solar Panel Installation Darwin",
+            "serviceType": "Solar Panel Installation",
+            "description": "Licensed solar panel installation for homes, businesses and remote properties across Darwin and the Northern Territory. Residential, commercial and off-grid systems designed for tropical conditions.",
+            "url": "https://www.oneroofsolar.com.au/services/solar-panel-installation",
+            "provider": {
+              "@type": "LocalBusiness",
+              "@id": "https://www.oneroofsolar.com.au/#business",
+              "name": "Oneroof Solar",
+              "url": "https://www.oneroofsolar.com.au",
+              "logo": "https://www.oneroofsolar.com.au/assets/images/home/logo-oneroof.png",
+              "image": "https://www.oneroofsolar.com.au/assets/images/home/logo-oneroof.png",
+              "telephone": "0483 986 444",
+              "email": "info@oneroofsolar.com.au",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "3/97 Pruen Rd",
+                "addressLocality": "Berrimah",
+                "addressRegion": "NT",
+                "postalCode": "0828",
+                "addressCountry": "AU"
+              },
+              "sameAs": [
+                "https://www.facebook.com/oneroofsolar",
+                "https://twitter.com/oneroofsolar",
+                "https://www.linkedin.com/company/oneroof-solar/",
+                "https://www.instagram.com/oneroof_solar/",
+                "https://www.youtube.com/@oneroofsolar"
+              ]
+            },
+            "areaServed": [
+              {"@type": "City", "name": "Darwin", "addressRegion": "NT", "addressCountry": "AU"},
+              {"@type": "Place", "name": "Darwin City"},
+              {"@type": "Place", "name": "Stuart Park"},
+              {"@type": "Place", "name": "Fannie Bay"},
+              {"@type": "Place", "name": "East Point"},
+              {"@type": "Place", "name": "Berrimah"},
+              {"@type": "Place", "name": "Bayview"},
+              {"@type": "Place", "name": "Palmerston"},
+              {"@type": "Place", "name": "Northern Darwin"},
+              {"@type": "Place", "name": "Darwin Rural"},
+              {"@type": "AdministrativeArea", "name": "Northern Territory"}
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Solar Installation Services",
+              "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Residential Solar Installation"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Solar Installation"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Off-Grid Solar Systems"}}
+              ]
+            }
+          })}
+        </script>
+      )}
+
+      {isSolarInstall && (
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does solar panel installation cost in Darwin?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Cost depends on system size, panel brand, and inverter. The federal STC rebate reduces upfront costs by 30 to 35%. Contact us for a quote specific to your property and usage."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does the wet season affect solar output?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Cloud cover from November to March reduces daily generation. We account for this in every system design so your output stays adequate year-round, not just in the dry season."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are your installations rated for Darwin cyclones?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Every installation we complete meets AS/NZS 1170.2 wind load requirements for Darwin's Category D wind region. We do not install products that are not rated for NT conditions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I add a battery later?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We include battery-ready wiring in every installation so adding storage later requires no structural changes to your existing system."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you service remote NT properties?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. We install and maintain solar systems across Darwin, Palmerston, Humpty Doo, Berry Springs, and remote Northern Territory locations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes Oneroof Solar the best solar company Darwin has to offer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Also known as One Roof Solar, we have over 25 years of hands-on experience delivering solar power Darwin households and businesses depend on. We manage every step from system design to grid connection, using only tier-1 solar panels NT conditions demand. Our local knowledge of Darwin's climate sets us apart from interstate competitors."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much do solar panels in Darwin cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Solar panels Darwin cost depends on system size, panel brand, and whether you include battery storage. The federal STC rebate reduces the upfront price significantly. We provide a detailed, no-obligation quote based on your roof layout and energy usage so you know exactly what to expect before committing."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you install solar panels on a flat roof?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Flat roof solar installation is common across Darwin, especially on commercial buildings and modern homes. We use custom tilt frame structures to angle panels for maximum sun exposure. Every PV panel installation we complete includes cyclone-rated mounting hardware engineered for Territory wind conditions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is solar in Darwin NT a good investment for homeowners?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "With close to 6 peak sun hours per day, a solar system Darwin homeowners invest in pays for itself faster than nearly anywhere else in Australia. The federal STC rebate makes it even more affordable. We handle everything so the switch to solar Darwin NT families want is straightforward and stress-free."
+                }
+              }
+            ]
+          })}
+        </script>
+      )}
+
       {/* Hero Section */}
       <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#0A1118]">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
