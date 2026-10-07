@@ -200,6 +200,7 @@ export const mainNavConfig: NavItem[] = [
         children: [
           { label: "Sigenergy Batteries", href: "/products/solar-battery-brands/sigenergy" },
           { label: "GoodWe Batteries", href: "/products/solar-battery-brands/goodwe" },
+          { label: "Fox ESS Batteries", href: "/products/solar-battery-brands/foxess" },
         ],
       },
     ],

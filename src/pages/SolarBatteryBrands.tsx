@@ -56,7 +56,7 @@ const brands = [
       "The budget friendly option in our range. It won't have every premium feature, but for homeowners who want solid battery storage without the higher price tag, it does the job well.",
     image: "/assets/images/hosted/products/alpha-ess.webp",
     specLabel: "Download Fox ESS Spec Sheet (PDF)",
-    specHref: "/products/solar-inverters/fox-ess",
+    specHref: "/products/solar-battery-brands/foxess",
   },
   {
     title: "Alpha ESS",

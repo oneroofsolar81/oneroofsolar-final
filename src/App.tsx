@@ -44,6 +44,7 @@ const BerrimahPage = lazy(() => import("./pages/BerrimahPage").then(m => ({ defa
 const BayviewPage = lazy(() => import("./pages/BayviewPage").then(m => ({ default: m.BayviewPage })));
 const SigenergyBatteryPage = lazy(() => import("./pages/SigenergyBatteryPage").then(m => ({ default: m.SigenergyBatteryPage })));
 const GoodWeBatteryPage = lazy(() => import("./pages/GoodWeBatteryPage").then(m => ({ default: m.GoodWeBatteryPage })));
+const FoxEssBatteryPage = lazy(() => import("./pages/FoxEssBatteryPage").then(m => ({ default: m.FoxEssBatteryPage })));
 const SolarBatteryBrands = lazy(() => import("./pages/SolarBatteryBrands").then(m => ({ default: m.SolarBatteryBrands })));
 const EvChargerInstallation = lazy(() => import("./pages/EvChargerInstallation").then(m => ({ default: m.EvChargerInstallation })));
 const EvChargerRepair = lazy(() => import("./pages/EvChargerRepair").then(m => ({ default: m.EvChargerRepair })));
@@ -316,6 +317,10 @@ export default function App() {
                 <Route path="/products/solar-battery-brands/sigenergy/" element={<SigenergyBatteryPage />} />
                 <Route path="/products/solar-battery-brands/goodwe" element={<GoodWeBatteryPage />} />
                 <Route path="/products/solar-battery-brands/goodwe/" element={<GoodWeBatteryPage />} />
+                <Route path="/products/solar-battery-brands/foxess" element={<FoxEssBatteryPage />} />
+                <Route path="/products/solar-battery-brands/foxess/" element={<FoxEssBatteryPage />} />
+                <Route path="/products/solar-battery-brands/fox-ess" element={<Navigate to="/products/solar-battery-brands/foxess" replace />} />
+                <Route path="/products/solar-battery-brands/fox-ess/" element={<Navigate to="/products/solar-battery-brands/foxess" replace />} />
 
                 {/* External SEO Redirects mapping */}
                 <Route path="/solar-panels/rec" element={<Navigate to="/solar-panels-brands/rec/" replace />} />
