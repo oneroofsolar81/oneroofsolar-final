@@ -496,6 +496,12 @@ export function ResidentialSolarSystemPage() {
               <p>
                 NT homes are among the highest electricity users in Australia due to year-round air conditioning. A correctly sized residential solar panel system converts Darwin's abundant peak sun hours into direct savings on your Jacana Energy or Rimfire Energy bill, typically paying for itself within 4 to 7 years.
               </p>
+              <p>
+                New to solar? Start with our guide to{" "}
+                <Link to="/solar-panels-darwin" className="text-[#8cc63f] font-bold hover:underline">solar panels in Darwin</Link>, or see how our full{" "}
+                <Link to="/services/solar-panel-installation" className="text-[#8cc63f] font-bold hover:underline">solar panel installation</Link>{" "}
+                service works from design through to switch-on.
+              </p>
             </div>
           </FadeIn>
         </div>
@@ -562,6 +568,12 @@ export function ResidentialSolarSystemPage() {
                   <p>
                     The most common residential solar setup. Your photovoltaic (PV) panels generate DC electricity. A grid-tied inverter converts it to AC power for your household appliances, and any surplus is exported to the Jacana Energy or Rimfire Energy grid for a feed-in tariff credit. You draw from the grid at night or during extended cloud cover in the wet season.
                   </p>
+                  <p>
+                    Learn how panels perform in{" "}
+                    <Link to="/do-solar-panels-work-during-darwins-wet-season" className="text-[#8cc63f] font-bold hover:underline">Darwin's wet season</Link>{" "}
+                    and our approach to{" "}
+                    <Link to="/blog/solar-panel-cyclone-protection" className="text-[#8cc63f] font-bold hover:underline">cyclone protection</Link>.
+                  </p>
                   <p className="text-sm bg-slate-50 p-4 rounded-xl border border-slate-100 text-[#19281D] font-bold">
                     Best for: Darwin City, Palmerston, Alice Springs residential areas.
                   </p>
@@ -582,6 +594,11 @@ export function ResidentialSolarSystemPage() {
                   <p>
                     A residential solar and battery system combines your PV panels with a home battery such as Sungrow or Tesla Powerwall. Excess energy generated during the day is stored for use in the evening, reducing your grid import rate to near zero on most days.
                   </p>
+                  <p>
+                    Explore our{" "}
+                    <Link to="/services/solar-battery-installation" className="text-[#8cc63f] font-bold hover:underline">battery storage options</Link>{" "}
+                    to keep more of the power you generate.
+                  </p>
                   <p className="text-sm bg-slate-50 p-4 rounded-xl border border-slate-100 text-[#19281D] font-bold">
                     Best for: Families with high evening electricity use.
                   </p>
@@ -601,6 +618,12 @@ export function ResidentialSolarSystemPage() {
                 <div className="text-slate-600 leading-relaxed font-medium space-y-4 flex-grow mb-8">
                   <p>
                     For remote NT properties without Power and Water Corporation grid access, an off-grid residential solar power system with large battery banks and a backup generator provides full energy independence. We design off-grid systems for remote stations, rural Darwin River properties, Kakadu region homes and communities across the NT corridor including Katherine, Tennant Creek and the Barkly region.
+                  </p>
+                  <p>
+                    See our dedicated{" "}
+                    <Link to="/solar-systems/off-grid-solar-system" className="text-[#8cc63f] font-bold hover:underline">remote and rural solar systems</Link>{" "}
+                    and ongoing{" "}
+                    <Link to="/services/solar-panel-maintenance-darwin" className="text-[#8cc63f] font-bold hover:underline">system servicing</Link>.
                   </p>
                   <p className="text-sm bg-slate-50 p-4 rounded-xl border border-slate-100 text-[#19281D] font-bold">
                     See our repairs and maintenance page for ongoing remote system support.
@@ -757,6 +780,14 @@ export function ResidentialSolarSystemPage() {
               </h2>
               <p className="text-lg text-slate-600 font-medium leading-relaxed">
                 Oneroof Solar installs residential solar systems across Greater Darwin, Palmerston, Alice Springs, Katherine, and surrounding Northern Territory communities. We are the only NT-based solar company with dedicated installation teams in both Darwin and Alice Springs.
+              </p>
+              <p className="text-lg text-slate-600 font-medium leading-relaxed mt-4">
+                Compare the{" "}
+                <Link to="/product/solar-panels-brands" className="text-[#8cc63f] font-bold hover:underline">panel ranges we install</Link>{" "}
+                and compatible{" "}
+                <Link to="/products/solar-inverters" className="text-[#8cc63f] font-bold hover:underline">solar inverter options</Link>, or browse{" "}
+                <Link to="/projects" className="text-[#8cc63f] font-bold hover:underline">recent projects</Link>{" "}
+                across the Territory.
               </p>
             </FadeIn>
           </div>

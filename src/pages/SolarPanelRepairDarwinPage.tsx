@@ -307,6 +307,13 @@ export function SolarPanelRepairDarwinPage() {
               <p className="text-lg font-medium text-slate-600 leading-relaxed max-w-2xl mx-auto">
                 Oneroof Solar is a locally operated solar company serving Darwin, Palmerston, and the wider NT. Our licensed technicians repair all panel brands and all system types — residential and commercial, grid-tied and off-grid. We assess each panel individually, diagnose the exact fault, and quote before we touch anything.
               </p>
+              <p className="text-base font-medium text-slate-600 leading-relaxed max-w-2xl mx-auto mt-4">
+                Need more than a repair? Explore our{" "}
+                <Link to="/solar-panels-darwin" className="text-brand-600 font-bold hover:underline">solar panels in Darwin</Link>, full{" "}
+                <Link to="/services/solar-panel-installation" className="text-brand-600 font-bold hover:underline">solar panel installation</Link>, and{" "}
+                <Link to="/services/solar-inverters/repair" className="text-brand-600 font-bold hover:underline">solar inverter repair</Link>{" "}
+                services, all handled by the same local team.
+              </p>
             </FadeIn>
           </div>
 
@@ -387,6 +394,13 @@ export function SolarPanelRepairDarwinPage() {
               </h2>
               <p className="text-lg font-medium text-slate-600">
                 Professional repair, restoration, and replacement services delivered by Darwin's local licensed solar team.
+              </p>
+              <p className="text-base font-medium text-slate-600 mt-4 max-w-2xl mx-auto">
+                After severe weather, read our guide to{" "}
+                <Link to="/blog/solar-panel-cyclone-protection" className="text-brand-600 font-bold hover:underline">cyclone protection</Link>, consider pairing repairs with{" "}
+                <Link to="/services/solar-battery-installation" className="text-brand-600 font-bold hover:underline">battery storage</Link>, and see{" "}
+                <Link to="/projects" className="text-brand-600 font-bold hover:underline">recent projects</Link>{" "}
+                across the Territory.
               </p>
             </FadeIn>
           </div>
@@ -488,6 +502,12 @@ export function SolarPanelRepairDarwinPage() {
                 </h2>
                 <p className="text-lg font-medium text-slate-600 mb-8 leading-relaxed">
                   Catching solar faults early prevents long-term degradation and protects your power output. Inspect your system for these common warning signals:
+                </p>
+                <p className="text-base font-medium text-slate-600 mb-8 leading-relaxed">
+                  Many faults trace back to moisture during{" "}
+                  <Link to="/do-solar-panels-work-during-darwins-wet-season" className="text-brand-600 font-bold hover:underline">Darwin's wet season</Link>, which is why regular{" "}
+                  <Link to="/services/solar-panel-maintenance-darwin" className="text-brand-600 font-bold hover:underline">panel cleaning and servicing</Link>{" "}
+                  helps prevent bigger problems.
                 </p>
 
                 {/* Checklist */}
@@ -627,6 +647,14 @@ export function SolarPanelRepairDarwinPage() {
               </h2>
               <p className="text-lg text-slate-600 font-medium">
                 Our local crews service residential, commercial, and off-grid clients across greater Darwin, Palmerston, and surrounding districts.
+              </p>
+              <p className="text-base text-slate-600 font-medium mt-4 max-w-2xl mx-auto">
+                We repair systems across{" "}
+                <Link to="/locations/darwin-city" className="text-brand-600 font-bold hover:underline">Darwin City</Link>{" "}
+                and{" "}
+                <Link to="/locations/palmerston" className="text-brand-600 font-bold hover:underline">Palmerston</Link>, for both{" "}
+                <Link to="/solar-systems/residential-solar-system" className="text-brand-600 font-bold hover:underline">residential solar systems</Link>{" "}
+                and commercial properties.
               </p>
             </FadeIn>
           </div>

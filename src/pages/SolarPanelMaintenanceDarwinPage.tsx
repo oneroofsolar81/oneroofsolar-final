@@ -259,6 +259,12 @@ export function SolarPanelMaintenanceDarwinPage() {
               <p className="text-lg font-medium text-slate-600 leading-relaxed">
                 Research from the Clean Energy Council shows soiled panels can lose up to 30% of their energy output. For a Darwin household or business, that is a significant hit to the return on your solar investment, and it happens gradually, so most people do not notice until the bills start climbing.
               </p>
+              <p className="text-lg font-medium text-slate-600 leading-relaxed mt-6">
+                If your output has already dropped, our{" "}
+                <Link to="/services/solar-panel-repair-darwin" className="text-brand-600 font-bold hover:underline">solar panel repair</Link>{" "}
+                team can trace the cause, and you can see how panels perform through{" "}
+                <Link to="/do-solar-panels-work-during-darwins-wet-season" className="text-brand-600 font-bold hover:underline">Darwin's wet season</Link>.
+              </p>
             </FadeIn>
             <FadeIn delay={0.1} className="rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 relative aspect-[4/3]">
               <img
@@ -282,6 +288,12 @@ export function SolarPanelMaintenanceDarwinPage() {
               </h2>
               <p className="text-lg font-medium text-slate-600 leading-relaxed mb-6">
                 Oneroof Solar has been installing solar systems across Darwin and the Northern Territory for years. We know these systems inside out, because we put them up. When you book a clean or maintenance check with us, you are not handing your panels to a pressure washing company. You are working with the people who understand how solar systems are built, how they perform, and what to look for when something is not right.
+              </p>
+              <p className="text-lg font-medium text-slate-600 leading-relaxed mb-6">
+                From the first{" "}
+                <Link to="/services/solar-panel-installation" className="text-brand-600 font-bold hover:underline">solar panel installation</Link>{" "}
+                to the ongoing care of your{" "}
+                <Link to="/solar-systems/residential-solar-system" className="text-brand-600 font-bold hover:underline">residential solar system</Link>, we are the same local team from start to finish.
               </p>
               <p className="text-lg font-bold text-slate-800 leading-relaxed">
                 That is the difference between a clean and a solar service.
@@ -381,6 +393,12 @@ export function SolarPanelMaintenanceDarwinPage() {
               </p>
               <p className="text-lg font-medium text-slate-600 leading-relaxed">
                 This is the method solar panel manufacturers recommend. It is also the reason our cleans last longer than a standard pressure wash.
+              </p>
+              <p className="text-lg font-medium text-slate-600 leading-relaxed mt-6">
+                A full service also covers your{" "}
+                <Link to="/services/solar-inverters/repair" className="text-brand-600 font-bold hover:underline">inverter servicing</Link>{" "}
+                and{" "}
+                <Link to="/services/solar-battery-installation" className="text-brand-600 font-bold hover:underline">battery storage</Link>, not just the glass.
               </p>
             </FadeIn>
           </div>
@@ -547,6 +565,14 @@ export function SolarPanelMaintenanceDarwinPage() {
             </h2>
             <p className="text-lg font-medium text-slate-300 leading-relaxed mb-10 max-w-2xl mx-auto">
               A clean, well-maintained solar system pays for itself. If your panels have not been serviced in the last six months, it is time. Oneroof Solar services residential and commercial systems across Darwin and the Northern Territory, from a single rooftop to a full solar farm.
+            </p>
+            <p className="text-lg font-medium text-slate-300 leading-relaxed mb-10 max-w-2xl mx-auto">
+              We service{" "}
+              <Link to="/locations/palmerston" className="text-brand-400 font-bold hover:underline">Palmerston</Link>{" "}
+              and the wider Top End, help you prepare for{" "}
+              <Link to="/blog/solar-panel-cyclone-protection" className="text-brand-400 font-bold hover:underline">cyclone season</Link>, and you can browse{" "}
+              <Link to="/projects" className="text-brand-400 font-bold hover:underline">recent projects</Link>{" "}
+              we have completed.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button
