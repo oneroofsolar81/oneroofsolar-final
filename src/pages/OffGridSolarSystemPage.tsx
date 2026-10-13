@@ -632,6 +632,9 @@ export function OffGridSolarSystemPage() {
             <p className="text-center text-slate-600 text-xs sm:text-sm font-medium mb-10 max-w-3xl mx-auto">
               For hybrid solar systems, see our <Link to="/solar-systems/residential-solar-system" className="text-brand-600 font-bold underline hover:text-brand-700 transition-colors">residential solar page</Link>. For grid-connected commercial systems, see our <Link to="/solar-systems/commercial-solar-system" className="text-brand-600 font-bold underline hover:text-brand-700 transition-colors">commercial solar page</Link>.
             </p>
+            <p className="text-center text-slate-600 text-xs sm:text-sm font-medium mb-10 max-w-3xl mx-auto">
+              You can also explore <Link to="/solar-panels-darwin" className="text-brand-600 font-bold underline hover:text-brand-700 transition-colors">solar panels in Darwin</Link>, <Link to="/services/solar-battery-installation" className="text-brand-600 font-bold underline hover:text-brand-700 transition-colors">battery storage</Link>, and <Link to="/products/solar-inverters" className="text-brand-600 font-bold underline hover:text-brand-700 transition-colors">solar inverter options</Link>.
+            </p>
           </FadeIn>
 
           {/* CTA Bar */}
@@ -1440,7 +1443,7 @@ export function OffGridSolarSystemPage() {
                     Commissioning, Training and Handover
                   </h3>
                   <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium">
-                    We commission every component, test full system operation under load and train your property manager or family on system monitoring, generator startup procedures and basic maintenance. See our <Link to="/services/solar-panel-maintenance-darwin" className="text-brand-600 font-bold underline hover:text-brand-700 transition-colors">repairs and maintenance page</Link> for ongoing remote NT off-grid support.
+                    We commission every component, test full system operation under load and train your property manager or family on system monitoring, generator startup procedures and basic maintenance. See our repairs and maintenance page for ongoing remote NT off-grid support.
                   </p>
                 </div>
               </div>
@@ -1586,7 +1589,7 @@ export function OffGridSolarSystemPage() {
 
           <FadeIn delay={0.3}>
             <p className="text-center text-slate-400 text-xs sm:text-sm font-medium mb-10 max-w-3xl mx-auto">
-              For Alice Springs specific solar, see our <Link to="/solar-alice-springs/" className="text-[#8cc63f] font-bold underline hover:text-brand-400 transition-colors">Alice Springs solar page</Link>. For residential grid-connected systems, see our <Link to="/solar-systems/residential-solar-system" className="text-[#8cc63f] font-bold underline hover:text-brand-400 transition-colors">residential solar page</Link>.
+              For Alice Springs specific solar, see our <Link to="/solar-alice-springs/" className="text-[#8cc63f] font-bold underline hover:text-brand-400 transition-colors">Alice Springs solar page</Link>. For residential grid-connected systems, see our residential solar page.
             </p>
           </FadeIn>
 

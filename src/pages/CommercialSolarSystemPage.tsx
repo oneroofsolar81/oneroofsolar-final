@@ -450,6 +450,13 @@ export function CommercialSolarSystemPage() {
                 <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium">
                   Surplus energy can be stored in commercial batteries (see our <Link to="/services/solar-battery-installation" className="text-[#8cc63f] font-bold hover:underline">solar battery installation page</Link>) or exported back to the grid.
                 </p>
+                <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mt-4">
+                  Businesses can also explore{" "}
+                  <Link to="/solar-panels-darwin" className="text-[#8cc63f] font-bold hover:underline">solar panels in Darwin</Link>, professional{" "}
+                  <Link to="/services/solar-panel-installation" className="text-[#8cc63f] font-bold hover:underline">solar panel installation</Link>,{" "}
+                  <Link to="/products/solar-inverters" className="text-[#8cc63f] font-bold hover:underline">commercial-grade inverters</Link>, and the same quality we bring to every{" "}
+                  <Link to="/solar-systems/residential-solar-system" className="text-[#8cc63f] font-bold hover:underline">residential solar system</Link>.
+                </p>
               </FadeIn>
             </div>
 

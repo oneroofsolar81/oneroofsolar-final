@@ -411,6 +411,13 @@ export function SolarInverterRepair() {
                   <p>
                     Oneroof Solar diagnoses and repairs <RouterLink to="/services/solar-inverters" className="text-brand-600 font-bold underline hover:text-brand-700">solar inverters</RouterLink> across Darwin, Palmerston and rural NT. We service GoodWe, Sungrow, Fox ESS, Elpha ESS, Sigenergy and most other major brands, covering fault codes, blown fuses, fan and cooling failures, communication and monitoring faults, and storm or surge damage, with an honest call on whether a repair or a replacement is the better spend.
                   </p>
+                  <p>
+                    If the fault turns out to be in the panels rather than the inverter, our{" "}
+                    <RouterLink to="/services/solar-panel-repair-darwin" className="text-brand-600 font-bold underline hover:text-brand-700">solar panel repair</RouterLink>{" "}
+                    team can help, and regular{" "}
+                    <RouterLink to="/services/solar-panel-maintenance-darwin" className="text-brand-600 font-bold underline hover:text-brand-700">servicing</RouterLink>{" "}
+                    keeps the whole system healthy.
+                  </p>
                 </div>
               </div>
             </div>
@@ -897,6 +904,13 @@ export function SolarInverterRepair() {
                 </h2>
                 <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-8 font-medium">
                   If your inverter is showing a fault light, your bill has spiked, or your monitoring app has gone quiet, don't wait for it to get worse.
+                </p>
+                <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto mb-8 font-medium">
+                  You can also explore{" "}
+                  <RouterLink to="/solar-panels-darwin" className="text-[#8cc63f] font-bold underline hover:text-brand-400">solar panels in Darwin</RouterLink>,{" "}
+                  <RouterLink to="/services/solar-battery-installation" className="text-[#8cc63f] font-bold underline hover:text-brand-400">battery storage</RouterLink>, and{" "}
+                  <RouterLink to="/solar-systems/off-grid-solar-system" className="text-[#8cc63f] font-bold underline hover:text-brand-400">off-grid solar systems</RouterLink>, or see{" "}
+                  <RouterLink to="/projects" className="text-[#8cc63f] font-bold underline hover:text-brand-400">recent projects</RouterLink>.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <Button
