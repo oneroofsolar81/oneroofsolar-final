@@ -422,6 +422,12 @@ export function SolarBatteryInstallation() {
                   <p>
                     Darwin's heat and humidity affect where and how a battery should be installed. Our team positions every unit for airflow and shade, protecting performance and warranty from day one.
                   </p>
+                  <p>
+                    The same team looks after{" "}
+                    <Link to="/services/solar-panel-maintenance-darwin" className="text-[#8cc63f] font-bold underline hover:text-brand-700">ongoing system servicing</Link>{" "}
+                    and can prepare your setup for{" "}
+                    <Link to="/blog/solar-panel-cyclone-protection" className="text-[#8cc63f] font-bold underline hover:text-brand-700">storm and cyclone season</Link>.
+                  </p>
                 </div>
               </div>
             </div>
@@ -546,6 +552,11 @@ export function SolarBatteryInstallation() {
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium">
                 We fit batteries from trusted manufacturers including Tesla, Sigenergy, Sungrow, BYD, and Alpha ESS, matched to your system size and budget rather than pushed from one supplier.
               </p>
+              <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mt-4">
+                Compare the full range on our{" "}
+                <Link to="/products/solar-battery-brands" className="text-[#8cc63f] font-bold underline hover:text-brand-700">solar battery brands</Link>{" "}
+                page.
+              </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
@@ -582,6 +593,13 @@ export function SolarBatteryInstallation() {
             <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-8 normal-case">
               Residential and Commercial Battery Installation
             </h2>
+
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-8 max-w-4xl">
+              Pairing storage with a new{" "}
+              <Link to="/solar-systems/residential-solar-system" className="text-[#8cc63f] font-bold underline hover:text-brand-700">residential solar system</Link>{" "}
+              or a{" "}
+              <Link to="/solar-systems/commercial-solar-system" className="text-[#8cc63f] font-bold underline hover:text-brand-700">commercial solar system</Link>? We size the battery to each load profile.
+            </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               <div className="bg-slate-50 border border-slate-200 p-7 sm:p-8 rounded-2xl shadow-sm flex flex-col justify-between">
@@ -626,6 +644,13 @@ export function SolarBatteryInstallation() {
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium">
                 Every quote is different but the main factors are battery capacity whether you are adding to an existing solar system or installing fresh the complexity of your switchboard and wiring and whether you choose AC or DC coupling. See our packages above for a starting guide or get a free quote for an exact figure.
+              </p>
+              <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium mt-4">
+                If a hybrid setup suits your home, our{" "}
+                <Link to="/services/solar-inverters/installation" className="text-[#8cc63f] font-bold underline hover:text-brand-700">inverter installation</Link>{" "}
+                team can advise, and you can browse{" "}
+                <Link to="/projects" className="text-[#8cc63f] font-bold underline hover:text-brand-700">recent projects</Link>{" "}
+                across the NT.
               </p>
             </div>
           </FadeIn>

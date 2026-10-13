@@ -148,7 +148,7 @@ export function SolarInverterInstallation() {
     },
     {
       title: "Off-grid and rural properties",
-      desc: <>Properties out along the Stuart Highway corridor, in Litchfield, Humpty Doo and Berry Springs, often sit on acreage with no reliable grid connection. The pain point here is simple: power that stays on through the Wet season. That means a hybrid or fully <Link to="/solar-systems/off-grid-solar-system" className="text-[#8cc63f] underline hover:text-brand-400">off-grid</Link> inverter paired with <Link to="/services/solar-battery-installation" className="text-[#8cc63f] underline hover:text-brand-400">battery storage</Link>, sized to carry the property through cloudy days and storm-season outages.</>,
+      desc: <>Properties out along the Stuart Highway corridor, in Litchfield, Humpty Doo and Berry Springs, often sit on acreage with no reliable grid connection. The pain point here is simple: power that stays on through the Wet season. That means a hybrid or fully <Link to="/solar-systems/off-grid-solar-system" className="text-[#8cc63f] underline hover:text-brand-400">off-grid</Link> inverter paired with battery storage, sized to carry the property through cloudy days and storm-season outages.</>,
       icon: Compass
     }
   ];
@@ -156,7 +156,7 @@ export function SolarInverterInstallation() {
   const demandDrivers = [
     "New-build suburbs such as Zuccoli, Johnston, Muirhead and Berrimah are growing fast, and every new solar system going up needs a first-time inverter installation.",
     "Established suburbs including Nightcliff, Rapid Creek, Malak, Karama and Wagaman had a wave of solar installed during the STC rebate boom of the early 2010s. Those original inverters are now 10 to 15 years old, right at the point where Darwin's heat and humidity push ageing units toward failure.",
-    <>Rural and semi-rural properties in Litchfield, Humpty Doo, Berry Springs and along the Adelaide River corridor sit further from the grid, driving steady demand for hybrid and off-grid inverter installations paired with <Link to="/services/solar-battery-installation" className="text-[#8cc63f] underline hover:text-brand-400">battery storage</Link>.</>
+    <>Rural and semi-rural properties in Litchfield, Humpty Doo, Berry Springs and along the Adelaide River corridor sit further from the grid, driving steady demand for hybrid and off-grid inverter installations paired with battery storage.</>
   ];
 
   const installSteps = [
@@ -333,6 +333,14 @@ export function SolarInverterInstallation() {
                   <p>
                     Oneroof Solar installs and replaces AS/NZS-compliant <Link to="/services/solar-inverters" className="text-brand-600 font-bold underline hover:text-brand-700">solar inverters</Link> across Darwin, Palmerston and rural NT. We size, supply and fit string, hybrid and off-grid inverters matched to your roof, your switchboard and Power and Water Corporation's network rules, installed to AS/NZS 5033 wiring standards with cyclone-rated mounting and isolators.
                   </p>
+                  <p>
+                    If your current unit is failing, see our{" "}
+                    <Link to="/services/solar-inverters/repair" className="text-brand-600 font-bold underline hover:text-brand-700">solar inverter repair</Link>{" "}
+                    service, or explore{" "}
+                    <Link to="/solar-panels-darwin" className="text-brand-600 font-bold underline hover:text-brand-700">solar panels in Darwin</Link>{" "}
+                    and full{" "}
+                    <Link to="/solar-systems/residential-solar-system" className="text-brand-600 font-bold underline hover:text-brand-700">residential solar systems</Link>.
+                  </p>
                 </div>
               </div>
             </div>
@@ -401,6 +409,13 @@ export function SolarInverterInstallation() {
 
                 <p className="text-slate-300 text-base sm:text-lg leading-[1.7] font-medium border-t border-white/10 pt-4">
                   This spread, new estates needing a first install, established suburbs needing a replacement, and rural NT needing off-grid capability, is why we serve the full Top End rather than one postcode.
+                </p>
+                <p className="text-slate-300 text-base sm:text-lg leading-[1.7] font-medium mt-4">
+                  We also fit inverters for{" "}
+                  <Link to="/solar-systems/commercial-solar-system" className="text-[#8cc63f] font-bold underline hover:text-brand-400">commercial solar systems</Link>{" "}
+                  and across{" "}
+                  <Link to="/locations/palmerston" className="text-[#8cc63f] font-bold underline hover:text-brand-400">Palmerston</Link>, with recent work shown in our{" "}
+                  <Link to="/projects" className="text-[#8cc63f] font-bold underline hover:text-brand-400">recent projects</Link>.
                 </p>
               </div>
 
@@ -487,6 +502,11 @@ export function SolarInverterInstallation() {
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-10 max-w-4xl">
               We fit string, hybrid and off-grid inverters from brands proven in tropical and cyclone-prone climates, chosen to suit your roof, your budget and your future battery plans. Every installation carries manufacturer warranty backed by our own workmanship guarantee.
+            </p>
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-10 max-w-4xl">
+              See how we build for{" "}
+              <Link to="/blog/solar-panel-cyclone-protection" className="text-brand-600 font-bold underline hover:text-brand-700">cyclone protection</Link>{" "}
+              in the Top End.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
