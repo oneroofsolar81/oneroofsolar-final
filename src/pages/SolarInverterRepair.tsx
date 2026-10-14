@@ -689,6 +689,29 @@ export function SolarInverterRepair() {
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium bg-slate-900 border border-white/10 p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-xl">
               Final price depends on your inverter's brand and age, whether parts are still available from the manufacturer, and the extent of the damage. Rural callouts to Litchfield, Humpty Doo or Berry Springs may carry a small travel component. We always confirm the exact price before any work starts, no surprises on the invoice.
             </p>
+
+            <div className="mt-8 flex flex-wrap gap-4 justify-center">
+              <Button
+                size="lg"
+                className="rounded-xl px-8 bg-brand-500 text-slate-900 border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs shadow-lg shadow-brand-500/30"
+                asChild
+              >
+                <RouterLink to="/contact">
+                  <span>Get Your Repair Quote</span>
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </RouterLink>
+              </Button>
+              <Button
+                size="lg"
+                className="rounded-xl px-8 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold transition-all h-14 uppercase tracking-wider text-xs"
+                asChild
+              >
+                <a href="tel:0483986444">
+                  <Phone className="w-4 h-4 mr-2 text-[#8cc63f]" />
+                  <span>Call 0483 986 444</span>
+                </a>
+              </Button>
+            </div>
           </FadeIn>
         </div>
       </section>
