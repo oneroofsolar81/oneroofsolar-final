@@ -32,19 +32,6 @@ export function RecSolarPanels() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "REC Solar Panels NT",
-      "brand": {
-        "@type": "Brand",
-        "name": "REC Solar"
-      },
-      "description": "Oneroof Solar installs REC solar panels across Darwin, Palmerston, Alice Springs and the broader Northern Territory.",
-      "category": "Solar Panels",
-      "url": "https://oneroofsolar.com.au/solar-panels-brands/rec/",
-      "image": "https://oneroofsolar.com.au/assets/images/cyclone_solar_darwin_1784286769053.jpg"
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {

@@ -85,19 +85,6 @@ export function FoxEssInvertersPage() {
     },
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Fox ESS Solar Inverters",
-      "brand": {
-        "@type": "Brand",
-        "name": "Fox ESS"
-      },
-      "description": "Compare SAA approved Fox ESS single-phase, three-phase, and hybrid solar inverters built for extreme Darwin heat. Upfront STC discounts applied directly to your local Oneroof Solar quote.",
-      "category": "Solar Inverters",
-      "url": "https://oneroofsolar.com.au/products/solar-inverters/fox-ess",
-      "image": "/assets/images/hosted/products/foxess-inverter.webp"
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
         {

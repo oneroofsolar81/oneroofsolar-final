@@ -30,19 +30,6 @@ export function LongiSolarPanels() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "LONGi Solar Panels NT",
-      "brand": {
-        "@type": "Brand",
-        "name": "LONGi Solar"
-      },
-      "description": "Oneroof Solar installs LONGi solar panels across Darwin, Palmerston, Alice Springs, Katherine and Tennant Creek.",
-      "category": "Solar Panels",
-      "url": "https://oneroofsolar.com.au/solar-panels-brands/longi/",
-      "image": "https://oneroofsolar.com.au/assets/images/longi_solar_panel_1784285655984.jpg"
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {

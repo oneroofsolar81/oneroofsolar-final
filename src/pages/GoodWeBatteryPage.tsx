@@ -71,17 +71,6 @@ export function GoodWeBatteryPage() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      name: "GoodWe ESA Battery Systems",
-      brand: { "@type": "Brand", name: "GoodWe" },
-      manufacturer: { "@type": "Organization", name: "GoodWe" },
-      image: "/assets/images/hosted/goodwe-battery-hero.webp",
-      category: "Home Battery Storage",
-      description:
-        "SAA Approved GoodWe ESA all-in-one battery systems with 5kWh to 108kWh storage, fast backup switching, and Cheaper Home Batteries Program discounts. Supplied and installed across Darwin, Palmerston and the wider Northern Territory.",
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: faqs.map((faq) => ({
         "@type": "Question",

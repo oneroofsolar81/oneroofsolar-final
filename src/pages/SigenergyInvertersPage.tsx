@@ -91,21 +91,6 @@ export function SigenergyInvertersPage() {
           "item": "https://oneroofsolar.com.au/products/solar-inverters/sigenergy"
         }
       ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Sigenergy Solar Inverters Darwin NT",
-      "description": "Sigenergy hybrid inverters supplied and installed across Darwin, Palmerston and NT. SAA Approved, IP66 rated, battery ready.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Sigenergy"
-      },
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "AUD",
-        "availability": "https://schema.org/InStock"
-      }
     }
   ];
 

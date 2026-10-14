@@ -111,17 +111,6 @@ export function SungrowBatteryPage() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      name: "Sungrow Battery Systems",
-      brand: { "@type": "Brand", name: "Sungrow" },
-      manufacturer: { "@type": "Organization", name: "Sungrow" },
-      image: "/assets/images/hosted/products/sungrow-battery-hero.webp",
-      category: "Home Battery Storage",
-      description:
-        "SAA Accredited Sungrow SBR (6.4–25.6 kWh) and SBH (15–40 kWh) high-voltage LFP battery systems with IP55 protection, up to 100% Depth of Discharge and modular scaling. Supplied and installed across Darwin, Palmerston and the wider Northern Territory.",
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "FAQPage",
       "@id": "https://oneroofsolar.com.au/products/solar-battery-brands/sungrow#faq",
       mainEntity: faqs.map((faq) => ({

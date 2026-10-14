@@ -134,17 +134,6 @@ export function FoxEssBatteryPage() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      name: "Fox ESS Battery Systems",
-      brand: { "@type": "Brand", name: "Fox ESS" },
-      manufacturer: { "@type": "Organization", name: "Fox ESS" },
-      image: "/assets/images/hosted/products/fox-ess-battery-hero.webp",
-      category: "Home Battery Storage",
-      description:
-        "SAA Approved Fox ESS modular LFP battery systems (EQ4800, EQ5500, EP11, EP12 Plus) with IP65 weatherproofing, blackout backup and 100% Depth of Discharge. Supplied and installed across Darwin, Palmerston and the wider Northern Territory.",
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "FAQPage",
       "@id": "https://oneroofsolar.com.au/products/solar-battery-brands/foxess#faq",
       mainEntity: faqs.map((faq) => ({

@@ -69,17 +69,6 @@ export function SigenergyBatteryPage() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Sigenergy Battery Systems",
-      "brand": { "@type": "Brand", "name": "Sigenergy" },
-      "manufacturer": { "@type": "Organization", "name": "Sigenergy" },
-      "image": "/assets/images/home/logo-oneroof.png",
-      "category": "Home Battery Storage",
-      "description":
-        "SAA Approved Sigenergy home and commercial battery storage systems with LiFePO4 cells, IP66 rating, and 5.0 kWh or 8.0 kWh stackable capacity. Supplied and installed across Darwin, Palmerston and the wider Northern Territory.",
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": faqs.map((faq) => ({
         "@type": "Question",

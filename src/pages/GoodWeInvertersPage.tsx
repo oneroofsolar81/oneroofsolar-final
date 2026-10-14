@@ -73,19 +73,6 @@ export function GoodWeInvertersPage() {
           "item": "https://oneroofsolar.com.au/products/solar-inverters/goodwe"
         }
       ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "GoodWe Solar Inverters",
-      "brand": {
-        "@type": "Brand",
-        "name": "GoodWe"
-      },
-      "description": "Compare GoodWe ESA and ET G2 inverter systems for homes, businesses and off-grid projects across Darwin and the NT. Supply and installation.",
-      "category": "Solar Inverters",
-      "url": "https://oneroofsolar.com.au/products/solar-inverters/goodwe",
-      "image": "https://oneroofsolar.com.au/assets/images/inverter_hero_install_1785339518164.jpg"
     }
   ];
 

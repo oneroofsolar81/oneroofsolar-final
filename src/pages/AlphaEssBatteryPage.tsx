@@ -88,17 +88,6 @@ export function AlphaEssBatteryPage() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      name: "AlphaESS SMILE-G3-BAT-9.3S Battery System",
-      brand: { "@type": "Brand", name: "Alpha ESS" },
-      manufacturer: { "@type": "Organization", name: "Alpha ESS" },
-      image: "/assets/images/hosted/products/alpha-ess-battery-hero.webp",
-      category: "Home Battery Storage",
-      description:
-        "SAA Accredited Alpha ESS SMILE-G3-BAT-9.3S LFP battery storage with 9.3 kWh usable capacity (100% DoD), IP65 weatherproofing, EPS blackout backup and modular scaling up to 111.6 kWh. Supplied and installed across Darwin, Palmerston and the wider Northern Territory.",
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "FAQPage",
       "@id": "https://oneroofsolar.com.au/products/solar-battery-brands/alpha-ess#faq",
       mainEntity: faqs.map((faq) => ({

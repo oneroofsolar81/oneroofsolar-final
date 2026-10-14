@@ -35,19 +35,6 @@ export function JaSolarPanels() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "JA Solar Panels",
-      "brand": {
-        "@type": "Brand",
-        "name": "JA Solar"
-      },
-      "description": "Get Tier 1 solar panels in Darwin and the NT. High efficiency, salt resistant dual glass technology at an affordable price. Free quote.",
-      "category": "Solar Panels",
-      "url": "https://oneroofsolar.com.au/product/solar-panels-brands/ja-solar-panels-nt",
-      "image": "/assets/images/home/home-hero-bayview.webp"
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {

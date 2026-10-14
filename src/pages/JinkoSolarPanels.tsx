@@ -37,41 +37,6 @@ export function JinkoSolarPanels() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Jinko N-Type TOPCon Solar Panels",
-      "brand": {
-        "@type": "Brand",
-        "name": "Jinko Solar"
-      },
-      "description": "Oneroof Solar installs Jinko N-type TOPCon solar panels across Darwin, Palmerston, Alice Springs and the NT. Features high efficiency, cyclone rating, and 25-year product warranty with labor cost coverage.",
-      "category": "Solar Panels",
-      "url": "https://oneroofsolar.com.au/solar-panels-brands/jinko/",
-      "image": "https://oneroofsolar.com.au/assets/images/jinko_topcon_cell.jpg",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Module Efficiency",
-          "value": "Above 22% (up to 23.6%)"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Temperature Coefficient",
-          "value": "-0.26%/°C"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Performance Warranty",
-          "value": "30 Years"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Product Warranty",
-          "value": "25 Years (includes labour cost coverage)"
-        }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {

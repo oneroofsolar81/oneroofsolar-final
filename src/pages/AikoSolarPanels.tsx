@@ -99,41 +99,6 @@ export function AikoSolarPanels() {
   const schemas = [
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "AIKO Gen 3 ABC Solar Panels",
-      "brand": {
-        "@type": "Brand",
-        "name": "AIKO Solar"
-      },
-      "description": "Oneroof Solar installs AIKO Gen 3 ABC N-type solar panels in Darwin and across the NT. Features All Back Contact technology with above 25% efficiency and structural cyclone rating.",
-      "category": "Solar Panels",
-      "url": "https://oneroofsolar.com.au/solar-panels-brands/aiko/",
-      "image": "/assets/images/hosted/products/ja-solar.webp",
-      "additionalProperty": [
-        {
-          "@type": "PropertyValue",
-          "name": "Module Efficiency",
-          "value": "Above 25%"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Temperature Coefficient",
-          "value": "-0.26%/°C"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Performance Warranty",
-          "value": "30 Years"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Annual Degradation",
-          "value": "0.35% per year"
-        }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
         {

@@ -70,19 +70,6 @@ export function AlphaEssInvertersPage() {
     },
     {
       "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Alpha ESS Solar Inverters Darwin NT",
-      "brand": {
-        "@type": "Brand",
-        "name": "Alpha ESS"
-      },
-      "description": "Heat-proof your power. Get premium SAA Approved Alpha ESS single & 3-phase hybrid solar inverters in Darwin, Palmerston & NT wide. Save with upfront STC discounts.",
-      "category": "Solar Inverters",
-      "url": "https://oneroofsolar.com.au/products/solar-inverters/alpha-ess",
-      "image": heroInverterImg
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
         {
