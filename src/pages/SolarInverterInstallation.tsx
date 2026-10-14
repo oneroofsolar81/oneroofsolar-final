@@ -193,11 +193,11 @@ export function SolarInverterInstallation() {
   ];
 
   const brands = [
-    { name: "Elpha ESS" },
-    { name: "Fox ESS" },
-    { name: "GoodWe" },
-    { name: "Sigenergy" },
-    { name: "Sungrow" }
+    { name: "Elpha ESS", href: "/products/solar-inverters/alpha-ess" },
+    { name: "Fox ESS", href: "/products/solar-inverters/fox-ess" },
+    { name: "GoodWe", href: "/products/solar-inverters/goodwe" },
+    { name: "Sigenergy", href: "/products/solar-inverters/sigenergy" },
+    { name: "Sungrow", href: "/products/solar-inverters/sungrow-inverters" }
   ];
 
   const faqs = [
@@ -511,17 +511,18 @@ export function SolarInverterInstallation() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
               {brands.map((brand, idx) => (
-                <div 
+                <Link
                   key={idx}
-                  className="bg-slate-50 border border-slate-200 p-6 rounded-2xl shadow-sm flex flex-col justify-center items-center text-center hover:border-brand-500/40 transition-colors"
+                  to={brand.href}
+                  className="group bg-slate-50 border border-slate-200 p-6 rounded-2xl shadow-sm flex flex-col justify-center items-center text-center hover:border-brand-500/40 hover:shadow-md transition-all"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-600 mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-600 mb-4 group-hover:bg-brand-500 group-hover:text-white transition-colors">
                     <Zap className="w-5 h-5" />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 normal-case">
+                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors normal-case">
                     {brand.name}
                   </h3>
-                </div>
+                </Link>
               ))}
             </div>
           </FadeIn>
