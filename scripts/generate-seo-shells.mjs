@@ -22,10 +22,12 @@ const routes = [
   { path: '/projects', title: 'Solar Projects Darwin & NT | Oneroof Solar Installations', description: 'See completed solar panel and battery projects across Darwin, Palmerston, Alice Springs and the Northern Territory.' },
   { path: '/blogs', title: 'Solar Blog Darwin NT | Oneroof Solar Guides', description: 'Solar tips, NT weather guidance and installation advice from Oneroof Solar in Darwin.' },
   { path: '/solar-panels-darwin', title: 'Solar Panels Darwin | Installation, Repair & Maintenance | Oneroof Solar', description: 'Call 0483 986 444 for solar panel installation, repair, and maintenance across Darwin and the NT.' },
-  { path: '/services/solar-panel-installation', title: 'Solar Panel Installation Darwin | Oneroof Solar', description: 'Call 0483 986 444 for licensed solar panel installation in Darwin, homes, businesses and remote NT properties.' },
-  { path: '/services/solar-panel-repair-darwin', title: 'Solar Panel Repair Darwin | Oneroof Solar', description: 'Professional solar panel repair in Darwin. Cracked panels, hot spots, storm damage and all major brands.' },
-  { path: '/services/solar-panel-maintenance-darwin', title: 'Solar Panel Cleaning and Maintenance Darwin | Oneroof Solar', description: 'Professional solar panel cleaning and maintenance in Darwin. Purified water cleans and system checks.' },
-  { path: '/services/solar-battery-installation', title: 'Solar Battery Installation Darwin | Oneroof Solar', description: 'Solar battery installation across Darwin and the NT. Storage for homes and businesses.' },
+  { path: '/services/solar-panel-installation', title: 'Solar Panel Installation Darwin | Cut Bills Up to 70%', description: 'Slash power bills with SAA-accredited solar panel installation in Darwin. Cyclone-rated, $0 deposit options & upfront NT rebates. Get a free custom quote!' },
+  { path: '/services/solar-panel-repair-darwin', title: 'Fast Solar Panel Repair Darwin | Same Day Service | Oneroof', description: 'Inverter faults, storm damage, or low solar output? Get fast, SAA-licensed solar panel repair in Darwin. Local experts & honest diagnostic. Call 0483 986 444!' },
+  { path: '/services/solar-panel-maintenance-darwin', title: 'Solar Panel Cleaning & Maintenance Darwin | Restore Up to 30% Output', description: 'Boost power output with SAA-certified solar panel cleaning & maintenance in Darwin. Pure deionised water, zero scratch guarantee & full electrical checks. Call now!' },
+  { path: '/services/solar-battery-installation', title: 'Solar Battery Installation Darwin | Oneroof Solar', description: 'Solar battery installation in Darwin and across the NT for homes and businesses. Sigenergy and GoodWe battery storage options. Request a quote.' },
+  { path: '/services/solar-inverters/installation', title: 'Solar Inverter Installation Darwin | Oneroof Solar', description: 'Solar inverter installation in Darwin and across the NT for homes and businesses. Sungrow, GoodWe, Sigenergy, Fox ESS and Alpha ESS. Request a quote.' },
+  { path: '/services/solar-inverters/repair', title: 'Solar Inverter Repair Darwin | Oneroof Solar', description: 'Solar inverter repair and replacement in Darwin and across the NT for homes and businesses. Fault finding, servicing and fast support. Request a quote.' },
   { path: '/solar-systems/residential-solar-system', title: 'Residential Solar System Darwin | Oneroof Solar', description: 'Residential solar systems for Darwin homes. Design, install and support from Oneroof Solar.' },
   { path: '/solar-systems/commercial-solar-system', title: 'Commercial Solar System Darwin | Oneroof Solar', description: 'Commercial solar systems for Darwin businesses. Custom design and installation.' },
   { path: '/solar-systems/off-grid-solar-system', title: 'Off-Grid Solar System NT | Oneroof Solar', description: 'Off-grid solar systems for remote Northern Territory properties.' },
@@ -82,6 +84,26 @@ function injectMeta(html, { path: routePath, title, description }) {
       /<meta name="description"[^>]*>/i,
       (m) => `${m}\n    <link rel="canonical" href="${canonical}" />`
     );
+  }
+
+  // Open Graph + Twitter tags matching the page title/description/canonical
+  out = out
+    .replace(/\s*<meta\s+property=["']og:title["'][^>]*>/gi, '')
+    .replace(/\s*<meta\s+property=["']og:description["'][^>]*>/gi, '')
+    .replace(/\s*<meta\s+property=["']og:url["'][^>]*>/gi, '')
+    .replace(/\s*<meta\s+name=["']twitter:title["'][^>]*>/gi, '')
+    .replace(/\s*<meta\s+name=["']twitter:description["'][^>]*>/gi, '');
+  const social = [
+    `<meta property="og:title" content="${escapeHtml(title)}" />`,
+    `<meta property="og:description" content="${escapeHtml(description)}" />`,
+    `<meta property="og:url" content="${canonical}" />`,
+    `<meta name="twitter:title" content="${escapeHtml(title)}" />`,
+    `<meta name="twitter:description" content="${escapeHtml(description)}" />`,
+  ].join('\n    ');
+  if (/<link\s+rel=["']canonical["'][^>]*>/i.test(out)) {
+    out = out.replace(/(<link\s+rel=["']canonical["'][^>]*>)/i, `$1\n    ${social}`);
+  } else {
+    out = out.replace(/<\/title>/i, (m) => `${m}\n    ${social}`);
   }
 
   // Lightweight crawlable body hint for non-JS agents

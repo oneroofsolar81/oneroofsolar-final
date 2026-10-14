@@ -28,15 +28,15 @@ export function SolarBatteryInstallation() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   const seoData = {
-    title: "Solar Battery Installation Darwin, NT | Oneroof Solar",
-    metaDescription: "Licensed solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
-    canonicalUrl: "https://oneroofsolar.com.au/services/solar-battery-installation",
+    title: "Solar Battery Installation Darwin | Oneroof Solar",
+    metaDescription: "Solar battery installation in Darwin and across the NT for homes and businesses. Sigenergy and GoodWe battery storage options. Request a quote.",
+    canonicalUrl: "https://www.oneroofsolar.com.au/services/solar-battery-installation",
     robots: "index, follow",
-    openGraphTitle: "Solar Battery Installation Darwin, NT | Oneroof Solar",
-    openGraphDescription: "Licensed solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
+    openGraphTitle: "Solar Battery Installation Darwin | Oneroof Solar",
+    openGraphDescription: "Solar battery installation in Darwin and across the NT for homes and businesses. Sigenergy and GoodWe battery storage options. Request a quote.",
     openGraphImage: "/assets/images/hosted/products/sigen-battery.webp",
-    twitterTitle: "Solar Battery Installation Darwin, NT | Oneroof Solar",
-    twitterDescription: "Licensed solar battery installation in Darwin, NT. Blackout protection, expert integration, residential and commercial. Get a free quote today.",
+    twitterTitle: "Solar Battery Installation Darwin | Oneroof Solar",
+    twitterDescription: "Solar battery installation in Darwin and across the NT for homes and businesses. Sigenergy and GoodWe battery storage options. Request a quote.",
     twitterImage: "/assets/images/hosted/products/sigen-battery.webp",
   };
 

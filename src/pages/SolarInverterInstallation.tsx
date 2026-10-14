@@ -22,15 +22,15 @@ export function SolarInverterInstallation() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   const seoData = {
-    title: "Solar Inverter Installation Darwin NT | Oneroof Solar",
-    metaDescription: "Licensed solar inverter installation in Darwin, Palmerston and rural NT. Cyclone-rated string, hybrid and off-grid inverters. Book a free assessment today.",
-    canonicalUrl: "https://oneroofsolar.com.au/services/solar-inverters/installation",
+    title: "Solar Inverter Installation Darwin | Oneroof Solar",
+    metaDescription: "Solar inverter installation in Darwin and across the NT for homes and businesses. Sungrow, GoodWe, Sigenergy, Fox ESS and Alpha ESS. Request a quote.",
+    canonicalUrl: "https://www.oneroofsolar.com.au/services/solar-inverters/installation",
     robots: "index, follow",
-    openGraphTitle: "Solar Inverter Installation Darwin NT | Oneroof Solar",
-    openGraphDescription: "Licensed solar inverter installation in Darwin, Palmerston and rural NT. Cyclone-rated string, hybrid and off-grid inverters.",
+    openGraphTitle: "Solar Inverter Installation Darwin | Oneroof Solar",
+    openGraphDescription: "Solar inverter installation in Darwin and across the NT for homes and businesses. Sungrow, GoodWe, Sigenergy, Fox ESS and Alpha ESS. Request a quote.",
     openGraphImage: "https://oneroofsolar.com.au/assets/images/inverter_install_hero_1785312441730.jpg",
-    twitterTitle: "Solar Inverter Installation Darwin NT | Oneroof Solar",
-    twitterDescription: "Licensed solar inverter installation in Darwin, Palmerston and rural NT.",
+    twitterTitle: "Solar Inverter Installation Darwin | Oneroof Solar",
+    twitterDescription: "Solar inverter installation in Darwin and across the NT for homes and businesses. Sungrow, GoodWe, Sigenergy, Fox ESS and Alpha ESS. Request a quote.",
     twitterImage: "https://oneroofsolar.com.au/assets/images/inverter_install_hero_1785312441730.jpg",
   };
 

@@ -31,15 +31,15 @@ export function SolarInverterRepair() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   const seoData = {
-    title: "Solar Inverter Repair Darwin NT | Fast Diagnosis | Oneroof Solar",
-    metaDescription: "Licensed solar inverter repair in Darwin. Fast fault diagnosis of all major brands and honest repair-or-replace advice. Book a callout today.",
-    canonicalUrl: "https://oneroofsolar.com.au/services/solar-inverters/repair",
+    title: "Solar Inverter Repair Darwin | Oneroof Solar",
+    metaDescription: "Solar inverter repair and replacement in Darwin and across the NT for homes and businesses. Fault finding, servicing and fast support. Request a quote.",
+    canonicalUrl: "https://www.oneroofsolar.com.au/services/solar-inverters/repair",
     robots: "index, follow",
-    openGraphTitle: "Solar Inverter Repair Darwin NT | Fast Diagnosis | Oneroof Solar",
-    openGraphDescription: "Licensed solar inverter repair in Darwin. Fast fault diagnosis of all major brands and honest repair-or-replace advice. Book a callout today.",
+    openGraphTitle: "Solar Inverter Repair Darwin | Oneroof Solar",
+    openGraphDescription: "Solar inverter repair and replacement in Darwin and across the NT for homes and businesses. Fault finding, servicing and fast support. Request a quote.",
     openGraphImage: "https://oneroofsolar.com.au/assets/images/repair_hero_diag_1785343403327.jpg",
-    twitterTitle: "Solar Inverter Repair Darwin NT | Fast Diagnosis | Oneroof Solar",
-    twitterDescription: "Licensed solar inverter repair in Darwin. Fast fault diagnosis of all major brands and honest repair-or-replace advice.",
+    twitterTitle: "Solar Inverter Repair Darwin | Oneroof Solar",
+    twitterDescription: "Solar inverter repair and replacement in Darwin and across the NT for homes and businesses. Fault finding, servicing and fast support. Request a quote.",
     twitterImage: "https://oneroofsolar.com.au/assets/images/repair_hero_diag_1785343403327.jpg",
   };
 

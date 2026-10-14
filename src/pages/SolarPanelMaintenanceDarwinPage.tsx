@@ -19,8 +19,23 @@ import { FaqSection } from "@/src/components/FaqSection";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { QuoteForm } from "@/src/components/QuoteForm";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
+import { SEO } from "@/src/components/SEO";
 
 export function SolarPanelMaintenanceDarwinPage() {
+  const seoData = {
+    title: "Solar Panel Cleaning & Maintenance Darwin | Restore Up to 30% Output",
+    metaDescription:
+      "Boost power output with SAA-certified solar panel cleaning and maintenance in Darwin. Pure deionised water, zero scratch guarantee and full electrical checks. Call now!",
+    canonicalUrl: "https://www.oneroofsolar.com.au/services/solar-panel-maintenance-darwin",
+    robots: "index, follow",
+    openGraphTitle: "Solar Panel Cleaning & Maintenance Darwin | Restore Up to 30% Output",
+    openGraphDescription:
+      "Boost power output with SAA-certified solar panel cleaning and maintenance in Darwin. Pure deionised water, zero scratch guarantee and full electrical checks. Call now!",
+    twitterTitle: "Solar Panel Cleaning & Maintenance Darwin | Restore Up to 30% Output",
+    twitterDescription:
+      "Boost power output with SAA-certified solar panel cleaning and maintenance in Darwin. Pure deionised water, zero scratch guarantee and full electrical checks. Call now!",
+  };
+
   useEffect(() => {
     const schemaData = [
       {
@@ -105,6 +120,14 @@ export function SolarPanelMaintenanceDarwinPage() {
               text: "We check your inverter, battery, electrical connections, mounting clips, and hardware during every maintenance visit, not just the panel surface. If anything looks wrong, we tell you, with photos where relevant.",
             },
           },
+          {
+            "@type": "Question",
+            name: "Is there a solar panel cleaning service near me in Darwin?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Yes. Oneroof Solar is a local Darwin team that offers solar panel cleaning and maintenance for homes and businesses across Darwin, Palmerston and the Top End. Request a quote and we will confirm your suburb and book a time.",
+            },
+          },
         ],
       },
       {
@@ -166,6 +189,10 @@ export function SolarPanelMaintenanceDarwinPage() {
       q: "What's included in a maintenance check?",
       a: "We check your inverter, battery, electrical connections, mounting clips, and hardware during every maintenance visit, not just the panel surface. If anything looks wrong, we tell you, with photos where relevant.",
     },
+    {
+      q: "Is there a solar panel cleaning service near me in Darwin?",
+      a: "Yes. Oneroof Solar is a local Darwin team that offers solar panel cleaning and maintenance for homes and businesses across Darwin, Palmerston and the Top End. Request a quote and we will confirm your suburb and book a time.",
+    },
   ];
 
   const scrollToForm = () => {
@@ -175,6 +202,7 @@ export function SolarPanelMaintenanceDarwinPage() {
 
   return (
     <div id="solar-maintenance-root" className="bg-white text-slate-900 font-sans">
+      <SEO seo={seoData} />
       {/* HERO */}
       <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#0A1118]">
         <div className="absolute inset-0">
@@ -405,6 +433,51 @@ export function SolarPanelMaintenanceDarwinPage() {
         </div>
       </section>
 
+      {/* CLEANING VS PRESSURE WASHING */}
+      <section className="py-24 bg-white relative overflow-hidden border-b border-slate-100">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10">
+          <FadeIn>
+            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case text-center">
+              Solar Panel Cleaning vs Pressure Washing: What Is Safe for Your System
+            </h2>
+            <p className="text-lg font-medium text-slate-600 leading-relaxed mb-10 max-w-3xl mx-auto text-center">
+              A general pressure washing crew cleans surfaces. A solar maintenance team looks after a piece of electrical equipment on your roof. That difference matters, because solar glass, seals and wiring can be damaged by the wrong method. Here is how the two approaches compare.
+            </p>
+          </FadeIn>
+          <FadeIn>
+            <div className="overflow-x-auto rounded-[2rem] border border-slate-200 shadow-md">
+              <table className="w-full min-w-[640px] text-left border-collapse">
+                <thead>
+                  <tr className="bg-slate-50 border-b border-slate-200">
+                    <th className="p-5 text-sm font-bold uppercase tracking-wider text-slate-500"></th>
+                    <th className="p-5 text-sm font-bold uppercase tracking-wider text-slate-700">General pressure washing</th>
+                    <th className="p-5 text-sm font-bold uppercase tracking-wider text-brand-700">Oneroof Solar cleaning and maintenance</th>
+                  </tr>
+                </thead>
+                <tbody className="text-slate-600 font-medium">
+                  {[
+                    ["Water and products", "Tap water, sometimes detergents", "Purified, low mineral water. No harsh chemicals"],
+                    ["Cleaning method", "High pressure spray", "Soft brushes and low pressure rinse"],
+                    ["Warranty", "Method may not match the panel maker's cleaning guidelines", "We follow manufacturer cleaning guidelines"],
+                    ["Electrical checks", "Cleaning only", "Inverter, DC isolator and wiring checks"],
+                    ["Roof access", "Varies by company", "Proper fall protection for work at heights"],
+                  ].map((row, idx) => (
+                    <tr key={idx} className="border-b border-slate-100 last:border-0">
+                      <td className="p-5 font-bold text-slate-900">{row[0]}</td>
+                      <td className="p-5">{row[1]}</td>
+                      <td className="p-5 bg-brand-50/40 text-slate-800">{row[2]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-lg font-medium text-slate-600 leading-relaxed mt-8 max-w-3xl mx-auto text-center">
+              Not sure what your panel warranty says about cleaning? Check your paperwork or ask us. We can tell you what most manufacturers recommend.
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* WHAT TO EXPECT */}
       <section className="py-24 bg-slate-900 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-500/10 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
@@ -491,6 +564,82 @@ export function SolarPanelMaintenanceDarwinPage() {
                 Request a Free Quote <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </FadeIn>
+          </div>
+
+          <div className="max-w-6xl mx-auto mt-20">
+            <FadeIn>
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case text-center">
+                Solar Panel Cleaning and Maintenance Pricing in Darwin
+              </h2>
+              <p className="text-lg font-medium text-slate-600 leading-relaxed mb-10 max-w-3xl mx-auto text-center">
+                You get a clear quote before we book a day, with no surprises on the day. Every service includes a purified water clean and a check of your inverter, isolators and wiring.
+              </p>
+            </FadeIn>
+            <FadeIn>
+              <div className="max-w-2xl mx-auto mb-14 bg-slate-50 border border-slate-200 rounded-[2rem] p-8">
+                <h3 className="text-lg font-bold text-slate-900 mb-4 normal-case">What affects the price</h3>
+                <ul className="space-y-3">
+                  {[
+                    "Number of panels",
+                    "Roof height, pitch and access",
+                    "How dirty the panels are (dust, bird droppings, sap, bat droppings)",
+                    "Whether you want extra system checks added",
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3 text-slate-600 font-medium">
+                      <Check className="w-5 h-5 text-brand-600 shrink-0 mt-0.5" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeIn>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Home systems",
+                  body: (
+                    <>
+                      Best for single and double storey homes across{" "}
+                      <Link to="/locations/darwin-city" className="text-brand-600 font-bold hover:underline">Darwin</Link>{" "}
+                      and Palmerston. Includes a full purified water clean, a check for debris and bird nesting, and an inverter status check.
+                    </>
+                  ),
+                  cta: "Get a Quote",
+                },
+                {
+                  title: "Commercial and multi-storey arrays",
+                  body: (
+                    <>
+                      Best for warehouses, schools and office buildings. We schedule around your operating hours to avoid downtime and can supply a simple report on what we found. Pairs well with a{" "}
+                      <Link to="/solar-systems/commercial-solar-system" className="text-brand-600 font-bold hover:underline">commercial solar system</Link>.
+                    </>
+                  ),
+                  cta: "Request a Commercial Quote",
+                },
+                {
+                  title: "Twice-yearly care plan",
+                  body: (
+                    <>
+                      One clean before the dry season and one after, so dust never builds up for long. Ideal if you want it handled without having to remember.
+                    </>
+                  ),
+                  cta: "Ask About the Care Plan",
+                },
+              ].map((card, idx) => (
+                <FadeIn key={idx} delay={idx * 0.08}>
+                  <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-md hover:shadow-xl hover:border-brand-300 transition-all duration-300 h-full flex flex-col">
+                    <h3 className="text-xl font-bold text-slate-900 mb-4 normal-case">{card.title}</h3>
+                    <p className="text-slate-600 font-medium leading-relaxed mb-8 flex-1">{card.body}</p>
+                    <Button
+                      className="rounded-full px-6 bg-brand-500 text-slate-900 border-none font-bold hover:bg-brand-400 transition-all h-12 w-full uppercase tracking-widest text-xs"
+                      onClick={scrollToForm}
+                    >
+                      {card.cta}
+                    </Button>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>

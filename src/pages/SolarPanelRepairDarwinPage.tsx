@@ -24,10 +24,25 @@ import { FaqSection } from "@/src/components/FaqSection";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 import { QuoteForm } from "@/src/components/QuoteForm";
+import { SEO } from "@/src/components/SEO";
 import { db } from "../lib/firebase";
 import { collection, addDoc } from "firebase/firestore";
 
 export function SolarPanelRepairDarwinPage() {
+  const seoData = {
+    title: "Fast Solar Panel Repair Darwin | Same Day Service | Oneroof",
+    metaDescription:
+      "Inverter faults, storm damage, or low solar output? Get fast, SAA-licensed solar panel repair in Darwin. Local experts and honest diagnostics. Call 0483 986 444!",
+    canonicalUrl: "https://www.oneroofsolar.com.au/services/solar-panel-repair-darwin",
+    robots: "index, follow",
+    openGraphTitle: "Fast Solar Panel Repair Darwin | Same Day Service | Oneroof",
+    openGraphDescription:
+      "Inverter faults, storm damage, or low solar output? Get fast, SAA-licensed solar panel repair in Darwin. Local experts and honest diagnostics. Call 0483 986 444!",
+    twitterTitle: "Fast Solar Panel Repair Darwin | Same Day Service | Oneroof",
+    twitterDescription:
+      "Inverter faults, storm damage, or low solar output? Get fast, SAA-licensed solar panel repair in Darwin. Local experts and honest diagnostics. Call 0483 986 444!",
+  };
+
   // Form state
   const [formState, setFormState] = useState({
     firstName: "",
@@ -217,6 +232,7 @@ export function SolarPanelRepairDarwinPage() {
 
   return (
     <div id="solar-repair-root" className="bg-white text-slate-900 font-sans">
+      <SEO seo={seoData} />
       
       {/* SECTION 1: HERO SECTION */}
       <section id="repair-hero" className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-[#0A1118]">

@@ -2288,8 +2288,8 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
 
   const seoData = isSolarInstall
     ? {
-        title: "Solar Panel Installation Darwin | Oneroof Solar",
-        metaDescription: `Call ${PRIMARY_PHONE} for licensed solar panel installation in Darwin, homes, businesses and remote NT properties. 25 years experience. Free quote.`,
+        title: "Solar Panel Installation Darwin | Cut Bills Up to 70%",
+        metaDescription: "Slash power bills with SAA-accredited solar panel installation in Darwin. Cyclone-rated, $0 deposit options & upfront NT rebates. Get a free custom quote!",
         canonicalUrl: "https://www.oneroofsolar.com.au/services/solar-panel-installation",
       }
     : (dbSeo || { title: service.title, metaDescription: service.description });
@@ -2637,6 +2637,104 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
             </div>
           </div>
         </div>
+      )}
+
+      {/* SAA-Accredited Intro (Solar Install) */}
+      {isSolarInstall && (
+        <section className="py-14 sm:py-16 md:py-20 bg-white relative overflow-hidden border-t border-slate-100">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <FadeIn delay={0.1}>
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
+                SAA-Accredited Solar Panel Installation in Darwin &amp; NT
+              </h2>
+              <p className="text-lg text-slate-600 leading-relaxed font-medium mb-8">
+                Protect your home from rising energy costs with custom-designed, cyclone-certified solar power engineered for Darwin's extreme climate. Our licensed, SAA-accredited installers deliver top-tier work backed by strong local warranties, ensuring maximum bill savings with zero upfront deposit and immediate government rebate discounts applied at checkout.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <Button
+                  size="lg"
+                  className="rounded-full px-8 bg-brand-500 text-slate-900 border-none font-bold hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_0_20px_rgba(140,198,63,0.3)]"
+                  asChild
+                >
+                  <Link to="/contact">
+                    Get My Free Solar Quote <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full px-8 text-slate-900 border-slate-300 font-bold hover:bg-slate-50 transition-all h-14 hover:-translate-y-1"
+                  asChild
+                >
+                  <a href={`tel:${PRIMARY_PHONE_RAW}`}>Call Direct 0483 986 444</a>
+                </Button>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+      )}
+
+      {/* Savings and System Size Guide (Solar Install) */}
+      {isSolarInstall && (
+        <section className="py-14 sm:py-16 md:py-20 bg-slate-50/50 relative overflow-hidden border-t border-slate-100">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <FadeIn delay={0.1}>
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case text-center">
+                How Much Can You Save with Solar in Darwin?
+              </h2>
+              <p className="text-lg text-slate-600 leading-relaxed font-medium mb-10 max-w-3xl mx-auto text-center">
+                Darwin gets strong sunshine all year round. Use this quick guide to find a good solar system size for your home or business and see how much you could save on your Power and Water Corporation bills.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.15}>
+              <div className="overflow-x-auto rounded-[2rem] border border-slate-200 shadow-md bg-white">
+                <table className="w-full min-w-[720px] text-left border-collapse">
+                  <thead>
+                    <tr className="bg-slate-50 border-b border-slate-200">
+                      <th className="p-5 text-sm font-bold uppercase tracking-wider text-slate-700">Average quarterly power bill</th>
+                      <th className="p-5 text-sm font-bold uppercase tracking-wider text-slate-700">Recommended solar system</th>
+                      <th className="p-5 text-sm font-bold uppercase tracking-wider text-slate-700">Estimated annual savings</th>
+                      <th className="p-5 text-sm font-bold uppercase tracking-wider text-slate-700">Ideal for</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-slate-600 font-medium">
+                    {[
+                      ["$400 to $700", "6.6 kW solar system", "$1,200 to $1,600 per year", "2 to 3 bedroom homes"],
+                      ["$700 to $1,200", "10 kW solar system", "$1,800 to $2,600 per year", "Larger families and high air-conditioning use"],
+                      ["$1,200+", "10 kW+ system with battery", "$2,800+ per year", "Businesses and high night-time energy use"],
+                    ].map((row, idx) => (
+                      <tr key={idx} className="border-b border-slate-100 last:border-0">
+                        <td className="p-5 font-bold text-slate-900">{row[0]}</td>
+                        <td className="p-5">{row[1]}</td>
+                        <td className="p-5 text-brand-700 font-semibold">{row[2]}</td>
+                        <td className="p-5">{row[3]}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-sm text-slate-500 font-medium mt-4 text-center">
+                Estimates only. Your savings depend on your usage, roof and electricity plan.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <div className="mt-12 rounded-[2rem] bg-[#0A1118] p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+                <p className="text-xl font-bold text-white text-center sm:text-left">
+                  Need an exact number for your roof?
+                </p>
+                <Button
+                  size="lg"
+                  className="rounded-full px-8 bg-brand-500 text-slate-900 border-none font-bold hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_0_20px_rgba(140,198,63,0.3)] shrink-0"
+                  asChild
+                >
+                  <Link to="/contact">
+                    Request Free On-Site Energy Audit <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </Button>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
       )}
 
       {/* Intro Modern Sections */}
@@ -3225,6 +3323,68 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           </div>
         </div>
       </section>
+
+      {/* Rebates and Finance (Solar Install) */}
+      {isSolarInstall && (
+        <section className="py-14 sm:py-16 md:py-20 bg-slate-50/50 relative overflow-hidden border-t border-slate-100">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <FadeIn delay={0.1}>
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case text-center">
+                Government Rebates and $0 Deposit Solar Payment Plans in Darwin
+              </h2>
+              <p className="text-lg text-slate-600 leading-relaxed font-medium mb-10 max-w-3xl mx-auto text-center">
+                Going solar in the NT is more affordable with Small-scale Technology Certificates (STCs) and flexible finance.
+              </p>
+            </FadeIn>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              {[
+                {
+                  title: "Upfront rebate",
+                  body: "You do not wait months for cashback. We take off your eligible STC rebate directly on your invoice.",
+                },
+                {
+                  title: "$0 deposit finance",
+                  body: "Start saving from day one. In many cases, your monthly repayments can be lower than your current power bill.",
+                },
+              ].map((card, idx) => (
+                <FadeIn key={idx} delay={0.15 + idx * 0.08}>
+                  <div className="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-md h-full">
+                    <h3 className="text-xl font-bold text-slate-900 mb-4 normal-case">{card.title}</h3>
+                    <p className="text-slate-600 font-medium leading-relaxed">{card.body}</p>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+            <FadeIn delay={0.2}>
+              <div className="rounded-[2rem] bg-[#0A1118] p-8 sm:p-10 text-center">
+                <h3 className="text-2xl font-bold text-white mb-3 normal-case">Claim Your Upfront NT Solar Discount</h3>
+                <p className="text-slate-300 font-medium mb-8 max-w-2xl mx-auto">
+                  Talk to our Darwin solar team to check if your property is eligible.
+                </p>
+                <div className="flex flex-wrap items-center justify-center gap-4">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="rounded-full px-8 text-white border-white/20 font-bold hover:bg-white/5 hover:text-white transition-all h-14 hover:-translate-y-1"
+                    asChild
+                  >
+                    <a href={`tel:${PRIMARY_PHONE_RAW}`}>Call 0483 986 444</a>
+                  </Button>
+                  <Button
+                    size="lg"
+                    className="rounded-full px-8 bg-brand-500 text-slate-900 border-none font-bold hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_0_20px_rgba(140,198,63,0.3)]"
+                    asChild
+                  >
+                    <Link to="/contact">
+                      Claim Rebate Discount <ArrowRight className="ml-2 w-5 h-5" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+      )}
 
       {/* FAQ Section */}
       <FaqSection faqs={service.faqs} />
