@@ -656,7 +656,7 @@ export function SolarInverterRepair() {
                   <tr className="hover:bg-white/[0.02] transition-colors">
                     <td className="py-4 px-6 sm:px-8 font-semibold text-white">Full inverter replacement</td>
                     <td className="py-4 px-6 sm:px-8">
-                      $1,500–$6,000 (link to the <RouterLink to="/services/solar-inverters/installation" className="text-[#8cc63f] font-bold underline hover:text-brand-400">installation page</RouterLink>)
+                      $1,500–$6,000
                     </td>
                   </tr>
                 </tbody>
