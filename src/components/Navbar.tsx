@@ -509,29 +509,49 @@ export function Navbar() {
                       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
                       <div className="flex flex-col space-y-1">
                         {activeDesktopItem.children?.map((child) => (
-                          <Link
-                            key={child.label}
-                            to={formatHref(child.href)}
-                            onClick={() => setActiveMegaMenu(null)}
-                            className="group flex items-start gap-3.5 p-3.5 rounded-xl hover:bg-white/5 hover:shadow-[0_0_20px_rgba(140,198,63,0.12)] transition-all duration-150"
-                          >
-                            <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] group-hover:shadow-[0_0_16px_rgba(140,198,63,0.45)] transition-all">
-                              {renderMenuIcon(child.iconName, "w-5 h-5")}
-                            </div>
-                            <div className="flex-1 min-w-0 pt-0.5">
-                              <div className="flex items-center justify-between">
-                                <span className="text-[15px] font-bold text-white group-hover:text-[#8cc63f] transition-colors">
-                                  {child.label}
-                                </span>
-                                <ArrowRight className="w-4 h-4 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-[#8cc63f] transition-all" />
+                          <div key={child.label} className="flex flex-col">
+                            <Link
+                              to={formatHref(child.href)}
+                              onClick={() => setActiveMegaMenu(null)}
+                              className="group flex items-start gap-3.5 p-3.5 rounded-xl hover:bg-white/5 hover:shadow-[0_0_20px_rgba(140,198,63,0.12)] transition-all duration-150"
+                            >
+                              <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] group-hover:shadow-[0_0_16px_rgba(140,198,63,0.45)] transition-all">
+                                {renderMenuIcon(child.iconName, "w-5 h-5")}
                               </div>
-                              {child.description && (
-                                <p className="text-[13px] text-slate-400 line-clamp-1 mt-0.5 font-normal">
-                                  {child.description}
-                                </p>
-                              )}
-                            </div>
-                          </Link>
+                              <div className="flex-1 min-w-0 pt-0.5">
+                                <div className="flex items-center justify-between">
+                                  <span className="text-[15px] font-bold text-white group-hover:text-[#8cc63f] transition-colors">
+                                    {child.label}
+                                  </span>
+                                  <ArrowRight className="w-4 h-4 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-[#8cc63f] transition-all" />
+                                </div>
+                                {child.description && (
+                                  <p className="text-[13px] text-slate-400 line-clamp-1 mt-0.5 font-normal">
+                                    {child.description}
+                                  </p>
+                                )}
+                              </div>
+                            </Link>
+                            {child.children && child.children.length > 0 && (
+                              <div className="ml-[52px] mb-1 flex flex-col space-y-0.5 border-l border-white/10 pl-3">
+                                {child.children.map((sub) => (
+                                  <Link
+                                    key={sub.label}
+                                    to={formatHref(sub.href)}
+                                    onClick={() => setActiveMegaMenu(null)}
+                                    className={`group/sub flex items-center justify-between text-[13px] font-semibold py-1.5 px-2 rounded transition-all ${
+                                      location.pathname === formatHref(sub.href)
+                                        ? "text-[#8cc63f] bg-[#8cc63f]/10"
+                                        : "text-slate-300 hover:text-[#8cc63f] hover:bg-white/5"
+                                    }`}
+                                  >
+                                    <span>{sub.label}</span>
+                                    <ArrowRight className="w-3.5 h-3.5 text-[#8cc63f] opacity-60 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5 transition-all" />
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
+                          </div>
                         ))}
                       </div>
                     </div>
