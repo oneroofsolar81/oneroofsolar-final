@@ -237,11 +237,11 @@ export function SolarInverterRepair() {
   ];
 
   const brands = [
-    "GoodWe",
-    "Sungrow",
-    "Fox ESS",
-    "Elpha ESS",
-    "Sigenergy"
+    { name: "GoodWe", href: "/products/solar-inverters/goodwe" },
+    { name: "Sungrow", href: "/products/solar-inverters/sungrow-inverters" },
+    { name: "Fox ESS", href: "/products/solar-inverters/fox-ess" },
+    { name: "Elpha ESS", href: "/products/solar-inverters/alpha-ess" },
+    { name: "Sigenergy", href: "/products/solar-inverters/sigenergy" }
   ];
 
   const locationCards = [
@@ -761,14 +761,20 @@ export function SolarInverterRepair() {
               We repair GoodWe, Sungrow, Fox ESS, Elpha ESS and Sigenergy inverters, along with most other major brands installed across Darwin homes and businesses. If you're not sure whether we service your brand, send us a photo of the unit and we'll confirm before you book a callout.
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-              {brands.map((brandName, idx) => (
-                <div 
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
+              {brands.map((brand, idx) => (
+                <RouterLink
                   key={idx}
-                  className="bg-slate-50 border border-slate-200 p-5 rounded-2xl shadow-sm text-center flex items-center justify-center hover:border-brand-500/40 transition-colors"
+                  to={brand.href}
+                  className="group bg-slate-50 border border-slate-200 p-6 rounded-2xl shadow-sm flex flex-col justify-center items-center text-center hover:border-brand-500/40 hover:shadow-md transition-all"
                 >
-                  <span className="text-slate-900 font-bold text-lg tracking-wide">{brandName}</span>
-                </div>
+                  <div className="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-600 mb-4 group-hover:bg-brand-500 group-hover:text-white transition-colors">
+                    <Zap className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-brand-600 transition-colors normal-case">
+                    {brand.name}
+                  </h3>
+                </RouterLink>
               ))}
             </div>
           </FadeIn>
