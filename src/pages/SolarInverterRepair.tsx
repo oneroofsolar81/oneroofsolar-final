@@ -452,6 +452,29 @@ export function SolarInverterRepair() {
                 <p className="text-slate-600 text-base sm:text-lg leading-[1.7] font-medium border-t border-slate-200 pt-4">
                   If you notice any of these, switch off at the isolator if it's safe to do so and call a licensed technician. Opening the unit yourself can void your warranty and is a genuine electrical risk.
                 </p>
+
+                <div className="mt-6 flex flex-wrap gap-4">
+                  <Button
+                    size="lg"
+                    className="rounded-xl px-8 bg-brand-500 text-slate-900 border-none font-black hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 uppercase tracking-wider text-xs shadow-lg shadow-brand-500/30"
+                    asChild
+                  >
+                    <RouterLink to="/contact">
+                      <span>Book Your Inverter Repair</span>
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </RouterLink>
+                  </Button>
+                  <Button
+                    size="lg"
+                    className="rounded-xl px-8 bg-white border border-slate-200 text-slate-900 font-bold hover:bg-slate-50 transition-all h-14 uppercase tracking-wider text-xs"
+                    asChild
+                  >
+                    <a href="tel:0483986444">
+                      <Phone className="w-4 h-4 mr-2 text-brand-600" />
+                      <span>Call 0483 986 444</span>
+                    </a>
+                  </Button>
+                </div>
               </div>
 
               {/* Right Image */}
