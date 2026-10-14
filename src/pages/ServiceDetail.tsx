@@ -2968,6 +2968,94 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
         </section>
       )}
 
+      {/* Our Simple 4-Step Process (Solar Install) */}
+      {isSolarInstall && (
+        <section className="py-14 sm:py-16 md:py-20 bg-[#0A1118] relative overflow-hidden border-t border-slate-800">
+          <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#8cc63f]/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2"></div>
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center max-w-3xl mx-auto mb-14">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-brand-400 font-bold mb-4 uppercase tracking-wider text-xs">
+                <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                How It Works
+              </div>
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-white mb-6 normal-case">
+                Our Simple 4-Step Solar Panel Installation Process in Darwin
+              </h2>
+              <p className="text-lg font-medium text-slate-300 leading-relaxed">
+                We look after your whole solar job, from the first roof check to the final grid connection with Power and Water Corporation. Our SAA-accredited team does every step in-house, so you don't have to chase anyone. Here is how it works.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-14">
+              {[
+                {
+                  step: "01",
+                  title: "Free Site Audit and System Design",
+                  desc: "We visit your home and check your roof, shading and switchboard. Then our local team designs a solar system that suits your roof and your power use. It is cyclone-rated and placed to catch the most sun, so you save the most on your bills.",
+                },
+                {
+                  step: "02",
+                  title: "Approvals and Upfront Rebate",
+                  desc: "No paperwork for you. We send all the approval forms to Power and Water Corporation. We also claim your Federal STC rebate (the government solar discount) and take it off your invoice upfront.",
+                },
+                {
+                  step: "03",
+                  title: "Installation by Licensed Electricians",
+                  desc: "Our licensed local electricians install your Tier-1 solar panels, inverter and strong marine-grade mounting frames. The frames meet AS/NZS 1170.2, the Australian wind standard for cyclone areas. Most homes in Darwin and Palmerston are finished in just one day.",
+                },
+                {
+                  step: "04",
+                  title: "Testing, Switch-On and Handover",
+                  desc: "We test the whole system and connect it to the grid. We set up your solar monitoring app so you can watch your daily power generation. You also get your 10-year local workmanship warranty and all your compliance papers.",
+                },
+              ].map((item, idx) => (
+                <FadeIn key={idx} delay={idx * 0.08}>
+                  <div className="flex gap-6 bg-slate-850 border border-white/10 rounded-[2rem] p-8 shadow-lg hover:border-brand-500/30 transition-all duration-500 h-full group">
+                    <div className="text-5xl lg:text-6xl font-black text-slate-800 group-hover:text-brand-950 transition-colors pointer-events-none select-none shrink-0">
+                      {item.step}
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-brand-400 transition-colors normal-case">
+                        {item.title}
+                      </h3>
+                      <p className="text-slate-300 leading-relaxed font-medium">{item.desc}</p>
+                    </div>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+
+            <FadeIn delay={0.2}>
+              <div className="rounded-[2rem] bg-white/5 border border-white/10 p-8 sm:p-10 text-center">
+                <h3 className="text-2xl font-bold text-white mb-3 normal-case">Ready to Start Step 1 with a Free Roof Assessment?</h3>
+                <p className="text-slate-300 font-medium mb-8 max-w-2xl mx-auto">
+                  Speak with our Darwin solar team today and lock in your upfront rebate.
+                </p>
+                <div className="flex flex-wrap items-center justify-center gap-4">
+                  <Button
+                    size="lg"
+                    className="rounded-full px-8 bg-brand-500 text-slate-900 border-none font-bold hover:bg-brand-400 transition-all h-14 hover:-translate-y-1 shadow-[0_0_20px_rgba(140,198,63,0.3)]"
+                    asChild
+                  >
+                    <Link to="/contact">
+                      Book Free Site Audit <ArrowRight className="ml-2 w-5 h-5" />
+                    </Link>
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="rounded-full px-8 text-white border-white/20 font-bold hover:bg-white/5 hover:text-white transition-all h-14 hover:-translate-y-1"
+                    asChild
+                  >
+                    <a href={`tel:${PRIMARY_PHONE_RAW}`}>Call 0483 986 444</a>
+                  </Button>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </section>
+      )}
+
       {isSolarInstall && (
         <section className="py-14 sm:py-16 md:py-20 bg-slate-50/50 relative overflow-hidden border-t border-b border-slate-100">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
