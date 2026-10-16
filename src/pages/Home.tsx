@@ -409,6 +409,23 @@ export function Home() {
                   <a href={`tel:${PRIMARY_PHONE_RAW}`}>Call Us {PRIMARY_PHONE}</a>
                 </Button>
               </div>
+
+              {/* New Energy Tech Approved Seller badge */}
+              <div className="flex items-center gap-4 mt-8">
+                <img
+                  referrerPolicy="no-referrer"
+                  src="/assets/images/new-energy-tech-approved-seller.png"
+                  alt="New Energy Tech Approved Seller"
+                  className="h-20 w-20 flex-shrink-0 drop-shadow-[0_0_20px_rgba(0,174,239,0.25)]"
+                  width={80}
+                  height={80}
+                  loading="eager"
+                />
+                <div className="text-[0.875rem] leading-[1.5] text-slate-300">
+                  <span className="block font-semibold text-white">New Energy Tech Approved Seller</span>
+                  Nationally accredited for quality &amp; consumer protection
+                </div>
+              </div>
             </FadeIn>
             
             {/* Right Quote Card */}

@@ -44,6 +44,22 @@ export function Footer() {
                 <Youtube className="h-4 w-4" />
               </a>
             </div>
+
+            {/* New Energy Tech Approved Seller badge */}
+            <div className="mt-8 flex items-center gap-3">
+              <img referrerPolicy="no-referrer"
+                src="/assets/images/new-energy-tech-approved-seller.png"
+                alt="New Energy Tech Approved Seller"
+                className="h-16 w-16 flex-shrink-0"
+                width={64}
+                height={64}
+                loading="lazy"
+              />
+              <p className="text-xs text-slate-400 leading-snug max-w-[180px]">
+                <span className="block font-semibold text-white">New Energy Tech</span>
+                Approved Seller
+              </p>
+            </div>
           </div>
           
           {/* Quick Links */}
