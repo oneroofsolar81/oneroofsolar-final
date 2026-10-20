@@ -1181,10 +1181,17 @@ export function Home() {
                 </span>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {["Darwin City", "Fannie Bay", "Stuart Park", "East Point", "Bayview", "Winnellie"].map((suburb, i) => (
-                    <span key={i} className="text-[0.875rem] font-normal leading-[1.5] text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
-                      {suburb}
-                    </span>
+                  {[
+                    { name: "Stuart Park", href: "/locations/stuart-park" },
+                    { name: "Fannie Bay", href: "/locations/fannie-bay" },
+                    { name: "East Point", href: "/locations/east-point" },
+                    { name: "Berrimah", href: "/locations/berrimah" },
+                    { name: "Bayview", href: "/locations/bayview" },
+                    { name: "Winnellie", href: "/locations/winnellie" },
+                  ].map((suburb) => (
+                    <Link key={suburb.href} to={suburb.href} className="text-[0.875rem] font-normal leading-[1.5] text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full hover:text-white hover:border-brand-500/40 hover:bg-brand-500/10 transition-colors">
+                      {suburb.name}
+                    </Link>
                   ))}
                 </div>
               </div>
