@@ -96,6 +96,8 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [compact, setCompact] = useState(false);
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
+  // Which Locations hub is previewed in the master/detail panel
+  const [activeLocationHub, setActiveLocationHub] = useState<string | null>(null);
 
   // Mobile Drill-Down Navigation Stack
   const [mobileStack, setMobileStack] = useState<NavItem[]>([]);
@@ -172,6 +174,11 @@ export function Navbar() {
     setMobileStack([]);
     setCompact(false);
   }, [location.pathname]);
+
+  // Reset the previewed Locations hub whenever that menu is not the active one
+  useEffect(() => {
+    if (activeMegaMenu !== "Locations") setActiveLocationHub(null);
+  }, [activeMegaMenu]);
 
   // Handle Escape key to close navigation menus
   useEffect(() => {
@@ -502,61 +509,132 @@ export function Navbar() {
                   </div>
                 )}
 
-                {/* 2. LOCATIONS - COMPACT DROPDOWN (380px) */}
-                {activeDesktopItem.label === "Locations" && (
-                  <div className="flex justify-center">
-                    <div className="w-[380px] bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.7),0_0_32px_rgba(140,198,63,0.08)] p-3 backdrop-blur-xl relative overflow-hidden">
-                      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
-                      <div className="flex flex-col space-y-1">
-                        {activeDesktopItem.children?.map((child) => (
-                          <div key={child.label} className="flex flex-col">
+                {/* 2. LOCATIONS - MASTER / DETAIL PANEL */}
+                {activeDesktopItem.label === "Locations" && (() => {
+                  const hubs = activeDesktopItem.children || [];
+                  const currentHub = hubs.find((h) => h.label === activeLocationHub) || hubs[0];
+                  const subs = currentHub?.children || [];
+                  return (
+                    <div className="flex justify-center py-2">
+                      <div className="w-full max-w-[780px] bg-[#0A1118]/95 border border-white/10 rounded-2xl shadow-[0_25px_50px_-12px_rgba(0,0,0,0.7),0_0_40px_rgba(140,198,63,0.1)] backdrop-blur-xl relative overflow-hidden">
+                        <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#8cc63f]/50 to-transparent" />
+                        <div className="grid grid-cols-[minmax(0,268px)_1fr]">
+                          {/* LEFT: hub list */}
+                          <div className="p-3 border-r border-white/10 bg-white/[0.015]">
+                            <div className="px-3 pt-1 pb-2 text-[11px] font-bold uppercase tracking-[0.14em] text-slate-500">
+                              Service Areas
+                            </div>
+                            <div className="flex flex-col space-y-0.5">
+                              {hubs.map((hub) => {
+                                const isActive = currentHub?.label === hub.label;
+                                return (
+                                  <Link
+                                    key={hub.label}
+                                    to={formatHref(hub.href)}
+                                    onMouseEnter={() => setActiveLocationHub(hub.label)}
+                                    onFocus={() => setActiveLocationHub(hub.label)}
+                                    onClick={() => setActiveMegaMenu(null)}
+                                    className={`group flex items-center gap-3 p-2.5 rounded-xl transition-all duration-150 ${
+                                      isActive
+                                        ? "bg-[#8cc63f]/10 shadow-[0_0_20px_rgba(140,198,63,0.12)]"
+                                        : "hover:bg-white/5"
+                                    }`}
+                                  >
+                                    <div
+                                      className={`w-9 h-9 rounded-lg border flex items-center justify-center flex-shrink-0 transition-all ${
+                                        isActive
+                                          ? "bg-[#8cc63f] text-[#19281D] border-[#8cc63f] shadow-[0_0_16px_rgba(140,198,63,0.45)]"
+                                          : "bg-[#8cc63f]/10 text-[#8cc63f] border-[#8cc63f]/20"
+                                      }`}
+                                    >
+                                      {renderMenuIcon(hub.iconName, "w-5 h-5")}
+                                    </div>
+                                    <span
+                                      className={`flex-1 text-[14px] font-bold transition-colors ${
+                                        isActive ? "text-[#8cc63f]" : "text-white group-hover:text-[#8cc63f]"
+                                      }`}
+                                    >
+                                      {hub.label}
+                                    </span>
+                                    <ChevronRight
+                                      className={`w-4 h-4 flex-shrink-0 transition-all ${
+                                        isActive ? "text-[#8cc63f] translate-x-0" : "text-slate-600 -translate-x-1 group-hover:translate-x-0 group-hover:text-[#8cc63f]"
+                                      }`}
+                                    />
+                                  </Link>
+                                );
+                              })}
+                            </div>
+                          </div>
+
+                          {/* RIGHT: detail for the active hub */}
+                          <div className="p-5 min-h-[260px] flex flex-col">
                             <Link
-                              to={formatHref(child.href)}
+                              to={formatHref(currentHub?.href)}
                               onClick={() => setActiveMegaMenu(null)}
-                              className="group flex items-start gap-3.5 p-3.5 rounded-xl hover:bg-white/5 hover:shadow-[0_0_20px_rgba(140,198,63,0.12)] transition-all duration-150"
+                              className="group inline-flex items-center gap-2 w-fit"
                             >
-                              <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 text-[#8cc63f] border border-[#8cc63f]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#8cc63f] group-hover:text-[#19281D] group-hover:shadow-[0_0_16px_rgba(140,198,63,0.45)] transition-all">
-                                {renderMenuIcon(child.iconName, "w-5 h-5")}
-                              </div>
-                              <div className="flex-1 min-w-0 pt-0.5">
-                                <div className="flex items-center justify-between">
-                                  <span className="text-[15px] font-bold text-white group-hover:text-[#8cc63f] transition-colors">
-                                    {child.label}
-                                  </span>
-                                  <ArrowRight className="w-4 h-4 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-[#8cc63f] transition-all" />
-                                </div>
-                                {child.description && (
-                                  <p className="text-[13px] text-slate-400 line-clamp-1 mt-0.5 font-normal">
-                                    {child.description}
-                                  </p>
-                                )}
-                              </div>
+                              <span className="text-[18px] font-bold text-white group-hover:text-[#8cc63f] transition-colors">
+                                {currentHub?.label}
+                              </span>
+                              <ArrowRight className="w-4 h-4 text-slate-500 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-[#8cc63f] transition-all" />
                             </Link>
-                            {child.children && child.children.length > 0 && (
-                              <div className="ml-[52px] mb-1 flex flex-col space-y-0.5 border-l border-white/10 pl-3">
-                                {child.children.map((sub) => (
+                            {currentHub?.description && (
+                              <p className="text-[13px] text-slate-400 mt-1.5 mb-4 font-normal max-w-[380px]">
+                                {currentHub.description}
+                              </p>
+                            )}
+
+                            {subs.length > 0 ? (
+                              <div className="grid grid-cols-2 gap-x-3 gap-y-0.5">
+                                {subs.map((sub) => (
                                   <Link
                                     key={sub.label}
                                     to={formatHref(sub.href)}
                                     onClick={() => setActiveMegaMenu(null)}
-                                    className={`group/sub flex items-center justify-between text-[13px] font-semibold py-1.5 px-2 rounded transition-all ${
+                                    className={`group/sub flex items-center justify-between text-[13.5px] font-semibold py-2 px-3 rounded-lg transition-all ${
                                       location.pathname === formatHref(sub.href)
                                         ? "text-[#8cc63f] bg-[#8cc63f]/10"
                                         : "text-slate-300 hover:text-[#8cc63f] hover:bg-white/5"
                                     }`}
                                   >
                                     <span>{sub.label}</span>
-                                    <ArrowRight className="w-3.5 h-3.5 text-[#8cc63f] opacity-60 group-hover/sub:opacity-100 group-hover/sub:translate-x-0.5 transition-all" />
+                                    <ArrowRight className="w-3.5 h-3.5 text-[#8cc63f] opacity-0 -translate-x-1 group-hover/sub:opacity-100 group-hover/sub:translate-x-0 transition-all" />
                                   </Link>
                                 ))}
                               </div>
+                            ) : (
+                              <div className="flex-1 flex flex-col justify-center items-start gap-3 text-left">
+                                <p className="text-[13px] text-slate-500 max-w-[320px]">
+                                  We install and service solar across {currentHub?.label} and its surrounds.
+                                </p>
+                                <Link
+                                  to={formatHref(currentHub?.href)}
+                                  onClick={() => setActiveMegaMenu(null)}
+                                  className="inline-flex items-center gap-2 text-[13px] font-bold text-[#19281D] bg-[#8cc63f] hover:bg-brand-400 px-4 py-2.5 rounded-lg transition-colors"
+                                >
+                                  <span>View {currentHub?.label} Solar</span>
+                                  <ArrowRight className="w-4 h-4" />
+                                </Link>
+                              </div>
+                            )}
+
+                            {subs.length > 0 && (
+                              <Link
+                                to={formatHref(currentHub?.href)}
+                                onClick={() => setActiveMegaMenu(null)}
+                                className="mt-auto pt-4 inline-flex items-center gap-1.5 text-[13px] font-bold text-[#8cc63f] hover:text-brand-300 transition-colors w-fit"
+                              >
+                                <span>View all {currentHub?.label} solar</span>
+                                <ArrowRight className="w-4 h-4" />
+                              </Link>
                             )}
                           </div>
-                        ))}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                )}
+                  );
+                })()}
 
                 {/* 3. PRODUCTS - BALANCED MEGA MENU */}
                 {activeDesktopItem.label === "Products" && (
