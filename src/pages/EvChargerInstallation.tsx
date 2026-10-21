@@ -22,6 +22,7 @@ import {
   Zap,
 } from "lucide-react";
 import { FadeIn } from "../components/ui/FadeIn";
+import { CoverageArea } from "../components/CoverageArea";
 import { Button } from "../components/ui/Button";
 import { PartnersMarquee } from "../components/PartnersMarquee";
 import { SEO } from "../components/SEO";
@@ -545,6 +546,8 @@ export function EvChargerInstallation() {
           </div>
         </div>
       </section>
+
+      <CoverageArea />
 
       <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

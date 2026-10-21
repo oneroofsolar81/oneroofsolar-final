@@ -14,6 +14,7 @@ import {
   Wrench,
 } from "lucide-react";
 import { FadeIn } from "@/src/components/ui/FadeIn";
+import { CoverageArea } from "@/src/components/CoverageArea";
 import { Button } from "@/src/components/ui/Button";
 import { FaqSection } from "@/src/components/FaqSection";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
@@ -696,6 +697,8 @@ export function SolarPanelMaintenanceDarwinPage() {
           </div>
         </div>
       </section>
+
+      <CoverageArea />
 
       <FaqSection
         heading="Frequently Asked Questions"

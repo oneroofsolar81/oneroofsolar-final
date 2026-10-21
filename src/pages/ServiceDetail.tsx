@@ -533,6 +533,7 @@ function DarkBenefits({ service, slug }: { service: any; slug: string }) {
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { FadeIn } from "@/src/components/ui/FadeIn";
+import { CoverageArea } from "@/src/components/CoverageArea";
 import { QuoteForm } from "@/src/components/QuoteForm";
 import { TrustAvatars } from "@/src/components/TrustAvatars";
 import { PackagesSection } from "@/src/components/PackagesSection";
@@ -2037,102 +2038,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
           </div>
         </section>
 
-        {/* Service Areas Section */}
-        <section className="py-24 bg-slate-50 relative overflow-hidden border-b border-slate-200">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="max-w-3xl mx-auto text-center mb-16">
-              <FadeIn>
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 border border-brand-100 text-[#19281D] font-bold mb-6 uppercase tracking-wider text-xs shadow-sm">
-                  <span className="w-2 h-2 rounded-full bg-[#8cc63f] animate-pulse"></span>
-                  Local Coverage
-                </div>
-                <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
-                  Solar Panel Services Across Darwin, Areas We Serve
-                </h2>
-                <p className="text-lg text-slate-600 leading-relaxed font-medium">
-                  Oneroof Solar installs, repairs, and maintains solar panel systems across greater Darwin and the Northern Territory. If you're in any of the suburbs or postcodes below, we're your local team.
-                </p>
-              </FadeIn>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              {/* Group 1 */}
-              <FadeIn delay={0.1}>
-                <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
-                  <h3 className="text-lg font-black text-slate-900 mb-2 tracking-tight normal-case">
-                    Darwin City and Inner Suburbs
-                  </h3>
-                  <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
-                    NT 0800 / 0820
-                  </div>
-                  <p className="text-sm text-slate-600 leading-relaxed font-medium">
-                    CBD, Darwin Waterfront, The Esplanade, Larrakeyah, Parap, Cullen Bay, Bayview, East Point, Fannie Bay, Stuart Park, The Gardens, Ludmilla, Winnellie, Woolner.
-                  </p>
-                </div>
-              </FadeIn>
-
-              {/* Group 2 */}
-              <FadeIn delay={0.2}>
-                <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
-                  <h3 className="text-lg font-black text-slate-900 mb-2 tracking-tight normal-case">
-                    Nightcliff, Rapid Creek and Northern Suburbs
-                  </h3>
-                  <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
-                    NT 0810
-                  </div>
-                  <p className="text-sm text-slate-600 leading-relaxed font-medium">
-                    Nightcliff, Rapid Creek, Coconut Grove, Millner, Wagaman, Moil, Alawa, Lyons, Jingili, Tiwi, Wanguri, Nakara, Brinkin, Lee Point, Muirhead.
-                  </p>
-                </div>
-              </FadeIn>
-
-              {/* Group 3 */}
-              <FadeIn delay={0.3}>
-                <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
-                  <h3 className="text-lg font-black text-slate-900 mb-2 tracking-tight normal-case">
-                    Casuarina and East
-                  </h3>
-                  <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
-                    NT 0810 / 0812
-                  </div>
-                  <p className="text-sm text-slate-600 leading-relaxed font-medium">
-                    Casuarina, Anula, Leanyer, Wulagi, Malak, Karama, Sanderson, Marrara, Buffalo Creek, Holmes.
-                  </p>
-                </div>
-              </FadeIn>
-
-              {/* Group 4 */}
-              <FadeIn delay={0.4}>
-                <div className="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all h-full">
-                  <h3 className="text-lg font-black text-slate-900 mb-2 tracking-tight normal-case">
-                    Fannie Bay, Stuart Park and Surrounds
-                  </h3>
-                  <div className="text-xs font-bold text-[#8cc63f] uppercase tracking-wider mb-4">
-                    NT 0820
-                  </div>
-                  <p className="text-sm text-slate-600 leading-relaxed font-medium">
-                    Fannie Bay, Stuart Park, East Point, Bayview, Winnellie, Berrimah, Knuckey Lagoon, The Narrows.
-                  </p>
-                </div>
-              </FadeIn>
-            </div>
-
-            <FadeIn delay={0.5} className="max-w-3xl mx-auto text-center border-t border-slate-200 pt-10">
-              <p className="text-base text-slate-700 font-bold mb-6">
-                Not sure if we cover your area? Call us on 0483 986 444 or drop your postcode in the quote form, we'll confirm straight away.
-              </p>
-              <Button
-                size="lg"
-                className="rounded-full px-8 bg-[#8cc63f] hover:bg-[#4cb83f] text-slate-900 font-bold transition-all shadow-md uppercase tracking-wider text-xs"
-                asChild
-              >
-                <Link to="/contact">
-                  Request Free Quote
-                </Link>
-              </Button>
-            </FadeIn>
-          </div>
-        </section>
+        <CoverageArea />
 
         {/* Our Solar Services Section */}
         <section className="py-20 bg-white">
@@ -3057,93 +2963,7 @@ export function ServiceDetail({ slugOverride }: { slugOverride?: string } = {}) 
       )}
 
       {isSolarInstall && (
-        <section className="py-14 sm:py-16 md:py-20 bg-slate-50/50 relative overflow-hidden border-t border-b border-slate-100">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 font-bold mb-4 uppercase tracking-wider text-xs shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
-                Service Areas
-              </div>
-              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
-                Solar Panel Installation Across Darwin, Areas We Serve
-              </h2>
-              <p className="text-lg font-medium text-slate-600 leading-relaxed">
-                Oneroof Solar installs residential and commercial solar systems across greater Darwin and the Northern Territory. If you're in any of the suburbs or postcodes below, we're your local team. As experienced solar installers Darwin has trusted since 2001, we've completed solar installations Darwin-wide, from <Link to="/locations/darwin-city" className="text-brand-600 font-bold hover:underline">Darwin City</Link> and <Link to="/locations/stuart-park" className="text-brand-600 font-bold hover:underline">Stuart Park</Link> to <Link to="/locations/palmerston" className="text-brand-600 font-bold hover:underline">Palmerston</Link> and <Link to="/locations/berrimah" className="text-brand-600 font-bold hover:underline">Berrimah</Link>.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-              <div className="bg-white p-8 rounded-[2rem] border border-slate-200/60 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(140,198,63,0.08)] hover:border-brand-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
-                <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors normal-case">
-                  Darwin City & Inner Suburbs <br />
-                  <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0800 / 0820</span>
-                </h3>
-                <p className="text-slate-600 leading-relaxed text-sm font-medium flex-1">
-                  CBD, Darwin Waterfront, The Esplanade, Larrakeyah, Parap, Cullen Bay, Bayview, East Point, Fannie Bay, Stuart Park, The Gardens, Ludmilla, Winnellie, Woolner.
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-[2rem] border border-slate-200/60 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(140,198,63,0.08)] hover:border-brand-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
-                <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors normal-case">
-                  Nightcliff & Northern Suburbs <br />
-                  <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0810</span>
-                </h3>
-                <p className="text-slate-600 leading-relaxed text-sm font-medium flex-1">
-                  Nightcliff, Rapid Creek, Coconut Grove, Millner, Wagaman, Moil, Alawa, Lyons, Jingili, Tiwi, Wanguri, Nakara, Brinkin, Lee Point, Muirhead.
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-[2rem] border border-slate-200/60 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(140,198,63,0.08)] hover:border-brand-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
-                <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors normal-case">
-                  Casuarina and East <br />
-                  <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0810 / 0812</span>
-                </h3>
-                <p className="text-slate-600 leading-relaxed text-sm font-medium flex-1">
-                  Casuarina, Anula, Leanyer, Wulagi, Malak, Karama, Sanderson, Marrara, Buffalo Creek, Holmes.
-                </p>
-              </div>
-
-              <div className="bg-white p-8 rounded-[2rem] border border-slate-200/60 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgba(140,198,63,0.08)] hover:border-brand-500/20 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full group">
-                <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500 group-hover:text-white transition-all duration-300 shadow-sm">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100 group-hover:text-brand-600 transition-colors normal-case">
-                  Fannie Bay & Surrounds <br />
-                  <span className="text-xs font-bold text-brand-600 bg-brand-50 px-2 py-1 rounded-md mt-2 inline-block">NT 0820</span>
-                </h3>
-                <p className="text-slate-600 leading-relaxed text-sm font-medium flex-1">
-                  Fannie Bay, Stuart Park, East Point, Bayview, Winnellie, Berrimah, Knuckey Lagoon, The Narrows.
-                </p>
-              </div>
-            </div>
-
-            <div className="text-center max-w-2xl mx-auto">
-              <p className="text-slate-700 font-bold text-lg mb-8 leading-relaxed">
-                Not sure if we cover your area? Call us on {PRIMARY_PHONE} or drop your postcode in the quote form, we'll confirm straight away.
-              </p>
-              <Button
-                className="bg-brand-500 text-slate-900 font-black hover:bg-brand-400 rounded-full px-8 h-12 inline-flex items-center justify-center transition-all shadow-[0_4px_20px_rgba(140,198,63,0.3)]"
-                onClick={() => {
-                  const formEl = document.querySelector('iframe[title="Book Consultation Form"]');
-                  if (formEl) {
-                    formEl.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
-              >
-                Request Free Quote
-              </Button>
-            </div>
-          </div>
-        </section>
+        <CoverageArea />
       )}
 
       {isSolarInstall && (

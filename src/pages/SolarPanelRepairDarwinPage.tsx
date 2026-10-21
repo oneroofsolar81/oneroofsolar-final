@@ -19,6 +19,7 @@ import {
   FileText
 } from "lucide-react";
 import { FadeIn } from "@/src/components/ui/FadeIn";
+import { CoverageArea } from "@/src/components/CoverageArea";
 import { Button } from "@/src/components/ui/Button";
 import { FaqSection } from "@/src/components/FaqSection";
 import { GoogleReviews } from "@/src/components/GoogleReviews";
@@ -650,109 +651,7 @@ export function SolarPanelRepairDarwinPage() {
         </div>
       </section>
 
-      {/* SECTION 6: SERVICE COVERAGE AREAS */}
-      <section id="repair-coverage" className="py-24 bg-white relative overflow-hidden">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <FadeIn>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 text-brand-600 font-bold text-sm mb-6 border border-brand-100 uppercase tracking-wider">
-                <MapPin className="w-4 h-4 animate-ping" /> Coverage Hub
-              </div>
-              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
-                Solar Panel Repair Across Darwin — Areas We Serve
-              </h2>
-              <p className="text-lg text-slate-600 font-medium">
-                Our local crews service residential, commercial, and off-grid clients across greater Darwin, Palmerston, and surrounding districts.
-              </p>
-              <p className="text-base text-slate-600 font-medium mt-4 max-w-2xl mx-auto">
-                We repair systems across{" "}
-                <Link to="/locations/darwin-city" className="text-brand-600 font-bold hover:underline">Darwin City</Link>{" "}
-                and{" "}
-                <Link to="/locations/palmerston" className="text-brand-600 font-bold hover:underline">Palmerston</Link>, for both{" "}
-                <Link to="/solar-systems/residential-solar-system" className="text-brand-600 font-bold hover:underline">residential solar systems</Link>{" "}
-                and commercial properties.
-              </p>
-            </FadeIn>
-          </div>
-
-          {/* Location Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-            {[
-              {
-                name: "Darwin City & Inner Suburbs — NT 0800 / 0820",
-                areas: ["CBD", "Darwin Waterfront", "The Esplanade", "Larrakeyah", "Parap", "Cullen Bay", "Bayview", "East Point", "Fannie Bay", "Stuart Park", "The Gardens", "Ludmilla", "Winnellie", "Woolner"]
-              },
-              {
-                name: "Nightcliff, Rapid Creek & Northern Suburbs — NT 0810",
-                areas: ["Nightcliff", "Rapid Creek", "Coconut Grove", "Millner", "Wagaman", "Moil", "Alawa", "Lyons", "Jingili", "Tiwi", "Wanguri", "Nakara", "Brinkin", "Lee Point", "Muirhead"]
-              },
-              {
-                name: "Casuarina & East — NT 0810 / 0812",
-                areas: ["Casuarina", "Anula", "Leanyer", "Wulagi", "Malak", "Karama", "Sanderson", "Marrara", "Buffalo Creek", "Holmes"]
-              },
-              {
-                name: "Fannie Bay, Stuart Park & Surrounds — NT 0820",
-                areas: ["Fannie Bay", "Stuart Park", "East Point", "Bayview", "Winnellie", "Berrimah", "Knuckey Lagoon", "The Narrows"]
-              }
-            ].map((loc, i) => (
-              <div key={i} className="flex flex-col rounded-[2rem] overflow-hidden border border-slate-200/80 shadow-lg hover:shadow-2xl transition-all duration-300 group">
-                {/* Bright green card header */}
-                <div className="bg-[#8cc63f] px-6 py-5 flex items-center gap-3">
-                  <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-black text-white leading-tight normal-case">
-                      {loc.name}
-                    </h3>
-                  </div>
-                </div>
-                
-                {/* Dark green card body */}
-                <div className="bg-[#0A1118] px-6 py-8 flex flex-col flex-grow text-white">
-                  <p className="text-brand-300 text-xs  uppercase tracking-wider mb-4">
-                    Primary Suburbs Covered:
-                  </p>
-                  
-                  {/* Pill tags chips */}
-                  <div className="flex flex-wrap gap-2 mb-8 flex-grow">
-                    {loc.areas.map((area, idx) => (
-                      <span key={idx} className="bg-white/10 text-brand-100 text-[11px] font-bold py-1 px-2.5 rounded-full backdrop-blur-sm">
-                        {area}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* CTA link at bottom */}
-                  <div className="pt-4 border-t border-white/10">
-                    <button
-                      onClick={() => {
-                        const formEl = document.getElementById("enquiry-form-section");
-                        if (formEl) formEl.scrollIntoView({ behavior: "smooth" });
-                      }}
-                      className="inline-flex items-center gap-2 text-sm font-bold text-brand-400 group-hover:text-brand-300 transition-colors cursor-pointer w-full text-left"
-                    >
-                      Request Service in This Area <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <FadeIn>
-              <p className="text-base font-semibold text-slate-500">
-                Not sure if we cover your area? {" "}
-                <a href={`tel:${PRIMARY_PHONE_RAW}`} className="text-brand-600 hover:underline">
-                  Call 0483 986 444
-                </a>{" "}
-                — we service remote NT locations and will confirm directly.
-              </p>
-            </FadeIn>
-          </div>
-        </div>
-      </section>
+      <CoverageArea />
 
       {/* SECTION 7: FAQS */}
       <FaqSection faqs={faqs} />

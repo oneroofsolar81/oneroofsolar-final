@@ -17,6 +17,7 @@ import {
   Sparkles
 } from "lucide-react";
 import { FadeIn } from "../components/ui/FadeIn";
+import { CoverageArea } from "../components/CoverageArea";
 import { Button } from "../components/ui/Button";
 import { SEO } from "../components/SEO";
 
@@ -715,41 +716,7 @@ export function SolarInverters() {
         </div>
       </section>
 
-      {/* 11. SOLAR INVERTER SERVICES ACROSS DARWIN: AREAS WE SERVE (White section) */}
-      <section className="py-16 lg:py-20 bg-white border-b border-slate-200 relative">
-        <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
-              Solar Inverter Services Across Darwin: Areas We Serve
-            </h2>
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-10 max-w-4xl">
-              Oneroof Solar supplies, installs, repairs, and services solar inverters across greater Darwin and regional Northern Territory.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {locations.map((loc, idx) => (
-                <div 
-                  key={idx}
-                  className="bg-slate-50 border border-slate-200 p-7 rounded-2xl shadow-sm hover:border-brand-500/40 transition-all flex flex-col justify-between h-full"
-                >
-                  <div>
-                    <div className="flex items-center gap-2 text-brand-600 mb-4">
-                      <MapPin className="w-5 h-5" />
-                      <span className="text-xs  uppercase tracking-wider font-bold">NT Coverage</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-tight normal-case">
-                      {loc.title}
-                    </h3>
-                    <div className="text-slate-600 text-sm leading-relaxed font-medium">
-                      {loc.desc}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </FadeIn>
-        </div>
-      </section>
+      <CoverageArea />
 
       {/* 12. FREQUENTLY ASKED QUESTIONS (Light off-white section) */}
       <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 relative">

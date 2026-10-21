@@ -11,6 +11,7 @@ import {
   Compass
 } from "lucide-react";
 import { FadeIn } from "../components/ui/FadeIn";
+import { CoverageArea } from "../components/CoverageArea";
 import { Button } from "../components/ui/Button";
 import { SEO } from "../components/SEO";
 
@@ -528,6 +529,8 @@ export function SolarInverterInstallation() {
           </FadeIn>
         </div>
       </section>
+
+      <CoverageArea />
 
       {/* 8. FREQUENTLY ASKED QUESTIONS (Light off-white section) */}
       <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 relative">

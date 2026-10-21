@@ -18,6 +18,7 @@ import {
   Star
 } from "lucide-react";
 import { FadeIn } from "@/src/components/ui/FadeIn";
+import { CoverageArea } from "@/src/components/CoverageArea";
 import { Button } from "@/src/components/ui/Button";
 import { SEO } from "@/src/components/SEO";
 import { PackagesSection } from "@/src/components/PackagesSection";
@@ -675,6 +676,8 @@ export function SolarBatteryInstallation() {
           </FadeIn>
         </div>
       </section>
+
+      <CoverageArea />
 
       {/* 11. FAQ SECTION */}
       <section className="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 relative">
