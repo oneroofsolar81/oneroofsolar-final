@@ -568,6 +568,45 @@ export function Home() {
       {/* PARTNERS LOGO STRIP */}
       <PartnersMarquee />
 
+      {/* AWARDS / RECOGNITION SECTION */}
+      <section className="py-20 lg:py-24 bg-gradient-to-b from-white to-slate-50 relative overflow-hidden border-b border-slate-100">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="mx-auto text-center max-w-3xl mb-14">
+            <span className="inline-flex items-center gap-2 text-[0.875rem] font-normal leading-[1.5] tracking-widest text-brand-600 uppercase mb-3">
+              <Award className="w-4 h-4" /> Solaris Awards 2025
+            </span>
+            <h2 className="text-[2rem] font-bold leading-[1.25] text-slate-900 tracking-tight mb-6 normal-case">
+              The Northern Territory's <span className="text-brand-600">No. 1</span> Solar &amp; Battery Installer
+            </h2>
+            <p className="text-slate-600 text-[1rem] font-normal leading-[1.6] max-w-2xl mx-auto">
+              Independently recognised at the 2025 Solaris Awards as the NT's top-ranked installer across residential and commercial solar, plus battery storage.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 max-w-5xl mx-auto">
+            {[
+              { src: "/assets/images/awards/solaris-no1-solar-installer-nt-2025.jpg", alt: "Solaris Awards 2025 No. 1 Solar Installer NT", label: "No. 1 Solar Installer" },
+              { src: "/assets/images/awards/solaris-no1-solar-installer-nt-2025-15-40kw.jpg", alt: "Solaris Awards 2025 No. 1 Solar Installer NT 15 to 40kW", label: "15–40 kW Systems" },
+              { src: "/assets/images/awards/solaris-no1-solar-installer-nt-2025-40-100kw.jpg", alt: "Solaris Awards 2025 No. 1 Solar Installer NT 40 to 100kW", label: "40–100 kW Systems" },
+              { src: "/assets/images/awards/solaris-no1-battery-installer-nt-2025.jpg", alt: "Solaris Awards 2025 No. 1 Battery Installer NT", label: "No. 1 Battery Installer" },
+            ].map((a) => (
+              <div key={a.src} className="group bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:border-brand-300 hover:-translate-y-1 transition-all duration-300 p-6 flex flex-col items-center text-center">
+                <img
+                  referrerPolicy="no-referrer"
+                  src={a.src}
+                  alt={a.alt}
+                  className="h-36 sm:h-44 w-auto object-contain"
+                  width={240}
+                  height={240}
+                  loading="lazy"
+                />
+                <span className="mt-4 text-[0.875rem] font-semibold text-slate-700">{a.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SOLUTIONS + SERVICES SECTION */}
       <section className="py-24 bg-slate-50 relative overflow-hidden border-b border-slate-100">
         <div className="absolute inset-0 bg-dot-slate-200 opacity-40 pointer-events-none" />
