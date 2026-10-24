@@ -5,3 +5,10 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Use npm (package-lock.json) only — avoid lockfile ambiguity on the build host
+bun.lock
+bun.lockb
+yarn.lock
+pnpm-lock.yaml
+.claude/
