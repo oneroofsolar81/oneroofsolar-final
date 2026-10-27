@@ -1390,7 +1390,7 @@ Ask for the person's name and number, verify it on the register, confirm the rig
   },
   {
     slug: "top-10-best-solar-panel-installers-in-darwin",
-    title: "Top 10 Best Solar Panel Installers in Darwin (2026 Guide)",
+    title: "Top 10 Best Solar Panel Installers in Darwin",
     excerpt:
       "Cyclone-rated mounting, wet-season humidity and uneven installer quality make choosing who installs your system the hard part. Here are ten Darwin installers ranked on what matters.",
     date: "23 October 2026",
@@ -1400,7 +1400,7 @@ Ask for the person's name and number, verify it on the register, confirm the rig
     image: "/assets/images/hosted/about-team.webp",
     imageAlt: "Oneroof Solar installation team in Darwin",
     author: "Oneroof Solar",
-    seoTitle: "Top 10 Best Solar Panel Installers in Darwin (2026 Guide)",
+    seoTitle: "Top 10 Best Solar Panel Installers in Darwin",
     seoDescription:
       "Compare the top 10 solar panel installers in Darwin by quality, battery expertise, $0 deposit plans and local support, then choose with confidence.",
     canonicalPath: "/blog/top-10-best-solar-panel-installers-in-darwin/",
@@ -1451,7 +1451,7 @@ Not every installer is built for the Top End. Use these five checks as your scor
 
 ### 1. Oneroof Solar — Best Overall
 
-Oneroof Solar takes the top spot by combining local roots with complete, start-to-finish service. This Darwin-based, fully Australian-owned company has served the Northern Territory since 2019. It installs residential and commercial systems across Darwin, Palmerston, Alice Springs, Katherine and Tennant Creek.
+[Oneroof Solar](/) takes the top spot by combining local roots with complete, start-to-finish service. This Darwin-based, fully Australian-owned company has served the Northern Territory since 2019. It installs residential and commercial systems across Darwin, Palmerston, Alice Springs, Katherine and Tennant Creek.
 
 - **End-to-end service:** Consultation, system design, installation and ongoing support all come from one team.
 - **$0 deposit options:** Start saving now with no-interest solar plans instead of waiting until you've saved a lump sum.

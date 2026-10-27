@@ -48,6 +48,32 @@ const routes = [
   { path: '/services/ev-chargers/repair', title: 'EV Charger Repair Darwin | Oneroof Solar', description: 'EV charger repair and diagnostics in Darwin NT.' },
 ];
 
+// Derive one SEO shell per blog post from the blog data file, so crawlers
+// get each post's real title/description/canonical instead of the homepage
+// shell (which otherwise causes Soft 404s on blog URLs).
+function getBlogRoutes() {
+  const blogDataPath = path.resolve(__dirname, '..', 'src', 'data', 'blogPosts.ts');
+  if (!fs.existsSync(blogDataPath)) return [];
+  const content = fs.readFileSync(blogDataPath, 'utf8');
+  const unescape = (s) => s.replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+  const blocks = content.split(/\r?\n {2}\{\r?\n {4}slug:/).slice(1);
+  const routes = [];
+  for (const block of blocks) {
+    const canonicalPath = (block.match(/canonicalPath:\s*"([^"]+)"/) || [])[1];
+    const seoTitle = (block.match(/seoTitle:\s*(?:\r?\n\s*)?"((?:[^"\\]|\\.)*)"/) || [])[1];
+    const seoDescription = (block.match(/seoDescription:\s*(?:\r?\n\s*)?"((?:[^"\\]|\\.)*)"/) || [])[1];
+    if (!canonicalPath || !canonicalPath.startsWith('/blog/') || !seoTitle || !seoDescription) continue;
+    routes.push({
+      path: canonicalPath.replace(/\/+$/, ''),
+      title: unescape(seoTitle),
+      description: unescape(seoDescription),
+      // Match the client-side canonical exactly (non-www, with trailing slash)
+      canonical: `https://oneroofsolar.com.au${canonicalPath}`,
+    });
+  }
+  return routes;
+}
+
 function escapeHtml(str) {
   return String(str)
     .replace(/&/g, '&amp;')
@@ -56,8 +82,8 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
-function injectMeta(html, { path: routePath, title, description }) {
-  const canonical = routePath === '/' ? `${SITE}/` : `${SITE}${routePath}`;
+function injectMeta(html, { path: routePath, title, description, canonical: canonicalOverride }) {
+  const canonical = canonicalOverride || (routePath === '/' ? `${SITE}/` : `${SITE}${routePath}`);
   let out = html;
 
   out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escapeHtml(title)}</title>`);
@@ -121,9 +147,10 @@ if (!fs.existsSync(indexPath)) {
 }
 
 const baseHtml = fs.readFileSync(indexPath, 'utf8');
+const allRoutes = [...routes, ...getBlogRoutes()];
 let written = 0;
 
-for (const route of routes) {
+for (const route of allRoutes) {
   const html = injectMeta(baseHtml, route);
   if (route.path === '/') {
     fs.writeFileSync(indexPath, html);
