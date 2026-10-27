@@ -428,7 +428,7 @@ export function SungrowBatteryPage() {
             <div className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium space-y-5">
               <p>
                 Darwin and the Top End experience high temperatures, humidity,{" "}
-                <Link to="/do-solar-panels-work-during-darwins-wet-season" className={linkClass}>wet-season</Link> rain and{" "}
+                <Link to="/blog/do-solar-panels-work-during-darwin-wet-season" className={linkClass}>wet-season</Link> rain and{" "}
                 <Link to="/blog/solar-panel-cyclone-protection" className={linkClass}>tropical storms</Link>. Battery location and installation therefore need to be considered carefully.
               </p>
               <p>

@@ -1,6 +1,16 @@
 {
   "redirects": [
     {
+      "source": "/do-solar-panels-work-during-darwins-wet-season",
+      "destination": "/blog/do-solar-panels-work-during-darwin-wet-season",
+      "permanent": true
+    },
+    {
+      "source": "/do-solar-panels-work-during-darwins-wet-season/",
+      "destination": "/blog/do-solar-panels-work-during-darwin-wet-season",
+      "permanent": true
+    },
+    {
       "source": "/residential-solar-system",
       "destination": "/solar-systems/residential-solar-system",
       "permanent": true

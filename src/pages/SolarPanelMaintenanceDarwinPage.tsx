@@ -292,7 +292,7 @@ export function SolarPanelMaintenanceDarwinPage() {
                 If your output has already dropped, our{" "}
                 <Link to="/services/solar-panel-repair-darwin" className="text-brand-600 font-bold hover:underline">solar panel repair</Link>{" "}
                 team can trace the cause, and you can see how panels perform through{" "}
-                <Link to="/do-solar-panels-work-during-darwins-wet-season" className="text-brand-600 font-bold hover:underline">Darwin's wet season</Link>.
+                <Link to="/blog/do-solar-panels-work-during-darwin-wet-season" className="text-brand-600 font-bold hover:underline">Darwin's wet season</Link>.
               </p>
             </FadeIn>
             <FadeIn delay={0.1} className="rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 relative aspect-[4/3]">

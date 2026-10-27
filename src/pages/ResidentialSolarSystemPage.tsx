@@ -570,7 +570,7 @@ export function ResidentialSolarSystemPage() {
                   </p>
                   <p>
                     Learn how panels perform in{" "}
-                    <Link to="/do-solar-panels-work-during-darwins-wet-season" className="text-[#8cc63f] font-bold hover:underline">Darwin's wet season</Link>{" "}
+                    <Link to="/blog/do-solar-panels-work-during-darwin-wet-season" className="text-[#8cc63f] font-bold hover:underline">Darwin's wet season</Link>{" "}
                     and our approach to{" "}
                     <Link to="/blog/solar-panel-cyclone-protection" className="text-[#8cc63f] font-bold hover:underline">cyclone protection</Link>.
                   </p>

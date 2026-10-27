@@ -522,7 +522,7 @@ export function SolarPanelRepairDarwinPage() {
                 </p>
                 <p className="text-base font-medium text-slate-600 mb-8 leading-relaxed">
                   Many faults trace back to moisture during{" "}
-                  <Link to="/do-solar-panels-work-during-darwins-wet-season" className="text-brand-600 font-bold hover:underline">Darwin's wet season</Link>, which is why regular{" "}
+                  <Link to="/blog/do-solar-panels-work-during-darwin-wet-season" className="text-brand-600 font-bold hover:underline">Darwin's wet season</Link>, which is why regular{" "}
                   <Link to="/services/solar-panel-maintenance-darwin" className="text-brand-600 font-bold hover:underline">panel cleaning and servicing</Link>{" "}
                   helps prevent bigger problems.
                 </p>

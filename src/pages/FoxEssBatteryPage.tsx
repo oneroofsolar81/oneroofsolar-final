@@ -441,7 +441,7 @@ export function FoxEssBatteryPage() {
             </h2>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed font-medium mb-12 max-w-3xl">
               Darwin's{" "}
-              <Link to="/do-solar-panels-work-during-darwins-wet-season" className={linkClass}>wet season</Link> brings high humidity, scorching heat, and frequent grid failures. A good battery needs to survive the weather and keep your house running.
+              <Link to="/blog/do-solar-panels-work-during-darwin-wet-season" className={linkClass}>wet season</Link> brings high humidity, scorching heat, and frequent grid failures. A good battery needs to survive the weather and keep your house running.
             </p>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
