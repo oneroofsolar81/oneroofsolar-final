@@ -1720,6 +1720,184 @@ At Oneroof Solar, we design and install [residential solar systems](/solar-syste
       },
     ],
   },
+  {
+    slug: "what-happens-if-solar-installer-goes-out-of-business",
+    title: "What Happens If My Solar Installer Goes Out of Business After Installation?",
+    excerpt:
+      "Your panels keep generating if the company that installed them folds. What you lose is the backup. Here is what a closure means for your warranties, support and paperwork, and how to protect yourself.",
+    date: "26 October 2026",
+    dateIso: "2026-10-26",
+    category: "Guides",
+    readTime: "8 min read",
+    image: "/assets/images/hosted/products/inverter-hero.webp",
+    imageAlt: "Solar inverter on a Darwin wall showing system status",
+    author: "Oneroof Solar",
+    seoTitle: "Solar Installer Shut Down? Is Your Warranty Still Valid?",
+    seoDescription:
+      "Installer gone bust after your solar install? See what happens to your warranty, support and paperwork, and how to protect your system in Darwin.",
+    canonicalPath: "/blog/what-happens-if-solar-installer-goes-out-of-business/",
+    heroStats: [
+      { value: "Manufacturer", label: "Product warranty usually survives", icon: "shield" },
+      { value: "Installer", label: "Workmanship cover at risk", icon: "zap" },
+      { value: "SAA", label: "Use an accredited installer", icon: "sun" },
+    ],
+    sections: [
+      {
+        type: "markdown",
+        markdown: `You bought solar to cut your power bills for the next 20 years. But what if the company that installed it closes its doors in year three? Who answers the phone when your inverter shows a fault? Who stands behind the wiring on your roof? Installer closures are a real risk in the solar industry, and most homeowners only think about them after it happens. Here is what a closure means for your system, your warranties and your wallet, and how to protect yourself.
+
+## The Short Answer: Your System Keeps Working, but Your Backup Disappears
+
+Short answer: your panels do not switch off because a company folds. They keep generating power, and your equipment keeps its manufacturer warranties.
+
+What you lose is the installer's promise to fix their own work, answer service calls and handle warranty claims for you. That gap is where problems start, because a small fault left unchecked can quietly cut your output for months.`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Worried about who you'd call if your inverter fails and your installer has vanished?",
+          body: "Don't gamble with a system built to last decades. Talk to Oneroof Solar, a Darwin team that picks up the phone.",
+          buttonLabel: "Get Your Free Solar Quote",
+          buttonHref: "/contact",
+          phoneLine: "or call our Darwin team on 0483 986 444.",
+        },
+      },
+      {
+        type: "markdown",
+        markdown: `## What Happens to Your Solar Warranties When the Installer Closes?
+
+A solar system is covered by several layers of protection, and each reacts differently to a closure. The manufacturer-backed layers usually survive. The installer-backed layers often do not.`,
+      },
+      {
+        type: "compare",
+        left: {
+          title: "Usually survives a closure",
+          subtitle: "Backed by the manufacturer",
+          items: [
+            "Product warranty on panels, inverter and battery, if the manufacturer still operates in Australia.",
+            "Performance warranty covering panel output over time.",
+            "Easier to claim when the brand has a local Australian support team.",
+          ],
+        },
+        right: {
+          title: "Often lost in a closure",
+          subtitle: "Backed by the installer",
+          items: [
+            "Workmanship warranty on wiring, mounting and roof sealing, unless it is insurance-backed.",
+            "Service and support, including answering faults and handling claims for you.",
+            "Someone to diagnose a fault, which manufacturers often require before approving a claim.",
+          ],
+        },
+      },
+      {
+        type: "markdown",
+        markdown: `Two catches matter. First, manufacturers often need an accredited installer to diagnose a fault and supply evidence before they approve a claim, so you will need a replacement installer anyway. Second, if a brand has no local Australian support, even a valid warranty can be slow and costly to claim. That is why brand choice matters as much as installer choice.`,
+      },
+      {
+        type: "takeaways",
+        heading: "What to remember",
+        items: [
+          "Your panels keep working and your manufacturer warranties stay valid after a closure.",
+          "The workmanship warranty and ongoing service are what you lose, unless insurance backs them.",
+          "You will likely need an accredited installer anyway, since manufacturers want a diagnosis.",
+          "Secure your inverter monitoring in your own name so silent faults don't go unseen.",
+          "Act early while the system works, rather than scrambling after a fault.",
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `## Warning Signs Your Installer May Be in Trouble
+
+Closures rarely come with an announcement. Watch for:
+
+- Calls and emails going unanswered, or a disconnected phone number
+- A website that is down or has not been updated in months
+- Cancelled or repeatedly rescheduled service visits
+- Warranty replacements that stall with no explanation
+- A silent social media page and staff who have left
+- A liquidation or administration notice under the company name
+
+## What to Do Right Away if Your Installer Has Closed
+
+1. **Confirm it.** Look up the company's ABN on ABN Lookup and search ASIC's published notices for any insolvency appointment.
+2. **Gather your paperwork.** Find your contract, invoice, warranty documents, electrical compliance certificate, grid connection approval and equipment serial numbers.
+3. **Contact your manufacturers.** Check your warranty status and ask for a list of approved installers in the Northern Territory.
+4. **Secure your monitoring.** Make sure your inverter app account is in your name, not the installer's. Without monitoring, you will not know a fault has cut your output.
+5. **Book a system health check.** An accredited installer can inspect the system and give you a baseline.
+6. **Keep paying your finance.** If you financed the system, speak to your lender before changing anything.
+7. **Seek help if you lost money.** If you paid a deposit for work not completed, contact NT Consumer Affairs and the appointed liquidator.`,
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/goodwe-saa-install.webp",
+        alt: "Accredited installer servicing a solar system in Darwin",
+      },
+      {
+        type: "markdown",
+        markdown: `## Who Will Service Your System Now?
+
+Any suitably accredited installer can service your system, but expect a fee, since warranties rarely cover labour. Some installers also hesitate to take on another company's work because of liability, and they may inspect first and quote second. That is a good reason to act early, while the system is working, instead of waiting for a fault. Our [solar panel maintenance team](/services/solar-panel-maintenance-darwin) can give your system a baseline health check, and handle [solar panel repair](/services/solar-panel-repair-darwin) if a fault turns up.
+
+## What About Your Finance, Rebates and Insurance?
+
+- **Finance:** A loan or payment plan is a separate contract with your lender. It normally continues even if the installer closes, so confirm the terms.
+- **Rebates:** The small-scale technology certificate (STC) discount was applied when you bought the system and is normally not affected, but keep every piece of paperwork.
+- **Insurance:** Make sure your home insurer knows about the system, and check whether the workmanship warranty was insurance-backed.`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Sick of installers who disappear once the invoice is paid?",
+          body: "Your roof deserves a team that is still here in year five. Oneroof Solar is Australian-owned and Darwin-based, with $0 deposit plans and support long after installation.",
+          buttonLabel: "Talk to a Local Darwin Installer",
+          buttonHref: "/contact",
+          phoneLine: "or call us on 0483 986 444.",
+        },
+      },
+      {
+        type: "markdown",
+        markdown: `## How to Choose an Installer Who Will Still Be Around in 10 Years
+
+No installer can promise the future, but you can lower the risk. Before you sign:
+
+- **Check their track record.** How long have they traded in the NT, and do they have a real local office?
+- **Confirm accreditation.** Ask for their Solar Accreditation Australia details, and learn [how to check SAA accreditation](/blog/saa-accreditation-check-solar-installer/).
+- **Pick brands with local support.** A battery or inverter brand with an Australian presence is easier to claim on. Compare the [solar battery brands](/products/solar-battery-brands/) we install.
+- **Get the workmanship warranty in writing,** with the duration and what it covers, and ask whether insurance backs it.
+- **Ask about aftercare.** Who services the system, and how do you reach them?
+- **Look for transparent pricing and finance.** Avoid pressure to sign on the spot, and know the difference between [an installer and a broker](/blog/solar-installer-vs-solar-broker-darwin/).
+
+## Why Darwin Homeowners Choose Oneroof Solar
+
+Oneroof Solar has served the Northern Territory since 2019 and is fully Australian-owned. You get one team from consultation and design through installation and ongoing support, not a salesperson who hands you off to a subcontractor. The team installs trusted battery brands such as Fox ESS and Sungrow, offers [EV charger installation](/services/ev-chargers/installation), and serves Darwin, Palmerston, Alice Springs, Katherine and Tennant Creek. And if you ever need help, you know where to find the local Berrimah team.
+
+## Don't Wait for a Closure to Find Out How Protected You Are
+
+An installer closing does not switch off your solar, but it removes the people who were meant to look after it. Check your paperwork, secure your monitoring, and choose your next installer carefully, because a system this valuable needs someone behind it for the long run.`,
+      },
+      {
+        type: "faqs",
+        heading: "Frequently Asked Questions",
+        items: [
+          { q: "Can another company take over my installer's warranty?", a: "Sometimes. When a solar company closes, another business may buy its customer base and agree to honour existing warranties, but there is no guarantee. Don't assume it will happen. Ask in writing who is responsible for your workmanship warranty, and rely on your manufacturer warranties either way." },
+          { q: "Will my warranty be void if a different installer services my system?", a: "Not if the work is done properly. Manufacturers generally expect repairs and servicing to be done by a suitably accredited installer, and many ask for a report on the fault. Always check the warranty terms with the manufacturer before work starts, and keep the new installer's invoice and report." },
+          { q: "Does my battery have different risks if my installer closes?", a: "It can. Batteries are more complex than panels, and faults often need a trained technician and manufacturer support to diagnose. Keep your battery's serial number and app login, and confirm the brand has an Australian service team, as Fox ESS and Sungrow do through their local offices." },
+          { q: "Should I pay a large deposit upfront to an installer?", a: "Be careful. A big upfront payment leaves you exposed if the company closes before the work is finished. A $0 deposit plan avoids that risk, so ask for a staged payment schedule or a $0 deposit option and get everything in writing." },
+          { q: "Will my grid connection and feed-in arrangement stop if my installer closes?", a: "Normally not. Your connection and any feed-in arrangement sit with your electricity retailer and network provider, not your installer, so your system should keep exporting as before. Keep your connection approval paperwork handy in case you ever need to prove the system was approved." },
+        ],
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Don't wait for the failure to find out nobody's there.",
+          body: "Every month with an unsupported system is a month of silent faults and power you are not getting. Start with an installer who stands behind the work.",
+          buttonLabel: "Request Your Free Quote",
+          buttonHref: "/contact",
+          phoneLine: "or call Oneroof Solar on 0483 986 444.",
+        },
+      },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug?: string): BlogPost | undefined {
