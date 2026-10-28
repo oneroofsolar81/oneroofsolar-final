@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { LeadPopup } from "./LeadPopup";
+import { ChatWidget } from "./ChatWidget";
 
 export function Layout({ children }: { children: ReactNode }) {
   const { pathname } = useLocation();
@@ -17,6 +18,7 @@ export function Layout({ children }: { children: ReactNode }) {
       <main className="flex-1 w-full pt-[var(--site-header-spacer)]">{children}</main>
       <Footer />
       <LeadPopup />
+      <ChatWidget />
     </div>
   );
 }

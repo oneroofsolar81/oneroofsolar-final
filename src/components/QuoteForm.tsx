@@ -18,7 +18,7 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({
 
   useEffect(() => {
     // Ensure form_embed.js script is loaded and active
-    const scriptSrc = "https://api.oneroofsolar.com.au/js/form_embed.js";
+    const scriptSrc = "https://link.oneroofsolar.com.au/js/form_embed.js";
     let script = document.querySelector(`script[src="${scriptSrc}"]`) as HTMLScriptElement;
     if (!script) {
       script = document.createElement("script");
@@ -56,9 +56,9 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({
         <div className="w-full relative bg-transparent rounded-xl overflow-hidden" style={{ minHeight: "480px" }}>
           <iframe
             ref={iframeRef}
-            src="https://api.oneroofsolar.com.au/widget/form/3uXInokjWftJSJgePj2x"
-            style={{ width: "100%", height: "480px", border: "none", borderRadius: "8px", minHeight: "480px" }}
-            id="inline-3uXInokjWftJSJgePj2x" 
+            src="https://link.oneroofsolar.com.au/widget/form/F2H629of86bmaD81HhJm"
+            style={{ width: "100%", height: "1132px", border: "none", borderRadius: "8px", minHeight: "480px" }}
+            id="inline-F2H629of86bmaD81HhJm" 
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
             data-trigger-value=""
@@ -67,9 +67,11 @@ export const QuoteForm: React.FC<QuoteFormProps> = ({
             data-deactivation-type="neverDeactivate"
             data-deactivation-value=""
             data-form-name="Contact Us "
-            data-height="480"
-            data-layout-iframe-id="inline-3uXInokjWftJSJgePj2x"
-            data-form-id="3uXInokjWftJSJgePj2x"
+            data-height="1132"
+            data-layout-iframe-id="inline-F2H629of86bmaD81HhJm"
+            data-form-id="F2H629of86bmaD81HhJm"
+            data-cookie-consent="true"
+            data-cookie-consent-provider="auto"
             title="Contact Us "
           />
         </div>

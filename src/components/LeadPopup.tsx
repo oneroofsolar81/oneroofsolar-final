@@ -48,6 +48,18 @@ export function LeadPopup() {
     };
   }, [isOpen]);
 
+  // Load the CRM form embed script once the popup opens so the form sizes correctly
+  useEffect(() => {
+    if (!isOpen) return;
+    const scriptSrc = "https://link.oneroofsolar.com.au/js/form_embed.js";
+    if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
+      const script = document.createElement("script");
+      script.src = scriptSrc;
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, [isOpen]);
+
   const closeModal = () => {
     setIsOpen(false);
   };
@@ -180,12 +192,25 @@ export function LeadPopup() {
                   <p className="text-neutral-300 mt-2 font-medium">Takes less than 60 seconds</p>
                 </div>
                 
-                <div className="w-full relative bg-transparent rounded-xl overflow-hidden" style={{ minHeight: "720px" }}>
+                <div className="w-full relative bg-transparent rounded-xl overflow-hidden" style={{ minHeight: "600px" }}>
                   <iframe
-                    src="https://api.oneroofsolar.com.au/widget/form/XVgkuW5m65fGTA1nDLGD"
-                    style={{ width: "100%", height: "100%", border: "none", borderRadius: "12px", minHeight: "720px", overflow: "hidden" }}
-                    scrolling="no"
-                    title="Check Eligibility Form"
+                    src="https://link.oneroofsolar.com.au/widget/form/F2H629of86bmaD81HhJm"
+                    style={{ width: "100%", height: "1132px", border: "none", borderRadius: "12px", minHeight: "600px" }}
+                    id="inline-F2H629of86bmaD81HhJm"
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="B-008-CUF. Contact Us Form (Website)"
+                    data-height="1132"
+                    data-layout-iframe-id="inline-F2H629of86bmaD81HhJm"
+                    data-form-id="F2H629of86bmaD81HhJm"
+                    data-cookie-consent="true"
+                    data-cookie-consent-provider="auto"
+                    title="B-008-CUF. Contact Us Form (Website)"
                   ></iframe>
                 </div>
               </div>
