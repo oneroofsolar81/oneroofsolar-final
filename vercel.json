@@ -1,6 +1,16 @@
 {
   "redirects": [
     {
+      "source": "/top-solar-installers-in-darwin-reliable-affordable",
+      "destination": "/blog/top-10-best-solar-panel-installers-in-darwin",
+      "permanent": true
+    },
+    {
+      "source": "/top-solar-installers-in-darwin-reliable-affordable/",
+      "destination": "/blog/top-10-best-solar-panel-installers-in-darwin",
+      "permanent": true
+    },
+    {
       "source": "/do-solar-panels-work-during-darwins-wet-season",
       "destination": "/blog/do-solar-panels-work-during-darwin-wet-season",
       "permanent": true
