@@ -10,6 +10,9 @@ import {
   Sun,
   ChevronDown,
   Star,
+  Award,
+  Zap,
+  BadgeCheck,
 } from "lucide-react";
 import { FadeIn } from "./ui/FadeIn";
 import { Button } from "./ui/Button";
@@ -48,6 +51,9 @@ export interface SuburbLocationData {
   heroParagraph: string;
   heroImage: string;
   heroImageAlt: string;
+  /** Optional supporting image beside the intro; falls back to a Darwin aerial. */
+  introImage?: string;
+  introImageAlt?: string;
   rating: string;
   reviewCount: string;
   trustChips: string[];
@@ -98,9 +104,46 @@ export interface SuburbLocationData {
   serviceAreaNames: string[];
 }
 
+/** Section photos mapped by destination so every suburb card carries a relevant image. */
+const SYSTEM_IMAGES: Record<string, string> = {
+  "/solar-systems/residential-solar-system": "/assets/images/home/home-packages-house.webp",
+  "/solar-systems/commercial-solar-system": "/assets/images/home/home-premium-aerial.webp",
+  "/solar-systems/off-grid-solar-system": "/assets/images/hosted/offgrid.webp",
+};
+
+const SERVICE_IMAGES: Record<string, string> = {
+  "/services/solar-inverters/installation": "/assets/images/hosted/products/inverter-hero.webp",
+  "/services/solar-inverters/repair": "/assets/images/hosted/goodwe-saa-install.webp",
+  "/services/solar-battery-installation": "/assets/images/hosted/goodwe-battery-hero.webp",
+  "/services/ev-chargers/installation": "/assets/images/hosted/products/ev-charger.webp",
+  "/services/ev-chargers/repair": "/assets/images/hosted/ev-charger-repair-diagnosis.webp",
+};
+
+const PROJECT_IMAGES = [
+  { src: "/assets/images/home/home-project-bayview.webp", label: "Residential rooftop solar" },
+  { src: "/assets/images/home/home-project-berrimah.webp", label: "Commercial solar install" },
+  { src: "/assets/images/home/home-project-bellamack.webp", label: "Family home system" },
+];
+
+/** Premium gradient icon badge used across the card sections. */
+function IconBadge({ icon: Icon, className = "" }: { icon: IconType; className?: string }) {
+  return (
+    <div
+      className={`w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-400 to-[#4e8f27] flex items-center justify-center text-white shadow-lg shadow-[#8cc63f]/30 ring-1 ring-white/50 ${className}`}
+    >
+      <Icon className="w-7 h-7 drop-shadow-sm" />
+    </div>
+  );
+}
+
 export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const darwinOffice = OFFICE_LOCATIONS[0];
+
+  const introImage = data.introImage || "/assets/images/hosted/aerial.webp";
+  const introImageAlt =
+    data.introImageAlt || `Rooftop solar across ${data.suburb} and Darwin's northern suburbs`;
+  const whyImage = "/assets/images/home/home-about-stuart-park.webp";
 
   const seoData = {
     title: data.seo.title,
@@ -318,19 +361,49 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
 
       <PartnersMarquee />
 
-      {/* Intro */}
-      <section className="py-20 bg-white relative border-b border-slate-200">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-center text-slate-900 mb-8 normal-case">
-              {data.introHeading}
-            </h2>
-            <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-6">
-              {data.introParagraphs.map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
-            </div>
-          </FadeIn>
+      {/* Intro (image-led) */}
+      <section className="py-20 lg:py-24 bg-white relative border-b border-slate-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <FadeIn>
+              <span className="inline-flex items-center gap-2 text-[#8cc63f] text-xs font-bold uppercase tracking-widest mb-4">
+                <MapPin className="w-4 h-4" /> Local {data.suburb} Solar Team
+              </span>
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
+                {data.introHeading}
+              </h2>
+              <div className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium space-y-5">
+                {data.introParagraphs.map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.15} className="relative">
+              <div className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl aspect-[4/3]">
+                <img
+                  src={introImage}
+                  alt={introImageAlt}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118]/60 via-transparent to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5 flex items-center gap-3 bg-[#0A1118]/90 backdrop-blur-md border border-white/10 rounded-2xl px-5 py-4 shadow-lg">
+                  <div className="w-11 h-11 rounded-xl bg-[#8cc63f] flex items-center justify-center text-[#19281D] shrink-0">
+                    <Award className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <div className="text-white font-black text-sm leading-tight">
+                      SAA Accredited Installers
+                    </div>
+                    <div className="text-slate-300 text-xs font-medium">
+                      Cyclone-rated systems for {data.suburb}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
@@ -346,17 +419,23 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {data.systemTypes.map((item, i) => {
-              const Icon = item.icon;
-              return (
-                <FadeIn
-                  key={item.title}
-                  delay={0.1 * (i + 1)}
-                  className="bg-white rounded-[2rem] p-8 border border-slate-200 hover:border-[#8cc63f]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-sm"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6 shadow-inner">
-                    <Icon className="w-6 h-6" />
-                  </div>
+            {data.systemTypes.map((item, i) => (
+              <FadeIn
+                key={item.title}
+                delay={0.1 * (i + 1)}
+                className="group bg-white rounded-[2rem] border border-slate-200 hover:border-[#8cc63f]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-sm overflow-hidden"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={SYSTEM_IMAGES[item.href] || data.heroImage}
+                    alt={`${item.title} in ${data.suburb}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118]/50 to-transparent" />
+                  <IconBadge icon={item.icon} className="absolute -bottom-7 left-6" />
+                </div>
+                <div className="p-8 pt-10 flex flex-col flex-1">
                   <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">
                     {item.title}
                   </h3>
@@ -369,9 +448,9 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
                   >
                     Read More <ArrowRight className="w-4 h-4" />
                   </Link>
-                </FadeIn>
-              );
-            })}
+                </div>
+              </FadeIn>
+            ))}
           </div>
         </div>
       </section>
@@ -413,22 +492,28 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {data.relatedServices.map((item, i) => {
-              const Icon = item.icon;
-              return (
-                <FadeIn
-                  key={item.title}
-                  delay={Math.min(0.05 * i, 0.25)}
-                  className={`bg-white rounded-[2rem] p-8 border border-slate-200 hover:border-[#8cc63f]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-sm ${
-                    i === data.relatedServices.length - 1 &&
-                    data.relatedServices.length % 3 === 2
-                      ? "md:col-span-2 lg:col-span-1"
-                      : ""
-                  }`}
-                >
-                  <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
-                    <Icon className="w-6 h-6" />
-                  </div>
+            {data.relatedServices.map((item, i) => (
+              <FadeIn
+                key={item.title}
+                delay={Math.min(0.05 * i, 0.25)}
+                className={`group bg-white rounded-[2rem] border border-slate-200 hover:border-[#8cc63f]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-sm overflow-hidden ${
+                  i === data.relatedServices.length - 1 &&
+                  data.relatedServices.length % 3 === 2
+                    ? "md:col-span-2 lg:col-span-1"
+                    : ""
+                }`}
+              >
+                <div className="relative h-44 overflow-hidden">
+                  <img
+                    src={SERVICE_IMAGES[item.href] || data.heroImage}
+                    alt={`${item.title} in ${data.suburb}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118]/50 to-transparent" />
+                  <IconBadge icon={item.icon} className="absolute -bottom-7 left-6 w-12 h-12 rounded-xl" />
+                </div>
+                <div className="p-8 pt-9 flex flex-col flex-1">
                   <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight normal-case">
                     {item.title}
                   </h3>
@@ -441,14 +526,14 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
                   >
                     Read More <ArrowRight className="w-4 h-4" />
                   </Link>
-                </FadeIn>
-              );
-            })}
+                </div>
+              </FadeIn>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Why choose */}
+      {/* Why choose (image-backed) */}
       <section className="py-24 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -470,20 +555,27 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
               </ul>
             </FadeIn>
 
-            <FadeIn delay={0.15}>
-              <div className="bg-slate-50 rounded-[2rem] p-8 border border-slate-200 shadow-sm sticky top-28">
-                <div className="w-12 h-12 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 mb-6">
-                  <Shield className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-black text-slate-900 tracking-tight mb-3 normal-case">
-                  {data.highlightCard.heading}
-                </h3>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                  {data.highlightCard.text}
-                </p>
-                <div className="flex items-center gap-3 text-slate-900 font-bold">
-                  <Sun className="w-5 h-5 text-[#8cc63f]" />
-                  {data.highlightCard.tag}
+            <FadeIn delay={0.15} className="sticky top-28">
+              <div className="relative rounded-[2rem] overflow-hidden border border-slate-200 shadow-xl">
+                <img
+                  src={whyImage}
+                  alt={`OneRoof Solar team installing solar near ${data.suburb}`}
+                  loading="lazy"
+                  className="w-full h-64 sm:h-72 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118] via-[#0A1118]/50 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <IconBadge icon={Shield} className="mb-4" />
+                  <h3 className="text-xl font-black text-white tracking-tight mb-2 normal-case">
+                    {data.highlightCard.heading}
+                  </h3>
+                  <p className="text-slate-200 text-sm leading-relaxed mb-4">
+                    {data.highlightCard.text}
+                  </p>
+                  <div className="flex items-center gap-3 text-white font-bold text-sm">
+                    <Sun className="w-5 h-5 text-[#8cc63f]" />
+                    {data.highlightCard.tag}
+                  </div>
                 </div>
               </div>
             </FadeIn>
@@ -491,8 +583,59 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
         </div>
       </section>
 
+      {/* Recent projects strip */}
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <FadeIn>
+              <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-4 normal-case">
+                Recent Solar Projects Across the NT
+              </h2>
+              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+                A look at residential and commercial systems our Berrimah-based team has installed
+                across Darwin and the Northern Territory, built for the same heat, humidity and wet
+                season your {data.suburb} property faces.
+              </p>
+            </FadeIn>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {PROJECT_IMAGES.map((project, i) => (
+              <FadeIn key={project.src} delay={0.1 * i}>
+                <div className="group relative rounded-[1.75rem] overflow-hidden border border-slate-200 shadow-sm aspect-[4/3]">
+                  <img
+                    src={project.src}
+                    alt={project.label}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A1118]/80 via-[#0A1118]/10 to-transparent" />
+                  <div className="absolute bottom-5 left-5 right-5">
+                    <span className="inline-flex items-center gap-2 text-white font-bold text-sm">
+                      <Sun className="w-4 h-4 text-[#8cc63f]" />
+                      {project.label}
+                    </span>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <FadeIn>
+              <Link
+                to="/projects"
+                className="inline-flex items-center gap-2 text-[#8cc63f] font-bold text-sm hover:gap-3 transition-all"
+              >
+                View all solar projects <ArrowRight className="w-4 h-4" />
+              </Link>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
       {/* Repair CTA */}
-      <section className="py-12 lg:py-16 bg-slate-50 border-b border-slate-200 relative">
+      <section className="py-12 lg:py-16 bg-white border-b border-slate-200 relative">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="bg-[#0A1118] border border-brand-500/30 p-8 sm:p-12 rounded-2xl sm:rounded-3xl text-center shadow-xl">
@@ -522,7 +665,7 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
       </section>
 
       {/* Map */}
-      <section className="py-24 bg-white relative border-b border-slate-200">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn>
@@ -545,7 +688,7 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
       </section>
 
       {/* Nearby Solar Coverage */}
-      <section className="py-20 bg-slate-50 relative border-b border-slate-200">
+      <section className="py-20 bg-white relative border-b border-slate-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">
@@ -583,7 +726,7 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 bg-white relative border-b border-slate-200">
+      <section className="py-24 bg-slate-50 relative border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
             <div className="lg:col-span-5 lg:sticky-below-header">
@@ -717,6 +860,19 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
                       <div className="text-base sm:text-lg font-black">info@oneroofsolar.com.au</div>
                     </div>
                   </a>
+
+                  <div className="flex flex-wrap gap-6 pt-4 border-t border-white/10">
+                    <div className="flex items-center gap-2 text-slate-300 text-sm font-semibold">
+                      <BadgeCheck className="w-5 h-5 text-[#8cc63f]" /> SAA Accredited
+                    </div>
+                    <div className="flex items-center gap-2 text-slate-300 text-sm font-semibold">
+                      <Zap className="w-5 h-5 text-[#8cc63f]" /> STC Discounts Upfront
+                    </div>
+                    <div className="flex items-center gap-2 text-slate-300 text-sm font-semibold">
+                      <Star className="w-5 h-5 text-[#8cc63f] fill-[#8cc63f]" /> {data.rating} /{" "}
+                      {data.reviewCount} Reviews
+                    </div>
+                  </div>
                 </div>
               </FadeIn>
             </div>
