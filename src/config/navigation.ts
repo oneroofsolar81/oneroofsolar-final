@@ -265,6 +265,56 @@ export const mainNavConfig: NavItem[] = [
         href: "/locations/northern-darwin",
         description: "Solar across Darwin's northern suburbs.",
         iconName: "MapPin",
+        children: [
+          {
+            label: "Nightcliff",
+            href: "/locations/nightcliff",
+            description: "Solar for Nightcliff's coastal homes and businesses.",
+            iconName: "MapPin",
+          },
+          {
+            label: "Rapid Creek",
+            href: "/locations/rapid-creek",
+            description: "Solar for Rapid Creek homes, units and businesses.",
+            iconName: "MapPin",
+          },
+          {
+            label: "Coconut Grove",
+            href: "/locations/coconut-grove",
+            description: "Solar for Coconut Grove homes, units and rentals.",
+            iconName: "MapPin",
+          },
+          {
+            label: "Casuarina",
+            href: "/locations/casuarina",
+            description: "Solar for Casuarina homes, units and businesses.",
+            iconName: "MapPin",
+          },
+          {
+            label: "Tiwi",
+            href: "/locations/tiwi",
+            description: "Solar for Tiwi homes near RDH and CDU.",
+            iconName: "MapPin",
+          },
+          {
+            label: "Wanguri",
+            href: "/locations/wanguri",
+            description: "Solar for Wanguri's established family homes.",
+            iconName: "MapPin",
+          },
+          {
+            label: "Muirhead",
+            href: "/locations/muirhead",
+            description: "Solar for Muirhead's newer estate homes.",
+            iconName: "MapPin",
+          },
+          {
+            label: "Karama",
+            href: "/locations/karama",
+            description: "Solar for Karama homes and local businesses.",
+            iconName: "MapPin",
+          },
+        ],
       },
       {
         label: "Palmerston",

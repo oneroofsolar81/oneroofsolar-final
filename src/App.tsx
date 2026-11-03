@@ -42,6 +42,14 @@ const FannieBayPage = lazy(() => import("./pages/FannieBayPage").then(m => ({ de
 const EastPointPage = lazy(() => import("./pages/EastPointPage").then(m => ({ default: m.EastPointPage })));
 const BerrimahPage = lazy(() => import("./pages/BerrimahPage").then(m => ({ default: m.BerrimahPage })));
 const BayviewPage = lazy(() => import("./pages/BayviewPage").then(m => ({ default: m.BayviewPage })));
+const NightcliffPage = lazy(() => import("./pages/NightcliffPage").then(m => ({ default: m.NightcliffPage })));
+const RapidCreekPage = lazy(() => import("./pages/RapidCreekPage").then(m => ({ default: m.RapidCreekPage })));
+const CoconutGrovePage = lazy(() => import("./pages/CoconutGrovePage").then(m => ({ default: m.CoconutGrovePage })));
+const CasuarinaPage = lazy(() => import("./pages/CasuarinaPage").then(m => ({ default: m.CasuarinaPage })));
+const TiwiPage = lazy(() => import("./pages/TiwiPage").then(m => ({ default: m.TiwiPage })));
+const WanguriPage = lazy(() => import("./pages/WanguriPage").then(m => ({ default: m.WanguriPage })));
+const MuirheadPage = lazy(() => import("./pages/MuirheadPage").then(m => ({ default: m.MuirheadPage })));
+const KaramaPage = lazy(() => import("./pages/KaramaPage").then(m => ({ default: m.KaramaPage })));
 const SigenergyBatteryPage = lazy(() => import("./pages/SigenergyBatteryPage").then(m => ({ default: m.SigenergyBatteryPage })));
 const GoodWeBatteryPage = lazy(() => import("./pages/GoodWeBatteryPage").then(m => ({ default: m.GoodWeBatteryPage })));
 const FoxEssBatteryPage = lazy(() => import("./pages/FoxEssBatteryPage").then(m => ({ default: m.FoxEssBatteryPage })));
@@ -311,6 +319,22 @@ export default function App() {
                 <Route path="/locations/berrimah/" element={<BerrimahPage />} />
                 <Route path="/locations/bayview" element={<BayviewPage />} />
                 <Route path="/locations/bayview/" element={<BayviewPage />} />
+                <Route path="/locations/nightcliff" element={<NightcliffPage />} />
+                <Route path="/locations/nightcliff/" element={<NightcliffPage />} />
+                <Route path="/locations/rapid-creek" element={<RapidCreekPage />} />
+                <Route path="/locations/rapid-creek/" element={<RapidCreekPage />} />
+                <Route path="/locations/coconut-grove" element={<CoconutGrovePage />} />
+                <Route path="/locations/coconut-grove/" element={<CoconutGrovePage />} />
+                <Route path="/locations/casuarina" element={<CasuarinaPage />} />
+                <Route path="/locations/casuarina/" element={<CasuarinaPage />} />
+                <Route path="/locations/tiwi" element={<TiwiPage />} />
+                <Route path="/locations/tiwi/" element={<TiwiPage />} />
+                <Route path="/locations/wanguri" element={<WanguriPage />} />
+                <Route path="/locations/wanguri/" element={<WanguriPage />} />
+                <Route path="/locations/muirhead" element={<MuirheadPage />} />
+                <Route path="/locations/muirhead/" element={<MuirheadPage />} />
+                <Route path="/locations/karama" element={<KaramaPage />} />
+                <Route path="/locations/karama/" element={<KaramaPage />} />
 
                 {/* Solar Battery Brand Pages */}
                 <Route path="/products/solar-battery-brands" element={<SolarBatteryBrands />} />
