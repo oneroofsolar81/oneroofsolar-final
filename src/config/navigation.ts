@@ -314,6 +314,12 @@ export const mainNavConfig: NavItem[] = [
             description: "Solar for Karama homes and local businesses.",
             iconName: "MapPin",
           },
+          {
+            label: "Alawa",
+            href: "/locations/alawa",
+            description: "Solar for Alawa's established homes, units and rentals.",
+            iconName: "MapPin",
+          },
         ],
       },
       {
