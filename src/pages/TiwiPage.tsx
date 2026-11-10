@@ -1,4 +1,4 @@
-import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging } from "lucide-react";
+import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging, Sun, Sparkles } from "lucide-react";
 import { SuburbLocationPage, type SuburbLocationData } from "../components/SuburbLocationPage";
 
 const data: SuburbLocationData = {
@@ -54,10 +54,28 @@ const data: SuburbLocationData = {
     text: "Custom tropical solar designs backed by upfront STC discounts applied directly to your estimate.",
     button: "Get Your Free Tiwi Quote Today",
   },
-  relatedHeading: "Inverter, Battery, and EV Charger Services",
+  relatedHeading: "Solar, Inverter, Battery, and EV Charger Services",
   relatedIntro:
-    "Solar panels are just one part of a complete energy system. Tiwi homes and businesses can also benefit from a reliable inverter, battery storage and EV charging. We install and repair all of them so your whole setup works together smoothly.",
+    "Solar panels, inverters, batteries and EV chargers work best as one system. Tiwi homes and businesses can rely on us to install, maintain and repair all of them so your whole setup works together smoothly.",
   relatedServices: [
+    {
+      title: "Solar Panel Installation",
+      href: "/services/solar-panel-installation",
+      icon: Sun,
+      text: "Every install starts with your roof orientation, structural style, shading from mature trees and your property's energy use. We finish each system with C2/C3 cyclone-rated hardware built for Tiwi's monsoonal downpours and heavy seasonal winds.",
+    },
+    {
+      title: "Solar Panel Repair",
+      href: "/services/solar-panel-repair-darwin",
+      icon: Wrench,
+      text: "If your system is producing less than it used to, showing inverter errors or has stopped working, our solar panel repair team inspects the panels, wiring and connections. We then tell you plainly whether repair or replacement is the better option.",
+    },
+    {
+      title: "Solar Panel Maintenance",
+      href: "/services/solar-panel-maintenance-darwin",
+      icon: Sparkles,
+      text: "High heat, humidity and wet-season grime put constant stress on rooftop systems. Regular solar panel cleaning and maintenance clears dust, leaf litter and build-up from roofs under tree cover, and checks connections and wiring for wear before it affects output.",
+    },
     {
       title: "Solar Inverter Installation",
       href: "/services/solar-inverters/installation",

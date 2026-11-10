@@ -1,4 +1,4 @@
-import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging } from "lucide-react";
+import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging, Sun, Sparkles } from "lucide-react";
 import { SuburbLocationPage, type SuburbLocationData } from "../components/SuburbLocationPage";
 
 const data: SuburbLocationData = {
@@ -54,10 +54,28 @@ const data: SuburbLocationData = {
     text: "Stop letting wet-season air conditioning bills run the household. Get a system designed for your roof, with upfront STC discounts taken off your quote.",
     button: "Get Your Free Coconut Grove Quote Today",
   },
-  relatedHeading: "Inverter, Battery, and EV Charger Services",
+  relatedHeading: "Solar, Inverter, Battery, and EV Charger Services",
   relatedIntro:
-    "Panels are only part of the picture. The inverter converts your power, the battery stores it and the EV charger puts it to work. We install and repair all of them so your Coconut Grove system works as one setup.",
+    "Panels, inverters, batteries and chargers work best as one system. We install and repair all of them so your Coconut Grove system works as one setup.",
   relatedServices: [
+    {
+      title: "Solar Panel Installation",
+      href: "/services/solar-panel-installation",
+      icon: Sun,
+      text: "Every install starts with your roof, your shade pattern, your switchboard and your electricity use, with cyclone-rated mounting built for Darwin's wet season. We plan layouts for older detached homes, duplexes, townhouses and unit blocks, using careful panel placement or optimisation where tree shade is a problem.",
+    },
+    {
+      title: "Solar Panel Repair",
+      href: "/services/solar-panel-repair-darwin",
+      icon: Wrench,
+      text: "Leaf litter, mould and ageing components can quietly cut output under Coconut Grove's tree cover. Our solar panel repair team traces the cause, whether it is a faulty panel, a tripping inverter or damaged wiring, and tells you plainly if repair or replacement is the better call.",
+    },
+    {
+      title: "Solar Panel Maintenance",
+      href: "/services/solar-panel-maintenance-darwin",
+      icon: Sparkles,
+      text: "Regular cleaning and checks clear leaf litter, mould and grime, and catch loose connections and mounting wear early. This suits rental properties and body corporate roofs, where small faults can go unnoticed for a long time.",
+    },
     {
       title: "Solar Inverter Installation",
       href: "/services/solar-inverters/installation",

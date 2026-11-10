@@ -1,4 +1,4 @@
-import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging } from "lucide-react";
+import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging, Sun, Sparkles } from "lucide-react";
 import { SuburbLocationPage, type SuburbLocationData } from "../components/SuburbLocationPage";
 
 const data: SuburbLocationData = {
@@ -54,10 +54,28 @@ const data: SuburbLocationData = {
     text: "Solar solutions designed around your property's energy use, with upfront STC discounts applied directly to your quote.",
     button: "Get Your Free Alawa Quote Today",
   },
-  relatedHeading: "Inverter, Battery, and EV Charger Services",
+  relatedHeading: "Solar, Inverter, Battery, and EV Charger Services",
   relatedIntro:
-    "Solar panels are one part of a complete energy system. Alawa homes and businesses can also benefit from a reliable inverter, battery storage and EV charging, and we install and repair all of them so the whole setup works together.",
+    "Solar panels, inverters, batteries and EV chargers work best as one system. Alawa homes and businesses can rely on us to install, maintain and repair all of them so the whole setup works together.",
   relatedServices: [
+    {
+      title: "Solar Panel Installation",
+      href: "/services/solar-panel-installation",
+      icon: Sun,
+      text: "Our solar panel installation is designed around your roof size, roof condition, shading and real energy use, with cyclone-rated mounting built for Darwin's wet-season storms. We plan layouts to suit the compact roofs and older sheeting common in Alawa.",
+    },
+    {
+      title: "Solar Panel Repair",
+      href: "/services/solar-panel-repair-darwin",
+      icon: Wrench,
+      text: "If your panels are producing less than they used to, our solar panel repair service finds the cause, whether that is damaged panels, faulty wiring or loose connections. We then tell you honestly whether a repair or a replacement makes more sense.",
+    },
+    {
+      title: "Solar Panel Maintenance",
+      href: "/services/solar-panel-maintenance-darwin",
+      icon: Sparkles,
+      text: "Regular solar panel cleaning and maintenance clears the leaf litter and wet-season grime that build up on roofs near Alawa's parks. Each visit includes a check of your panels, mounting and connections so your system keeps performing.",
+    },
     {
       title: "Solar Inverter Installation",
       href: "/services/solar-inverters/installation",

@@ -1,4 +1,4 @@
-import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging } from "lucide-react";
+import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging, Sun, Sparkles } from "lucide-react";
 import { SuburbLocationPage, type SuburbLocationData } from "../components/SuburbLocationPage";
 
 const data: SuburbLocationData = {
@@ -54,10 +54,28 @@ const data: SuburbLocationData = {
     text: "Let the Territory sun do the heavy lifting. Upfront STC discounts come straight off your quote, so you see the real price from day one.",
     button: "See What I Can Save in Rapid Creek",
   },
-  relatedHeading: "Inverter, Battery, and EV Charger Services",
+  relatedHeading: "Solar, Inverter, Battery, and EV Charger Services",
   relatedIntro:
-    "Panels are only one part of the system. Rapid Creek homes and businesses get more from solar when the inverter, battery and EV charger are matched and installed together, and we handle installation and repair for all of them.",
+    "Panels are only one part of the system. Rapid Creek homes and businesses get more from solar when the panels, inverter, battery and EV charger are matched and installed together, and we handle installation, maintenance and repair for all of them.",
   relatedServices: [
+    {
+      title: "Solar Panel Installation",
+      href: "/services/solar-panel-installation",
+      icon: Sun,
+      text: "Every install starts with your roof pitch, orientation, shading from mature trees and your daily electricity use. We use cyclone-rated mounting and plan layouts to suit Rapid Creek's mix of older houses, units, townhouses and commercial roofs.",
+    },
+    {
+      title: "Solar Panel Repair",
+      href: "/services/solar-panel-repair-darwin",
+      icon: Wrench,
+      text: "If your system is producing less than it used to, showing inverter errors or has stopped working, our solar panel repair team inspects the panels, wiring and connections. We then tell you plainly whether repair or replacement is the better option.",
+    },
+    {
+      title: "Solar Panel Maintenance",
+      href: "/services/solar-panel-maintenance-darwin",
+      icon: Sparkles,
+      text: "Humidity off the creek and mangroves, wet-season grime and leaf litter build up on roofs under tree cover. Regular solar panel cleaning and maintenance clears that build-up and checks connections and wiring for moisture damage before it affects output.",
+    },
     {
       title: "Solar Inverter Installation",
       href: "/services/solar-inverters/installation",

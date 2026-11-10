@@ -1,4 +1,4 @@
-import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging } from "lucide-react";
+import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging, Sun, Sparkles } from "lucide-react";
 import { SuburbLocationPage, type SuburbLocationData } from "../components/SuburbLocationPage";
 
 const data: SuburbLocationData = {
@@ -54,10 +54,28 @@ const data: SuburbLocationData = {
     text: "Get a solar solution designed around your household or business electricity use, with eligible STC discounts applied upfront to your quote.",
     button: "Get Your Free Wanguri Quote Today",
   },
-  relatedHeading: "Inverter, Battery, and EV Charger Services",
+  relatedHeading: "Solar, Inverter, Battery, and EV Charger Services",
   relatedIntro:
-    "A solar installation needs more than panels to deliver reliable energy. Wanguri property owners can also benefit from suitable inverter technology, battery storage and EV charging. OneRoof Solar provides installation and repair services for these essential components, helping your energy system work as a complete setup.",
+    "A solar installation needs more than panels to deliver reliable energy. Wanguri property owners can rely on OneRoof Solar to install, maintain and repair panels, inverters, batteries and EV chargers, helping your energy system work as a complete setup.",
   relatedServices: [
+    {
+      title: "Solar Panel Installation",
+      href: "/services/solar-panel-installation",
+      icon: Sun,
+      text: "Every install starts with your available roof space, sunlight exposure, electricity use and existing electrical setup. We use cyclone-rated mounting designed for the Northern Territory's wet season and plan layouts to suit Wanguri's detached family homes.",
+    },
+    {
+      title: "Solar Panel Repair",
+      href: "/services/solar-panel-repair-darwin",
+      icon: Wrench,
+      text: "If your system is producing less than it used to, showing inverter errors or has stopped working, our solar panel repair team inspects the panels, wiring and connections. We then tell you plainly whether repair or replacement is the better option.",
+    },
+    {
+      title: "Solar Panel Maintenance",
+      href: "/services/solar-panel-maintenance-darwin",
+      icon: Sparkles,
+      text: "Regular solar panel cleaning and maintenance clears dust, leaf litter and wet-season grime, and checks connections and wiring for wear before it affects output. It suits Wanguri's established homes, where many systems have been running for years.",
+    },
     {
       title: "Solar Inverter Installation",
       href: "/services/solar-inverters/installation",

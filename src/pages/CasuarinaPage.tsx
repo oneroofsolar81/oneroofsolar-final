@@ -1,4 +1,4 @@
-import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging } from "lucide-react";
+import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging, Sun, Sparkles } from "lucide-react";
 import { SuburbLocationPage, type SuburbLocationData } from "../components/SuburbLocationPage";
 
 const data: SuburbLocationData = {
@@ -54,10 +54,28 @@ const data: SuburbLocationData = {
     text: "Sized-to-fit off-grid solar for your Casuarina workshop or studio, complete with instant upfront STC discounts.",
     button: "Get Your Free Casuarina Quote Today",
   },
-  relatedHeading: "Inverter, Battery, and EV Charger Services",
+  relatedHeading: "Solar, Inverter, Battery, and EV Charger Services",
   relatedIntro:
-    "The inverter, battery and charger are what turn panels into a usable energy system. We install and repair each one so they work together on your switchboard.",
+    "Panels, inverters, batteries and chargers work best as one energy system. We install and repair each one so they work together on your switchboard.",
   relatedServices: [
+    {
+      title: "Solar Panel Installation",
+      href: "/services/solar-panel-installation",
+      icon: Sun,
+      text: "Every install starts with a roof assessment covering orientation, tilt, shade from mature trees and switchboard capacity. We use cyclone-rated mounting built for Top End storms, with layouts for houses, townhouses, strata blocks and shopfronts.",
+    },
+    {
+      title: "Solar Panel Repair",
+      href: "/services/solar-panel-repair-darwin",
+      icon: Wrench,
+      text: "Cracked or soiled panels, loose wiring and slowly falling output are common on older Casuarina systems. We test string voltages and inverter logs to find the fault, then advise whether repair or replacement makes more sense.",
+    },
+    {
+      title: "Solar Panel Maintenance",
+      href: "/services/solar-panel-maintenance-darwin",
+      icon: Sparkles,
+      text: "Regular cleaning and checks clear wet-season grime and leaf litter, and catch moisture ingress, loose connections and mounting wear early. This is especially useful on strata and commercial roofs, where small faults can go unnoticed for months.",
+    },
     {
       title: "Solar Inverter Installation",
       href: "/services/solar-inverters/installation",

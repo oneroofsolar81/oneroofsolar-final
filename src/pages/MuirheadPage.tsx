@@ -1,4 +1,4 @@
-import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging } from "lucide-react";
+import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging, Sun, Sparkles } from "lucide-react";
 import { SuburbLocationPage, type SuburbLocationData } from "../components/SuburbLocationPage";
 
 const data: SuburbLocationData = {
@@ -54,10 +54,28 @@ const data: SuburbLocationData = {
     text: "Every month on the grid is another bill you could have cut. Get a fixed-price quote with your STC discount applied upfront, and find out what your Muirhead roof can really save you.",
     button: "Get My Muirhead Solar Quote Today",
   },
-  relatedHeading: "Inverter, Battery, and EV Charger Services in Muirhead",
+  relatedHeading: "Solar, Inverter, Battery, and EV Charger Services in Muirhead",
   relatedIntro:
-    "A well-designed solar system involves more than just panels on the roof. Muirhead properties can benefit from dependable inverters, battery storage and EV charging solutions that help manage electricity use throughout the day. OneRoof Solar provides installation and repair services to keep these components working together efficiently.",
+    "A well-designed solar system involves more than just panels on the roof. Muirhead properties can benefit from dependable panels, inverters, battery storage and EV charging that help manage electricity use throughout the day. OneRoof Solar installs, maintains and repairs all of them so they work together efficiently.",
   relatedServices: [
+    {
+      title: "Solar Panel Installation",
+      href: "/services/solar-panel-installation",
+      icon: Sun,
+      text: "Muirhead's large, modern roofs have room for a well-sized system. Our installs are designed around your roof layout, orientation and household usage, including ducted air conditioning and pool pumps, with cyclone-rated mounting built for Darwin's wet season.",
+    },
+    {
+      title: "Solar Panel Repair",
+      href: "/services/solar-panel-repair-darwin",
+      icon: Wrench,
+      text: "If your system is producing less than expected, showing inverter errors or has stopped working, our team inspects the panels, wiring and connections. We then tell you plainly whether repair or replacement is the better option.",
+    },
+    {
+      title: "Solar Panel Maintenance",
+      href: "/services/solar-panel-maintenance-darwin",
+      icon: Sparkles,
+      text: "Regular cleaning and checks clear dust and wet-season grime from unshaded roofs and catch loose connections early. It helps newer systems keep performing the way they were designed to.",
+    },
     {
       title: "Solar Inverter Installation",
       href: "/services/solar-inverters/installation",

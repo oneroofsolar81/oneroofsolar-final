@@ -112,8 +112,11 @@ const SYSTEM_IMAGES: Record<string, string> = {
 };
 
 const SERVICE_IMAGES: Record<string, string> = {
+  "/services/solar-panel-installation": "/assets/images/home/home-hero-bayview.webp",
+  "/services/solar-panel-repair-darwin": "/assets/images/hosted/goodwe-saa-install.webp",
+  "/services/solar-panel-maintenance-darwin": "/assets/images/hosted/goodwe-solar-pairing.webp",
   "/services/solar-inverters/installation": "/assets/images/hosted/products/inverter-hero.webp",
-  "/services/solar-inverters/repair": "/assets/images/hosted/goodwe-saa-install.webp",
+  "/services/solar-inverters/repair": "/assets/images/hosted/products/fronius-inverter.webp",
   "/services/solar-battery-installation": "/assets/images/hosted/goodwe-battery-hero.webp",
   "/services/ev-chargers/installation": "/assets/images/hosted/products/ev-charger.webp",
   "/services/ev-chargers/repair": "/assets/images/hosted/ev-charger-repair-diagnosis.webp",
@@ -496,12 +499,7 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
               <FadeIn
                 key={item.title}
                 delay={Math.min(0.05 * i, 0.25)}
-                className={`group bg-white rounded-[2rem] border border-slate-200 hover:border-[#8cc63f]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-sm overflow-hidden ${
-                  i === data.relatedServices.length - 1 &&
-                  data.relatedServices.length % 3 === 2
-                    ? "md:col-span-2 lg:col-span-1"
-                    : ""
-                }`}
+                className="group bg-white rounded-[2rem] border border-slate-200 hover:border-[#8cc63f]/40 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full shadow-sm overflow-hidden"
               >
                 <div className="relative h-44 overflow-hidden">
                   <img

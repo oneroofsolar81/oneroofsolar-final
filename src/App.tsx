@@ -51,6 +51,7 @@ const WanguriPage = lazy(() => import("./pages/WanguriPage").then(m => ({ defaul
 const MuirheadPage = lazy(() => import("./pages/MuirheadPage").then(m => ({ default: m.MuirheadPage })));
 const KaramaPage = lazy(() => import("./pages/KaramaPage").then(m => ({ default: m.KaramaPage })));
 const AlawaPage = lazy(() => import("./pages/AlawaPage").then(m => ({ default: m.AlawaPage })));
+const LeanyerPage = lazy(() => import("./pages/LeanyerPage").then(m => ({ default: m.LeanyerPage })));
 const SigenergyBatteryPage = lazy(() => import("./pages/SigenergyBatteryPage").then(m => ({ default: m.SigenergyBatteryPage })));
 const GoodWeBatteryPage = lazy(() => import("./pages/GoodWeBatteryPage").then(m => ({ default: m.GoodWeBatteryPage })));
 const FoxEssBatteryPage = lazy(() => import("./pages/FoxEssBatteryPage").then(m => ({ default: m.FoxEssBatteryPage })));
@@ -338,6 +339,8 @@ export default function App() {
                 <Route path="/locations/karama/" element={<KaramaPage />} />
                 <Route path="/locations/alawa" element={<AlawaPage />} />
                 <Route path="/locations/alawa/" element={<AlawaPage />} />
+                <Route path="/locations/leanyer" element={<LeanyerPage />} />
+                <Route path="/locations/leanyer/" element={<LeanyerPage />} />
 
                 {/* Solar Battery Brand Pages */}
                 <Route path="/products/solar-battery-brands" element={<SolarBatteryBrands />} />

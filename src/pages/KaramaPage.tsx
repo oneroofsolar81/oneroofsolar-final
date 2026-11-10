@@ -1,4 +1,4 @@
-import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging } from "lucide-react";
+import { Home, Building2, Zap, Cpu, Wrench, BatteryCharging, Sun, Sparkles } from "lucide-react";
 import { SuburbLocationPage, type SuburbLocationData } from "../components/SuburbLocationPage";
 
 const data: SuburbLocationData = {
@@ -54,10 +54,28 @@ const data: SuburbLocationData = {
     text: "Solar solutions designed around your energy needs, with upfront STC discounts applied directly to your quote.",
     button: "Get Your Free Karama Quote Today",
   },
-  relatedHeading: "Inverter, Battery, and EV Charger Services",
+  relatedHeading: "Solar, Inverter, Battery, and EV Charger Services",
   relatedIntro:
-    "Solar panels are one part of a complete energy system. Karama homes and businesses can also benefit from a reliable inverter, battery storage and EV charging, and we install and repair all of them so the whole setup works together.",
+    "Solar panels, inverters, batteries and EV chargers work best as one system. Karama homes and businesses can rely on us to install, maintain and repair all of them so the whole setup works together.",
   relatedServices: [
+    {
+      title: "Solar Panel Installation",
+      href: "/services/solar-panel-installation",
+      icon: Sun,
+      text: "Every solar panel installation starts with your roof condition, orientation, shading from nearby trees and your household's electricity use. We use cyclone-rated mounting built for Northern Territory conditions and plan layouts to suit Karama's established homes.",
+    },
+    {
+      title: "Solar Panel Repair",
+      href: "/services/solar-panel-repair-darwin",
+      icon: Wrench,
+      text: "If your system is producing less than it used to, showing inverter errors or has stopped working, our solar panel repair team inspects the panels, wiring and connections. We then tell you plainly whether repair or replacement is the better option.",
+    },
+    {
+      title: "Solar Panel Maintenance",
+      href: "/services/solar-panel-maintenance-darwin",
+      icon: Sparkles,
+      text: "Regular solar panel cleaning and maintenance removes dust, leaf litter and wet-season grime, and catches loose connections and wiring wear early. It is the cheapest way to keep an older system performing.",
+    },
     {
       title: "Solar Inverter Installation",
       href: "/services/solar-inverters/installation",

@@ -320,6 +320,12 @@ export const mainNavConfig: NavItem[] = [
             description: "Solar for Alawa's established homes, units and rentals.",
             iconName: "MapPin",
           },
+          {
+            label: "Leanyer",
+            href: "/locations/leanyer",
+            description: "Solar for Leanyer's family homes near Hibiscus Shoppingtown.",
+            iconName: "MapPin",
+          },
         ],
       },
       {

@@ -53,6 +53,7 @@ const routes = [
   { path: '/locations/muirhead', title: 'Solar Installation & Repair Muirhead | Oneroof Solar', description: 'Local solar panel, inverter, battery and EV charger installation and repair in Muirhead NT. SAA accredited, cyclone rated. Call 0483 986 444.' },
   { path: '/locations/karama', title: 'Solar Installers & Repair in Karama NT | OneRoof', description: 'Solar, battery and inverter installation and repair for Karama homes and businesses. SAA accredited, cyclone-rated systems, 4.9★ from 128 reviews.' },
   { path: '/locations/alawa', title: 'Solar Installers & Repair in Alawa NT | OneRoof', description: 'Solar, battery and inverter installation and repair for Alawa homes, units and businesses. SAA accredited, built for older roofs, 4.9★ from 128 reviews.' },
+  { path: '/locations/leanyer', title: 'Solar Installers & Repair in Leanyer NT | OneRoof', description: 'Solar, battery and inverter installation and repair for Leanyer homes and businesses. SAA accredited, family-home ready, 4.9★ from 128 reviews.' },
   { path: '/services/ev-chargers/installation', title: 'EV Charger Installation Darwin | Oneroof Solar', description: 'EV charger installation across Darwin and the Northern Territory.' },
   { path: '/services/ev-chargers/repair', title: 'EV Charger Repair Darwin | Oneroof Solar', description: 'EV charger repair and diagnostics in Darwin NT.' },
 ];
