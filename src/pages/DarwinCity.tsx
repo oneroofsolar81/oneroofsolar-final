@@ -32,12 +32,12 @@ const data: LocationData = {
   suburbsHeading: "Suburbs We Cover",
   suburbsIntro: "We install and maintain solar systems across every inner Darwin suburb we cover.",
   suburbs: [
-    { name: "Fannie Bay", descriptor: "larger residential blocks and waterfront homes" },
-    { name: "Stuart Park", descriptor: "established family homes close to the CBD" },
-    { name: "East Point", descriptor: "residential properties bordering the reserve" },
-    { name: "Bayview", descriptor: "waterfront and near-coastal residential" },
-    { name: "Winnellie", descriptor: "industrial and commercial sites" },
-    { name: "Berrimah", descriptor: "our home base, residential and commercial" },
+    { name: "Fannie Bay", descriptor: "larger residential blocks and waterfront homes", href: "/locations/fannie-bay" },
+    { name: "Stuart Park", descriptor: "established family homes close to the CBD", href: "/locations/stuart-park" },
+    { name: "East Point", descriptor: "residential properties bordering the reserve", href: "/locations/east-point" },
+    { name: "Bayview", descriptor: "waterfront and near-coastal residential", href: "/locations/bayview" },
+    { name: "Winnellie", descriptor: "industrial and commercial sites", href: "/locations/winnellie" },
+    { name: "Berrimah", descriptor: "our home base, residential and commercial", href: "/locations/berrimah" },
   ],
   whyChooseHeading: "Why Choose Oneroof for Darwin City",
   whyChoosePoints: [

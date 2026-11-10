@@ -20,6 +20,7 @@ import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 export interface LocationSuburb {
   name: string;
   descriptor: string;
+  href?: string;
 }
 
 export interface LocationData {
@@ -313,17 +314,29 @@ export function LocationHub({ data }: { data: LocationData }) {
               <FadeIn
                 key={s.name}
                 delay={Math.min(i * 0.05, 0.3)}
-                className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-500/40 transition-all duration-300 hover:-translate-y-1 flex items-start gap-4 h-full shadow-sm"
+                className={`group relative bg-white rounded-2xl p-6 border border-slate-200 hover:border-brand-500/40 transition-all duration-300 hover:-translate-y-1 flex items-start gap-4 h-full shadow-sm ${
+                  s.href ? "cursor-pointer" : ""
+                }`}
               >
                 <div className="w-10 h-10 rounded-xl bg-[#8cc63f]/10 flex items-center justify-center text-[#8cc63f] border border-[#8cc63f]/20 shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <div>
-                  <h3 className="text-base font-black text-slate-900 tracking-tight mb-1 normal-case">
+                <div className="flex-1">
+                  <h3 className="text-base font-black text-slate-900 tracking-tight mb-1 normal-case group-hover:text-[#5b9e2e] transition-colors">
                     {s.name}
                   </h3>
                   <p className="text-slate-600 text-sm leading-relaxed">{s.descriptor}</p>
                 </div>
+                {s.href && (
+                  <ArrowRight className="w-4 h-4 text-[#8cc63f] shrink-0 mt-1 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                )}
+                {s.href && (
+                  <Link
+                    to={s.href}
+                    className="absolute inset-0 rounded-2xl"
+                    aria-label={`Solar services in ${s.name}`}
+                  />
+                )}
               </FadeIn>
             ))}
           </div>
