@@ -34,6 +34,7 @@ import { ArticleCompare } from "@/src/components/blog/ArticleCompare";
 import { ArticleSidebar } from "@/src/components/blog/ArticleSidebar";
 import { ArticleTakeaways } from "@/src/components/blog/ArticleTakeaways";
 import { ArticleQuote } from "@/src/components/blog/ArticleQuote";
+import { ArticleTable } from "@/src/components/blog/ArticleTable";
 import { getPostBySlug, getPostPath, getPostToc, relatedReads, type BlogStatIcon } from "@/src/data/blogPosts";
 import { slugifyHeading } from "@/src/lib/blog";
 
@@ -361,6 +362,16 @@ export function BlogPost() {
               }
               if (section.type === "quote") {
                 return <ArticleQuote key={index} text={section.text} cite={section.cite} />;
+              }
+              if (section.type === "table") {
+                return (
+                  <ArticleTable
+                    key={index}
+                    caption={section.caption}
+                    headers={section.headers}
+                    rows={section.rows}
+                  />
+                );
               }
               return (
                 <section key={index} className="mt-12 mb-6">
