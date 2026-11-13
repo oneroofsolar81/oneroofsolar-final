@@ -60,6 +60,12 @@ const SungrowBatteryPage = lazy(() => import("./pages/SungrowBatteryPage").then(
 const SolarBatteryBrands = lazy(() => import("./pages/SolarBatteryBrands").then(m => ({ default: m.SolarBatteryBrands })));
 const EvChargerInstallation = lazy(() => import("./pages/EvChargerInstallation").then(m => ({ default: m.EvChargerInstallation })));
 const EvChargerRepair = lazy(() => import("./pages/EvChargerRepair").then(m => ({ default: m.EvChargerRepair })));
+const EvChargerBrands = lazy(() => import("./pages/EvChargerBrands").then(m => ({ default: m.EvChargerBrands })));
+const FoxEssEvChargerPage = lazy(() => import("./pages/FoxEssEvChargerPage").then(m => ({ default: m.FoxEssEvChargerPage })));
+const GoodWeEvChargerPage = lazy(() => import("./pages/GoodWeEvChargerPage").then(m => ({ default: m.GoodWeEvChargerPage })));
+const SigenergyEvChargerPage = lazy(() => import("./pages/SigenergyEvChargerPage").then(m => ({ default: m.SigenergyEvChargerPage })));
+const SungrowEvChargerPage = lazy(() => import("./pages/SungrowEvChargerPage").then(m => ({ default: m.SungrowEvChargerPage })));
+const TeslaEvChargerPage = lazy(() => import("./pages/TeslaEvChargerPage").then(m => ({ default: m.TeslaEvChargerPage })));
 const SolarInverters = lazy(() => import("./pages/SolarInverters").then(m => ({ default: m.SolarInverters })));
 const SolarInverterInstallation = lazy(() => import("./pages/SolarInverterInstallation").then(m => ({ default: m.SolarInverterInstallation })));
 const SolarInverterRepair = lazy(() => import("./pages/SolarInverterRepair").then(m => ({ default: m.SolarInverterRepair })));
@@ -359,6 +365,22 @@ export default function App() {
                 <Route path="/products/solar-battery-brands/alphaess/" element={<Navigate to="/products/solar-battery-brands/alpha-ess" replace />} />
                 <Route path="/products/solar-battery-brands/sungrow" element={<SungrowBatteryPage />} />
                 <Route path="/products/solar-battery-brands/sungrow/" element={<SungrowBatteryPage />} />
+
+                {/* EV Charger Brand Pages */}
+                <Route path="/products/ev-charger-brands" element={<EvChargerBrands />} />
+                <Route path="/products/ev-charger-brands/" element={<EvChargerBrands />} />
+                <Route path="/products/ev-charger-brands/foxess" element={<FoxEssEvChargerPage />} />
+                <Route path="/products/ev-charger-brands/foxess/" element={<FoxEssEvChargerPage />} />
+                <Route path="/products/ev-charger-brands/fox-ess" element={<Navigate to="/products/ev-charger-brands/foxess" replace />} />
+                <Route path="/products/ev-charger-brands/fox-ess/" element={<Navigate to="/products/ev-charger-brands/foxess" replace />} />
+                <Route path="/products/ev-charger-brands/goodwe" element={<GoodWeEvChargerPage />} />
+                <Route path="/products/ev-charger-brands/goodwe/" element={<GoodWeEvChargerPage />} />
+                <Route path="/products/ev-charger-brands/sigenergy" element={<SigenergyEvChargerPage />} />
+                <Route path="/products/ev-charger-brands/sigenergy/" element={<SigenergyEvChargerPage />} />
+                <Route path="/products/ev-charger-brands/sungrow" element={<SungrowEvChargerPage />} />
+                <Route path="/products/ev-charger-brands/sungrow/" element={<SungrowEvChargerPage />} />
+                <Route path="/products/ev-charger-brands/tesla" element={<TeslaEvChargerPage />} />
+                <Route path="/products/ev-charger-brands/tesla/" element={<TeslaEvChargerPage />} />
 
                 {/* External SEO Redirects mapping */}
                 <Route path="/solar-panels/rec" element={<Navigate to="/solar-panels-brands/rec/" replace />} />

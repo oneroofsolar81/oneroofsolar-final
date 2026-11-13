@@ -205,6 +205,19 @@ export const mainNavConfig: NavItem[] = [
           { label: "Sungrow Batteries", href: "/products/solar-battery-brands/sungrow" },
         ],
       },
+      {
+        label: "EV Charger Brands",
+        href: "/products/ev-charger-brands",
+        description: "Smart, solar-ready home & commercial EV chargers.",
+        iconName: "Zap",
+        children: [
+          { label: "Fox ESS EV Chargers", href: "/products/ev-charger-brands/foxess" },
+          { label: "GoodWe EV Chargers", href: "/products/ev-charger-brands/goodwe" },
+          { label: "Sigenergy EV Chargers", href: "/products/ev-charger-brands/sigenergy" },
+          { label: "Sungrow EV Chargers", href: "/products/ev-charger-brands/sungrow" },
+          { label: "Tesla Wall Connector", href: "/products/ev-charger-brands/tesla" },
+        ],
+      },
     ],
   },
   {
