@@ -2138,6 +2138,628 @@ $0 deposit solar is a real way to start saving without a large upfront payment, 
       },
     ],
   },
+  {
+    slug: "solar-panel-warranty-darwin",
+    title: "Solar Panel Warranty: What's Really Covered in Darwin?",
+    excerpt:
+      "A solar system has several warranties, each with its own limits. Here is what product, performance, workmanship and inverter cover really mean, and what quietly voids a claim in Darwin.",
+    date: "16 November 2026",
+    dateIso: "2026-11-16",
+    category: "Guides",
+    readTime: "8 min read",
+    image: "/assets/images/hosted/about-team.webp",
+    imageAlt: "Oneroof Solar Darwin team who stand behind the workmanship warranty",
+    author: "Oneroof Solar",
+    seoTitle: "Solar Panel Warranty: What's Really Covered in Darwin?",
+    seoDescription:
+      "What does a solar panel warranty really cover? Learn the warranty periods, what voids a claim, and how Darwin's heat, humidity and cyclones affect your cover.",
+    canonicalPath: "/blog/solar-panel-warranty-darwin/",
+    heroStats: [
+      { value: "10-25 yrs", label: "Product warranty", icon: "shield" },
+      { value: "25-30 yrs", label: "Performance warranty", icon: "sun" },
+      { value: "5-10 yrs", label: "Workmanship warranty", icon: "zap" },
+    ],
+    sections: [
+      {
+        type: "markdown",
+        markdown: `## What Is a Solar Panel Warranty?
+
+A solar panel warranty is a written promise from the manufacturer (and your installer) to repair, replace or compensate you if your panels fail or lose too much power within a set time.
+
+Most people think one warranty covers everything. It doesn't. A solar system usually has several warranties, each covering a different thing, and each with its own limits. In Darwin, where panels face heat, humidity, salt air and cyclones, the fine print matters even more.
+
+This guide explains each warranty in plain words, what is usually covered, and what can quietly cancel your claim.`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Not sure what your current solar warranty covers?",
+          body: "Our team will read it with you and tell you what is protected.",
+          buttonLabel: "Book a Free Solar System Check",
+          buttonHref: "/contact",
+        },
+      },
+      {
+        type: "takeaways",
+        heading: "What to remember",
+        items: [
+          "A solar system has several warranties: product, performance, workmanship, inverter and battery, each with its own length.",
+          "Product warranty covers defects. Performance warranty guarantees a minimum power output over 25 to 30 years.",
+          "Darwin's heat, humidity, salt air and cyclones can push a system past the 'average conditions' a warranty assumes.",
+          "Poor installation, unapproved changes, missed maintenance or removed serial numbers can void a claim.",
+          "A 25-year warranty is only as good as the company behind it, so choose a local, accredited installer.",
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `## What Is the Warranty Period on Solar Panels?
+
+Most solar panels in Australia come with a product warranty of 10 to 25 years and a performance warranty of 25 to 30 years. The exact numbers depend on the brand and the panel range.`,
+      },
+      {
+        type: "table",
+        caption: "Typical solar warranty types and lengths",
+        headers: ["Warranty Type", "What It Covers", "Typical Length"],
+        rows: [
+          ["Product (equipment) warranty", "Defects in materials and build, like cracked cells, faulty junction boxes or frame problems", "10-25 years"],
+          ["Performance (power output) warranty", "A minimum power output over time", "25-30 years"],
+          ["Installation (workmanship) warranty", "Errors made during installation, such as wiring or mounting faults and roof leaks", "Usually 5-10 years, set by the installer"],
+          ["Inverter warranty", "The inverter that converts solar power into usable power", "Usually 5-10 years"],
+          ["Battery warranty", "Battery capacity and defects", "Often around 10 years"],
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `These are typical ranges, not promises. Always check the actual documents for your brand and model.
+
+## Product Warranty vs Performance Warranty
+
+These two are often mixed up.
+
+**Product warranty** covers physical defects. If a panel cracks from a manufacturing fault, delaminates, or fails in the first years, this is the warranty that applies.
+
+**Performance warranty** covers slow power loss. All panels lose a little output each year. This is called **degradation**. A good panel may lose around 1-2% in the first year and roughly 0.4-0.6% each year after that. The performance warranty guarantees that your panels will still produce a set percentage of their original power after 25 or 30 years, commonly around 80-90%.
+
+## What Is the 20% Rule for Solar Panels?
+
+The "20% rule" is used in different ways, so here are the two meanings people search for:
+
+1. **Performance warranties:** Many panels are guaranteed to still produce about 80% of their rated output after 25 years. That means a loss of up to 20% is considered normal ageing, and a claim only applies if output falls *below* the guaranteed level.
+2. **System sizing:** Some people use "20%" loosely for how far the panel capacity can exceed the inverter size. In Australia, the actual limits are set by Clean Energy Council rules and your network provider, so your installer should confirm the figure for your system.
+
+Always check which "20%" someone means before you rely on it.`,
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/products/inverter-hero.webp",
+        alt: "Solar inverter, which carries its own warranty separate from the panels",
+      },
+      {
+        type: "markdown",
+        markdown: `## How Darwin's Climate Affects Your Solar Warranty
+
+A warranty is written for average conditions. Darwin is not average. Our climate puts extra stress on every part of a system:
+
+- **Heat:** Panels reach very high temperatures on 35-40C days. Heat can speed up wear and reduce output. See how it works in our guide on [whether solar panels overheat in Darwin's heat](/blog/do-solar-panels-overheat-darwin-heat).
+- **Humidity:** Constant moisture can lead to corrosion, water ingress and electrical faults. We explain this in [how humidity damages solar systems](/blog/how-humidity-damages-solar-systems).
+- **Salt air:** Coastal suburbs face extra corrosion on frames, mounts and connectors.
+- **Cyclones and storms:** High winds, flying debris and heavy rain test mounts and panel glass.
+- **Lightning and UV:** Strong sun and frequent storms put stress on panels and inverters.
+
+Many warranties have limits around "extreme weather," "natural disasters" or "unusual environments." That is why choosing equipment and installation methods suited to the Top End matters. Look for cyclone-rated mounting and equipment with the right ingress protection for tropical conditions.
+
+## What Voids a Solar Panel Warranty?
+
+A solar panel warranty can be voided or refused if the system is installed, changed or damaged in a way the manufacturer's terms don't allow. Common causes include:
+
+- **Poor or unaccredited installation:** Panels installed by someone who is not properly accredited, or not to the Australian Standards, can lead to a refused claim.
+- **Unapproved modifications:** Adding panels, swapping parts or moving the system without approval.
+- **Physical damage:** Cracks from impacts, falling branches or foot traffic on the roof.
+- **Lack of maintenance:** Heavy dirt, mould or blocked drainage, or ignoring faults for a long time.
+- **Wrong use or wrong parts:** Using incompatible inverters, cables or mounting kits.
+- **Removed or damaged serial numbers:** If the manufacturer can't identify the panel, they may refuse the claim.
+- **Events outside cover:** Some warranties exclude damage from cyclones, floods, hail or lightning. These are often handled by home insurance instead.
+- **Moving the system:** Taking panels to another property can end the warranty.
+
+Read the exclusions before you sign. This is the part most buyers skip.
+
+## What Is Usually Not Covered?
+
+Even a strong warranty does not usually cover:
+
+- Normal degradation within the guaranteed limit
+- Dirty panels or shading from new trees or buildings
+- Power cuts, grid problems or network limits
+- Cosmetic marks that don't affect performance
+- Labour and removal costs, unless the warranty states them
+
+Check whether **labour, removal and shipping costs** are included. Some manufacturer warranties replace the panel but leave you to pay for the work.
+
+## What If the Manufacturer or Installer Goes Out of Business?
+
+This is a major risk. A 25-year warranty is only as good as the company behind it.
+
+- Choose panels from manufacturers with a long track record and a local Australian presence.
+- Ask whether the manufacturer's warranty is insurance-backed.
+- Choose an established local installer, so your workmanship warranty has someone to stand behind it.
+
+Under Australian Consumer Law, you also have consumer guarantees, such as products being of acceptable quality and work being done with due care. These rights exist on top of any written warranty.`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "A warranty is useless if your installer disappears.",
+          body: "One Roof Solar is a Berrimah-based, SAA-accredited team rated 4.9/5 by 128 customers, so you know who to call in 5, 10 or 20 years.",
+          buttonLabel: "Get a Free Solar Quote",
+          buttonHref: "/contact",
+        },
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/bellamack-0832-2-1-.webp",
+        alt: "Cyclone-rated solar mounting on a Darwin rooftop that helps protect your warranty",
+      },
+      {
+        type: "markdown",
+        markdown: `## How to Make a Solar Warranty Claim
+
+1. **Collect your documents:** invoice, warranty certificates and panel serial numbers.
+2. **Take clear photos** of the damage or fault, plus any error messages from your monitoring app.
+3. **Contact your installer first.** They can inspect the system and handle the claim.
+4. **Contact the manufacturer** if the installer cannot help, with the evidence above.
+5. **Keep records of maintenance,** because they show the system was cared for.
+
+## How to Protect Your Warranty in Darwin
+
+- Use an accredited installer who follows Australian Standards.
+- Choose cyclone-rated mounting and equipment suited to tropical conditions.
+- Book regular checks through our [solar panel maintenance service in Darwin](/services/solar-panel-maintenance-darwin).
+- Fix faults early through proper [solar panel repair](/services/solar-panel-repair-darwin), not DIY.
+- Keep every document and serial number in one place.
+- Check your home insurance for storm and cyclone damage.`,
+      },
+      {
+        type: "faqs",
+        heading: "Frequently Asked Questions",
+        items: [
+          { q: "Does a solar panel warranty transfer if I sell my house?", a: "Many do, but not all. Some manufacturers need the new owner to be registered, and a few limit transfers. Check the terms and keep your paperwork to pass on." },
+          { q: "Is the inverter covered by the same warranty as the panels?", a: "No. The inverter has its own warranty, usually shorter than the panel warranty. Because inverters work hardest in the heat, our guide to inverter repair shows what to do if yours fails." },
+          { q: "Does my warranty cover cyclone damage?", a: "Often not. Many warranties exclude extreme weather, so cyclone damage is usually a home insurance matter. Cyclone-rated mounting lowers the risk." },
+          { q: "How do I know if my panels have lost too much power?", a: "Compare current output with the original rated output and your monitoring history. Have a qualified installer test it, because dirt, shading or inverter faults can look like panel loss." },
+          { q: "Can I extend my solar warranty?", a: "Sometimes. Some brands and installers offer extended coverage, and regular servicing helps keep your cover valid. Ask before you buy, not after a fault." },
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `## Conclusion
+
+A solar warranty is not one promise but several: product, performance, installation, inverter and battery. Each has different lengths and exclusions, and Darwin's heat, humidity, salt air and cyclones make the details matter even more. Keep your documents, use an accredited installer, maintain your system and ask about exclusions before you buy.`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Don't wait for a fault to find out you're not covered.",
+          body: "Talk to One Roof Solar today for a clear, honest answer on warranties, brands and Darwin-ready installation.",
+          buttonLabel: "Request Your Free Quote",
+          buttonHref: "/contact",
+          phoneLine: "or call Oneroof Solar on 0483 986 444.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "solar-payback-period-nt",
+    title: "How Long Does Solar Take to Pay for Itself in the NT?",
+    excerpt:
+      "Most NT homes get their money back on solar in about 4 to 7 years. See the real Darwin numbers, what changes your payback, and how long a battery takes.",
+    date: "15 November 2026",
+    dateIso: "2026-11-15",
+    category: "Guides",
+    readTime: "8 min read",
+    image: "/assets/images/hosted/berrimah-0828.webp",
+    imageAlt: "Residential solar system in the Northern Territory paying down a power bill",
+    author: "Oneroof Solar",
+    seoTitle: "Solar Payback in the NT: How Long Until It Pays for Itself?",
+    seoDescription:
+      "Most NT homes get their money back on solar in about 4 to 7 years. See real Darwin numbers, what changes your payback, and how long a battery takes.",
+    canonicalPath: "/blog/solar-payback-period-nt/",
+    heroStats: [
+      { value: "4-7 yrs", label: "Typical NT payback", icon: "sun" },
+      { value: "31.68c", label: "Grid power you avoid / kWh", icon: "zap" },
+      { value: "~50 STCs", label: "Upfront rebate on 6.6kW", icon: "shield" },
+    ],
+    sections: [
+      {
+        type: "markdown",
+        markdown: `## How Long Does a Solar Panel Take to Pay for Itself in the NT?
+
+Most Northern Territory homes get their money back on a solar system in about 4 to 7 years. Homes that use a lot of power in the daytime can be faster. Homes that are empty all day can be slower.
+
+The NT is one of the best places in Australia for solar. We get strong sun all year, the federal rebate is higher here than in most states, and grid power is expensive. This guide shows the real numbers, what changes your payback, and how long a battery takes.`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Want your own payback number, not an average?",
+          body: "Send us your latest power bill and One Roof Solar will show you what solar would save on your roof.",
+          buttonLabel: "Get Your Free Payback Estimate",
+          buttonHref: "/contact",
+        },
+      },
+      {
+        type: "takeaways",
+        heading: "What to remember",
+        items: [
+          "Most NT homes pay back a solar-only system in about 4 to 7 years.",
+          "Savings come from grid power you stop buying at 31.68c, plus export credits at 9.33c.",
+          "A unit of solar power you use yourself is worth about three times a unit you export.",
+          "The NT sits in higher STC zones, so a 6.6kW system earns roughly 50 to 53 certificates in 2026.",
+          "A battery usually takes 10 years or more to pay back on bill savings alone, but it adds storm backup.",
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `## What Does "Payback Period" Mean?
+
+Payback period is the number of years it takes for your savings and export credits to equal what you paid for your system. After that, the power your panels make is close to free.
+
+It comes from two things:
+
+- **Savings:** grid power you no longer buy because your panels made it.
+- **Export credits:** money you earn for extra power sent to the grid.
+
+## What Does Solar Cost in the NT?
+
+Prices vary by brand and installer, so use these as a guide, not a quote. Solar Choice's 2026 price index puts Darwin at around **$9,300 for a 6kW system and $10,200 for a 7kW system**, after the rebate and including GST. A 6.6kW system sits between the two, so **about $10,000 is a fair illustration.**
+
+Your up-front discount comes from **Small-scale Technology Certificates (STCs)**. The number you get depends on system size, your solar zone and the year. For a 6.6kW system installed in 2026, that is about **50 to 53 certificates**, worth roughly **$1,900 to $2,150** at current prices. The NT is in the higher-rated STC zones, so you get more certificates than a Sydney or Melbourne home. The rebate also shrinks every year until it ends in 2030.
+
+See more in our guide to [solar costs in Darwin and Alice Springs](/blog/solar-panel-cost-darwin-alice-springs).`,
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/bayview-0820.webp",
+        alt: "Darwin home with rooftop solar sized to its daytime energy use",
+      },
+      {
+        type: "markdown",
+        markdown: `## Payback Example: A 6.6kW System in Darwin
+
+Here is a simple, transparent example. The inputs are illustrations, so replace them with your own quote and bill:
+
+- System cost after rebate: **$10,000** (illustrative)
+- Production: **10,000 kWh a year** (a cautious figure for Darwin)
+- Electricity price you avoid: **31.6788c per kWh** (Jacana Standard Residential, including GST, valid 1 July 2026 to 30 June 2027)
+- Export credit: **9.33c per kWh** (Jacana Anytime feed-in tariff)
+
+**Formula:** (solar power you use x grid price) + (solar power you export x feed-in tariff)`,
+      },
+      {
+        type: "table",
+        caption: "Payback by how much solar you use at home",
+        headers: ["Daytime Use (Self-Consumption)", "Yearly Benefit", "Simple Payback"],
+        rows: [
+          ["25% (home empty in the day)", "about $1,492", "about 6.7 years"],
+          ["40% (average)", "about $1,827", "about 5.5 years"],
+          ["60% (home in the day, AC running)", "about $2,274", "about 4.4 years"],
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `*This excludes panel ageing, maintenance, finance costs and future tariff changes.*
+
+The lesson: a unit of solar power you use yourself is worth about three times more than a unit you export. Many Darwin homes run air conditioning for most of the year, which is why daytime use is often high.
+
+Two notes on the tariff:
+
+- **Smart meter customers** can earn Jacana's Super FiT of **18.66c** for exports between 3pm and 9pm. That lifts the export value for those hours.
+- **Time of Use plan:** Jacana's tariff charges **25.83c** from 9am to 3pm. On that plan, daytime solar saves less than on the standard tariff. Check which plan you are on.
+
+## What Affects How Fast Solar Pays Off?
+
+1. **System price.** A lower price shortens payback, but the cheapest system is not always the best one.
+2. **Daytime usage.** Pool pumps, hot water, dishwashers and air conditioning on timers help you use solar directly.
+3. **Electricity price.** The higher the grid price, the more each solar unit saves.
+4. **Feed-in tariff.** Check whether your meter qualifies for the Super FiT.
+5. **System size.** A system matched to your use beats an oversized one that mostly exports.
+6. **Roof angle, shade and dirt.** Shade and dust reduce output.
+7. **Equipment quality and warranty.** Strong products protect your savings. Regular [solar panel maintenance](/services/solar-panel-maintenance-darwin) keeps output steady.
+
+## How Long Does It Take to Get Your Money Back on a Solar System?
+
+For most NT homes, a solar-only system pays itself back in roughly 4 to 7 years. Quality panels often last 25 years or more, so you can enjoy many years of low-cost power after payback.
+
+A few costs can slow things slightly:
+
+- Panels lose a small amount of output each year (degradation)
+- An inverter may need replacing after 10 to 15 years
+- Cleaning and service visits
+
+These are usually small compared with your total savings.
+
+## How Long Does a Solar Battery Take to Pay for Itself?
+
+A battery takes longer to pay for itself than solar panels, and on bill savings alone it is often 10 years or more in the NT.
+
+A battery stores solar power you would otherwise export, then uses it at night. The gain is the gap between the grid price you avoid (31.68c) and the export credit you give up:
+
+- On the standard 9.33c export rate, the gap is about **22c per kWh**. A home cycling 8 to 10 kWh a day saves roughly **$650 to $815 a year**.
+- If you would otherwise export during the 3pm to 9pm Super FiT window (18.66c), the gap shrinks to about **13c**, or roughly **$380 to $475 a year**.
+
+The Cheaper Home Batteries Program lowers the up-front cost. The discount is delivered through STCs, and the amount depends on your installation date and usable battery size:
+
+- **Factor:** 6.8 STCs per kWh for May to December 2026, dropping to 5.7 on 1 January 2027, then every six months until 2030.
+- **Size tiers:** the first 14 kWh gets the full factor, the next 14 kWh gets 60%, and the next 22 kWh gets 15%.
+
+So bigger is not always better value. A battery makes the most sense if you want **backup power in storms and cyclones**, use a lot of power in the evening, or plan to stay in your home long term.
+
+See what is involved in our [solar battery installation service](/services/solar-battery-installation).`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "A battery is a big decision. Don't pay for capacity you'll never use.",
+          body: "One Roof Solar will size it to your evening use and show you the real payback before you spend a cent.",
+          buttonLabel: "Talk to Our Battery Team",
+          buttonHref: "/services/solar-battery-installation",
+        },
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/products/sigen-battery.webp",
+        alt: "Home battery that stores daytime solar for evening use in Darwin",
+      },
+      {
+        type: "markdown",
+        markdown: `## How to Shorten Your Solar Payback
+
+- **Use power in the daytime:** run the pool pump, washing machine and dishwasher on timers.
+- **Get the right size:** extra panels only pay off if you use or store the power.
+- **Install sooner:** the STC rebate falls every year until 2030.
+- **Choose quality equipment:** one major repair can wipe out a year of savings.
+- **Check your plan and meter:** ask whether you can access the Super FiT.
+- **Keep panels clean and checked:** dust and faults reduce output.`,
+      },
+      {
+        type: "faqs",
+        heading: "Frequently Asked Questions",
+        items: [
+          { q: "Is solar still worth it in the NT if the feed-in tariff is low?", a: "Yes. Most of the value comes from using your own power, not from exporting it. Each unit you use saves about 31.68c, while each unit you export earns 9.33c." },
+          { q: "Does a bigger system pay back faster?", a: "Not always. Extra panels only help if you use or store the power. A system sized for your daytime use usually has the quickest payback." },
+          { q: "Will my payback change if electricity prices rise?", a: "Yes. Higher grid prices mean each solar unit saves more, so payback gets shorter. Prices rose 5.3% on 1 July 2026, and your savings follow the tariff." },
+          { q: "Can I spread the cost with finance?", a: "Many homes do. The rebate already lowers the price, so compare the finance interest with your yearly savings before you sign." },
+          { q: "What if my roof is shaded or faces the wrong way?", a: "Output drops, so payback gets longer. A north or west facing roof can still work well, and an installer can model shade before you commit." },
+          { q: "Does solar add value to my home?", a: "Many buyers see working solar as a plus, though the amount varies. Keep your invoices, warranty documents and compliance paperwork." },
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `## Conclusion
+
+In the NT, solar usually pays for itself in about **4 to 7 years**, thanks to strong sun, a generous rebate and high grid prices. A battery takes longer on bill savings alone, but adds backup power and energy independence. The fastest path is the right-sized system, quality equipment and using your power in the daytime.`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Every year you wait is another year of full-price power bills, and the rebate shrinks again.",
+          body: "Get a Darwin-ready system from One Roof Solar, an SAA-accredited, Berrimah-based team rated 4.9/5 by 128 customers.",
+          buttonLabel: "Request Your Free Quote",
+          buttonHref: "/contact",
+          phoneLine: "or call Oneroof Solar on 0483 986 444.",
+        },
+      },
+    ],
+  },
+  {
+    slug: "is-solar-worth-it-darwin-low-feed-in-tariff",
+    title: "Is Solar Worth It in Darwin with Low Feed-In Tariffs?",
+    excerpt:
+      "Low feed-in tariff? Solar is still worth it in Darwin, because the feed-in tariff is not where the savings come from. See the real Jacana rates, a bill example and the zero-feed-in worst case.",
+    date: "14 November 2026",
+    dateIso: "2026-11-14",
+    category: "Guides",
+    readTime: "8 min read",
+    image: "/assets/images/hosted/bayview-0820.webp",
+    imageAlt: "Darwin rooftop solar system cutting a Jacana power bill despite a low feed-in tariff",
+    author: "Oneroof Solar",
+    seoTitle: "Is Solar Worth It in Darwin With Low Feed-In Tariffs?",
+    seoDescription:
+      "Low feed-in tariff? Solar is still worth it in Darwin. See real Jacana rates, a bill example, the zero-feed-in worst case and when solar is not worth it.",
+    canonicalPath: "/blog/is-solar-worth-it-darwin-low-feed-in-tariff/",
+    heroStats: [
+      { value: "9.33c", label: "Jacana feed-in / kWh", icon: "sun" },
+      { value: "31.68c", label: "Grid power you avoid / kWh", icon: "zap" },
+      { value: "3.4x", label: "Self-use beats export", icon: "battery" },
+    ],
+    sections: [
+      {
+        type: "markdown",
+        markdown: `## Is Solar Worth It in Darwin with Low Feed-In Tariffs?
+
+Yes, for most Darwin homes solar is still worth it, because the feed-in tariff is not where the savings come from. The biggest saving is the grid power you stop buying. Right now that power costs **31.68c per kWh**, while exported solar earns only **9.33c**.
+
+Many people hear "low feed-in tariff" and think solar no longer pays. That is a myth. This guide shows the real Jacana rates, a simple bill example, what happens if the feed-in tariff were zero, and the cases where solar is not worth it.`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Wondering what solar would do to your bill?",
+          body: "Send us your latest Jacana bill and One Roof Solar will show you the real numbers for your roof.",
+          buttonLabel: "Get Your Free Savings Check",
+          buttonHref: "/contact",
+        },
+      },
+      {
+        type: "takeaways",
+        heading: "What to remember",
+        items: [
+          "The feed-in tariff is not where solar savings come from. The grid power you stop buying is.",
+          "Self-use replaces power at 31.68c, while exports earn just 9.33c, so self-use is worth about 3.4 times more.",
+          "A typical Darwin home saves about $1,827 a year, and $1,267 of that comes from self-use.",
+          "Even with a zero feed-in tariff, a home using 60% of its solar pays back in about 5 years.",
+          "Solar suits homes that run AC, are home in the day or have big bills. Less so empty, shaded or soon-to-sell homes.",
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `## What Is the Solar Feed-In Tariff in the NT?
+
+A **feed-in tariff (FiT)** is the credit you get for each unit of extra solar power you send to the grid. In the NT, Jacana Energy's rates from 1 July 2026 to 30 June 2027 are:`,
+      },
+      {
+        type: "table",
+        caption: "Jacana Energy feed-in tariffs, 2026-27",
+        headers: ["Rate", "Price per kWh"],
+        rows: [
+          ["Anytime FiT (standard)", "9.33c"],
+          ["Super FiT (3pm to 9pm, smart meter customers)", "18.66c"],
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `That is low compared with what you pay for power. But it is not low compared with many other places. In several states, retailers now pay only a few cents per kWh, and some plans pay almost nothing. The NT rate is set by the government-owned retailer, not by market competition.
+
+## Why a Low Feed-In Tariff Matters Less Than You Think
+
+Solar saves money in two ways:
+
+1. **Self-use:** power your panels make that you use straight away. It replaces grid power at 31.68c per kWh (Jacana Standard Residential, including GST).
+2. **Export:** extra power sent to the grid, paid at 9.33c.
+
+**Every unit you use yourself is worth about 3.4 times more than a unit you export.** So the real question is not "how high is the feed-in tariff?" but "how much of my solar power can I use myself?"
+
+## A Simple Bill Example
+
+Here is an illustration. Replace these numbers with your own bill:
+
+- Home uses **25 kWh a day** (about 9,125 kWh a year)
+- A **6.6kW system** makes about **10,000 kWh a year**, and **40%** of it is used at home
+- Grid price is 31.6788c per kWh, and the daily supply charge is 62.45c`,
+      },
+      {
+        type: "table",
+        caption: "A Darwin home's yearly bill, with and without solar",
+        headers: ["", "Without Solar", "With Solar"],
+        rows: [
+          ["Grid power bought", "9,125 kWh", "5,125 kWh"],
+          ["Cost of grid power", "$2,891", "$1,624"],
+          ["Export credit (6,000 kWh x 9.33c)", "$0", "-$560"],
+          ["Daily supply charge", "$228", "$228"],
+          ["Yearly bill", "about $3,119", "about $1,292"],
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `That is a saving of about **$1,827 a year**, even with the low feed-in tariff. Notice that **$1,267** of the saving comes from self-use and only **$560** from exports.
+
+## What If the Feed-In Tariff Were Zero?
+
+This is the real test. Using the same system, with **no export credit at all**:`,
+      },
+      {
+        type: "table",
+        caption: "Payback with a zero feed-in tariff",
+        headers: ["Self-Consumption", "Yearly Saving", "Payback on a $10,000 System"],
+        rows: [
+          ["25% (home empty in the day)", "about $792", "about 12.6 years"],
+          ["40% (average)", "about $1,267", "about 7.9 years"],
+          ["60% (home in the day, AC running)", "about $1,901", "about 5.3 years"],
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `*The $10,000 system cost is an illustration. Payback figures exclude ageing, maintenance and finance costs.*
+
+Even in this worst case, a home that uses 60% of its solar pays it back in about 5 years. That is why the feed-in tariff is a bonus, not the main reason to go solar.
+
+## When Is Solar Worth It in Darwin?
+
+Solar is usually a strong choice if you:
+
+- Run **air conditioning** for much of the year
+- Are home during the day, or run a **pool pump** and hot water in daylight hours
+- Have a **large power bill**, especially in the build-up and wet season
+- Have a **roof with good sun** and little shade
+- Plan to stay in your home for **5 years or more**
+- Want protection against **future price rises**. Jacana's residential prices went up 5.3% on 1 July 2026.
+
+## When Is Solar Not Worth It?
+
+Honesty matters here. Solar may not suit you if:
+
+- Your home is **empty most days** and you use very little power in the daytime
+- Your roof is **heavily shaded** or very small
+- You will **move soon** and cannot recover the cost in time
+- You are offered a **very cheap or poor-quality system** that may fail early
+- You are on a **tariff that reduces the value of daytime solar**. Jacana's Time of Use plan charges 25.83c from 9am to 3pm instead of 31.68c.
+
+If you are in one of these groups, a smaller system or a different plan may be the better answer. A good installer will tell you this before you sign.`,
+      },
+      {
+        type: "figure",
+        src: "/assets/images/hosted/aerial.webp",
+        alt: "Aerial view of Darwin rooftops with solar potential",
+      },
+      {
+        type: "markdown",
+        markdown: `## How to Get More Value Out of Your Solar
+
+If the feed-in tariff is low, the goal is simple: **use more of your own solar power.**
+
+- **Run big appliances in the day:** pool pump, washing machine, dishwasher and hot water.
+- **Pre-cool your home:** run the air conditioner in the afternoon sun hours.
+- **Size the system to your use:** extra panels that mostly export add little.
+- **Check for the Super FiT:** a smart meter can lift exports from 3pm to 9pm to 18.66c.
+- **Keep panels clean and serviced:** dust and faults waste power. Our [solar panel maintenance service](/services/solar-panel-maintenance-darwin) keeps output steady.
+- **Consider a battery:** it stores daytime power for the evening.
+
+## What About Adding a Battery?
+
+A battery can raise your self-use, but it is a separate decision. It stores solar power you would otherwise export at 9.33c and uses it at night when grid power costs 31.68c. That gap is about 22c per kWh.
+
+On bill savings alone, a battery usually takes much longer than panels to pay off. Its biggest benefits are **backup power during storms and cyclones** and less reliance on the grid. The federal Cheaper Home Batteries Program lowers the upfront cost through STCs. The rebate factor drops from 6.8 to 5.7 per kWh on 1 January 2027, and larger batteries earn less per kWh above 14 kWh.
+
+Explore options in our [solar battery installation service](/services/solar-battery-installation).`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Don't let a low feed-in tariff talk you out of lower bills.",
+          body: "And don't buy more system than you'll use. One Roof Solar will size your panels and battery to your real daytime and evening use.",
+          buttonLabel: "Talk to Our Solar Team",
+          buttonHref: "/solar-systems/residential-solar-system",
+        },
+      },
+      {
+        type: "faqs",
+        heading: "Frequently Asked Questions",
+        items: [
+          { q: "Is it worth getting solar panels in 2026?", a: "For most Darwin homes, yes. Strong sun, high grid prices and a still-generous rebate make 2026 a good year. The rebate drops each year until 2030, so waiting costs you." },
+          { q: "Can the feed-in tariff change?", a: "Yes. The NT feed-in tariff is set by Jacana and can change when new prices take effect. This is another reason to build your decision on self-use savings, not on export income." },
+          { q: "Should I get a smaller system because exports pay so little?", a: "Often, yes. Size it to match your daytime use, with some room for growth like an EV or a pool. Oversizing mainly adds exports at 9.33c." },
+          { q: "Does solar still work if I'm out all day?", a: "It works, but savings are lower because more of your power is exported. Timers on the pool pump, hot water and air conditioner can raise your self-use. A battery can also help." },
+          { q: "Will solar reduce my daily supply charge?", a: "No. The supply charge (62.45c a day) stays the same. Solar reduces only the units you buy from the grid." },
+          { q: "Is solar still worth it if I rent or plan to sell?", a: "It can be, if the time to payback fits your plans. Many buyers value a working solar system, though the price effect varies. If you rent, speak to your landlord, since the system belongs to the property owner." },
+        ],
+      },
+      {
+        type: "markdown",
+        markdown: `## Conclusion
+
+A low feed-in tariff does not make solar a bad idea in Darwin. The real savings come from using your own solar power instead of buying grid power at 31.68c per kWh. Even with zero export credit, a home that uses most of its solar can pay it back in around 5 years. Solar is least suitable for homes that are empty in the day, shaded or about to be sold. For everyone else, the right-sized system, installed while the rebate is still strong, remains one of the best ways to cut power bills in the Top End.`,
+      },
+      {
+        type: "cta",
+        cta: {
+          heading: "Every month you wait is another month of full-price power, and the rebate keeps shrinking.",
+          body: "Get an honest, Darwin-ready solar plan from One Roof Solar, an SAA-accredited, Berrimah-based team rated 4.9/5 by 128 customers.",
+          buttonLabel: "Request Your Free Quote",
+          buttonHref: "/contact",
+          phoneLine: "or call Oneroof Solar on 0483 986 444.",
+        },
+      },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug?: string): BlogPost | undefined {
