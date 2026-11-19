@@ -25,6 +25,40 @@ export const OFFICE_LOCATIONS: OfficeLocation[] = [
   },
 ];
 
+/**
+ * Build a map location for a suburb service-area page. The pin sits on the
+ * suburb centre and the label states it is a service area, so these pages
+ * never misrepresent the suburb as a physical office (our only offices are
+ * in OFFICE_LOCATIONS). Pass accurate suburb-centre coordinates only.
+ */
+export function suburbMapLocation(
+  suburb: string,
+  lat: number,
+  lng: number,
+  mapsQuery?: string,
+): OfficeLocation {
+  return {
+    title: suburb,
+    address: "Service area · Darwin, NT",
+    lat,
+    lng,
+    mapsQuery: mapsQuery ?? `${suburb}, Darwin NT`,
+  };
+}
+
+/**
+ * Accurate suburb-centre coordinates for the standalone location pages that
+ * do not use the shared SuburbLocationPage component. Keyed by URL slug.
+ * Coordinates are real suburb centroids, not the Berrimah office.
+ */
+export const SUBURB_LOCATIONS: Record<string, OfficeLocation> = {
+  "stuart-park": suburbMapLocation("Stuart Park", -12.4441, 130.8375, "Stuart Park NT 0820"),
+  "fannie-bay": suburbMapLocation("Fannie Bay", -12.4328, 130.8415, "Fannie Bay NT 0820"),
+  "east-point": suburbMapLocation("East Point", -12.426, 130.838, "East Point NT 0820"),
+  bayview: suburbMapLocation("Bayview", -12.4403, 130.8603, "Bayview NT 0820"),
+  winnellie: suburbMapLocation("Winnellie", -12.4289, 130.8697, "Winnellie NT 0820"),
+};
+
 function osmEmbedSrc(lat: number, lng: number, delta = 0.02) {
   const bbox = [lng - delta, lat - delta * 0.7, lng + delta, lat + delta * 0.7].join(",");
   return `https://www.openstreetmap.org/export/embed.html?bbox=${encodeURIComponent(bbox)}&layer=mapnik&marker=${encodeURIComponent(`${lat},${lng}`)}`;

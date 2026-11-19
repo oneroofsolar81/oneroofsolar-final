@@ -22,7 +22,7 @@ import { Button } from "../components/ui/Button";
 import { PartnersMarquee } from "../components/PartnersMarquee";
 import { SEO } from "../components/SEO";
 import { QuoteForm } from "../components/QuoteForm";
-import { LocationMapCard, OFFICE_LOCATIONS } from "../components/LocationMap";
+import { LocationMapCard, SUBURB_LOCATIONS } from "../components/LocationMap";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 const trustChips = [
@@ -152,7 +152,7 @@ const faqs = [
 
 export function BayviewPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
-  const darwinOffice = OFFICE_LOCATIONS[0];
+  const mapLocation = SUBURB_LOCATIONS["bayview"];
   const maxOutput = Math.max(...solarOutputData.map((d) => d.output));
 
   const seoData = {
@@ -207,7 +207,7 @@ export function BayviewPage() {
       telephone: PRIMARY_PHONE,
       email: "info@oneroofsolar.com.au",
       address: { "@type": "PostalAddress", streetAddress: "3/97 Pruen Rd", addressLocality: "Berrimah", addressRegion: "NT", postalCode: "0828", addressCountry: "AU" },
-      geo: { "@type": "GeoCoordinates", latitude: -12.4386, longitude: 130.9256 },
+      geo: { "@type": "GeoCoordinates", latitude: -12.4403, longitude: 130.8603 },
       url: "https://oneroofsolar.com.au/locations/bayview/",
       aggregateRating: { "@type": "AggregateRating", ratingValue: "4.9", reviewCount: "128" },
       serviceArea: [{ "@type": "Place", name: "Bayview" }, { "@type": "Place", name: "Darwin" }],
@@ -482,9 +482,9 @@ export function BayviewPage() {
             <FadeIn>
               <h2 className="text-[2rem] font-bold leading-[1.25] tracking-tight text-slate-900 mb-6 normal-case">Servicing Bayview</h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed font-medium mb-6">We&apos;re a short drive from Bayview&apos;s marina precinct, Gardens Golf Course, and the edge of Charles Darwin National Park, with easy access via Tiger Brennan Drive. Wherever you are in the suburb, our team can reach you quickly.</p>
-              <div className="flex items-start gap-3 text-slate-700 font-medium"><MapPin className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" /><span>{darwinOffice.address}</span></div>
+              <div className="flex items-start gap-3 text-slate-700 font-medium"><MapPin className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" /><span>{mapLocation.address}</span></div>
             </FadeIn>
-            <FadeIn delay={0.15}><LocationMapCard location={darwinOffice} /></FadeIn>
+            <FadeIn delay={0.15}><LocationMapCard location={mapLocation} /></FadeIn>
           </div>
         </div>
       </section>

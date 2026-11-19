@@ -19,7 +19,7 @@ import { Button } from "./ui/Button";
 import { PartnersMarquee } from "./PartnersMarquee";
 import { SEO } from "./SEO";
 import { QuoteForm } from "./QuoteForm";
-import { LocationMapCard, OFFICE_LOCATIONS } from "./LocationMap";
+import { LocationMapCard, suburbMapLocation } from "./LocationMap";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 type IconType = ComponentType<{ className?: string }>;
@@ -141,7 +141,7 @@ function IconBadge({ icon: Icon, className = "" }: { icon: IconType; className?:
 
 export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
-  const darwinOffice = OFFICE_LOCATIONS[0];
+  const mapLocation = suburbMapLocation(data.suburb, data.geo.latitude, data.geo.longitude);
 
   const introImage = data.introImage || "/assets/images/hosted/aerial.webp";
   const introImageAlt =
@@ -675,11 +675,11 @@ export function SuburbLocationPage({ data }: { data: SuburbLocationData }) {
               </p>
               <div className="flex items-start gap-3 text-slate-700 font-medium">
                 <MapPin className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
-                <span>{darwinOffice.address}</span>
+                <span>{mapLocation.address}</span>
               </div>
             </FadeIn>
             <FadeIn delay={0.15}>
-              <LocationMapCard location={darwinOffice} />
+              <LocationMapCard location={mapLocation} />
             </FadeIn>
           </div>
         </div>

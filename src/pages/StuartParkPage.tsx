@@ -22,7 +22,7 @@ import { Button } from "../components/ui/Button";
 import { PartnersMarquee } from "../components/PartnersMarquee";
 import { SEO } from "../components/SEO";
 import { QuoteForm } from "../components/QuoteForm";
-import { LocationMapCard, OFFICE_LOCATIONS } from "../components/LocationMap";
+import { LocationMapCard, SUBURB_LOCATIONS } from "../components/LocationMap";
 import { PRIMARY_PHONE, PRIMARY_PHONE_RAW } from "../lib/constants";
 
 const trustChips = [
@@ -124,7 +124,7 @@ const faqs = [
 
 export function StuartParkPage() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
-  const darwinOffice = OFFICE_LOCATIONS[0];
+  const mapLocation = SUBURB_LOCATIONS["stuart-park"];
 
   const seoData = {
     title: "Local Stuart Park Solar Installers & Repair Experts | OneRoof",
@@ -579,11 +579,11 @@ export function StuartParkPage() {
               </p>
               <div className="flex items-start gap-3 text-slate-700 font-medium">
                 <MapPin className="w-5 h-5 text-[#8cc63f] shrink-0 mt-0.5" />
-                <span>{darwinOffice.address}</span>
+                <span>{mapLocation.address}</span>
               </div>
             </FadeIn>
             <FadeIn delay={0.15}>
-              <LocationMapCard location={darwinOffice} />
+              <LocationMapCard location={mapLocation} />
             </FadeIn>
           </div>
         </div>
