@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* Inter is loaded once via <link> in index.html (preconnected, non-blocking).
+   Loading it again here with @import would create a second, render-blocking
+   request chain, so it is intentionally not re-imported. */
 @import "tailwindcss";
 
 :root {

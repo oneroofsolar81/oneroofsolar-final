@@ -52,3 +52,52 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
 </IfModule>
+
+# ==========================================================================
+# Compression — shrink text payloads (HTML/CSS/JS/JSON/SVG/fonts) in transit.
+# Brotli is used when available, otherwise gzip.
+# ==========================================================================
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/xml application/javascript application/json application/xml image/svg+xml application/rss+xml application/vnd.ms-fontobject font/ttf font/otf font/woff font/woff2
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml application/javascript application/json application/xml image/svg+xml application/rss+xml application/vnd.ms-fontobject font/ttf font/otf font/woff font/woff2
+</IfModule>
+
+# ==========================================================================
+# Caching — hashed build assets never change, so cache them for a year.
+# HTML is revalidated so deploys go live immediately.
+# ==========================================================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Hashed, immutable build output (JS/CSS carry a content hash in the filename)
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+
+  # Images, fonts, icons
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+
+  # HTML and data: always revalidate so new deploys are seen right away
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType application/xml "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Mark fingerprinted assets as immutable so browsers skip revalidation
+  <FilesMatch "\.(js|css|woff2|woff|webp|avif|png|jpe?g|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  # Keep HTML fresh so the SPA shell and prerendered pages update on deploy
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>

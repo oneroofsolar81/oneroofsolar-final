@@ -82,8 +82,8 @@ export function LocationMapCard({ location }: { location: OfficeLocation }) {
       <div className="relative flex-1 min-h-0 bg-slate-100" data-lenis-prevent>
         <iframe
           src={mapSrc(location)}
-          title={`${location.title} office map`}
-          loading="eager"
+          title={`${location.title} map`}
+          loading="lazy"
           referrerPolicy="origin"
           className="absolute inset-0 w-full h-full border-0"
         />

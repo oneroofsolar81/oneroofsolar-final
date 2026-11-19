@@ -83,12 +83,24 @@
       })();
     </script>
 
-    <!-- Google Tag Manager -->
+    <!-- Google Tag Manager (deferred until first interaction or idle to keep the
+         critical rendering path free; analytics still fires on every page view) -->
     <script data-tracking-id="GTM-T4CWMK58">
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      var loaded=false;
+      function loadGTM(){
+        if(loaded)return;loaded=true;
+        w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+      }
+      var evs=['pointerdown','mousemove','touchstart','keydown','scroll'];
+      function fire(){evs.forEach(function(e){w.removeEventListener(e,fire)});loadGTM();}
+      evs.forEach(function(e){w.addEventListener(e,fire,{passive:true,once:true})});
+      if('requestIdleCallback' in w){w.requestIdleCallback(loadGTM,{timeout:5000});}
+      else{setTimeout(loadGTM,4000);}
     })(window,document,'script','dataLayer','GTM-T4CWMK58');
     </script>
     <!-- End Google Tag Manager -->
@@ -101,9 +113,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="preload" as="image" href="https://i.postimg.cc/1XWKZZkw/Bayview-0820-(2).webp">
-    <link rel="preload" as="image" href="https://i.postimg.cc/vZdTgLm9/oneroof.png">
-    <link rel="preload" as="image" href="https://i.postimg.cc/44Dzn7Hk/oneroof-solar-classic.png">
     <link rel="preconnect" href="https://api.oneroofsolar.com.au" />
   </head>
   <body>

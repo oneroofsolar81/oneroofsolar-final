@@ -1,6 +1,10 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
-import { onAuthStateChanged, signOut } from 'firebase/auth';
-import { auth } from '../lib/firebase';
+
+// NOTE: Firebase is intentionally NOT imported statically here. Importing it at
+// module load would pull the ~450KB Firebase chunk onto every page (Auth wraps
+// the whole app). Admin sign-in uses a localStorage "custom user", so public
+// visitors never need Firebase. It is now loaded dynamically only when an admin
+// session is possible (an /admin route) or on logout.
 
 export interface CustomUser {
   uid: string;
@@ -30,8 +34,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     let isMounted = true;
+    let unsubscribe: (() => void) | undefined;
 
-    // Check localStorage first
+    // Check localStorage first — this is how admins actually sign in, so public
+    // visitors resolve instantly with zero Firebase code downloaded.
     const savedCustomUser = localStorage.getItem('oneroof_custom_user');
     if (savedCustomUser) {
       try {
@@ -46,38 +52,50 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       }
     }
 
-    // fallback to Firebase auth listener
-    const unsubscribe = onAuthStateChanged(auth, (u) => {
-      if (!isMounted) return;
+    // No custom session: treat as logged out immediately (no render blocking).
+    setLoading(false);
 
-      const hasCustom = localStorage.getItem('oneroof_custom_user');
-      if (hasCustom) {
-        setLoading(false);
-        return;
-      }
-
-      if (u) {
-        setUser({
-          uid: u.uid,
-          email: u.email,
-          displayName: u.displayName || 'Authorized Admin',
-          role: u.email === 'editor@oneroofsolar.com.au' ? 'Editor' : 'Administrator',
-          isCustom: true,
-        });
-      } else {
-        setUser(null);
-      }
-      setLoading(false);
-    }, (error) => {
-      console.error("Auth helper error:", error);
-      if (isMounted) {
-        setLoading(false);
-      }
-    });
+    // Only bother with the Firebase auth listener inside the admin area, where a
+    // real Firebase session could exist. This keeps the Firebase chunk off every
+    // public/marketing page entirely.
+    if (typeof window !== 'undefined' && window.location.pathname.startsWith('/admin')) {
+      (async () => {
+        try {
+          const [{ auth }, { onAuthStateChanged }] = await Promise.all([
+            import('../lib/firebase'),
+            import('firebase/auth'),
+          ]);
+          if (!isMounted) return;
+          unsubscribe = onAuthStateChanged(
+            auth,
+            (u) => {
+              if (!isMounted) return;
+              if (localStorage.getItem('oneroof_custom_user')) return;
+              if (u) {
+                setUser({
+                  uid: u.uid,
+                  email: u.email,
+                  displayName: u.displayName || 'Authorized Admin',
+                  role: u.email === 'editor@oneroofsolar.com.au' ? 'Editor' : 'Administrator',
+                  isCustom: true,
+                });
+              } else {
+                setUser(null);
+              }
+            },
+            (error) => {
+              console.error('Auth helper error:', error);
+            },
+          );
+        } catch (e) {
+          console.warn('Deferred Firebase auth load failed:', e);
+        }
+      })();
+    }
 
     return () => {
       isMounted = false;
-      unsubscribe();
+      if (unsubscribe) unsubscribe();
     };
   }, []);
 
@@ -96,6 +114,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const logout = async () => {
     localStorage.removeItem('oneroof_custom_user');
     try {
+      const [{ auth }, { signOut }] = await Promise.all([
+        import('../lib/firebase'),
+        import('firebase/auth'),
+      ]);
       await signOut(auth);
     } catch (e) {
       console.warn("Firebase signout error:", e);
