@@ -11,6 +11,19 @@ const DARWIN_CITY_SUBURBS = [
   { name: "Winnellie", href: "/locations/winnellie" },
 ];
 
+const NORTHERN_DARWIN_SUBURBS = [
+  { name: "Nightcliff", href: "/locations/nightcliff" },
+  { name: "Casuarina", href: "/locations/casuarina" },
+  { name: "Rapid Creek", href: "/locations/rapid-creek" },
+  { name: "Coconut Grove", href: "/locations/coconut-grove" },
+  { name: "Tiwi", href: "/locations/tiwi" },
+  { name: "Muirhead", href: "/locations/muirhead" },
+  { name: "Wanguri", href: "/locations/wanguri" },
+  { name: "Karama", href: "/locations/karama" },
+  { name: "Leanyer", href: "/locations/leanyer" },
+  { name: "Alawa", href: "/locations/alawa" },
+];
+
 const POSTCODES = [
   "0800", "0810", "0812", "0820", "0822", "0828", "0829", "0830", "0832", "0834",
   "0835", "0836", "0837", "0838", "0839", "0840", "0841", "0845", "0846", "0847",
@@ -93,10 +106,10 @@ export function CoverageArea() {
               </span>
 
               <div className="flex flex-wrap gap-2 mb-6">
-                {["Nightcliff", "Casuarina", "Rapid Creek", "Coconut Grove", "Tiwi", "Muirhead", "Wanguri", "Karama", "Leanyer", "Alawa"].map((suburb, i) => (
-                  <span key={i} className="text-[0.875rem] font-normal leading-[1.5] text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full">
-                    {suburb}
-                  </span>
+                {NORTHERN_DARWIN_SUBURBS.map((suburb) => (
+                  <Link key={suburb.href} to={suburb.href} className="text-[0.875rem] font-normal leading-[1.5] text-slate-300 bg-white/5 border border-white/10 px-2.5 py-1 rounded-full hover:text-white hover:border-brand-500/40 hover:bg-brand-500/10 transition-colors">
+                    {suburb.name}
+                  </Link>
                 ))}
               </div>
             </div>
